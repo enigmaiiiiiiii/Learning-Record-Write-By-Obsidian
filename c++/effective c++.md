@@ -13,7 +13,7 @@
   - vector
 - 就内置类型而言，pass-by-value通常比pass-by-reference更高效
 
-## 尽量以从上图enum, enum, inline替换[[define]]
+## 尽量以从上图enum, enum, inline替换`#define`
 
 ## 尽可能使用const
 

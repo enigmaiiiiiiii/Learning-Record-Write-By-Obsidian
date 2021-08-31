@@ -160,7 +160,7 @@ ADD_LIBRARY(Mylib STATIC ${DIR_LIB_SRCS})  # DIR_LIB_SRCS生成为名为Mylib的
 
   - FIND_PROGRAM(&lt;VAR> name path1 path2 …)
     - VAR变量代表包含这个程序的全路径
-  - FIND_PACKAGE(&lt;name> [major.minor] [QUIET] [NO_MODULE] [[REQUIRED | COMPONENTS] [componets …]])
+  - FIND_PACKAGE(&lt;name> [major.minor] [QUIET] [NO_MODULE] [REQUIRED | COMPONENTS] [componets …]])
     - 用来调用预定义在CMAKE_MODULE_PATH下的Find&lt;name>.cmake模块,你也可以自己定义Find&lt;name>  
       模块,通过SET(CMAKE_MODULE_PATH dir)将其放入工程的某个目录供工程使用
 

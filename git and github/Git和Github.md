@@ -27,6 +27,7 @@
 ||git commit -m "commit message" | commit with message. |
 | log | git log | print git commit history. |
 | reset | git reset | removes all files from staging area.(Opposite of *git add*) |
+
 ## 3. Remote
 
 ||||

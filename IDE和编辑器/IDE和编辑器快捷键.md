@@ -1,4 +1,4 @@
-﻿# Short Cut
+# Short Cut
 
 ## jetbrain 快捷键
 
