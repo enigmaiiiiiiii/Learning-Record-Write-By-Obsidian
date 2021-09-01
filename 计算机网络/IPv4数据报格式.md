@@ -1,4 +1,4 @@
-# IPv4头部结构
+# IPv4数据报格式
 
 <table align="center">
 	<tr align ="center">
@@ -27,6 +27,9 @@
 	</tr>
 	<tr align="center">
 		<td colspan = "8">选项，最多40字节</td>
+	</tr>
+	<tr align="center">
+		<td colspan = "8">数据</td>
 	</tr>
 </table>
 
