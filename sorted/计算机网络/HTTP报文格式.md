@@ -36,7 +36,7 @@ Content-Type: text/html
   - 301 Moved Permanently：请求的对象已经被永久转移了，新的URL定义在响应报 文的Location:首部行中。客户软件将自动获取新的URL。
   -  400 Bad Request: 一个通用差错代码，指示该请求不能被服务器理解。 
   -  404 Not Found:被请求的文档不在服务器上。 
-  -  505 HTTP Version Not Supported:服务器不支持请求报文使用的HTTP协议版
+  -  505 HTTP Version Not Supported:服务器不支持请求报文使用的HTTP协议版本
 - 6个首部行
   - Connection
   - Date

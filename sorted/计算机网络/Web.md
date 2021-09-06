@@ -7,4 +7,4 @@
 
 ## Web缓存
 
-- Web cache，也叫代理服务器(proxy server)
+- Web cache，也叫[[代理服务器]](proxy server)
