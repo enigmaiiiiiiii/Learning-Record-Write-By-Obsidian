@@ -1,5 +1,7 @@
 # socket网络编程接口
 
+## 参数
+
 - 协议族和地址组的关系
 
   <table>
@@ -41,6 +43,8 @@
             32bit范围ID，共26字节</td>
     </tr>
 </table>
+
+## socket类
 
 - 通用socket地址
 

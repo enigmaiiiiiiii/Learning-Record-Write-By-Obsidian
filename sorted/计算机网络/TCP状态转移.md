@@ -1,5 +1,7 @@
 # TCP状态转移
 
+- TCP连接在任一时刻都处于某种状态
+- Linux中通过[[netstat]]命令可以查看当前状态
 - LISTEN: 被动等待客户连接状态
 - CLOSED: 
 - SYN_RCVD: 

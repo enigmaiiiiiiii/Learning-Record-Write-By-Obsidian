@@ -214,3 +214,8 @@ cmake_minium_required(version 3.15)  # 设置运行此配置文件的最低版�
 project(Tutorial)  # 项目名称
 add_excutable(Tutorial tutorial.cxx)  # 可执行文件
 ```
+
+
+## Linux下安装cmake
+
+- sudo apt-get install cmake

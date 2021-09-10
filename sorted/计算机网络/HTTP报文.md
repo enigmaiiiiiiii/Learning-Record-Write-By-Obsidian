@@ -1,12 +1,8 @@
-## HTTP报文格式
+# HTTP报文格式
 
-### 请求报文
+[[报文]]
 
-GET /somedir/page.html HTTP/1.1
-Host: www.someschool.edu
-Connection: close
-User-agent:Mozilla/5.0
-Accept-language:fr
+## 请求报文
 
 - 请求行
   - 方法字段,包括GET,POST,HEAD,PUT,DELETE
@@ -20,16 +16,20 @@ Accept-language:fr
      - 发送请求的浏览器类型
    - Accept-language
      - 客户想要得到的语言
-	 
-### 响应报文
-
-HTTP/1.1 200 OK
+- entity body
+  - 方法为POST时，内容为用户提供的表单
+     
+```http
+GET /somedir/page.html HTTP/1.1
+Host: www.someschool.edu
 Connection: close
-Date: Tue, 18 Aug 2000 15:11:03 GMT
-Server: Apache/2.2.3 (CentOS)
-Last-Modified: Tue, 18 Aug 2000 15:13:03 GMT
-Content-Length: 6821
-Content-Type: text/html
+User-agent:Mozilla/5.0
+Accept-language:fr
+
+entity body
+```
+	 
+## 响应报文
 
 - 一个状态行
   - 200 0K：请求成功，信息在返回的响应报文中。 
@@ -44,4 +44,17 @@ Content-Type: text/html
   - Last-Modified
   - Content-Length
   - Content-Type
-- 实体
+- entity body
+  - 包含请求内容
+
+```http
+HTTP/1.1 200 OK
+Connection: close
+Date: Tue, 18 Aug 2000 15:11:03 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Tue, 18 Aug 2000 15:13:03 GMT
+Content-Length: 6821
+Content-Type: text/html
+
+entity body
+```

@@ -20,9 +20,6 @@
 ## 分割线
 
 ---
-
-***
-
 ## 图片
 
 ![图片](.\src/320px-Markdown-mark.svg.png)  
