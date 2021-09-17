@@ -1,10 +1,10 @@
-# GDB
+# GDB
 
 - 全称GNU Debugger
 - 是UNIX及UNIX-like下的调试工具
 - 可以调试C,c++, asm, minimal, d, fortran, objective-c, go, java, pascal
 
-## 启动调试
+## 启动调试
 
 - `gdb file` gdb后直接加可执行文件
 - 出现`(gdb)`后，就可以使用gdb调试命令
@@ -14,7 +14,7 @@
 - `gdb attach pid` 其中pid为程序**进程id**参数
  - 通过ps命令获取**进程id**
 
-## gdb后的调试
+## gdb后的调试
 
 - `r`:启动程序
 - `c`:继续执行
@@ -24,7 +24,7 @@
 - `p`: 查看变量名
  - `set print pretty` 美化print
   
-### 设置断点
+### 设置断点
 
 - `break file:line` 在可执行文件file的第line行设置断点
 - `break +/-num` 设置偏移量, 在当前行的上/下偏移num行设置断点
@@ -41,11 +41,11 @@
 - `disable breakNum` 禁用断点
 - `enable breakNum` 启用断点
 
-### 查看变量
+### 查看变量
 
 - `print variable_name` 查看变量variable_name的值
 - `display variable_name` 每次程序中断时显示变量variable_name的值
 
-### problem
+### problem
 
 - [Cannot evaluate function -- may be inlined](https://stackoverflow.com/questions/22163730/cannot-evaluate-function-may-be-inlined)

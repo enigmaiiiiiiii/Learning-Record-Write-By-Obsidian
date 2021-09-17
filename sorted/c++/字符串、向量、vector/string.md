@@ -30,12 +30,12 @@
   auto len = line.size();  // line的类型时string::size_type
   ```
 
-- 支持下标运算，**object[index]**
+- 支持下标运算，**str[index]**
 - 处理string对象中的字符
   - isspace(c) 当c是空白时为真
   - isalnum(c) 当c是字母或数字时为真
-- <span id="strrelateoperator">两个string对象比较</span>
-  - 符号：>=，<=, ==, !=
+- 两个string对象比较
+  - 符号：$>=，<=, ==, !=$
   - 对应位置对应位置字符相等，则比较长短
   - 对应位置不一致，则比较第一个相异字符
 - 字面值并不是标准库的string对象

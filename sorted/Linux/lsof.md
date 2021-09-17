@@ -42,3 +42,4 @@
 - `lsof filename` 显示打开指定文件的所有进程
 - `lsof -c string` 像是COMMAND列中包含指定字符的进程所有打开的文件
 - `lsof -u username` 显示所有属于user进程打开的文件
+- `lsof -i PID`

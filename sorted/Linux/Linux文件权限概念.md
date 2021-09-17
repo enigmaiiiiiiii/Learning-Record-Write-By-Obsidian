@@ -7,7 +7,7 @@
 ## 文件属性权限
 
 - `ls -al`
-> -al 列出所有文件
+> -al 列出所有文件详细信息
 <table>
     <tr align = "center">
         <td>drwxrwxrwx</td>

@@ -1,5 +1,8 @@
-
 # allocator
+
+- 为对象分配为构造内存
+- 通过construct成员构造对象
+- 头文件memory, 是一个模板
 
 <table>
     <tr>
