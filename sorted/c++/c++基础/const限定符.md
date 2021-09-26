@@ -43,7 +43,7 @@ const int &r1 = dval;  // 引用类型与引用不一致的特殊情况
 
 ```mermaid
 graph LR
-id1[dval] --> id2[temp] --> id3[ri]
+id1[dval] --> id2[temp] --> id3[r1]
 id4[double] --> id5[const int] --> id6[const int引用]
 ```
 

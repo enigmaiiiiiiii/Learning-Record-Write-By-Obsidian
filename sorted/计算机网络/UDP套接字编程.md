@@ -2,8 +2,6 @@
 
 [[UDP]]
 
-[[TCP套接字编程]]
-
 [[套接字]]
 
 ```mermaid
@@ -28,7 +26,7 @@ B1 --> B
 C --> C1
 ```
 
-[[UDPClient.py]]
+UDPClient.py
 
 ```python
 from socket import * 
@@ -59,7 +57,7 @@ print(modifiedMessage.decode())
 clientSocket.close()
 ```
 
-[[UDPServer.py]]
+UDPServer.py
 
 ```python
 from socket import *
