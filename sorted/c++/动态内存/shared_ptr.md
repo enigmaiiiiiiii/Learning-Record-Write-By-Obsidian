@@ -28,13 +28,12 @@
   connection connect(destination*)
   void disconnect(connection);
   void end_connection(connection *p) {
-      disconnect(*p);
+    disconnect(*p);
   }
-  void f(destination &d)
-  {
-      connection c = connect(&d);
-      shared_ptr<connection> p(&c, end_connection)  
-      // end_connection 是一个可调用函数，完成销毁操作
-      // p被销毁时，不会执行delete,而是调用end_connection
+  void f(destination &d) {
+    connection c = connect(&d);
+    shared_ptr<connection> p(&c, end_connection)  
+    // end_connection 是一个可调用函数，完成销毁操作
+    // p被销毁时，不会执行delete,而是调用end_connection
   }
   ```

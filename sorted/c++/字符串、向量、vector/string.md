@@ -30,10 +30,10 @@
   auto len = line.size();  // line的类型时string::size_type
   ```
 
-- 支持下标运算，**str[index]**
+- 支持下标运算，`str[index]`
 - 处理string对象中的字符
-  - isspace(c) 当c是空白时为真
-  - isalnum(c) 当c是字母或数字时为真
+  - `isspace(c)` 当c是空白时为真
+  - `isalnum(c)` 当c是字母或数字时为真
 - 两个string对象比较
   - 符号：$>=，<=, ==, !=$
   - 对应位置对应位置字符相等，则比较长短

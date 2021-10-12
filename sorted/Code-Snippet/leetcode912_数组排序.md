@@ -20,19 +20,19 @@ void maxNode(std::vector<int> &nums, int i, int len) {
   }  
 }
 // 精简代码
-void sink(std::vector<int> &nums, int i) {
- int j = (i << 1) + 1;  
- int max_idx = nums.size() - 1;
- if (j < max_idx && nums[j] < nums[j + 1]) j++;  
- if (j <= max_idx && nums[i] < nums[j]) {  
-   std::swap(nums[i], nums[j]);  
-   i = j; //  
-   sink(nums, i); 
- }  
+void sink(std::vector<int> &nums, int i, int max_idx {
+  int j = (i << 1) + 1;  
+  if (j < max_idx && nums[j] < nums[j + 1]) j++;  
+  if (j <= max_idx && nums[i] < nums[j]) {  
+    std::swap(nums[i], nums[j]);  
+    i = j; //  
+    sink(nums, i); 
+  }  
 }
-void build(std::vector<int> &nums, int l, int r) {
-  for (int j = (r - 1) / 2 + 1; j >= 0, j--) {
-    sink(nums, j);
+void build(std::vector<int> &nums, int l, int r) {  
+// 用堆排序数组时，更新左边界
+  for (int i = (r - 1) / 2 + 1; i >= 0, i--) {
+    sink(nums, i);
   }
 }
 // 用sink()方法排序数组

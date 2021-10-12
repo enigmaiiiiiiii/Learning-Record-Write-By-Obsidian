@@ -1,5 +1,8 @@
 # code
 
+- 官方代码
+
+
 ```c++
 class Solution {  
  public:  
@@ -73,6 +76,64 @@ class Solution {
     printListLink(dummyhead->next);  
     std::cout << std::endl;  
     return dummyhead->next; /// 返回新链表的表头  
+  }
+};
+```
+
+- 我的答案
+
+```c++
+
+class Solution {
+ public:
+  ListNode* sortList(ListNode* head) {
+    return split_and_merge(head, nullptr);
+  }
+  ListNode *split_and_merge(ListNode *head, ListNode *tail) {
+    if (head->next == tail) { // 递归返回条件
+      head->next = nullptr;
+      return head;
+    }
+ 
+    ListNode *s = head, *f = head;
+    while (f != tail) {
+      s = s->next;
+      f = f->next;
+      if (f != tail) {
+      f = f->next;
+    }
+    }
+   
+    ListNode *mid = s;
+    ListNode *left = head;
+    ListNode *right = tail;
+    /* 
+    以上部分未split部分
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    以下部分为递归merge部分 
+    */ 
+    ListNode *tmp1 = split_and_merge(left, mid); // 返回合并后的左链表头结点
+    ListNode *tmp2 = split_and_merge(mid, right); // 返回合并后的右链表头结点
+   
+    auto *dummyhead = new ListNode(0);
+    ListNode *tmp;
+    tmp = dummyhead;
+   
+    while (tmp1 != nullptr && tmp2 != nullptr) {
+      if (tmp1->val <= tmp2->val) {
+        tmp->next = tmp1;
+        tmp1 = tmp1->next;
+      } else {
+        tmp->next = tmp2;
+        tmp2 = tmp2->next;
+      }
+    tmp = tmp->next;
+    }
+   
+    if (tmp1 != nullptr)  tmp->next = tmp1;
+    if (tmp2 != nullptr)  tmp->next = tmp2; 
+    
+    return dummyhead->next;
   }
 };
 ```
