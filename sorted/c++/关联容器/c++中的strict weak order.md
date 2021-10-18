@@ -1,4 +1,4 @@
-## c++中的strict weak order
+# c++中的strict weak order
 
 - 可以看做该类型一个**抽象的less than**比较操作
 - 对于自定义类型可以通过一个接受两个自定义类型对象并返回bool类型的函数来实现

@@ -12,15 +12,14 @@
   
   ## syslog函数
   
-  > 
   
   ```c++
   #include <syslog.h>
   void syslog(int priority, const char* message, ...);
   ```
   
-  - 参数`priority`，设施值与日志级别的按位或，设施值的默认值是LOG_USER,
-    LOG_USER设施值下的日志级别
+- 参数`priority`，设施值与日志级别的按位或，设施值的默认值是LOG_USER,
+   LOG_USER设施值下的日志级别
     
     ```c++
     #include <syslog.h>
