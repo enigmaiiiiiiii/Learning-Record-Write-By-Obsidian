@@ -1,5 +1,8 @@
 # c++项目构建工具cmake
 
+- 跨平台构建工具
+- Clion自动生成CMakeLists.txt
+
 ## cmake基本语法
 
 - cmake变量使用${}方式取值,但是在IF控制语句中是直接使用变量名

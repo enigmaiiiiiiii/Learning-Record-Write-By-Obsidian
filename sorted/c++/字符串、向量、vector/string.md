@@ -30,7 +30,7 @@
   auto len = line.size();  // line的类型时string::size_type
   ```
 
-- 支持下标运算，`str[index]`
+- 支持下标运算，`str[index]`,  得到char类型对象
 - 处理string对象中的字符
   - `isspace(c)` 当c是空白时为真
   - `isalnum(c)` 当c是字母或数字时为真
