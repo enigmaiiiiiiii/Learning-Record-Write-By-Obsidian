@@ -12,5 +12,3 @@
 - 调用socket函数的端点
 - 操作系统内核中联网协议Berkeley实现，成为socket实现
 - socket:插座
-
-

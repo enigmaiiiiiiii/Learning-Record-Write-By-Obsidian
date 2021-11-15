@@ -23,7 +23,7 @@ E --> F
 ```
 
 
-[[MySql_install]]
+[[MySql安装]]
 
 ## Mysql组件
 

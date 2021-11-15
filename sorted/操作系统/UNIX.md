@@ -53,5 +53,5 @@
 - GCC——GNU编译器套装
 - glibc——GNU的C库
 - coreutils——以及GNU核心工具组 
-- GDB——GNU调试器
+- GDB——GNU调试器[[GDB]]
 - binutils——GNU二进制实用程序

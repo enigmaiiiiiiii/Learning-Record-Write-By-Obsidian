@@ -1,6 +1,6 @@
 # TCP/IP体系
 
-[[TCP]] [[IP]]
+[[TCP]] [[IP协议]]
 
 
 ```mermaid

@@ -2,7 +2,6 @@
 
 ## jetbrain 快捷键
 
-点击ideavim插件图标可以修改`~/.ideavimrc`配置文件
 Alt + hover mouse： can view the expression value
 
 ### 1. 必备快捷键

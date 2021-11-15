@@ -1,7 +1,5 @@
 # passwd修改密码过程
 
-[[passwd]]
-
 [[Linux文件ID]]
 
 - 了解Linux修改密码的机制是学习[[Linux文件权限概念]]的好方式

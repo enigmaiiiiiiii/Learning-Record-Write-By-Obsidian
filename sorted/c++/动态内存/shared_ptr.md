@@ -3,7 +3,7 @@
 - 由新的标准库提供的一种管理动态内存的方法
 - 智能指针的一种
 - 是一种模板
-- [[手册#shared_ptr和unique_ptr都支持的操作]]]
+- [[c++手册#shared_ptr和unique_ptr都支持的操作]]]
 - make_shared&lt;T&gt;(args)标准库函数
   - 最安全的分配和使用动态内存的方法
   - args对应类型T的构造函数的参数

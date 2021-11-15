@@ -1,19 +1,8 @@
-# title
+# effective c++
 
-## 视c++为一个语言联邦
+[[视c++为一个语言联邦]]
 
-- c++不只是c加上面向对象，c++融合各种编程理念
-- 支持过程形式，面向对象形式，函数形式，泛型形式，元编程语言
-- c语言
-  - 仍然是c++的基础
-  - array
-- Object-Oriented c++
-- Template c++
-- STL 一个template程序库，容器，迭代器，算法，函数对象
-  - vector
-- 就内置类型而言，pass-by-value通常比pass-by-reference更高效
-
-## 尽量以从上图enum, enum, inline替换`#define`
+[[尽量以从上const, enum, inline替换预处理指令define]]
 
 ## 尽可能使用const
 
@@ -81,7 +70,7 @@ Point p;  //
 
 ## 为“异常安全”而努力是值得的
 
-## 透彻理解inlining的里里外外
+[[透彻理解inlining的里里外外]]
 
 ## 将文件间的编译依存关系降至最低
 

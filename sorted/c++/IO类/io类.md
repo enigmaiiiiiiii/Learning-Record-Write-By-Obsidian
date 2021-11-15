@@ -1,5 +1,7 @@
 # IO类
 
+[[c++手册#IO类型的条件状态]]
+
 - IO对象无拷贝和赋值
 - IO类的继承关系
   - ios是流类的系欸
@@ -26,15 +28,31 @@ E --> G[fstream]
 
 ![继承关系](std-io-complete-inheritance.svg)
 
+## 条件状态
+
+- 状态
+  - strm::iostate
+  - strm::badbit
+  - strm::failbit
+  - strm::eofbit
+  - strm::goobit
+- 查看状态  
+  - s.eof()
+  - s.fail()
+  - s.bad()
+  - s.good()
+- 管理状态
+  - s.clear()
+  - s.clear(flags)
+  - s.setstate(flags)
+
+## 操作IO类的函数
+
 - getline函数，从一个给定的istream读取一行数据，存入string对象
   - `getline(input, str, delim)`
   - input: 获取数据来源的流
   - str: 目标字符串
   - delim: 使出所终止于的分割字符，释出但不存储
-
-- what is 流
-- what is 置位
-- 清除错误标志，清除的具体是什么？为何能使流有效?
 - 缓冲区：一个存储区域，用于保存数据
   - 显示的刷新会**输出**缓冲
 - 条件状态对象是流
@@ -48,6 +66,19 @@ E --> G[fstream]
    out2 = print(out2);  // 不能作为实参，因为不支持拷贝
    ```
 
-### 文件输入输出
+## 文件输入输出
 
-- fstream操作
+```c++
+ifstream in(file); // 构造一个ifstream并打开file
+ofstream out;  // 创建一个输出文件流，为关联任何文件
+```
+
+- 成员函数
+  - open
+  - close
+  
+```c++  
+ifstream in(ifile);
+ofstream out;
+out.open(ifile + ".copy");
+```
