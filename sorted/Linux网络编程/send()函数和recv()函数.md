@@ -20,7 +20,7 @@ ssize_t recv(int sockfd, const void *buf, size_t len, int flags);
 
 - sockfd: socket文件描述符，非负整数
 
-    [[socket()函数]]
+    [[sorted/Linux网络编程/socket()函数]]
 - buf: 缓冲区的位置
 - len: 缓冲区的大小
 - flags: 数据收发额外控制参数，通常设置为0, 其他取值

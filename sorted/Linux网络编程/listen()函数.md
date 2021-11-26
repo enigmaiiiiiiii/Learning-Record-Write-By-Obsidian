@@ -12,7 +12,7 @@ int listen(int sockfd, int backlog);
 ## 参数
 
 - sockfd:被监听的socket
-  [[socket()函数]]
+  [[sorted/Linux网络编程/socket()函数]]
 - backlog: 提示内核监听队列最大长度
   - 如果队列已满，连接请求达到时, 客户端会受到一个带有ECONNREFUSED的指示
   - 并发连接数

@@ -15,7 +15,7 @@ int bind(int sockfd,const struct sockaddr* addr, socklen_t addrlen);
 ## 参数
 
 - sockfd: socket文件描述符, 
-  [[socket()函数]]
+  [[sorted/Linux网络编程/socket()函数]]
 - addr:地址指针
   [[socket地址]]
 - addrlen: 地址长度

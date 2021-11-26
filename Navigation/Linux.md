@@ -18,17 +18,21 @@
 
 [[Linux常用命令]]
 
-[[Linux账号管理]]
+[[Linux账户管理]]
 
 [[Linux网络命令]]
 
-[[Linux进程与程序]]
+[[Linux进程命令]]
 
 ## Linux编程
 
-[[shell编程]]
+[[Linux_Programmer_s_Manual]]
+
+[[Linux输入输出]]
 
 [[Linux文件操作函数]]
+
+[[Linux信号]]
 
 [[Linux进程]]
 
@@ -37,3 +41,5 @@
 [[Linux网络编程API]]
 
 [[Linux系统日志]]
+
+[[shell编程]]

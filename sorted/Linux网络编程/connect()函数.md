@@ -15,7 +15,9 @@ int connetc(int sockfd, const struct sockaddr *serv_addr, socklen_t addrlen);
 ## 参数
 
 - sockfd: socket文件描述符(一个非负整数)
-  [[socket()函数]]
+  [[sorted/Linux网络编程/socket()函数]]
 - serv_addr:  
   [[socket地址]]
 - addrlen: 指定地址长度
+
+

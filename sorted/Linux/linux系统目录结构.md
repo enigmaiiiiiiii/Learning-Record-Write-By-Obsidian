@@ -13,7 +13,7 @@
 - **<font color = "darkgreen">/boot(没有体会，不懂)</font>**  
   这里存放的是启动 linux 时使用的一些核心文件，包括一些连接文件以及镜像文件。
 - **<font color = "darkgreen">/dev</font>**  
-  设备驱动
+  设备驱动(如键盘，显示器)
 - **<font color = "darkgreen">/etc (没有体会，不懂)</font>**  
   etc 是 etcetera(等等) 的缩写,这个目录用来存放所有的系统管理所需要的配置文件和子目录。
 - **<font color = "darkgreen">/home</font>**  

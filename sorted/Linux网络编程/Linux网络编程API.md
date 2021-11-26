@@ -6,7 +6,7 @@
 
 [[IP地址转换函数]] 
   
-[[socket()函数]] 返回socket文件描述符(一个非负int类型)
+[[sorted/Linux网络编程/socket()函数]] 返回socket文件描述符(一个非负int类型)
   
 [[bind()函数]]  将socket和地址绑定
 

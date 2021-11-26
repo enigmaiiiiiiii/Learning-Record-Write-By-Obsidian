@@ -55,3 +55,11 @@
 - coreutils——以及GNU核心工具组 
 - GDB——GNU调试器[[GDB]]
 - binutils——GNU二进制实用程序
+
+
+## UNIX实现
+
+- linux
+- freeBSD
+- MacOS
+- Solaris
