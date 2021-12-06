@@ -34,3 +34,17 @@ E --> F
 
 ## [[连接MySql]]
 
+## mysql API
+
+
+```c
+MYSQL *mysql_real_connect(MYSQL *mysql, 
+                           const char *host, 
+                           const char *user, 
+                           const char *passwd, 
+                           const char *db,              // 数据库名称
+                           unsigned int port,           // tcp/ip端口 
+                           const char *unix_socket,     // 连接类型
+                           unsigned long client_flag)
+MYSQL *mysql_real_connect_nonblocking()                           
+```

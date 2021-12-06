@@ -14,7 +14,7 @@ int select(int nfds, fd_set *readfds, fd_set *writefds,
 ```
 
 - select()函数在timeout时间内保持阻塞, 直到：
-  1. 其中有文件描述符满足条件 
+  1. 其中有文件描述符满足条件
      - 对readfds中的一个描述符进行read操作不会阻塞
      - 对writefds中的一个描述符进行write操作不会阻塞
      - 对exceptfds中的一个描述符有一个未决异常条件
@@ -60,8 +60,11 @@ void FD_ZERO(fd_set *set);
 ```c
 #icnlude <poll.h>
 
-int poll(struct polldf fdarray[], nfds_t nfds, int timeout);
+int poll(struct polldf *fdarray, nfds_t nfds, int timeout);
 ```
+
+- 监听`fdarray`中的一个文件描述符准备好执行i/o
+- 调用时阻塞，满足条件立即返回
 
 ### 参数
 

@@ -16,7 +16,7 @@
 
 ## Linux命令
 
-[[Linux常用命令]]
+[[Linux常用命令组合]]
 
 [[Linux账户管理]]
 
@@ -30,7 +30,7 @@
 
 [[Linux输入输出]]
 
-[[Linux文件操作函数]]
+[[Linux文件API]]
 
 [[Linux信号]]
 
