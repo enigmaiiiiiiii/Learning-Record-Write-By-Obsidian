@@ -11,4 +11,3 @@
     - 可以使用lock_guard成员函数进行对象管理`
     [[锁定策略标签类型参数]]
   - `lock_guard(const lock_guard&) = delelte`拷贝构造函数不可用
-    [[拷贝构造函数]] [[阻止拷贝]]

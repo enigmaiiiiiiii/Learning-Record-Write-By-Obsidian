@@ -6,9 +6,9 @@
 
 [[Linux下安装cmake]]
 
-[[cmake语法]]
+[[cmake概念]]
   
-[[cmake示例]]
+[[cmake_example]]
 
 [[cmake命令]]
 
@@ -18,3 +18,4 @@
 
 [[cmake设置编译选项]]
 
+[[cmake生成表达式]]

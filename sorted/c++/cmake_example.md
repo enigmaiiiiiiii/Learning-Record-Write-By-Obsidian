@@ -6,15 +6,16 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 PROJECT(demo1)  # 工程名称
 ADD_EXECUTABLE(demo1 demo/main.cpp)
+ADD_EXECUTABLE(demo1 demo/main.cpp demo/demo1.cpp)
 ```
 
-## 多文件
+## 打包目录
 
 ```cmake
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
-PROJECT(demo1)  # 工程名称
+PROJECT(demo)  # 工程名称
 AUX_SOURCE_DIRECTORY(. ProjectDirectory)  # demo文件夹完整路径,定义为变量ProjectDirectory
-ADD_EXECUTABLE(demo1 demo/main.cpp demo/demo1.cpp)
+add_executable(demo ${ProjectDirectory})
 ```
 
 ## 多文件多目录
@@ -31,7 +32,7 @@ ADD_SUBDIRECTORY(mylib)  # cmake需要包含的子目录
 
 AUX_SOURCE_DIRECTORY(demo SrcVal)  # 打包文件夹demo用于ADD_EXCUTABLE,变量名为SrcVal
 
-ADD_EXECUTABLE(demo2 ${demofile})  # 连接编译的文件,执行主程序
+ADD_EXECUTABLE(demo2 tutorial.cpp)  # 连接编译的文件,执行主程序
 
 TARGET_LINK_LIBRARIES(demo2 Mylib)  # 在项目demo2中引入Mylib链接库
 ```
@@ -45,7 +46,6 @@ ADD_LIBRARY(Mylib STATIC ${DIR_LIB_SRCS})  # DIR_LIB_SRCS生成为名为Mylib的
 ```
 
 ## 添加编译选项
-
 
 ```cmake
 cmake_minimum_required(VERSION 3.16)  

@@ -1,7 +1,17 @@
-# cmake语法
+# cmake
 
-- cmake变量使用`${}`方式取值,但是在IF控制语句中是直接使用变量名
-- 环境变量使用$ENV{}方式取值,使用`SET(ENV{VAR} VALUE)`赋值
+## CMakeLists.txt
+
+- cmake处理项目代码文件时，入口是项目根目录下的`CMakeLists.txt`
+- 添加子目录需要在子目录下包含一个`CMakeLists.txt`
+
+## 变量
+
+- 缓存变量
+  - 变量使用`${}`方式取值,但是在IF控制语句中是直接使用变量名
+  - 类型必须是BOOLEAN, FILEPATH, PATH, STRING, INTERNAL中的一个
+- 环境变量
+  - 环境变量使用$ENV{}方式取值,使用`SET(ENV{VAR} VALUE)`赋值
 - 指令(参数1 参数2…)
 - 参数使用括号括起,参数之间使用**空格**或**分号**分开。
 - 以ADD_EXECUTABLE指令为例：

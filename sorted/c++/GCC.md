@@ -1,14 +1,12 @@
-#  编译and运行
+# GCC
 
-- 源文件命名约定:不同编译器不同后缀命名约定，常见的后缀有 **.cc, .cxx, .cpp, .cp, .C**
-- 从命令行运行:
-  - `cc prog1 prog1.cc`
-  - cc表示编译器名称，对于GCC编译器组件,编译c++编译器是**g++**
-- `g++ -o prog1 prog1.cc`, -o prog1 生成名为*prog1*可执行文件命名为
-  - Windows将**可执行文件**命名为prog1.exe
-  - UNIX系统中的编译器通常将**可执行文件**命名为a.out,通过$`./prog1.out`执行
-  
-## 1. gcc/g++编译过程
+- 全称GNU Compiler Collection
+- 能编译多种语言
+- 支持多种硬件平台
+- mingw是Minimalist GNU for Windows
+- gcc/g++分别是c/c++的编译器
+
+## gcc/g++编译过程
 
 ```mermaid
 graph TD
@@ -17,18 +15,28 @@ B --> C["step3 由汇编变为目标代码(机器代码)生成.o的文件(汇编
 C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ```
 
-- 源文件
-- 预处理
-- 编译
-  - 生成汇编
-- 汇编
-- 链接
+- 源文件 $\longrightarrow$ 预处理 $\longrightarrow$ 编译汇编$\longrightarrow$ 链接
+- 链接 
   - 处理静态库、动态库阶段, 连接成可执行程序
+  - GNU中[ld](GNU_linker.md)命令设置连接选项
   - 连接库文件格式
-    - 静态链接库 .a/.lib (对应UNIX/windows) 
-    - 动态链接库.so/.dll(对应UNIX/windows)
+    - 静态链接库 .a(UNIX)/.lib (windows) 
+    - 动态链接库.so(UNIX)/.dll(windows)
+
+## 参数
+
+- `-o`: 执行完整编译过程, 编译生成的[[可执行文件(executablefile)]]并命名为file
+  > `gcc -o executable_file sourcefile` 
+- `-S`:执行前两步，编译生成汇编代码,对应文件后缀.s
+  > `gcc -S sourcefile` 
+- `-E`:只激活预处理
+  > `gcc -E hello.c > hello.txt`
+- `-v`
+- `-c`: 执行前三步，编译源文件但不链接，生成后缀名为.obj或.o的目标文件 
+  > `gcc -c hello.c`
   
-### 静态库
+  
+## 静态库
 
 - `.a`, `.lib`文件
 - 可以看作一组目标文件(.o)的集合
@@ -37,7 +45,7 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 - `ar -crv libstaticmath.a StaticMath.o`,由目标文件生成静态库文件libstaticmath.a
 - 若静态库更新所有使用它的文件都需要重新编译
   
-### 动态库
+## 动态库
 
 - `.so`, `.dll`文件
 - 在**程序运行时**才被载入
@@ -48,15 +56,3 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 - Linux下gcc编译的执行文件默认是ELF格式，不需要初始化入口，不需要函数特别声明
 - Windows系统下执行文件格式PE格式，动态库需要一个DllMain函数做初始化入口，  
   通常在导出函数的声明时需要有_declspec(dllexport)关键字
-
-### 参数
-
-- -o
-  - `gcc -o file` 执行完整编译过程, 编译生成的可执行文件并命名为file
-- -S
-  - `gcc -s sourcefile` 执行前两步，编译生成汇编代码
-- -E
-  - `gcc -E hello.c > hello.txt`只激活预处理
-- -v
-- -c
-  - `gcc -c hello.c`执行前三步，编译源文件但不链接，生成后缀名为.obj或.o的目标文件

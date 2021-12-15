@@ -1025,7 +1025,7 @@
     </tr>
 </table>
 
-## <span id="allocatoralgorithm">allocator算法</span>
+## allocator算法
 
 <table>
     <tr>

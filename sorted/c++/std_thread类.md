@@ -4,13 +4,11 @@
 
 ## c++ 中的线程
 
-- `std::thread`类表示单个线程, 用[[函数的可调用表达式参数]]进行构造
+- `std::thread`类表示单个线程, 用[[可调用类型]]进行构造
 - 使用c++线程库启动线程，可归结为构造`std::thread`对象
 - 线程在构造关联的线程对象时立即开始执行
 - 不可拷贝构造和拷贝赋值
-   [[阻止拷贝]],  [[拷贝构造函数]], [[拷贝赋值运算符]]
 - 可移动构造和可移动赋值  
-   [[对象移动]]
    
 ## 构造函数 
 
@@ -18,15 +16,14 @@
 - `thread(thread&& other) noexcept`
 - `template<class func, class...args> explicit thread(func&&, args&&...args);`
   - 并不会开始新线程
-  
-## 线程函数的参数 
-
-```c++
-void f(int i, std::string const& s);
-std::thread t(f, 3, "hello");
-```
-- 线程函数的参数默认移动或拷贝传递
-- 传递引用参数，需要std::def将参数转换为引用的形式
+- 线程函数的参数 
+  ```c++
+  void f(int i, std::string const& s);
+  std::thread t(f, 3, "hello");
+  ```
+  - 线程函数的参数默认移动或拷贝传递
+  - 传递引用参数，需要std::def将参数转换为引用的形式
+  - 类内部创建的以类的成员创建的线程, [[this]]作为隐式形参
    
 ## 成员函数   
 - 等待线程完成   
@@ -36,6 +33,18 @@ std::thread t(f, 3, "hello");
 - 后台运行线程
   - 对于std::thread对象my_thread, 使用 `my_thread.detach()`分离线程
   - c++可以保证当线程退出时，相关资源能正确回收
+  
+## this_thread命名空间  
+
+> 访问的是当前调用线程，所以出现在函数或成员函数中 
+
+- 命名空间中提供了一组对当前线程的访问函数
+  - `get_id`
+  - `yield`: 自旋等待
+    > 依赖于OS调度机制和系统状态，如先进先出调度器(linux的SCHED_FIFO), 悬挂当前线程并放到同优先级的末尾, 若无其他线程在同优先级则无效
+  - `sleep_until`
+  - `sleep_for`
+  
 
 ## 转移线程所有权
 
