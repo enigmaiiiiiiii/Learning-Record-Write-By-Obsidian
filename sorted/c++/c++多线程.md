@@ -10,23 +10,28 @@
 
 [std::lock()函数](std_lock()函数.md)
 
-## 读写锁 
-
-[[std_shared_mutex]]
-
 ## 条件变量
 
-[[std_condition_variable]]
+[std::condition::variable](std_condition_variable.md)
 
 ## 异步
 
-[[std_future类模板]]
+- [[std_future类模板]]
+  - 用于主线程获取子线程的返回值
 
 [[std_async函数模板]]
 
 [[std_packaged_task类模板]]
 
 [std::promise类模板](std_promise类模板.md)
+
+## 原子类型
+
+[std::atomic](std_atomic.md)
+
+## 读写锁 
+
+[[std_shared_mutex]]
 
 ## 应用
 
@@ -36,6 +41,8 @@
 
 ### 异常安全
 
-### 实现线程池
+### 线程池
 
-
+> 重用线程而不是创建线程
+- 创建线程并阻塞, 线程等待任务
+- 提交任务

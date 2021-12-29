@@ -16,12 +16,12 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ```
 
 - 源文件 $\longrightarrow$ 预处理 $\longrightarrow$ 编译汇编$\longrightarrow$ 链接
-- 链接 
+- 链接
   - 处理静态库、动态库阶段, 连接成可执行程序
   - GNU中[ld](GNU_linker.md)命令设置连接选项
   - 连接库文件格式
-    - 静态链接库 .a(UNIX)/.lib (windows) 
-    - 动态链接库.so(UNIX)/.dll(windows)
+    - 静态链接库: .a(UNIX)/.lib (windows) 
+    - 动态链接库: .so(UNIX)/.dll(windows)
 
 ## 参数
 

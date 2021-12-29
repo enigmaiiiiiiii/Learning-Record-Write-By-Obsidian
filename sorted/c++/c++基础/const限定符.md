@@ -100,3 +100,7 @@ const double *cptr = &pi;
   - <font color="red">指针所指可以是常量，也可以是普通对象</font>
   - 指针和引用类型的const，可以通过修改指向的对象或引用对象的值被改变
   - ```const int &a = i;``` 中的const是一个底层const
+  
+## 关键字  
+
+[[关键字mutable]]

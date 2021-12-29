@@ -51,6 +51,10 @@
         <td>#error</td>
         <td></td>
     </tr>
+    <tr>
+        <td>#pragma</td>
+        <td>定义编译器行为</td>
+    </tr>
 </table>
 
 ## 标准迭代器运算符

@@ -1,8 +1,8 @@
 # std::lock_guard<std::mutex>
 
 - [[RAII]]类语法模板，构造时上锁，析构时解锁
-- 模板形参std::mutex
 - 在作用域块空间提供互斥，离开作用域时，销毁lock_guard并释放互斥
+- 模板类型参数std::mutex
 - 不可复制
 - 构造函数
   - `explicit lock_guard(mutex_type& m);`

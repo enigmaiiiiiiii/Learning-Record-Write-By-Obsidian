@@ -1,5 +1,5 @@
 # 字符串、向量、数组
-[[string]]
+[[c++_std_string]]
 
 [[vector]]
 

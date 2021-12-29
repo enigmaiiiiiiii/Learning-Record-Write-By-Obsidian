@@ -6,10 +6,11 @@
 template<class R, class ...Args>
 class packaged_task<R(Args...)>
 ```
-- 以 *参数类型Args* 调用 *返回类型为R* 的可调用对象
-- 模板类型参数
-  - R: 可调用对象的返回类型
-  - Args: 可调用对象的参数类型
+- `std::packaged_task<T> task(fn)`: 用fn构造一个`std::packaged_task<T>`对象 , T对应fn的类型
+- `T`: 模板的类型参数, 包括:
+  - R: 可调用类型的返回类型
+  - Args: 可调用类型的参数类型
+  - 以 *参数类型Args* 调用 *返回类型为R* 的可调用类型
 
 ## 构造函数
 
@@ -18,7 +19,6 @@ packaged_task() noexcept;
 
 template <class Fn>
   explicit packaged_task (Fn&& fn);
-
 
 template <class Fn, class Alloc>
   explicit packaged_task (allocator_arg_t aa, const Alloc& alloc, Fn&& fn);

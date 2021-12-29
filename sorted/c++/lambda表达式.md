@@ -1,7 +1,8 @@
 # lambda表达式
 
-- 表示一个可调用的代码单元
-- 可以向算法函数传递任何类别的**可调用对象**
+#callable #可调用类型 #lambda
+
+- 是一个可调用的代码单元
 - 表达式样式`[capture list](parameter list) -> return type {function body}`
 - 适合使用次数不多，临时使用
 - capture list: 捕获局部变量列表，可为空，且通常为空
