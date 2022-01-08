@@ -1,4 +1,4 @@
-#  example
+#  cmake参考样例
 
 ## 单文件
 
@@ -56,7 +56,6 @@ project(tmp)
 set(CMAKE_CXX_FLAGS, "${CMAKE_CXX_FLAGS} 12345")   
   
 add_executable(tmp main.cpp)  
-  
 ```
 
 

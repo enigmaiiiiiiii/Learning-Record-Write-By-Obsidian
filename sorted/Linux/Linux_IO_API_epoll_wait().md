@@ -15,7 +15,6 @@ int epoll_pwait(int epfd, struct epoll_event *events,
 > 与poll不同，epoll_wait通过将就绪事件存储在epoll_event结构中, 提高了应用程序索引就绪文件描述符的效率
 
 - 调用成功，返回就绪的文件描述符个数, 等待时间timeout后没有就绪的文件描述符, 返回0, 调用失败返回-1
-
 - 参数
   - epfd: epollfd事件表关联的文件描述符
   - events: 指向[epoll_event结构体](Linux_IO_API_epoll_ctl().md#epoll_event结构体)

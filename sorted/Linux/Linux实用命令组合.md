@@ -42,7 +42,6 @@
       
 ## 系统管理
 
-
 - `shutdown`
 - `reboot`
 - `apt` 安装软件

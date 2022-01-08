@@ -2,7 +2,9 @@
 
 ## SET
 
-- `set(<variable> <value>... [PARENT_SCOPE])`设置一般变量
+- `set(<variable> <value>... [PARENT_SCOPE])`设置一般变量, 
+  - variable : 变量名称
+  - value : 变量值
 - `set(<variable> <value>... CACHE <type> <docstring> [FORCE])`设置缓存变量
   - type: 限定为BOOL, FILEPATH, PATH, STRING, INTERNAL
 - `set(ENV{<variable>} <value>... [PARENT_SCOPE])`设置环境变量
@@ -11,20 +13,22 @@
 
 ## MESSAGE
 
-- ``MESSAGE([SEND_ERROR | STATUS | FATAL_ERROR] “message to display” …)
+- `MESSAGE([SEND_ERROR | STATUS | FATAL_ERROR] “message to display” …)
 - 向终端输出用户定义的信息或变量的值
 - SEND_ERROR, 产生错误,生成过程被跳过
 - STATUS, 输出前缀为—的信息
 - FATAL_ERROR, 立即终止所有cmake过程
-  
-## SET_TARGET_PROPERTIES(target PROPERTIES prop1 value1 prop2 value2)
 
+ ## SET_TARGET_PROPERTIES 
+ 
+- `SET_TARGET_PROPERTIES(target PROPERTIES prop1 value1 prop2 value2)`
 - 设置TARGET的属性，比如输出目录
 
 ## SUBDIRS
 
-- deprecated,不再推荐使用
-- (hello sample)相当于分别写ADD_SUBDIRECTORY(hello),ADD_SUBDIRECTORY(sample)
+- `subdirs(dir1 dir2 ...[EXCLUDE_FROM_ALL exclude_dir1 exclude_dir2 ...] [PREORDER])`
+- 添加子目录        
+        
   
 ## LINK_DIRECTORIES
 
@@ -38,7 +42,7 @@
   
 ## ADD_DEPENDENCIES
 
-- ADD_DEPENDENCIES(target-name depend-target1 depend-target2 …)
+- `ADD_DEPENDENCIES(target-name depend-target1 depend-target2 …)`
 - 定义target依赖的其他target,确保target在构建之前,其依赖的target已经构建完毕
   
 ## EXEC_PROGRAM

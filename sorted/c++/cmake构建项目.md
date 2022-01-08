@@ -1,9 +1,9 @@
-## 单文件或多文件构建项目
+## 构建项目
 
 - `CMAKE_MINIMUM_REQUIRED`
   - `CMAKE_MINIMUM_REQUIRED(VERSION version_number [FATAL_ERROR])`
   - 声明CMake的版本要求
-- `PROJECT`
+- `PROJECT` ^cmakeproject
   - `PROJECT(projectname [CXX] [C] [Java])`
   - 指定工程名称,并可指定工程支持的语言。支持语言列表可忽略,默认支持所有语言
 - `ADD_EXECUTABLE`
@@ -17,3 +17,5 @@
   - 目录范围添加编译选项
 - `TARGET_COMPILE_OPTIONS(<target> [BEFORE] <INTERFACE|PUBLIC|PRIVATE) [items1..] [[INTERFACE|PUBLIC|PRIVATE][item2..]..])`  
   - 特定target添加编译选项
+- 添加依赖  
+  - `add_dependencies(<target> [<target-dependency>]...)`

@@ -10,6 +10,7 @@ int fcntl(int fd, int cmd, ... /* arg */ );
 - 操作类型由cmd决定
   - linux内核支持哪些取值, 需要通过调用来检查, 如果fcntl()返回EINVAL，表示内核无法识别该参数
 - 成功返回值受操作类型影响，失败返回-1，并设置[[errno]]
+- arg参数与操作类型cmd有关
 
 ## cmd的取值
 

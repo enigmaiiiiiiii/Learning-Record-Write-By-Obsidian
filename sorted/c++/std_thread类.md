@@ -23,11 +23,10 @@
   ```
   - 线程函数的参数默认移动或拷贝传递
   - 传递引用参数，需要std::def将参数转换为引用的形式
-  - 类内部创建的以类的成员创建的线程, [[this]]作为隐式形参
+  - 类内部创建的以类的成员创建的线程, [this](c++_structure_this.md)作为隐式形参
    
 ## 成员函数   
-- 等待线程完成   
-  [[pthread_jion()]]
+- 等待线程完成, 对应Linux库函数 [[pthread_jion()]]
   - 对于std::thread对象my_thread, 使用 `my_thread.join()`回收线程
   - `my_thread.joinable()`检查线程是否可被回收
 - 后台运行线程

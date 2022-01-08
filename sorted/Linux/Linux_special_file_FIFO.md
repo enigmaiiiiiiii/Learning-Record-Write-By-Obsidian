@@ -1,4 +1,4 @@
-## FIFO
+# FIFO
 
 ```c
 #include <sys/types.h>
@@ -12,7 +12,7 @@ int mkfifo(const char *pathname, mode_t mode);
 int mkfifoat(int dirfd, const char *pathname, mode_t mode);
 ```
 
-- 用pathname创建一个特殊文件FIFO，并用mode & ~umask指定权限
+- 用pathname创建一个特殊文件FIFO，并用[mode & ~umask](Linux_file_fd_open()函数.md)指定权限
 - 成功返回0; 失败返回-1,并设置errno
 - FIFO实现不相关进程的通信, 不同于pipe能实现有共同祖先进程的进程间通信
 - mkfifoat()函数中

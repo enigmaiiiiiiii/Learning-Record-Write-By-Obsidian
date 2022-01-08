@@ -1,4 +1,4 @@
-## execve()
+# execve()
 
 ```c++
 #include <unistd.h>
@@ -27,13 +27,12 @@ int fexecve(int fd, char *const argv[], char *const envp[]);
 - 新程序从其main函数开始执行, 重新初始化栈，堆，data segments
 - 调用成功无返回值, 失败返回-1，并设置errno
 - 参数
-  - `pathname`:必须是一个二进制**可执行文件**或**脚本文件**
-  - `filename`：包含`/`则视为路径名, 否则在PATH[^path]环境变量所指定的各目录中搜寻可执行文件。
+  - `pathname`: 必须是一个二进制**可执行文件**或**脚本文件**
+  - `filename`: 包含`/`则视为路径名, 否则在PATH[^path]环境变量所指定的各目录中搜寻可执行文件。
   - `*argv[]`: 由指向字符串的指针组成的数组，执行程序的运行参数
   - `*arg`: 每个命令行参数作为一个单独参数，以空指针结尾
   - `envp[]`: 字符串，通常是key=value的形式执行程序的环境参数
-- exec前后UID和GID是不变的，而有效ID取决于所执行程序文件所有者ID是否设置， 若已设置则有效用户ID变成程序所有者的ID，否则有效用户ID不变
-  [[Linux文件ID]]  
+- [exec前后UID和GID是不变的，而有效ID取决于所执行程序文件所有者ID是否设置， 若已设置则有效用户ID变成程序所有者的ID，否则有效用户ID不变](Linux文件ID.md)  
   
 [^path]:PATH包含了一张目录表(路径前缀)，用冒号`:`隔开, 
                     如: PATH=/bin:/usr/bin:/usr/local/bin

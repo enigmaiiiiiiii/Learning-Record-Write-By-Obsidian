@@ -1,8 +1,7 @@
 # 多路转接
 
-[[Linux_IO_API_select()]]
+[select](Linux_IO_API_select().md)
 
-[[Linux_IO_API_poll()]]
+[poll](Linux_IO_API_poll().md)
 
-[[Linux_IO_API_epoll()]]
-
+[epoll](Linux_IO_API_epoll.md)

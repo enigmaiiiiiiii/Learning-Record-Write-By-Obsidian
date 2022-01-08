@@ -31,16 +31,15 @@ struct epoll_event {
 - event取值, 对应[poll()函数参数event](Linux_IO_API_poll().md)参数取值
   - EPOLLIN : 相关文件描述符可读
   - EPOLLOUT : 相关文件描述符可写
-  - EPOLLRDHUP: 关闭连接，或关闭写端，用于检测边缘触发模式对等关闭
+  - EPOLLRDHUP: TCP连接被关闭，或对方关闭了写操作
   - EPOLLRPI
   - EPOLLERR
-  - EPOLLHUP: 已挂断，被挂断的文件描述符，不能再写，但可读
+  - EPOLLHUP: 挂起, 比如管道写端被关闭，读端被监听到EPOLLHUP事件
   - EPOLLET: 设置事件触发边界
-  - EPOLLONESHOT
+  - EPOLLONESHOT: 设置为该标志的事件, 在epoll_wait()取出事件后, 相关文件描述符被禁用，在多线程程序中避免文件被多个线程读写
   - EPOLLWAKEUP
   - EPOLLEXCLUSIVE
-
-- epoll_data_t
+- 联合体epoll_data_t
 
 ```c
 typedef union epoll_data {

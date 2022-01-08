@@ -11,7 +11,7 @@ int msgget(key_t key, int msgflg);
 - 用ftok创建的key创建或打开一个消息队列的标识符(identifier), 消息队列的关联结构[[msqid_ds结构体]]
 - 成功返回消息队列标识符, 失败返回-1， 并设置errno
 - key等于IPC_PRIVATE时或不存在等于key的消息队列时，创建一个新消息队列 
-- 如果创建了新的消息队列，msgflg设置队列权限与[[open()函数]]设置文件访问权限方式类似
+- 如果创建了新的消息队列，msgflg设置队列权限与[[Linux_file_fd_open()函数]]设置文件访问权限方式类似
 - 参数
   - key：消息队列的键 
   - msgflg创建队列时的取值 

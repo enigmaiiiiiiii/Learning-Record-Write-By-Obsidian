@@ -1,6 +1,12 @@
 # 输入输出
 
+## stream
+
 [LinuxIO流](Linux_IO_Stream.md)
+
+[打开流](Linux_stream_open_API.md)
+
+[读写流](Linux_stream_read_and_write.md)
 
 [[格式化输出]]
 

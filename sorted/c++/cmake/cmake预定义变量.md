@@ -17,7 +17,7 @@
    `SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)`,然后可以用INCLUDE命令来调用自己的模块
 - `EXECUTABLE_OUTPUT_PATH` 重新定义目标二进制可执行文件的存放位置
 - `LIBRARY_OUTPUT_PATH` 重新定义目标链接库文件的存放位置
-- `PROJECT_NAME` 返回通过PROJECT指令定义的项目名称
+- `PROJECT_NAME` 返回通过[PROJECT()](cmake构建项目.md#^cmakeproject)最近一次调用定义的项目名称
 - `CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS` 用来控制IF ELSE语句的书写方式
 
 ## 系统信息

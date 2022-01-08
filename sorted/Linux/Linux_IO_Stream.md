@@ -2,8 +2,10 @@
 
 ## 标准流
 
-- 文件描述符STDIN_FILENO,STDOUT_FILENO, STDERR_FILENO
 - 文件指针stdin, stdout, stderr 
+
+> 对应文件描述符STDIN_FILENO,STDOUT_FILENO, STDERR_FILENO
+
 - 标准IO函数fopen()返回一个指向FILE对象的指针，该对象通常是一个结构, 结构包括缓冲区长度，缓冲区的字符，错误标志等
 
 ## 缓冲类型

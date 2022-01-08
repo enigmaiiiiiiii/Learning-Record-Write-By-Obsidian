@@ -36,23 +36,9 @@ int openat(int dirfd, const char *pathname, int flags, mode_t mode);
     - O_TRUNC.一个已存在的常规文件，且允许写入，将被截断，长度为0  
        如果是FIFO或终端文件则忽略O_TRUNC标志
     - O_NONBLOCK 以非阻塞方式打开文件
-- `mode`: 设置文件权限, 只有创建新文件`O_CREAT`或`O_TMPFILE`时才需要
+- `mode`: 设置[文件权限](Linux_file_type_and_mode.md), 只有创建新文件`O_CREAT`或`O_TMPFILE`时才需要
   - 当flag设置为O_CREAT 或 O_TMPFILE时，需要设置的参数
   -  文件的最终权限= mode & ~[[umask]]
-  - 取值(八进制常数):
-    -  S_IRWXU  00700 用户文件可读可写可执行
-    -  S_IRUSR  00400 user has read permission
-    -  S_IWUSR  00200 user has write permission
-    -  S_IXUSR  00100 user has execute permission
-    -  S_IRWXG  00070 group has read, write, and execute permission
-    -  S_IRGRP  00040 group has read permission
-    -  S_IWGRP  00020 group has write permission
-    -  S_IXGRP  00010 group has execute permission
-    -  S_IRWXO  00007 others have read, write, and execute permission
-    -  S_IROTH  00004 others have read permission
-    -  S_IWOTH  00002 others have write permission
-    -  S_IXOTH  00001 others have execute permission
-    
     >  According to POSIX, the effect when other bits are set in mode is unspecified.  On Linux, the following bits are also honored in mode:
     -  S_ISUID  0004000 set-user-ID bit
     -  S_ISGID  0002000 set-group-ID bit (see inode(7)).

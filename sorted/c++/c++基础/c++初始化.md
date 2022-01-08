@@ -1,7 +1,7 @@
 # 初始化
 
 - 默认初始化：`ListNode n;`
-- 值初始化:`ListNode n(val);`
+- 直接初始化: `ListNode n(val);`
 - 拷贝初始化:`ListNode n = n1;`
 - 相关概念
   - 局部对象: 函数体内部定义的变量，类的数据成员

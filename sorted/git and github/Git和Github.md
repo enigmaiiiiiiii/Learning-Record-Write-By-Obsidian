@@ -15,20 +15,7 @@
 | log | git log | print git commit history. |
 | reset | git reset | removes all files from staging area.(Opposite of *git add*) |
 
-## 2. Start
-
-||||
-| -- | -- | -- |
-| clone | git clone git@github.com:enigmaiiiiiiii/Learning-record.git | copyies remote repository into your current directory. |
-| init | git init | Creates a new empty repo in your current directory. |
-| add | git add *file1* *file2* | Adds *file1* and *file2* to the staging area. |
-| status | git status | Lists changes in wirking directory,and staged files. |
-| commit | git commit | Records everything in the staging area to your reposity.The default text editor will prompt you for a commit message. |
-||git commit -m "commit message" | commit with message. |
-| log | git log | print git commit history. |
-| reset | git reset | removes all files from staging area.(Opposite of *git add*) |
-
-## 3. Remote
+## 2. Remote
 
 ||||
 | -- | -- | -- |
@@ -38,12 +25,12 @@
 | push | git push | Incorporates changes from local repo into 'orgin'
 || git push *repo* *branch* | Incorporates changes from local repo into *repo* *branch* |
 
-## 4. repo
+## 3. repo
 
 ||||
 | -- | -- | -- |
 
-## 5. Branches
+## 4. Branches
 
 ||||
 | -- | -- | -- |
@@ -54,4 +41,4 @@
 
 ***
 
-## 6. 操作实例
+## 5. 操作实例

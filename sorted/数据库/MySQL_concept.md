@@ -1,3 +1,4 @@
+# concept
 - MySql属于基于客户机-服务器的DBMS(数据库管理系统)
 
 ```mermaid
@@ -21,28 +22,8 @@ E --> F
 ```
 
 
-[[MySql安装]]
-
 ## Mysql组件
 
-[[MySql命令行程序]]
-
+- [[MySql命令行程序]]
 - MySql Administrator 简化管理服务器
 - MySql Query Browser 编写和执行MySql命令
-
-## [[连接MySql]]
-
-## mysql API
-
-
-```c
-MYSQL *mysql_real_connect(MYSQL *mysql, 
-                           const char *host, 
-                           const char *user, 
-                           const char *passwd, 
-                           const char *db,              // 数据库名称
-                           unsigned int port,           // tcp/ip端口 
-                           const char *unix_socket,     // 连接类型
-                           unsigned long client_flag)
-MYSQL *mysql_real_connect_nonblocking()                           
-```

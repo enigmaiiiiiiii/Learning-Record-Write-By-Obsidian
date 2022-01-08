@@ -11,4 +11,3 @@
 - 调用socket函数是的返回值成为socket描述符，简称socket
 - 调用socket函数的端点
 - 操作系统内核中联网协议Berkeley实现，成为socket实现
-- socket:插座

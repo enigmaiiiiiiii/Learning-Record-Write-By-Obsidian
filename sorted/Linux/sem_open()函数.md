@@ -17,7 +17,7 @@ sem_t *sem_open(const char *name, int oflag,
   - O_CREAT: 创建一个信号量, 用户id和组id分别设置为调用进程的effective user ID, group ID
   - 设置为O_CREAT | O_EXCL, 确保创建一个信号量, 如果已存在,则调用失败
 - oflag设置为O_CREAT时，需要两个额外参数
-  - mode : 设置权限，参考[[open()函数]] 
+  - mode : 设置权限，参考[open()函数](Linux_file_fd_open()函数.md)
   - value: 信号量的初始值
   
 ##   信号量的命名规则

@@ -4,11 +4,11 @@
 
 [[c++基础]]
 
-[[字符串、向量、vector]]
+[字符串，向量，数组](c++_string_vector_array.md)
 
-[[运算符]]
+[运算符](c++_operator.md)
 
-[[语句]]
+[[c++语句]]
 
 [函数](c++函数.md)
 
@@ -41,5 +41,7 @@
 [[c++手册]]
 
 [[cmake]]
+
+[Makefile](Makefile.md)
 
 [[GDB]]

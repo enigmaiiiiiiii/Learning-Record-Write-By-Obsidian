@@ -2,17 +2,29 @@
 
 ## Ubuntu安装MySql
 
-- apt安装
-1. wget下载mysql配置文件deb安装包:
-   `wget https://dev.mysql.com/get/mysql-apt-config_0.8.19-1_all.deb`
-2. apt执行mysql配置deb文件`sudo apt install ./mysql-ap-config_0.8.19-1_all.deb`
-3. `sudo apt install mysql-client-core-8.0` 安装mysql客户端
+1. `sudo apt install mysql-client-core-8.0` 安装mysql客户端
+
   > 客户端操作数据
-4. `sudo apt install mysql-server` 安装mysql服务端
+  
+2. `sudo apt install mysql-server` 安装mysql服务端
+
   > 服务端存储数据, 是核心程序
   
-  *密码暂定000000*
+3. MySQL服务管理 
 
+```shell
+sudo service mysql status  # 查看服务
+sudo service mysql start   # 启动服务
+sudo service mysql stop    # 停止服务
+sudo service mysql restart # 重启服务
+```
+4. 查看默认账户密码
+
+```shell
+sudo cat /etc/mysql/debian.cnf
+```
+
+ 
 ## WSL下安装MySql
 
 [[mkdir]] [[chown]] 

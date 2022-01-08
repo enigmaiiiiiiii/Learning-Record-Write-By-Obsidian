@@ -1,7 +1,6 @@
 # inode
 
-## 结构体inode
-
+[stat结构体](Linux_file_stat_structure.md)
 
 
 ## 文件信息inode

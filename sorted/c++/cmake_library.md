@@ -1,11 +1,13 @@
 # cmake-library
 
+#编译 #cmake #library 
+
 ## ADD_LIBRARY
 
 - 二进制library
 
   > `ADD_LIBRARY(libname [SHARED | STATIC | MODULE] [EXCLUDE_FROM_ALL] SRC_LIST)`
-  - <font color="gold">生成动态库或静态库</font>
+  - 生成[动态库或静态库](GCC.md)
   - <font color="gold">可用于子文件CMakeList.txt</font>
   - SHARED 动态库
   - STATIC 静态库
@@ -37,5 +39,26 @@
 - 为**项目target**添加需要链接的共享库
 - lib1 lib2由ADD_LIBRARY创建
 
+# FIND_LIBRARY
 
-  
+- `find_library(<var> name | NAMES name1 [name2 ...] [NAMES_PER_DIR]...)`
+- 查找library
+- `<VAR>` : 存储查找结果 
+- name : 要查找的库的名称
+
+## ADD_DEPENDENCIES
+
+- 通常连接库文件通常只需要两条命令
+
+```cmake
+ADD_EXECUTABLE(main main.cpp)
+TARGET_LINK_LIBRARIES(main a.so b.so)
+```
+
+- 编译main的过程中需要下层库依赖，ADD_DEPENDENCIES添加下层依赖
+
+```cmake
+ADD_EXECUTABLE(main main.cpp)
+add_dependencies(main a.so b.so)
+TARGET_LINK_LIBRARIES(mani a.so b.so)
+```
