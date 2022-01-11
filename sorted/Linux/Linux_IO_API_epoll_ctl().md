@@ -39,7 +39,7 @@ struct epoll_event {
   - EPOLLONESHOT: 设置为该标志的事件, 在epoll_wait()取出事件后, 相关文件描述符被禁用，在多线程程序中避免文件被多个线程读写
   - EPOLLWAKEUP
   - EPOLLEXCLUSIVE
-- 联合体epoll_data_t
+- [联合体](c++_union.md)epoll_data_t
 
 ```c
 typedef union epoll_data {

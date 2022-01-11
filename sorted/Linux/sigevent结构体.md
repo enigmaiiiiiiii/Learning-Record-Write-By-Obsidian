@@ -42,4 +42,4 @@ struct sigevent {
   
 ## sigval
 
-- [[union]]结构体
+- [[c++_union]]结构体

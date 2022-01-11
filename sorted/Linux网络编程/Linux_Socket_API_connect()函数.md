@@ -4,7 +4,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 
-int connetc(int sockfd, const struct sockaddr *serv_addr, socklen_t addrlen);
+int connect(int sockfd, const struct sockaddr *serv_addr, socklen_t addrlen);
 ```
 
 - 成功返回0，一旦成功, sockfd就唯一标识了这个连接，
@@ -14,10 +14,8 @@ int connetc(int sockfd, const struct sockaddr *serv_addr, socklen_t addrlen);
 
 ## 参数
 
-- sockfd: socket文件描述符(一个非负整数)
-  [[Linux_Socket_API_socket()函数]]
-- serv_addr:  
-  [[socket地址结构体]]
+- sockfd: [socket文件描述符](Linux_Socket_API_socket()函数.md)(一个非负整数)
+- serv_addr: [[socket地址结构体]], 表示请求连接的地址
 - addrlen: 指定地址长度
 
 ## 连接非阻塞socket

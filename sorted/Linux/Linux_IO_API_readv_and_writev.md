@@ -26,7 +26,7 @@ ssize_t pwritev2(int fd, const struct iovec *iov, int iovcnt,
 - readv函数将fd关联文件的数据按相同顺序散布到缓冲区中, 返回读到的字节总数
 - iovec结构体包含两个成员
   - `void *iov_base;` 缓冲的开始地址
-  - `size_t iov_len;`: 缓冲长度
+  - `size_t iov_len;` 缓冲长度
 
 ```c
 struct iovec{

@@ -10,7 +10,7 @@ int semctl(int semid, int semnum, int cmd, .../*union semun arg*/);
 
 - 对由 semid 标识的 System V 信号量集合[[semid_ds结构体]]或该集合的第 semnum 个[[信号量结构体]]执行 cmd 指定的控制操作。
 - arg(第四个)参数是可选的，是否有第四个参数取决于参数cmd的值
-- arg(第四个)参数类型是semun, 是一个联合体[[union]]
+- arg(第四个)参数类型是semun, 是一个[联合体](c++_union.md)
 
   ```c
   union semun {
