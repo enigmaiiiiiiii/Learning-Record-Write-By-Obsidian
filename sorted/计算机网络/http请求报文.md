@@ -16,7 +16,7 @@
 
 1. 请求方法,包括GET,POST,HEAD,PUT,DELETE
     - get将请求的数据附在url后
-    - post将提交的数据放在报文主题(entity body)中
+    - post将提交的数据放在报文主体(entity body)中
 2. URL字段
 3. HTTP版本字段
   

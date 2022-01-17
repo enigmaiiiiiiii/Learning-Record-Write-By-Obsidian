@@ -4,17 +4,52 @@
 
 ## 1. Start
 
-||||
-| -- | -- | -- |
-| clone | git clone git@github.com:enigmaiiiiiiii/Learning-record.git | copyies remote repository into your current directory. |
-| init | git init | Creates a new empty repo in your current directory. |
-| add | git add *file1* *file2* | Adds *file1* and *file2* to the staging area. |
-| status | git status | Lists changes in wirking directory,and staged files. |
-| commit | git commit | Records everything in the staging area to your reposity.The default text editor will prompt you for a commit message. |
-||git commit -m "commit message" | commit with message. |
-| log | git log | print git commit history. |
-| reset | git reset | removes all files from staging area.(Opposite of *git add*) |
-
+<table>
+    <tr>
+        <td>命令</td>
+        <td>例</td>
+        <td>描述</td>
+    </tr>
+    <tr>
+        <td>clone</td>
+        <td>git clone git@github.com:enigmaiiiiiiii/Learning-record.git</td>
+        <td>copyies remote repository into your current directory.</td>
+    </tr>
+    <tr>
+        <td>init</td>
+        <td>git init</td>
+        <td>Creates a new empty repo in your current directory.</td>
+    </tr>
+    <tr>
+        <td>add</td>
+        <td>git add *file1* *file2*</td>
+        <td>Adds *file1* and *file2* to the staging area.</td>
+    </tr>
+    <tr>
+        <td>status</td>
+        <td>git status</td>
+        <td>Lists changes in wirking directory,and staged files.</td>
+    </tr>
+    <tr>
+        <td rowspan=2>commit</td>
+        <td>git commit</td>
+        <td>Records everything in the staging area to your reposity.The default text editor will prompt you for a commit message.</td>
+    </tr>
+    <tr>
+        <td>git commit -m "commit message"</td>
+        <td>commit with message.</td>
+    </tr>
+    <tr>
+        <td>log</td>
+        <td>git log</td>
+        <td>print git commit history.</td>
+    </tr>
+    <tr>
+        <td>reset</td>
+        <td>git reset</td>
+        <td>removes all files from staging area.(Opposite of *git add*)</td>
+    </tr>
+</table>
 ## 2. Remote
 
 ||||
@@ -32,13 +67,49 @@
 
 ## 4. Branches
 
-||||
-| -- | -- | -- |
-| branch | git branch | List branches. |
-||git branch *branch-name* | Creat new branch *branch-name* |
-| checkout | git checkout *branch-name* | Switch to editing branch *branch-name* |
-| merge | git merge *branch-name* | Merge *branch-name* into current branch. |
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan=2>branch</td>
+        <td>git branch</td>
+        <td>List branches.</td>
+    </tr>
+    <tr>
+        <td>git branch *branch-name*</td>
+        <td>Creat new branch *branch-name*</td>
+    </tr>
+    <tr>
+        <td>checkout</td>
+        <td>git checkout *branch-name*</td>
+        <td>Switch to editing branch *branch-name*</td>
+    </tr>
+    <tr>
+        <td>merge</td>
+        <td>git merge *branch-name*</td>
+        <td>Merge *branch-name* into current branch.</td>
+    </tr>
+</table>
 
 ***
 
-## 5. 操作实例
+## 5. 文件操作
+
+<table>
+<tr>
+<td rowspan=2>rm</td>
+<td>git rm [file]</td>
+<td>从目录和暂存区中删除文件</td>
+</tr>
+<tr>
+<td>git rm -r --cached [file]</td>
+<td>--cached从暂存区中删除文件, -r递归删除</td>
+</tr>
+</table>
+
+##  组合
+
+git 

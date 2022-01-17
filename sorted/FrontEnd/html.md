@@ -37,73 +37,11 @@
   - 如果打开时乱码首先考虑是这个属性
   - ```<meta http-equiv="refresh" content="6:url=http://www.baidu.com"/>```, 表示页面6秒后自动跳转baidy.com
 
+  ## class属性
 
-## CSS样式表
-
-### 外部样式表
-
-语法：
+- 用来将元素归类
+- 一个元素可以归入多个类别
 
 ```html
-<link rel="stylesheet" type="text/css" href="filepath">
+<a class="class1 class2" href="http://apress.com">apress web site</a>
 ```
-
-### 内部样式表
-
-语法：
-
-```html
-<style type="text/css">
-    
-</style>
-```
-
-### 行内样式表
-
-在标签的style属性中定义
-
-```html
-<body>
-<div style="color:red">分区样式</div>
-</body>
-```
-
-## 元素id和class
-
-id属性具有唯一性：一个id只能出现一次
-class可以是相同的，代表一类，使用CSS或JavaScript操作某一类
-
-## CSS选择器
-
-### 元素选择器
-
-- 语法：`element{width:100px; height:100px;}`
-
-div p h1 h2 都是元素  
-
-### id选择器 "\#"
-
-- 语法：`[[id]]{width：100px; height: 100px;}`
-
-对于id选择器，id前面需要加上"#"，表示这是一个id选择器
-
-### class选择器 "."
-
-- 语法：`.classvalue{width: 100px; height:100px;}`
-
-.value选中 class= "value"的所有元素
-
-### 后代选择器
-
-语法前有"#",选择的是id,id为father的元素
-
-- 语法：`#father div{width: 100px; height: 100px;}`
-
-父元素与后代(子,孙)元素用空格隔开
-
-### 群组选择器
-
-- 语法：`h3,p{width: 100px; height: 100px}`
-
-表示同时选择h3,p元素
-两个选择器用","隔开  

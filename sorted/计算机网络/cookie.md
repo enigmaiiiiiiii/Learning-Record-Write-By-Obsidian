@@ -1,3 +1,3 @@
 # cookie
 
-![[Drawing cookie.excalidraw]]
+![[cookie.excalidraw]]
