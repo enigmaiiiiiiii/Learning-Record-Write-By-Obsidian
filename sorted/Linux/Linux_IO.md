@@ -16,7 +16,7 @@
 
 ## 存储映射io
 
-[[存储映射]]
+[[Linux_IO_API_mmap]]
 
 ## 阻塞
 
@@ -30,6 +30,6 @@
 
 [readv()和writev()](Linux_IO_API_readv_and_writev.md)
 
-## memset
+## 初始化内存
 
 [[memset()]]

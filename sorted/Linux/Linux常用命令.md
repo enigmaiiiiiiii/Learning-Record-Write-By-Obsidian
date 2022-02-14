@@ -58,6 +58,9 @@
 
 - `tar`
 
+```shell
+tar -zcvf package.tar.ge file1 dir2
+```
 ## 辅助命令
 
 - [[grep命令]]

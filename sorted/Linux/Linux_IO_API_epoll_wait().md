@@ -10,7 +10,7 @@ int epoll_pwait(int epfd, struct epoll_event *events,
                 const sigset_t *sigmask);
 ```
 
-- epoll_wait()如果检测到事件，就将所有就绪事件从内核事件表中,复制到[event](Linux_IO_API_epoll_ctl().md#epoll_event结构体)参数中
+- epoll_wait()如果检测到事件，就将所有就绪事件从内核事件表中复制到[event](Linux_IO_API_epoll_ctl().md#epoll_event结构体)参数中
 
 > 与poll不同，epoll_wait通过将就绪事件存储在epoll_event结构中, 提高了应用程序索引就绪文件描述符的效率
 

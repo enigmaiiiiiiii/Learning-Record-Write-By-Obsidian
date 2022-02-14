@@ -1,4 +1,4 @@
-# 数据读写
+# 数据收发
 
 ```c++
 #include <sys/types.h>
@@ -11,6 +11,7 @@ ssize_t recv(int sockfd, const void *buf, size_t len, int flags);
 - recv()
   - 读取sockfd上的数据，
   - 返回值：实际读取到的长度，若返回0，表示对方已经关闭连接,失败返回-1，设置[[errno]]
+  - 通常只用在[connected socket](Linux_Socket_API_connect()函数.md)
 - send()
   - 向sockfd写入数据  
   - 返回值：实际写入数据的长度, 失败返回-1，设置[[errno]]

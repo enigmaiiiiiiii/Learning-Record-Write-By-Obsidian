@@ -1,16 +1,18 @@
 # 文件操作
 
-[open函数](Linux_file_fd_open()函数.md)
+[open函数](Linux_file_API_fd_open.md)
 
-[[Linux文件读写]]
+[文件读写](Linux_file_API_fd_read_write.md)
 
-[fcntl()](Linux_fd_API_fcntl().md)操作已打开的文件描述符
+[fcntl()](Linux_fd_API_fcntl().md): 操作已打开的文件描述符
 
 [查询文件状态](Linux_file_API_stat.md)
 
 [inode](Linux_file_inode.md)
 
 [文件访问权限](Linux_file_type_and_mode.md)
+
+
 
 ## 复制文件描述符
 

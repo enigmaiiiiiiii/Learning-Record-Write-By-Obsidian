@@ -16,13 +16,13 @@
 
 ## Linux命令
 
-[[Linux实用命令组合]]
+[常用命令](Linux常用命令.md)
 
-[[Linux账户管理]]
+[账户管理](Linux账户管理.md)
 
-[[Linux网络命令]]
+[网络](Linux网络命令.md)
 
-[[Linux进程命令]]
+[进程](Linux进程命令.md)
 
 ## Linux编程
 

@@ -4,7 +4,7 @@
 
 - 使用数据库
 
-```
+```mysql
 USE dbname;
 ```
 
@@ -14,14 +14,26 @@ USE dbname;
 SHOW DATABASES;
 ```
 
-- 返回当前数据库可用内可用表的列表
+- 返回当前数据库内可用表的列表
 
 ```
-SHOW TABLES;
+SHOW TABLES; 
+```
+
+- 返回数据库dbname的可用表的列表
+
+```
+SHOW TABLES IN dbname;
 ```
 
 - 显示表的列
 
 ```
 SHOW COLUMNS FROM dbtables
+```
+
+- 查看mysql用户
+
+```mysql
+SELECT user FROM mysql.user
 ```

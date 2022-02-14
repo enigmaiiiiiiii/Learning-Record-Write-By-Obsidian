@@ -17,14 +17,15 @@ CREATE USER [IF NOT EXISTS]
 
 ## auth_option语法
 
+将明文'auth_string'作为密码
+
 ```mysql
 CREATE USER IDENTIFIED BY 'auth_string'
 ```
 
-将明文'auth_string'作为密码
+随机生成密码
 
 ```mysql
 CREATE USER IDENTIFIED BY RANDOM PASSWORD
 ```
 
-随机生成密码

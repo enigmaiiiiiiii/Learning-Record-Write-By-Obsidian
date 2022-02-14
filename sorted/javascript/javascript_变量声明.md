@@ -12,3 +12,10 @@
 
 > let与var的最大区别在于作用域
 > let变量在块内部，即`{}`之间
+
+## 关键字const
+
+- const变量必须在声明时赋值
+- 将[原始值](javascript_variable_copy_and_reference.md)赋值个const变量，就不能改变const变量值
+- 可以改变const对象的属性, 无法重新为const对象赋值
+- const数组可以更改，不能重新赋值

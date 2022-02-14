@@ -137,7 +137,7 @@ int setsockopt(int sockfd, int level, int option_name, void *option_value, sockl
 </table>
 
 > 对服务器而言，有些选项只能在调用[listen()](Linux_Socket_API_listen()函数.md)之前设置
-> 有些选项可以在调在同步报文段中设置, 对于客户端而言应该在调用[connect()](LInux_Socket_API_connect()函数.md)之前设置，, 比如TCP最大报文段选项,  包括: SO_DEBUG, SO_DONTROUTE , SO_KEEPALIVE , SO_LINGER , SO_OOBINLINE , SO_RCVBUF , SO_RECLOWAT , SO_SNDBUF , SO_SNDLOWAT , TCP_MAXSEG , TCP_NODELAY
+> 有些选项可以在调在同步报文段中设置, 对于客户端而言应该在调用[connect()](LInux_Socket_API_connect()函数.md)之前设置, 比如TCP最大报文段选项,  包括: SO_DEBUG, SO_DONTROUTE , SO_KEEPALIVE , SO_LINGER , SO_OOBINLINE , SO_RCVBUF , SO_RECLOWAT , SO_SNDBUF , SO_SNDLOWAT , TCP_MAXSEG , TCP_NODELAY
 
 - optval: 指向内存空间，存放待设置选项, 通常指向一个结构体或整数 ^socketoptval
   - 0: 禁用选项

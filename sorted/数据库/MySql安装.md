@@ -27,7 +27,7 @@ sudo cat /etc/mysql/debian.cnf
  
 ## WSL下安装MySql
 
-[[mkdir]] [[chown]] 
+[[chown]] 
 
 ```shell
 sudo mkdir -p /var/run/mysqld  # 创建文件夹

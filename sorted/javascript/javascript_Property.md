@@ -2,6 +2,18 @@
 
 - 原始值不能有属性，但是添加属性的语句不会报错
 
+两条属性访问语句访问的是同一位置
+
+```javascript
+var myObject = {
+  a: 2
+};
+myObject.a;  // 2 
+myObject["a"];  // 2
+```
+
+- 可计算属性名`myObject[prefix+"bar"] = "hello"`
+
 ##  数据属性
 
 - 数据属性包含一个保存数据值的位置

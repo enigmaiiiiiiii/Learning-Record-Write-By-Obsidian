@@ -6,4 +6,4 @@
 
 ## 方法
 
-- apply()和call()方法都可以用来设置this值
+[绑定调用对象](javascript_function_bind.md)

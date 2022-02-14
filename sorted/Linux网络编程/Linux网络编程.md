@@ -18,7 +18,7 @@
 
 [close()](Linux_fd_API_close().md) 关闭连接
 
-[send和recv](Linux_Socket_API_send()_and_recv().md)
+[send和recv](Linux_Socket_API_send_recv.md)
 
 [[地址信息函数]]
 

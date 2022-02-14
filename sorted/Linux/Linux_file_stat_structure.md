@@ -37,6 +37,6 @@ struct stat{
 - st_uid;    
 - st_gid;    
 - st_rdev;   
-- st_size;   
+- st_size: 文件大小
 - st_blksize;
 - st_blocks; 

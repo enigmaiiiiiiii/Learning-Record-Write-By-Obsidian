@@ -50,6 +50,7 @@
         <td>removes all files from staging area.(Opposite of *git add*)</td>
     </tr>
 </table>
+
 ## 2. Remote
 
 ||||
@@ -83,9 +84,13 @@
         <td>Creat new branch *branch-name*</td>
     </tr>
     <tr>
-        <td>checkout</td>
-        <td>git checkout *branch-name*</td>
+        <td rowspan=2>checkout</td>
+        <td>git checkout *branch*</td>
         <td>Switch to editing branch *branch-name*</td>
+    </tr>
+    <tr>
+        <td>git checkout *commit*</td>
+        <td>Switch to editing history commit</td>
     </tr>
     <tr>
         <td>merge</td>
@@ -109,7 +114,3 @@
 <td>--cached从暂存区中删除文件, -r递归删除</td>
 </tr>
 </table>
-
-##  组合
-
-git 

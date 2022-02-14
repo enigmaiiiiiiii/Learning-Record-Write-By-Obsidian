@@ -39,3 +39,19 @@ struct iovec{
   - fd: 被读写的文件描述符
   - iovec: 用来完成分散读写的结构体
   - iovcnt: 带读写的iovec结构体个数(最大索引 + 1)
+
+## example
+
+```c
+char *str0 = "hello ";
+char *str1 = "world\n";
+struct iovec iov[2];
+ssize_t nwritten;
+
+iov[0].iov_base = str0;
+iov[0].iov_len = strlen(str0);
+iov[1].iov_base = str1;
+iov[1].iov_len = strlen(str1);
+
+nwritten = writev(STDOUT_FILENO, iov, 2);
+```

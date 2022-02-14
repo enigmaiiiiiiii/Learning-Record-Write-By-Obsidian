@@ -6,9 +6,9 @@
 
 [字符串，向量，数组](c++_string_vector_array.md)
 
-[运算符](c++_operator.md)
+[运算符](../sorted/c++/运算符/c++_operator.md)
 
-[[c++语句]]
+[c++语句](../sorted/c++/语句/c++语句.md)
 
 [函数](c++函数.md)
 

@@ -1,16 +1,16 @@
 # socket地址
 
 - 四种socket地址结构体
-  - sockaddr 
-  - sockaddr_un:UNIX本地协议族
   - sockaddr_in: TCP/IP协议族, 用于IPv4 
   - sockaddr_in6: TCP/IP协议族，用于IPv6
+  - sockaddr_un:UNIX本地协议族
+  - sockaddr: 通用地址结构体
 
 [[IPv4地址结构体]]
 
-[[UNIX本地socket地址结构体]]
-    
 [[IPv6地址结构体]]
+
+[[UNIX本地socket地址结构体]]
 
 [[通用socket地址结构体]]
 

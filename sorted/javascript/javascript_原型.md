@@ -1,6 +1,6 @@
 # 原型
 
-- javascripe的对象有一个prototype的内置属性
+- javascripe的对象有都一个特殊的prototype内置属性
 - 引用一个对象属性时
   1. 触发[get]操作, get操作第一步时检查对象本身是否有这个属性
   2.  当属性不在当前对象中，需要使用[prototype链](javascript_原型链.md)

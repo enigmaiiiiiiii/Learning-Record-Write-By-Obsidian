@@ -81,3 +81,10 @@ struct dirent {
 - d_name文件名字符串
 
 ## closedir()
+
+***
+
+## read, write 和 [recv, send](Linux_socket_API_send_recv.md)区别
+
+- 均可用于socketfd读写, recv和send可以设置socketfd选项 
+- read, write可用于一般文件描述符读写

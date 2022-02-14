@@ -5,12 +5,6 @@
   - interest list: 事件列表
   - ready list : 就绪列表
 
- ##  触发条件
-
-- 两种触发模式: 边界出发(ET)和电平触发(LT), 默认边界出发
-- (边界触发)ET模式: epoll_wait()检测到有事件发生时，应用程序必须立即处理该事件
-- (电平触发)LT模式: epoll_wait()检测到发生变化时，通知应用程序，应用程序可以不立即处理，下次epoll_wait()时，再次通知应用程序，直到文件描述符被处理
-
 ## 创建和管理epoll实例
 
 - [epoll_create](Linux_IO_API_epoll_create().md) : 创建epoll实例
@@ -18,3 +12,9 @@
 - [epoll_ctl](Linux_IO_API_epoll_ctl().md) : 向事件列表注册或删除被监听的文件描述符
 
 - [epoll_wait](Linux_IO_API_epoll_wait().md) : 阻塞等待IO事件
+
+##  触发条件
+
+- [电平触发和边缘触发](Linux_IO_API_epoll_triggered.md)
+
+  

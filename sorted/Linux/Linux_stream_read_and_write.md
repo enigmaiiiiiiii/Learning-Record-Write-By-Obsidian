@@ -1,6 +1,6 @@
 # 读写流
 
-## 读
+## get
 
 ```c
 #include <stdio.h>
@@ -18,7 +18,7 @@ int ungetc(int c, FILE *stream);
 
 - fgetc()读下一个字符，并将unsigned char 转换为 int 返回
 
-## 写
+## put 
 
 ```c
 #include <stdio.h>
