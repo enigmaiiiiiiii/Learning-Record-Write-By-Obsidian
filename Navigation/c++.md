@@ -26,11 +26,11 @@
 
 [[c++中的拷贝]]
 
-[[面向对象程序设计]]
+[面向对象程序设计](c++_object_oriented_programming.md)
 
-[[c++ template(模板)]]
+[[c++ template(模板).md]]
 
-[[io类]]
+[[c++_io类]]
 
 [[特殊工具和技术]]
 

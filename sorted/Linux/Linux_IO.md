@@ -30,6 +30,5 @@
 
 [readv()和writev()](Linux_IO_API_readv_and_writev.md)
 
-## 初始化内存
+## 内存空间
 
-[[memset()]]

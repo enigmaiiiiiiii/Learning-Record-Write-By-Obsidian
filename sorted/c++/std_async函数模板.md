@@ -16,7 +16,7 @@ future<typename result_of<Fn(Args...)>::type> async (launch policy, Fn&& fn, Arg
 ```    
 
 ## 参数
-  - `fn` : 被调用的[[可调用类型]]对象
+  - `fn` : 被调用的[[c++_可调用类型]]对象
   - `Args`: 传递给fn的参数
   - `policy`: 位掩码，执行策略, 取值
     - `std::launch::async`:异步求值, 运行一个新的线程

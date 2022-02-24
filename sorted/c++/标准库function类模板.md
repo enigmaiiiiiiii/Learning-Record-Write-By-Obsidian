@@ -37,7 +37,7 @@ template <class Alloc>
 
 - 参数
   - x : 用于初始化`*this`的函数
-  - Fn: [[可调用类型]]对象
+  - Fn: [[c++_可调用类型]]对象
   - alloc: 内存分配器参数
 - `std::function<T> f;`： 用来存储可调用对象的空function
 - `std::function<T> f(nullptr);`: 显式构造一个空function

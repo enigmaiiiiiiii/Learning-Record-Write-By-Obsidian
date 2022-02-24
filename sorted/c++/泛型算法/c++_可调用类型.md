@@ -26,6 +26,6 @@ map<string, function<int(int, int)>>binops = {
 
 ## 相关标准库
 
-[[std_result_of模板]]
+[std::result_of](std_result_of模板.md)
 
-[[标准库bind函数]]
+[std::bind](标准库bind函数.md)
