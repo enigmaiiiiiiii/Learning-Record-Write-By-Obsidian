@@ -111,6 +111,6 @@
 </tr>
 <tr>
 <td>git rm -r --cached [file]</td>
-<td>--cached从暂存区中删除文件, -r递归删除</td>
+<td>--cached从暂存区中删除文件(移出git)<br> -r递归删除</td>
 </tr>
 </table>

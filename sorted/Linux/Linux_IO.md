@@ -10,13 +10,17 @@
 
 [[格式化输出]]
 
+## 文件io
+
+[文件读写](Linux_file_API_read_write.md)
+
 ## 同步io
 
 [[IO多路转接]]
 
 ## 存储映射io
 
-[[Linux_IO_API_mmap]]
+[存储映射](Linux_IO_API_mmap.md)
 
 ## 阻塞
 

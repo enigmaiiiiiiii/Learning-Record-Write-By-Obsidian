@@ -39,4 +39,4 @@ unique_lock( mutex_type& m,
   - t : [[锁定策略标签类型参数]]
   - timeout_duration: 阻塞等待时间
   - timeout_time: 阻塞等待到的时间点
- 
+- lock_guard  

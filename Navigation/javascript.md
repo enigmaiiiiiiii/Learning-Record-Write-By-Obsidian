@@ -26,4 +26,6 @@
 
 [模块管理](javascript_module.md)
 
+[ECMAScript](ECMAScript_正则表达式.md)
+
 [node.js](javascript_node_js.md)

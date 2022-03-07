@@ -35,7 +35,7 @@ struct epoll_event {
   - EPOLLRPI
   - EPOLLERR
   - EPOLLHUP: 挂起, 比如管道写端被关闭，读端被监听到EPOLLHUP事件
-  - EPOLLET: 设置事件触发边界
+  - EPOLLET: 设置事件触发边界, 不设置该位则为电平触发
   - EPOLLONESHOT: 设置为该标志的事件, 在epoll_wait()取出事件后, 相关文件描述符被禁用，在多线程程序中避免文件被多个线程读写
   - EPOLLWAKEUP
   - EPOLLEXCLUSIVE

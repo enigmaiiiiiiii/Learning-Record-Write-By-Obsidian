@@ -19,3 +19,9 @@ int对象初始化，将double去掉小数点变为int
 */
 ```
 
+[显示转换](c++_显示转换.md)
+
+- static_cast
+- dynamic_cast
+- const_cast
+- reinterpret_cast

@@ -2,7 +2,6 @@
 
 [open函数](Linux_file_API_fd_open.md)
 
-[文件读写](Linux_file_API_fd_read_write.md)
 
 [fcntl()](Linux_fd_API_fcntl().md): 操作已打开的文件描述符
 

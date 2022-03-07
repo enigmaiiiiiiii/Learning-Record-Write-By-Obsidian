@@ -7,7 +7,6 @@
 
 ## 跳转语句
 
-- break
-- continue
-  - 进入下一次循环
+- break: 
+- continue: 进入下一次循环
 - goto

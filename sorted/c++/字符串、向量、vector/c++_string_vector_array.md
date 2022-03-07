@@ -3,7 +3,7 @@
 
 [[vector]]
 
-[[迭代器]]
+[迭代器](c++_iterator.md)
 
 [c++_array](c++_array.md)
 

@@ -12,6 +12,15 @@ namespace pmr {
 }
 ```
 
+- 常用形式:
+  - `regex(str, regex)`
+  - `regex(first, last, regex)`
+- 返回值
+  - 存在返回true，失败返回false
+- 参数
+  - first, last: 字符[迭代器](c++_iterator.md)，给定目标字符串范围
+  - str: 目标字符串, [std::string](c++_std_string.md)类
+  - regex: 正则表达式
 - 常用的特化类型
   - std::cmatch
   - std::wcmatch
