@@ -2,6 +2,8 @@
 
 [[运行c++]]
 
+[调试c++](c++_debug.md)
+
 [[c++基础]]
 
 [字符串，向量，数组](c++_string_vector_array.md)
@@ -39,9 +41,3 @@
 [c++正则表达式](c++_regex.md.md)
 
 [[c++手册]]
-
-[[cmake]]
-
-[Makefile](Makefile.md)
-
-[[GDB]]
