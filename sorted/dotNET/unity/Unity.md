@@ -10,6 +10,14 @@
 
 ## 典型Unity项目文件
 
+- Assets
+  - Scripts
+  - Prefabs
+  - Scenes
+  - Matirails
+- Packages
+  - 
+
 ## 物理运动组件
 
 - Rigidbody

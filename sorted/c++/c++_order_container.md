@@ -1,4 +1,3 @@
-
 # 顺序容器
 
 - 包括**vector(向量), deque(双端队列), list(链表), forward_list(单向链表), array(数组), string(字符串)**

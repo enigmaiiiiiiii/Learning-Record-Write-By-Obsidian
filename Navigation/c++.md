@@ -18,11 +18,9 @@
 
 [[重载运算]]
 
-[[顺序容器]]
+[容器](c++_container.md)
 
-[[泛型算法]]
-
-[[关联容器]]
+[[泛型算法]](c++_algorithm.md)
 
 [[动态内存]]
 
@@ -30,14 +28,16 @@
 
 [面向对象程序设计](c++_object_oriented_programming.md)
 
-[[c++ template(模板).md]]
+[模板编程](c++_template.md)
 
 [[c++_io类]]
 
 [[特殊工具和技术]]
 
-[[c++多线程]]
+[多线程](c++_multithread.md)
 
-[c++正则表达式](c++_regex.md.md)
+[正则表达式](c++_regex.md.md)
+
+[c++STL](c++_STL.md)
 
 [[c++手册]]
