@@ -2,9 +2,11 @@
 
 - F: focus
 
-- 窗口
-  - Project
-- Hierarchy 
+## 窗口
+
+- Project
+  - 项目文件
+- Hierarchy
   - 游戏中包含gameObject
 - Inspector
-  - gameObject Component
+  - gameObject上的组件

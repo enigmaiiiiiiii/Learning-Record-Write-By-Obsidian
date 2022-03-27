@@ -2,4 +2,6 @@
 
 [.NET概念](dotNET_concept.md)
 
+[dotnet命令管理项目](dotnet_compile_command.md)
+
 [c#](csharp.md)

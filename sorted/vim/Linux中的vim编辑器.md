@@ -61,3 +61,16 @@ set relativenumber
         <td>check the status of plugins</td>
     </tr>
 </table>  
+
+## 退出和保存
+
+`:q!` 退出文件但不保存
+`:wq` 退出并保存
+`:w*` 保存当前修改但不退出文件  
+`:w file` 保存当前文件到file（另存为）
+`:r file` 读取file内容并加到当前光标bb后
+`:! command` shell command
+`:saveas file` 另存为file
+
+`ZZ`: 保存退出
+`ZQ`: 不保存退出
