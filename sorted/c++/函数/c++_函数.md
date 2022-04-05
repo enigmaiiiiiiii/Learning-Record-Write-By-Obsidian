@@ -10,6 +10,6 @@
 
 [返回类型](c++_funtion_return_type.md)
 
-[[函数指针]]
+[函数指针](c++_function_pointer.md)
 
 [可调用类型](c++_可调用类型.md)

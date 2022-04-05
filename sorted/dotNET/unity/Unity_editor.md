@@ -2,11 +2,6 @@
 
 - F: focus
 
-## 窗口
+[Unity编辑器区域功能划分](Unity_editor_area_partition.md)
 
-- Project
-  - 项目文件
-- Hierarchy
-  - 游戏中包含gameObject
-- Inspector
-  - gameObject上的组件
+[典型Unity项目文件](Unity_typical_Directory.md)

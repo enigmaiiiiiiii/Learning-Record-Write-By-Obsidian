@@ -1,9 +1,12 @@
 # Unity脚本
 
-- 默认继承自基类MonoBehavior
-
 [Unity脚本规范](Unity_Script_规范.md)
 
-[MonoBehavior](Unity_MonoBehavior.md)
+[Component脚本](Unity_Script_Component.md)
 
-[API和class](Unity_API_and_class.md)
+[class和method](Unity_class_and_method.md)
+
+[扩展编辑器功能](Unity_Script_extend_editor.md)
+
+[随机数](Unity_Script_Random.md)
+

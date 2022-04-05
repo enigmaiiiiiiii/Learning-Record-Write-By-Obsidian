@@ -2,7 +2,6 @@
 
 ## SerializableAttribute
 
-
 ## Obsolete
 
 - 旧方法警告
@@ -33,9 +32,31 @@ Obsolete重载特性接收第二个bool类型参数, 表示目标被标记为错
 ## 调用者信息
 
 - 三个特性CallerFilePath, CallerLineNumber, CallerMemberName，表示调用者路径，行数，成员名称的信息
-- 只能用于方法中的[可选参数](csharp_method.md)，如果参数被提供则使用真是参数
+- 只能用于方法中的[可选参数](csharp_method.md)，如果参数被提供则使用真实参数
 
 ## DebuggerStepThrough
+
+- 单步调试时希望跳过某些方法
+
+## AttributeUsage
+
+- 应用在特性类上的特性
+
+```c#
+public sealed class AttributeUsageAttribute: Attribute
+{
+    public AttributeUsageAttribute(AttributeTargets validon);
+
+    public bool AllowMultiple {get; set;}  // 一个特性是否允许多次应用
+    public bool Inherited {get;set;}
+    public AttributeTargets validOn {get;}
+}
+```
+
+- AllowMultiple
+- Inherited
+- validon: 可以附加在那些目标上(类，接口，属性，方法，参数)
+  - 可以是AttributeTargets枚举值任意组合, All, Delegate, Parameter, Assemble, Enum, Class, Interface, Property
 
 ## 其他预定义
 
@@ -44,4 +65,3 @@ Obsolete重载特性接收第二个bool类型参数, 表示目标被标记为错
 - NonSerialized
 - DLLImport
 - WebMethod
-- AttributeUsage

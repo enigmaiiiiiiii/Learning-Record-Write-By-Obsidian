@@ -43,7 +43,7 @@ template <class Alloc>
 - `std::function<T> f(nullptr);`: 显式构造一个空function
 - `std::function<T> f(obj);` :  f中存储可调用对象obj的副本
 - `f(args)`: 调用f中的对象, 参数args
-- 不能将重载函数的名字存入function对象，使用[[函数指针]]解决二义性问题 
+- 不能将重载函数的名字存入function对象，使用[函数指针](c++_function_pointer.md)解决二义性问题 
 
 ## 成员类型
 
