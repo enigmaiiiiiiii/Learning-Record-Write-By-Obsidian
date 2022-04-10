@@ -1,4 +1,4 @@
-## 扩展Inspector
+# 扩展Inspector
 
 > 特性CustomEditor
 
@@ -15,6 +15,5 @@ public class MapModelCreator: Editor
 
 一个继承了Editor的类(MapModeCreator)指定某个[组件](Unity_Script_Component.md)(Map), 当此[组件](Unity_Script_Component.md)(Map)处于run-time时, 创建自定义editor
 
-- 方法
-  - OnInspectorGUI(), 扩展InspectorGUI
+- 通过方法OnInspectorGUI(), 扩展InspectorGUI
 

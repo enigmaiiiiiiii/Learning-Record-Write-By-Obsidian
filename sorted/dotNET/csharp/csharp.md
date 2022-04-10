@@ -8,21 +8,21 @@
 
 ## 语法
 
-[基本语法](csharp_foundation.md)
+[基本语法](Csharp_Foundation.md)
 
 [命名空间](csharp_namespace.md)
 
 [类](csharp_class.md)
 
-[方法](csharp_method.md)
+[方法](Csharp_Method.md)
 
-[接口](csharp_interface.md)
+[接口](Csharp_Interface.md)
 
 [委托](csharp_delegate.md)
 
 [转换](csharp_conversion.md)
 
-[枚举器](csharp_IEnumerator.md)
+[枚举器](csharp_IEnumerator_and_Iteraotr.md)
 
 ## 元数据
 

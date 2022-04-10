@@ -1,6 +1,6 @@
 # Unity_API
 
-[类](Unity_class.md)
+[类](Unity_Class.md)
 
 [方法](Unity_method.md)
 

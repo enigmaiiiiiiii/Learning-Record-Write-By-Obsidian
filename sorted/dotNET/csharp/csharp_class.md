@@ -1,10 +1,10 @@
 # 类
 
-[属性](csharp_class_properties.md)
+[属性](Csharp_Class_Properties.md)
 
 [静态字段](csharp_class_static_field.md.md)
 
-[继承体系](csharp_Inheritance_system.md)
+[继承体系](Csharp_Inheritance_System.md)
 
 [构造函数](csharp_class_constructor.md)
 

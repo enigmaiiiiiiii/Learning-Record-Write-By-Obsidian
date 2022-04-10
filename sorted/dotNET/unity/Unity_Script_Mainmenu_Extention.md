@@ -1,8 +1,8 @@
-## 扩展Mainmenu
+# 扩展Mainmenu
 
 > 设置特性`[MenuItem("extend/method")]`
 
-- 使用`MenuItem`特性包装一个静态[方法](csharp_method.md)
+- 使用`MenuItem`特性包装一个静态[方法](Csharp_Method.md)
   - extend: 显示在菜单栏上的文本
   - method: 下拉菜单中，要执行的功能
 - 可以绑定快捷键
