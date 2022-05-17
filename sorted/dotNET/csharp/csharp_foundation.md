@@ -2,7 +2,7 @@
 
 [预处理](Csharp_Preprocess.md)
 
-[关键字](Csharp_Keyword.md)
+[关键字](CSharp_Keyword.md)
 
 [注释](Csharp_Annotation.md)
 
@@ -16,20 +16,6 @@
 
 [运算符](Csharp_Operator.md)
 
-[集合](csharp_set.md)
+[集合](CSharp_Set.md)
 
-
-## 可空类型
-
-- 可以从任意值类型创建可空类型
-- 不能从引用类型或其他可空类型创建可空类型
-- 可空类型和相应的非可空类型之间可以实现隐式转换
-
-```c#
-int? myNInt = 28;
-```
-
-int?可空类型，myNInt可空变量
-
-- 可空类型赋值
-  - `??`运算符: `myNInt ?? -1`, myNInt如果不为空保持原值，为空则赋值-1
+[可空类型](CSharp_Nullable.md)

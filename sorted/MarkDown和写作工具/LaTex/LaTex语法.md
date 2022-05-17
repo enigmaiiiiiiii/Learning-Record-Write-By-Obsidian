@@ -5,5 +5,5 @@
 - `{args}`LaTex命令参数
 
 $$
-\document {article}
+\documentclass{article}
 $$

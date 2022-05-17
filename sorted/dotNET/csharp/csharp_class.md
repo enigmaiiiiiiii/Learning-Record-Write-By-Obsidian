@@ -1,6 +1,6 @@
 # 类
 
-[属性](Csharp_Class_Properties.md)
+[属性](CSharp_Class_Properties.md)
 
 [静态字段](csharp_class_static_field.md.md)
 

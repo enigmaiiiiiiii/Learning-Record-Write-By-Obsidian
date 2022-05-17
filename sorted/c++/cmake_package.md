@@ -2,11 +2,6 @@
 
 ## find_package命令
 
-- 对于库文件ZLIB, cmake中包含了该文件的对应模块,通常在`/usr/share/cmake/Modules/FindZLIB.cmake`
-- 有两种可能的package，module和config
-  - `FindsomeModule.cmake`
-  - `SomeConfig.cmake`
-
 ```cmake
 find_package(<PackageName> [version] [EXACT] [QUIET] [MODULE]
              [REQUIRED] [[COMPONENTS] [components...]]
@@ -14,8 +9,14 @@ find_package(<PackageName> [version] [EXACT] [QUIET] [MODULE]
              [NO_POLICY_SCOPE])
 ```
 
+- 官方预定义了许多用于寻找依赖包的Module(并不是要查找的包本身), 通常在`/usr/share/cmake/Modules/Find<LibraryN>.cmake`下
+- 有两种可能的package，module和config
+  - `FindsomeModule.cmake`
+  - `SomeConfig.cmake`
+- `COMPONENTS`后为必须要找到的组件
+  - `REQUIRED`: 找不到必须的package, 停止处理并显示错误信息
+- `OPTIONAL_COMPONENTS` 后为可选组件  
 - `<PackageName>_Found`变量被设置，用来指示是否找到package
-- `REQUIRED`: 找不到package, 停止处理并显示错误信息
 - `QUIET`: 禁用信息性消息
 
 ## 创建package

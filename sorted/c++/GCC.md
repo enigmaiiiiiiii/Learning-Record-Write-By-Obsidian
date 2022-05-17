@@ -16,12 +16,15 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ```
 
 - 源文件 $\longrightarrow$ 预处理 $\longrightarrow$ 编译汇编$\longrightarrow$ 链接
+- .cpp $\longrightarrow$ .i $\longrightarrow$ .s(汇编) $\longrightarrow$.o(目标文件)$\longrightarrow$  可执行文件
 - 链接
   - 处理静态库、动态库阶段, 连接成可执行程序
   - GNU中[ld](GNU_linker.md)命令设置连接选项
   - 连接库文件格式
     - 静态链接库: .a(UNIX)/.lib (windows) 
     - 动态链接库: .so(UNIX)/.dll(windows)
+
+
 
 ## 参数
 
@@ -36,23 +39,4 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
   > `gcc -c hello.c`
   
   
-## 静态库
 
-- `.a`, `.lib`文件
-- 可以看作一组目标文件(.o)的集合
-- 在**编译时**完成连接 
-- 浪费空间和资源，因为所有相关的目标文件于牵涉到的函数库被链接成一个可执行文件
-- `ar -crv libstaticmath.a StaticMath.o`,由目标文件生成静态库文件libstaticmath.a
-- 若静态库更新所有使用它的文件都需要重新编译
-  
-## 动态库
-
-- `.so`, `.dll`文件
-- 在**程序运行时**才被载入
-- 因此更新时只需更新相应动态库
-- 可以实现进程之间的共享，因此也成为共享库
-- 简化程序更新
-- 可以由程序员在代码中控制调用
-- Linux下gcc编译的执行文件默认是ELF格式，不需要初始化入口，不需要函数特别声明
-- Windows系统下执行文件格式PE格式，动态库需要一个DllMain函数做初始化入口，  
-  通常在导出函数的声明时需要有_declspec(dllexport)关键字

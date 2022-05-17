@@ -10,7 +10,7 @@
 
 [添加目录](cmake添加文件夹.md)
 
-[cmake-package](cmake_package.md)
+[引入外部依赖](cmake_package.md)
 
 [通用命令](cmake常用命令.md)
 

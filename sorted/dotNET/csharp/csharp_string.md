@@ -8,7 +8,7 @@
 
 `string a2 = @"\\server\fileshare\helloworld.cs";`, 不考虑反斜线转义作用
 
-[特殊字符](csharp_special_characters.md)
+[特殊字符](CSharp_Special_Characters.md)
 
 ## String.Split方法
 

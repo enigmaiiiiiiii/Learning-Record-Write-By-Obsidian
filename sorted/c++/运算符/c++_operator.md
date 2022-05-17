@@ -6,6 +6,4 @@
 
 [[sizeof运算符]]
 
-[类型转换](c++_convert_type.md)
-
 [[成员访问运算符]]

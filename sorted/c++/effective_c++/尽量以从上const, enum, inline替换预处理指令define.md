@@ -7,7 +7,7 @@
 
 ## 定义常量时替换\#define的两种情况
 
-- 定义const指针  [[const限定符#const指针]]
+- 定义const指针  [[c++_const#const指针]]
 - 定义类内部专属常量
 
 ## 用\#define实现的macros

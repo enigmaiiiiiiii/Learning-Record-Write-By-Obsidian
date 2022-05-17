@@ -10,11 +10,5 @@
   - 原始位置在第一项之前，也意味着必须在current之前调用
 - Reset: 重置为原始状态
 
-## IEnumerable接口
 
-- <font color="red">只有一个成员GetEnumerator, 返回IEnumerator接口的方法称为枚举器</font>
-
-## 泛型IEnumerator和IEnumerable接口
-
-- 非泛型版本返回object的引用，需要转化为实际类型, 不是类型安全的
-- `IEnumerator<T>`和`IEnumerable<T>`是类型安全的
+## 泛型版本

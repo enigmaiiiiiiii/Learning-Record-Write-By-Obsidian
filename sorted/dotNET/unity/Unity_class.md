@@ -2,38 +2,23 @@
 
 ## 静态对象
 
-[Application](Unity_Class_Application.md)
+[Application](Unity_Static_Class_Application.md)
 
-[Selection](Unity_Class_Selection.md)
-
-[Undo](Unity_Class_Undo.md)
+[Selection](Unity_Static_Class_Selection.md)
 
 [Debug](Unity_Script_Debug.md)
 
-Input
+[Gizmo](Unity_Static_Class_Gizmo.md)
 
-- 获取输入
+[Handles](Unity_Static_Class_Handles.md)
 
-SceneManager
+[Selection]
 
-- SceneManager命名空间
-- 运行时的场景管理
+[Undo](Unity_Class_Undo.md)
 
-Handles
+[Input](Unity_Static_Class_Input.md)
 
-- 辅助显示
-- 如坐标轴
-- 比Gizmos有更多功能，可以通过handles来编辑Scene中物体
-
-Gizmos
-
-- 画笔工具，通过**静态方法**完成绘制工作
-- 用于辅助显示
-- 需要在方法OnDrawGizmos()和OnDrawGizmosSelected()中完成
-  - 每帧调用
-- OnDrawGizmos(): 每帧调用，
-  - 调用时间: Unity编辑器Scene界面加载之后
-  - 每帧调用
+[SceneManager](Unity_Static_Class_SceneManager.md)
 
 ## 用于被继承的基类
 
@@ -49,6 +34,8 @@ Editor
 - OnInspectorGUI
 - 属性
   - target: 当前查看的object
+
+[EditorWindow](Unity_Base_Class_EditorWindow.md)
 
 ## TextAsset
 

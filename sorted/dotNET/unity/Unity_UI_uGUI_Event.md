@@ -1,5 +1,7 @@
 # 事件系统
 
+- 通过继承接口，实现接口方法，可以为component添加响应事件
+
 ## 支持的事件
 
 -   IPointerEnterHandler - OnPointerEnter - 当指针进入对象时调用
@@ -19,3 +21,4 @@
 -   IMoveHandler - OnMove - 发生移动事件（上、下、左、右等）时调用
 -   ISubmitHandler - OnSubmit - 按下 Submit 按钮时调用
 -   ICancelHandler - OnCancel - 按下 Cancel 按钮时调用
+

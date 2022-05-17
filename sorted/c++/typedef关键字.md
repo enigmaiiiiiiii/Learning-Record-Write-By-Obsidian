@@ -18,7 +18,7 @@
   C--指向常量的指针,底层指针-->E[cstr的类型是const char*]
   ```
 
-  [[const限定符#指针和const]]
+  [[c++_const#指针和const]]
 
   ```c++
   typedef char *pstring;  // pstring是char*的别名

@@ -1,5 +1,10 @@
 # 运算符 
 
+## typeof
+
+- 用于获取类型的[System.Type](CSharp_Reflection_Class_Type.md)实例
+- 运行时类型检查，typeof需要与给定的类型完全匹配
+
 ## new运算符
 
 - 创建类型实例

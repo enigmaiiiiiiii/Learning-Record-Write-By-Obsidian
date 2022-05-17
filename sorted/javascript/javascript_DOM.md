@@ -17,7 +17,7 @@ var x = document.getElementById("maze").style.property;
 
 按css选择器回元素
 选择`id='maze'`的元素
-参数为[css选择器](CSS选择器.md)
+参数为[css选择器](CSS_Selector.md)
 
 ```javascript
 document.querySelector("#maze");

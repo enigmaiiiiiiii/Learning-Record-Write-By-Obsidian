@@ -2,7 +2,7 @@
 
 [[互斥变量]]
 
-[[mutex类]]
+[mutex](c++_Mutex.md)
 
 [[std_lock_guard]]
 
