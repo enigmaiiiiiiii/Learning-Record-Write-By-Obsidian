@@ -44,7 +44,7 @@ openAct->setStatusTip(tr("Open an existing file"));
 
 > 即Qt:: shortcutContext设置为Qt::ApplicationShortcut
 
-## 连接
+## 添加动作
 
 > 大多数情况下，Action是应用主窗口的一个子窗口
 

@@ -22,9 +22,3 @@ QDialog::QDialog(QWidget *parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags(
   - 组件竖向自动布局
   - 通过addWidget()添加组件
 
-
-## 组件类
-
-[组件](Qt_GUI_组件.md)
-
-- 如QButton, QLabel, QTextEdit   

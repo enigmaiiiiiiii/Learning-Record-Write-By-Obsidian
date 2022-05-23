@@ -24,11 +24,9 @@ int对象初始化，将double去掉小数点变为int
 - downcast: 基类转派生类
 - upcast: 派生类转基类
 
-[static_cast](c++_Static_Cast.md)
-
 ## static_cast
 
-- 可以执行down_cast, 但是转换前必须确定可以转换
+- [static_cast](c++_Static_Cast.md)
 
 ## dynamic_cast
 

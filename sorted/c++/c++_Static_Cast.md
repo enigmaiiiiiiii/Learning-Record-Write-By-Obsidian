@@ -1,5 +1,6 @@
 # static_cast
 
+- 可以执行down_cast, 但是转换前必须确定可以转换
 
 ```c++
 #include <vector>

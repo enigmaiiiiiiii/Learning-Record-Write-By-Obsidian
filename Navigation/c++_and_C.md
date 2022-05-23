@@ -20,11 +20,13 @@
 
 [[重载运算]]
 
-## 二
+## STL
 
 [容器](c++_container.md)
 
-[[泛型算法]](c++_algorithm.md)
+[STL算法](c++_algorithm.md)
+
+## Ⅲ
 
 [[动态内存]]
 
@@ -46,9 +48,6 @@
 
 [[c++手册]]
 
-## Ⅲ
-
-[RTTI机制](c++_RTTI机制.md)
 
 ## C语言
 
@@ -65,3 +64,9 @@
 ## Bug
 
 [Bug](c++_Learn_From_Bug.md)
+
+## Ⅲ
+
+[RTTI机制](c++_RTTI机制.md)
+
+[RAII](c++_RAII机制.md)
