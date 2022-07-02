@@ -1,4 +1,4 @@
-#  cmake参考样例
+#  CMake Example
 
 ## 单文件
 
@@ -27,13 +27,9 @@ add_executable(demo ${ProjectDirectory})
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT(demo2)
-
 ADD_SUBDIRECTORY(mylib)  # cmake需要包含的子目录
-
 AUX_SOURCE_DIRECTORY(demo SrcVal)  # 打包文件夹demo用于ADD_EXCUTABLE,变量名为SrcVal
-
 ADD_EXECUTABLE(demo2 tutorial.cpp)  # 连接编译的文件,执行主程序
-
 TARGET_LINK_LIBRARIES(demo2 Mylib)  # 在项目demo2中引入Mylib链接库
 ```
 
@@ -41,7 +37,6 @@ TARGET_LINK_LIBRARIES(demo2 Mylib)  # 在项目demo2中引入Mylib链接库
 
 ```cmake
 AUX_SOURCE_DIRECTORY(. DIR_LIB_SRCS)  # 所有原文件打包在DIR_LIB_SRCS变量中
-
 ADD_LIBRARY(Mylib STATIC ${DIR_LIB_SRCS})  # DIR_LIB_SRCS生成为名为Mylib的链接静态库
 ```
 
@@ -49,15 +44,11 @@ ADD_LIBRARY(Mylib STATIC ${DIR_LIB_SRCS})  # DIR_LIB_SRCS生成为名为Mylib的
 
 ```cmake
 cmake_minimum_required(VERSION 3.16)  
-  
 project(tmp)  
-  
 # 通过修改预设变量: cmake_cxx_flags, 添加编译参数 
 set(CMAKE_CXX_FLAGS, "${CMAKE_CXX_FLAGS} 12345")   
-  
 add_executable(tmp main.cpp)  
 ```
-
 
 ## 多线程项目 
 
@@ -69,3 +60,4 @@ add_executable(demo demo.cpp)
 target_link_libraries(demo ${CMAKE_THREAD_LIBS_INIT}) 
 # 设置项目需要连接的libraries
 ```
+

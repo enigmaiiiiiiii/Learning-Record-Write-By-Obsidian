@@ -16,7 +16,7 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ```
 
 - 源文件 $\longrightarrow$ 预处理 $\longrightarrow$ 编译汇编$\longrightarrow$ 链接
-- .cpp $\longrightarrow$ .i $\longrightarrow$ .s(汇编) $\longrightarrow$.o(目标文件)$\longrightarrow$  可执行文件
+- .cpp $\longrightarrow$ .i $\longrightarrow$ .s(汇编) $\longrightarrow$.o([目标文件](C_ObjectFile.md))$\longrightarrow$  可执行文件
 - 链接
   - 处理静态库、动态库阶段, 连接成可执行程序
   - GNU中[ld](GNU_linker.md)命令设置连接选项
@@ -29,14 +29,22 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ## 参数
 
 - `-o`: 执行完整编译过程, 编译生成的[[可执行文件(executablefile)]]并命名为file
+
   > `gcc -o executable_file sourcefile` 
+  
 - `-S`:执行前两步，编译生成汇编代码,对应文件后缀.s
+
   > `gcc -S sourcefile` 
+  
 - `-E`:只激活预处理
+
   > `gcc -E hello.c > hello.txt`
+  
 - `-v`
 - `-c`: 执行前三步，编译源文件但不链接，生成后缀名为.obj或.o的目标文件 
-  > `gcc -c hello.c`
-  
-  
 
+  > `gcc -c hello.c`
+
+## 文章  
+
+[gcc构建动态链接库](GCC_Build_Shared_Libraries.md)

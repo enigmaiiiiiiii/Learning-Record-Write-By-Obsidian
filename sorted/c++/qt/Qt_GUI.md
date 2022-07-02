@@ -1,8 +1,6 @@
 # GUI
 
-[主窗口框架](Qt_GUI_MainWindow_Frame.md)
-
-[QWindow](Qt_GUI_QMainWindow.md)
+[主窗口框架QMainWindow](Qt_GUI_MainWindow_Frame.md)
 
 [QWidget](Qt_GUI_QWidget.md)
 
@@ -12,6 +10,9 @@
 
 [富文本](Qt_GUI_Rich_Text.md)
 
+[快捷键](Qt_Shortcut.md)
+
+[WindowFlags](Qt_WindowFlags.md)
 
 ## UI系统两个主要工作
 
@@ -28,6 +29,7 @@ UI界面编辑方式
 - QtCreator编辑工具可以关联已存在的接口和槽
 - 通过[connect()](Qt_Function_Connect.md)函数
 
-## QPushButton
+## II
 
-- check: 是否可以在按下/弹起间切换
+setWindowFlag(Qt::Popup): 弹出窗口，点击窗口外关闭
+

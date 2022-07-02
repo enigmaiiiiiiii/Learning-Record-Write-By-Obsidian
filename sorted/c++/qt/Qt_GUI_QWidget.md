@@ -18,13 +18,19 @@ widget构造函数接受两个参数
 
 ## QWidget的子类
 
-[组件](Qt_GUI_组件.md)
-
-- 如QButton, QLabel, QTextEdit   
+[组件](Qt_GUI_组件.md) ,  如QButton, QLabel, QTextEdit   
 
 [对话框](Qt_GUI_Dialog.md)
 
-[QWidget其它子类](Qt_GUI_QWidget_inherit.md)
+[Layout](Qt_GUI_Layout.md)
+
+[GroupBox]
+
+[QDockWidget](Qt_GUI_QDockWIdget.md), 停靠窗口，特殊的尺寸设置方式
+
+## QWidget属性
+
+[尺寸位置](Qt_GUI_Widget_Size.md)
 
 ## 实用方法
 

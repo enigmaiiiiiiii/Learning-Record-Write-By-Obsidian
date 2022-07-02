@@ -2,8 +2,10 @@
 
 [命令大全](Vim_CommandSet.md)
 
-[[vim编辑模式]]
+[Vim编辑模式](Vim_Edit_Mode.md)
 
-[[jetbrain中的VIM插件配置方法]]
+[JetBrain中的vim插件配置](Vim_In_Jetbrain.md)
 
 [[Linux中的vim编辑器]]
+
+[查找替换](Vim_Replace_Command.md)

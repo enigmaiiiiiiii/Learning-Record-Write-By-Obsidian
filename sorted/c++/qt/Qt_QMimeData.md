@@ -8,18 +8,23 @@
 ```c++
 ```
 
-- format()函数按照优先级返回可用格式的列表。
+format()函数按照优先级返回可用格式的列表。
 
 ```c++
+QByteArray QMimeData::data(const QString &mimeType) const
 ```
 
-- data()函数返回与MIME类型相关联的原始数据
+返回mimeType关联的原始数据
 
 ```c++
 void QMimeData::setData(const QString &mimeType, const QByteArray &data)
 ```
 
 setData()允许为MIME类型设置数据
+
+- 用于使用自定义数据类型
+
+> 必须使用Q_DECLARE_METATYPE()宏将其注册为Qt元类型，并为其实现流运算符。然后，必须使用qRegisterMetaTypeStreamOperators()函数注册流运算符。
 
 ```c++
 ```

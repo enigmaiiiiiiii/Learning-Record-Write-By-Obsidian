@@ -1,7 +1,7 @@
 # std::atomic
 
 - `std::atomic`实例化和全特化定义一个原子类型
-- `std::atomic<T> atom;`: 模板类型参数T为可[拷贝构造](拷贝构造函数.md)和可[拷贝赋值](拷贝赋值运算符.md)的类型
+- `std::atomic<T> atom;`: 模板类型参数T为可[拷贝构造](c++_Copy_Constructor.md)和可[拷贝赋值](拷贝赋值运算符.md)的类型
 
 ## 构造函数
 

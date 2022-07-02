@@ -18,7 +18,7 @@
 
 [const限定符](c++_const.md)
 
-[const表达式](c++_constexpr.md)
+[const表达式](sorted/c++/c++_constexpr.md)
 
 [初始化](c++初始化.md)
 

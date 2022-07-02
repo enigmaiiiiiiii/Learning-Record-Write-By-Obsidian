@@ -4,16 +4,20 @@
 
 ## ADD_LIBRARY
 
-- 二进制library
+二进制library
 
-  > `ADD_LIBRARY(libname [SHARED | STATIC | MODULE] [EXCLUDE_FROM_ALL] SRC_LIST)`
-  - 生成[动态库或静态库](GCC.md)
-  - <font color="gold">可用于子文件CMakeList.txt</font>
-  - SHARED 动态库
-  - STATIC 静态库
-  - MODULE 在使用dyld的系统有效,若不支持dyld,等同于SHARED
-  - EXCLUDE_FROM_ALL 表示该库不会被默认构建
-- object library
+```cmake
+ADD_LIBRARY(libname [SHARED | STATIC | MODULE] [EXCLUDE_FROM_ALL] SRC_LIST)
+```
+  
+- 生成[动态库或静态库](GCC.md)
+- <font color="gold">可用于子文件CMakeList.txt</font>
+- SHARED 动态库
+- STATIC 静态库
+- MODULE 在使用dyld的系统有效,若不支持dyld,等同于SHARED
+- EXCLUDE_FROM_ALL 表示该库不会被默认构建
+  
+object library
 
   > `ADD_LIBRARY(archive OBJECT archive.cpp zip.cpp lzma.cpp)`  
   - 由源文件产生连接文件(.o)

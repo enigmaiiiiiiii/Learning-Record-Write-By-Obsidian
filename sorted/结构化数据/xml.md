@@ -1,5 +1,6 @@
 # xml
 
+- 可扩展标记语言(Extensible Markup Language)
 - 语法类似[HTML](html.md)
 - 没有预定义标签
 

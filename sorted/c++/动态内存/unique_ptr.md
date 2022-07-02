@@ -1,7 +1,7 @@
 # unique_ptr
 
 - 只能有一个unique_ptr指向给定对象,所以不支持拷贝或赋值
-  - 例外，可以拷贝或赋值一个将要被销毁的unique_ptr,  [[对象移动]]
+  - 例外，可以拷贝或赋值一个将要被销毁的unique_ptr,  [[c++_Object_Move]]
   
 
   ```c++

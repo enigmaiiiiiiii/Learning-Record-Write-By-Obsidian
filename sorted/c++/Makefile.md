@@ -12,3 +12,6 @@ clean:rm -f main.o sum.o hello
 ```
 
 
+```shell
+make
+```

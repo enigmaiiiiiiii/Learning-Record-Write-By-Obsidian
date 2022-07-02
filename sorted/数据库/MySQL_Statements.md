@@ -2,7 +2,13 @@
 
 > 全大写单词表示MySQL语句
 
-- 使用数据库
+启动数据库
+
+```shell
+mysql -u root -p
+```
+
+使用数据库
 
 ```mysql
 USE dbname;
@@ -37,3 +43,4 @@ SHOW COLUMNS FROM dbtables
 ```mysql
 SELECT user FROM mysql.user
 ```
+

@@ -19,7 +19,7 @@
 
 [转换构造函数](c++_Class_Convert_Constructor.md)
 
-[默认构造函数](c++_Default_Construct默认构造函数.md)
+[默认构造函数](c++_Default_Construct.md)
 
 [合成构造函数](c++_合成_Constructor.md)
 

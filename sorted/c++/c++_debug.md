@@ -2,4 +2,4 @@
 
 [GDB](GDB.md)
 
-[linux命令nm](Linux_nm.md)
+[linux命令nm](Linux_Command_nm.md)

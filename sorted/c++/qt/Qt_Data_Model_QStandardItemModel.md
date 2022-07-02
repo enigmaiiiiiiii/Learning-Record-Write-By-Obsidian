@@ -25,5 +25,3 @@ Qt::ItemFlag
 |Qt::ItemIsTristate	|ItemIsAutoTristate| |
 |Qt::ItemNeverHasChildren	|128||
 |Qt::ItemIsUserTristate	|256||
-
-[项角色](Qt_Data_Model_DisplayRole.md)

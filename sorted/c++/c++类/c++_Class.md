@@ -20,7 +20,7 @@
 
 [[成员数据指针]]
 
-[[c++_Class_Member_Function_Pointer]]
+[成员函数指针](c++_Class_Member_Function_Pointer.md)
 
 ## 类数据成员初始化
 

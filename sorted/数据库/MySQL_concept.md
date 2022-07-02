@@ -1,5 +1,6 @@
 # concept
 - MySql属于基于客户机-服务器的DBMS(数据库管理系统)
+- MySql服务是一个进程，区别于SQLite依附于应用程序
 
 ```mermaid
 flowchart TB
@@ -20,7 +21,6 @@ D --> F
 E --> D
 E --> F
 ```
-
 
 ## Mysql组件
 
