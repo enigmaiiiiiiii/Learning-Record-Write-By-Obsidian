@@ -1,12 +1,8 @@
 # 模块
 
 - project级目录
-- 包含module-info.class的目录
-- module-info.class有module-info.java编译得到
-
-哪些文件是模块
-
-- `.Jar`压缩包, JMOD文件
+- 包含module-info.class的目录, 由module-info.java编译得到
+- 模块可以打包成`.jar`压缩包
 
 ## 创建一个module
 

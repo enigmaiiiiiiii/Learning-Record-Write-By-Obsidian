@@ -1,7 +1,5 @@
 # 简介
 
-用途
-
 - 档案通过在根目录或`.jar`所在的根目录包含module描述符`module-info.class`，成为jar模块
 
 简介

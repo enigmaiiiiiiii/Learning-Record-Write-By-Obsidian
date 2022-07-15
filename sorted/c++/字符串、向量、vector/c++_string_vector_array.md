@@ -5,7 +5,7 @@
 
 [迭代器](c++_iterator.md)
 
-[c++_array](c++_array.md)
+[c++_Array](c++_Array.md)
 
 > **string**和**vector**的下标要求是**无符号类型(unsigned int)**
 > **数组**的下标可以是**负值**, 属于内置下标

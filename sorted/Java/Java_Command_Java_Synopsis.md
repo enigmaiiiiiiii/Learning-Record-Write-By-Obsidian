@@ -42,9 +42,11 @@ java [options] source-file [args...]
 
 `-jar jarfile`
 
-- 执行封装在[JAR文件](Java_Jar_File.md)中的程序。
-- jarfile参数是JAR文件的名称
-- jar文件: 该文件的清单包含一行`Main-Class:classname`，该行使用公共静态`void main(String[] args)`方法定义类，该方法用作应用程序的起点。
+- 执行jarfile中的程序, jarfile为封装的[Jar包](Java_Jar_File.md)
+  - 包含清单文件
+  - 清单文件包含一行`Main-Class:classname`，
+  - 该行使用公共静态`void main(String[] args)`方法定义类，
+  - 该方法用作应用程序的起点。
 - 使用`-jar`指定的JAR文件是所有用户类的源, 而其他类路径设置将被忽略
 
 `-m or --module module[/mainclass]`

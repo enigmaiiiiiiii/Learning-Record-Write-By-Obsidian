@@ -14,10 +14,18 @@ Name: Woozle.class
 Name: com/mycompany/mypkg/
 ```
 
-编辑清单
+## 编辑清单
+
+语法: 
 
 ```shell
 jar cfm JARFileName ManifestFileName
+```
+
+创建一个包含清单的JAR文件:
+
+```shell
+jar cfm MyArchive.jar manifest.mf com/mycompany/mypkg/*.class
 ```
 
 更新清单, 将需要增加的内容放到文件manifest-additions.mf
@@ -29,4 +37,9 @@ jar ufm MyArchive.jar manifest-additions.mf
 ***
 
 清单文件必须以换行符结束
+
+```
+Manifest-Version: 1.0
+Main-Class: com.mycompany.mypkg.MainAppClass
+```
 

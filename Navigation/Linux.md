@@ -20,6 +20,8 @@
 
 [账户管理](Linux账户管理.md)
 
+[压缩备份](Linux_File_Back_Command.md)
+
 [系统](Linux_System_Command.md)
 
 [应用程序](Linux_Application_Command.md)

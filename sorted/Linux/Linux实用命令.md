@@ -69,14 +69,7 @@ apt-file search filename
 - `arp`:查看和修改ARP高速缓存, 主机内ARP table中存储着其他主机的MAC地址
 - `nestat`显示网络状态
 
-## 压缩
-
-`tar`
-
-```shell
-tar -zcvf package.tar.ge file1 dir2
-```
 
 ## 辅助命令
 
-- [[grep命令]]
+- [grep](Linux_Command_Grep.md)

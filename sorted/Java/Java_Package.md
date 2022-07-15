@@ -1,17 +1,12 @@
 # Package: 包
 
-- 实用包将java类组织起来，主要原因是确保类名称的唯一性
+- 使用包将java类组织起来，主要原因是确保类名称的唯一性
+- 通过不同的文件夹保存同名类文件
 
 ```java
 java.time.LocalDate today = java.time.LocalDate.now();
 ```
 
-- import: 导入包
-
-```java
-import java.time.LocalDate;
-LocalDate today = LocalDate.now();
-```
 
 java中的import与c++中的`#include`不同
 
@@ -20,7 +15,27 @@ java中的import与c++中的`#include`不同
 - package类似c++中的[namespace](c++_NameSpace.md)
 - import类似c++中的[using](c++_Using.md)
 
-## 静态导入
+## 将类放入包
+
+必须将包的名字放在源文件开头
+
+```java
+package com.horstmann.corejava;
+```
+
+- 表示将类放入`com.horstmann.corejava`包中
+- 包含该语句的源文件应放在子目录`com/horstmann/corejava`下
+
+## 导入包
+
+- import: 导入包
+
+```java
+import java.time.LocalDate;
+LocalDate today = LocalDate.now();
+```
+
+静态导入
 
 ```java
 import static java.lang.System.*;
@@ -31,15 +46,6 @@ import static java.lang.System.*;
 ```java
 out.println("Good bye");
 ```
-
-## 将类放入包
-
-```java
-package com.horstmann.corejava;
-```
-
-- 表示将类放入`com.horstmann.corejava`包中
-- 包含该语句的源文件应放在子目录`com/horstmann/corejava`下
 
 ## 编译器在编译源文件时不检查目录结构
 
