@@ -6,15 +6,17 @@
 
 [方法](Java_Class_Method.md)
 
+[访问权限](Java_Access_Permission.md)
+
 [static关键字](Java_Keyword_Static.md)
 
 [final关键字](Java_Keyword_Final.md)
 
-[访问权限](Java_Access_Permission.md)
-
 [接口](Java_Interface.md)
 
 [继承](Java_Inherit.md)
+
+[类型转换](Java_Type_Convert.md)
 
 [Object类](Java_Object_Class.md)
 

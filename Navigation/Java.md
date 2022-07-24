@@ -12,7 +12,13 @@
 
 [面向对象](Java_Object_Oriented.md)
 
+[字符串](Java_String.md)
+
 ## II
+
+[集合](Java_Collection.md)
+
+[I/O](Java_IO.md)
 
 [异常](Java_Exception.md)
 
@@ -22,9 +28,13 @@
 
 [调试信息](Java_Debug_Info.md)
 
-[JVM内存分区](Java_JVM_Memory_Section.md)
+[JVM](Java_JVM.md)
 
 [类型转换](Java_Conversion.md)
+
+## IIII
+
+[隐式创建实例](Java_Create_Instance_Implicitly.md)
 
 ## Bug
 

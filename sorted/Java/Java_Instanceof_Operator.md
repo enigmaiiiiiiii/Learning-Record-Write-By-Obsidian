@@ -5,12 +5,13 @@ RelationalExpression instanceof ReferenceType
 RelationalExpression instanceof Pattern
 ```
 
-发生编译错误的情况
+
+## 发生编译错误的情况
 
 1. RelationalExpression必须是[引用类型]或null, 否则发生编译错误
 2. RelationalExpression必须downcast与引用类型兼容, 否则发生编译错误
 
-返回值
+## 返回值
 
 - RelationalExpression是null, 返回false
 - RelationalExpression强制转换为ReferenceType不引发ClassCastException异常，返回true
