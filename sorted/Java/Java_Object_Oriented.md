@@ -20,5 +20,6 @@
 
 [Object类](Java_Object_Class.md)
 
-[枚举类型](Java_Enum_Type.md)
+[嵌套类](Java_Nested_Class.md)
 
+[枚举类型](Java_Enum_Type.md)

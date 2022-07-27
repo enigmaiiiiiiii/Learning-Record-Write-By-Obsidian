@@ -1,7 +1,5 @@
 # 函数式接口
 
-[实现函数式接口的对象](Java_Object_Implement_Functional_Interface.md)
-
 ## 定义
 
 - 没有声明为 sealed 的接口
@@ -16,13 +14,29 @@ interface Runnable {
 }
 ```
 
-
+包含Object中的方法的接口不是函数式接口
 
 ```java
 interface NonFunc {
     boolean equals(Object obj);  // 不是函数式接口
 }
 ```
+
+## 函数式接口的实例
+
+[lambda表达式](Java_Lambda.md)
+
+[方法引用](Java_Method_References.md)
+
+方法引用
+
+- `ClassName::MethodName`
+- `this::instanceMethod`
+- `super::instanceMethod`
+
+构造器引用
+
+- `ClassName::new`
 
 ## 示例
 
@@ -50,7 +64,6 @@ public class FunctionCaller {
 
 - 编译器会检查该接口是否为函数式接口
 - javadoc会指出这是一个函数式接口
-
 
 ## 常用函数式接口
 

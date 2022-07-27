@@ -11,3 +11,5 @@
 [数组](Java_Array.md)
 
 [变量, 对象](Java_Variable.md)
+
+[常量](Java_Constant.md)
