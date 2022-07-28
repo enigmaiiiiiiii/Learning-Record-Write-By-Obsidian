@@ -1,28 +1,32 @@
-# 术语 概念
+# 概念
 
-## 概念
+## Git机制
 
-- 文件快照，而非差异比较
+- 保存文件快照，而非差异比较
 - 一般只添加数据，几乎不会导致不可恢复的操作
 
-## 术语
-
-工作区: Working Directory
+## 工作区: Working Directory
 
 - 对项目的某个版本独立提取出来的内容
 - 从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改。
 
-暂存区: Staging Area
+## 暂存区: Staging Area
 
 - 一个文件，保存了下次将要提交的文件列表信息，一般在 Git 仓库目录中
 - 按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”
 
-Git仓库目录: .git directory(Repository)
+## Git仓库目录: .git directory(Repository)
 
 - Git 用来保存项目的元数据和对象数据库的地方
 - 这是 Git 中最重要的部分，从其它计算机克隆仓库时，复制的就是这里的数据
 
-Untracked files
+## Stage file过程
+
+- 计算校验和
+- 保存版本信息到git repository
+- 将校验和添加的暂存区
+
+## Untracked files
 
 - Git之前的提交中没有的文件
 
@@ -30,11 +34,11 @@ Untracked files
 
 [远程仓库](Git_Remote_Respositories.md)
 
-## 三种状态
+## 状态
 
 - 已提交: committed 数据已经安全的保存在本地数据库中
-- 已修改: modified  修改了文件, 还没保存到数据中
-- 已暂存: staged  对一个已修改的文件的当前版本做了标记，使之包含在下次提交的快照中
+- 已修改: modified 修改了文件, 还没保存到数据中
+- 已暂存: staged 对一个已修改的文件的当前版本做了标记，使之包含在下次提交的快照中
 
 ## 工作流程
 

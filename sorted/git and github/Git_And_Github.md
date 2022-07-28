@@ -2,9 +2,11 @@
 
 ## I
 
-[术语概念](Git_Concept.md)
+[Git概念](Git_Concept.md)
 
-[git基础](Git_basic.md)
+[git基础](Git_Install_And_Use.md)
+
+[Branch](Git_Branch.md)
 
 [git远程](Git_Remote.md)
 

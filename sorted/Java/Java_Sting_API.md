@@ -1,5 +1,10 @@
 # String API
 
+构造函数
+
+- String(): 创建一个空的String对象
+- String(byte[] bytes, Charset charset): 用charset字符集解码bytes字节数组来构造String对象
+
 连接字符串
 
 - `s1.concat(s2)`: 字符串s1后接字符串s2
@@ -26,3 +31,8 @@
 - `indexOf(s)`: 第一个字符串s出现的下标，不存在返回-1
 - `indexOf(s, fromIndex)`
 - `str.charAt(index)`: 返回字符串中index处的字符, $index \in [0, s.length() - 1]$
+
+转换为字节数组
+
+- `getBytes()`: 返回字符串的byte数组
+- `getBytes(charsetName)`: 使用字符集charsetName, 返回字符串的byte数组
