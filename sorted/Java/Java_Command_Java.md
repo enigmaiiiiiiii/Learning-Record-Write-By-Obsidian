@@ -21,8 +21,6 @@
 
 [高级选项](Java_Command_Java_Advanced_Options.md)
 
-## 运行单个源文件
-
 ## JDK_JAVA_OPTIONS 运行环境变量
 
 - 内容是由空格字符分隔的参数列表
