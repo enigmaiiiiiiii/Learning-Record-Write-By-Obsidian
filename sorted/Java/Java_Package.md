@@ -1,12 +1,14 @@
 # Package: 包
 
+- 表示一个目录, subpackages表示子目录
 - 使用包将java类组织起来，主要原因是确保类名称的唯一性
-- 通过不同的文件夹保存同名类文件
+  - 通过不同的文件夹保存同名类文件
+  > package p.q: p\\q on Windows, p/q/r on 其他操作系统
+  > package p中的类sample: 是在p目录中以文件`sample.java`表示
 
 ```java
 java.time.LocalDate today = java.time.LocalDate.now();
 ```
-
 
 java中的import与c++中的`#include`不同
 
@@ -60,11 +62,3 @@ package com.mycompany;
 - 如果源文件没有在子目录com/mycompany下
   - 如果不依赖其他包， 则不会出现编译错误
   - 即使不出现编译错误，最终程序将无法运行
-
-## 作用域
-
-- public class: 可以被所有类访问
-- private class: 只能被同一个包的其他类访问
-
-
- 

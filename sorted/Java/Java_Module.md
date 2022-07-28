@@ -1,8 +1,22 @@
 # 模块
 
+- 模块是一组为重用而设计的包
+- 是包含module-info.class(module-info.java编译得到)的目录
+- module-info.java文件应包含
+  - 声明模块名
+  - 列出该模块导出的包(以允许其他模块重用);
+  - 列出该模块所需的其他模块(以便重用它们导出的包)。
+- 开发环境可能会以模块名命名目录
 - project级目录
-- 包含module-info.class的目录, 由module-info.java编译得到
 - 模块可以打包成`.jar`压缩包
+- 将package组织成一个模块，模块中由一个或多个package目录表示
+  - 其中一个目录包含module-info.java文件
+  - 便捷但不是必须
+
+> 比如:
+> module a.b.c代表整个系统的`a.b.c`目录
+> 模块的声明由a.b.c目录下的文件module-info.java表示。
+> module中的package `p.q.r`, module `a.b.c`包含目录树p/q/r
 
 ## 创建一个module
 

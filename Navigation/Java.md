@@ -4,7 +4,7 @@
 
 [安装](Java_Environment_Install.md)
 
-[术语概念](Java_Terms_Concept.md)
+[术语概念](Java_Terms_And_Concept.md)
 
 [Java命令行工具](Java_Tools.md)
 
