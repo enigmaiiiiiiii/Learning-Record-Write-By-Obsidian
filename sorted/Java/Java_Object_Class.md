@@ -15,11 +15,3 @@ Employee e = (Employee)obj;
 
 [toString()方法](Java_Object_Class_ToString_Method.md)
 
-## @Override标记
-
-[参考c++中的override](c++_Virtual_Function.md#override关键字)
-
-## 包装器
-
-[包装器](Java_Boxer.md)
-

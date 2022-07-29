@@ -43,11 +43,26 @@
 
 ### 解决冲突
 
-
-
 ## 删除分支
 
 - `git branch -d <branch>`
+
+## 管理分支
+
+- `git branch`: 显示所有分支名称
+- `git branch -v`: 显示分支名称和最后一次提交信息
+- `git branch --merged <branch>`: 查看**branch**合并过的分支, 省略branch默认为当前分支
+- `git branch --no-merged <branch>`: 查看branch未合并过的分支, 省略branch默认为当前分支
+
+***
+
+- `git branch -d <branch>`: 删除分支
+- `git branch --move <branch> <new-branch-name>`: 改变分支名称
+
+改变本地分支名称后，删除远程旧分支:
+
+- `git push --set-upstream origin <newbranch>`: 让其他人看到改变后的分支
+- `git push origin --delete <branch>`: 删除远程旧分支
 
 ## 相对引用
 

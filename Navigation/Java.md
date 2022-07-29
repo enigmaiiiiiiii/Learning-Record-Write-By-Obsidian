@@ -28,11 +28,14 @@
 
 ## III
 
+[Java BEAN](Java_BEAN.md)
+
 [调试信息](Java_Debug_Info.md)
 
 [JVM](Java_JVM.md)
 
 [类型转换](Java_Conversion.md)
+
 
 ## IIII
 

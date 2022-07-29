@@ -24,3 +24,17 @@ Can load library: libawt_xawt.so
 - 不要通过反射来提高访问权限
 - 当你必须使用反射时，确保<font color="red">直接调用者(方法)</font>与恶意代码隔离
   - 通过声明调用为private或final
+
+## No.5
+
+`The import javax.servlet cannot be resolved`
+
+- 要使用servlet, 需要先下载tomcat
+
+方案一:
+
+- 使用javac -cp指定servlet-api.jar类文件搜索路径, 连接源文件完成编译
+
+```shell
+javac -cp /usr/share/tomcat/lib/servlet-api.jar sample.java
+```

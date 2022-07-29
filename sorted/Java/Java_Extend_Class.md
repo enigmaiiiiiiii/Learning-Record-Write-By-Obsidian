@@ -36,6 +36,10 @@ public class Manager extends Employee {}
 
   > 超类为public, 子类方法一定为public
   
+- @Override标记
+
+[参考c++中的override](c++_Virtual_Function.md#override关键字)
+
 ## 方法调用
 
 - 静态绑定: private方法，static方法， final方法或者构造器

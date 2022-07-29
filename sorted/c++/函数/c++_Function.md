@@ -6,6 +6,8 @@
 
 [[函数声明]]
 
+[函数重载](c++_Function_Overload.md)
+
 [内联函数](c++_inline_function.md)
 
 [返回类型](c++_funtion_return_type.md)

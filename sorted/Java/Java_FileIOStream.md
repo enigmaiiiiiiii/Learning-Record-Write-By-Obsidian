@@ -1,4 +1,5 @@
-# IO Stream
+# FileIO Stream
+
 
 ## FileOutputStream
 
@@ -12,7 +13,8 @@
 
 ***
 
-- `public void write()`: 向文件写入原始字节(8bit)流, 如图像数据
+- `public void write(int b)`: 向文件写入原始字节(8bit)流, 如图像数据
+  - b为原始字节, 写如int类型的二进制的低八位作为字节数据
 - `public void write(byte[] b)`:
   - 向文件写入b.length个字节
 
@@ -24,7 +26,7 @@
 - public int read(): 从文件读取一个字节
   - 如果文件已经读取完毕，则返回-1
   > 返回-1，不是读取读到-1， 而是读取到EOF
-  - 返回转为int的byte
+  - 返回转为int的byte(discarding high-order bits)
 
 读到byte数组
 
