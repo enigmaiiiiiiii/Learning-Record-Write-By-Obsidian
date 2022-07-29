@@ -18,13 +18,13 @@
 
 [集合](Java_Collection.md)
 
-[I/O](Java_IO.md)
-
 [异常](Java_Exception.md)
 
-[反射](Java_Reflect.md)
+[I/O](Java_IO.md)
 
 [多线程](Java_Thread.md)
+
+[反射](Java_Reflect.md)
 
 ## III
 

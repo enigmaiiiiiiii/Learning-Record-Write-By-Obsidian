@@ -7,7 +7,7 @@
 
 ## 写入数据
 
-- PrintWriter类
+- PrinterWriter类
 - File类或文件名字符串可用作构造参数
 
 ## 读取数据

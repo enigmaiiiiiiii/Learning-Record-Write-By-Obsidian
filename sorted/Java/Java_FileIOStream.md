@@ -1,6 +1,5 @@
 # FileIO Stream
 
-
 ## FileOutputStream
 
 - 用于向文件写入原始字节(8bit)流
@@ -8,8 +7,8 @@
 ***
 
 - 创建FileOutputStream对象, 
-  - `new FileOutputStream(file)`: 清空内容, 从头写入
-  - `new FileOutputStream(file, true)`: 从文件末尾开始写入
+  - `public FileOutputStream(File file)`: 清空内容, 从头写入
+  - `public FileOutputStream(File file, boolean append)`: append为true, 从文件末尾开始写入
 
 ***
 

@@ -2,10 +2,13 @@
 
 - 扩展自FilterInputStream/FilterOutputStream
 - 创建时会创建一个内部的缓冲区数组
+- 通过减少IO次数提高效率
+
+***
+
 - 创建BufferInputStream/BufferOutputStream对象, 
   - `BufferedInputStream(InputStream in)`: 将in流转为缓冲流
   - `BufferedInputStream(InputStream in, int size)`: 将in流转为缓冲流, 缓冲区大小设置为size
-- 使用FileInputStream/FileOutputStream 中的read(byte[] b)/write(byte[] b)方法实现
 
 ## 字段
 
@@ -18,7 +21,7 @@ input
   - 范围[0, count]
 - markpos: 调用最后一个mark()方法时pos字段的值
   - 范围[-1, pos]
-- marklimit: 
+- marklimit:
 
 output
 
