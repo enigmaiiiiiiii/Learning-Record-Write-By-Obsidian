@@ -8,7 +8,7 @@
 
 ## 字节流
 
-[InputStream/OutPutStream])
+[InputStream/OutPutStream]
 
 [FileInputStream/FileOutputStream](Java_FileIOStream.md)
 
