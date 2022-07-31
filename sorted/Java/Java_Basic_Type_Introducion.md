@@ -64,7 +64,6 @@ System.out.println(c - d);
 // 输出0.1000000000000009
 ```
 
-
 ## boolean
 
 - 只能用true或false赋值
@@ -88,9 +87,12 @@ System.out.println(c - d);
 char a1 = 'A';
 char a2 = 65;
 // a1 等于 a2;
+
+// Unicode编码 to characters
+int code = 0x41;  // Unicode编码
+char c = (int)code;  // c = 'A'
 ```
 
 码点
 
 - 与编码表的某个字符对应的代码值
-

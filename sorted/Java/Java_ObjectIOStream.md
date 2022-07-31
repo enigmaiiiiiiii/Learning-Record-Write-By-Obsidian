@@ -16,7 +16,7 @@
 
 ## 特殊处理序列化/反序列化处理的对象
 
-需要实现以下方法: 
+需要实现以下方法:
 
 ```java
 private void writeObject(java.io.ObjectOutputStream stream) 

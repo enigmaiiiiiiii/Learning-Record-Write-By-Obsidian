@@ -24,6 +24,8 @@
 - 在try Block退出时执行
 - 即使发生异常也会执行Finally Block
 - try语句可以只有finally, 没有catch
+- finally中的返回值会覆盖try中的返回值
 
-## try-with-resources Statement
+## 使用try-with-resources关闭资源
 
+[使用try-with-resources关闭资源](Java_Try_With_Resources.md)

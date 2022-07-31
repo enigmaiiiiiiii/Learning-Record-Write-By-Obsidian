@@ -17,3 +17,7 @@ ArrayList<Integer> list = new ArrayList<>();
 list.add(3);  // 相当于list.add(Interger.valueOf(3));
 int n = list.get(3);  // 相当于list.get(3).intValue();
 ```
+
+## 静态方法
+
+- `Integer.toHexString(c)`: 将整数转换为十六进制字符串

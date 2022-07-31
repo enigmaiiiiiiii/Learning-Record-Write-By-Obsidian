@@ -4,8 +4,6 @@
 
 [引用类型](Java_Reference_Type.md)
 
-[包装器](Java_Boxer.md)
-
 [运算符](Java_Operator.md)
 
 [关键字](Java_Keywords.md)

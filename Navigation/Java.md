@@ -20,9 +20,9 @@
 
 [异常](Java_Exception.md)
 
-[Stream](Java_Stream.md)
-
 [I/O](Java_IO.md)
+
+[Stream](Java_Stream.md)
 
 [多线程](Java_Thread.md)
 
