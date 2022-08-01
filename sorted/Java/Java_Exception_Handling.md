@@ -14,7 +14,6 @@
 - 包含一个或多个可能引发异常的代码
 - 如果try语句中抛出了异常，程序将跳过try语句块的其余代码
 
-
 ## Catch Block
 
 [Catch Block](Java_Exception_Catch_Block.md)

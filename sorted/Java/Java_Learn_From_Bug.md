@@ -38,3 +38,23 @@ Can load library: libawt_xawt.so
 ```shell
 javac -cp /usr/share/tomcat/lib/servlet-api.jar sample.java
 ```
+
+## No.6
+
+只读取一行的原因
+
+- BufferedReader中有buffer数组, readLine()方法, 会将
+
+```java
+public class Sample {
+    public static void main(String[] args) {
+        FileInputStream fin = new FileInputStream("demo.txt");
+        InputStreamReader byteToChar = new InputStreamReader(fin);
+        BufferedReader br = new BufferedReader(byteToChar);
+
+        while (fin.read() != -1) {
+            System.out.println(br.readLine());
+        }
+    }
+}
+```

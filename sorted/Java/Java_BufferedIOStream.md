@@ -6,7 +6,7 @@
 
 ***
 
-- 创建BufferInputStream/BufferOutputStream对象, 
+- 创建BufferInputStream/BufferOutputStream对象
   - `BufferedInputStream(InputStream in)`: 将in流转为缓冲流
   - `BufferedInputStream(InputStream in, int size)`: 将in流转为缓冲流, 缓冲区大小设置为size
 
