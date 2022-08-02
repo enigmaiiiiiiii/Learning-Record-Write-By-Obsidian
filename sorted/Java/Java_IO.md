@@ -35,4 +35,10 @@ IOStreamWriter/IOStreamReader: **转换** 字节流为字符流
 
 BufferedReader/BufferedWriter: **缓冲**的字符流
 
-[PrintWriter/BufferedReader](Java_PrintWriter_BufferedReader.md): **行操作** 缓冲字符流
+- 提供了从文件读取字符的方法
+  - read()
+  - readLine()
+- 创建BufferedReader对象
+  - 通过Reader构建
+
+[PrintWriter](Java_PrintWriter.md): 支持**行操作** 的字符输出流

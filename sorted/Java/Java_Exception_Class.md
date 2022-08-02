@@ -16,16 +16,16 @@
 - RuntimeException: 相当于c++中的logic_error
 
   > 异常情况
-  >> 错误的类型转换  
-  >> 数组访问越界  
-  >> 访问null指针  
+  >> 1. 错误的类型转换  
+  >> 2. 数组访问越界  
+  >> 3. 访问null指针  
 
 - 其他Exception: 相当于c++中的runtime_error
 
-  > 异常情况, 如 
-  >> 在文件结束后读取后面的数据  
-  >> 打开一个不存在的文件  
-  >> 通过字符串查找一个不存在Class  
+  > 异常情况
+  >> 1. 在文件结束后读取后面的数据  
+  >> 2. 打开一个不存在的文件  
+  >> 3. 通过字符串查找一个不存在Class  
 
 ## 自定义异常
 
@@ -36,9 +36,23 @@
 
 ```java
 class FileFormatException extends IOException {
+
     public FileFormatException() {}
+
     public FileFormatException(String gripe) {
         super(gripe);
+    }
+
+    public Exception(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public Exception(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+
+    }
+
+    Exception(Throwable cause) {
+        super(cause);
     }
 }
 ```
