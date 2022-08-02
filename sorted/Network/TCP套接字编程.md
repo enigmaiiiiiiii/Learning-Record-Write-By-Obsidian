@@ -1,10 +1,10 @@
 # TCP套接字编程
 
-[[UDP套接字编程]]
+[UDP套接字编程](UDP套接字编程.md)
 
-[[socket]]
+[socket](socket.md)
 
-[[套接字]]
+[套接字](套接字.md)
 
 ```mermaid
 flowchart LR 

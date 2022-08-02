@@ -20,7 +20,7 @@
   - LAST_ACK:等到客户端对结束报文段的最后一次确认，一旦确认完成，连接彻底关闭
     - 服务端在close_wait状态发送[FIN](TCP报文头部结构.md)报文
 
-> Linux中通过[[netstat]]命令可以查看当前状态
+> Linux中通过[netstat](netstat.md)命令可以查看当前状态
 
 ## 常规流程
 

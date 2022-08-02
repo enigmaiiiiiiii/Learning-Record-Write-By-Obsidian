@@ -1,8 +1,8 @@
 # UDP套接字编程
 
-[[UDP]]
+[UDP](UDP.md)
 
-[[套接字]]
+[套接字](套接字.md)
 
 ```mermaid
 flowchart TB 
