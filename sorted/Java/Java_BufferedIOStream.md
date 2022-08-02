@@ -1,7 +1,7 @@
 # 缓冲流: BufferInputStream/BufferOutputStream 
 
 - 扩展自FilterInputStream/FilterOutputStream
-- 创建时会创建一个内部的缓冲区数组
+- 创建时会创建一个内部的缓冲区数组(byte[] buf)
 - 通过减少IO次数提高效率
 
 ***
@@ -37,3 +37,6 @@ output
 
 input
 
+- read()读取一个字节
+  - 返回读取的字节, 如果读取到文件末尾, 返回-1
+  - 调用read()时从缓冲区(byte[] buf)获得数据
