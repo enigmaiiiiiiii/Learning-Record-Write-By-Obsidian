@@ -10,8 +10,6 @@
 
 [方法引用](Java_Method_References.md)
 
-方法引用
-
 - `ClassName::MethodName` 通过类名调用
 - `this::instanceMethod`
 - `super::instanceMethod`

@@ -6,13 +6,23 @@
 
 - 构造[socket](socket.md)
   - 通过地址，和端口构造`public Socket(String host, int port)`
-  <!-- - 阻塞直到和主机建立了连接 -->
 
 ## 读写socket方法
 
 - InputStream getInputStream(): 读取流
 - OutputStream getOutputStream(): 写出流
 
-## ServerSocket
+## half-close
+
+> 关闭Socket的一端
+
+- shutdownOutput()
+- shutdownInput()
+
+## Info
+
+- getInetAddress(): 返回地址信息
+
+## ServerSocket类
 
 - accept(): 阻塞等待

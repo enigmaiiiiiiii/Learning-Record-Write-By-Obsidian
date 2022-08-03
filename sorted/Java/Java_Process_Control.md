@@ -12,5 +12,5 @@
 
 ## 跳出循环
 
-- break: 跳出当前zhizhi
+- break: 退出循环
 - continue: 跳过当前层本次循环

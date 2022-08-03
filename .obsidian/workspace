@@ -1,0 +1,143 @@
+{
+  "main": {
+    "id": "d8656715da0531b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "feb027ac843eccd9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "sorted/Network/端系统.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "77d1c5b90d7daae7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2508570ce54ee9d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06b39b617b6ee0a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d4f08de0e2bee788",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "MTU",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b2fb65c01fa5152",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "43bcd9984f60b219",
+    "type": "split",
+    "children": [
+      {
+        "id": "1762ec239c4770e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6dbbeedd9c57881c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sorted/Network/端系统.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "491352ee031a53d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "sorted/Network/端系统.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "499d44a91006f33b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "91f9d438689a2d1d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sorted/Network/端系统.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "feb027ac843eccd9",
+  "lastOpenFiles": [
+    "sorted/Network/Network_Port.md",
+    "sorted/Linux/telnet.md",
+    "sorted/Linux/tcpdump.md",
+    "sorted/Network/Network_Transport_Layer.md",
+    "sorted/Network/非持续连接的HTTP.md",
+    "sorted/Network/代理服务器.md",
+    "sorted/Network/帧.md",
+    "sorted/Network/报文.md",
+    "sorted/Network/半关闭状态.md",
+    "sorted/Network/Network_IPAddress.md"
+  ]
+}

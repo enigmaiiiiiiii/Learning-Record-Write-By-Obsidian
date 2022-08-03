@@ -2,6 +2,8 @@
 
 ## extends Thread类
 
+- 扩展一个线程类
+
 ## 实现Runnable接口
 
 - Runnable定义了单一方法run()

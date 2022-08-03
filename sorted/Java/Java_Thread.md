@@ -1,17 +1,16 @@
 # 多线程
 
+## 主线程
+
 ## [定义线程](Java_Thread_Define.md)
 
-## 启动线程
+## Thread类
 
-- start()
+[Thread类](Java_Thread_Class.md)
 
-## 等待线程结束
+## 优先级
 
-- join()
-- join(long millis) throws InterruptedException
-  - 等待最多millis毫秒
-  - millis为0, 意味着一直等待
+- 同一核心上的线程，优先级越高的线程获得的时间片越多
 
 ## 竞争条件
 
@@ -31,3 +30,12 @@
 - notifyAll(): 解除**该对象**上调用wait()的方法的线程阻塞状态
 - notify(): 解除**该对象**上一个调用wait()方法的线程阻塞状态
 - wait(): 导致线程进入阻塞状态知道被通知
+
+## 线程状态
+
+new
+Runnable
+Running
+IOBlock
+SleepBlock
+WaitBlock
