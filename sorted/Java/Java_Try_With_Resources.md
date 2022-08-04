@@ -17,7 +17,6 @@ try (Resource res = ) {
 
 声明在try-with-resources块中的AutoCloseable对象会自动调用close()方法
 
-
 ```java
 interface AutoCloseable {
     void close() throws Exception;

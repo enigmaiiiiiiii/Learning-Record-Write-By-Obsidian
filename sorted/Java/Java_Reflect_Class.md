@@ -15,6 +15,10 @@ String s = "java.util.Random";
 Object m = Class.forName(s).newInstance();
 ```
 
+## 类对象
+
+- ClassName.class: 获得类对象
+
 ## 常用method
 
 - getFields()

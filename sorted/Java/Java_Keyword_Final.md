@@ -19,5 +19,14 @@ private final StringBuilder evaluations;
 
 - 修饰参数
 
-## effectively final 
+## effectively final
+
+- 由new初始化定义的变量
+  - 从不作为赋值表达式的左侧
+  - 从不作为前缀或后缀增量或减量运算符的操作数
+- 不是new初始化定义的变量
+  - 出现在表达式左边，且没有被Definite Assignment
+  - 从不作为前缀或后缀增量或减量运算符的操作数
+
+> 局部变量声明不是赋值表达式
 
