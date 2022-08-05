@@ -22,8 +22,8 @@ Employee e = new Employee()  // e引用一个Employee类的对象
 - 引用一个对象
   - 对象可以通过变量来访问
   - 并没有包含一个对象，而是引用一个对象
-  - 变量的值为对象的地址
-
+- 变量的值为对象的地址
+- 默认值为null
 
 ## 对象
 
@@ -35,4 +35,3 @@ Employee e = new Employee()  // e引用一个Employee类的对象
 Date birthday;  // java
 Date* birthday; // c++
 ```
-

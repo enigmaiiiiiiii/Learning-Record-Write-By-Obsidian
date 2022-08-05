@@ -15,3 +15,9 @@ Employee e = (Employee)obj;
 
 [toString()方法](Java_Object_Class_ToString_Method.md)
 
+## Objects类
+
+> 扩展了Object类的功能
+
+- 由静态实用方法组成, 用于进行Object对象操作, 如计算hashCode, 进行equals比较, 进行toString转换
+- Objects.equals(Object o1, Object o2): 该方法等价于执行o1.equals(o2)

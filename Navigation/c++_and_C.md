@@ -26,7 +26,7 @@
 
 ## Ⅲ
 
-  [重载运算符](c++_Reload_Operator.md)
+[重载运算符](c++_Reload_Operator.md)
   
 [[动态内存]]
 
