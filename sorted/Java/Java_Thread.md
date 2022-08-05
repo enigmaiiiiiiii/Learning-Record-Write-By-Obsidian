@@ -2,7 +2,9 @@
 
 ## 主线程
 
-## [定义线程](Java_Thread_Define.md)
+## 定义线程
+
+[定义线程](Java_Thread_Define.md)
 
 ## Thread类
 

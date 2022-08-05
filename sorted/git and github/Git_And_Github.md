@@ -20,7 +20,7 @@
 
 [[Git_实用命令]]
 
-[[gitingnore文件]]
+[[Git_Ignore文件]]
 
 [GIthub搜索技巧](Github_Search_Skills.md)
 
