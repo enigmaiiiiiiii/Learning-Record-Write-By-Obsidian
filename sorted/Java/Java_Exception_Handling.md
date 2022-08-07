@@ -13,6 +13,7 @@
 
 - 包含一个或多个可能引发异常的代码
 - 如果try语句中抛出了异常，程序将跳过try语句块的其余代码
+  - 因此通常不在try语句块执行资源的close()方法
 
 ## Catch Block
 
@@ -22,6 +23,9 @@
 
 - 在try Block退出时执行
 - 即使发生异常也会执行Finally Block
+
+> finally语句块更适合执行资源close()方法
+
 - try语句可以只有finally, 没有catch
 - finally中的返回值会覆盖try中的返回值
 
