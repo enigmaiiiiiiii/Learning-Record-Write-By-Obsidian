@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sorted/dotNET/Unity/Unity_Develop_Factor.md",
-            "mode": "preview",
+            "file": "diary/Today-2022年08月07日星期日.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sorted/dotNET/Unity/Unity_Develop_Factor.md",
+                "file": "diary/Today-2022年08月07日星期日.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sorted/dotNET/Unity/Unity_Develop_Factor.md",
+                "file": "diary/Today-2022年08月07日星期日.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sorted/dotNET/Unity/Unity_Develop_Factor.md"
+                "file": "diary/Today-2022年08月07日星期日.md"
               }
             }
           }
@@ -129,15 +129,15 @@
   },
   "active": "feb027ac843eccd9",
   "lastOpenFiles": [
+    "diary/2022-08-07.md",
+    "diary/Today-2022年08月07日星期日.md",
+    "sorted/dotNET/Unity/Unity_Develop_Factor.md",
     "sorted/Linux/sem_open()函数.md",
     "sorted/c++/c++中的拷贝/阻止拷贝.md",
     "sorted/dotNET/Unity/Unity_Script_Extend_Editor_MenuItem.md",
     "sorted/c++/宏定义中的do{}while(0).md",
     "sorted/c++/typedef关键字.md",
     "sorted/Linux/Linux_apt.md",
-    "src/64px-HTML5_logo_and_wordmark.svg.png",
-    "src/maze_task.excalidraw.md",
-    "src/Linux-commands.jpg",
-    "src/Git Diagram.svg"
+    "src/64px-HTML5_logo_and_wordmark.svg.png"
   ]
 }
