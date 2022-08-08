@@ -6,7 +6,7 @@
 
 `-c` or `--create`
 
--  创建档案
+- 创建档案
 
 `-i=FILE` or `--generate-index=FILE`
 

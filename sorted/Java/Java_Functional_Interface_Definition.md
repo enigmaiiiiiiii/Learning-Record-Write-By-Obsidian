@@ -2,11 +2,11 @@
 
 ## 定义
 
-- 没有声明为 sealed 的接口
-- 只有一个抽象方法
+- 只有一个**抽象**方法
 - 不是Object类中的public方法
+- 没有声明为 sealed 的接口
 
-一个包含run方法的函数式接口
+如: 一个包含run方法的函数式接口
 
 ```java
 interface Runnable {

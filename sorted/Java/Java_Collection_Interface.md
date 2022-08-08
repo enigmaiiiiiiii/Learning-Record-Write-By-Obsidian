@@ -1,7 +1,7 @@
 # 集合接口
 
 - 表示一组对象
-- Iterable\<E\>, 是所有集合相关接口的超类接口
+- Iterable\<E\>, 是所有集合相关接口的超类接口, E默认为Object
 
 ## Interface Collection
 

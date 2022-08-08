@@ -4,13 +4,12 @@
 |--|--|--|--|--|--|
 |set|HashSet||TreeSet||LinkedHashSet|
 |List||ArrayList||LinkedList||
-|Queue||||||
-|Deque||ArrayDeque||LinkedList||
+|Queue, Deque||ArrayDeque||LinkedList||
 |Map|HashMap||TreeMap||LinkedHashMap|
 
 - 所有实现提供了其接口中包含的所有可选操作
 - 所有元素都允许空元素，键和值
-- 线程安全的
+- 线程安全
 - 可以序列化
 - 支持clone()
 
