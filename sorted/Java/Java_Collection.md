@@ -27,7 +27,7 @@ Collections类方法
 
 > Collections仅由操作集合和返回集合的静态方法组成
 
-- static <T> void sort(List<T> list, Comparator<? super T> c): 对集合进行排序
+- `static <T> void sort(List<T> list, Comparator<? super T> c)`: 对集合进行排序
 
 Arrays类
 
