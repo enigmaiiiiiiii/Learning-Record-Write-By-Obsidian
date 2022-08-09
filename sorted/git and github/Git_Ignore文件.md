@@ -6,3 +6,9 @@
 /bin  # bin目录
 bin/  # bin目录下的文件，不包括bin目录
 ```
+
+- 排除以前提交过的而文件
+
+```shell
+git rm -r --cached .obsidian
+```

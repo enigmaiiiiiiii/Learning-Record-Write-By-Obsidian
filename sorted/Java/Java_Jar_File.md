@@ -15,7 +15,7 @@ jar cvf JARFileName File1 File2
 
 - `-c`:  jar命令模式， 创建新档案
 - `-v`:  向标准输出打印详细信息
-- `-f`:  指定档案名称JARFileName.jar 
+- `-f`:  指定档案名称JARFileName.jar
 
 创建包含清单的JAR文件:
 
@@ -58,7 +58,4 @@ Sealed: false
 ```shell
 jar cvfm MyArchive.jar manifest.mf files to add
 ```
-
-
-
 
