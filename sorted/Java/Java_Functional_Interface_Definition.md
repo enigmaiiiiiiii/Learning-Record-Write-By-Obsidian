@@ -2,8 +2,9 @@
 
 ## 定义
 
-- 只有一个**抽象**方法
-- 不是Object类中的public方法
+- 只有一个**抽象**方法, 意味着
+  - 可以包含Object类中的public方法
+  - 不能包含Object类中的non-public方法
 - 没有声明为 sealed 的接口
 
 如: 一个包含run方法的函数式接口

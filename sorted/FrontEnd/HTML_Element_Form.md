@@ -1,4 +1,33 @@
-# form enctype属性
+# form
+
+- interactive controls containing submitting information
+
+## 表单相关内容
+
+- form标签包含的标签
+- form-associated elements
+  - [ ] [button]
+  - fieldset
+  - [x] [input](HTML_Element_Input.md)
+  - object
+  - output
+  - select
+  - textarea
+  - img
+
+## action属性
+
+- action的值表示: form data处理程序的[URI]()
+
+## method属性
+
+- [HTTP method](http请求报文.md)
+- 有限取值:
+  - post
+  - get
+  - dialog
+
+## enctype属性
 
 ```html
 <form action="demo_post_enctype.html"

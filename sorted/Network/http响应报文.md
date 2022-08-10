@@ -1,5 +1,7 @@
 # 响应报文
 
+## Example response
+
 ```http
 HTTP/1.1 200 OK
 Connection: close
