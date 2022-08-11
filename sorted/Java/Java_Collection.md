@@ -15,7 +15,6 @@
 - `Collection<T> c = new ArrayList<T>();`: 创建空集合
 - `Collection<T> c = new ArrayList<T>(c1);`: 用另一个集合的元素创建一个新的集合
 
-
 ## 集合的实例方法
 
 - contains(Object o): 如果集合包含指定的元素，则返回true

@@ -2,7 +2,7 @@
 
 ## 安装Git后要做的第一件事
 
-- 设置user.name和user.email, 作为每次[commit]git都会使用的信息
+- 设置user.name和user.email, 作为每次[commit], git都会使用的信息
 
 ```shell
 git config --global user.name "John Doe"

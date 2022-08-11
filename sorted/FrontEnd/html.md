@@ -1,5 +1,12 @@
 # HTML
 
+
+[form](HTML_Element_Form.md)
+
+## HTML元素
+
+- 从开始标签到结束标签的所有代码
+
 ## head标签
 
 - 包含6个标签
@@ -44,7 +51,6 @@
 <a class="class1 class2" href="http://apress.com">apress web site</a>
 ```
 
-
 ## Content categories
 
 - 每個 HTML 元素都要遵从該元素可擁有何種內容規則
@@ -65,5 +71,4 @@
   - 特别内容类型(Specific content categories)
 - 每個 HTML 元素都属于零個、一個、或數個內容的模型，所有元素內容的設置規則都要遵從 HTML 一致性文件。
 
-[form](HTML_Element_Form.md)
 

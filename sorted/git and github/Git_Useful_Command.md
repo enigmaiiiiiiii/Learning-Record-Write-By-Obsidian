@@ -27,3 +27,9 @@ git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 - --soft: 撤销git commit, 不撤销git add, 保留改动代码
 - --mixed:  撤销git commit, 撤销git add, 保留改动代码
 - --hard: 撤销git commit, 撤销git add, 撤销改动代码
+
+## 将文件移出暂存区
+
+```shell
+git rm --cached [<file>...]
+```
