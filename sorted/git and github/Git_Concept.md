@@ -32,7 +32,7 @@
 
 ## 远程仓库
 
-[远程仓库](Git_Remote_Respositories.md)
+[远程仓库](Git_Remote.md)
 
 ## 状态
 

@@ -1,8 +1,9 @@
 # form
 
 - interactive controls containing submitting information
+- 用于收集用户输入
 
-## 表单相关内容
+## 表单相关标签
 
 - form标签包含的标签
 - form-associated elements
@@ -21,7 +22,7 @@
 
 ## method属性
 
-- [HTTP method](http请求报文.md)
+- 提交表单的[HTTP method](http请求报文.md)
 - 有限取值:
   - post
   - get

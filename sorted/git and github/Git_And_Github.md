@@ -18,10 +18,10 @@
 
 ## III
 
-[[Git_实用命令]]
+[实用命令](Git_Useful_Command.md)
 
 [[Git_Ignore文件]]
 
 [GIthub搜索技巧](Github_Search_Skills.md)
 
-[[git_detached_head]]
+[Detached head](Git_Detached_Head.md)

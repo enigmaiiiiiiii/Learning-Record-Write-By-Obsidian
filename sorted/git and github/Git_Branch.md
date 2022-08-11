@@ -64,6 +64,19 @@
 - `git push --set-upstream origin <newbranch>`: 让其他人看到改变后的分支
 - `git push origin --delete <branch>`: 删除远程旧分支
 
+## Branch workflow
+
+Long-running Branches - 工作方式
+
+- 大多数开发者采用的方式: master是稳定的分支, 同时另一个并行分支命名为develop或next
+
+Topic Branch - 工作方式
+
+- is a short-lived branch
+- VCS before to create a branch is expensive
+- in Git, it's common to create, work on, merge, and delete branches several times a day
+- keep changes for minutes, days, or months, and merge when ready
+
 ## 相对引用
 
 - `^`向上移动一个提交记录
