@@ -15,16 +15,31 @@ String s = "java.util.Random";
 Object m = Class.forName(s).newInstance();
 ```
 
-## 类对象
+## 获得Class实例
 
-- ClassName.class: 获得类对象
+- 通过实例:  classinstance.getClass()
+- 通过类名称: classname.class: 类名称
+- 通过字符串: Class.forName("classname")
+  - 不能用于原始类型
+  - classname的语法由Class.getName()描述
+- 使用TYPE字段获得基本类型和void类型的Class实例
+  - 通过基本类型的包装类型，如`Class c = Double.TYPE;`
+
+获得多个Class类实例
+
+- classinstance.getClasses(): 返回由Class实例中声明的public类,接口,枚举, 包括继承的member(声明的**public类**, 接口, 枚举)
+- classinstance.getDeclaredClassed(): 返回Class实例声明的类, 接口
+  - 包括声明为private的类
+- classinstance.getEnclosingClass(): 返回Class实例的外部类
+  - 如果Class实例是匿名类, 则返回null
+  - 如果Class实例是静态内部类, 则返回null
+  - 如果Class实例是外部类, 则返回外部类
 
 ## 常用method
 
-- getFields()
-- getDeclaredFields()
-- getMethods()
-- getDeclaredMethods()
-- getConstructors()
+- `getFields()`
+- `getDeclaredFields()`
+- `getMethods()`
+- `getDeclaredMethods()`
+- `getConstructors()`
 - `public Class forName(String className)`: 返回Class类的对象，参数ClassName是类的完全限定名(包括所在包，和类名), 如packagename.DemoClass 
-

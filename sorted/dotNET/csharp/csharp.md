@@ -8,7 +8,7 @@
 
 ## 语法
 
-[基本语法](Csharp_Foundation.md)
+[基本语法](CSharp_Foundation.md)
 
 [命名空间](csharp_namespace.md)
 

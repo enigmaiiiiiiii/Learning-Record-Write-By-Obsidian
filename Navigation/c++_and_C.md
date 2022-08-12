@@ -6,7 +6,7 @@
 
 [调试c++](c++_debug.md)
 
-[c++基础](c++_Basic.md)
+[c++基础](c++_Foundation.md.md)
 
 [字符串，向量，数组](c++_string_vector_array.md)
 

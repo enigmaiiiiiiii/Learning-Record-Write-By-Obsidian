@@ -16,12 +16,16 @@ entity body
 ## 请求行 
 
 - 请求报文第一行
-- 包括方法，请求路径(URI), HTTP版本
+- `<请求方法><space><请求路径(URI)><space><HTTP版本><CRLF>`
   - 请求方法,包括GET,POST,HEAD,PUT,DELETE
-  - get将请求的数据附在url后
-  - post将提交的数据放在报文主体(entity body)中
+    - get将请求的数据附在url后
+    - post将提交的数据放在报文主体(entity body)中
+  - 请求路径
+  - 版本
+
   
-## 首部行
+  
+## 首部行(消息头)
 
 - Host： 请求资源所在的服务器
 - Connection

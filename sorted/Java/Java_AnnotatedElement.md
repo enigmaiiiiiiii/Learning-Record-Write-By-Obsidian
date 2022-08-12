@@ -1,4 +1,10 @@
-# 注释类型
+# AnnotatedElement
+
+- 当前VM中运行的程序的带注释结构
+- 在元素上的AnnotatedElement, 称为declaration annotation
+- 在type(class, interface, enum)上的AnnotatedElement, 称为type annotation
+- 只存在与源文件中
+
 
 ## 声明注释类型
 

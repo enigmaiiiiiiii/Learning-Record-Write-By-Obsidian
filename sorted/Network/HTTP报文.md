@@ -12,6 +12,10 @@
   </tr>
 </table>
 
+> CRLF: 表示回车符(CR)和换行符(LF)
+>> 回车符: `\n`, CR, 13, 1010
+>> 换行符: `\t`, LF, 10, 1001 
+
 [请求报文](http请求报文.md): 首行为请求行
 	 
 [响应报文](http响应报文.md): 首行为响应行
@@ -22,11 +26,13 @@
 
 [实体编码](Http_Content_encode.md)
 
-## 首部字段
+## 首部字段(消息头)
+
+- 以key: value的形式存在于报文首部中
+  - key为首部字段
+  - value为字段的值
 
 以响应报文为例
-
-- 首部字段为: Content-Type, Content-Length, Connection, Cache-Control, Content-Language, Date, ETag, Server, Strict-Transport-security, X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Vary, Age
 
 ```http
 HTTp/1.1 200 OK
@@ -58,3 +64,18 @@ Age: 7
 </html>
 
 ```
+> 首部字段为
+>> Content-Type
+>> Content-Length
+>> Connection
+>> Cache-Control
+>> Content-Language
+>> Date
+>> ETag
+>> Server
+>> Strict-Transport-security
+>> X-Content-Type-Options
+>> X-Frame-Options
+>> X-XSS-Protection
+>> Vary
+>> Age

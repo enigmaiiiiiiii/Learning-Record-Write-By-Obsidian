@@ -8,6 +8,7 @@ Size s = Size.MUDIUM;
 - 包含有限个命名值
 - 定义一个类型，包含有限个实例
 - 可以在其中添加一些构造器，方法或field
+- 构造器修饰符只能是private
 
 ```java
 public enum Size
