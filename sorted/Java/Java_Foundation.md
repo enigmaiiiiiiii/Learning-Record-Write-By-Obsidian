@@ -16,6 +16,4 @@
 
 [常量](Java_Constant.md)
 
-[输入/输出](Java_System_In_Out.md)
-
 [格式化输出](Java_Formatter_String_Syntax.md)

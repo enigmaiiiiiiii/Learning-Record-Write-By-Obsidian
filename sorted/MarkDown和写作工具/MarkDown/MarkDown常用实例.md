@@ -8,7 +8,7 @@
 
 **加粗Hello World**  
 ***斜体加粗Hello world***  
-<u>下划线Hello World</u> 
+<u>下划线Hello World</u>
 ~~划线Hello World~~  
 ***
 
@@ -55,7 +55,7 @@
 ## 代码
 
 ```c++
-[[include]] <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -66,6 +66,7 @@ int main()
 ## 脚注
 
 MarkDown[^脚注]
+
 [^脚注]:脚注内容
 
 ## 预留字符串

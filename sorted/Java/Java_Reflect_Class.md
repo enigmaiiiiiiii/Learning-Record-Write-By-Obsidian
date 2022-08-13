@@ -35,7 +35,7 @@ Object m = Class.forName(s).newInstance();
   - 如果Class实例是静态内部类, 则返回null
   - 如果Class实例是外部类, 则返回外部类
 
-## 常用method
+## 方法
 
 - `getFields()`
 - `getDeclaredFields()`

@@ -1,55 +1,24 @@
-# 注释接口
+# 注释元素
 
-## 声明注释接口
 
-```java
-@interface ClassPreamble {
-    String author();
-    String date();
-    // Note user of array
-    String[] reviewers();
-}
-```
+## containing annotation interface
 
-- 不能声明为泛型
-- 声明位置限制
-  - 可以是顶级接口或[成员接口], 不能是局部接口
-  - 出现在局部类， 局部接口，匿名类声明中发生编译错误
+注释接口A的containing annotation interface必须具有以下条件: 
 
-> 想要使Classpreamble的注释信息出现在Javadoc-generated(JavaDoc命令生成)文档中, 要在注释类的定义上一行加@Documented
+1. 声明一个value()方法, 返回类型为A[]
+2. 除value()外的其他方法有默认值
+3. 保留时间至少和A一样长
+4. ~~~A中元素适用于其中的对应的元素~~~
+5. 与A对应的的java.lang.annotation.Documented
+6. 与A对应的的java.lang.annotation.Inherited
 
-## 注释接口元素
+## 保留策略
 
-- 注释接口元素: 注释接口中的方法声明
-  - 不能有形参, 类型参数
-  - 不能有throws语句
-  - 
+> 指定注释保留时间
 
-## 使用注释类型
-
-```java
-@ClassPreamble(
-    auther = "John Doe",
-    date = "01/01/2017",
-    reviewers = {"Alice", "Bob", "Charlie"}
-)
-public class Generation3List {
-    // ...
-}
-```
-
-## 预定义的注释类型
-
-- @Deprecated
-- @Override
-- @FunctionalInterface
-
-应用于其他注释类型的注释类型
-
-- @Retention
-- @Documented
-- @Target: 限制注释类型的作用元素
-
+- CLASS: In class but need not be retained in VM
+- RUNTIME: In class by compiler and at run time in VM
+- SOURCE: discarded by compiler
 ## AnnotatedElement接口
 
 - 当前VM中运行的程序的带注释结构

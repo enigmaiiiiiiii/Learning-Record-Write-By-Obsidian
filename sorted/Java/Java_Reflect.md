@@ -12,7 +12,9 @@
 
 [修饰符：Modifier类](Java_Modifier.md)
 
-[注释接口](Java_AnnotatedElement.md)
+[Annotation接口](Java_Annotation_Interface.md)
+
+[注释元素](Java_AnnotatedElement.md)
 
 ## 通过反射实现通用toString()
 
