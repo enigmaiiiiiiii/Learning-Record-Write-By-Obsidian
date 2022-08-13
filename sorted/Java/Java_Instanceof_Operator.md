@@ -5,6 +5,9 @@ RelationalExpression instanceof ReferenceType
 RelationalExpression instanceof Pattern
 ```
 
+- 检查一个对象是否属于某个特定类
+- 检查一个对象是否实现了某个特定的接口
+- RelationalExpression必须是引用类型
 
 ## 发生编译错误的情况
 
@@ -31,4 +34,4 @@ Parent obj2 = new Child();
 // obj2 instanceof Parent:      true
 // obj2 instanceof Child:       true
 // obj2 instanceof MyInterface: true
-`
+```

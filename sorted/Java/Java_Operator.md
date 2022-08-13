@@ -25,4 +25,3 @@ s += 10;     // s = (short)(a + 10);
 
 
 ## [instanceof运算符](Java_Instanceof_Operator.md)
-

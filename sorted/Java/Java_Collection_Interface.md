@@ -10,7 +10,7 @@
   - 创建一个空集合
   - 复制一个集合
 
-### Interface Set
+### 1. Interface Set
 
 - 不包含重复元素的集合
 
@@ -18,17 +18,17 @@
 
 - Interface SortedSet
 
-### Interface List
+### 2. Interface List
 
 - 可以包含重复元素
 - 可以通过索引访问元素
 - 可以再任意位置插入元素
 
-### Interface Queue
+### 3. Interface Queue
 
 - 队列集合
 
-### Interface Deque
+### 4. Interface Deque
 
 - 双端队列集合
 
