@@ -42,4 +42,6 @@ Object m = Class.forName(s).newInstance();
 - `getMethods()`
 - `getDeclaredMethods()`
 - `getConstructors()`
-- `public Class forName(String className)`: 返回Class类的对象，参数ClassName是类的完全限定名(包括所在包，和类名), 如packagename.DemoClass 
+- `public Class forName(String className)`: 返回Class类的对象，参数ClassName是类的完全限定名(包括所在包，和类名), 如packagename.DemoClass
+- `public ClassLoader getClassLoader()`: 返回Class类的[类加载器]()
+

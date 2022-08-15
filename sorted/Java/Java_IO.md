@@ -12,6 +12,10 @@
 
 - InputStream/OutPutStream: 基类
 
+InputStream
+
+- 读取数据read(): 读取下一个字节, **阻塞**直到input data is available
+
 ### 低级流
 
 [FileInputStream/FileOutputStream](Java_FileIOStream.md)

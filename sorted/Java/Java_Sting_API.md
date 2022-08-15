@@ -36,3 +36,18 @@
 
 - `getBytes()`: 返回字符串的byte数组
 - `getBytes(charsetName)`: 使用字符集charsetName, 返回字符串的byte数组
+
+空字符处理
+
+- trim(): 去除首尾[空白字符]
+
+> 空白字符
+>> Unicode编码小于等于0x20的字符
+>> \t \n \r \f \b \s
+
+\u0019
+\u0018
+\u0017
+\u0016
+\u0015
+\u0014

@@ -38,3 +38,18 @@
 // this is illegal
 @interface SelfRef {SelfRef value();}
 ```
+
+## (Repeatable)可重复接口
+
+```java
+@Repeatable(FooContainer.class)
+@interface Foo {
+    String value();
+}
+
+@interface FooContainer {
+    Foo[] value();
+}
+```
+
+- 可重复接口

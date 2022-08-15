@@ -79,7 +79,7 @@ System.out.println(c - d);
 
 - java中的char, 2个字节, 范围0~65535
 - 用单引号括起来
-- 16位Unicode字符
+- 16位[Unicode]()字符
 - min: \\u0000, min: \\uffff 
 - 本质是int
 - ASCII码

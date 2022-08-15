@@ -1,5 +1,7 @@
 # RFC
 
+[官方说明](https://www.rfc-editor.org/rfc-index.html)
+
 - 标准文档RFC(Request For Comment)
   - 由IETF定义
   
