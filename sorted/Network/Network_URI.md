@@ -1,6 +1,6 @@
 # URI
 
-## 语法: 
+## 语法
 
 `[scheme:]scheme-specific-part[#fragment]`
 

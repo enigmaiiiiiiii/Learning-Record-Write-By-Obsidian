@@ -1,10 +1,16 @@
-# URL
+# URL 和 URI
+
+## URL
 
 - 统一资源定位系统
 - URL地址：http://www.baidu.com/someDepartment/picture.gif
   - `http:`: 表示访问数据源的机制
   - `www.baidu.com`: 主机名
   - `/someDepartment/picture.gif`是路径
+
+## URI
+
+[URI](Network_URI.md))
 
 ## URL和URI
   

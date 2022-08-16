@@ -34,7 +34,7 @@
 
 转换为字节数组
 
-- `getBytes()`: 返回字符串的byte数组
+- `getBytes()`: 将使用默认字符集字符串编码为字节序列, 保存到byte数组并返回, 默认UTF-8
 - `getBytes(charsetName)`: 使用字符集charsetName, 返回字符串的byte数组
 
 空字符处理
@@ -51,3 +51,4 @@
 \u0016
 \u0015
 \u0014
+

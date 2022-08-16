@@ -29,7 +29,7 @@ setData()允许为MIME类型设置数据
 ```c++
 ```
 
-hasUrls(): 如果对象可以返回[url](Http_URL.md)列表，则返回true;否则返回false。
+hasUrls(): 如果对象可以返回[url](Http_URL_And_URI.md)列表，则返回true;否则返回false。
 
 ```c++
 ```

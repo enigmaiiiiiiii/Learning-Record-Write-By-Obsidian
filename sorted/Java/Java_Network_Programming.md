@@ -6,7 +6,7 @@
 
 ## URL类
 
-> [URL](Http_URL): Uniform Resource Locator
+> [URL](Http_URL_And_URI): Uniform Resource Locator
 
 - `new URL(String);` 构建URL对象:
 - `public InputStream openStream();`: 获得资源内容

@@ -3,7 +3,7 @@
 ## Example request
 
 > 方法为POST时，内容为用户提供的表单
-     
+
 ```http
 GET /somedir/page.html HTTP/1.1
 Host: www.someschool.edu
@@ -13,9 +13,10 @@ Accept-language:fr
 
 entity body
 ```
-## 请求行 
 
-- 请求报文第一行
+## 请求行
+
+- 请求报文第一行, 包括请求方法、[URI](Network_URI.md)、请求版本
 - `<请求方法><space><请求路径(URI)><space><HTTP版本><CRLF>`
   - 请求方法,包括GET,POST,HEAD,PUT,DELETE
     - get将请求的数据附在url后
@@ -23,8 +24,6 @@ entity body
   - 请求路径
   - 版本
 
-  
-  
 ## 首部行(消息头)
 
 - Host： 请求资源所在的服务器
@@ -34,5 +33,8 @@ entity body
   - 发送请求的浏览器类型
 - Accept-language
   - 客户想要得到的语言
-    
-## 空行`<CR><LF>`     
+
+## 空行`<CR><LF>`
+
+- `<CR>`
+- `<LF>`

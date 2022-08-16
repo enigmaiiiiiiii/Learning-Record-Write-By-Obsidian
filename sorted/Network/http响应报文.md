@@ -15,6 +15,7 @@ entity body
 ```
 
 - 以上报文内容包含一个状态行，6个首部行, 空行，和内容部分
+- Content-Type取值在[MIME](Network_MIME.md)中限制
 
 ## 状态行
 

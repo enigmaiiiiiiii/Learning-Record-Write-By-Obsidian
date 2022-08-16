@@ -19,14 +19,16 @@
 ## action属性
 
 - action的值表示: form data处理程序的[URI]()
+- 可被`<button>, <input type="submit">, <input type="image">`元素上的formaction属性覆盖
 
 ## method属性
 
 - 提交表单的[HTTP method](http请求报文.md)
-- 有限取值:
-  - post
-  - get
-  - dialog
+- 有限取值: 1.post 2.get 3.dialog
+
+get方法
+
+- 表单数据会附加在action属性的URL后, 用?隔开, 如`/url?key1=value1&key2=value2`
 
 ## enctype属性
 
@@ -40,8 +42,8 @@ method="post" enctype="multipart/form-data">
 ```
 
 - enctype属性规定将表单数据发送到服务器之前如何对其进行编码
-- 取值
 
+取值
 
 <table>
   <tr>
