@@ -81,3 +81,9 @@ Age: 7
 >> X-XSS-Protection
 >> Vary
 >> Age
+
+## 首部参考
+
+Location
+
+- 将客户端导向某个资源地址

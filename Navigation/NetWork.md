@@ -14,13 +14,17 @@
 
 [http](NetWork_Http.md)
 
+[URL, URI](/sorted/Network/Http_URL_And_URI.md)
+
 [SSL](Network_SSL.md)
 
 [Web多媒体](Network_Web_Media.md)
 
+[浏览器](/sorted/Network/Network_Browser.md)
+
 ## 运输层
 
-[描述](Network_Transport_Layer.md)
+[描述](/sorted/Network/Network_Transport_Layer.md)
 
 [TCP](TCP.md)
 

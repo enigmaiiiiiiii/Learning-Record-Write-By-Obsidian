@@ -6,8 +6,6 @@
 
 [HTTP报文](HTTP报文.md)
 
-[URI和URL](Http_URL_And_URI.md)
-
 [cookie](cookie.md)
 
 [非持续连接的HTTP](非持续连接的HTTP.md)

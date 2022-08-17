@@ -4,7 +4,7 @@
 
 > 由短类型转长类型
 
-- short type $\rightarrow$ long type排序: 
+- 类型长度排序, short $\rightarrow$ long
   - byte, short, char$\rightarrow$int$\rightarrow$long$\rightarrow$float$\rightarrow$double
 
 - 对于byte, short, char<font color="red">参与运算</font>时, 转换为int类型
