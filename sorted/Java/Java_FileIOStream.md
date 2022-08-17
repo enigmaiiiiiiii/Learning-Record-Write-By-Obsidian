@@ -6,9 +6,18 @@
 
 ***
 
-- 创建FileOutputStream对象, 
-  - `public FileOutputStream(File file)`: 清空内容, 从头写入
-  - `public FileOutputStream(File file, boolean append)`: append为true, 从文件末尾开始写入
+创建FileOutputStream对象
+
+> 文件是否创建或可用，取决于底层平台
+> windows: 如果文件不存在，则创建文件；如果文件存在，则清空文件内容
+
+- `public FileOutputStream(File file)`: 清空内容, 从头写入
+- `public FileOutputStream(File file, boolean append)`: append为true, 从文件末尾开始写入
+- `public FileOutputStream(String name)`
+- 何时throw FileNotFoundException
+  - 文件存在但是是一个目录
+  - 文件不存在，且无法创建
+  - 文件存在，但是无法打开
 
 ***
 
@@ -26,6 +35,12 @@
   - 如果文件已经读取完毕，则返回-1
   > 返回-1，不是读取读到-1， 而是读取到EOF
   - 返回转为int的byte(discarding high-order bits)
+
+创建FileInputStream对象
+
+- FileInputStream(File file)
+- FileInputStream(FileDescriptor fdObj)
+- FileInputStream(String name)
 
 读到byte数组
 

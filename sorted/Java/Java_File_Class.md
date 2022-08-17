@@ -6,7 +6,7 @@
 
 ## 创建File对象
 
-> 若文件不存在，并不会创建文件
+> 只会创建File对象，若文件不存在，并不会创建文件
 
 - File(String pathname)
 - File(File parent, String child)
