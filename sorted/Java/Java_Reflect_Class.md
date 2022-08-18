@@ -1,6 +1,7 @@
 # Class类
 
 - Class类的对象表示某个类的属性
+- 相同元素类型的数组共享一个Class对象
 
 虚拟机为每个类型管理一个Class对象
 
@@ -42,6 +43,11 @@ Object m = Class.forName(s).newInstance();
 - `getMethods()`
 - `getDeclaredMethods()`
 - `getConstructors()`
-- `public Class forName(String className)`: 返回Class类的对象，参数ClassName是类的完全限定名(包括所在包，和类名), 如packagename.DemoClass
 - `public ClassLoader getClassLoader()`: 返回Class类的[类加载器]()
+
+创建实例
+
+- `getDeclaredConstructor(Class<?>... parameterTypes).newInstance()`
+  - 按类的构造函数的参数类型和顺序创建实例
+- `newInstance()`: 创建实例
 

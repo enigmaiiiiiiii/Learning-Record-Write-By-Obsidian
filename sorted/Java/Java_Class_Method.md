@@ -49,11 +49,10 @@
 
 ## 可变参数
 
-- 可变参数: type... , 方法体内使用type[] 
+- `type... args`, 方法体内使用`args[i]`取值 
 
 ```java
-public static double max(double... values)
-{
+public static double max(double... values) {
     double largest = Double.NEGATIVE_INFINITY;
     for (double v : values) if (v > largest) largest = v;
     return largest;

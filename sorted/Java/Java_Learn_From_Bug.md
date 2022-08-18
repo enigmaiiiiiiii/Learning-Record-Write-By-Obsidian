@@ -5,6 +5,7 @@
 Can load library: libawt_xawt.so
 
 ## NO.2 
+
 - Exception in thread "AWT-EventQueue-0" java.awt.HeadlessException
 
 ## No.3 
@@ -54,6 +55,40 @@ public class Sample {
 
         while (fin.read() != -1) {
             System.out.println(br.readLine());
+        }
+    }
+}
+```
+
+## No.7
+
+用反射调用可变参数方法时，抛出IllegalArgumentException
+
+bug发生条件:
+
+1. 对象方法的参数为可变参数
+2. 使用[Method对象](Java_Reflect_AccessibleObject.md)的invoke()方法调用对象方法, 传入方法的数组实参时, 数组为具体类型
+
+```java
+public class Application {
+    public static void main(String[] args) throws IllegalAccessExceptoin, IllegalArgumentException, InvocationTargetException {
+
+        Class cls = Student.class;
+        Student stu = new Student();
+        Method m = cls.getMethod("fx", String[].class);  // 可以正确的到Method对象
+
+        String[] strs = {"a", "b", "c"};
+        m.invoke(stu, new Object[]{"a", "b", "c"});  // 抛出IllegalArgumentException
+        m.invoke(stu, new String[]{"a", "b", "c"});  // 会抛出IllegalArgumentException异常
+        m.invoke(stu, (Object)strs)  // 正常调用
+    }
+
+}
+
+class Student {
+    public void fx(String... args) {
+        for (String arg : args) {
+            System.out.println(arg);
         }
     }
 }

@@ -6,10 +6,22 @@
 
 ## URL类
 
-> [URL](Http_URL_And_URI): Uniform Resource Locator
+- URL类**并不**根据RFC2396定义的机制对其字符串内容进行解码或编码
+- caller在调用前负责对转义字符进行编码
+
+方法
 
 - `new URL(String);` 构建URL对象:
 - `public InputStream openStream();`: 获得资源内容
+  - 相当于`openConnection().getInputStream()`
+
+URLDecoder: HTML解码工具类
+
+- 用来解码application/x-www-form-urlencoded格式的字符串
+
+***
+
+> [URL](Http_URL_And_URI): Uniform Resource Locator
 
 ## URI
 

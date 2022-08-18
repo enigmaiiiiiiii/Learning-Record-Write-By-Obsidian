@@ -14,10 +14,11 @@
 - `public FileOutputStream(File file)`: 清空内容, 从头写入
 - `public FileOutputStream(File file, boolean append)`: append为true, 从文件末尾开始写入
 - `public FileOutputStream(String name)`
-- 何时throw FileNotFoundException
-  - 文件存在但是是一个目录
-  - 文件不存在，且无法创建
-  - 文件存在，但是无法打开
+
+> 何时throw FileNotFoundException
+>> 文件存在但是是一个目录
+>> 文件不存在，且无法创建
+>> 文件存在，但是无法打开
 
 ***
 
@@ -41,6 +42,11 @@
 - FileInputStream(File file)
 - FileInputStream(FileDescriptor fdObj)
 - FileInputStream(String name)
+
+> 抛出FileNotFoundException的情况
+>> 文件不存在
+>> 文件是一个目录
+>> 不能以读的方式打开文件
 
 读到byte数组
 
