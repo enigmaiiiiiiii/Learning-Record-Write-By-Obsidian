@@ -1,6 +1,5 @@
 # 注释元素
 
-
 ## containing annotation interface
 
 注释接口A的containing annotation interface必须具有以下条件: 
@@ -19,6 +18,7 @@
 - CLASS: In class but need not be retained in VM
 - RUNTIME: In class by compiler and at run time in VM
 - SOURCE: discarded by compiler
+
 ## AnnotatedElement接口
 
 - 当前VM中运行的程序的带注释结构

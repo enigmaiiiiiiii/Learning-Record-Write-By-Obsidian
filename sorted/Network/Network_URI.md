@@ -10,17 +10,17 @@
 
 ***
 
-## opaque URI:
+## opaque URI
 
-```
+```text
 mailto: java-net@www.example.com
 news: comp.lang.java
 urn:isbn:096139210x
 ```
 
-## hierarchical URI:
+## hierarchical URI
 
-```
+```text
 http://exaple.com/languages/java/
 sample/a/index.html#28
 ../../demo/b/index.html

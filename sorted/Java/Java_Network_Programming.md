@@ -4,6 +4,14 @@
 
 [Socket](Java_Socket.md)
 
+## URI, URL, URN
+
+- URI实例只不过是一个结构化的字符串, 支持语法，规范化，解析和相对化操作
+- URL实例代表语法意义上的组建, 
+  - 支持解析语法
+  - 查找主机
+  - 打开到指定资源的网络IO操作
+
 ## URL类
 
 - URL类**并不**根据RFC2396定义的机制对其字符串内容进行解码或编码
@@ -11,7 +19,7 @@
 
 方法
 
-- `new URL(String);` 构建URL对象:
+- `new URL(String);` 构建URL对象
 - `public InputStream openStream();`: 获得资源内容
   - 相当于`openConnection().getInputStream()`
 
@@ -23,10 +31,12 @@ URLDecoder: HTML解码工具类
 
 > [URL](Http_URL_And_URI): Uniform Resource Locator
 
-## URI
+## URI类
 
 [URI](Network_URI.md)
 
+- 应用**不应该**试图从File或Path实例的直接字符串构造, 解析URI
+- 使用Path.toUri()和File.toURI()创造URI
 - 语法: `[scheme:]scheme-specific-part[#fragment]`
 - URI实例由以下9部分组成:
   - scheme: String
@@ -38,6 +48,28 @@ URLDecoder: HTML解码工具类
   - path: String
   - query: String
   - fragment: String
+
+方法
+
+1. 信息
+
+解码后的信息
+
+- `String getAuthority()`
+- `String getFragment()`
+- `String getHost()`
+- `String getPath()`
+- `int getPort()`
+- `String getQuery()`
+- `String getUserInfo()`
+
+原始信息
+
+- `String getRawAuthority()`
+- `String getRawFragment()`
+- `String getRawPath()`
+- `String getRawQuery()`
+- `String getRawUserInfo`
 
 ## 因特网地址: InetAdderss类
 

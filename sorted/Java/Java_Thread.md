@@ -22,3 +22,9 @@ Running
 IOBlock
 SleepBlock
 WaitBlock
+
+## 线程池
+
+```java
+ExecutorService threadPool = Executors.newFixedThreadPool(10);
+```
