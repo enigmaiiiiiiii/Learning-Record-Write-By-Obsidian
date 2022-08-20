@@ -18,7 +18,7 @@ Can load library: libawt_xawt.so
 
 - 编译所用JDk版本与运行所用JDK版本不匹配
 
-## No.4 
+## No.4
 
  `module java.base does not "opens java.util" to unnamed module @5305068a`
 
@@ -93,3 +93,8 @@ class Student {
     }
 }
 ```
+
+## No.8
+
+java.net.SocketException: Software caused connection abort: socket write error
+

@@ -15,8 +15,8 @@
 </table>
 
 > CRLF: 表示回车符(CR)和换行符(LF)
->> 回车符: `\n`, CR, 13, 1010
->> 换行符: `\t`, LF, 10, 1001 
+>> 回车符(return): `\r`, CR, 13, 1010
+>> 换行符(next line): `\n`, LF, 10, 1001
 
 [请求报文](http请求报文.md): 首行为请求行
 	 
@@ -66,6 +66,7 @@ Age: 7
 </html>
 
 ```
+
 > 首部字段为
 >> Content-Type
 >> Content-Length
