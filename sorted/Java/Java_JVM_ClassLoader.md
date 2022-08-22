@@ -1,11 +1,19 @@
 # 类加载器
 
+> ClassLoader指类加载器的抽象类，class loader指Java中类加载器的含义
+
+## 类加载器(class loader)
+
 - 因为资源通常和应用程序或库打包在一起，所以除了装入类之外，类加载器还负责定位资源
 - 通过识别类的Binary name来加载类
 
 > 比如"Java.lang.String", "javax.swing.JSpinner$DefaultEditor"
 
-- 每个[Class](Java_Reflect_Class.md)对象都包含一个对定义它的ClassLoader的引用。
+- 一个类加载器需要尝试 定位 或 生成定义类的数据
+
+> 普遍做法是将类名称作为路径名称, 然后从文件系统中读取类字节码
+> 也有一些类也许会从网络或其他应用构成
+
 - 数组对象由arrayInstance.getClassLoader()返回类加载器, 与元素的类加载器相同
 
 ## 类加载过程
@@ -18,7 +26,7 @@
 
 ## Run-time Built-in Class Loaders
 
-1. 引导类加载器
+1. 引导类加载器(Bootstrap ClassLoader)
 
 - 从[rt.jar]中进行加载系统类，系统类通常用C语言来实现, 没有对应的ClassLoader对象
 
@@ -46,3 +54,11 @@
 - 重写findClass必须做到以下几点
   - 为来自本地文件系统或者其他来源的类加载其字节码
   - 调用ClassLoader超类的defineClass()方法, 向虚拟机提供字节码
+
+## ClassLoader类
+
+[ClassLoader类](Java_JVM_Class_ClassLoader.md)
+
+## Module类
+
+[Module类](Java_JVM_Class_Module.md)

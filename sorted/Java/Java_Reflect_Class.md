@@ -43,7 +43,7 @@ Object m = Class.forName(s).newInstance();
 - `getMethods()`
 - `getDeclaredMethods()`
 - `getConstructors()`
-- `public ClassLoader getClassLoader()`: 返回Class类的[类加载器]()
+- `public ClassLoader getClassLoader()`: 返回Class类的[类加载器](Java_JVM_Class_ClassLoader.md)
 
 创建实例
 
@@ -53,5 +53,8 @@ Object m = Class.forName(s).newInstance();
 
 定位
 
-
-
+- `URL getResource(String name)`: 查找与**调用该方法的类**相关指定资源
+  - 如果class在一个[命名Module]中, 则通过调用Class loader的getResource()方法
+  - 如果class在一个[非命名Module]中, Class Object被bootstrap class loader加载, 该方法调用ClassLoader.getSystemResource(Java.lang.String)
+- getResourceAsStream(String name)
+  - 如果name以`/`开始, 则资源的绝对路径名是`/`后面的部分

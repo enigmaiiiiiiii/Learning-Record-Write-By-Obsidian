@@ -34,6 +34,8 @@ out.write(13);  // 若此处抛出IOException
 
 [FileInputStream/FileOutputStream](Java_FileIOStream.md)
 
+[ByteArrayInputStream/ByteArrayOutputStream](Java_ByteArrayIOStream.md)
+
 ### 高级流
 
 [Buffer流](Java_BufferedIOStream.md): 通过缓冲减少IO次数的流
