@@ -10,4 +10,7 @@
 
 ## sealed
 
-- 
+## import
+
+- `import PackageName.*`
+- package name必须是完整名称

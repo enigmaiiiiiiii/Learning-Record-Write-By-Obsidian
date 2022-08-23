@@ -9,7 +9,6 @@
 
 ## 配置文件
 
-[pom.xml](Java_Maven_Pom_Xml.md)
 
 [setttings.xml]
 

@@ -53,6 +53,8 @@ Object m = Class.forName(s).newInstance();
 
 定位
 
+> `.`: 当前目录, `/`: 根目录
+
 - `URL getResource(String name)`: 查找与**调用该方法的类**相关指定资源
   - 如果class在一个[命名Module]中, 则通过调用Class loader的getResource()方法
   - 如果class在一个[非命名Module]中, Class Object被bootstrap class loader加载, 该方法调用ClassLoader.getSystemResource(Java.lang.String)

@@ -53,7 +53,7 @@ apt-file search filename
 - `tree` 列出文件树状图
   用于查找**内容**包含指定的范本样式的文件
 - `head` 显示文件开头部分
-      
+
 ## 系统管理
 
 - ps -aux 查看进程
