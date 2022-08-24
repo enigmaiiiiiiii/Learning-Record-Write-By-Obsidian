@@ -9,8 +9,8 @@
 
 ## 配置文件
 
-
 [setttings.xml]
+
 
 ## 配置Artifact并行下载数量
 
@@ -69,3 +69,7 @@ export MAVEN_OPTS=-Dmaven.artifact.threads=3
   .
 </settings>
 ```
+
+## profiles
+
+- downloadsources

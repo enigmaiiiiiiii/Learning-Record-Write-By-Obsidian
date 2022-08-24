@@ -2,7 +2,7 @@
 
 ## POM
 
-[pom.xml](Java_Maven_Pom_Xml.md)
+[pom.xml](Maven_Pom_Xml.md)
 
 ## 编译Maven
 

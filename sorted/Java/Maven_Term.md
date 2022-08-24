@@ -36,6 +36,10 @@ project
 
 ## POM
 
+## 坐标(coordinate)
+
+- groupId, artifactId, version共同组成maven项目的坐标
+
 groupId: 
 
 - 在organization 或 organization 中通常是唯一的
