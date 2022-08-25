@@ -19,4 +19,8 @@
 - [ ] 多列容器值不为auto
 - [ ] column-span值为all的元素始终会创建一个新的BFC, 即使该元素包裹在一个多列容器中
 
-## 
+## 应用
+
+1. contain internal floats
+2. exclude external floats
+3. suppress margin collapsing
