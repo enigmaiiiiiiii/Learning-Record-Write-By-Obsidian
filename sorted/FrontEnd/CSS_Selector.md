@@ -83,4 +83,3 @@ input[type="submit"] {
     width: 100px;
 }
 ```
-
