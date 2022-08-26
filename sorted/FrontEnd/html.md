@@ -8,49 +8,20 @@
 
 - 从开始标签到结束标签的所有代码
 
-## head标签
+### 块级元素
 
-- 包含6个标签
-  - title: 浏览器中显示的标签名称
-  - meta: 定义页面特殊信息
-  - style: CSS样式定义于此
-  - link: 也是定义CSS样式，表示引入外部CSS样式
-  - script: javaScript代码定义于此
-  - base: 没有意义
+- 占据父元素的整个水平空间
+- 垂直空间等于器高度内容
 
-## meta标签
+> 浏览器通常在块级元素前后另起一行
 
-- name属性
-  - `name="keywords/description/author/copyright`
-  - keywords 网页关键字
-  - description 网页描述
-  - author 作者
-  - copyright 版权
+- 只能出现在`<body>`元素内
+- 元素列表, `<div>`, `<p>`, `<ul>`, `<table>`
 
-```html
-<!DOCTYPE html>
-<html>
-    <!--网页关键字-->
-    <meta name="keyword" content="笔记, 知识结构, 前端"/>
-    <!--网页描述-->
-    <meta name="descriiption" content="这是一篇关于前端的笔记,name属性关键字description是用来做网页的描述"/>
-</html>
-```
+### 行内元素
 
-- http-equiv属性: 定义网页所使用编码，定义网页自动刷新跳转
-  - ```<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>```，声明页面所使用的编码是utf-8
-  - ```<meta charset="utf-8"/>```, HTML5中可以将上面代码简写成这种形式
-  - 如果打开时乱码首先考虑是这个属性
-  - ```<meta http-equiv="refresh" content="6:url=http://www.baidu.com"/>```, 表示页面6秒后自动跳转baidy.com
-
-## class属性
-
-- 用来将元素归类
-- 一个元素可以归入多个类别
-
-```html
-<a class="class1 class2" href="http://apress.com">apress web site</a>
-```
+- 只占据对应标签边框所包含的空间
+- 元素列表, `<span>`, `<button>`, `<input>`, `<label>`, `<b>`, `<img>`
 
 ## Content categories
 
@@ -71,5 +42,3 @@
   - 表单相关内容类型(Form related content categories)
   - 特别内容类型(Specific content categories)
 - 每個 HTML 元素都属于零個、一個、或數個內容的模型，所有元素內容的設置規則都要遵從 HTML 一致性文件。
-
-

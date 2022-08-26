@@ -2,6 +2,8 @@
 
 ## 盒子模型
 
+- CSS中的所有元素都有一个盒子模型
+
 层次关系
 
 > margin: 用**空白区域**扩展边框
@@ -13,24 +15,33 @@
 
 > width, height
 
-## 位置
+***
 
-> top, right, bottom, left
+## position属性
 
-- 静态定位: `position: static`, 默认定位方式
+> 允许从Normal Flow中取出元素, 并使他们具有不同的行为, 如放在另一个元素上，或保持在浏览器同一位置
+
+- 静态定位: `position: static`,
+  - 默认定位方式
+  - 仅仅意味着将元素放入它在Normal Flow中的正常位置
 - 相对定位: `position: relative`
+  - 允许通过属性top, right, bottom, left来修改元素在文档中的位置
+    - top, right, bottom, left可以理解为力的来源方向
 - 绝对定位: `position: absolute`
-  - 相对于最近的positioned ancestor
+  - 允许通过属性top, right, bottom, left来修改元素在文档中的位置
+  - 相对于最近的**positioned ancestor**
   - 脱离normal document flow[文档流]
 - 固定定位: `position: fixed`
   - 相对位置窗口固定
-  - 脱离normal document flow
+  - 脱离[normal document flow](CSS_Normal_Flow.md)
+
+定位上下文(Positioning contexts)
 
 ## 浮动
 
 - 浮动元素是指元素的float属性不为none
 - 向左侧或右侧浮动, 允许浮动元素被text和inline元素包围
-- 脱离normal flow
+- 脱离[normal flow](CSS_Normal_Flow.md)
 
 元素是如何浮动的
 
@@ -46,25 +57,7 @@
 
 ## overflow
 
-- 当内容太多导致大于box的尺寸时, CSS为了不让内容丢失, 会发生overflow
-
-> 会让内容看起来一团乱
-
-overflow属性可以避免让内容看起来乱
-
-- `overflow: hidden`-内容将被剪裁以适应填充框
-- `overflow: scroll`-为overflow内容添加滚动轴
-  - `overflow-y: scroll` 单独添加y方向上的滚动轴
-  - `overflow-x: scroll`
-
-```css
-.box {
-    border: 1px solid #333333
-    width: 200px;
-    heigth: 100px;
-    overflow: scroll
-}
-```
+[overflow](CSS_Overflow.md)
 
 ## flex模型
 
@@ -99,3 +92,37 @@ article:nth-of-type(3) {
 ```
 
 flex item最小尺寸200px, 剩余空间按比例分配
+
+## 对齐
+
+- vertical-align: 纵向对齐
+  - baseline
+  - top
+  - middle
+  - bottom
+  - sub
+  - text-top
+
+## z-index
+
+***
+
+## 包含块和布局
+
+> 元素的尺寸和位置常常受到包含块的影响, 如width, height, padding, margin, position的top, right, bottom, left
+
+- 元素的包含块: 包含该元素的块
+
+确定包含块, 完全依赖于元素的position属性
+
+- 如果position属性为static, relative, sticky
+  - 其包含块可能由最近的祖先块元素的内容区边缘组成
+- 如果position属性为absolute
+  - 包含块由最近的position不是static的祖先元素的padding边缘组成
+- 如果position属性是fixed
+  - 在continuous media情况下, 包含块是viewport, 分页媒体是page area
+- 如果position是absolute或fixed, 包含块可能由满足以下条件的最近父级元素的padding的边缘组成
+  - transform或perspective的值不为none
+  - will-chang的值是transform或perspective
+  - filter的值不是none 或 will-change的值是filter
+  - contain的值是paint

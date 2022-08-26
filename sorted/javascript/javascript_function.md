@@ -8,20 +8,28 @@
 
 [函数属性和方法](javascript_function_property_and_method.md)
 
-- 函数声明
+## 函数声明
+
 函数声明会在代码被执行之前读取到执行上下文
 
-  ```javascript
-  function funcName(arg0, arg1, arg2) {
-  }
-  ```
+```javascript
+function funcName(arg0, arg1, arg2) {
+}
+```
   
-- 函数表达式  
+函数表达式  
 
-  ```javascript
-  let funcName = function(arg0, arg1,arg2) {
-  }
-  ```
+```javascript
+let funcName = function(arg0, arg1,arg2) {
+ }
+```
+
+```javascript
+let funcName = new Function("arg0", "arg1", "function body(arg1, arg2)") {
+}
+```
+
+
 
 - 立即调用的函数表达式(IIFE)
 

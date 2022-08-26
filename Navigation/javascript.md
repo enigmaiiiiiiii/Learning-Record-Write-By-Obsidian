@@ -1,6 +1,6 @@
-# javascript
+# Javascript
 
-[变量](javascript_variable.md)
+[变量](/sorted/javascript/javascript_variable.md)
 
 [this](javascript_this.md)
 
@@ -10,7 +10,7 @@
 
 [原始值与引用值](javascript_variable_copy_and_reference.md)
 
-[数据类型]
+[变量类型](/sorted/javascript/Javascript_Type.md)
 
 [操作符]
 
@@ -18,11 +18,11 @@
 
 [面向对象](javascript_面向对象.md)
 
-[函数](javascript_function.md)
+[函数](/sorted/javascript/javascript_function.md)
 
 [浏览器对象模型(BOM)](javascript_BOM.md)
 
-[HTML对象模型(DOM)](javascript_DOM.md)
+[HTML对象模型(DOM)](/sorted/javascript/javascript_DOM.md)
 
 [模块管理](javascript_module.md)
 

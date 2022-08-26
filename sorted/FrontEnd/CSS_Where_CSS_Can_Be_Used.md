@@ -14,7 +14,9 @@
 
 ```html
 <style type="text/css">
-    
+    div {
+
+    }
 </style>
 ```
 
@@ -27,8 +29,3 @@
 <div style="color:red">分区样式</div>
 </body>
 ```
-
-## 元素id和class
-
-id属性具有唯一性：一个id只能出现一次
-class可以是相同的，代表一类，使用CSS或JavaScript操作某一类
