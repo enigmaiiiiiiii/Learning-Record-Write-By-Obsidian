@@ -1,4 +1,10 @@
-# 标签
+# 元素列表
+
+## 基础标签
+
+## Form
+
+[form](HTML_Element_Form.md)
 
 ## 分区标签
 
@@ -14,7 +20,7 @@ HTML5新增
 - section
 - nav
 
-## img
+## img标签
 
 - **行内块**元素, 共占一行
 - 可以修改宽高
@@ -54,11 +60,4 @@ HTML5新增
   - 如果打开时乱码首先考虑是这个属性
   - ```<meta http-equiv="refresh" content="6:url=http://www.baidu.com"/>```, 表示页面6秒后自动跳转baidy.com
 
-## class属性
-
-- 用来将元素归类
-- 一个元素可以归入多个类别
-
-```html
-<a class="class1 class2" href="http://apress.com">apress web site</a>
-```
+***

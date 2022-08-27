@@ -12,10 +12,9 @@
 
 [Normal Flow](CSS_Normal_Flow.md)
 
-[背景和边框](CSS_Background_And_Border.md)
-
-
 [尺寸和位置](CSS_Size_And_Position.md)
+
+[背景和边框](CSS_Background_And_Border.md)
 
 [BFC](CSS_Block_Formatting_Context.md)
 

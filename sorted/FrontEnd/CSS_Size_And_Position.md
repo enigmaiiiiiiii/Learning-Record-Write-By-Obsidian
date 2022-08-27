@@ -2,18 +2,26 @@
 
 ## 盒子模型
 
-- CSS中的所有元素都有一个盒子模型
+[盒子模型](CSS_Box_Model.md)
 
-层次关系
+## 内容区域
 
-> margin: 用**空白区域**扩展边框
->> border: 扩展自padding
->>> padding: 扩展自内容边界
->>>> content edge: 内容区域, 用来限制内容区域(content area)
+- width, height设置内容区域大小
+- 取值类型
+  - 大小: 直接指定大小
+  - 百分比: 按[containing block]百分比设置大小
 
-## 设置尺寸
+## 内边界
 
-> width, height
+- padding
+
+## 边框
+
+- border
+
+## 外边界
+
+- margin
 
 ***
 
@@ -43,17 +51,34 @@
 - 向左侧或右侧浮动, 允许浮动元素被text和inline元素包围
 - 脱离[normal flow](CSS_Normal_Flow.md)
 
-元素是如何浮动的
+元素是如何浮动
 
 1. 脱离normal flow
 2. 移动到container的边界或其他浮动元素的边界
 
 ## display属性
 
-- block: 独占一行，可以修改宽高，标签h1-h6, p, div默认block
-- inline: 共占一行，不能修改宽高，标签span, a, b, i, u, s默认inline
-- inline-block: 共占一行，可以修改宽高, input, img默认inline-block
-- none: 隐藏元素
+- 决定一个元素的内部和外部显示类型
+  - 外部类型决定元素是块级元素还是行内元素
+  - 内部类型控制子元素的布局
+
+设置元素本身表现方式
+
+- block: 生成一个块级元素, 标签h1-h6, p, div默认block
+- inline: 生成一个行内元素, 标签span, a, b, i, u, s默认inline
+
+设置内部元素表现方式
+
+- flow: 元素的内容将使用[flow布局](CSS_Normal_Flow.md)(block and inline layout)
+- flow-root: ~~~创建新的[BFC](CSS_Block_Formatting_Context.md), 定义根位置~~~
+- table
+- flex
+- grid
+- ruby
+
+预设类型
+
+- inline-block: 等价于inline flow-root
 
 ## overflow
 
@@ -109,11 +134,10 @@ flex item最小尺寸200px, 剩余空间按比例分配
 
 ## 包含块和布局
 
-> 元素的尺寸和位置常常受到包含块的影响, 如width, height, padding, margin, position的top, right, bottom, left
+- 包含块大多数时候是ancester中最近的[block-level元素](HTML_Element_Sort.md#块级元素)
+- **确定包含块的意义**: 元素的尺寸和位置常常受到包含块的影响, 如width, height, padding, margin, position的top, right, bottom, left
 
-- 元素的包含块: 包含该元素的块
-
-确定包含块, 完全依赖于元素的position属性
+如何确定包含块, 完全依赖于元素的position属性
 
 - 如果position属性为static, relative, sticky
   - 其包含块可能由最近的祖先块元素的内容区边缘组成
@@ -123,6 +147,6 @@ flex item最小尺寸200px, 剩余空间按比例分配
   - 在continuous media情况下, 包含块是viewport, 分页媒体是page area
 - 如果position是absolute或fixed, 包含块可能由满足以下条件的最近父级元素的padding的边缘组成
   - transform或perspective的值不为none
-  - will-chang的值是transform或perspective
+  - will-change的值是transform或perspective
   - filter的值不是none 或 will-change的值是filter
   - contain的值是paint

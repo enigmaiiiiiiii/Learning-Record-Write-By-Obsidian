@@ -1,29 +1,16 @@
 # HTML
 
-[HTML标签](HTML_Tag.md)
-
-[form](HTML_Element_Form.md)
-
 ## HTML元素
 
-- 从开始标签到结束标签的所有代码
+- 从开始标签到结束标签中间的所有代码
 
-### 块级元素
+[元素分类](HTML_Element_Sort.md)
 
-- 占据父元素的整个水平空间
-- 垂直空间等于器高度内容
+[元素属性](HTML_Element_Attribute.md)
 
-> 浏览器通常在块级元素前后另起一行
+[元素列表](HTML_Element_list.md)
 
-- 只能出现在`<body>`元素内
-- 元素列表, `<div>`, `<p>`, `<ul>`, `<table>`
-
-### 行内元素
-
-- 只占据对应标签边框所包含的空间
-- 元素列表, `<span>`, `<button>`, `<input>`, `<label>`, `<b>`, `<img>`
-
-## Content categories
+## 内容分类(Content categories)
 
 - 每個 HTML 元素都要遵从該元素可擁有何種內容規則
 - 几種常用的內容模型（content model）。
