@@ -1,5 +1,11 @@
 # 背景和边框
 
+## background
+
+- 作用于盒子模型的padding和内容区域
+
+属性设置
+
 - `background-color: #000000` 背景颜色
 - `background-images: url(sourcePath)`背景图片
 - `background-repeat: repeat` 控制背景图片平铺行为, 默认repeat
@@ -13,7 +19,6 @@
 ## gradient(渐进)
 
 - 由两种或多种颜色组成的渐进效果
-
 - linear-gradient
 - radial-gradient
 - repeating-linear-gradient
