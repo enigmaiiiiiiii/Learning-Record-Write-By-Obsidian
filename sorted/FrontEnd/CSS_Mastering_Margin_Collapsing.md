@@ -8,7 +8,7 @@
 
 - 条件： 
   1. 如果第一个元素与父元素上边界, 或最后一个元素与父元素下边界
-  2. 父元素没有border, padding, 内容不能设定为inline, 不能有clear-fix
+  2. 父元素没有border, padding, display不能设定为inline, 不能有clear-fix
 
 空元素
 

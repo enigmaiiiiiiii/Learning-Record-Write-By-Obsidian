@@ -1,6 +1,8 @@
 # 变量
 
-[变量声明](javascript_变量声明.md)
+## 声明
+
+[变量声明](JavaScript_Variable_Declaration.md)
 
 ## 确定类型
 
@@ -36,3 +38,15 @@ var c = foo(2);
 
 `foo(2)`
 
+
+## Array
+
+```javascript
+let myNameArray = ['Chris', 'Bob','Jim',]
+```
+
+## Object
+
+```javascript
+let dog = {name: 'Spot', breed: 'Dalmatian'};
+```

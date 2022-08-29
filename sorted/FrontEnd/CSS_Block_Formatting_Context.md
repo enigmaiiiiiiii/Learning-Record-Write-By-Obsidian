@@ -6,7 +6,7 @@
 
 - [x] 文档根元素, root element of document, `<html>`
 - [x] 浮动元素, float elements(float属性不等于none)
-- [x] Absolutely positioned elements, `position: absolute or fix`
+- [x] Absolutely positioned elements, `position: absolute or fixed`
 - [x] Inline-block(display: inline-block)
 - [ ] Table cells
 - [ ] Table captions

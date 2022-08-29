@@ -16,7 +16,7 @@
 
 ## Linux命令
 
-[实用命令](Linux实用命令.md)
+[实用命令](/sorted/Linux/Linux实用命令.md)
 
 [账户管理](Linux账户管理.md)
 

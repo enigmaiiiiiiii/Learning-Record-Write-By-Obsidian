@@ -16,6 +16,7 @@
 - 属性: padding
   - `padding: 20px 10px;`: 纵向padding 20px, 横向padding 10px
   - `padding: 1px 2px 3px 4px;`: 以"上"为起点, 顺时针设置padding
+- 百分比: 基于containing block的padding设置
 
 ## 边框(border)
 
@@ -28,5 +29,6 @@
 - 属性: margin
   - 可以是负值
 - margin不包括在box的实际尺寸中, 属于不可见宽度
+- 百分比: 基于containing block的margin设置
 
 [外边距塌陷](CSS_Mastering_Margin_Collapsing.md)

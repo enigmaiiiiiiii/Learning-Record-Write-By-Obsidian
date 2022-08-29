@@ -13,7 +13,7 @@
 - 绝对定位: `position: absolute`
   - 允许通过属性top, right, bottom, left来修改元素在文档中的位置
   - 相对于最近的**positioned ancestor**
-  - 脱离normal document flow[文档流]
+  - 脱离normal document flow[文档流](CSS_Normal_Flow.md)
 - 固定定位: `position: fixed`
   - 相对位置窗口固定
   - 脱离[normal document flow](CSS_Normal_Flow.md)
