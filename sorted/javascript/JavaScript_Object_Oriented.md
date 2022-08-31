@@ -1,6 +1,6 @@
 # javascript中的面向对象
 
-[对象](javascript_object)
+[对象](Javascript_Object.md)
 
 [属性](javascript_Property.md)
 

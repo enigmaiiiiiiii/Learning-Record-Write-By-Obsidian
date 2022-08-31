@@ -4,8 +4,11 @@
 
 [数组](JavaScript_Foundation_Array.md)
 
+[全局对象](JavaScript_Global_Object.md)
+
 [变量](/sorted/javascript/javascript_variable.md)
 
 [运算符](/sorted/javascript/JavaScript_Operator.md)
 
 
+[预定义函数](JavaScript_Predefined_Functions.md)

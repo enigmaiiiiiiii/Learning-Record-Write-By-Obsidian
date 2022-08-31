@@ -2,42 +2,27 @@
 
 - 没有重载
 
+## 定义函数
+
+[定义函数](JavaScript_Function_Definition.md)
+
+## 闭包
+
+- 嵌套函数就是一个闭包
+- 闭包: 可以访问外部函数的参数和变量, 外部函数却不能使用它的参数和变量
+
+## 参数对象
+
 [参数](javascript_function_arguments.md)
 
-[函数表达式](javascript_function_expression.md)
+## 函数对象
+
+[函数表达式](JavaScript_Function_Expression.md)
+
+## 函数的属性和方法
 
 [函数属性和方法](javascript_function_property_and_method.md)
 
-## 函数声明
+## 箭头函数
 
-函数声明会在代码被执行之前读取到执行上下文
-
-```javascript
-function funcName(arg0, arg1, arg2) {
-}
-```
-  
-函数表达式  
-
-```javascript
-let funcName = function(arg0, arg1,arg2) {
- }
-```
-
-```javascript
-let funcName = new Function("arg0", "arg1", "function body(arg1, arg2)") {
-}
-```
-
-
-
-- 立即调用的函数表达式(IIFE)
-
-可以模拟块级作用域, ECMAScript6之后，用IIFE模拟块级[作用域](javascript_上下文与作用域.md)就没那么必要了
-ECMAScript6使用块级作用域变量可以实现同样的效果
-
-```javascript
-(function() {
-  // 作用域
-})();
-```
+[箭头函数](JavaScript_Arrow_Function_Expressions.md)

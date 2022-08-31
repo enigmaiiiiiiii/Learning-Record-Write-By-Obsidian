@@ -4,7 +4,24 @@
 
 ## 创建对象
 
-1. new object()方法
+1. 字面量表示法，`{key1:value1, key2: value2}`的形式
+
+> 更流行的表示方法
+
+```javascript
+let person = {
+    name: "nichonlas",
+    age: 28;,
+    sayName: function() {
+       // function body
+    },
+    sayName(){  // 简写方法名
+      console.log(this.name);
+    }
+}
+```
+
+2. new object()方法
 
 ```javascript
 let person = new Object();
@@ -15,23 +32,8 @@ person.sayName = function() {
 }
 ```
 
-name和age是对象的属性, sayname是对象的方法
-
-2. 字面量表示法，`{key1:value1, key2: value2}`的形式
-
-> 更流行的表示方法
-
-```javascript
-let person = {
-  name: "nichonlas",
-  age: 28;,
-  sayName(){  // 简写方法名
-    console.log(this.name);
-  }
-}
-```
-
-字面量表示法中属性名可以是数值
+- name和age是对象的属性, sayname是对象的方法
+- 字面量表示法中属性名可以是数值
 
 ## 对象解构
 

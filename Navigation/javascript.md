@@ -26,7 +26,7 @@
 
 [HTML对象模型(DOM)](/sorted/javascript/javascript_DOM.md)
 
-[模块管理](javascript_module.md)
+[模块管理](/sorted/javascript/javascript_module.md)
 
 [ECMAScript](ECMAScript_正则表达式.md)
 

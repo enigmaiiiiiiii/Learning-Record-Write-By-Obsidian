@@ -1,11 +1,13 @@
 # 参数
 
-- ECMAScript不关心参数的数据类型， 也不关心参数的个数
+- ECMAScript不关心参数的数据类型, 也不关心参数的个数
 
 ## arguments对象
 
-- arguments对象是一个可以在函数内部访问的参数数组, `arguments[0]`表示第一个参数，`arguments[1]`表示第二个参数
-- arguments.length返回参数个数
+- arguments对象是一个可以在函数内部访问的参数数组 
+  - `arguments[0]`: 第一个参数
+  - `arguments[1]`: 第二个参数
+- `arguments.length`返回参数个数
 - arguments参数不反映参数的默认值
 
 ## 默认参数

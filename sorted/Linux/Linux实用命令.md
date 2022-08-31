@@ -1,7 +1,5 @@
 # 命令
 
-[定位](Linux_Locate.md)
-
 ## 定位
 
 `which command`:定位一个命令
@@ -18,6 +16,8 @@ apt search [regex]
 ```shell
 apt-file search filename
 ```
+
+[定位](Linux_Locate.md)
 
 ## 工具
 - `date` 显示日期

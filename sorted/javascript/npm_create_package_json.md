@@ -1,3 +1,5 @@
+# 创建package.json
+
 ## 创建一个新的package.json文件
 
 - package使用用户提供的选项创建文件
