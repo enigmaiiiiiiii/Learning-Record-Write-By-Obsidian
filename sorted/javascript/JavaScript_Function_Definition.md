@@ -31,7 +31,7 @@ let funcName = new Function("arg0", "arg1", "function body") {
 
 ## 立即调用的函数表达式(IIFE)
 
-- 可以模拟块级作用域, ECMAScript6之后，用IIFE模拟块级[作用域](javascript_上下文与作用域.md)就没那么必要了
+- 可以模拟块级作用域, ECMAScript6之后，用IIFE模拟块级[作用域](javascript_Scope_Chain.md)就没那么必要了
 - ECMAScript6使用块级作用域变量可以实现同样的效果
 
 ```javascript

@@ -9,14 +9,15 @@
 
 ## 内容
 
-- [C/C++](c++_and_C.md)
+- [C/C++](Navigation/c++_and_C.md)
 - [数据结构和算法](./Navigation/数据结构和算法.md)
-- [Linux](./Navigation/Linux.md)
-- [NetWork](NetWork.md)
-- [机器学习](./Navigation/机器学习.md)
-- [javascript](./Navigation/javascript.md)
+- [Linux](Navigation/Linux.md)
+- [Java](Navigation/Java.md)
+- [Computer NetWork](Navigation/NetWork.md)
+- [JavaScript](Navigation/JavaScript.md)
+- [机器学习](Navigation/机器学习.md)
 - IDE快捷键
-- git相关  
+- git相关
 - html
 - 计算机基础
 - vim编辑器和编辑模式

@@ -30,3 +30,13 @@
 
 1. 脱离normal flow
 2. 移动到[container]的边界或其他浮动元素的边界
+
+## 对齐
+
+- vertical-align: 纵向对齐
+  - baseline
+  - top
+  - middle
+  - bottom
+  - sub
+  - text-top

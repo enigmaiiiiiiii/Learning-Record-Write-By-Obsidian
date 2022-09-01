@@ -46,15 +46,6 @@ article:nth-of-type(3) {
 
 flex item最小尺寸200px, 剩余空间按比例分配
 
-## 对齐
-
-- vertical-align: 纵向对齐
-  - baseline
-  - top
-  - middle
-  - bottom
-  - sub
-  - text-top
 
 ## z-index
 
