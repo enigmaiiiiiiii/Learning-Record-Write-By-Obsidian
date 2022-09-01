@@ -1,4 +1,4 @@
-# install
+# 安装
 
 ## Ubuntu安装MySql
 

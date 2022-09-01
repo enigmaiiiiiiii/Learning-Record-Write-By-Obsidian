@@ -2,6 +2,8 @@
 
 ## I
 
+[浏览器中使用JavaScript](/sorted/javascript/JavaScript_Using.md)
+
 [术语概念](JavaScript_Terms.md)
 
 [语言基础](/sorted/javascript/JavaScript_Foundation.md)
@@ -16,11 +18,7 @@
 
 [原始值与引用值](/sorted/javascript/javascript_variable_copy_and_reference.md)
 
-[变量类型](/sorted/javascript/Javascript_Type.md)
-
 [操作符]
-
-[语句](/sorted/javascript/javascript_statement.md)
 
 [面向对象](/sorted/javascript/JavaScript_Object_Oriented.md)
 
