@@ -26,19 +26,19 @@ USE 数据库名称
 
 5. 返回当前数据库内可用表的列表
 
-```
+```sql
 SHOW TABLES; 
 ```
 
 6. 返回数据库dbname的可用表的列表
 
-```
+```sql
 SHOW TABLES IN dbname;
 ```
 
 7. 显示表的列
 
-```
+```sql
 SHOW COLUMNS FROM dbtables
 ```
 
@@ -50,7 +50,7 @@ CREATE TABLE name(列名称 列类型)
 
 9. 插入数据
 
-```
+```sql
 INSERT INTO table_name(filed1, field2, ..., fieldN)
                        VALUES
                        (val1, val2, ..., valN);
@@ -72,4 +72,10 @@ SELECT user FROM mysql.user
 
 ```sql
 DROP DATABASE dbname
+```
+
+13. 查询数据库信息
+
+```sql
+SHOW CREATE DATABASE db_name
 ```

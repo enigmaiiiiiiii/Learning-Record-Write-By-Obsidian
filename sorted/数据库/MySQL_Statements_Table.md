@@ -30,13 +30,19 @@ create table card(
 ## 添加字段
 
 ```sql
-alter table tbl_name add col_name data_type ['first']
+ALTER TABLE tbl_name ADD col_name data_type [first]
 ```
 
 - first表示在最前面添加
 
+## 修改列属性
+
+```sql
+ALTER TABLE tbl_name MODIFY col_name col_property
+```
+
 ## 删除字段
 
 ```sql
-alter table tbl_name drop col_name
+ALTER TABLE tbl_name DROP col_name
 ```

@@ -5,16 +5,23 @@
 - TINYINT
 - SMALLINT
 - MEDIUMINT
-- INT
-- BIGINT
+- INT: 
+- BIGINT(m): 等效Java基本类型[long](Java_Primitray_Type.md)
+  - m表示显示长度
+  - zerofill: 用0填充
 - FLOAT
-- DOUBLE
+- DOUBLE(m, d): 
+  - m: 总长度
+  - d: 小数长度
 - DECIMAL
 
 ## 字符串类型
 
-- CHAR
-- VARCHAR
+- CHAR(m)
+  - 固定长度
+- VARCHAR(m)
+  - 可变长度
+  - 节省空间
 - TINYBLOB
 - TINYTEXT
 - BLOB
@@ -26,8 +33,54 @@
 
 ## 日期和时间
 
-- DATE
-- TIME
-- YEAR
-- DATETIME
-- TIMESTAMP
+- DATE: 年月日, 格式yyyy-mm-dd
+- TIME: 时分秒, 格式hh:mm:ss
+- YEAR: 
+- DATETIME: data + time
+- TIMESTAMP: 距1970.1.1的毫秒数, 默认当前系统时间
+
+## 举例说明
+
+### INT
+
+```sql
+create database db;
+use db;
+create table tbl(num int(5) zerofill)
+insert into tbl values(81);
+select * from tbl;
+```
+
+output
+
+```shell
++-------+
+| age   |
++-------+
+| 00090 |
++-------+
+```
+
+### DOUBLE
+
+```sql
+create table tbl(num double(5, 3));
+insert into tbl values(23.234);
+insert into tbl values(23.234567);
+insert into tbl values(234.34);  // 超出范围
+select * from tbl2;
+```
+output
+
+```shell
++--------+
+| num    |
++--------+
+| 23.234 |
+| 23.234 |
++--------+
+```
+
+## 
+
+
