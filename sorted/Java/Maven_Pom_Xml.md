@@ -1,6 +1,7 @@
 # pom.xml
 
-- Project Object Model
+- Project Object Model: 项目对象模型
+- 代表了一个maven项目, 包含了一个maven项目的所有信息
 
 元素
 
@@ -36,7 +37,6 @@ Exclusion元素
 - snapshot: 表示代码为最新开发分支版本, 不保证stable和unchanging 
 
 ## build元素
-
 
 负责声明项目目和管理插件
 

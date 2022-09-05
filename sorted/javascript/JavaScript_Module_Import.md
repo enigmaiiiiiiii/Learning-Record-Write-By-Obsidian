@@ -1,20 +1,14 @@
 # import
 
-- 用于导入另一个 module 导出(export)的绑定
- 
-## 命名空间导入
-
-- 可以有效避免命名冲突
-
 ```javascript
-import * as MyModule from '/modules/my-module.js'
-
-myModule.doThings()
+import default_name from 'module_path'
 ```
 
-- myModule代表一个命名空间对象
-- 没有通配符直接引入的形式，如`import * from "module-name"`
-
+- 用于导入另一个 module 导出(export)的绑定
+- module_path: 模块标识, 可以是绝对路径或相对路径，必须是纯字符串
+  - 相对路径名引用必须以`/, ./, ../`开始
+- 必须出现在顶部
+ 
 ## 默认导入
 
 ```javascript
@@ -29,6 +23,20 @@ import myDefault, * as MyModule from 'modules/my-module.js'
 ```
 
 - MyModule.default和myDefault指向同一个导出绑定
+
+## 命名空间导入
+
+- 可以有效避免命名冲突
+
+```javascript
+import * as MyModule from '/modules/my-module.js'
+
+myModule.doThings()
+```
+
+- myModule代表一个命名空间对象
+- 没有通配符直接引入的形式，如`import * from "module-name"`
+
 
 ## 导入多个接口
 
@@ -54,7 +62,7 @@ import "module-name";
 
 - defaultExport: 默认接口引用名
 - module-name: 要导入的模块, 通常是目标模块的.js文件的路径名
-  - 相对路径名必须以`/, ./, ../`开始
+  - 相对路径名引用必须以`/, ./, ../`开始
 - export: 被导入模块导出的接口名称
 - name: 导入模块对象的别名
 

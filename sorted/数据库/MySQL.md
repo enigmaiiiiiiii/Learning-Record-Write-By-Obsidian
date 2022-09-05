@@ -23,9 +23,11 @@
 
 [MySql查询语句](MySQL_Query_Statements.md)
 
-[MySql修改](MySQL_Modify_Statements.md)
+[MySql修改语句](MySQL_Modify_Statements.md)
 
 [主键](MySQL_Primary_Key.md)
+
+[关联查询](MySQL_Related_Query.md)
 
 [字符集](MySQL_Charset.md)
 

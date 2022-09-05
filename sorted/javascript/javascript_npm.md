@@ -1,6 +1,6 @@
 # npm
 
-- Nodejs的包管理工具
+- Node.js的包管理工具
 
 npm可以用来
 

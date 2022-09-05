@@ -4,9 +4,9 @@
 
 [安装](Java_Environment_Install.md)
 
-[术语概念](Java_Terms_And_Concept.md)
+[术语概念](/sorted/Java/Java_Terms_And_Concept.md)
 
-[Java命令行工具](Java_Tools.md)
+[Java命令行工具](/sorted/Java/Java_Tools.md)
 
 [语法基础](Java_Foundation.md)
 
@@ -32,6 +32,8 @@
 
 [反射](Java_Reflect.md)
 
+[JDBC](Java_JDBC.md)
+
 ## III
 
 [Java BEAN](Java_BEAN.md)
@@ -48,7 +50,7 @@
 
 [SpringBoot](Java_SpringBoot.md)
 
-[Maven](Java_Maven.md)
+[Maven](/sorted/Java/Java_Maven.md)
 
 ## IIIII
 

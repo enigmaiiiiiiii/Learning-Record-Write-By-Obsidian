@@ -1,18 +1,33 @@
 # 模块模式
 
-## import(导入)
+## html页面中引入module
 
-[import](JavaScript_Module_Import.md)
+设置script标签type属性为`type="module"`
 
-## export(导出)
+- 代码中使用模块
 
-[export](JavaScript_Module_Export.md)
+```html
+<script type="module">
+  // 模块代码
+</script>
+```
+- 通过外部资源引入模块
 
-## CommonJS与ES6
+```html
+<script type="module" src="path/to/myModule.sj"></script>
+```
+
+## ECMAScript模块模式
+
+[ECMAScript模块](JavaScript_Module_ES6.md)
+
+## CommonJS模块模式
+
+- ES支持模块之前的模块加载模式
 
 [CommonJS](javascript_module_CommonJS.md)
 
-[ES6模块](javascript_module_ES6.md)
+## CommonJS与ES6
 
 - 区别
   - CommonJS模块输出的是值的拷贝，ES6输出值的引用 

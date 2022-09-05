@@ -26,7 +26,7 @@
 
 指定源文件搜索路径
 
-## 与类文件相关的选项
+## 与.class文件相关的选项
 
 `--class-path path` , `-classpath path`, or `-cp path` 
 

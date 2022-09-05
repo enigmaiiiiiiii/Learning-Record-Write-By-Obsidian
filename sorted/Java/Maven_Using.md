@@ -1,6 +1,6 @@
 # 使用Maven
 
-## POM
+## POM配置文件
 
 [pom.xml](Maven_Pom_Xml.md)
 

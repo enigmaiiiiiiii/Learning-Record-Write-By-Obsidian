@@ -4,11 +4,32 @@
 
 ## var语句
 
-- 无论出现在何处，都会在执行任何代码之前进行处理, 
+- var声明的作用域: 函数内部或全局作用域
+- 用var声明的变量被添加到[变量对象](JavaScript_Context.md)的属性，属性值不能更改，属性不能被delete
+
 - 变量的**声明**被提升, **定义**不会被提升
-- 用var声明的变量被添加到[全局变量对象](JavaScript_Context.md)的属性，属性值不能更改，属性不能被delete
+
+```javascript
+function foo() {
+    console.log(age);
+    var age = 26;
+}
+```
+
+ECMAScript运行时把以上代码看作
+
+```javascript
+function foo() {
+    var age;
+    console.log(age);
+    age = 26;
+}
+```
+
 - 在[模块](JavaScript_Module.md)中变量被声明在模块中，而不是作为属性添加到全局对象中
-- ~~对应名称被添加到[global environment record]()上的`[[varname]]`, 可以区分全局变量和变量对象属性~~
+- 无论出现在何处，都会在执行任何代码之前进行处理 
+
+- ~~对应名称被添加到[global environment record]()上的`[[varname]]`, `[[varname]]`可以区分**全局变量**和**变量对象属性**~~
 
 ```javascript
 console.log(x);  // undifined
@@ -36,20 +57,26 @@ if (true) let a = 1; // 语法错误
 - 可以改变const对象的属性, 无法重新为const对象赋值
 - const数组可以更改，不能重新赋值
 
+## 无标识符变量
+
+- 非严格模式中被当作[全局对象]变量
+- 严格模式下导致ReferenceError
+
 ## 语句和声明
 
-声明
+声明关键字: 
 
-let, const, function, function*, async function, async function*, class, export, import
+- let, const, function, function*, async function, async function*, class, export, import
 
-大多数流程控制结构只能使用语句
+大多数流程控制结构只能使用语句, 所以: 
 
 ```javascript
 if (condition) {
-    statement1;
+    // statement1...
+    let l = 0;  // 错误
 } else {
-    statement2;
+    // statement2
+    var i = 0; // 是一个语句
 }
 ```
 
-`var i = 0;` 是一个语句

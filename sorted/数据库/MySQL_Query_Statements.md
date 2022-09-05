@@ -8,6 +8,8 @@
 select col1, col2, ... from tbl_name where col_name filter_condition;
 ```
 
+- where后只能写col_name条件
+
 ## 关键字
 
 - 比较: `where field < val`
@@ -70,5 +72,16 @@ select col_name from tables order by col_name1 [desc], col_name2 [desc];
 ## 分组查询(GROUP BY)
 
 ```sql
-select [col_name | function()] from emp group by col_name  
+select [col_name | function()] from tbl group by col_name  
 ```
+
+## having
+
+- 聚合函数用作查询条件
+
+```sql
+select * from tbl where conditon having avg(tbl_name) > 1; 
+```
+
+## 子查询
+

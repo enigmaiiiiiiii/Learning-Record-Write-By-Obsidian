@@ -8,7 +8,6 @@
 
 [life cycle和plugin](Maven_Life_Cycle_And_Plugin.md)
 
-
 ## 引入依赖
 
-[Importing Dependencies]()
+[引入依赖]()

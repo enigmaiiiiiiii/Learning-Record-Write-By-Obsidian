@@ -6,5 +6,6 @@
 
 `-cp class classpath`, `--class-path classpath` or  `-classpath classpath`
 
-- 
+- 指定类文件搜索路径
+
 

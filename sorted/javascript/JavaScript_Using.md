@@ -7,7 +7,7 @@
   - type: 定义脚本语言类型
     - 默认视作javascript
     - 支持mime类型, 包括text/javascript, text/ecmascript, aplication/javascript, application/ecmascript
-    - 值为module: 代码会被当做Javascript[模块](JavaScript_Module.md) 
+    - 值为**module**: 代码会被当做Javascript[模块](JavaScript_Module.md) 
 
 ## 外部引入
 
