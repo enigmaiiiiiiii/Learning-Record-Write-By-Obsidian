@@ -35,9 +35,12 @@
   - CommonJS运行时加载，ES6编译时输出接口
   - CommonJS可以写在语句里，ES6只能写在[顶层](JavaScript_Context.md)
   - CommonJS this是window，ES6 this是undifined
+  - CommonJS把所有缺少`.json`和`.node`扩展名的文件当做javascript文件, 
+  - ES只将`.js`, `.mjs`, `cjs`扩展名文件当做javascript文件
+  - CommonJS不允许加载ES6模块, ES6可以加载CommonJS模块
+  - ES不支持以文件夹作为模块加载
 - 相同特性
-  - CommonJS
-  - 模块代码旨在加载后执行
+  - 模块代码只在加载后执行
   - 模块只能加载一次
   - 模块是单例
   - 模块可以定义公共接口

@@ -1,12 +1,17 @@
 # package.json
 
+- 定义nodejs如何解释`.js`文件
 - 列出项目所依赖的包 
 - 项目可以遵循**语义版本控制规则**指定包版本
 - 使项目构建可重现，因此更容易与其他开发人员共享
 
-[创建package.json](npm_create_package_json.md)
+## 创建package.json
 
-[package.json字段](npm_package_json_field.md)
+[创建package.json](NodeJs_Create_Package_Json.md)
+
+## package.json字段
+
+[package.json字段](NodeJs_Package_Json_Field.md)
 
 ## 典型package.json文件
 

@@ -24,13 +24,41 @@ npm可以用来
 - 全局配置文件`./etc/npmrc`
 - 默认配置保存在`lib/utils/defs.js`中，是不能更改的
 
+
+## 开始使用npm
+
+[使用](Npm_Using.md)
+
+## npm exec
+
 ## npm init
 
 > 同npm create
 
+- 语法: `npm init <initializer>`
+  - `initializer`: 是npm package, 创建或更新package
+  - 如果`initializer`被忽略, 则通过命令行询问的方式生成package.json
+
+`npm init` 转换为对应 `npm exec`
+
+- `npm init foo` $\rightarrow$ `npm exec create-foo`
+- `npm init @usr/foo` $\rightarrow$ `npm exec @usr/create-foo`
+
+创建一个React项目
+
+```shell
+npm init react-app ./my-react-app
+```
+
+生成新的workspace
+
+```shell
+npm init -w packages/a
+```
+
 ## npm-install
 
-- 安装一个包和依赖包
+- 安装一个包及其依赖包
 - install命令安装依赖包的依据的顺序
   - npm-shrinkwrap.json
   - package-lock.json
@@ -38,4 +66,4 @@ npm可以用来
 
 ## npm package
 
-[npm包](npm_package.md)
+[npm包](NodeJs_Npm_Package.md)

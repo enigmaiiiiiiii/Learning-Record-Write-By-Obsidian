@@ -1,7 +1,7 @@
 # dotnet命令
 
 - 命令行工具，用于像集成开发环境(Visual Studio和vscode)一样构建程序
-- javascript中的[npm](javascript_npm.md)有很多相似的功能
+- javascript中的[npm](NodeJs_Npm.md)有很多相似的功能
 
 [创建一个项目](dotnet_create_new_repository.md)
 

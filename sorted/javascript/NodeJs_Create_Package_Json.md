@@ -9,7 +9,7 @@
   
 ## 使用.npm-init.js自定义package.json文件
 
-- 在项目目录创建文件.npm-init.js
+- 在项目目录创建文件`.npm-init.js`
 - 在文件中以文本形式添加自定义问题, 通过prompt()函数
 
 
@@ -29,5 +29,6 @@ module.exports = {
 ```
 
 ## 添加默认package.json文件 
+
 1. 进入项目根目录
 2. 运行命令`npm init --yes`

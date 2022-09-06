@@ -12,7 +12,7 @@
   - 1: npm v5 和 v6 使用的 lockfile 版本。
   - 2: npm v7 使用的 lockfile 版本，向后兼容 v1 lockfiles。
   - 3: npm v7 使用的 lockfile 版本，没有向后兼容功能。这用于隐藏的锁定文件 node_modules/.package-lock.json，并且可能会在未来版本的 npm 中使用，一旦对 npm v6 的支持不再相关。
-- package:  根目录通常用`""`作为键值, package-lock.json中的[package.json](npm_package_json.md)
+- package:  根目录通常用`""`作为键值, package-lock.json中的[package.json](NodeJs_Package_Json.md)
 
 ```json
 package: {

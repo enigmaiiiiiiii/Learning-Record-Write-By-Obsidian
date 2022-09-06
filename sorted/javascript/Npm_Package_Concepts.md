@@ -1,6 +1,6 @@
-## npm package的概念
+# npm中的package的概念
 
-- 一个包必须包含一个[package.json](npm_package_json.md)文件才能发布到npm注册表
+- 一个包必须包含一个[package.json](NodeJs_Package_Json.md)文件才能发布到npm注册表
 
 ## package 格式
 

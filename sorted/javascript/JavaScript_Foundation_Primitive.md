@@ -32,6 +32,14 @@ let dolphinGoodbye = 'So long and thanks for all the fish';
 - 操作符`+`, 来连接字符串
 - number提供toString()方法转换成字符串
 - `parseFloat(String)`, 将字符串数字转换为float类型, 全局对象的方法
+- 模板字符串: 用(`)表示，可以用来
+  - 定义普通字符串
+  - 多行字符串
+  - 字符串中嵌入变量
+  ```javascript
+  var name = "bob", time = "today";
+  console.log(`Hello ${name}, how are you ${time}`);
+  ```
 
 方法
 
