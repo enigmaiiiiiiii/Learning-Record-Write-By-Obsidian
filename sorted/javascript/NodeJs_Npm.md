@@ -24,7 +24,6 @@ npm可以用来
 - 全局配置文件`./etc/npmrc`
 - 默认配置保存在`lib/utils/defs.js`中，是不能更改的
 
-
 ## 开始使用npm
 
 [使用](Npm_Using.md)

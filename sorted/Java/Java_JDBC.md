@@ -16,9 +16,31 @@
   - `boolean execute(String sql)`: 执行任意sql语句
   - `int executeUpdate(String sql)`: 执行数据修改, 返回生效的行数
   - `ResultSet executeQuery(String sql)`: 查询语句
-- `ResultSet`: 查询结果对象
-  - `String getString(String columnlabel)`: 返回当前指向条目的`columnlabel`String值
-  - `Double getDoule(String columnlabel)`: 返回当前指向条目的`columnlabel`double值
+## `ResultSet`: 
+
+- 查询结果对象
+
+getter方法
+
+- `String getString(String columnlabel)`: 返回当前指向条目的`columnlabel`String值
+- `String getString(int columnIndex)`
+  - 返回第columnIndex列的字符串
+  - 如果值是SQL NULL, 返回null
+- `Double getDoule(String columnlabel)`
+  - 第一行的columnIndex是1
+  - 返回当前指向条目的`columnlabel`double值
+  - 如果值是SQL NULL, 返回0
+- `int getInt(int columnIndex)`: 
+  - 第一行的columnIndex是1
+  - 返回第columnIndex的值
+  - 如果值是SQL NULL, 返回0
+
+***
+
+- `boolean absolute(int row)`移动到指定的行号
+- `boolean wasNull()`方法
+  - 确认最后读取的值是否为SQL NULL
+  - 确认的是最后调用getter方法的列的值
 
 ### PreparedStatement
 
@@ -41,7 +63,5 @@ PreparedStatement pstmt = con.prepareStatement("UPDATE EMPLOYEES SET SALARY = ? 
 pstmt.setBigDecimal(1, sal);
 pstmt.setInt(2, 110592);
 ```
-
-## 数据库连接池
 
 

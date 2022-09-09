@@ -1,34 +1,26 @@
 # Node.js
 
-- ~~运行于服务端的javascript~~
-- Node.js是一个免费、开源、跨平台的JavaScript运行时环境
-- 允许开发者在浏览器之外编写命令行工具和服务器端脚本。
+## 开始使用
 
-## 安装
+[开始使用NodeJs](NodeJs_Using.md)
 
-[nodejs安装](NodeJs_Install.md)
+## NodeJs模块
 
-## NodeJs包管理程序
+[node模块系统](NodeJs_Module.md)
 
-[npm](NodeJs_Npm.md): node package manager
+## NodeJs包
 
-## 命令行程序
-
-[node command](NodeJs_Command_Node.md)
-
-## package.json是什么
+[package的概念](NodeJs_package.md)
 
 [package.json](NodeJs_Package_Json.md)
 
 [package-lock.json](NodeJs_Package_Lock_Json.md)
 
-## 模块系统
-
-[node模块系统](NodeJs_Module.md)
+[npm](NodeJs_Npm.md): node package manager
 
 ## NodeJs依赖的组件
 
-- V8
+- V8: nodejs使用[V8]引擎解析javascript文件
 - libuv
 - llhttp
 - c-ares

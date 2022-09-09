@@ -31,6 +31,25 @@
 - LONGBLOB
 - LONGTEXT
 
+## NULL值
+
+- 意思是no data
+- 参与比较运算, 得到null
+- 用`is null` 或 `is not null`测试是否为null值
+
+```sql
+select 0 is null, 0 is not null;
+select 1 = null, 1 <> null, 1 < null, 1 > null
+```
+
+```shell
++-----------+---------------+
+| 0 is null | 0 is not null |
++-----------+---------------+
+|         0 |             1 |
++-----------+---------------+
+```
+
 ## 日期和时间
 
 - DATE: 年月日, 格式yyyy-mm-dd

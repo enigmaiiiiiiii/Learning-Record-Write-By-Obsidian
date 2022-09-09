@@ -4,7 +4,7 @@
 
 [浏览器中使用JavaScript](/sorted/javascript/JavaScript_Using.md)
 
-[术语概念](JavaScript_Terms.md)
+[名词概念](JavaScript_Terms.md)
 
 [语言基础](/sorted/javascript/JavaScript_Foundation.md)
 
@@ -24,6 +24,9 @@
 
 [函数](/sorted/javascript/JavaScript_Function.md)
 
+[ECMAScript正则](/sort/javascript/ECMAScript_Regex.md)
+
+[模块管理](/sorted/javascript/JavaScript_Module.md)
 
 ## II Web API
 
@@ -39,13 +42,7 @@
 
 [客户端数据存储]
 
-## III 
-
-[模块管理](/sorted/javascript/JavaScript_Module.md)
-
-[ECMAScript正则](/sort/javascript/ECMAScript_Regex.md)
-
-## IIII
+## III
 
 [node.js](/sorted/javascript/NodeJs.md)
 

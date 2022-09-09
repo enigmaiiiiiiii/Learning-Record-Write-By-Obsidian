@@ -1,4 +1,4 @@
-## CommonJS
+# CommonJS
 
 - 用于在服务端实现模块代码组织
 - 如果想在浏览器中使用CommonJS模块，需要构筑桥梁, 比如[browserify](npm_browserify.md)
@@ -23,7 +23,7 @@ var a2 = require('./moduleA')
 console.log(a1 === a2); // true
 ```
 
-## 指定依赖
+## 导入模块
 
 - 使用require()指定依赖
 
@@ -35,7 +35,17 @@ var moduleA = require('/module')
   - 绝对路径
   - node_modules目录中的依赖标识符
 
-## 导出依赖
+## 导出模块
 
+- exports对象用于导出模块 
+- exports是module的属性
+- module对象对象代表模块自身
+- node中一个文件就是一个模块
 
+导出函数
 
+```javascript
+exports.func = function () {
+    // function body
+}
+```

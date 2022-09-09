@@ -35,18 +35,23 @@
 ```json
 {
   "scripts": {
-    "test": "{{test执行的命令}}"
+    "preinstall": "prescript.js",
+    "install": "installscript.js",
+    "uninstall": "uninstallscript.js",
+    "test": "{{test执行的命令}}",
     "exampletest": "{{example要执行的命令}}"
   }
 }
 ```
+- `npm install <package>`: 会先执行`prescript.js`, 然后执行`installscript.js`
+- `npm uninstall <package>`: 执行`unistallscript.js`脚本
+- `npm run test`: 执行test脚本
 
-- 运行`npm run test`执行test脚本
-
-## package入口点 
+## package入口点: "main"和"export"
 
 - `"main"`: 只能定义 package 的 main 入口点(entry point)
-- `"exports"`: `"main"`的替代，但可以定义多个入口点
+- `"exports"`: 可以定义多个入口点; 可以阻止包的使用者使用未定义的导出
+  - 只有定义在exports中的路径可以被import(引入)
 
 ```json
 {
@@ -75,9 +80,22 @@ exports子路径
 }
 ```
 
-- 只有定义在exports中的路径可以被import(引入)
+使用子路径
 
 ```javascript
 import submodule from 'es-module-package/submodule.js';
 // 加载 ./node_modules/es-module-packages/src/submodule.js
+```
+
+## dependencies
+
+- 向package.json中添加dependencies
+
+```shell
+npm install <package_name> [--save-prod]
+```
+- 向package.json中添加devdependencies
+
+```shell
+npm install <package_name> --save-dev
 ```

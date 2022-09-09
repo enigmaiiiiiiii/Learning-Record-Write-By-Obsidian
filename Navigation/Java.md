@@ -52,6 +52,8 @@
 
 [Maven](/sorted/Java/Java_Maven.md)
 
+[MyBatis](/sorted/Java/MyBatis.md)
+
 ## IIIII
 
 [隐式创建实例](Java_Create_Instance_Implicitly.md)
