@@ -2,6 +2,12 @@
 
 ## 基础标签
 
+## a
+
+- href属性: 跳转链接
+  - 取值"javascript:void(0)"表示不跳转
+
+
 ## form
 
 [form](HTML_Element_Form.md)

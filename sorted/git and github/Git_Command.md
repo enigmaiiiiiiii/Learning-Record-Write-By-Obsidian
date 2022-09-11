@@ -1,5 +1,8 @@
 # git命令
 
+## git clean
+
+- 删除未被追踪的文件
 
 ## git checkout
 

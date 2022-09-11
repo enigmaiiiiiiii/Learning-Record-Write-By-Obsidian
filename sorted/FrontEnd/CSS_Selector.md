@@ -85,3 +85,21 @@ input[type="submit"] {
     width: 100px;
 }
 ```
+
+## 相邻兄弟选择器
+
+```css
+img + p {
+    font-weight: bold;
+}
+```
+- 第二个元素在第一个元素之后, 第二个元素将被选中
+
+猫头鹰选择器
+
+```css
+body * + * {
+    margin-top: 1.5em;
+}
+```
+

@@ -33,3 +33,10 @@ git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 ```shell
 git rm --cached [<file>...]
 ```
+
+## 丢掉本地所有改动
+
+```shell
+git reset --hard
+git clean -fxd
+```

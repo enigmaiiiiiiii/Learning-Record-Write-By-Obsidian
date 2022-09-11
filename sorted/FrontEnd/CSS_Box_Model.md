@@ -1,7 +1,8 @@
 # CSS的盒子模型
 
-## 关于盒子模型的简单描述
+## 标准盒子模型
 
+- box-sizing: content-box
 - CSS中的所有元素都有一个盒子模型
 
 层次关系
@@ -63,6 +64,26 @@
 
 ## 盒子模型的替代模型
 
-- width属性即为可见宽度
-- border, padding会使内容区域更小
 - 设置`box-sizing: border-box;`属性
+  - width, height属性即为可见宽度和高度
+  - border, padding会使内容区域更小
+- width = border + padding + content width
+- height = border + padding + content height
+
+这段代码放到样式表开都已经是普遍做法了
+
+```css
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+```
+
+```css
+:root {
+    box-sizing: border-box;
+}
+*,
+::before, ::after {
+    box-sizing: inherit;
+}
+```

@@ -20,7 +20,7 @@
 
 ## III
 
-[实用命令](Git_Useful_Command.md)
+[解决实际问题的命令](Git_Useful_Command.md)
 
 [[Git_Ignore文件]]
 
