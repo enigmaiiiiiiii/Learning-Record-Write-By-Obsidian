@@ -9,7 +9,10 @@
 var x = document.getElementById("maze");
 ```
 
-返回html元素的样式
+返回html元素的style属性
+
+- style属性是一个CSSStyleDeclaration对象
+- 不包含通过层叠机制从文档样式和外部样式中继承而来的样式
 
 ```javascript
 var x = document.getElementById("maze").style.property;
@@ -27,3 +30,6 @@ document.querySelector("#maze");
 
 - 浏览器的会话历史，不是WebExtensions history
 - back(), forward(), go()方法来完成在记录中向后向前跳转
+
+## HTMLCollection
+

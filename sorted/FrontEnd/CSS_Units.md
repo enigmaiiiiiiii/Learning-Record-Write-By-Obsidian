@@ -13,3 +13,7 @@ em
 rem
 
 - rem: 1rem相当于**根元素**的字号大小
+
+percentage
+
+- 百分比: 父元素或[Containing block](CSS_Containing_Block.md)CSS属性的百分比

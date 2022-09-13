@@ -23,16 +23,7 @@
 
 定位上下文(Positioning contexts)
 
-## 浮动
-
-- 浮动元素是指元素的float属性不为none
-- 向左侧或右侧浮动, 允许浮动元素被text和inline元素包围
-- 脱离[normal flow](CSS_Normal_Flow.md)
-
-元素是如何浮动
-
-1. 脱离normal flow
-2. 移动到[container]的边界或其他浮动元素的边界
+- todo
 
 ## 对齐
 

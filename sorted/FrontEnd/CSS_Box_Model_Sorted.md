@@ -4,6 +4,8 @@
 
 - 外观表现为block
 - 独占一行(will break onto a new line)
+- ~~~默认width为父元素的100%~~~
+- box模型将在行内扩展, 宽度将和[containg block](CSS_Containing_Block.md)一样宽
 - width and height 属性会被遵守(respected)
 - padding, margin, border会使其他元素远离box
 

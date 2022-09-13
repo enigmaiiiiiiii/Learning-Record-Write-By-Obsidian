@@ -40,27 +40,7 @@
 
 ## display属性
 
-- 决定一个元素的内部和外部显示类型
-  - 外部类型决定元素是块级元素还是行内元素
-  - 内部类型控制子元素的布局
-
-设置元素外部表现方式(Outer display type)
-
-- block: 生成一个块级元素, 标签h1-h6, p, div默认block
-- inline: 生成一个行内元素, 标签span, a, b, i, u, s默认inline
-
-设置内部元素表现方式(Inner display type)
-
-- flow: 元素的内容将使用[flow布局](CSS_Normal_Flow.md)(block and inline layout)
-- flow-root: ~~~创建新的[BFC](CSS_Block_Formatting_Context.md), 定义根位置~~~
-- table
-- flex
-- grid
-- ruby
-
-预设类型
-
-- inline-block: 等价于inline flow-root
+[display属性](CSS_Display.md)
 
 ## 盒子模型的替代模型
 

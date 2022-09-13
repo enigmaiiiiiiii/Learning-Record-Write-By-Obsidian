@@ -37,6 +37,6 @@ git rm --cached [<file>...]
 ## 丢掉本地所有改动
 
 ```shell
-git reset --hard
-git clean -fxd
+git reset --hard # 丢弃跟踪的文件的所有本地改动, 删除未跟踪的文件
+git clean -fxd 
 ```
