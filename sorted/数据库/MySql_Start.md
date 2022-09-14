@@ -45,7 +45,7 @@ SHOW COLUMNS FROM dbtables
 8. 创建数据表
 
 ```sql
-CREATE TABLE name(列名称 列类型)
+CREATE TABLE tbl_name(列名称 列类型)
 ```
 
 9. 插入数据

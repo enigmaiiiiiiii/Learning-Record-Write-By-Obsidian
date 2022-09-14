@@ -25,9 +25,10 @@ class NetworkClassLoader extends ClassLoader {
 
 ## 抽象方法
 
-getResource()
+`URL getResource(String name)`
 
 - 默认实现首先在parent class loader中搜做指定资源
+  - 返回URL
   - 如果parent is null, 则搜索JVM的内置class loader
   - 如果没有找到，则调用findResource()方法
 

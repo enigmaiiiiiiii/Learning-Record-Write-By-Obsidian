@@ -6,6 +6,10 @@
 
 ## 删除(DELETE)
 
+```sql
+DELETE FROM tbl WHERE id=1;
+```
+
 - 删除符合条件的行
 - 不使用where子句将删除所有行
 

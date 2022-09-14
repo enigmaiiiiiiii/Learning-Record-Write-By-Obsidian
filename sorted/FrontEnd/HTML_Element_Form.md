@@ -23,7 +23,7 @@
 
 ## method属性
 
-- 提交表单的[HTTP method](http请求报文.md)
+- 提交表单的[HTTP method](Http_Request_Message.md)
 - 有限取值: 1.post 2.get 3.dialog
 
 get方法

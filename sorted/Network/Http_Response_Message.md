@@ -37,7 +37,7 @@ entity body
 - 400 Bad Request: 一个通用差错代码，指示该请求不能被服务器理解
 - 403 Forbidden: 请求被服务器拒绝
 - 404 Not Found: 请求的文档不在服务器上
-- 500 Internal Server Error:
+- 500 Internal Server Error
 - 501 Not Implemented: 服务器不支持请求的功能，无法完成请求。
 - 502 Bad Gateway: 服务器作为网关或代理，从上游服务器收到了无效的响应。
 - 503 Service Unavailable: 服务器目前无法使用（由于超载或停机维护）。

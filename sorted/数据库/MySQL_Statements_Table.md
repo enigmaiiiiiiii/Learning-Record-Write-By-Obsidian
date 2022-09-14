@@ -27,6 +27,12 @@ create table card(
 
 ## 查询列信息
 
+> 先use database 选择数据库
+
+```sql
+desc tbl_name
+```
+
 ## 添加字段
 
 ```sql

@@ -80,7 +80,7 @@ select [col_name | function()] from tbl group by col_name
 - 聚合函数用作查询条件
 
 ```sql
-select * from tbl where conditon having avg(tbl_name) > 1; 
+select * from tbl where conditon having avg(col_name) > 1; 
 ```
 
 ## 子查询

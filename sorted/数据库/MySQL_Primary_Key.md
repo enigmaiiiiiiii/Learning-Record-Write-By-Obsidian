@@ -13,7 +13,6 @@ insert into tbl values(null, 'name');  -- error: Column 'id' cannot be null
 
 - 主键为null时自增，自增从历史最大值+1
 
-
 ```sql
 create table tbl(id int primariy key auto_increment, name varchar(20));
 insert into tbl values(null, 'first');

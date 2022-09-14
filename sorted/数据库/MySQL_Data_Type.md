@@ -20,16 +20,23 @@
 - CHAR(m)
   - 固定长度
 - VARCHAR(m)
-  - 可变长度
+  - 可变长度, m参数表示最大可用长度
+  - m取值0 ~ 65535
+  - 占用字节数: 
+    - 1 + m: m <= 255
+    - 2 + m: 256 <= m <= 65535
+  - 可以是[索引]的一部分
   - 节省空间
-- TINYBLOB
-- TINYTEXT
 - BLOB
 - TEXT
+  - 长度固定为65535字符
+  - 不能成为[索引]的一部分
 - MEDIUMBLOB
 - MEDIUMTEXT
 - LONGBLOB
 - LONGTEXT
+- TINYBLOB
+- TINYTEXT
 
 ## NULL值
 

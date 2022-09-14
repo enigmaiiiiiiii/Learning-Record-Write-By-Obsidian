@@ -16,4 +16,4 @@
   - application/pdf
   - application/msword
   - application/octet-stream
-  - application/x-www-form-urlencoded: 将form[表单数据](http请求报文.md)编码为key/value格式发送到服务器
+  - application/x-www-form-urlencoded: 将form[表单数据](Http_Request_Message.md)编码为key/value格式发送到服务器

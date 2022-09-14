@@ -15,3 +15,4 @@
 - location: 浏览器连接到的对象位置
 - location.href: 包含整个URL
 - location.host: 包含了一个DOMString, 表示主机地址, 可能包含端口号 
+- location.search: 包含了一个DOMString, 表示URL中的查询字符串(?后面的部分)

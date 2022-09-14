@@ -18,13 +18,9 @@
 >> 回车符(return): `\r`, CR, 13, 1010
 >> 换行符(next line): `\n`, LF, 10, 1001
 
-[请求报文](http请求报文.md): 首行为请求行
+[请求报文](Http_Request_Message.md): 首行为请求行
 	 
-[响应报文](http响应报文.md): 首行为响应行
-
-[通用首部字段](http通用首部字段.md)
-
-[实体首部字段](http实体首部字段.md)
+[响应报文](Http_Response_Message.md): 首行为响应行
 
 [实体编码](Http_Content_encode.md)
 

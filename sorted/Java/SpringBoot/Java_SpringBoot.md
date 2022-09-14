@@ -46,6 +46,8 @@ ps.setInt(1, id);
 
 ## SpringMVC
 
+### 流程
+
 1. `@Controller`注解类中的`@RequestMaping(String str)`注解的方法
 
 - 执行客户端指定的方法的方法
@@ -65,3 +67,35 @@ ps.setInt(1, id);
 3. `@Autowired`注解的属性
 
 - 完成mapper实例化
+
+4. 异步请求
+
+- `@RequestBody`参数注解
+  - 将请求体中的json字符串转换为对象
+- axios对象发送请求
+  - get请求: `axios.get(url, {params: data})`
+  - post请求: `axios.post(url, data)`
+  - then方法: `axios.get(url).then(function(res){})`
+    - res.data: 返回的数据
+    - res.status: 状态码
+    - res.statusText: 状态信息
+    - res.headers: 响应头
+    - res.config: 配置信息
+
+### Model Part
+
+- mapper类: 从数据库获得对象
+  - 数据库语句
+- java bean标准类类: 通常存放在entity, model目录中
+
+### View Part
+
+- 前端页面
+- 发送get, post请求
+
+### Controller Part
+
+- 目录类似: controller
+- 响应前端请求
+- 调用mapper类, 完成java bean类的实例化
+- 发送json字符串
