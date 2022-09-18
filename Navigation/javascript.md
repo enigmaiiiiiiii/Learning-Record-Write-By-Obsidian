@@ -34,7 +34,7 @@
 
 [HTML对象模型(DOM)](/sorted/javascript/javascript_DOM.md)
 
-[服务器数据]
+[服务器数据](/sorted/javascript/JavaScript_Server_API.md)
 
 [Canvas]
 

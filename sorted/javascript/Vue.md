@@ -13,3 +13,11 @@
 [指令](Vue_Directives.md)
 
 [单文件组件](Vue_Single_File_Component.md)
+
+## element-ui
+
+[element-ui](Vue_Element_UI.md)
+
+## 使用中的问题
+
+[bug记录](Vue_Learn_From_Bug.md)  

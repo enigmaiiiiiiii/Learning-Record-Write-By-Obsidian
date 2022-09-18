@@ -5,7 +5,7 @@
 ## 创建数据表
 
 ```sql
-create [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition...) [table_options] [partition_options]
+CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition...) [table_options] [partition_options]
 ```
 
 - create_definition包括列名称和列定义, 多个列用`,`隔开: `col_name column_definition` 
@@ -41,10 +41,19 @@ ALTER TABLE tbl_name ADD col_name data_type [first]
 
 - first表示在最前面添加
 
-## 修改列属性
+## 修改列信息
+
+- change: 修改列名和重新定义
+- modify: 修改列定义
+- rename: 修改列名
+
 
 ```sql
 ALTER TABLE tbl_name MODIFY col_name col_property
+```
+
+```sql
+ALTER table tbl_name RENAME col_name TO new_col_name
 ```
 
 ## 删除字段

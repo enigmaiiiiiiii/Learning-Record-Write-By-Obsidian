@@ -8,7 +8,7 @@
 
 [Java命令行工具](/sorted/Java/Java_Tools.md)
 
-[语法基础](Java_Foundation.md)
+[语法基础](/sorted/Java/Java_Foundation.md)
 
 [面向对象](Java_Object_Oriented.md)
 
