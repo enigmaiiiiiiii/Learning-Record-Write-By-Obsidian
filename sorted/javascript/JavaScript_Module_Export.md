@@ -26,13 +26,10 @@ exprot {myfunction, myVariable}
 
 - 为了提高模块可用性，可以在一个父模块中**导入同时导出**不同的模块
 
-
 ```javascript
 export {default as function1, function2} from "bar.js";
 ```
-
 export from导入导出方式，function1, function2 在当前模块**不可用**
-
 
 ```javascript
 import {default as function1, function2} from 'bar.js';

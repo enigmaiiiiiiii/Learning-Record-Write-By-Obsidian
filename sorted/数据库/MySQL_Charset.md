@@ -2,6 +2,17 @@
 
 [字符集](../概念知识/Characters_Code.md)
 
+## 指定字符集
+
+指定表的字符集
+
+```sql
+Create Table tbl_name(
+    id int,
+    name varchar(20)
+) charset=utf8;
+```
+
 ## 字符集信息
 
 - DATABASE: INFORMATION_SCHEMA
@@ -57,3 +68,6 @@ SELECT * FROM t WHERE a = 'a';
 +------+
 ```
 
+## 字符集和排序规则
+
+- 字段(column) > 表(table) > 数据库(database) > MySQL服务器配置(server)

@@ -44,6 +44,8 @@
 - 参与比较运算, 得到null
 - 用`is null` 或 `is not null`测试是否为null值
 
+> `null + 1 is null`
+
 ```sql
 select 0 is null, 0 is not null;
 select 1 = null, 1 <> null, 1 < null, 1 > null
@@ -64,6 +66,26 @@ select 1 = null, 1 <> null, 1 < null, 1 > null
 - YEAR: 
 - DATETIME: data + time
 - TIMESTAMP: 距1970.1.1的毫秒数, 默认当前系统时间
+  - 默认值: `CURRENT_TIMESTAMP()`, 
+  - 默认自动更新: 表示更新为当前条目其他列发生改变时的时间, Extra值为`on update current_timestamp()` 
+
+timestamp打开自动更新后
+
+```sql
+alter table tbl_name change 
+  timestamp_col timestamp_col timestamp 
+  default 
+    current_timestamp 
+    on update current_timestamp;
+```
+关闭自动更新
+
+```sql
+alter table tbl_name change
+  timestamp_col timestamp_col timestamp
+  default 
+    current_timestamp;
+```
 
 ## 举例说明
 

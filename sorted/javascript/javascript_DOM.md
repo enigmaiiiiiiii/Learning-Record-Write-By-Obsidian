@@ -33,3 +33,10 @@ document.querySelector("#maze");
 
 ## HTMLCollection
 
+
+## XMLHttpRequest
+
+[XMLHttpRequest](JavaScript_XMLHttpRequest.md)
+
+- 允许页面在不刷新的情况下与服务器交换数据
+- 大量用于AJAX编程

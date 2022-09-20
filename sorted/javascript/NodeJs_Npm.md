@@ -22,7 +22,13 @@ npm可以用来
 - 环境变量`npm_config_<key>`
 - 用户配置文件`$HOME/.npmrc`
 - 全局配置文件`./etc/npmrc`
+- 项目配置文件`/path/to/project/.npmrc`
 - 默认配置保存在`lib/utils/defs.js`中，是不能更改的
+
+`.npmrc`文件
+
+- `key=value`格式组成的文件
+- 环境变量用`${VARIABLE_NAME}`表示
 
 ## 开始使用npm
 

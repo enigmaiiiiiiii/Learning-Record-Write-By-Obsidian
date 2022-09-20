@@ -53,6 +53,18 @@ spring.servlet.multipart.max-file-size=10MB
     - res.headers: 响应头
     - res.config: 配置信息
 
+6. 添加`exampleFilter`过滤器类
+
+- 实现`javax.servlet.Filter`接口
+- 添加`@WebFilter(filterName = name, urlPatterns = {url1, url2})`注解
+  - urls: 指定过滤器拦截的url, 可以使用通配符, `*`,
+  - name: 指定过滤器名称
+- 重写`doFilter(ServletRequest request, ServletResponse response, FilterChain chain)`方法, 处理http请求和响应
+  - ServletRequest转换为HttpServletRequest, ServletResponse转换为HttpServletResponse
+  - 判断是否放行
+    - 是: 放行, 执行`chain.doFilter(request, response)`
+    - 否: 重定向到登录页面
+
 ## Model Part
 
 - mapper类: 从数据库获得对象

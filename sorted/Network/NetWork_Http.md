@@ -8,7 +8,9 @@
 
 [HTTP报文](Http_Message.md)
 
-[Cookie机制](Http_Cookie.md)
+[Cookie](Http_Cookie.md)
+
+[Session](Http_Session.md)
 
 ## II 
 
@@ -19,3 +21,7 @@
 [非持续连接的HTTP](非持续连接的HTTP.md)
 
 [持续连接的HTTP](持续连接的HTTP.md)
+
+## IIII
+
+[CORS](Http_CORS.md)

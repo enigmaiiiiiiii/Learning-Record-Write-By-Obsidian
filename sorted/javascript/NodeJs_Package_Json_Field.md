@@ -99,3 +99,12 @@ npm install <package_name> [--save-prod]
 ```shell
 npm install <package_name> --save-dev
 ```
+
+## devDependencies
+
+- 用于开发环境的依赖包
+- such as: Babel, ESLint, Webpack, Karma, Mocha, Chai, Sinon, Istanbul, Nightwatch, Protractor, etc.
+
+```bash
+npm install --save-dev <package_name>
+```

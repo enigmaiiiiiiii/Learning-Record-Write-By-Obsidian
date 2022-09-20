@@ -22,6 +22,9 @@ Set-PSReadLineKeyHandler -Key Tab -Function Complete
   - 新建文件夹
 - dir
   - 显示目录中文件列表
+- tree
+  - 显示目录树
+  - `tree /f` 显示文件
 
 ## Windows Terminal快捷键
 

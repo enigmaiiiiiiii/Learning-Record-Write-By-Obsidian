@@ -10,8 +10,8 @@
 ## 内容
 
 - [C/C++](Navigation/c++_and_C.md)
-- [数据结构和算法](./Navigation/数据结构和算法.md)
-- [Linux](Navigation/Linux.md)
+- [数据结构和算法](./Navigation/数据结构和算法.md)[Linux](Navigation/Linux.md)
+- 
 - [Java](Navigation/Java.md)
 - [Computer NetWork](Navigation/NetWork.md)
 - [JavaScript](Navigation/JavaScript.md)

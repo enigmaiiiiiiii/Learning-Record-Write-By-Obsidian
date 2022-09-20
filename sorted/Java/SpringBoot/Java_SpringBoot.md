@@ -18,39 +18,30 @@ Package name: com.example.demo
 
 ## 注解
 
-MVC注解
-
-`@Controller`
-`@ResquestMapping(String str)`
-`@ResponseBody`: 方法返回字符串作为响应内容
-`@RestController()`
-`@Autowired`
-
-MyBatis注解
-
-- `@Mapper`
-- `@Insert(String sql)`
-  - sql: 执行插入功能sql语句字符串
-  - 参数中的`#{}`类似于在JDBC用一个包含`?`的字符串创建一个PreparedStatement对象
-- `@Result(column="old_price", properties="oldPrice")`: 在列和属性名之间建立映射关系
-
-
-
-```xml
-<select id="selectPerson" parameterType= "int" resultType="hashmap">
-Select * from person where id = #{id}
-</select>
-```
-
-```java
-String selectPreson = "Select * From PERSON Where ID = ?";
-PreparedStatement ps = conn.prepareStatement(selectPreson);
-ps.setInt(1, id);
-```
-
-- `@autowired`: 自动装配
+[注解列表](Java_SpringBoot_Annotation_List.md)
 
 ## SpringMVC
 
-[SpringMVC Workflow](Java_SpringMVC_Workflow.md): workflow of SpringMVC
+[SpringWeb](Java_SpringBoot_SpringWeb.md)
 
+[SpringMVC 流程](Java_SpringMVC_Workflow.md): workflow of SpringMVC
+
+## 跨域请求 
+
+[SpringBoot响应跨域请求](Java_SpringBoot_Cross_Domain.md)
+
+- 响应[跨域请求](Http_CORS.md)
+- 启动类实现WebMvcConfigurer接口
+- override addCorsMappings方法
+
+```java
+@Override
+public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")
+            .allowCredentials(true)
+            .allowedHeaders("*")
+            .allowedMethods("*")
+            .allowedOriginPatterns("*")
+            .maxAge(3600);
+}
+```

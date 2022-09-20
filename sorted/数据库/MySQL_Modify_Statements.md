@@ -17,3 +17,7 @@ DELETE FROM tbl WHERE id=1;
 
 - UPDATE和DELETE之前, 应先用SELECT进行测设
 - 使用强制实施引用完整性的数据库, 这样MySQL将不允许删除具有与其他表相关联的数据的行。
+
+```sql
+update tbl set name='new name' where id=1;
+```
