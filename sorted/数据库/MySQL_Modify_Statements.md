@@ -2,6 +2,12 @@
 
 ## 添加
 
+- `,`后表示批量插入
+
+```sql
+INSERT INTO table_name VALUES(column1, column2, column3,...columnN), (column1, column2, column3,...columnN), ...;
+```
+
 ## 更新(UPDATE)
 
 ## 删除(DELETE)
@@ -9,7 +15,6 @@
 ```sql
 DELETE FROM tbl WHERE id=1;
 ```
-
 - 删除符合条件的行
 - 不使用where子句将删除所有行
 

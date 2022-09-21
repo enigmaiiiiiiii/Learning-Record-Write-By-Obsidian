@@ -25,6 +25,17 @@
 
 ## v-bind
 
+> Attribute绑定
+
+- 语法: `<div v-bind:id="dynamicId"></div>`
+- 变量的值与属性绑定(例子中的div标签的id)
+- 对于bool属性
+  - 变量为[真值](JavaScript_Foundation_Primitive.md#boolean)或空字符串`""`, 标识启用属性
+  - 变量为其他值时，忽略属性
+
+
+不支持语句, 仅支持表达式
+
 ## v-model
 
 - 在表单输入元素或组件上创建双向绑定
@@ -41,3 +52,36 @@
 ## v-once
 
 ## v-memo
+
+## v-html
+
+- 语法: `<h1 v-html='msg'></h1>`
+  - h1的内容被替换为msg的值
+- 变量为msg的值与标签内容绑定, 被解析为html
+- 安全警告: 动态渲染HTML是非常危险的，容易造成[XSS漏洞]()
+  - 确定内容可靠时再使用v-html
+  - 永远不要使用用户提供的HTML内容
+
+## 指令参数
+
+```html
+<a v-bind:href="url">...</a>
+```
+
+动态参数
+
+- 动态参数的**表达式的值**应该是字符串或null
+- 动态参数的表达式的约束, 不包含空格, 不包含引号
+- attributeName会被当做javascript表达式进行求值
+
+```html
+<a v-bind:[attributeName]="url>...</a>
+```
+
+修饰符
+
+- .prevent为修饰符
+
+```
+<form @submit.prevent="onSubmit">...</form>
+```

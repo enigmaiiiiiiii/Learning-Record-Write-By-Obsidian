@@ -30,8 +30,9 @@ git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 
 ## 将文件移出暂存区
 
-```shell
+```bash
 git rm --cached [<file>...]
+git rm --cached -r [<dir>...] # 递归删除
 ```
 
 ## 丢掉本地所有改动

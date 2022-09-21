@@ -24,7 +24,7 @@ CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition...) [table_
 比如: 创建card表，表头为cost, description, packName, 数据类型分别是int, varchar(200), varchar(50)
 
 ```sql
-create table card(
+CREATE TABLE card(
     cost int,
     description varchar(200),
     packName varchar(50)
@@ -38,7 +38,13 @@ create table card(
 > 先use database 选择数据库
 
 ```sql
-desc tbl_name
+DESC tbl_name
+```
+
+## 删除表
+
+```sql
+DROP TABLE tbl_name
 ```
 
 ## 添加字段

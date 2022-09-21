@@ -19,7 +19,7 @@ spring.servlet.multipart.max-file-size=10MB
 ```
 
 
-2. `@Controller`注解类中的`@RequestMaping(String str)`注解的方法
+2. 添加`@Controller`注解类, 并添加`@RequestMaping(String str)`注解的方法
 
 - 执行客户端指定的方法的方法
   - \<form>标签的`action="/method"`属性
@@ -29,15 +29,15 @@ spring.servlet.multipart.max-file-size=10MB
 
 > 比如: 客户端发送http://host/name?param1=value1&param2=value2请求后, 将执行`@RequestMapping("/name")`注解的方法
 
-3. `@Mapper`注解接口中的`@Select(String sql), @Update(String sql), @Insert(String sql)`方法
+3. 创建`@Mapper`注解接口, 并在接口中添加`@Select(String sql), @Update(String sql), @Insert(String sql)`方法
 
 - 完成JDBC中的SQL语句执行过程
 - 方法参数名称匹配sql字符串参数中的`#{}`
 - 返回对象时, 调用被实例化的对象的无参构造函数, 并按参数名调用属性的setter方法
 
-4. `@Autowired`注解的属性
+4. 添加`@Autowired`注解属性
 
-- 完成mapper实例化
+- 完成mapper实例化, 使用mapper实例执行sql语句
 
 5. 异步请求
 
@@ -55,6 +55,7 @@ spring.servlet.multipart.max-file-size=10MB
 
 6. 添加`exampleFilter`过滤器类
 
+- 用于限制外部访问权限, 如未登录用户
 - 实现`javax.servlet.Filter`接口
 - 添加`@WebFilter(filterName = name, urlPatterns = {url1, url2})`注解
   - urls: 指定过滤器拦截的url, 可以使用通配符, `*`,
