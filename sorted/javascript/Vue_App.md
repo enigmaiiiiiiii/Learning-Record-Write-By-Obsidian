@@ -63,15 +63,6 @@ methods: {
 
 - 访问reversedMessage时, 会执行函数, 而不是缓存结果, 计算属性返回的是缓存结果
 
-## 添加组件
+## 注册组件
 
-```js
-Vue.component('button-counter', {
-    data: function() {
-        return {
-            count: 0
-        }
-    },
-    template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
-})
-```
+

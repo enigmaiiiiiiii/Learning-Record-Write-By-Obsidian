@@ -6,7 +6,7 @@
 
 - 根命名空间名称是global, global::System始终引用.NET Framework命名空间
 - 如果类型没有在任何命名空间中定义，则它存在于根命名空间
-- 如果相同类型名称同时出现在内层和外层命名空间，则内层优先, [对比javascript的prototype](javascript_原型.md)
+- 如果相同类型名称同时出现在内层和外层命名空间，则内层优先, [对比javascript的prototype](Javascript_Prototype.md)
 
 ## ::运算符
 

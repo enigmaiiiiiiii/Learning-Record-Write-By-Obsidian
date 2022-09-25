@@ -87,6 +87,40 @@ alter table tbl_name change
     current_timestamp;
 ```
 
+## enum
+
+- 插入的值必须是enum中的值
+
+```sql
+create table tbl_name(
+  col_name enum('val1', 'val2', 'val3')
+);
+insert into tbl_name(col_name) values('val1');
+```
+
+
+## set
+
+- col取值类型为set, 其取值可以是set的子集
+
+```sql
+create table tbl_name(
+  set_col set('a', 'b', 'c')
+);
+insert into tbl_name values('a, b');
+```
+
+## json
+
+- 插入json格式化文本
+
+```sql
+create table tbl_name(
+  json_col json
+);
+insert into tbl_name values('{"a": 1}');
+```
+
 ## 举例说明
 
 ### INT

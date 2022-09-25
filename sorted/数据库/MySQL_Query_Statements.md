@@ -85,3 +85,26 @@ select * from tbl where conditon having avg(col_name) > 1;
 
 ## 子查询
 
+- 子查询的结果作为主查询的条件
+
+***
+
+## case when
+
+- 将当前列的值根据判断生成新列
+- 判断列值并返回新值
+
+```sql
+(case when condition then value1 when contition2 then value2 else value3 end) as new_col_name
+```
+
+```sql
+SELECT name, score, (CASE
+    WHEN score > 90 THEN 'A'
+    WHEN score > 80 THEN 'B'
+    WHEN score > 70 THEN 'C'
+    ELSE 'D'
+END) AS grade
+```
+
+

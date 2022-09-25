@@ -8,7 +8,6 @@
 
 [语言基础](/sorted/javascript/JavaScript_Foundation.md)
 
-[this](/sorted/javascript/JavaScript_This.md)
 
 [集合引用类型](javascript_集合引用类型.md)
 

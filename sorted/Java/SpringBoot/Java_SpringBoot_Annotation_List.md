@@ -33,4 +33,10 @@ ps.setInt(1, id);
 ```
 
 - `@autowired`: 自动装配
+- `@MapperScanner(String str)`: 指定包下的所有接口为mapper接口
+
+## 配置
+
+@COnfiguration
+
 

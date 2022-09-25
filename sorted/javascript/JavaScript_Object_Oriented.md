@@ -6,8 +6,17 @@
 
 [方法](JavaScript_Method.md)
 
-[原型](javascript_原型.md)
+[this](/sorted/javascript/JavaScript_This.md)
+
+[实例]()
+
+[原型](Javascript_Prototype.md)
+
+[构造函数](JavaScript_Constructor.md)
+
+[new运算符](JavaScript_Operator_New.md)
 
 [Class](JavaScript_Class.md)
 
 [对象语法糖](javascript_对象语法糖.md)
+

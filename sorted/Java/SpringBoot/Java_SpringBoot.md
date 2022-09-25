@@ -22,9 +22,13 @@ Package name: com.example.demo
 
 ## SpringMVC
 
+[SpringMVC 流程](Java_SpringMVC_Workflow.md): workflow of SpringMVC
+
+[配置SQL语句](Java_SpringMVC_Config_SQL.md)
+
 [SpringWeb](Java_SpringBoot_SpringWeb.md)
 
-[SpringMVC 流程](Java_SpringMVC_Workflow.md): workflow of SpringMVC
+[SpringBoot使用MyBatis](Java_SpringBoot_MyBatis.md)
 
 ## 跨域请求 
 

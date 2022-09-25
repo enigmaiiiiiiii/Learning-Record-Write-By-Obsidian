@@ -10,7 +10,7 @@
 
 [语法基础](/sorted/Java/Java_Foundation.md)
 
-[面向对象](Java_Object_Oriented.md)
+[面向对象](/sorted/Java/Java_Object_Oriented.md)
 
 [字符串](Java_String.md)
 
@@ -44,15 +44,20 @@
 
 [类型转换](Java_Conversion.md)
 
+
 ## IIII
 
 [Tomcat](Java_Tomcat.md)
 
-[SpringBoot](Java_SpringBoot.md)
+[SpringBoot](/sorted/Java/SpringBoot/Java_SpringBoot.md): 整合了Spring、SpringMVC、Maven, MyBatis
 
-[Maven](/sorted/Java/Java_Maven.md)
+[Maven](/sorted/Java/Java_Maven.md): 项目构建工具
 
-[MyBatis](/sorted/Java/MyBatis.md)
+[MyBatis](/sorted/Java/MyBatis.md): 完成数据库交互
+
+[Lombok](/sorted/Java/Lombok.md): 简化Pojo类的开发
+
+[SLF4j](/sorted/Java/Java_SLF4j.md): 日志框架
 
 ## IIIII
 
@@ -64,5 +69,10 @@
 
 ## 应用
 
+[设计规范](Java_Design_Standard.md)
+
 [HttpWebserver](/sorted/Java/Java_Application_HttpWebserver.md)
 
+[java项目中的Pojo类](/sorted/Java/Java_Pojo.md)
+
+[website]()

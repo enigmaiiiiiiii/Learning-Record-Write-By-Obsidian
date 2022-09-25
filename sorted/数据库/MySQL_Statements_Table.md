@@ -7,7 +7,6 @@
 ```sql
 CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition...) [table_options] [partition_options]
 ```
-
 - create_definition包括列名称和列定义, 多个列用`,`隔开: `col_name column_definition` 
   - col_name
   - column_definition一次包括

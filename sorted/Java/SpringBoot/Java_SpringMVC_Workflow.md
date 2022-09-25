@@ -1,5 +1,13 @@
 # 流程
 
+## 新流程
+
+配置MySQL语句
+
+- 使用
+
+## 旧流程
+
 1. 配置springMVC
 
 - 通过application.properties配置
@@ -17,8 +25,6 @@ spring.web.resources.static-locations=file:/upload/static, classpath:static
 
 spring.servlet.multipart.max-file-size=10MB
 ```
-
-
 2. 添加`@Controller`注解类, 并添加`@RequestMaping(String str)`注解的方法
 
 - 执行客户端指定的方法的方法
@@ -31,9 +37,19 @@ spring.servlet.multipart.max-file-size=10MB
 
 3. 创建`@Mapper`注解接口, 并在接口中添加`@Select(String sql), @Update(String sql), @Insert(String sql)`方法
 
+```java
+@Mapper
+public interface SampleMapper {
+    @Select("SELECT * FROM sample WHERE id = #{id}")
+    int selectById(int id);
+}
+```
+
 - 完成JDBC中的SQL语句执行过程
 - 方法参数名称匹配sql字符串参数中的`#{}`
-- 返回对象时, 调用被实例化的对象的无参构造函数, 并按参数名调用属性的setter方法
+- 返回类型
+  - 执行增删改时, 建议返回int, 表示影响的行数, 可以返回void
+  - 返回对象时, 调用被实例化的对象的无参构造函数, 并按参数名调用属性的setter方法
 
 4. 添加`@Autowired`注解属性
 
