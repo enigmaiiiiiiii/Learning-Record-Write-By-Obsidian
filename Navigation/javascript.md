@@ -4,24 +4,24 @@
 
 [浏览器中使用JavaScript](/sorted/javascript/JavaScript_Using.md)
 
-[名词概念](JavaScript_Terms.md)
+[术语](JavaScript_Terms.md)
 
 [语言基础](/sorted/javascript/JavaScript_Foundation.md)
-
-
-[集合引用类型](javascript_集合引用类型.md)
-
-[上下文](/sorted/javascript/JavaScript_Context.md)
-
-[作用域链](/sorted/javascript/JavaScript_Scope_Chain.md)
-
-[原始值与引用值](/sorted/javascript/javascript_variable_copy_and_reference.md)
-
-[操作符]
 
 [面向对象](/sorted/javascript/JavaScript_Object_Oriented.md)
 
 [函数](/sorted/javascript/JavaScript_Function.md)
+
+[集合引用类型](javascript_集合引用类型.md)
+
+[原始值与引用值](/sorted/javascript/javascript_variable_copy_and_reference.md)
+
+[作用域链](/sorted/javascript/JavaScript_Scope_Chain.md)
+
+[操作符]
+
+[上下文](/sorted/javascript/JavaScript_Context.md)
+
 
 [ECMAScript正则](/sort/javascript/ECMAScript_Regex.md)
 

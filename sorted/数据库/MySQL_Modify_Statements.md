@@ -10,6 +10,10 @@ INSERT INTO table_name VALUES(column1, column2, column3,...columnN), (column1, c
 
 ## 更新(UPDATE)
 
+```sql
+UPDATE table_name SET column1=value1,column2=value2,... WHERE some_column=some_value;
+```
+
 ## 删除(DELETE)
 
 ```sql

@@ -57,7 +57,7 @@
 
 [Lombok](/sorted/Java/Lombok.md): 简化Pojo类的开发
 
-[SLF4j](/sorted/Java/Java_SLF4j.md): 日志框架
+[日志框架SLF4j](/sorted/Java/Java_SLF4j.md): 日志框架
 
 ## IIIII
 

@@ -21,6 +21,8 @@ let person = {
 }
 ```
 
+- name和age是属性，sayName是方法
+
 2. new object()方法
 
 ```javascript

@@ -10,9 +10,11 @@
   - 一个实体可以对应多个Pojo类
   - 一个Pojo类由实体类的某些属性的集合组成
 - pojo类命名: 为实体类名 + DO/DTO/VO
-  - VO: View Object
-  - DTO: Data Transfer Object
-  - DO: Data Object
+  - VO: View Object-展示对象 
+  - DTO: Data Transfer Object-用于传输数据
+  - DO: Data Object-用于数据访问
+
+> 使用DTO传输数据时，需要将DTO的属性复制到对应的entity类中，BeanUtils工具类提供了简化实现
 
 ## 编写规范
 

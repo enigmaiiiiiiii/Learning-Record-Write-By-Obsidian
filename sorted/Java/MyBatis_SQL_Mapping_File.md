@@ -57,6 +57,11 @@
 
 ## insert标签
 
+属性
+
+- useGeneratedKeys="true": 是否使用自动生成的主键
+- keyProperty="id": 返回值的自动生成的主键赋值给参数的id属性
+
 ## delete
 
 ## sql标签 and include标签

@@ -37,6 +37,11 @@ ps.setInt(1, id);
 
 ## 配置
 
-@COnfiguration
+@Configuration
+
+## 业务逻辑
+
+@Service
+
 
 

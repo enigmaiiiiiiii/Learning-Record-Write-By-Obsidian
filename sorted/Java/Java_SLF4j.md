@@ -16,15 +16,29 @@
 - warn
 - error
 
-Spring中配置日志显示级别
+配置作用域
 
 - 在`application.properties`中添加`logging.level.packageName=<log level>`
   - packageName: 作用域, 可以是包名, 也可以是类名
 
-```
-logging.level.root=info
+Spring中配置日志显示级别
+
+```yml
+logging.level.scope.name: info
 ```
 
+- package.scope: 作用域, 可以是包名, 也可以是类名
 
+## 日志格式化输出
+
+- log.trace(String format, Object... args)
+  - format: 格式化字符串, 以`{}`表示占位符
+  - args: 参数对应占位符的顺序
+
+```java
+int x = 1;
+int y = 2;
+log.trace("{} + {} = {}", x, y, x + y);
+```
 
 
