@@ -2,6 +2,12 @@
 
 ## refspec
 
+- refspec的格式
+  - 可选的`+`
+  - `<src>:<dst>`
+    - src表示远程相关
+    - dst表示本地引用
+
 创建了本地仓库并添加远程: 
 
 ```shell
@@ -15,8 +21,3 @@ git remote add origin https://github.com/schacon/simplegit-progit
         fetch = +refs/heads/*:refs/remotes/origin/*
 ```
 
-- refspec的格式
-  - 可选的`+`
-  - `<src>:<dst>`
-    - src表示远程相关
-    - dst表示本地引用

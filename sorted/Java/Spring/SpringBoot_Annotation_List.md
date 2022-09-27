@@ -1,0 +1,89 @@
+# 注解列表
+
+- 遵循[java注解语法](../Java_Annotation)
+
+## 通用注解
+
+- `@Value("${key}")`: 获得配置文件中的值, 用`${}`取值
+
+## MVC注解
+
+### `@ControllerAdvice`
+
+### `@ExceptionHandler`
+
+### `@Controller`
+
+### `@ResquestMapping(String str)`
+
+```java
+public @interface RequestMapping {
+    String[] value() default {};
+    String name() default "";
+    String[] path() default {};
+    RequestMethod[] method() default {};
+    String[] params() default {};
+    String[] headers() default {};
+    String[] consumes() default {};
+    String[] produces() default {};
+}
+```
+
+- 可以注解在**类**上, 也可以注解在**方法**上
+- value: 表示资源名称, 最终请求地址类上注解的value和方法上注解的value拼接而成
+  - 数组类型, 表示同一种资源的多个请求路径
+- method: 表示允许的[请求方式](../../Network/Http_Request_Message.md#请求行), 默认不限制请求方式
+  - `@RequestMapping(value="/list", method=RequestMethod.GET)`: 表示只允许GET请求
+
+
+### `@ResponseBody` 
+
+- 注解方法返回字符串内容作为响应体内容
+
+### `@RestController`
+
+### `@Autowired`
+
+### `@ResponseBody`: 方法返回字符串作为响应内容
+
+### `@RestController()`
+
+### `@Autowired`
+
+## MyBatis注解
+
+### `@Mapper`
+### `@Insert(String sql)`
+
+- sql: 执行插入功能sql语句字符串
+- 参数中的`#{}`类似于在JDBC用一个包含`?`的字符串创建一个PreparedStatement对象
+
+### `@Result`
+
+- `@Result(column="old_price", properties="oldPrice")`: 在列和属性名之间建立映射关系
+
+```xml
+<select id="selectPerson" parameterType= "int" resultType="hashmap">
+Select * from person where id = #{id}
+</select>
+```
+
+```java
+String selectPreson = "Select * From PERSON Where ID = ?";
+PreparedStatement ps = conn.prepareStatement(selectPreson);
+ps.setInt(1, id);
+```
+
+- `@autowired`: 自动装配
+- `@MapperScanner(String str)`: 指定包下的所有接口为mapper接口
+
+## 配置
+
+### @Configuration
+
+## 业务逻辑
+
+### @Service
+
+
+

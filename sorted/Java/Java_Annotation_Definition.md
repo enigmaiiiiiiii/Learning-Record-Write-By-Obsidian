@@ -1,7 +1,7 @@
 # 定义注解
 
 ```java
-@interface ClassPreamble {
+public @interface ClassPreamble {
     String author();
     String date() default "[unassigned]";  // 默认值
     // Note user of array
@@ -40,18 +40,18 @@
 @interface SelfRef {SelfRef value();}
 ```
 
-## marked annotation interface
+## 标记注解(Marked Annotation Interface)
 
 - 没有元素, 或
 - 所有元素都使用默认值
 
-## single-element annotation interface  
+## 单值注解(Single-Element Annotation Interface)  
 
 - 只有一个元素的注释接口
 - 按照约定, 单元素注释接口元素名称为value
 
 ```java
-@interface Copyright {
+public @interface Copyright {
     String value();
 }
 ```

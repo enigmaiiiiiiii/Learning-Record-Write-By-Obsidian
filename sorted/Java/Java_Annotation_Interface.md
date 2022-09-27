@@ -3,10 +3,6 @@
 - 注解是源代码中标签
 - 编译器对于包含注解和不包含注解的代码会生成相同的虚拟机指令
 
-## Annotation接口
-
-[Interface Annotation](Java_Interface_Annotation.md)
-
 ## 定义注解
 
 [定义注解](Java_Annotation_Definition.md)
@@ -19,6 +15,17 @@
     date = "01/01/2017",
     reviewers = {"Alice", "Bob", "Charlie"}
 )
+public class Generation3List {
+    // ...
+}
+```
+
+使用单值注解
+
+- 可以省略value=
+
+```java
+@Copyright("2017")
 public class Generation3List {
     // ...
 }
@@ -38,3 +45,7 @@ public class Generation3List {
   - RetentionPolicy.RUNTIME: 包括在类文件中的注解，并由虚拟机载入, **通过反射可访问**
 - @Documented
 - @Target: 限制注释类型的作用元素
+
+## Annotation接口
+
+[Interface Annotation](Java_Interface_Annotation.md)

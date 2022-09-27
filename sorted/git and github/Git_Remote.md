@@ -2,10 +2,27 @@
 
 [生成SSH Key](Git_SSH.md)
 
+## 设置远程仓库
+
+```bash
+git remote add origin <REMOTE_URL>
+```
+
+- origin: 远程仓库的别名
+- REMOTE_URL: 远程仓库的URL
+
+
+
+## 访问权限
+
+[凭据管理程序](Git_Credential_Manager.md)
+
+[GitHub个人令牌(Personal Access Token)](Github_Personal_Access_Token.md)
+
 ## Contribute to Project 
 
-[私人小团队]
-
-[私人管理团队]
+[personal team]
 
 [Public Project](Git_Forked_Public_Project.md)
+
+[创建Pull Request](Github_Create_Pull_Request.md)

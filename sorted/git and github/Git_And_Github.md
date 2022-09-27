@@ -14,8 +14,6 @@
 
 ## II
 
-[Git_Credential](Git_Credential.md)
-
 [Git Internals](Git_Internals.md)
 
 ## III

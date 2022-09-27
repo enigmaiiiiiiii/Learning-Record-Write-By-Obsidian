@@ -16,3 +16,9 @@ git config --list --show-origin
 
 > 内层都会覆盖外层设置
 
+## .config文件格式
+
+```
+[section]
+    key = value
+```
