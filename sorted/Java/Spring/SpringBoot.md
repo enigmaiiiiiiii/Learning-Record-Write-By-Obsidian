@@ -8,7 +8,7 @@
 
 ## Spring Project
 
-[SpringBoot项目结构](SpringBoot_Directory_Structure.md)
+[SpringBoot项目结构](SpringBoot_Project_Structure.md)
 
 ## 配置
 

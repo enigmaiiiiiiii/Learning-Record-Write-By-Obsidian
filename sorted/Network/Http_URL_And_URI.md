@@ -5,9 +5,11 @@
 > 如: URL地址：`http://www.baidu.com/someDepartment/picture.gif`
 > `http:`: 表示访问数据源的机制
 > `www.baidu.com`: 主机名
-> `/someDepartment/picture.gif`是路径
+> `/someDepartment/picture.gif`: 路径, 表示请求的资源
 
-通用格式: `<scheme>://<user>:<password>@<host>:<port>/<path>;<params>?<qurey>#<frag>`
+## 通用格式
+
+`<scheme>://<user>:<password>@<host>:<port>/<path>;<params>?<qurey>#<frag>`
 
 |组建|描述|默认值|
 |--|--|--|
@@ -21,27 +23,27 @@
 |query|某些方案会用这个组件传递参数以激活应用程序, 如数据库，公告板，搜索引擎以及其他因特网网关|无|
 |frag||无|
 
-主机和端口
+## 主机和端口
 
-<center>
-http://www.baidu.com:80/index.gif 通过主机名<br>
-http://161.58.228.45:80/index.html 通过ip地址
-</center>
+```
+http://www.baidu.com:80/index.gif 通过主机名称访问资源
+http://161.58.228.45:80/index.html 通过ip地址访问资源
+```
 
 > TCP协议的Http，默认端口是80
 
-用户名和密码
+## 用户名和密码
 
-<center>
-ftp://ftp.prep.ai.mit.edu/pub/gnu<br>
-ftp://anonymous@ftp.prep.ai.mit.edu/pub/gnu<br>
-ftp://anonymous:mypasswd@ftp.prep.ai.mit.edu/pub/gnu<br>
+```
+ftp://ftp.prep.ai.mit.edu/pub/gnu
+ftp://anonymous@ftp.prep.ai.mit.edu/pub/gnu
+ftp://anonymous:mypasswd@ftp.prep.ai.mit.edu/pub/gnu
 http://joe:joespasswd@www.joes-hardware.com/sales
-</center>
+```
 
-参数
+## 参数
 
-查询
+## 查询
 
 <center>
 http://www.joes-hardware.com/inventory-checkj.cgi?item=12345&quantity=1

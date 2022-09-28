@@ -23,3 +23,7 @@ public class Sample {
     }
 }
 ```
+
+## 方法
+
+- 不允许出现魔法值

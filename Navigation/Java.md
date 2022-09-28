@@ -44,7 +44,6 @@
 
 [类型转换](Java_Conversion.md)
 
-
 ## IIII
 
 [Tomcat](Java_Tomcat.md)
@@ -57,11 +56,13 @@
 
 [Lombok](/sorted/Java/Lombok.md): 简化Pojo类的开发
 
-[日志框架SLF4j](/sorted/Java/Java_SLF4j.md): 日志框架
+[SLF4j: 日志框架](/sorted/Java/Java_SLF4j.md): 日志框架
 
 ## IIIII
 
 [隐式创建实例](Java_Create_Instance_Implicitly.md)
+
+[RESTful](RESTful.md)
 
 ## Bug
 
@@ -69,7 +70,7 @@
 
 ## 应用
 
-[设计规范](Java_Design_Standard.md)
+[设计规范](/sorted/Java/Java_Design_Standard.md)
 
 [HttpWebserver](/sorted/Java/Java_Application_HttpWebserver.md)
 

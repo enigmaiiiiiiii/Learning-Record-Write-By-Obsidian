@@ -30,11 +30,14 @@ public @interface RequestMapping {
 ```
 
 - 可以注解在**类**上, 也可以注解在**方法**上
-- value: 表示资源名称, 最终请求地址类上注解的value和方法上注解的value拼接而成
-  - 数组类型, 表示同一种资源的多个请求路径
+- value: 表示资源名称, 最终请求地址由类上注解的value和方法上注解的value拼接而成
+  - 可以是数组, 表示同一种资源可以匹配多个请求路径
+  - `{arg_name}`表示参数占位符, 用来匹配请求中不确定的参数, 并在请求方法的**参数**中使用`@PathVariable`注解表示参数来自url中的占位符
+    - `{arg_name}`: arg_name对应**方法参数名**
+    - 可以使用`{arg_name: regex}`匹配正则表达式(regex), 多个正则表达式不能有交集
+  - 优先匹配不包含占位符的资源名
 - method: 表示允许的[请求方式](../../Network/Http_Request_Message.md#请求行), 默认不限制请求方式
   - `@RequestMapping(value="/list", method=RequestMethod.GET)`: 表示只允许GET请求
-
 
 ### `@ResponseBody` 
 
@@ -85,5 +88,10 @@ ps.setInt(1, id);
 
 ### @Service
 
+## json
+
+### @JsonInclude
+
+- `@JsonInclude(JsonInclude.Include.NON_NULL)`: 不序列化null值
 
 
