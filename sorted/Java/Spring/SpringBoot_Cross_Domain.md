@@ -1,9 +1,4 @@
-# 响应跨域请求
-
-[跨域请求](Http_CORS.md)
-
-- 启动类实现WebMvcConfigurer接口
-- override addCorsMappings方法
+# 可以应用在启动类上
 
 ```java
 public class MyApplication extends SpringBootServletInitializer implements WebMvcConfigurer {

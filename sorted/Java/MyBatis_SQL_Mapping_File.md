@@ -43,8 +43,6 @@
 
 `<result>`
 
-`<result>`
-
 - column: 数据库中的列名
 - property: 类中的属性名
 
@@ -60,7 +58,7 @@
 属性
 
 - useGeneratedKeys="true": 是否使用自动生成的主键
-- keyProperty="id": 返回值的自动生成的主键赋值给参数的id属性
+- keyProperty="id": 返回值的自动生成主键, 赋值给映射方法参数的id属性
 
 ## delete
 

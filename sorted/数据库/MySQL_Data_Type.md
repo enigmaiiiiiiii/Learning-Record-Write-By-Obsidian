@@ -2,10 +2,12 @@
 
 ## 数值
 
-- TINYINT
-- SMALLINT
-- MEDIUMINT
-- INT: 
+整数
+
+- TINYINT: 1字节，-128~127
+- SMALLINT: 2字节，-32768~32767
+- MEDIUMINT: 3字节，-8388608~8388607 
+- INT: 4字节
 - BIGINT(m): 等效Java基本类型[long](Java_Primitray_Type.md)
   - m表示显示长度
   - zerofill: 用0填充

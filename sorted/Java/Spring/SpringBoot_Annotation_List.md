@@ -43,6 +43,10 @@ public @interface RequestMapping {
 
 - 注解方法返回字符串内容作为响应体内容
 
+### `@RequestBody`
+
+- 注解方法参数, 表示参数来自解析格式为json的请求体
+
 ### `@RestController`
 
 ### `@Autowired`
@@ -53,9 +57,11 @@ public @interface RequestMapping {
 
 ### `@Autowired`
 
+
 ## MyBatis注解
 
 ### `@Mapper`
+
 ### `@Insert(String sql)`
 
 - sql: 执行插入功能sql语句字符串

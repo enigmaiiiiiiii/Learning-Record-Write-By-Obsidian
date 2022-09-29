@@ -50,8 +50,8 @@ http://www.joes-hardware.com/inventory-checkj.cgi?item=12345&quantity=1
 </center>
 
 - ?右边成为query组件
+- `?key1=value1&key2=value2`提供给网络服务器的额外参数
 - 网关可以当作访问其他应用程序的访问点
-- 网关希望查询字符串以键值对的形式出现，键值对之间用&分隔
 
 prag
 

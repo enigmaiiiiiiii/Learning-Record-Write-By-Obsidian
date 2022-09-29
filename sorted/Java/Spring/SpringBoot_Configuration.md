@@ -15,6 +15,7 @@
 ## profile配置: 个性化配置
 
 - 文件名: `application-<profile>.yml`
+- 个性化配置文件固定格式: `application-<profile>.yml`
 - 一般包含以下三个配置文件
   - application-dev.yml: 开发环境配置文件
   - application-prod.yml: 生产环境配置文件
