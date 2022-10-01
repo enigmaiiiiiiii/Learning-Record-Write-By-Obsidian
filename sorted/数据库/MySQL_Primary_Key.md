@@ -9,12 +9,21 @@ insert into tbl values(1, 'uni');
 insert into tbl values(1, 'another');  -- error: Duplicate entry '1' for key 'PRIMARY'
 insert into tbl values(null, 'name');  -- error: Column 'id' cannot be null
 ```
-## 自增主键
+
+- 可以在定义完所有列后指定主键
+
+```sql
+create table tbl(id int(11), primary key(id));
+```
+
+## 设置自增主键
 
 - 主键为null时自增，自增从历史最大值+1
 
 ```sql
-create table tbl(id int primariy key auto_increment, name varchar(20));
+create table tbl(
+    id int primariy key auto_increment,
+    name varchar(20));
 insert into tbl values(null, 'first');
 insert into tbl values(null, 'second');
 insert into tbl values(10, 'tenth');
@@ -33,3 +42,5 @@ optput
 | 11 | next   |
 +----+--------+
 ```
+
+## 

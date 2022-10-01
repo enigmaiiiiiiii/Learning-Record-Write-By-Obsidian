@@ -39,7 +39,14 @@ public class ServiceException extends RuntimeException {
 
 - 类声明添加`@ControllerAdvice`注解
 - 方法声明添加`@ExceptionHandler`, 表示处理异常的方法, 参数要处理的异常类
-  - 一个方法对应一类异常
+  - 一个方法对应一类异常, 在ServiceCode中定义异常状态码
+- 异常处理方法包括: 
+  - ServiceException: 自定义异常
+  - BindException: 参数校验异常, 由validation框架抛出的异常
+  - Throwable: 其他异常
+
+> 添加处理异常超类**Throwable**的方法, 并在返回页面中告知用户发生了服务器错误
+
 
 ```java
 @RestControllerAdvice
@@ -65,7 +72,6 @@ public String handlerException() {
 }
 ```
 
-- 推荐添加处理异常超类**Throwable**的方法, 并在返回页面中告知用户发生了服务器错误
 
 
 ## 响应码枚举类

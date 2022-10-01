@@ -20,8 +20,8 @@
 
 ## 细节
 
-- 对于`@RequestMapping`注解的方法, 方法参数默认接收格式[url查询格式](../Network/Http_URL_And_URI.md#查询)
+- 方法参数默认接收格式[url查询格式](../Network/Http_URL_And_URI.md#查询)
   - 对于url查询格式为`?name=val1&age=val2`
     - 如果参数形式为`(String name, int age ...)`, 则name=val1, age=val2
     - 如果是对象参数, 会使用对象的setName(val1)和setAge(val2)方法设置属性值
-- controller方法参数注解`@RequestBody`时, 要求请求格式为[json格式](../结构化数据/json.md)
+- 方法参数注解`@RequestBody`时, 要求请求格式为[json格式](../结构化数据/json.md)

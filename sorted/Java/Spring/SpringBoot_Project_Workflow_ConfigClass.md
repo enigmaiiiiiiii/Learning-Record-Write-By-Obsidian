@@ -10,6 +10,15 @@
 
 ## MybatisConfiguration.java
 
+```java
+@Configuration
+@MapperScan("com.example.demo.mapper")  // 指定搜索mapper接口所在的包
+public class MybatisConfiguration {
+    public MybatisConfiguration() {
+    }
+}
+```
+
 
 ## WebMvcConfiguration.java
 
@@ -35,3 +44,5 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
 }
 ```
+
+[可以直接应用在启动类](SpringBoot_CORS_On_Application.md)

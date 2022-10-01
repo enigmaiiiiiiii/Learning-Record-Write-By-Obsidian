@@ -1,5 +1,16 @@
 # 术语
 
+## plugin
+
+- maven实际上是一组maven plugin的核心框架
+- 换句话说, plugin执行大部分的实际操作
+
+## Mojo
+
+- mojo是maven中的目标, plugin是由任意数量的mojo组成的
+- 可以定义为带注释的java类或BeanShell脚本
+- mojo指定了关于目标的元数据, 绑定的生命周期, 需要的参数
+
 # 原型(archetype)
 
 Maven QuickStart Archetype
@@ -35,6 +46,8 @@ project
 
 
 ## POM
+
+- 项目对象模型(Project Object Model), 包含一个maven项目的所有信息
 
 ## 坐标(coordinate)
 

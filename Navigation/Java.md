@@ -48,7 +48,7 @@
 
 [Tomcat](Java_Tomcat.md)
 
-[SpringBoot](SpringBoot.md): 整合了Spring、SpringMVC、Maven, MyBatis
+[SpringBoot](/sorted/Java/Spring/SpringBoot.md): 整合了Spring、SpringMVC、Maven, MyBatis
 
 [Maven](/sorted/Java/Java_Maven.md): 项目构建工具
 

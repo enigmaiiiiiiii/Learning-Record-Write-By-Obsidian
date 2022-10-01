@@ -8,7 +8,7 @@
 
 ## Spring Project
 
-[SpringBoot项目结构](SpringBoot_Project_Structure.md)
+[SpringBoot项目流程](SpringBoot_Project_Workflow.md)
 
 ## 配置
 
@@ -24,9 +24,9 @@
 
 [SpringBoot使用MyBatis](SpringBoot_MyBatis.md)
 
-[SpringBoot响应跨域请求](SpringBoot_Cross_Domain.md)
-
 [SpringMVC异常处理](SpringMVC_Exception.md)
+
+[Spring Boot Validation](SpringBoot_Validation.md)
 
 ## 注解列表
 

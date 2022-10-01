@@ -26,15 +26,24 @@
 
 [主键](MySQL_Primary_Key.md)
 
+[外键约束](MySQL_Foreign_Key.md)
+
 [关联查询](MySQL_Related_Query.md)
 
 [字符集](MySQL_Charset.md)
 
 ## III 
 
+[mysql client](MySQL_Mysql_Client.md): 命令行客户端
+
+[mysqlimport](MySQL_Mysqlimport.md): 导入数据
+
 [mysqldump](MySQL_Mysqldump.md): 转存数据库
 
+
 ## IIII
+
+[系统变量](MySQL_Server_System_Variables.md)
 
 [MySql概念](MySQL_concept.md)
 

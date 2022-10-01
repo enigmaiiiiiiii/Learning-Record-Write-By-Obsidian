@@ -12,6 +12,13 @@
 
 ## 2. 配置
 
+- 在`application.yml`中配置.xml格式sql语句映射文件路径
+
+```yml
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+```
+
 - 添加配置类, 避免添加@Mapper注解
 - @Configuration: 标记为配置类
 - @MapperScan(String[] packagesName) 
@@ -27,7 +34,7 @@ public class MyBatisConfig {
 ```
 ## 3. 添加实体类
 
-- 符合pojo规范java类
+- 符合pojo规范java类作为数据容器
 - 在pom.xml中添加Lombok依赖
 
 ```xml
@@ -39,7 +46,9 @@ public class MyBatisConfig {
 </dependency>
 ```
 
-- 使用lombok注解在编译期完成自动添加getter/setter/equals/hashCode/toString方法
+- 使用`@Data`注解, 自动生成方法
+
+> 使用lombok注解在编译期完成自动添加getter/setter/equals/hashCode/toString方法
 
 ```java
 @Data

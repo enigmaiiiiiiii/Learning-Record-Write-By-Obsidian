@@ -6,11 +6,11 @@
   - classpath下的config文件夹中
   - classpath目录
 
+> 以yml文件为例
+
 ## application.yml
 
 - yaml格式配置文件
-
-## application.properties
 
 ## profile配置: 个性化配置
 
@@ -28,3 +28,7 @@ spring:
   profiles:
     active: env_name
 ```
+
+## application.properties
+
+- key=value格式的配置文件

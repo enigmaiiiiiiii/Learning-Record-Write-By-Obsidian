@@ -1,5 +1,7 @@
 # Plugin
 
+- maven中完成实际功能的的组件
+
 ## source
 
 - 为源文件创建一个jar文档
@@ -25,4 +27,14 @@
 </project>
 ```
 
-## maven-dependency-plugin
+## core plugin
+
+[核心插件](Maven_Core_Plugin.md)
+
+## Mojo
+
+- mojo是maven中的目标
+
+## custom plugin: 自定义插件
+
+[自定义插件](Maven_Custom_Plugin.md)

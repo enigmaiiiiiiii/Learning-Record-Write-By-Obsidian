@@ -16,7 +16,7 @@ service
   - `@Service`注解的类
   - 实现接口
   - 命名格式: 业务名+ServiceImpl 
-  - 抛出[异常](SpringBoot_Project_Structure_Exception.md)
+  - 抛出[异常](SpringBoot_Project_Workflow_Exception.md)
 
 IDemoService.java
 

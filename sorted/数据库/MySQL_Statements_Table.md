@@ -14,7 +14,7 @@ CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition...) [table_
     - 取值属性
 - 指定列的取值属性
   - `NOT NULL`: 不允许为空 
-  - `DEFAULT`: 默认值
+  - `DEFAULT val`: 默认值
   - `AUTO_INCREMENT`: 自增
   - `UNIQUE`: 唯一
   - `PRIMARY KEY`: 主键
@@ -27,7 +27,7 @@ CREATE TABLE card(
     cost int,
     description varchar(200),
     packName varchar(50)
-)
+) comment = "card table";
 ```
 
 ## 重命名表
@@ -54,7 +54,9 @@ ALTER TABLE tbl_name ADD col_name data_type [first]
 
 - first表示在最前面添加
 
-## 修改列信息
+## 改变表结构
+
+### 修改列信息
 
 - change: 修改列名和重新定义
 - modify: 修改列定义
@@ -68,13 +70,13 @@ ALTER TABLE tbl_name MODIFY col_name col_property
 ALTER table tbl_name RENAME col_name TO new_col_name
 ```
 
-## 添加字段(列)
+### 添加字段(列)
 
 ```sql
 ALTER TABLE tbl_name ADD col_name col_property
 ```
 
-## 删除字段(列)
+### 删除字段(列)
 
 ```sql
 ALTER TABLE tbl_name DROP col_name

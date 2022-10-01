@@ -1,8 +1,10 @@
 # Knife4j
 
+[官方文档](doc.xiaominfo.com/guide/)
+
 ## 使用
 
-- 最后使用访问`http://localhost:<serverport>/doc.html#/home`
+- 最后使用访问`http://localhost:<serverport>/doc.html`
 
 添加依赖
 
@@ -14,7 +16,7 @@
 </dependency>
 ```
 
-添加配置文件knife4j项
+配置文件knife4j项
 
 ```yaml
 knife4j
@@ -128,14 +130,28 @@ public class Knife4jConfiguration {
 }
 ```
 
-## 设置
-
-- `@Api(tags="name")`: 设置标签名, 注解class
-- `@ApiOperation(value="name")`:设置接口名和简介, 注解方法
-- `@ApiOperationSupport(order=100)`: 设置接口排序, 按照数字从小到大排序, 注解方法
-
 
 ## 显示
 
 - 对象格式参数会显示对象各个属性参数输入框, 便于调试
 - `@RequestBody`参数则提供json格式输入框
+
+## 设置url查询格式的显示格式
+
+注解class
+
+- `@Api(tags="name")`: 设置标签名, 注解class
+
+注解method
+
+- `@ApiOperation(value="name")`:设置接口名和简介, 注解方法
+- `@ApiOperationSupport(order=100)`: 设置接口排序, 按照数字从小到大排序, 注解方法
+- `@ApiModelProperty(value="", example="示例", required=true)`: 处理对象类型参数
+  - value: 为参数说明字段
+  - example: 参数示例
+  - required: 是否必须
+- `@ApiImplicitParam(name="argName", value="argIntroduction", required=true, dataType="long")`: 处理未封装参数, 如String, long, int等 
+  - name: 参数名
+  - value: 参数说明
+  - required: 是否必须
+  - dataType: 参数类型
