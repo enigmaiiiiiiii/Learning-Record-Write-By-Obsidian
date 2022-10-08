@@ -2,7 +2,7 @@
 
 - 定义响应状态和内容
 - 包含的类
-  - ServiceCode.java: 枚举
+  - ServiceCode.java: 枚举类
   - JsonResult.java: 用来定义响应结果对象
 
 ## JsonResult类
@@ -39,6 +39,25 @@ public class JsonResult<T> implements Serializable {
         jsonResult.state = serviceCode.getValue();
         jsonResult.message = message;
         return jsonResult;
+    }
+}
+```
+
+## SericeCode类
+
+```java
+public enum ServiceCode {
+    OK(200),
+    ERR(400);
+
+    private Integer code;
+
+    ServiceCode(Integer code) {
+        this.code = code;
+    }
+
+    public Integer getCode() {
+        return value;
     }
 }
 ```

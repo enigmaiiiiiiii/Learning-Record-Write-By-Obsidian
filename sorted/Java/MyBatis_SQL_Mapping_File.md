@@ -62,6 +62,22 @@
 
 ## delete
 
+## update
+
+属性
+
+- id: 映射方法
+
+可选属性
+
+- parameterType: 指定参数类型
+- useGeneratedKeys="true": 是否使用自动生成的主键
+- keyProperty="id": 返回值的自动生成主键, 赋值给映射方法参数的id属性
+
+技巧
+
+- 搭配`<if>`使用忽略参数对象中的空值
+
 ## sql标签 and include标签
 
 - `<sql>`: 用于抽取重复的sql片段

@@ -8,18 +8,18 @@
 
 ## 数据库API
 
-
 - `java.sql.DriverManager`: 管理一组JDBC驱动程序的工具类
   - `java.sql.Connection getConnection(String url, String usr, String password)`: 创建connection对象 
-
-- `interface java.sql.DataSource`: 实现DataSource的对象是DriverManager的替代品
+- `interface javax.sql.DataSource`: 实现DataSource的对象是DriverManager的替代品
   - 由数据库供应商实现接口
 - `java.sql.Connection`: 数据库连接对象 
   - `Statement createStatement()`: 创建数据库语句对象
 - `Statement`: 数据库语句对象
   - `boolean execute(String sql)`: 执行任意sql语句
-  - `int executeUpdate(String sql)`: 执行数据修改, 返回生效的行数
-  - `ResultSet executeQuery(String sql)`: 查询语句
+  - `int executeUpdate(String sql)`: 执行SQL修改语句
+    - 包括INSERT, UPDATE, DELETE 
+    - 返回生效的行数
+  - `ResultSet executeQuery(String sql)`: 查询语句, 返回结果集
 
 ## `ResultSet`: 
 

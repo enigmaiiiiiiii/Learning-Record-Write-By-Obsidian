@@ -33,7 +33,6 @@ List<Post> selectPostIn(Post... posts);     // 2
 对于方法1: collection取值可以是posts, list, collection;
 对于方法2: collection取值可以是posts, array;
 
-
 ## if标签
 
 > 没有else标签
@@ -60,4 +59,33 @@ Select * from BLOG where state = "active" and title like #{title}
 ```sql
 Select * from BLOG where state = "active"
 ```
+
+## where标签
+
+- 只会在子元素有返回内容的时候才会添加where关键字
+- 会清除多余的and或or
+
+## set标签
+
+- 使用if语句后, 会出现多余的逗号, set标签清除无关的逗号
+
+```xml
+<set>
+    <if test="title != null">title = #{title},</if>
+    <if test="author != null">author = #{author},</if>
+    <if test="date != null">date = #{date},</if>
+</set>
+```
+
+等价的trim
+
+```xml
+<trim prefix="set" suffixOverrides=",">
+  ...
+</trim>
+```
+
+## trim
+
+
 

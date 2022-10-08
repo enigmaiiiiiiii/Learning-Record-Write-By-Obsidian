@@ -1,16 +1,13 @@
 # 配置Maven
 
 - 分为3个等级
-  - Project: 大多数在pom.xml文件中完成
+  - Project: pom.xml设置
   - Installation: 
-  - User: 
-- 项目下的pom.xml为一个项目设置maven配置
-- `${user.home}/.m2/settings.xml`全局配置
+  - User: 在`${user.home}/.m2/settings.xml`进行全局配置
 
 ## 配置文件
 
 [setttings.xml]
-
 
 ## 配置Artifact并行下载数量
 
@@ -73,3 +70,5 @@ export MAVEN_OPTS=-Dmaven.artifact.threads=3
 ## profiles
 
 - downloadsources
+
+## 

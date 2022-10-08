@@ -26,9 +26,9 @@
 
 [应用程序](Linux_Application_Command.md)
 
-[网络](Linux网络命令.md)
+[网络](/sorted/Linux/Linux_Network_Command.md)
 
-[进程](Linux进程命令.md)
+[进程](Linux_Process_Command.md)
 
 [[shell编程]]
 
@@ -44,7 +44,7 @@
 
 [[Linux进程]]
 
-[[Linux线程]]
+[Linux线程](Linux_Thread.md)
 
 [[Linux网络编程]]
 

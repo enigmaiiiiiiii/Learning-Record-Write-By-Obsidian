@@ -41,3 +41,6 @@
 
 [IoC Container](Spring_IoC_Container.md)
 
+## ISSUE
+
+[issue#28794](https://github.com/spring-projects/spring-boot/issues/28794): "this.condition is null":  

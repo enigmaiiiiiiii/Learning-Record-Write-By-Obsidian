@@ -148,7 +148,7 @@ class Trie {
 
 ## 红黑树
 
-- 不严格[[Data_Structure-树#^avltree|平衡二叉搜索树]]
+- 不严格[[Data_Structure_Tree#^avltree|平衡二叉搜索树]]
 - 特征
   - 根节点是黑色节点, 叶节点是不存储数据的黑色空结点  
   - 任何相邻的两个节点不能同时为红色

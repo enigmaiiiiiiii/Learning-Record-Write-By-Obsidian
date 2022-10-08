@@ -38,19 +38,31 @@ Exclusion元素
 
 ## build元素
 
-负责声明项目目和管理插件
+负责声明项目结构和管理插件
 
-baseBuild部分
+BaseBuild部分
 
-- 直接位于build元素之间
-- 包含defaultGoal, directory, finalName, filter等元素
+- 直接位于project元素的之间
+- 包含元素
+  - resources
+  - plugins
+  - defaultGoal
+  - directory
+  - finalName
+  - filter
+  - pluginManagement
 
-***
+profile build
+
+- 位于profiles元素之间
+- 包含和baseBuild相同的元素
+
+### build元素的子元素
 
 resources元素
 
-- 由多个resource元素组成
 - 指定资源(not code)位置, 不会被编译
+- 由多个resource元素组成
 - 子元素
   - [x] targetPath: 默认base directory, Jar文件的resources路径通常在[META-INF]()中指定
   - [ ] filtering: 
@@ -68,7 +80,11 @@ testResources元素
 
 plugin元素
 
-- 除groupId, artifactId, version之外的子元素
+- 除groupId, artifactId, version之外, 还有其它元素
   - [ ] extensions
   - [ ] inherited
   - [ ] configuration
+
+pluginManagement元素
+
+- to be add...

@@ -1,14 +1,14 @@
-# Linux网络命令
+# 网络命令
 
 ## 查看网络状态
 
 - [[netstat]]
 
-## 远程联机
+## telnet
 
-### telnet
+[telnet](telnet.md)
 
-### ftp
+## ftp
 
 `-n`:  不使用自动登录
 
@@ -27,12 +27,22 @@
 - put
 - mput
 
-### lftp
+## lftp
 
-### gaim
+## gaim
 
 ## 数据包截获工具
 
 - tcpdump
+
+## curl
+
+- 不使用UI界面, 向url发送数据的工具
+
+语法: 
+
+```bash
+curl [options] [url]
+```
 
 

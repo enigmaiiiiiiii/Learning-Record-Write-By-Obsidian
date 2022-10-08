@@ -50,13 +50,15 @@ maven compile
 mvn test
 ```
 
-## Package Maven 
+## 打包maven项目: Package Maven project 
 
 create JAR 创建jar包
 
 ```shell
 mvn package
 ```
+
+## 添加到maven仓库
 
 install in locally 安装到本地仓库
 

@@ -16,6 +16,8 @@
 
 [Git Internals](Git_Internals.md)
 
+[GitHub Issues](GitHub_Issues.md)
+
 ## III
 
 [解决实际问题的命令](Git_Useful_Command.md)

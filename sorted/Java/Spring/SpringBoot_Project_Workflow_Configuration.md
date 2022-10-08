@@ -8,10 +8,11 @@
 
 ```yml
 spring:
-  datasource: jdbc:mysql://localhost:3306/db_name?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-  # 配置数据库用户名密码
-  username: root  
-  password: root
+  datasource: 
+    url: jdbc:mysql://localhost:3306/db_name?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    # 配置数据库用户名密码
+    username: root  
+    password: root
 ```
 
 [Mybatis配置](SpringBoot_MyBatis.md#2-配置)
