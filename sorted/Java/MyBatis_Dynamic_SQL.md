@@ -2,13 +2,13 @@
 
 - 简化SQL语句, 一条语句处理不同场景,易于维护
 
-## foreach标签
+## \<foreach>
 
 属性
 
 - separator: SQL语句循环部分的分隔符
 - item: 循环变量
-- collection: 循环变量, 取值
+- collection: 集合类型
   - 映射方法的参数名称
   - 映射方法参数类型为集合, 取值可以为list, collection
   - 映射方法参数类型为数组, 取值可以为array
@@ -33,11 +33,11 @@ List<Post> selectPostIn(Post... posts);     // 2
 对于方法1: collection取值可以是posts, list, collection;
 对于方法2: collection取值可以是posts, array;
 
-## if标签
+## \<if>
 
 > 没有else标签
 
-- test: 条件表达式, 被解析为代码, 一般将
+- test: 条件表达式, 被解析为代码
 
 ```xml
 <select id="findActiveBlogWithTitleLike" resultType="Blog">
@@ -60,12 +60,12 @@ Select * from BLOG where state = "active" and title like #{title}
 Select * from BLOG where state = "active"
 ```
 
-## where标签
+## \<where>
 
 - 只会在子元素有返回内容的时候才会添加where关键字
 - 会清除多余的and或or
 
-## set标签
+## \<set>
 
 - 使用if语句后, 会出现多余的逗号, set标签清除无关的逗号
 
@@ -85,7 +85,7 @@ Select * from BLOG where state = "active"
 </trim>
 ```
 
-## trim
+## \<trim>
 
 
 

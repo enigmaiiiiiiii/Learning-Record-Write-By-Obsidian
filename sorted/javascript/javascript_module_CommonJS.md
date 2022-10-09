@@ -7,6 +7,7 @@
 - 模块的主要用途是托管类定义
 
 导出class A
+
 ```javascript
 class A{}
 module.exports = A;

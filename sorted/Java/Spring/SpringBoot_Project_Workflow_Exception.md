@@ -71,26 +71,3 @@ public String handlerException() {
     }
 }
 ```
-
-
-
-## 响应码枚举类
-
-ServiceCode类
-
-```java
-public enum ServiceCode {
-    OK(200),
-    ERR(400);
-
-    private Integer value;
-
-    private ServiceCode(Integer value) {
-        this.value = value;
-    }
-
-    public Integer getValue() {
-        return value;
-    }
-}
-```

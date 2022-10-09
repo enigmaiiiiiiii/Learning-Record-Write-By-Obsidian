@@ -1,5 +1,9 @@
 # SQL映射文件
 
+- 一个映射文件对应一个接口
+
+## \<mapper>
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
@@ -17,52 +21,23 @@
 - namespace: Mapper接口的全限定名, 接口名在全局唯一的条件下有效
 - id: 与Mapper接口组成方法的完全限定名, 方法名在全局唯一的条件下有效
 
-## resultMap标签和result标签
-
-- 用于建立返回值映射
-- `<resultMap>`: 建立java类的属性和数据库表的字段的映射关系
-  - `<result />`: 建立pojo类中columnName和数据库中column_name名映射
-
-> 建议所有属性名和数据库中列名建立映射关系
-
-```xml
-<mapper namespace="">
-    <select id="methodName" resultType="classId">
-        <!-- sql statement -->
-    </select>
-    <resultMap id="classId" type="package.path.className">
-        <result column="colmumn_name" property="columnName">
-    </resultMap>
-</mapper>
-```
-
-`<resultMap>`
-
-- id: 映射关系的名称
-- type: 被映射的类的全限定名
-
-`<result>`
-
-- column: 数据库中的列名
-- property: 类中的属性名
-
-## select标签 
+## \<select>
 
 属性
 
 - resultType: 返回值类型
 - resultMap: 指定返回类型映射关系
 
-## insert标签
+## \<insert>
 
 属性
 
 - useGeneratedKeys="true": 是否使用自动生成的主键
 - keyProperty="id": 返回值的自动生成主键, 赋值给映射方法参数的id属性
 
-## delete
+## \<delete>
 
-## update
+## \<update>
 
 属性
 
@@ -78,7 +53,7 @@
 
 - 搭配`<if>`使用忽略参数对象中的空值
 
-## sql标签 and include标签
+## \<sql> and \<include>
 
 - `<sql>`: 用于抽取重复的sql片段
 - `<include>`: 用于引用sql片段
@@ -89,3 +64,38 @@
 </sql>
 <include refid="userColumns">
 ```
+## \<resultMap>和\<result>
+
+- 用于建立返回值映射
+- `<resultMap>`: 建立java类的属性和数据库表的字段的映射关系
+  - `<result />`: 建立pojo类中columnName和数据库中column_name名映射
+
+> 建议所有属性名和数据库中列名建立映射关系
+
+```xml
+<mapper namespace="">
+    <select id="methodName" resultType="classId">
+        <!-- sql statement -->
+    </select>
+    <resultMap id="classId" type="package.path.className">
+        <id column="id" property="id" />
+        <result column="colmumn_name" property="columnName">
+    </resultMap>
+</mapper>
+```
+
+`<resultMap>`
+
+- id: 映射关系的名称
+- type: 被映射的类的全限定名
+
+`<result>`
+
+- column: 数据库中的列名
+- property: 类中的属性名
+
+`<id>`
+
+- 用于标识主键
+- column: 数据库中的列名
+- property: 类中的属性名

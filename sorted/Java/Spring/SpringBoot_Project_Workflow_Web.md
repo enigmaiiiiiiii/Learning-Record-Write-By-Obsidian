@@ -19,11 +19,11 @@ public class JsonResult<T> implements Serializable {
     private String message;
     private T data;
 
-    public static JsonResult ok() {
+    public static JsonResult<Void> ok() {
         return ok(null);
     }
 
-    public static JsonResult ok(Object data) {
+    public static <T> JsonResult<T> ok(Object data) {
         JsonResult jsonResult = new JsonResult();
         jsonResult.state = ServiceCode.OK.getValue();
         jsonResult.message = null;
@@ -31,11 +31,11 @@ public class JsonResult<T> implements Serializable {
         return jsonResult;
     }
 
-    public static JsonResult fail(ServiceException e) {
+    public static JsonResult<Void> fail(ServiceException e) {
         return fail(e.getServiceCode(), e.getMessage());
     }
-    public static JsonResult fail(ServiceCode serviceCode, String message) {
-        JsonResult jsonResult = new JsonResult();
+    public static JsonResult<Void> fail(ServiceCode serviceCode, String message) {
+        JsonResult<Void> jsonResult = new JsonResult<>();
         jsonResult.state = serviceCode.getValue();
         jsonResult.message = message;
         return jsonResult;

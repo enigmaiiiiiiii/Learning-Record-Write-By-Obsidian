@@ -146,9 +146,12 @@ public class Knife4jConfiguration {
 
 - `@ApiOperation(value="name")`:设置接口名和简介, 注解方法
 - `@ApiOperationSupport(order=100)`: 设置接口排序, 按照数字从小到大排序, 注解方法
-- `@ApiModelProperty(value="", example="示例", required=true)`: 处理对象类型参数
-  - value: 为参数说明字段
-  - example: 参数示例
+- `@ApiModel(value='name')`, 注解类
+  - value: 设置对象名
+  - description: 设置对象简介
+- `@ApiModelProperty(value="prop_name", example="示例", required=true)`: 注解**类属性**, 处理对象类型参数和返回值
+  - value: 说明字段, 或者表示属性名称
+  - example: 示例
   - required: 是否必须
 - `@ApiImplicitParam(name="argName", value="argIntroduction", required=true, dataType="long")`: 处理未封装参数, 如String, long, int等 
   - name: 参数名

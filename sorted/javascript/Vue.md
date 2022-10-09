@@ -5,15 +5,18 @@
 
 ## Vue2
 
-[Vue实例](Vue_App.md)
-
 [使用Vue-CLI初始化Vue2项目](Vue_CLI_Create_Project.md)
 
-[组件](Vue_Component.md)
+[Vue组件和实例](Vue_App.md)
+
+
+[Vuex](Vue_Vuex.md)
 
 [模板语法](Vue_Template_Syntax.md)
 
 [路由](Vue_Router.md)
+
+[vue2 workflow](Vue2_Workflow.md)
 
 ## Vue3
 
@@ -30,8 +33,6 @@
 [element-ui](Vue_Element_UI.md)
 
 ## IIII
-
-
 
 ## 使用中的问题
 

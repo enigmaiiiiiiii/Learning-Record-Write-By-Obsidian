@@ -33,17 +33,22 @@ Vue.component('button-counter', {
 
 ## 通过props传递组件数据
 
-向组件传递数据
+需要向组件传递数据的场景
 
 ```html
-<blog-post title=""My journey with Vue></blog-post>
+<blog-post 
+    title="My journey with Vue"
+    likes="10"
+    isPublished="true"
+    comments="good">
+</blog-post>
 ```
 
-组件注册的prop
+组件注册的props属性包含该组件可接受的参数
 
 ```js
 Vue.component('blog-post', {
-    props: ['title'],
+    props: ['title', 'likes', 'isPublished', 'commentIds'],
     template: '<h3>{{ title }}</h3>'
 })
 ```

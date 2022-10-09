@@ -62,6 +62,7 @@ import "module-name";
 
 - defaultExport: 默认接口引用名
 - module-name: 要导入的模块, 通常是目标模块的.js文件的路径名
+  - 可以不包括.js后缀
   - 相对路径名引用必须以`/, ./, ../`开始
 - export: 被导入模块导出的接口名称
 - name: 导入模块对象的别名

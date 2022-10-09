@@ -19,7 +19,9 @@
 
 ## Git Branch发生了什么
 
-- 创建了一个新的指向当前commit的指针
+- 创建了一个新的指针代表当前commit
+
+> new branch $\rightarrow$ current commit
 
 ## HEAD指针
 

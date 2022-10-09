@@ -1,9 +1,12 @@
 # Vue-CLI创建项目
 
+- 在项目所在目录下打开终端, 输入命令
+
 ```shell
 npm install -g @vue/cli
-vue create my-project
+vue create project_name
 ```
+
 
 ## 目录结构
 
