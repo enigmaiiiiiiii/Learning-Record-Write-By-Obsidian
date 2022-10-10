@@ -4,28 +4,31 @@
 
 - commit时保存[暂存区]的[文件快照]的指针
 
-假设有一个含有三个文件的目录, 将所有文件加入stage area, 并commit;  
-当使用git commit时, Git检查(checksums)每一个子目录并保存为一个tree Object到Git repository;  
-创建一个新的commit Object, 和一个指向root project tree的指针;
-此时，git repository中包含5个对象:
+假设有一个含有三个文件的目录, 将所有文件加入stage area, 并commit, 当使用git commit时 
 
-- 三个blob(文件内容)
-- 一个树结构: 包含目录内的文件，并说明那些文件是blob
-- 一个commit: 包含commit元数据和指向root tree的指针
+- Git检查(checksums)每一个子目录并保存为一个tree Object到Git repository;  
+- 创建一个新的commit Object, 和一个指向root project tree的指针;
+- 此时，git repository中包含5个对象:
+  - 三个blob(文件内容)
+  - 一个树结构: 包含目录内的文件，并说明那些文件是blob
+  - 一个commit: 包含commit元数据和指向root tree的指针
 
 继续commit: 
 
 - commit包含一个指向前一个commit的指针
 
-## Git Branch发生了什么
+## 新建Branch
+
+```bash
+git branch <branch_name>
+```
+
+`git branch`发生了什么
 
 - 创建了一个新的指针代表当前commit
 
 > new branch $\rightarrow$ current commit
 
-## HEAD指针
-
-- HEAD指针指向当前commit
 
 ## 切换Branch
 
@@ -81,8 +84,11 @@ Topic Branch - 工作方式
 
 ## 相对引用
 
-- `^`向上移动一个提交记录
-- `~<num>`向上移动num个提交记录
+- 相对引用有指定名称, 如`HEAD`, `master`, 相对引用名 + 符号可以表示commit记录
+- HEAD指针
+  - HEAD指针指向当前commit
+  - `^`向上移动一个提交记录
+  - `~<num>`向上移动num个提交记录
 
 ```shell
 git checkout HEAD^
@@ -90,3 +96,7 @@ git checkout main^^  # 有main分支向上移动两个节点
 git checkout HEAD~3  # 从HEAD开始向上移动3个节点
 git branch -f main HEAD^  # 强制修改main分支为HEAD的父节点
 ```
+
+## HEAD指针
+
+- HEAD指针指向当前commit

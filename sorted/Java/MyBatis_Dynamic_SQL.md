@@ -37,7 +37,7 @@ List<Post> selectPostIn(Post... posts);     // 2
 
 > 没有else标签
 
-- test: 条件表达式, 被解析为代码
+- test: 条件表达式, 被解析为java代码
 
 ```xml
 <select id="findActiveBlogWithTitleLike" resultType="Blog">

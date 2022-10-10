@@ -32,6 +32,7 @@ public class MyBatisConfig {
     }
 }
 ```
+
 ## 3. 添加实体类
 
 - 符合pojo规范java类作为数据容器

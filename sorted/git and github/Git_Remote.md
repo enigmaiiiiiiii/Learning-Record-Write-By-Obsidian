@@ -7,11 +7,14 @@
 ```bash
 git remote add origin <REMOTE_URL>
 ```
-
 - origin: 远程仓库的别名
 - REMOTE_URL: 远程仓库的URL
 
+## 推送到远程
 
+- git push -u origin master: 将master分支推送到远程仓库
+  - master: 本地分支
+  - origin: 远程仓库的别名
 
 ## 访问权限
 

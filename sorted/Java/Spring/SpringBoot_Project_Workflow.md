@@ -24,16 +24,9 @@
 
 [service](SpringBoot_Project_Workflow_Service.md)
 
-## resource
+## src/resource
 
-- 存放资源文件, 如sql语句映射文件(mapper.xml), 配置文件等
-- 配置SpringBoot: `application.yml`
-- 配置MyBatis SQL语句映射: `/mapper/FooMapper.xml`
-
-resource
-|  application.yml
-|__mapper
-     FooMapper.xml
+[src/resource](SpringBoot_Project_Workflow_Resources.md)
 
 
 ## exception

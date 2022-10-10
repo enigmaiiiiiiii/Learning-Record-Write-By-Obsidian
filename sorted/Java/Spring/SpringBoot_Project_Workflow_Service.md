@@ -16,21 +16,42 @@ service
 - 实现业务逻辑类
   - `@Service`注解的类
   - 实现接口
-  - 命名格式: 业务名+ServiceImpl 
+  - 命名格式: 业务名 + ServiceImpl 
   - 抛出[异常](SpringBoot_Project_Workflow_Exception.md)
+
+## service接口
 
 IDemoService.java
 
+- 处理数据库事务, 添加注解`@Transaction`
+- 刚开始可以在接口声明上添加`@Transactional`注解, 之后再根据需要添加
+
 ```java
 public interface IDemoService {
+
+    @Transactional  // 事务
+    public void insertId(Long id)
 }
 ```
 
-- 子目录
-  - impl目录: 业务逻辑接口实现类
-- 实现类的编写
-  - insert
-  - delete
-    - 删除不存在的条目应抛出异常
-  - select
-  - update
+## 实现类
+
+- 在子目录impl中存放业务逻辑接口实现类
+- 实现类的编写细节
+  - 执行insert, delete, update之前, 需要先执行select, 确保数据存在, 不存在时抛出异常
+  - sql语句执行失败时抛出服务器异常, 因为数据库服务可能的运行异常(内存已满, 网络中断等)
+  - 用户调用的方法, 参数尽可能少
+  - 重复代码封装成private方法
+
+DemoServiceImpl.java
+
+```java
+@Service  // 用于自动装配
+public class DemoServiceImpl implements IDemoService {
+
+    public void insert() {
+        // method body
+    }
+}
+```
+

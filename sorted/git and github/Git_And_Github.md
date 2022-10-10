@@ -20,9 +20,9 @@
 
 ## III
 
-[解决实际问题的命令](Git_Useful_Command.md)
+[解决问题的命令](Git_Useful_Command.md)
 
-[[Git_Ignore文件]]
+[[Git_Ignore文件]](Git_Ignore.md)
 
 [GIthub搜索技巧](Github_Search_Skills.md)
 

@@ -6,6 +6,7 @@
 /bin  # bin目录
 bin/  # bin目录下的文件，不包括bin目录
 .gitignore  # 忽略本身
+\!important！.txt  # 排除important！.txt文件
 ```
 
 - 排除以前提交过的而文件

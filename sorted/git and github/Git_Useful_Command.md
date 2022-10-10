@@ -25,7 +25,7 @@ git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 ```
 
 - --soft: 撤销git commit, 不撤销git add, 保留改动代码
-- --mixed:  撤销git commit, 撤销git add, 保留改动代码
+- --mixed: 撤销git commit, 撤销git add, 保留改动代码
 - --hard: 撤销git commit, 撤销git add, 撤销改动代码
 
 ## 将文件移出暂存区
@@ -40,4 +40,9 @@ git rm --cached -r [<dir>...] # 递归删除
 ```shell
 git reset --hard # 丢弃跟踪的文件的所有本地改动, 撤销跟踪的文件
 git clean -fxd # 删除未跟踪的文件
+```
+## 查看缓存区文件
+
+```bash
+git ls-files
 ```
