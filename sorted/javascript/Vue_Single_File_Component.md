@@ -17,6 +17,9 @@ template.html, script.js, style.css可以用一个如下的.vue文件代替
 <style src="./style.css"></style>
 <script src="./script.js"></script>
 ```
+
+## 使用单文件组件
+
 ## style样式
 
 - `<style>`表示全局样式

@@ -1,5 +1,6 @@
 # 组件
 
+- spring管理的对象默认是单例的
 - `@ComponentScan`配置组件扫描的package, 多个package用逗号分隔
 
 ```java
@@ -41,6 +42,5 @@ public class BeanFactory {
 
 ## 对象的作用域
 
-- spring管理的对象默认是单例的
 - spring支持的作用域: singleton, prototype, request, session, global session
 

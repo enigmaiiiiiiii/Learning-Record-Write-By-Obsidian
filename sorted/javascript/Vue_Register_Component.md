@@ -10,7 +10,8 @@
     - 必须是一个函数, 返回一个对象, 保证对象独立
   - template: 组件的模板
 
-```js
+```html
+<script>
 Vue.component('button-counter', {
     data: function() {
         return {
@@ -19,6 +20,7 @@ Vue.component('button-counter', {
     },
     template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
 })
+</script>
 ```
 
 - 注册后`<button-counter>`组件可以在HTML中使用

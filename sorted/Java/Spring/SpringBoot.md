@@ -28,6 +28,9 @@
 
 [Spring Boot Validation](SpringBoot_Validation.md)
 
+## Spring 安全
+
+[Spring Security](SpringBoot_SpringSecurity.md)
 
 ## 工具类
 

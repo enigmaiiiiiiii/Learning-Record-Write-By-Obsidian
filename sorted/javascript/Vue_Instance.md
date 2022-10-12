@@ -23,39 +23,6 @@ var app = new Vue({
 
 - [new](JavaScript_Operator_New.md) Vue()创建的Vue实例
 
-## 数据: data
-
-- Vue实例被**创建**时，将data的所有[property](JavaScript_Property.md)加入到Vue的响应式系统中
-- 当data的property发生变化时，视图会进行更新
-- Vue实例**创建后**添加的property不会被加入到Vue的响应式系统中
-
-```js
-var data = {a: 1};
-
-var vm = new Vue({
-    data: data 
-})
-
-vm.a == data.a // true
-```
-
-- object.freeze()阻止修改现有property
-
-## 方法: methods
-
-## 挂载元素: el
-
-- el: 'target'
-  - target表示挂载目标
-  - target是DOM元素，可以是HTML元素，也可以是CSS选择器
-  - target是页面上已存在的元素
-- 只能用在new创建的Vue实例中
-
-> 如`el: '#app'`，挂载到id为app的元素上
-
-## Vue实例的生命周期函数
-
-[生命周期](Vue_Lifecycle.md)
 
 ## Vue实例的属性
 

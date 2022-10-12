@@ -28,10 +28,9 @@
 
 [src/resource](SpringBoot_Project_Workflow_Resources.md)
 
-
 ## exception
 
-[自定义异常](SpringBoot_Project_Workflow_Exception.md)
+[异常处理和自定义异常](SpringBoot_Project_Workflow_Exception.md)
 
 ## web
 

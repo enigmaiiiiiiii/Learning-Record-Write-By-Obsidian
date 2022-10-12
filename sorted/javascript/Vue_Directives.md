@@ -21,7 +21,7 @@
 ## v-on
 
 - 绑定Vue对象中的methods属性中的函数
-- 简写: `@事件="function()"`
+- 简写: `@event="funcName"`
 
 ## v-bind
 
@@ -46,6 +46,8 @@
   - `.trim`: 移除输入内容两端的空格
 
 ## v-slot
+
+- 仅限于\<template>
 
 ## v-pre 
 

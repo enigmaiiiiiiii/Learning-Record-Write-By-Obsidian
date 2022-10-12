@@ -6,10 +6,14 @@
   - 不同的是, data必须是函数, 保证每个组件实例都有独立的data 
 - 不包括el
 
-## 注册组件
+## 通过Vue实例注册组件
 
 [注册组件](Vue_Register_Component.md)
 
 ## .Vue文件组件
 
 [Vue单文件组件: .Vue文件](Vue_Single_File_Component.md)
+
+## 组件的插槽
+
+[组件插槽](Vue_Component_Slot.md)

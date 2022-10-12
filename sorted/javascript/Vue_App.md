@@ -36,3 +36,7 @@
 ## 组件
 
 [Vue组件](Vue_Component.md)
+
+## API
+
+[Vue实例API](Vue_Instance_API.md)

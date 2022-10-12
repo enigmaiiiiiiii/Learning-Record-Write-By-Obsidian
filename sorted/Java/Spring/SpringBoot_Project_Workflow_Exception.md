@@ -35,15 +35,18 @@ public class ServiceException extends RuntimeException {
 }
 ```
 
-## 异常处理类
+## 全局异常处理类
 
 - 类声明添加`@ControllerAdvice`注解
 - 方法声明添加`@ExceptionHandler`, 表示处理异常的方法, 参数要处理的异常类
-  - 一个方法对应一类异常, 在ServiceCode中定义异常状态码
-- 异常处理方法包括: 
+  - 注解参数为异常的**类类型**, 可以是**异常类类型**数组
+  - `@ExceptionHandler(value={exception1.class, exception2.class})`表示两类异常
+- 异常处理方法包括 
   - ServiceException: 自定义异常
   - BindException: 参数校验异常, 由validation框架抛出的异常
   - Throwable: 其他异常
+  - BadCrendentialsException: Spring Security, 登录异常
+  - InternalAuthenticationServiceException: Spring Security, 登录异常
 
 > 添加处理异常超类**Throwable**的方法, 并在返回页面中告知用户发生了服务器错误
 
