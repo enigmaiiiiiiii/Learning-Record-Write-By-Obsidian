@@ -22,14 +22,9 @@
 
 [配置](SpringBoot_SpringSecurity_Configuration.md)
 
-## 认证: Authentication
+## Spring Security in Servlet
 
-[Authentication](SpringBoot_SpringSecurity_Authentication.md)
-
-
-## 授权: Authorization
-
-
+[Spring Security in Servlet](SpringBoot_SpringSecurity_In_Servlet.md)
 
 ## 密码编码器
 

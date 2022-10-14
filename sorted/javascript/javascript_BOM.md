@@ -16,3 +16,9 @@
 - location.href: 包含整个URL
 - location.host: 包含了一个DOMString, 表示主机地址, 可能包含端口号 
 - location.search: 包含了一个DOMString, 表示URL中的查询字符串(?后面的部分)
+
+## localStrage对象
+
+- 用于将数据保存
+- setItem(key, value): 保存数据
+- getItem(key): 获取数据

@@ -2,20 +2,9 @@
 
 - 用于检查服务器是否支持CORS
 
-## 不会触发预检请求的情况, 满足以下所有条件
-
-- 请求方法是`GET`, `HEAD`, `POST`之一
-- 包含自动设置的头部字段
-  - Accept
-  - Accept-Language
-  - Content-Language
-  - Content-Type
-    - 只限于`application/x-www-form-urlencoded`, `multipart/form-data`, `text/plain`
-- 任意[XMLHttpRequest](javascript_)对象没有注册任何事件监听器
-- 没有使用任何[ReadableStream]对象
-
 ## 发送预检请求
 
+- 首部方法为`OPTIONS`
 - 有浏览器自动生成预检请求
 - 发送检查服务器是否支持CORS的http请求
   - 一般包括以下几个头部字段
@@ -50,6 +39,18 @@ xhr.send('<person><name>Arun</name></person>');
 4. 服务端请求
     - 会携带Allow-Control-Allow-Origin头部字段
     - 携带Vary: Accpet-Encoding, Origin头部字段
+
+## 不会触发预检请求的情况, 满足以下所有条件
+
+- 请求方法是`GET`, `HEAD`, `POST`之一
+- 包含自动设置的头部字段
+  - Accept
+  - Accept-Language
+  - Content-Language
+  - Content-Type
+    - 只限于`application/x-www-form-urlencoded`, `multipart/form-data`, `text/plain`
+- 任意[XMLHttpRequest](javascript_XMLHttpRequest.md)对象没有注册任何事件监听器
+- 没有使用任何[ReadableStream]对象
 
 ## 如果服务器允许, 会响应这个预检请求
 

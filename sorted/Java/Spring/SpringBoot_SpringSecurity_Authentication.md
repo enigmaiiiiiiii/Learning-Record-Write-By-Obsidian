@@ -7,3 +7,5 @@
 [SecurityContext接口](SpringBoot_SpringSecurity_SecurityContext_Interface.md)
 
 [AuthenticationManager接口](SpringBoot_SpringSecurity_AuthenticationManager_Interface.md)
+
+[UserDetails接口](SpringBoot_SpringSecurity_UserDetails.md)
