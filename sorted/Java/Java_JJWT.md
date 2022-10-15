@@ -51,3 +51,5 @@ Claims claims = Jwts.parser()
 - `ExpiredJwtException`: 过期
 - `MalformedJwtException`: jwt格式错误
   - 可能因为修改jwt字符串导致
+- `SingnatureExceptoin`: 签名错误
+  - 可能因为修改jwt字符串导致

@@ -3,9 +3,7 @@
 - 在spring MVC项目中使用spring security时，启动项目后，访问任何页面都会跳转到**登录页面**(一个包含用户名和密码输入框, 提交按钮的页面)
 - 所有**请求**都必须通过认证
 
-## 使用
-
-添加依赖
+## 添加依赖
 
 ```xml
 <dependency>
@@ -16,15 +14,21 @@
 
 ## workflow
 
-[Spring Security工作流程](SpringBoot_SpringSecurity_Workflow.md)
+[Spring Security工作流程](SpringSecurity_Workflow.md)
 
 ## 配置
 
-[配置](SpringBoot_SpringSecurity_Configuration.md)
+[配置](SpringSecurity_Configuration.md)
 
 ## Spring Security in Servlet
 
-[Spring Security in Servlet](SpringBoot_SpringSecurity_In_Servlet.md)
+[Spring Security in Servlet](SpringSecurity_In_Servlet.md)
+
+## 注解
+
+- `@PreAuthentication("authority_description")`: 在认证之前执行, authority_description是授权描述
+  - hasAuthority("/admin"): jwt所描述的用户必须具有/admin权限
+  - hasRole("role_name"): 用户必须具有指定的角色
 
 ## 密码编码器
 

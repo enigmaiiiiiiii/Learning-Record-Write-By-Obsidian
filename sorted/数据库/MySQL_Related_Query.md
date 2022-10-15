@@ -14,11 +14,11 @@ select A.col_name, B.col_name from A, B where [condition of A.col_name | B.com_n
 
 内部联结
 
-- `join tbl_name on condition`
+- `JOIN tbl_name ON condition`
 - 查询结果与等值联结没有区别, 用join on语法明确联结条件
 
 ```sql
-from tbl1 join tbl2 on tbl1.name1 = tbl2.name2`;
+SELECT * FROM tbl1 JOIN tbl2 ON tbl1.name1 = tbl2.name2`;
 ```
 
 外连接
@@ -26,8 +26,10 @@ from tbl1 join tbl2 on tbl1.name1 = tbl2.name2`;
 - 查询一张表的全部和另一张表的交集
 - 可以包含另一个表中没有的信息
 
+> 返回的列由Select子句控制
+
 ```sql
-from tbl1 left join tbl2 on tbl1.name1 = tbl2.name2;
+SELECT * FROM tbl1 LEFT JOIN tbl2 ON TBL1.name1 = tbl2.name2;
 ```
 
 left表示左侧table为主table

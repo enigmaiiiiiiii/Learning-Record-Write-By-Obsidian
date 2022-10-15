@@ -45,6 +45,8 @@ public class JsonResult<T> implements Serializable {
 
 ## SericeCode类
 
+业务状态码类
+
 ```java
 public enum ServiceCode {
     OK(200),

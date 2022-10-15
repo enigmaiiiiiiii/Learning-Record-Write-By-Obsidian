@@ -66,8 +66,7 @@
 ```
 ## \<resultMap>和\<result>
 
-- 用于建立返回值映射
-- `<resultMap>`: 建立java类的属性和数据库表的字段的映射关系
+- `<resultMap>`: 建立**java类的属性**和**数据库表的字段**的映射关系
   - `<result />`: 建立pojo类中columnName和数据库中column_name名映射
 
 > 建议所有属性名和数据库中列名建立映射关系
@@ -79,7 +78,15 @@
     </select>
     <resultMap id="classId" type="package.path.className">
         <id column="id" property="id" />
-        <result column="colmumn_name" property="columnName">
+        <result column="colmumn_name" property="propName">
+        <collection 
+            property="propName" 
+            ofType="elementType"  <!-- 集合元素类型 -->
+            > 
+            <constructor>
+                <arg column="column_name"></arg>
+            </constructor>
+        </collection>
     </resultMap>
 </mapper>
 ```
@@ -99,3 +106,17 @@
 - 用于标识主键
 - column: 数据库中的列名
 - property: 类中的属性名
+
+`<collection>`
+
+- 用于标识一对多(list, set)的关系
+- property: 类中的属性名
+- ofType: 类中属性保存的元素类型
+
+`<constructor>`
+
+- 使用构造方法创建对象
+
+`<arg>`
+
+- column: 数据库中的列名  

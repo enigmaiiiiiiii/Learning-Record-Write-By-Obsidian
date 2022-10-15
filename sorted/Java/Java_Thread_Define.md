@@ -4,7 +4,7 @@
 
 - 扩展一个线程类
 
-## 实现Runnable接口
+## implements Runnable接口
 
 - Runnable定义了单一方法run()
 - Runnable是[函数式接口](Java_Functional_Interface.md)
