@@ -25,7 +25,7 @@ entity body
 - xxx: 状态码
 - status: 原因短语 典型状态
 
-`<xxx> <status>`定义, 参考RFC1945-page26
+`<xxx> <status>`定义, 参考[RFC1945-page26](https://tools.ietf.org/html/rfc1945#page-26)
 
 - 200 0K：请求成功，信息在返回的响应报文中
 - 201 Created: 请求成功
@@ -35,6 +35,7 @@ entity body
 - 302 Moved Temporarily：请求的对象已经被临时转移了
 - 304 Not Modified：请求的对象未被修改，服务器返回此状态码时，不会返回响应报文的内容
 - 400 Bad Request: 一个通用差错代码，指示该请求不能被服务器理解
+- 401 Unauthorized: 未授权
 - 403 Forbidden: 请求被服务器拒绝
 - 404 Not Found: 请求的文档不在服务器上
 - 500 Internal Server Error

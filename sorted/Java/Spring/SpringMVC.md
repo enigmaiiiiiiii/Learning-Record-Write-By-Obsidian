@@ -16,6 +16,4 @@
 
 [Spring Boot Validation](SpringBoot_Validation.md)
 
-## 异常处理
-
 [SpringMVC异常处理](SpringMVC_Exception.md)

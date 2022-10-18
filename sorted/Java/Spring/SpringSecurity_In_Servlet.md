@@ -3,11 +3,9 @@
 - 基于Servlet Filter
 - http request处理流程:
 
-![filterChain](../../../src/filterchain.png)
+## 基于Servlet Filter的Spring Security支持
 
-## 通用结构: Common Architecture 
-
-[通用结构](SpringSecurity_Common_Architecture.md)
+[基于Servlet Filter的Spring sercurity支持](SpringSecurity_Common_Architecture.md)
 
 ## 认证结构: Authentication Architecture
 

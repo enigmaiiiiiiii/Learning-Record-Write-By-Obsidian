@@ -2,7 +2,6 @@
 
 - 配置类的package
 - 类上均添加`@Configuration`, 表示为配置类
-
 - 定义的类
   - MybatisConfiguration.java
     - 添加`@MapperScan(val)`注解, 将val指定的包下的所有接口都作为Mapper接口
@@ -18,7 +17,6 @@ public class MybatisConfiguration {
     }
 }
 ```
-
 
 ## WebMvcConfiguration.java
 
@@ -86,7 +84,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 - 授权可访问的url
 - 允许[预检请求](../../Network/Http_CORS_Preflighted_Requests.md)
-- 关闭csrf
+- 关闭[csrf](Web_CSRF.md)
 - 添加过滤器
 
 ```java

@@ -18,11 +18,14 @@ SecurityFilterChain机制
 1. UserPasswordAuthenticationFilter创建一个UsernamePasswordAuthenticationToken, 一个Authentication类型, 这个类型会提取请求中的用户名和密码
 2. 上一步创建的类型传给AuthenticationManager去验证
 3. 如果验证失败
-  - SecurityContextHolder清空
-  - RememberMeServices.loginFail被调用
-  - AuthenticationFailHandler被调用
+
+- [SecurityContextHolder]清空
+- RememberMeServices.loginFail被调用
+- [AuthenticationFailHandler]被调用
+
 4. 如果验证成功
-  - Authentication 设置到SecurityContextHolder
-  - RememberMeServices.loginSuccess被调用
-  - ApplicationEventPublisher发布一个InteractiveAuthenticationSuccessEvent事件
-  - AuthenticationSuccessHandler被调用, 通常是一个SimpleUrlAuthenticationSuccessHandler**可调用对象**, 用于重定向到之前保存在ExceptionTranslationFilter中的请求
+
+- Authentication 设置到 [SecurityContextHolder]
+- RememberMeServices.loginSuccess 被调用
+- ApplicationEventPublisher 发布一个InteractiveAuthenticationSuccessEvent 事件
+- AuthenticationSuccessHandler 被调用, 通常是一个SimpleUrlAuthenticationSuccessHandler**可调用对象**, 用于重定向到之前保存在ExceptionTranslationFilter中的请求

@@ -10,11 +10,11 @@
 
 ## mapper
 
-- 定义数据库映射接口
+- 定义sql类数据库映射接口
 
 ## pojo目录
 
-[实体类](SpringBoot_Project_Workflow_Pojo.md)
+[pojo类](SpringBoot_Project_Workflow_Pojo.md)
 
 ## controller目录
 
@@ -44,3 +44,11 @@
 
 [Filter](SpringBoot_Project_Workflow_Filter.md)
 
+## repo
+
+- 除sql外的数据仓库接口
+
+## preload
+
+- 预加载数据到redis
+- 扩展ApplicationRunner接口, 实现run方法

@@ -1,12 +1,19 @@
 # IoC Container
 
--   IoC: Inversion of Control(控制反转)
+## IoC: Inversion of Control(控制反转)
 
-> 将对象的管理权交给Spring
+- 将对象的管理权交给Spring
+- 对象由Spring创建, 如controller, 实体类, 
+- 组件定义为: 由Spring管理的对象
 
--   DI: dependency injection(依赖注入)
+[Spring组件](Spring_Component.md)
 
-> 为对象中的属性赋值
+## DI: dependency injection(依赖注入)
+
+- 为对象中的属性赋值
+- `@Autowired`: 完成自动注入
+
+[Spring自动装配](Spring_Autowired.md)
 
 ## configuration metadata(配置化的元数据)
 
@@ -27,11 +34,3 @@
 
 - id: bean 的唯一标识符
 - class: bean 的全限定类名
-
-## 组件
-
-[Spring组件](Spring_Component.md)
-
-## 装配
-
-[Spring自动装配](Spring_Autowired.md)

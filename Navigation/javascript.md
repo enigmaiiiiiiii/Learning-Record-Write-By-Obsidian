@@ -2,37 +2,37 @@
 
 ## I
 
-[浏览器中使用JavaScript](/sorted/javascript/JavaScript_Using.md)
+[浏览器中使用JavaScript](JavaScript_Using.md)
 
 [术语](JavaScript_Terms.md)
 
-[语言基础](/sorted/javascript/JavaScript_Foundation.md)
+[语言基础](JavaScript_Foundation.md)
 
-[面向对象](/sorted/javascript/JavaScript_Object_Oriented.md)
+[面向对象](JavaScript_Object_Oriented.md)
 
-[函数](/sorted/javascript/JavaScript_Function.md)
+[函数](JavaScript_Function.md)
 
 [集合引用类型](javascript_集合引用类型.md)
 
-[原始值与引用值](/sorted/javascript/javascript_variable_copy_and_reference.md)
+[原始值与引用值](javascript_variable_copy_and_reference.md)
 
-[作用域链](/sorted/javascript/JavaScript_Scope_Chain.md)
+[作用域链](JavaScript_Scope_Chain.md)
 
 [操作符]
 
-[上下文](/sorted/javascript/JavaScript_Context.md)
+[上下文](JavaScript_Context.md)
 
-[ECMAScript正则](/sort/javascript/ECMAScript_Regex.md)
+[ECMAScript正则](ECMAScript_Regex.md)
 
-[模块管理](/sorted/javascript/JavaScript_Module.md)
+[模块管理](JavaScript_Module.md)
 
 ## II Web API
 
-[浏览器对象模型(BOM)](/sorted/javascript/javascript_BOM.md)
+[浏览器对象模型(BOM)](javascript_BOM.md)
 
-[HTML对象模型(DOM)](/sorted/javascript/javascript_DOM.md)
+[HTML对象模型(DOM)](../sorted/javascript/javascript_DOM.md)
 
-[服务器数据](/sorted/javascript/JavaScript_Server_API.md)
+[服务器数据](../sorted/javascript/JavaScript_Server_API.md)
 
 [Canvas]
 

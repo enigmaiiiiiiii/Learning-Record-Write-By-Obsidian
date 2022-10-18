@@ -1,7 +1,7 @@
 # 组件
 
 - spring管理的对象默认是单例的
-- `@ComponentScan`配置组件扫描的package, 多个package用逗号分隔
+- 配置类上添加`@ComponentScan`注解用于扫描组件所在的package, 多个package用逗号分隔
 
 ```java
 @Configuration
@@ -10,8 +10,11 @@
 
 ## 被Spring框架创建组件
 
-- `@Component`: 自定义组件
-- `@Bean`: 配置类中注册非自定义组件
+- `@Component`注解的类用于创建自定义组件
+  - `@Repository`注解的类用于创建持久层组件
+  - `@Service`注解的类用于创建业务层组件
+  - `@Controller`注解的类用于创建控制层组件
+- 配置类`@Bean`注解的方法中将非自定义类创建为spring组件
 
 `@Component`注解类用来标记Spring组件
 

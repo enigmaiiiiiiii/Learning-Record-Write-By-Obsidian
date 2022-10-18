@@ -27,8 +27,10 @@
 ## 注解
 
 - `@PreAuthentication("authority_description")`: 在认证之前执行, authority_description是授权描述
-  - hasAuthority("/admin"): jwt所描述的用户必须具有/admin权限
+  - hasAuthority("/admin"): jwt所描述的用户必须具有/admin权限([authority]())
   - hasRole("role_name"): 用户必须具有指定的角色
+- `@EnableGlobalMethodSecurity(prePostEnabled = true)`: 开启全局方法安全
+  - 用于配置类上
 
 ## 密码编码器
 
@@ -50,3 +52,5 @@ public Interface PasswordEncoder {
 - AuthenticationException: 认证异常
   - BadCredentialsException: 如用户名不存在
   - InternalAuthenticationServiceException: 
+- DisabledException: 用户被禁用
+- AccessDeniedException: 访问被拒绝异常

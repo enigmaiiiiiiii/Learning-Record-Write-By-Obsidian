@@ -5,9 +5,7 @@
 - `@ExceptionHandler`
   - 处理异常类
   - 用于注解方法
-  - 用在`@Controller`类中
-
-
+  - 用在`@Controller`注解的类中
 
 ## 添加注解
 

@@ -149,7 +149,7 @@ public class Knife4jConfiguration {
 - `@ApiModel(value='name')`, 注解类
   - value: 设置对象名
   - description: 设置对象简介
-- `@ApiModelProperty(value="prop_name", example="示例", required=true)`: 注解**类属性**, 处理对象类型参数和返回值
+- `@ApiModelProperty(value="prop_name", example="示例", required=true)`: 注解**pojo类属性**, 处理对象类型参数和返回值
   - value: 说明字段, 或者表示属性名称
   - example: 示例
   - required: 是否必须

@@ -30,7 +30,7 @@
 
 [网络编程](/sorted/Java/Java_Network_Programming.md)
 
-[多线程](Java_Thread.md)
+[多线程](../sorted/java/Java_Thread.md)
 
 [反射](Java_Reflect.md)
 
