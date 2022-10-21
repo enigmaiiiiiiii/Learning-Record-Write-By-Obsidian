@@ -1,11 +1,12 @@
-# 插槽
+s# 插槽
 
 ## 插槽是什么
 
 - 插槽是 Vue 组件的一个特殊的自定义区域，用于承载外部传入的内容
-- 使用组件时, 插槽用于传递模板内容
+- 使用组件时, 插槽用于传递**模板内容**
   - 模板内容可以是HTML
-  - 也可以是组件
+  - vue template标签中的内容
+  - 也可以是其它组件
 
 假设组件模板\<button-demo/>定义是这样的:
 
@@ -64,4 +65,43 @@ ButtonDemo.vue
         </template>
     </current-user>
 <template>
-````
+```
+
+## 具名插槽
+
+```html
+<header>
+    <slot name="header">
+    </slot>
+</header>
+<main>
+    <slot><slot>
+</main>
+<footer>
+    <slot name="footer"></slot>
+</footer>
+```
+
+- 有时候, 一个组件有多个插槽
+- 不带名称的slot隐式命名为default
+- <slot name="<name>">定义具名插槽为\<name>
+- 使用<template v-slot:slotname>使用具名插槽
+
+使用命名插槽
+
+- 没有在template中的内容被视为默认插槽内容
+
+```html
+<base-layout>
+  <template v-slot:header>
+    <h1>Here might be a page title</h1>
+  </template>
+
+  <p>A paragraph for the main content.</p>
+  <p>And another one.</p>
+
+  <template v-slot:footer>
+    <p>Here's some contact info</p>
+  </template>
+</base-layout>
+```

@@ -30,6 +30,8 @@ var app = new Vue({
 - $el, `vm.$el === document.getElementById('app')`
 - $watch, `vm.$watch('a', function(newVal, oldVal){})`, a改变后调用function(newVal, oldVal){}
 
+> Vue用符号$命名的属性和方法, 用于区分用户自定义的属性和方法
+
 ## 计算属性
 
 ```html

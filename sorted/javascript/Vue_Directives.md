@@ -47,9 +47,13 @@
 
 ## v-slot
 
-- 仅限于\<template>
+- 仅限于\<template>, [组件](Vue_Components.md)中使用
+- 用于[命名插槽](Vue_Component_Slot.md#命名插槽)
+- 用于定义[子插槽作用域](Vue_Component_Slot.md#作用域插槽)
 
-## v-pre 
+> 代替废弃的`slot-scope`
+
+## v-pre
 
 ## v-once
 

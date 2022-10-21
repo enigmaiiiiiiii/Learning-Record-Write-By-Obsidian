@@ -17,6 +17,10 @@
 ```yml
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  configuration:
+    cache-enabled: true # 不启用Mybatis
+    map-underscore-to-camel-case: true  # 支持驼峰命名
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 日志输出到控制台
 ```
 
 - 添加配置类, 避免添加@Mapper注解

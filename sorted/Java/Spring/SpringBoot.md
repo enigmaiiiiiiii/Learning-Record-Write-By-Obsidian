@@ -10,7 +10,10 @@
 
 [SpringBoot项目流程](SpringBoot_Project_Workflow.md)
 
+[启用Spring Cloud](SpringBoot_Project_Workflow_With_SpringCloud.md)
+
 ## 配置
 
 [SpringBoot配置](SpringBoot_Configuration.md)
+
 

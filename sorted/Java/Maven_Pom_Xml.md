@@ -16,6 +16,14 @@
 - dependencies: dependency元素列表是该元素的子元素
 - build
 
+## properties
+
+- 用于定义项目的属性
+- 自定义属性名称: `<prop.name>value</prop.name>`
+- 引用属性值: `${prop.name}`
+
+- 可以用来统一管理版本号
+
 ## dependencies元素
 
 指定dependency的版本
@@ -88,3 +96,28 @@ plugin元素
 pluginManagement元素
 
 - to be add...
+
+## packaging元素
+
+- 指定打包方式
+- `<packaging>pom</packaging>`: 代表一个父项目, 不能被打包
+- `<packaging>jar</packaging>`: 代表一个jar包
+- `<packaging>war</packaging>`: 代表一个war包
+- `<packaging>plugin</packaging>`: 代表一个maven插件
+
+## dependencyManagement元素
+
+- 管理依赖, 并不引入依赖
+- 用于父项目, 用于子项目的依赖管理
+
+```xml
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${prop.Version}</version>
+    </dependency>
+  </dependencies>
+<dependencyManagement>
+```

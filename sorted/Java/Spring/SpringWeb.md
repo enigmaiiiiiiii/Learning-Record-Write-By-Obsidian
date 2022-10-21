@@ -14,4 +14,9 @@ HttpSession
 OnePerRequestFilter
 
 - 保证每次请求被执行一次分派的基类
-- doFilterInternal
+- doFilterInternal: 保证每次请求只会被执行一次Filter
+
+## FilterChain
+
+- 只有一个接口方法: `doFilter(ServletRequest request, ServletResponse response)`
+  - 用于执行FilterChain中的下一个过滤器, 或者目标资源

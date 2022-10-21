@@ -10,7 +10,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script>
-    // 注册Vue组件 
+    // 注册Vue组件
     Vue.component("blog-post", {
         props: ["title"],
         template: "<h3>{{ title }}</h3>",
