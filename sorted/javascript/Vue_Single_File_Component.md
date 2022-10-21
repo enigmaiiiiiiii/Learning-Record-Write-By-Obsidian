@@ -1,5 +1,7 @@
 # 单文件组件
 
+- **使用SFC必须使用构建工具**
+
 ## 概念
 
 - 使相关联的html, javascript, css内聚
@@ -7,7 +9,6 @@
 > 与其将代码库划分为三个巨大的层(html, css, js), 不如分成松散的组件
 
 - 简称SFC(Single File Component)
-- **使用SFC必须使用构建工具**
 - `<template>, <script>, <style>`放在同一个文件中，分别代表组件的html, javascript, css 
 
 template.html, script.js, style.css可以用一个如下的.vue文件代替
@@ -44,65 +45,13 @@ template.html, script.js, style.css可以用一个如下的.vue文件代替
 
 - `<template>`中只能有一个根元素
 
-## script脚本: 
+## script脚本
 
-- `<script setup>`
-  - 标签内容被编译成setup()函数的内容
-  - 与普通`<script>`不同, `<script setup>`所在的[实例创建]()时执行
-- 组件的顶级绑定可以在模板中直接使用, 包括变量，函数
-
-```html:vue
-<script setup>
-const msg = "hello";
-function log() {
-    console.log("hello");
-}
-<script>
-<template>
-    <button @click="log">{{msg}}</button>
-</template>
-```
+[Vue组件的Script脚本](Vue_Single_File_Component_Script.md)
 
 ## 使用组件
 
-```html
-<script setup>
-    import MyComponent from `./MyComponent.vue`
-</script>
-<template>
-    <MyComponent />
-</template>
-```
-
-动态组件
-
-- 通过`<component/>`的`:is`属性来动态绑定组件
-
-```html:vue
-<script setup>
-    import Foo from `./Foo.vue`
-    import Bar from `./Bar.vue`
-</script>
-<template>
-    <component :is="Foo" />
-    <component :is="someCondition ? Foo : Bar" />
-</template>
-```
-
-递归组件
-
-- 递归导入自身: FooBar.vue的组件可以在其模板中用<FooBar />使用自身
-- 使用别名避免从外部导入的组件与自身命名冲突
-
-```html:vue
-<script>
-import {FooBar as FooBarChild} from `./components`
-</script>
-```
-
-命名空间组件
-
-- 用于从单个文件中导入多个组件
+[使用组件](Vue_Single_File_Component_Use.md)
 
 ## 自定义指令
 

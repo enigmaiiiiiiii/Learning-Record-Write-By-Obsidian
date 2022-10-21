@@ -2,19 +2,18 @@
 
 - 遵循[java注解语法](../Java_Annotation)
 
-## 通用注解
 
-- `@Value("${key}")`: 获得配置文件中的值, 用`${}`取值
+## `@Value("${key}")`: 
 
-## MVC注解
+- 获得配置文件中的值, 用`${}`取值
 
-### `@ControllerAdvice`
+## `@ControllerAdvice`
 
-### `@ExceptionHandler`
+## `@ExceptionHandler`
 
-### `@Controller`
+## `@Controller`
 
-### `@ResquestMapping(String str)`
+## `@ResquestMapping(String str)`
 
 ```java
 public @interface RequestMapping {
@@ -39,34 +38,32 @@ public @interface RequestMapping {
 - method: 表示允许的[请求方式](../../Network/Http_Request_Message.md#请求行), 默认不限制请求方式
   - `@RequestMapping(value="/list", method=RequestMethod.GET)`: 表示只允许GET请求
 
-### `@ResponseBody` 
+## `@ResponseBody` 
 
 - 注解方法返回字符串内容作为响应体内容
 
-### `@RequestBody`
+## `@RequestBody`
 
 - 注解方法参数, 表示参数来自解析格式为json的请求体
 
-### `@RestController`
+## `@RestController`
 
-### `@Autowired`
+## `@Autowired`
 
-### `@ResponseBody`: 方法返回字符串作为响应内容
+## `@ResponseBody`: 方法返回字符串作为响应内容
 
-### `@RestController()`
+## `@RestController()`
 
-### `@Autowired`
+## `@Autowired`
 
-## MyBatis注解
+## `@Mapper`
 
-### `@Mapper`
-
-### `@Insert(String sql)`
+## `@Insert(String sql)`
 
 - sql: 执行插入功能sql语句字符串
 - 参数中的`#{}`类似于在JDBC用一个包含`?`的字符串创建一个PreparedStatement对象
 
-### `@Result`
+## `@Result`
 
 - `@Result(column="old_price", properties="oldPrice")`: 在列和属性名之间建立映射关系
 
@@ -85,18 +82,18 @@ ps.setInt(1, id);
 - `@autowired`: 自动装配
 - `@MapperScanner(String str)`: 指定包下的所有接口为mapper接口
 
-## 配置
+## @Configuration
 
-### @Configuration
+## @Service
 
-## 业务逻辑
-
-### @Service
-
-## json
-
-### @JsonInclude
+## @JsonInclude
 
 - `@JsonInclude(JsonInclude.Include.NON_NULL)`: 不序列化null值
 
+## @Scheduled
+
+- 用于方法
+- `@Scheduled(fixedRate=1000)`: 每隔1s执行一次
+- `@Scheduled(fixedDelay=1000)`: 上一次执行完毕后隔1s执行一次
+- `@Scheduled(cron="0 0 0 * * ?")`: 每天0点执行一次
 

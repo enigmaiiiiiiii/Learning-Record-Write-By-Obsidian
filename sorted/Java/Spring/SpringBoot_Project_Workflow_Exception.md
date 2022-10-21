@@ -41,7 +41,7 @@ public class ServiceException extends RuntimeException {
 - 方法声明添加`@ExceptionHandler`, 表示处理异常的方法, 参数要处理的异常类
   - 注解参数为异常的**类类型**, 可以是**异常类类型**数组
   - `@ExceptionHandler(value={exception1.class, exception2.class})`表示两类异常
-- 异常处理方法包括 
+- 异常处理方法包括
   - ServiceException: 自定义异常
   - BindException: 参数校验异常, 由validation框架抛出的异常
   - Throwable: 其他异常
@@ -62,7 +62,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
-目前理解为: 
+目前理解为:
 
 ```java
 public String handlerException() {

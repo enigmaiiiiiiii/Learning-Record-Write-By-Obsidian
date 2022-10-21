@@ -38,6 +38,10 @@ public class RedisConfiguration {
 ## 启动后加载缓存
 
 
+## 异常
+
+- RedisCommandExecutionException
+
 
 
 

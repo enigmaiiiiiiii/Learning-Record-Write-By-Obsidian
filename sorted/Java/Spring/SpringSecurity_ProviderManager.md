@@ -19,7 +19,7 @@ DaoAuthenticationProvider
 
 1. Filter传递Authenctication到AuthenticationManager
 2. ProviderManager选择DaoAuthenticationProvider
-3. DaoAuthenticationProvider调用UserDetailsService.loadUserByUsername()方法, 获取UserDetails对象
-4. DaoAuthenticationProvider使用PasswordEncoder对密码进行验证
-5. 如果验证成功, 则返回一个Authentication对象, 一个UsernamepasswordAuthenticationToken实例, 其中包含有UserDetails, 
+3. DaoAuthenticationProvider调用[UserDetailsService].loadUserByUsername()方法, 获取UserDetails对象
+4. DaoAuthenticationProvider使用[PasswordEncoder]对密码进行验证
+5. 如果验证成功, 则返回一个Authentication对象, 一个UsernamepasswordAuthenticationToken实例被设置到SecurityContextHolder中
 

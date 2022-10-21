@@ -1,0 +1,14 @@
+# UserDetailsService
+
+- **加载用户数据的核心接口**
+- 由DaoAuthenticationProvider使用
+
+## loadUserByUsername(String username)
+
+- 接口中唯一的方法, 是一个只读方法
+- 返回带有principal的UserDetails
+
+实现思路
+
+- 通过Username设置[UserDetails]
+

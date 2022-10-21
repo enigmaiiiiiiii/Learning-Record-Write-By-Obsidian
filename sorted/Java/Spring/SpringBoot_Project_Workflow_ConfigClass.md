@@ -107,3 +107,23 @@ protected void configure(HttpSecurity http) throws Exception {
     http.addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);
 }
 ```
+
+## RedisConfiguration.java
+
+## ScheduleConfiguration.java
+
+- 使用`@EnableScheduling`注解配置类来启用定时任务 
+
+> 不需要其它添加其它方法
+
+```java
+@Configuration
+@EnableScheduling
+public class ScheduleConfiguration {
+
+    public ScheduleConfiguration() {
+        // ScheduleConfiguration loaded message
+    }
+
+```
+

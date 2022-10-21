@@ -7,7 +7,7 @@
   - 模板内容可以是HTML
   - 也可以是组件
 
-假设组件模板\<button-demo/>定义是这样的: 
+假设组件模板\<button-demo/>定义是这样的:
 
 ButtonDemo.vue
 
@@ -31,5 +31,37 @@ ButtonDemo.vue
 
 ## 作用域插槽
 
-- 让插槽访问子组件中才有的数据
+- 想在组件中使用**其它带有插槽的组件**时
+- 使用作用域插槽可以访问子组件中才有的数据
 
+子组件current-user.vue
+
+- user作为slot的属性
+
+```html
+<template>
+    <span>
+        <slot v-bind:user="user"></slot>
+    </span>
+</template>
+<script setup>
+    const user = {
+        "lastName": "Doe",
+        "firstName": "John"
+    }
+</script>
+```
+
+使用子组件的父组件
+
+- v-slot来**定义**插槽提供的属性的名称
+
+```html
+<template>
+    <current-user>
+        <template v-slot:default="slotProps">
+            {{slotProps.user.lastName}}
+        </template>
+    </current-user>
+<template>
+````

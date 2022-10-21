@@ -40,3 +40,5 @@
 ## API
 
 [Vue实例API](Vue_Instance_API.md)
+
+[根VueAPI](Vue_Root_API.md)

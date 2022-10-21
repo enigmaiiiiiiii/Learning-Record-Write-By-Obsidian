@@ -50,7 +50,7 @@ public Interface PasswordEncoder {
 ## 异常
 
 - AuthenticationException: 认证异常
-  - BadCredentialsException: 如用户名不存在
+  - [BadCredentialsException](SpringSecurity_AuthenticationManager_Interface.md): 如用户名不存在
   - InternalAuthenticationServiceException: 
 - DisabledException: 用户被禁用
 - AccessDeniedException: 访问被拒绝异常

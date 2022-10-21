@@ -29,10 +29,21 @@ redis-server
 
 - exit: 从redis客户端退出
 - shutdown: 关闭redis服务
+
+键(key)操作
+
 - set key value: 设置key的值为value
-- get key: 获取key的值
+- del key: 删除key
+- exists key: 判断key是否存在
 - keys *: 获取所有的key
 - keys key: 查询是否存在key
+
+获取值(value)
+
+- get key: 获取String类型的value
+- hgetall key: 获取Hash类型的value
+- lrange key start end: 获取List类型的value
+- smembers key: 获取Set类型的value
 
 ## Redis下标
 

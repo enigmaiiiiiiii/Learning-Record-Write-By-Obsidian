@@ -12,5 +12,5 @@
 
 ## 配置
 
-[SringBoot配置](SpringBoot_Configuration.md)
+[SpringBoot配置](SpringBoot_Configuration.md)
 

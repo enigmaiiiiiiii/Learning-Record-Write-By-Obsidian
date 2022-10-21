@@ -3,15 +3,21 @@
 - 采用MVVM设计模式
 - MVVM设计模式中的VM视图模型: 将元素和变量在内存中绑定, 通过监听标识元素, 提高页面效率
 
+## I
+
+[Vue单文件组件: .Vue文件](Vue_Single_File_Component.md)
+
+[Vue组件和实例](Vue_App.md)
+
+[Vue插件](Vue_Plugin.md)
+
+[模板语法](Vue_Template_Syntax.md)
+
 ## Vue2
 
 [使用Vue-CLI初始化Vue2项目](Vue_CLI_Create_Project.md)
 
-[Vue组件和实例](Vue_App.md)
-
 [Vuex](Vue_Vuex.md)
-
-[模板语法](Vue_Template_Syntax.md)
 
 [路由](Vue_Router.md)
 
@@ -35,4 +41,4 @@
 
 ## 使用中的问题
 
-[bug记录](Vue_Learn_From_Bug.md)  
+[bug记录](Vue_Learn_From_Bug.md)

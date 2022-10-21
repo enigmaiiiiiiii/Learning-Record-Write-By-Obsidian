@@ -18,7 +18,8 @@
 
 > 左边是头，右边是尾
 
-- long leftPush(K key, V value): 将value插入到key对应的列表的头部
-- long rightPush(K key, V value): 将value插入到key对应的列表的尾部
-- long leftPop(K key): 移除并返回key对应的列表的头部元素
-- long rightPop(K key): 移除并返回key对应的列表的尾部元素
+- Long leftPush(K key, V value): 将value插入到key对应的列表的头部
+- Long rightPush(K key, V value): 将value插入到key对应的列表的尾部
+- Long leftPop(K key): 移除并返回key对应的列表的头部元素
+- Long rightPop(K key): 移除并返回key对应的列表的尾部元素
+- List<V> range(K key, long start, long end): 获取key对应的列表的[start, end]范围内的元素
