@@ -18,6 +18,13 @@
 |li > a\[href*="en-US"]>.inline-warning|0|2|2|022|
 |\#identifier|1|0|0|100|
 |button:not(\#mainBtn, .cta)|1|0|1|101|
- 
-## 重要性 
+
+## 重要性
+
+```css
+selector {
+    property:value !important;
+}
+```
+- `!important` 会覆盖所有规则
 

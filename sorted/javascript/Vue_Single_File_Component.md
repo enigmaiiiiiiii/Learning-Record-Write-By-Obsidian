@@ -1,19 +1,19 @@
 # 单文件组件
 
-- **使用SFC必须使用构建工具**
+-   **使用单文件组件(SFC)必须使用构建工具**
 
 ## 概念
 
-- 使相关联的html, javascript, css内聚
+-   使相关联的 html, javascript, css 内聚
 
 > 与其将代码库划分为三个巨大的层(html, css, js), 不如分成松散的组件
 
-- 简称SFC(Single File Component)
-- `<template>, <script>, <style>`放在同一个文件中，分别代表组件的html, javascript, css 
+-   简称 SFC(Single File Component)
+-   `<template>, <script>, <style>`放在同一个文件中，分别代表组件的 html, javascript, css
 
-template.html, script.js, style.css可以用一个如下的.vue文件代替
+template.html, script.js, style.css 可以用一个如下的.vue 文件代替
 
-```vue
+```html
 <template src="./template.html"></template>
 <style src="./style.css"></style>
 <script src="./script.js"></script>
@@ -21,12 +21,12 @@ template.html, script.js, style.css可以用一个如下的.vue文件代替
 
 ## 使用单文件组件
 
-## style样式
+## style 样式
 
-- `<style>`表示全局样式
-- `<style scoped>`表示只在当前组件(.vue文件)中生效
-- `<style module>`
-- `<style scoped>`中的样式想要影响子组件, 需要使用`:deep()`选择器
+-   `<style>`表示全局样式
+-   `<style scoped>`表示只在当前组件(.vue 文件)中生效
+-   `<style module>`
+-   `<style scoped>`中的样式想要影响子组件, 需要使用`:deep()`选择器
 
 ```css
 <style scoped>
@@ -35,19 +35,25 @@ template.html, script.js, style.css可以用一个如下的.vue文件代替
 }
 </style>
 ```
-- 插槽选择器, `:slooted()`选择器
-  - 不受当前组件的`<style scoped>`影响
-  - 被认为是父组件所持有
 
-- `v-bind()`函数将css动态属性值与组件绑定
+-   插槽选择器, `:slooted()`选择器
 
-## template模板
+    -   不受当前组件的`<style scoped>`影响
+    -   被认为是父组件所持有
 
-- `<template>`中只能有一个根元素
+-   `v-bind()`函数将 css 动态属性值与组件绑定
 
-## script脚本
+## template 模板
 
-[Vue组件的Script脚本](Vue_Single_File_Component_Script.md)
+-   `<template>`中只能有一个根元素
+
+## script 脚本
+
+[Vue 组件的 Script 脚本](Vue_Single_File_Component_Script.md)
+
+## style 样式
+
+-   `<style scoped>`表示 CSS 只在当前组件(.vue 文件)中生效, 不会作用于子组件
 
 ## 使用组件
 
@@ -55,8 +61,8 @@ template.html, script.js, style.css可以用一个如下的.vue文件代替
 
 ## 自定义指令
 
-- 用于在元素上注册自定义行为
-- 命名规范: `vNameOfDirective`
+-   用于在元素上注册自定义行为
+-   命名规范: `vNameOfDirective`
 
 ```html:vue
 <script setup>
@@ -71,6 +77,6 @@ template.html, script.js, style.css可以用一个如下的.vue文件代替
 </template>
 ```
 
-## defineProps()和defineEmits()
+## defineProps()和 defineEmits()
 
-- 用于定义组件的props和emits
+-   用于定义组件的 props 和 emits

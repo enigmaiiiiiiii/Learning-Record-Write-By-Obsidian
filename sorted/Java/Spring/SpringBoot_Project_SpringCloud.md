@@ -11,7 +11,7 @@
 </dependency>
 ```
 
-## 项目配置
+添加项目配置
 
 ```yml
 spring:

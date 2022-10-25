@@ -5,9 +5,9 @@
 
 ## I
 
-[Vue单文件组件: .Vue文件](Vue_Single_File_Component.md)
-
 [Vue组件和实例](Vue_App.md)
+
+[Vue单文件组件: .Vue文件](Vue_Single_File_Component.md)
 
 [Vue插件](Vue_Plugin.md)
 

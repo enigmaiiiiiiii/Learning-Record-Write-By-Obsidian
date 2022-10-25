@@ -14,11 +14,11 @@
 
 [Spring Data Redis](Spring_Data_Redis.md)
 
-## Spring原理
+## Spring 原理
 
-[IoC容器](Spring_IoC.md)
+[IoC 容器](Spring_IoC.md)
 
-[AOP编程](Spring_AOP.md)
+[AOP 编程](Spring_AOP.md)
 
 [Spring JDBC](Spring_JDBC.md)
 
@@ -33,12 +33,13 @@
 ## SpringCloud
 
 [Spring Cloud](SpringCloud.md)
+
 ## 工具类
 
-- BeanUtils: 通过反射
-  - void copyProperties(Object dest, Object orig): 将orig的属性值复制到dest中
-- DigestUtils: 消息摘要算法，用于保存密码
+-   BeanUtils: 通过反射
+    -   void copyProperties(Object dest, Object orig): 将 orig 的属性值复制到 dest 中
+-   DigestUtils: 消息摘要算法，用于保存密码
 
 ## ISSUE
 
-[issue#28794](https://github.com/spring-projects/spring-boot/issues/28794): "this.condition is null":  
+[issue#28794](https://github.com/spring-projects/spring-boot/issues/28794): "this.condition is null":

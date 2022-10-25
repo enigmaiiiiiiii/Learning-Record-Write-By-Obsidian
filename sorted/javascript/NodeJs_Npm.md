@@ -51,13 +51,13 @@ npm可以用来
 
 创建一个React项目
 
-```shell
+```bash
 npm init react-app ./my-react-app
 ```
 
 生成新的workspace
 
-```shell
+```bash
 npm init -w packages/a
 ```
 
