@@ -7,7 +7,7 @@
 ```xml
 ```
 
-## 配置
+## SpringBoot项目添加配置
 
 ```yml
 dubbo:
@@ -27,7 +27,16 @@ dubbo:
 
 ## 添加注解
 
-- 使其它服务能够调用
+使其它服务能够调用(服务提供者)
 
-@DubboService: 注解类, 用于暴露服务, 注册到nacos服务都可以访问当前类的方法
-@EnableDubble: 注解启动类
+- `@DubboService`: 注解类, 用于暴露服务, 注册到nacos服务都可以访问当前类的方法
+- `@EnableDubble`: 注解启动类
+
+调用其它进程或远程服务(服务消费者)
+
+- `@DubboReference`: 注解属性, 表示当前业务需要调用其它服务, 完成Dubbo服务代理Service类**实例**的自动装配
+
+```java
+@DubboReference
+private IOtherService dubboOtherService;
+```

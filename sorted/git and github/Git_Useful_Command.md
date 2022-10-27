@@ -46,3 +46,9 @@ git clean -fxd # 删除未跟踪的文件
 ```bash
 git ls-files
 ```
+
+## 设置HEAD到指定状态
+
+```bash
+git reset --hard <commitid>
+```

@@ -38,7 +38,8 @@
 
 ## v-model
 
-- 在表单输入元素或组件上创建双向绑定
+- 在**表单**输入元素或组件上创建双向绑定
+- 忽略所有表单元素的value, checked, selected attribute的初始值, 仅使用**Vue实例的数据**作为数据来源
 - 仅限于`<input>, <select>, <textarea>`
 - 修饰符
   - `.lazy`: 监听change事件而不是input

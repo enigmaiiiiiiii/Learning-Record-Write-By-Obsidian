@@ -12,9 +12,7 @@
 
 [git命令](Git_Command.md)
 
-## II
-
-[Git Internals](Git_Internals.md)
+## Github
 
 [GitHub Issues](GitHub_Issues.md)
 
@@ -22,8 +20,12 @@
 
 [解决问题的命令](Git_Useful_Command.md)
 
-[[Git_Ignore文件]](Git_Ignore.md)
+[.gitignore文件](Git_Ignore.md)
 
 [GIthub搜索技巧](Github_Search_Skills.md)
 
 [Detached head](Git_Detached_Head.md)
+
+## IV
+
+[Git Internals](Git_Internals.md)

@@ -1,6 +1,8 @@
-# Spring管理
+# 使用Nacos
 
-## 引入Nacos依赖
+[Nacos](Nacos.md)
+
+## 引入依赖
 
 支持注册到nacos的依赖, discovery发现服务
 
@@ -11,7 +13,7 @@
 </dependency>
 ```
 
-添加项目配置
+## 添加Springboot项目配置
 
 ```yml
 spring:

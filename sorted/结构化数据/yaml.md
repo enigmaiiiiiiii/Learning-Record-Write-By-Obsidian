@@ -42,6 +42,51 @@ Store:
 }
 ```
 
+**对象**数组
+
+```yml
+store:
+  book:
+    - name: "Harry Potter"
+      price: 10
+    - name: "Lord of the Rings"
+      price: 15
+  food:
+    - name: "Apple"
+      price: 1
+    - name: "Orange"
+      price: 2
+```
+
+对应json
+
+```json
+{
+    "store": {
+        "book": [
+            {
+                "name": "Harry Potter",
+                "price": 10
+            },
+            {
+                "name": "Lord of the Rings",
+                "price": 15
+            }
+        ],
+        "food": [
+            {
+                "name": "Apple",
+                "price": 1
+            },
+            {
+                "name": "Orange",
+                "price": 2
+            }
+        ]
+    }
+}
+```
+
 ## 语法示例
 
 

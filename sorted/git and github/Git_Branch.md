@@ -4,16 +4,16 @@
 
 - commit时保存[暂存区]的[文件快照]的指针
 
-假设有一个含有三个文件的目录, 将所有文件加入stage area, 并commit, 当使用git commit时 
+假设有一个含有三个文件的目录, 将所有文件加入stage area, 并commit, 当使用git commit时
 
-- Git检查(checksums)每一个子目录并保存为一个tree Object到Git repository;  
+- Git检查(checksums)每一个子目录并保存为一个tree Object到Git repository;
 - 创建一个新的commit Object, 和一个指向root project tree的指针;
 - 此时，git repository中包含5个对象:
   - 三个blob(文件内容)
   - 一个树结构: 包含目录内的文件，并说明那些文件是blob
   - 一个commit: 包含commit元数据和指向root tree的指针
 
-继续commit: 
+继续commit:
 
 - commit包含一个指向前一个commit的指针
 
@@ -99,4 +99,4 @@ git branch -f main HEAD^  # 强制修改main分支为HEAD的父节点
 
 ## HEAD指针
 
-- HEAD指针指向当前commit
+[Head指针](Git_reference_head.md)

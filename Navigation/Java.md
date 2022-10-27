@@ -70,11 +70,8 @@
 
 ## V
 
-[Nacos](Nacos.md)
 
-[Dubbo](Dubbo.md)
-
-## VI 
+## VI
 
 [隐式创建实例](Java_Create_Instance_Implicitly.md)
 
