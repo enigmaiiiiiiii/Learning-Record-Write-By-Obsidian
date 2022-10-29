@@ -50,11 +50,9 @@
 
 ## preload
 
-- Application启动后执行的代码
-  - 预加载数据到redis
-- 扩展ApplicationRunner接口, 实现run方法
+[预加载](SpringBoot_Project_Workflow_Preload.md)
+
 
 ## schedule
 
-- 定时任务
-  - 定时刷新Redis缓存
+[定时任务](SpringBoot_Project_Workflow_Schedule.md)

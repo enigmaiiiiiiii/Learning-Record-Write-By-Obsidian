@@ -13,7 +13,7 @@
 
 - `git checkout <branch>`
 - `git checkout -b <new-branch>`: 同`git branch <new-branch>`
-- `git checkout -detach [<branch>]`: 打算在commit or branch之上工作,
+- `git checkout -detach [<branch>]`: 开始在commit or branch之上工作,
   - 保留工作树中的本地更改
   - 当前工作树的状态: 提交记录(commit record) + 本地修改(local modifications)
 - `git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] --pathspec-from-file=<file> [--pathspec-fil-nul]`: overwrite files match the pathspec, 通过指定文件路径覆盖指定的文件
@@ -27,6 +27,8 @@
 - `-f`: 切换分支时，即使index或working tree 与HEAD不同, 即使其中有untracked file, 用来丢弃本地更改和untracked file or directory的方式
 
 ## git cherry-pick
+
+- `git cherry-pick <commit>`: 应用指定的commit的修改到[HEAD](Git_Concept.md#HEAD)
 
 ## git add
 

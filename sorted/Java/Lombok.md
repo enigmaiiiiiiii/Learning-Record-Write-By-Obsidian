@@ -4,6 +4,8 @@
 
 ## `@Data`
 
+- 注解在实体类上
+
 ## `@Getter`
 
 ## `@Setter`
@@ -14,3 +16,10 @@
 
 ## `@RequiredArgsConstructor`
 
+## `@NoArgsConstructor`
+
+- 自动生成无参构造函数
+
+## `@AllArgsConstructor`
+
+- 自动生成全参构造函数

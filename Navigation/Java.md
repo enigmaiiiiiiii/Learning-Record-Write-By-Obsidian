@@ -68,8 +68,15 @@
 
 [fastjson](/sorted/Java/Java_FastJson.md): json in java
 
-## V
+## 应用
 
+[设计规范](/sorted/Java/Java_Design_Standard.md)
+
+[HttpWebserver](/sorted/Java/Java_Application_HttpWebserver.md)
+
+[java项目中的Pojo类](/sorted/Java/Java_Pojo.md)
+
+[website]()
 
 ## VI
 
@@ -80,13 +87,3 @@
 ## Bug
 
 [Bug记录](Java_Learn_From_Bug.md)
-
-## 应用
-
-[设计规范](/sorted/Java/Java_Design_Standard.md)
-
-[HttpWebserver](/sorted/Java/Java_Application_HttpWebserver.md)
-
-[java项目中的Pojo类](/sorted/Java/Java_Pojo.md)
-
-[website]()

@@ -10,7 +10,6 @@
 ## 安装
 
 [windows地址](https://github.com/poradowski/redis/releases)
-
 ## 启动
 
 启动客户端
@@ -48,7 +47,7 @@ redis-server
 ## Redis下标
 
 - 正向下标: 0标识第一个元素，1标识第二个元素，以此类推
-- 反向下标: -1表示最后一个元素, -2 
+- 反向下标: -1表示最后一个元素, -2
 
 ## redis适合的场景
 

@@ -21,13 +21,13 @@ SHOW DATABASES;
 4. 连接数据库
 
 ```sql
-USE 数据库名称 
+USE 数据库名称
 ```
 
 5. 返回当前数据库内可用表的列表
 
 ```sql
-SHOW TABLES; 
+SHOW TABLES;
 ```
 
 6. 返回数据库dbname的可用表的列表
@@ -51,9 +51,9 @@ CREATE TABLE tbl_name(列名称 列类型)
 9. 插入数据
 
 ```sql
-INSERT INTO table_name(filed1, field2, ..., fieldN)
-                       VALUES
-                       (val1, val2, ..., valN);
+INSERT INTO 
+    table_name(filed1, field2, ..., fieldN)
+VALUES (val1, val2, ..., valN);
 ```
 
 10. 查询数据

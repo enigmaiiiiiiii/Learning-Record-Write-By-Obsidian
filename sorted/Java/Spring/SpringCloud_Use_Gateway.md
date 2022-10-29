@@ -2,24 +2,13 @@
 
 [SpringGateway](SpringGateway.md)
 
+- 作为外界访问的入口
 - Nacos的一部分, 因此使用网关时, 需要先启动Nacos
 
 ## 配置
 
-```yml
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: payment_route  # 路由id
-          uri: http://localhost:8001
-          predicates:
-            - Path=/payment/get/** # 匹配路径
-```
+[配置](SpringCloud_Configure_SpringGateway.md)
 
-routes:
+## 启用网关后受影响的其它项目
 
-- id:
-- uri: 配置到Nacos的名称
-- predicates:
-
+[其它项目配置](SpringCloud_InfluenceByGateway.md)

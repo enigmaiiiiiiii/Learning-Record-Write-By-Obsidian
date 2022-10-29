@@ -1,6 +1,6 @@
 # GitHub Issues: GitHub议题
 
-可以用于: 
+可以用于:
 
 - 问题跟踪
 - 收集反馈
@@ -26,7 +26,7 @@ issue overview
 - [ ] 任务2
 ```
 
-- 可以将任务转换为议题
+- 可以将任务转换为议题(issue)
 
 ## 设置Issue
 

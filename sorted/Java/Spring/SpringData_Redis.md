@@ -1,6 +1,6 @@
-# SpringBoot中使用Redis 
+# SpringBoot中使用Redis
 
-## 添加依赖 
+## 添加依赖
 
 ```xml
 <dependency>
@@ -24,7 +24,6 @@ public class RedisConfiguration {
         redisTemplate.setValueSerializer(RedisSerializer.json());
         return redisTemplate;
     }
-    
 }
 ```
 
@@ -33,10 +32,12 @@ public class RedisConfiguration {
 
 ## RedisTemplate<K, V>: 连接管理和数据操作
 
-[RedisTemplate](Spring_Data_Redis_RedisTemplate.md)
+[RedisTemplate](SpringData_Redis_RedisTemplate.md)
 
 ## 启动后加载缓存
 
+- 设置[预加载](SpringBoot_Project_Workflow_Prebuild.md)
+- 设置[定时任务](SpringBoot_Project_Workflow_Schedule.md)
 
 ## 异常
 

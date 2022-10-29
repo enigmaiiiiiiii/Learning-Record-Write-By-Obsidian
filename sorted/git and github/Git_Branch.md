@@ -29,9 +29,9 @@ git branch <branch_name>
 
 > new branch $\rightarrow$ current commit
 
-
 ## 切换Branch
 
+- `git switch <branch>`: 切换到指定的branch
 - `git checkout <branch>` 这条命令做了两件事
   - 将HEAD指向指定的branch
   - 将文件状态恢复到指定的branch

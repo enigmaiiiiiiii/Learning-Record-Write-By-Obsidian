@@ -1,7 +1,9 @@
 # Pojo
 
-- 用于存放实体类 
+- 用于存放实体类
 - 子目录
+- 使用[lombok](../Lombok.md)的`@Data`注解, 自动生成getter, setter, toString, equals, hashCode方法
+- 属性类型应[参照数据库字段类型](../Java_Pojo.md#参照数据库类型设计实体类)
 
 ## entity目录
 

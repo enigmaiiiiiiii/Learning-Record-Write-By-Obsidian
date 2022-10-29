@@ -12,11 +12,11 @@
 
 [修改密码](MySQL_change_root_password.md)
 
-[开始使用MySql](MySql_Start.md)
-
 [sql语句](SQL_statement.md)
 
 ## II
+
+[开始使用MySql](MySql_Start.md)
 
 [数据类型](MySQL_Data_Type.md)
 
@@ -36,7 +36,7 @@
 
 [事务](MySQL_Transaction.md)
 
-## III 
+## III
 
 [mysql client](MySQL_Mysql_Client.md): 命令行客户端
 

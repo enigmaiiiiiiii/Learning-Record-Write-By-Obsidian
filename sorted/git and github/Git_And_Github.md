@@ -2,9 +2,11 @@
 
 ## I
 
-[git概念](Git_Concept.md)
+[git术语](Git_Concept.md)
 
 [git安装使用](Git_Install_And_Use.md)
+
+[Commit](Git_Commit.md)
 
 [Branch](Git_Branch.md)
 

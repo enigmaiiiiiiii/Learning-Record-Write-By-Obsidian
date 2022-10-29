@@ -33,3 +33,4 @@ launch.json 文件
 - configurations: 启动项配置
 - compounds: 复合启动配置
   - configurations: 由几个启动项组成的数组
+- preLaunchTask: 在启动前执行的任务, 取值为[task.json](Vscode_Tasks.md)中的label

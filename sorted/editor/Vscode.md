@@ -8,4 +8,8 @@
 
 [vscode 中的任务](Vscode_Tasks.md)
 
+## launch.json和task.json配置中的预定义vscode变量
+
+[variable替换](Vscode_Variable_Substitution.md)
+
 
