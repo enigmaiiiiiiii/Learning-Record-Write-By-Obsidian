@@ -82,20 +82,8 @@ Topic Branch - 工作方式
 - in Git, it's common to create, work on, merge, and delete branches several times a day
 - keep changes for minutes, days, or months, and merge when ready
 
-## 相对引用
 
-- 相对引用有指定名称, 如`HEAD`, `master`, 相对引用名 + 符号可以表示commit记录
-- HEAD指针
-  - HEAD指针指向当前commit
-  - `^`向上移动一个提交记录
-  - `~<num>`向上移动num个提交记录
 
-```shell
-git checkout HEAD^
-git checkout main^^  # 有main分支向上移动两个节点
-git checkout HEAD~3  # 从HEAD开始向上移动3个节点
-git branch -f main HEAD^  # 强制修改main分支为HEAD的父节点
-```
 
 ## HEAD指针
 

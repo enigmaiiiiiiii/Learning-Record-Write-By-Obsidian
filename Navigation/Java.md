@@ -48,13 +48,9 @@
 
 ## IIII
 
-[Servlet](Javax_Servlet.md)
+[Maven](/sorted/Java/Java_Maven.md): 项目构建工具
 
 [Spring框架](Spring.md)
-
-[Tomcat](Java_Tomcat.md)
-
-[Maven](/sorted/Java/Java_Maven.md): 项目构建工具
 
 [MyBatis](/sorted/Java/MyBatis.md): 完成数据库交互
 
@@ -67,6 +63,10 @@
 [JJWT](/sorted/Java/Java_JJWT.md): jwt in java
 
 [fastjson](/sorted/Java/Java_FastJson.md): json in java
+
+[Servlet](Javax_Servlet.md)
+
+[Tomcat](Java_Tomcat.md)
 
 ## 应用
 

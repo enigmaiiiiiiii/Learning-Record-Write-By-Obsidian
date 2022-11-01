@@ -13,6 +13,8 @@
 
 [模板语法](Vue_Template_Syntax.md)
 
+[项目配置](Vue_Config_Js.md)
+
 ## Vue2
 
 [使用Vue-CLI初始化Vue2项目](Vue_CLI_Create_Project.md)

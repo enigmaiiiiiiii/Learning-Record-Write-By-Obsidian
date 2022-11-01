@@ -18,7 +18,7 @@ module.exports = {
 
 使用不同的配置文件
 
-- 使用--config选项指定配置文件
+- 使用`--config`选项指定配置文件
 
 package.json
 

@@ -52,11 +52,18 @@ git ls-files
 ```bash
 git reset --hard <commitid>
 ```
-
 ## 提交后发现漏掉了文件
 
 ```bash
 git commit -m "commit with partial files"
 git add <forgotten_file>
 git commit --amend
+```
+
+## 取消修改文件
+
+- 危险命令，会丢失未提交的本地修改
+
+```bash
+git checkout -- <file>
 ```

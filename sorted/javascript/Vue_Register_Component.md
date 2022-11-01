@@ -81,7 +81,7 @@ new Vue({
 
 - 将组件放在单独的文件中, 然后导入
 
-componentA.js
+组件A: componentA.js
 
 ```js
 export default {
@@ -99,7 +99,7 @@ export default {
 }
 ```
 
-ComponentB.js
+组件B: ComponentB.js
 
 ```js
 export default {
@@ -114,7 +114,7 @@ export default {
 }
 ```
 
-ComponentC.js
+使用A, B组件的C: ComponentC.js
 
 ```js
 import ComponentA from './ComponentA'

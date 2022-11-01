@@ -25,3 +25,6 @@
     - 如果参数形式为`(String name, int age ...)`, 则name=val1, age=val2
     - 如果是对象参数, 会使用对象的setName(val1)和setAge(val2)方法设置属性值
 - 方法参数注解`@RequestBody`时, 要求请求格式为[json格式](../结构化数据/json.md)
+
+## 使用接口文档
+

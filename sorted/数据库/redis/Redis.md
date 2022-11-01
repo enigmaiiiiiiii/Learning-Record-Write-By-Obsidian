@@ -39,10 +39,10 @@ redis-server
 
 获取值(value)
 
-- get key: 获取String类型的value
-- hgetall key: 获取Hash类型的value
-- lrange key start end: 获取List类型的value
-- smembers key: 获取Set类型的value
+- get key: 获取**String**类型的value
+- hgetall key: 获取**Hash**类型的value
+- lrange key start end: 获取**List**类型的value
+- smembers key: 获取**Set**类型的value
 
 ## Redis下标
 

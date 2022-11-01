@@ -4,7 +4,7 @@
 
 service
 │   IDemoService.java
-│   
+│
 └───impl
         DemoServiceImpl.java
 
@@ -39,8 +39,9 @@ public interface IDemoService {
 ## 实现类
 
 - 在子目录impl中存放业务逻辑接口实现类
+- 添加`@Service`注解, 使其成为Spring容器管理的组件
 - 实现类的编写细节
-  - 执行insert, delete, update之前, 需要先执行select, 确保数据存在, 不存在时抛出异常
+  - 执行delete, update之前, 需要先执行select, 确保数据存在, 不存在时抛出异常
   - sql语句执行失败时抛出服务器异常, 因为数据库服务可能的运行异常(内存已满, 网络中断等)
   - 用户调用的方法, 参数尽可能少
   - 重复代码封装成private方法

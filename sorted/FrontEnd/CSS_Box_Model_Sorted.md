@@ -1,6 +1,6 @@
 # CSS中Box分类
 
-## block box
+## blockbox
 
 - 外观表现为block
 - 独占一行(will break onto a new line)
@@ -9,7 +9,7 @@
 - width and height 属性会被遵守(respected)
 - padding, margin, border会使其他元素远离box
 
-## inline box
+## inlinebox
 
 - **not** break onto a new line
 - `width` and `height` 属性不会被应用

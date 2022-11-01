@@ -55,7 +55,7 @@ npm可以用来
 npm init react-app ./my-react-app
 ```
 
-生成新的workspace
+生成新的workspace(带有package.json的空项目)
 
 ```bash
 npm init -w packages/a
@@ -68,6 +68,10 @@ npm init -w packages/a
   - npm-shrinkwrap.json
   - package-lock.json
   - yarn.lock
+
+选项
+
+- `--save-dev`: 将包添加到`devDependencies`中
 
 ## npm package
 

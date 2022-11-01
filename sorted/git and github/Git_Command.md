@@ -1,10 +1,12 @@
 # git命令
 
+## git revert
+
+- `git revert <commit>`: 撤销指定的commit所做的修改, 生成一个新的commit
+
 ## git reset
 
 [reset](Git_Command_reset.md)
-
-
 ## git clean
 
 - 删除未被追踪的文件

@@ -50,6 +50,8 @@
 
 [React.js](/sorted/javascript/React.md)
 
+[eslint](/sorted/javascript/Eslint.md)
+
 [qs.js](/sorted/javascript/NodeJs_Qs.md): json对象 to url query string
 
 [vant](/sorted/javascript/Vant.md): 移动端UI框架
