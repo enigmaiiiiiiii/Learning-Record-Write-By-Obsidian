@@ -16,6 +16,12 @@ git remote add origin <REMOTE_URL>
   - master: 本地分支
   - origin: 远程仓库的别名
 
+## 拉取远程仓库
+
+- git pull origin master: 将远程仓库的master分支拉取到本地
+  - master: 远程分支
+  - origin: **远程仓库的别名**, 不是本地分支
+
 ## 访问权限
 
 [凭据管理程序](Git_Credential_Manager.md)

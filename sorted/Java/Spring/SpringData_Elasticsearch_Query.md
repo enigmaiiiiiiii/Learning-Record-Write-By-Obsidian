@@ -1,8 +1,11 @@
 # 查询方法
 
+[语法参考](SpringData_Query_Method.md)
+
 ## 父接口提供的查询
 
-findAll():
+`Iterable<T> findAll()`: 查询所有
+`Iterable<S> saveAll(Iterable<S> entities)`: 添加到Elasticsearch, S是子类
 
 ## 自定义查询
 
@@ -15,7 +18,7 @@ findAll():
 
 ## 分页查询
 
-- 由查询抽象方法 + `Page<T>`返回类型组成
+- 由查询抽象方法 + [Page<T>](SpringData_API.md#Page)返回类型组成
 
 ```java
 int page = 1;

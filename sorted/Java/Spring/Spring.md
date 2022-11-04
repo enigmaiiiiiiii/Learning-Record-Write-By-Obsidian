@@ -12,9 +12,8 @@
 
 ## Spring Data
 
-[Spring Data Redis](SpringData_Redis.md)
+[Spring Data](SpringData.md)
 
-[Spring Data Elasticsearch](SpringData_Elasticsearch.md)
 
 ## Spring 原理
 

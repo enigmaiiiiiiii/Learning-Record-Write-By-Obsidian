@@ -32,10 +32,12 @@ git branch <branch_name>
 ## 切换Branch
 
 - `git switch <branch>`: 切换到指定的branch
-- `git checkout <branch>` 这条命令做了两件事
-  - 将HEAD指向指定的branch
-  - 将文件状态恢复到指定的branch
-- 在切换分支前，如果工作目录或暂存区未提交修改，则不允许切换
+  - 使用**git switch**切换前，如果工作目录或暂存区有**未提交修改**，则**不允许切换**
+- `git checkout <branch>` 
+  - 如果工作目录或暂存区有未提交修改，**也可以切换**
+  - 这条命令做了两件事
+    - 将HEAD指向指定的branch
+    - 将文件状态恢复到指定的branch
 
 > git log 并不显示所有branch
 

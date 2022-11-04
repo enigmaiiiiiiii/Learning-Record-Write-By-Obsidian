@@ -153,7 +153,8 @@ public class Knife4jConfiguration {
   - value: 说明字段, 或者表示属性名称
   - example: 示例
   - required: 是否必须
-- `@ApiImplicitParam(name="argName", value="argIntroduction", required=true, dataType="long")`: 处理未封装参数, 如String, long, int等 
+- `@ApiImplicitParams({<ApiImplicitParamArray>})`, ApiImplicitParamArray是由注解`@ApiImplicitParam`组成的数组
+- `@ApiImplicitParam(name="argName", value="argIntroduction", required=true, dataType="long")`: 处理未封装参数, 如String, long, int等
   - name: 参数名
   - value: 参数说明
   - required: 是否必须

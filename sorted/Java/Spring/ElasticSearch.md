@@ -4,6 +4,14 @@
 
 - 用来代替mysql数据库的模糊搜索功能
 
+## 启动
+
+```bash
+cd elasticSearch-<version> # 进入安装目录
+./bin/elasticsearch # linux启动
+./bin/elasticsearch.bat # windows启动
+```
+
 ## 交互
 
 [ElasitcSearch](ElasticSearch_Interact.md)
