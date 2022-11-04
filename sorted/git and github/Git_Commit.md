@@ -18,5 +18,5 @@ git branch -f main HEAD^  # 强制修改main分支为HEAD的父节点
 ## 指定范围commit
 
 - 适合用来回答: 在这个分支上有哪些改变我还没有应用到我的主分支上
-- Double Dot: `git log <commit1>..<commit2>`: 显示commit2和commit1分开后的所有commit记录
+- Double Dot: `git log <commit1>..<commit2>`: 显示commit2和commit1分开后的所有commit2分支上的记录, **不包括commit2**
 - Triple Dot: `git log <commit1>...<commit2>`: 显示commit1和commit2之间的提交记录

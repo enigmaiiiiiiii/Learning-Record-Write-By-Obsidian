@@ -18,7 +18,7 @@
 - [SecurityContextHolder](SpringSecurity_SecurityContextHolder.md): 保存当前用户的认证信息
   - [SecurityContext](SpringSecurity_SecurityContext_Interface.md): 从SecurityContextHolder中获取当前用户的认证信息
     - [Authentication](SpringSecurity_Authentication_Interface.md): 输入到AuthenticationManager中的认证信息
-      - Principal(主体): 正确的用户信息, 由[UserDetailsService](SpringSecurity_UserDetailsService_Interface.md)调用loadByUsername从数据库等保存用户信息的地方加载加载, 通常是[UserDetails](SpringSecurity_UserDetails.md)
+      - Principal(主体): 正确的用户信息, 由[UserDetailsService](SpringSecurity_UserDetailsService_Interface.md)调用loadByUsername从**数据库**等保存用户信息的地方加载加载, 通常是[UserDetails](SpringSecurity_UserDetails.md)
       - Credentials(凭据): 通常是密码，用户身份验证后清除
       - [GrantedAuthority](SpringSecurity_GrandAuthority_Interface.md)(权限): 通常是角色
 

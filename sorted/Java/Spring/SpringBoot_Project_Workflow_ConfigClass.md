@@ -124,6 +124,72 @@ public class ScheduleConfiguration {
     public ScheduleConfiguration() {
         // ScheduleConfiguration loaded message
     }
+```
 
+## DataSourceConfiguration.java
+
+配置类的注解
+
+```java
+@MapperScan(
+    basePackages = "com.example.demo.mapper",
+    sqlSessionTemplateRef = "db1sqlSessionTemplate"
+    )
+```
+
+- `@MapperScan`: 指定mapper接口所在的包
+- `sqlSessionTemplateRef`: 指定SqlSessionTemplate的bean名称
+
+类方法的注解
+
+- 使用`@ConfigurationProperties(prefix = "spring.datasource.first")`注解来读取配置文件中的配置
+- 使用`@Bean`注解来创建DataSource实例
+
+> SqlSessionTemplate实例由[Mapper](SpringBoot_Project_Workflow_Mapper.md)接口装配得到
+
+
+```java
+@Configuration
+@MapperScan(basePackages = "com.example.project_name.business.mapper.first", sqlSessionTemplateRef = "FirstSqlSessionTemplate")
+public class FirstDataSourceConfiguration {
+    /**
+     * 生成数据源.  @Primary 注解声明为默认数据源
+     */
+    @Bean(name = "firstDataSource")
+    @ConfigurationProperties(prefix = "spring.datasource.first")
+    @Primary
+    public DataSource testDataSource() {
+        return DataSourceBuilder.create().build();
+    }
+
+    /**
+     * 创建 SqlSessionFactory
+     */
+    @Bean(name = "firstSqlSessionFactory")
+    @Primary
+    public SqlSessionFactory testSqlSessionFactory(@Qualifier("firstDataSource") DataSource dataSource) throws Exception {
+        SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
+        bean.setDataSource(dataSource);
+        // 设置mybatis的mapper文件路径文件
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources
+                ("classpath:mapper/first/*.xml"));
+        return bean.getObject();
+    }
+
+    /**
+     * 配置事务管理
+     */
+    @Bean(name = "firstTransactionManager")
+    @Primary
+    public DataSourceTransactionManager testTransactionManager(@Qualifier("firstDataSource") DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
+    }
+
+    @Bean(name = "firstSqlSessionTemplate")
+    @Primary
+    public SqlSessionTemplate testSqlSessionTemplate(@Qualifier("firstSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
+        return new SqlSessionTemplate(sqlSessionFactory);
+    }
+}
 ```
 

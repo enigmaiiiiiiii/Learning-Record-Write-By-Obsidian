@@ -37,6 +37,10 @@
 
 [Vue组件](Vue_Component.md)
 
+## 生命周期
+
+[Vue生命周期](Vue_Lifecycle.md)
+
 ## API
 
 [Vue实例API](Vue_Instance_API.md)

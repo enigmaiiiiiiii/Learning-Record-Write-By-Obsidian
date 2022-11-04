@@ -10,7 +10,8 @@
 
 ## mapper
 
-- 定义sql类数据库映射接口
+[Mapper接口](SpringBoot_Project_Workflow_Mapper.md)
+
 
 ## pojo目录
 

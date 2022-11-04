@@ -37,6 +37,8 @@ public class ServiceException extends RuntimeException {
 
 ## 全局异常处理类
 
+exception/GlobleExceptionHandler.java
+
 - 类声明添加`@ControllerAdvice`注解
 - 方法声明添加`@ExceptionHandler`, 表示处理异常的方法, 参数要处理的异常类
   - 注解参数为异常的**类类型**, 可以是**异常类类型**数组
@@ -72,5 +74,21 @@ public String handlerException() {
     } catch (CustomException e) {
         return e.getMessage();
     }
+}
+```
+
+SpringSecurity的异常处理方法
+
+```java
+@ExceptionHandler({
+        InternalAuthenticationServiceException.class,
+        BadCredentialsException.class
+})
+public JsonResult handleAuthenticationException(AuthenticationException e){
+    log.debug("捕获到AuthenticationException");
+    log.debug("异常类型：{}", e.getClass().getName());
+    log.debug("异常信息：{}", e.getMessage());
+    String message = "登录失败，用户名或密码错！";
+    return JsonResult.fail(ServiceCode.ERR_UNAUTHORIZED, message);
 }
 ```

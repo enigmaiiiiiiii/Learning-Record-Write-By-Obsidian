@@ -14,13 +14,35 @@ spring.profile.active: val
 
 ## 数据库配置
 
+连接一个数据源
+
 ```yml
 spring:
   datasource: 
+    # 数据库地址
     url: jdbc:mysql://localhost:3306/db_name?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     # 配置数据库用户名密码
     username: root  
     password: root
+```
+
+连接两个数据库时的配置方式
+
+- 需要在[配置类](SpringBoot_Project_Workflow_configClass.md#datasourceconfigurationjava)添加纤细配置
+
+```yml
+spring:
+  datasource:
+    first:
+      url: ...
+      username: ...
+      password: ...
+      driverClassName: ...
+    second:
+      url: ...
+      username: ...
+      password: ...
+      driverClassName: ...
 ```
 
 ## Mybatis配置
@@ -53,5 +75,5 @@ json数据
 
 ```yml
 # json结果中不包含null值
-spring.Jackson.default-property-inclusion: non_null 
+spring.Jackson.default-property-inclusion: non_null
 ```

@@ -50,6 +50,8 @@
 
 [分页](Business_Divide_Page.md)
 
+[分布式ID](Business_Distribute_Id.md)
+
 ## ISSUE
 
 [issue#28794](https://github.com/spring-projects/spring-boot/issues/28794): "this.condition is null":

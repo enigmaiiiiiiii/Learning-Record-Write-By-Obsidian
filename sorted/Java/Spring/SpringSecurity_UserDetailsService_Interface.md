@@ -6,7 +6,7 @@
 ## loadUserByUsername(String username)
 
 - 接口中唯一的方法, 是一个只读方法
-- 返回带有principal的UserDetails
+- 返回带有principal的[UserDetails](SpringSecurity_UserDetails.md)对象
 
 实现思路
 

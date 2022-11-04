@@ -39,7 +39,7 @@ git branch <branch_name>
 
 > git log 并不显示所有branch
 
-## 合并分支
+## 合并branch
 
 - merge基本用法, 如合并到master: 1. 切换到master分支 2. `git merge <branch>`, branch要合并的分支名称
 - 一般合并会用到三个快照: 两个分支末端和作为合并基准的共同祖先
@@ -81,9 +81,6 @@ Topic Branch - 工作方式
 - VCS before to create a branch is expensive
 - in Git, it's common to create, work on, merge, and delete branches several times a day
 - keep changes for minutes, days, or months, and merge when ready
-
-
-
 
 ## HEAD指针
 

@@ -42,4 +42,8 @@
 ## clear属性
 
 - 指定元素的哪一侧不允许由浮动元素
-- 取值: left, right, both, none
+- 取值:
+  - left: 左侧不允许有左浮动元素
+  - right: 右侧不允许有右浮动元素
+  - both
+  - none

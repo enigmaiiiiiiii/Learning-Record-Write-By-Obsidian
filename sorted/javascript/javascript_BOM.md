@@ -1,6 +1,7 @@
 # BOM
 
-- Browser Object Model
+
+- 浏览器对象模型(Browser Object Model)
 - window对象，提供全局属性和方法, 可以省略window
 
 方法
@@ -28,3 +29,8 @@
 
 - 适合不需要持久保存
 - 只对窗口/选项卡可见
+
+## history对象
+
+- 浏览器的会话历史，不是WebExtensions history
+- back(), forward(), go()方法来完成在记录中向后向前跳转
