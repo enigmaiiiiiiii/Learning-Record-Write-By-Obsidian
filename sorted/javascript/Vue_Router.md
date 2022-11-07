@@ -58,6 +58,8 @@ app.mount('#app');
 
 ## 嵌套路由
 
+- 在`<router-view/>`中嵌套`<router-view/>`
+
 ```js
 const routes = [
     {
@@ -74,4 +76,3 @@ const routes = [
 ```
 
 - 匹配路径`/parent/child`
-

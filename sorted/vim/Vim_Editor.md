@@ -5,6 +5,12 @@
 首先安装插件管理工具Vim-plug
 > curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+vim-commentary
+
+- 注释插件
+- gcc: 注释当前行
+- gc2j: 注释2行
+
 ### Usage
 
 打开vim配置文件

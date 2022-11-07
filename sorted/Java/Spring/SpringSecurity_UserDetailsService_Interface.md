@@ -1,6 +1,7 @@
 # UserDetailsService
 
 - **加载用户数据的核心接口**
+- 接口中的方法: **UserDetail loadUserByUsername(String username)**
 - 由DaoAuthenticationProvider使用
 
 ## loadUserByUsername(String username)

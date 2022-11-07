@@ -21,5 +21,9 @@
 
 > 不同的`ProviderManager`实现类可以共享同一个`AuthenticationManager`, 就像 `SecurityFilterChain` 包含各种 认证机制
 
+## 常用的AuthenticationManager的实现类: ProviderManager
+
+[ProviderManager](SpringSecurity_ProviderManager.md)
+
 - AuthenticationManager: 最常见的实现类是`ProviderManager`
   - AuthenticationProvider: 一个`ProviderManager`可以包含多个`AuthenticationProvider`

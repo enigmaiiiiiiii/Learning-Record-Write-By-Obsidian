@@ -10,13 +10,14 @@
   - authorities: 权限，通常是角色
 
 
-## Authentication的实现类: UsernamePasswordAuthenticationToken
+## 常用的Authentication的实现类: UsernamePasswordAuthenticationToken
 
 构造方法: UsernamePasswordAuthenticationToken(Object principal, Object credentials)
 
-- 参数:
-  - principal: UserDetails
-  - credentials: 密码
+构造方法参数:
+
+- Object principal: [UserDetails](SpringSecurity_UserDetails.md)的实现类
+- Object credentials: 密码
 
 Principal和credentials用来认证
 
