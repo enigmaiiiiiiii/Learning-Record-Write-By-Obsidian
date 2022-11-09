@@ -12,11 +12,15 @@
 
 ## 2. 配置
 
-- 在`application.yml`中配置.xml格式sql语句映射文件路径
+- 在`application.yml`中配置
+  - mapper.xml格式sql语句映射文件路径
+  - 在springboot中使用mybatis本身的配置文件: `config-location: classpath:mybatis-config.xml`
 
 ```yml
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  # mybatis配置文件路径, 通过mybatis-config.xml配置mybatis
+  config-location: classpath:mybatis-config.xml
   configuration:
     cache-enabled: true # 不启用Mybatis
     map-underscore-to-camel-case: true  # 支持驼峰命名
@@ -71,7 +75,7 @@ public interface SampleMapper {
     int selectById(int id);
     int insert(Sample sample);
 }
-``` 
+```
 
 ## 5. 添加SQL语句映射文件
 
@@ -101,4 +105,22 @@ public interface SampleMapper {
 SampleMapper mapper;
 mapper.selectById(1);
 ```
+
+## 7. 使用pagehelp插件
+
+1. pom.xml中添加依赖
+2. 在application.yml中配置mybatis-config.xml文件路径
+
+```yml
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    plugins:
+      - com.example.demo.plugin.MyPlugin
+```
+
+3. 在mybatis-config.xml中添加xml拦截器
+
+[Mybatis中使用PageHelper插件](../Mybatis_PageHelper.md#配置xml拦截器)
 

@@ -3,17 +3,25 @@
 在webpack等前端构建工具中当做模块导入
 
 ```html
-<script setup>
-    import MyComponent from `./MyComponent.vue`
-</script>
 <template>
     <MyComponent />
 </template>
+
+<script>
+    import MyComponent from `./MyComponent.vue`
+    export default {
+        components: {
+            MyComponent
+        }
+    }
+</script>
+
 ```
 
-动态组件
+> `<script setup>`标签中import的组件会自动注册为局部组件
 
-- 通过`<component/>`的`:is`属性来动态绑定组件
+
+动态组件: 通过`<component/>`的`:is`属性来动态绑定组件
 
 ```html:vue
 <script setup>

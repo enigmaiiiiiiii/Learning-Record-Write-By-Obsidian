@@ -54,3 +54,7 @@ redis-server
 - 访问频率高的数据
 - 修改频率低的数据
 - 一致性要求不高的数据
+
+## redis原理
+
+[redis原理](Redis_Principle.md)

@@ -4,7 +4,6 @@
 
 [SpringData Repository](SpringData_Repository.md)
 
-
 ## API
 
 [SpringDataAPI](SpringData_API.md)

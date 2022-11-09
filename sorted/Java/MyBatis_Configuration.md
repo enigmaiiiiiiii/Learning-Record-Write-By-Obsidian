@@ -11,6 +11,11 @@
     <environments default="development">
         <!-- 配置信息 -->
     </environments>
+
+    <!-- 配置插件: 映射语句执行过程中进行拦截 -->
+    <plugins>
+
+    </plugin>
 </configuration>
 ```
 

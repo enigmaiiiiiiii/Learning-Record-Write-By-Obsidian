@@ -69,12 +69,17 @@ artifactId:
 
 version: 版本
 
-## 本地仓库(Local Respository)
+## Repository
 
-- 本地仓库目录结构
-  - groupId： org.sample
-  - artifactId: BirdBoot
-  - version: 1.0, 1.1
+[ ] TODO
+
+## 本地仓库(Local Repository)
+
+- groupId: org.sample
+- artifactId: BirdBoot
+- version: 1.0, 1.1
+
+对于以上pom信息，本地仓库目录结构
 
 ```
 c:\users\administrator\.m2\repository\org\sample

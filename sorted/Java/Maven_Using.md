@@ -3,7 +3,11 @@
 ## 创建一个项目
 
 ```bash
-mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.mycompany.app
+                       -DartifactId=my-app
+                       -DarchetypeArtifactId=maven-archetype
+                       -quickstart
+                       -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
 标准项目结构

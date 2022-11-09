@@ -10,7 +10,10 @@
 
 [SpringBoot项目流程](SpringBoot_Project_Workflow.md)
 
-
 ## 配置
 
 [SpringBoot配置](SpringBoot_Configuration.md)
+
+## 多模块项目
+
+[SpringBoot多模块项目](SpringBoot_Multi_Module.md)

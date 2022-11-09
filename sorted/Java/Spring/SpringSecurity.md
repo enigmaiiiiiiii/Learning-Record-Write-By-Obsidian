@@ -32,7 +32,7 @@
 - `@EnableGlobalMethodSecurity(prePostEnabled = true)`: 开启全局方法安全
   - 用于配置类上
 
-## 密码编码器
+## 密码编码器: PasswordEncoder
 
 - Spring Security 5.0 之后，密码必须使用加密的方式存储
 - BCryptPasswordEncoder: 使用[BCrypt算法](../../../unsorted/Message_Digest_Algorithm.md)加密密码
@@ -46,6 +46,12 @@ public Interface PasswordEncoder {
     boolean upgradeEncoding(String encodedPassword);
 }
 ```
+
+- `encode`: 加密密码
+- `matches(rawPassword, encodePassword)`: 比较密码是否匹配
+  - rawPassword: 明文密码
+  - encodePassword: 加密后的密码
+- `upgradeEncoding`: 检查密码是否需要升级
 
 ## 异常
 

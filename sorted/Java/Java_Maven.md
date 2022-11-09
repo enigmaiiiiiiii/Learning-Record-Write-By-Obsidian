@@ -10,7 +10,7 @@
 
 [life cycle和plugin](Maven_Life_Cycle_And_Plugin.md)
 
-[组织子项目](Maven_Organize_Project.md)
+[多模块项目](Maven_Multi_Module.md)
 
 ## 引入依赖
 

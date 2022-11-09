@@ -15,15 +15,15 @@
 
 - 使用markdown创建任务列表
 
-```md
+```
 # Overview
 
 issue overview
 
 ## Features
 
-- [ ] 任务1
-- [ ] 任务2
+- \[ ] 任务1
+- \[ ] 任务2
 ```
 
 - 可以将任务转换为议题(issue)

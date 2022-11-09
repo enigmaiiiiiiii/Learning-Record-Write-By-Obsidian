@@ -1,8 +1,10 @@
 # 分页显示
 
-- 由于需要用到Mybatis的分页插件，在返回分页信息的业务中需要用到类，需要返回`PageInfo<T>`，需要导入**package**
-- 所以将PageInfo<T>类在`com.example.project_name.common`模块中定义, 一般定义在`com.example.project_name.common.restful`
-- 因为Json数据类型便于传输，所以将`PageInfo<T>`类转换为`JsonPage<T>`, 所以在common中定义`JsonPage<T>`类, 在[业务实现类中](SpringBoot_Project_Workflow_Service.md#实现类)导入`com.example.project_name.JsonPage`
+由于需要用到[Mybatis的分页插件](MyBatis_PageHelper.md)，在返回分页信息的业务中需要用到PageHelper的类，需要返回`PageInfo<T>`，需要导入**package**
+
+为了避免在每个分类业务中导入PageHelper package, 所以将PageInfo<T>类仅在`com.example.project_name.common`模块中导入, 一般定义在`com.example.project_name.common.restful`目录中
+
+因为Json数据类型便于传输，所以将`PageInfo<T>`类转换为`JsonPage<T>`, 所以在common中定义`JsonPage<T>`类, 在[业务实现类中](SpringBoot_Project_Workflow_Service.md#实现类)导入`com.example.project_name.JsonPage`
 
 ## 定义JsonPage
 

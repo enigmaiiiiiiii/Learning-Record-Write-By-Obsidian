@@ -1,9 +1,12 @@
 # RedisTemplate
 
 - Redis的的抽象实例
+- `RedisTemplate<K, V>`: 连接管理和数据操作
+  - `K`: **Redis**的key的类型, 通常时`String`
+  - `V`: **Redis**的value的类型
 - 大多数操作基于[序列化和反序列化](Java_ObjectIOStream.md), 默认使用java的序列化
-- 写入对象时，需要序列化
-- 读取对象时，需要反序列化
+  - 写入对象时，需要序列化
+  - 读取对象时，需要反序列化
 
 - `ValueOperations<K, V> opsForValue()`: 返回单个值操作实例
 - `ListOperations<K, V> opsForList()`: 返回列表操作实例 
@@ -23,3 +26,12 @@
 - Long leftPop(K key): 移除并返回key对应的列表的头部元素
 - Long rightPop(K key): 移除并返回key对应的列表的尾部元素
 - List<V> range(K key, long start, long end): 获取key对应的列表的[start, end]范围内的元素
+
+## StringRedisTemplate
+
+- StringRedisTemplate是RedisTemplate的子类
+- 用于通过String操作redis数据
+
+```java
+public class StringRedisTemplate extends RedisTemplate<String, String>
+```

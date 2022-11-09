@@ -1,8 +1,10 @@
 # workflow
 
-[微服务模块化](SpringCloud_Project_Microservice_Module.md)
+## 项目模块化
 
-## 工具使用
+[参考Spring多模块项目](SpringBoot_Multi_Module.md)
+
+## 工具
 
 [注册到Nacos](SpringCloud_Use_Nacos.md)
 

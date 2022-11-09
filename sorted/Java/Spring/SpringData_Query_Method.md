@@ -41,3 +41,26 @@ interface PersonRepository extends Repository<Person, Long> {
   List<Person> findByLastnameOrderByFirstnameDesc(String lastname);
 }
 ```
+
+## @Query
+
+- 用来避免过长的查询方法名
+
+```java
+@Query("query statement")
+Page<Person> querySearch(String name);
+```
+
+```java
+@Query(
+    "{\n" + 
+    "    \"bool\": {\n" +
+    "        \"should\": [\n" +
+    "            { \"match\": { \"name\": \"?0\" } },\n" +
+    "            { \"match\": { \"title\": \"?1\" } }\n" +
+    "        ]\n" +
+    "    }\n" +
+    "}")
+Iterable<Article> querySearch(String name, String title);
+```
+
