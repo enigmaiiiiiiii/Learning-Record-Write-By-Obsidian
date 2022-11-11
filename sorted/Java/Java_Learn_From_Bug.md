@@ -98,3 +98,20 @@ class Student {
 
 java.net.SocketException: Software caused connection abort: socket write error
 
+## No.9
+
+异常信息
+
+```
+org.springframework.data.redis.serializer.SerializationException: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: Object["startTime"]); nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: Object["startTime"])
+```
+
+发生在Redis序列化Java 8 LocalDateTime对象时
+
+解决方案: 1. 注解LocalDateTime字段
+
+```java
+@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+@JsonSerialize(using = LocalDateTimeSerializer.class)
+@JsonDeserialize(using = LocalDateTimeDeserializer.class)
+```

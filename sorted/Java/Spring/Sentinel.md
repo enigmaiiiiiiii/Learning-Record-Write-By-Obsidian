@@ -11,14 +11,14 @@
 
 ## 启动
 
-- `<ver>`: 为版本号
 
 ```bash
 java -Dserver.port=8080 -Dcsp.sentinel.dashboard.server=localhost:8080 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-<ver>.jar
 ```
 
-- localhost:8080: 控制台地址
-- 用户名/密码默认: sentinel/sentinel
+- `<ver>`: 为版本号
+- 控制台地址: localhost:8080 
+- 默认**用户名/密码**: sentinel/sentinel
 
 ## 规则
 

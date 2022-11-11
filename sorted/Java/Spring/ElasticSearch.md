@@ -4,6 +4,14 @@
 
 - 用来代替mysql数据库的模糊搜索功能
 
+## 术语
+
+[术语](ElasticSearch_Terms.md)
+
+## 原理
+
+[原理](ElasticSearch_Principle.md)
+
 ## 启动
 
 ```bash

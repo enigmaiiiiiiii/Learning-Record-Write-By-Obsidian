@@ -1,11 +1,17 @@
-# Spring Cloud
-
 - 是一个基于Spring Boot实现的云应用开发工具
 - 微服务框架集
 
 ## workflow
 
-[SpringCloud](SpringCloud_workflow.md)
+[SpringCloud](SpringCloud_Workflow.md)
+
+## 微服务框架要解决的问题
+
+- 服务注册
+- 分布式事务
+- 远程调用
+- 消息队列
+- 网关
 
 ## 框架集
 
@@ -19,10 +25,8 @@
 
 [SpringCloud Gateway](SpringGateway.md): 网关
 
-## project结构
+[Kafka](Kafka.md): 分布式消息队列
 
-- `<name>-sso`: 单点登录
-- `<name>-gateway`: 网关
-- `<name>-common`: 公共模块
-- `<name>-search`: 搜索模块
-- `<name>-pojo`: 实体类
+[RabbitMQ](RabbitMQ.md): 消息队列
+
+[ZooKeeper](ZooKeeper.md): 分布式协调服务

@@ -16,7 +16,7 @@
 
 [[图]]
 
-# 算法
+# 基础算法
 
 [[递归]]
 
@@ -39,3 +39,9 @@
 [[KMP算法(模式匹配算法)]]
 
 [[时间复杂度分析]]
+
+## 应用
+
+[布隆过滤器](../sorted/数据解构和算法/Algorithm_Bloom_Filter.md)
+
+[消息摘要算法](../sorted/数据结构和算法/Message_Digest_Algorithm.md)

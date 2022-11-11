@@ -8,11 +8,31 @@
   - 写入对象时，需要序列化
   - 读取对象时，需要反序列化
 
+## 返回操作实例
+
+- `BoundValueOperations<K, V> boundValueOps(key)`: 返回指定key的BoundValueOperations实例
 - `ValueOperations<K, V> opsForValue()`: 返回单个值操作实例
 - `ListOperations<K, V> opsForList()`: 返回列表操作实例 
 - `Set<K> keys(K pattern)`: 获取所有的key
 
-## ValueOperations<K, V>: 单个值的操作实例
+## `BoundValueOperations<K, V>`
+
+> 绑定到指定key的操作对象
+
+**取值**
+
+- `get()`: 获取此key的值
+
+**设置值**
+
+- set(V value):
+- set(V value, long timeout, TimeUnit unit): 设置值并设置过期时间
+  - `timeout`: 过期时间
+  - `unit`: 时间单位
+
+## ValueOperations<K, V>: 
+
+> 单个值的操作实例
 
 - `void set(K key, V value)`: 设置key的值为value
 - `V get(K key)`: 获取key的值

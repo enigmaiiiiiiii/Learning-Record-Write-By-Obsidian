@@ -4,11 +4,12 @@
 
 ```xml
 <dependency>
-    <groupId></groupId>
-    <artifact><artifact>
-    <version><version>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
 </dependency>
 ```
+
+## 暂时没有修改配置文件
 
 ## 配置RedisTemplate组件
 
