@@ -51,10 +51,11 @@ public class Item {
 private String title;
 ```
 
-- `@Field(name = "property_name", analyzer = "ik_max_word", searchAnalyzer = "ik_max_word")`
-    - name: 字段名称, 命名
-    - analyzer: 分词器
-    - searchAnalyzer: 搜索分词器
+- `@Field(type = FieldType.text, name = "property_name", analyzer = "ik_max_word", searchAnalyzer = "ik_max_word")`
+  - type: 字段类型
+  - name: 字段名称, 命名
+  - analyzer: 分词器
+  - searchAnalyzer: 搜索分词器
 
 ## 使用Repository
 
@@ -62,4 +63,27 @@ private String title;
 
 [SpringDataRepository](SpringData_Elasticsearch_Repository.md)
 
+## 关于注解的详细解释
 
+- `@Document`: 用于标记实体类, 标识该类是映射到数据库的候选类, 注解参数
+  - indexName: 索引名
+  - createIndex: 是否创建索引
+  - versionType: 版本类型, 默认`EXTERNAL`
+- `@Id`: 标记字段，标识该字段为主键
+- `@Transient`: 标记字段，标识该字段不会被映射到[ES文档](Elasticsearch_Terms.md#document(文档))中
+- `@PersistenceConstructor`
+- `@Field`: 
+  - name: elasticsearch的字段名称, 默认为Java字段名
+  - type: 字段类型, 默认为`FieldType.Auto`
+  - format: 日期格式化
+  - pattern: 自定义日期格式化
+  - store: 是否保存原始值, 默认为`false`
+  - analyzer: 分词器
+  - searchAnalyzer: 搜索分词器
+  - normalizer: 归一化器
+
+@Field(type = FieldType.Date, format={}, pattern="dd.MM.uuuu"): dd.MM.uuuu
+
+## 同步数据库
+
+[ ] TODO

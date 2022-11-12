@@ -24,6 +24,10 @@ cd elasticSearch-<version> # 进入安装目录
 
 [ElasitcSearch](ElasticSearch_Interact.md)
 
+## API
+
+[API](ElasticSearch_API.md)
+
 ## ik分词器
 
 ik_smart

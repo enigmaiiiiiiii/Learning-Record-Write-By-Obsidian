@@ -22,18 +22,24 @@ public interface CrudRepository<T, ID> extends Repository<T, ID> {
 
 ## PagingAndSortRepository
 
-- 扩展自上一个接口
+- 扩展自上一个接口, 提供**分页**功能
 
 ```java
 public interface PagingAndSortingRepository<T, ID> extends CrudRepository<T, ID> {
+
     Iterable<T> findAll(Sort sort);
+
     Page<T> findAll(Pageable pageable);
 }
+
+
 PagingAndSortingRepository<User, Long> repo = new ....;
 page<User> users = repo.findAll(PageRequest.of(1, 20));
 ```
 
-- [Page<T>]是一个接口，提供了分页信息, 区别与[MyBatis中的PageHelper插件](Mybatis_PageHelper.md)的PageInfo类
+- [Page<T>](SpringData_API_Page.md)是一个接口，提供了分页信息, 区别与[MyBatis中的PageHelper插件](Mybatis_PageHelper.md)的PageInfo类
+- 调用返回`Page<T>`的方法时, 需要提供一个Pageable对象, 用于指定分页信息
+  - 如`PageRequest.of(1, 20)`表示第1页, 每页20条数据
 
 
 

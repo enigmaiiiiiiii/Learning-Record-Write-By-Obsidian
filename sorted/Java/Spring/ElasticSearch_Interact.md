@@ -3,12 +3,29 @@
 - 交互方式: java API, 客户端, 传输客户端
 - 通过http协议, 使用RESTful API 向Elasticsearch服务器发送请求
 
+## 轻量搜索
+
+查询tweet类型中, tweet字段包含"elasticsearch"单词的文档
+
+```bash
+GET /_all/tweet/_search?q=tweet:ealsticsearch
+```
+
+查询所有包含mary的文档
+
+- 相当于新增了一个`_all`的额外类型
+- `_all`的值由文档中所有字段的值组成
+
+```bash
+GET /_all/_search?q=mary
+```
+
 ## 请求
 
 elasticSearch请求和任何[HTTP请求](Http_Request_Message.md)一样
 
 ```bash
-curl -x<VERB> '<PROTOCOL>://<HOST>:<PORT>?<QUERY_STRING>' -d '<BODY>'
+curl -x<VERB> '<PROTOCOL>://<HOST>:<PORT>/API?<query_string> -d '<BODY>'
 ```
 
 - verb: http方法
@@ -17,7 +34,7 @@ curl -x<VERB> '<PROTOCOL>://<HOST>:<PORT>?<QUERY_STRING>' -d '<BODY>'
 - port: 端口号, 如9200
 - path: 要访问的资源
 - query_string: 查询字符串
-- Body: 请求体
+- Body: 请求体, 要求使用json格式
 
 ## 响应
 

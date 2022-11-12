@@ -20,11 +20,16 @@ elasticSearch-<version>/bin/elasticsearch
 
 ## document(文档)
 
-- 一个文档: 可能是一个[实体类](Java_Pojo.md)的实例
+> 应用中, 实体一般可以被序列化为包含键值对的JSON对象
+
+- 一个文档: 可能是一个[实体类](Java_Pojo.md)的**实例**
 
 ## index(索引)
 
-- 一个索引代表数据库
+- 一个索引可以看作一个[SQL](MySQL.md)中的database
+
+
+[what is an Elasticsearch Index](ElasticSearch_Index_Blog.md)
 
 ## Mapping
 

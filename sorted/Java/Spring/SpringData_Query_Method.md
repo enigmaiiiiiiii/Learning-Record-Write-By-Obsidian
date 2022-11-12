@@ -20,8 +20,6 @@ interface PersonRepository extends Repository<Person, Long> {
 
 ## 定义查询方法
 
-- 
-
 ```java
 interface PersonRepository extends Repository<Person, Long> {
 
@@ -42,7 +40,7 @@ interface PersonRepository extends Repository<Person, Long> {
 }
 ```
 
-## @Query
+## \@Query
 
 - 用来避免过长的查询方法名
 
@@ -62,5 +60,19 @@ Page<Person> querySearch(String name);
     "    }\n" +
     "}")
 Iterable<Article> querySearch(String name, String title);
+```
+
+- `?0`: 第一个参数
+- `?1`: 第二个参数
+
+```json
+{
+    bool: {
+        should: [
+            { match: { name: "name" } },
+            { match: { title: "title" } }
+        ]
+    }
+}
 ```
 

@@ -10,7 +10,7 @@
 
 [[Linux文件权限概念]]
 
-[[Linux软件安装]]
+[软件安装](Linux_Software_Install.md)
 
 [[文件描述符]]
 
