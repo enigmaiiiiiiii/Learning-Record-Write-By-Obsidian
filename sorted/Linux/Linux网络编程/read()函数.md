@@ -9,5 +9,5 @@ ssize_t read(int fd, void* buf, size_t count);
 
 ## 参数
 
-- fd: [[文件描述符]]
+- fd: [[Linux_File_Descriptor]]
 - buf:

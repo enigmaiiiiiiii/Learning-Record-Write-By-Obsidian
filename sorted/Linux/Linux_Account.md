@@ -1,6 +1,6 @@
 # 账号管理
 
-[[linux创建用户]] 
+[[linux_Create_User]] 
 
  [[su]] 切换用户
 

@@ -27,7 +27,7 @@ struct aiocb {
 ```
 
 - 同步io相同成员：
-  - aio_fildes: 被操作的[[文件描述符]] 
+  - aio_fildes: 被操作的[[Linux_File_Descriptor]] 
   - aio_offset: 文件偏移量
   - aio_buf: 缓冲地址
   - aio_nbytes : [缓冲大小](Linux_IO_Stream.md)

@@ -7,7 +7,7 @@
 ssize_t read(int fd, void *buf, size_t count);
 ```
 
-- 将[[文件描述符]]fd的内容读入buf
+- 将[[Linux_File_Descriptor]]fd的内容读入buf
 - 成功返回读到的数据大小, 失败返回-1, 并设置[[errno]]
 
 ## write()
@@ -17,7 +17,7 @@ ssize_t read(int fd, void *buf, size_t count);
 ssize_t write(int fd, const void *buf, size_t count);
 ```
 
-- 将buf中的内容写入[[文件描述符]]fd
+- 将buf中的内容写入[[Linux_File_Descriptor]]fd
 - 成功返回写入的字节数， 失败返回-1
 
 [[write()函数和printf()输出顺序]]

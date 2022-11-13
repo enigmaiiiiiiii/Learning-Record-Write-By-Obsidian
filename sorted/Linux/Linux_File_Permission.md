@@ -2,7 +2,7 @@
 
 [[UNIX]]
 
-[[Linux账号管理相关文件目录]]
+[[Linux_Account_Manage_Related_File]]
 
 [[Linux文件ID]]
 

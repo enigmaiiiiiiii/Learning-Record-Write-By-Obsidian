@@ -11,7 +11,7 @@ int epoll_ctl(int epfd, int op, int fd, struct epoll_event *event);
   - 在由[epoll_creat()函数](Linux_IO_API_epoll_create().md)创建的文件描述符epfd所引用的事件表中添加, 修改, 删除条目 
   - 条目内容为fd发生的哪些event被监听
 - 参数
-  - `epfd`: epoll[[文件描述符]]
+  - `epfd`: epoll[[Linux_File_Descriptor]]
   - `fd`: 目标文件描述符
   - `op`: 对epfd文件描述符执行的操作
     - EPOLL_CTL_ADD: 往事件表中注册fd上的事件

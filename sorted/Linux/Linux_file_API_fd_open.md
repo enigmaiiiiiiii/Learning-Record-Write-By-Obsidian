@@ -13,7 +13,7 @@ int openat(int dirfd, const char *pathname, int flags, mode_t mode);
 ```
 
 - 以特定的方式打开文件
-- 打开成功返回[[文件描述符]], 打开失败返回-1，设置[[errno]]
+- 打开成功返回[[Linux_File_Descriptor]], 打开失败返回-1，设置[[errno]]
 
 ## 参数
 

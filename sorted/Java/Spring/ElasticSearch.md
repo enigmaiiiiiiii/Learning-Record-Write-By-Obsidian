@@ -24,9 +24,13 @@ cd elasticSearch-<version> # 进入安装目录
 
 [ElasitcSearch](ElasticSearch_Interact.md)
 
+## 映射
+
+[映射](ElasticSearch_Mapping.md)
 ## API
 
 [API](ElasticSearch_API.md)
+
 
 ## ik分词器
 

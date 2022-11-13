@@ -8,7 +8,7 @@ int socket(int domain, int type, int protocol);
 ```
 
 -  用于创建socket
-- 成功返回[[socket]][[文件描述符]],  失败返回-1
+- 成功返回[[socket]][[Linux_File_Descriptor]],  失败返回-1
   
 ## 参数
 

@@ -2,23 +2,23 @@
 
 ## Linux概念
 
-[[linux系统目录结构]]
+[系统目录解构](Linux_System_Directory.md)
 
-[[Linux原生软件]]
+[原生软件](Linux原生软件.md)
 
-[[Linux账号管理相关文件目录]]
+[账户管理相关目录](Linux_Account_Manage_Related_File.md)
 
-[[Linux文件权限概念]]
+[文件权限的概念](Linux_File_Permission.md)
 
 [软件安装](Linux_Software_Install.md)
 
-[[文件描述符]]
+[文件描述符](Linux_File_Descriptor.md)
 
 ## Linux命令
 
 [实用命令](/sorted/Linux/Linux实用命令.md)
 
-[账户管理](Linux账户管理.md)
+[账户管理](Linux_Account.md)
 
 [压缩备份](Linux_File_Back_Command.md)
 

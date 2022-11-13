@@ -2,7 +2,7 @@
 
 [[Linux文件ID]]
 
-- 了解Linux修改密码的机制是学习[[Linux文件权限概念]]的好方式
+- 了解Linux修改密码的机制是学习[[Linux_File_Permission]]的好方式
 - 与修改密码相关的文件权限
 
 <table align="center">

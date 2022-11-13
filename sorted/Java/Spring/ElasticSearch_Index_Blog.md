@@ -1,16 +1,15 @@
 # what is an ElasticSearch Index
 
-## 基本定义
+## 基本认识
 
-- 一个索引对应一个database
+- 一个索引对应一个Elastic中的database
 
 ## 索引和数据之间的关联
 
 MySQL对应elasticSearch
 
-- MySQL $\right$ database $\right$ Tables $\right$ Rows $\right$ Columns
-- elasticSearch $\right$ **index** $\right$ **type** $\right$ **document** $\right$ **field**
-
+- MySQL $\rightarrow$ database $\rightarrow$ Tables $\rightarrow$ Rows $\rightarrow$ Columns
+- elasticSearch $\rightarrow$ **index** $\rightarrow$ **type** $\rightarrow$ **document** $\rightarrow$ **field**
 
 - 集群可以包含几个index(database)
 - 索引包含几个type(table)

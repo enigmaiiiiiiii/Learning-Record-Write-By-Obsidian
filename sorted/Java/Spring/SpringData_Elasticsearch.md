@@ -72,7 +72,7 @@ private String title;
 - `@Id`: 标记字段，标识该字段为主键
 - `@Transient`: 标记字段，标识该字段不会被映射到[ES文档](Elasticsearch_Terms.md#document(文档))中
 - `@PersistenceConstructor`
-- `@Field`: 
+- `@Field`:
   - name: elasticsearch的字段名称, 默认为Java字段名
   - type: 字段类型, 默认为`FieldType.Auto`
   - format: 日期格式化
@@ -82,7 +82,13 @@ private String title;
   - searchAnalyzer: 搜索分词器
   - normalizer: 归一化器
 
+**派生自TemporalAccessor或java.util.Date类型的属性必须有@Field(type = FieldType.Date)注解**
+
 @Field(type = FieldType.Date, format={}, pattern="dd.MM.uuuu"): dd.MM.uuuu
+
+## 处理时间类型
+
+[ ] TODO
 
 ## 同步数据库
 

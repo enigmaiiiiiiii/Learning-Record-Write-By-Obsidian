@@ -10,6 +10,6 @@
 
 [[进程控制]]
 
-[[进程关系]]
+[[Linux_Process_Relation]]
 
-[[守护进程]]
+[[Linux_Daemon_Process]]

@@ -3,6 +3,68 @@
 - 交互方式: java API, 客户端, 传输客户端
 - 通过http协议, 使用RESTful API 向Elasticsearch服务器发送请求
 
+
+## 保存一条数据
+
+```bash
+PUT /website/blog/123
+{
+    "title": "My first bloc entry",
+    "text": "Just trying this out...",
+    "date": "2014-01-01"
+}
+```
+
+elasticsearch响应
+
+```json
+{
+    "_index": "website",
+    "_type": "blog",
+    "_id": "123",
+    "_version": 1,
+    "created": true
+}
+```
+
+## 取出一条数据
+
+```bash
+Get /website/blog/123?pretty
+```
+
+- pretty参数: 使得返回的json格式化
+
+响应
+
+```json
+{
+    "_index": "website",
+    "_type": "blog",
+    "_id": "123",
+    "_version": 1,
+    "_seq_no": 0,
+    "_primary_term": 1,
+    "found": true,
+    "_source": {
+        "title": "My first bloc entry",
+        "text": "Just trying this out...",
+        "date": "2014-01-01"
+    }
+}
+```
+
+- _source字段: 文档的数据
+
+取出文档的一部分
+
+```bash
+GET /website/blog/123?_source=title, text
+```
+> 类似sql: select title, text from website.blog where id = 123
+
+
+
 ## 轻量搜索
 
 查询tweet类型中, tweet字段包含"elasticsearch"单词的文档
@@ -19,7 +81,6 @@ GET /_all/tweet/_search?q=tweet:ealsticsearch
 ```bash
 GET /_all/_search?q=mary
 ```
-
 ## 请求
 
 elasticSearch请求和任何[HTTP请求](Http_Request_Message.md)一样
