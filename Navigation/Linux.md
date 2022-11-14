@@ -1,4 +1,4 @@
-# Linux 
+# Linux
 
 ## Linux概念
 
@@ -28,26 +28,26 @@
 
 [网络](/sorted/Linux/Linux_Network_Command.md)
 
-[进程](Linux_Process_Command.md)
+[进程命令](Linux_Process_Command.md)
 
-[[shell编程]]
+[Shell编程](Linux_Shell_Programming.md)
 
 ## Linux系统编程
 
-[[Linux_Programmer_s_Manual]]
+[打开操作手册的命令: 包括命令和API](Linux_Programmer_s_Manual.md)
 
-[[Linux_IO]]
+[LinuxIO](Linux_IO.md)
 
 [Linux文件](Linux_file_API.md)
 
-[[Linux信号]]
+[信号](Linux_Signal.md)
 
-[[Linux进程]]
+[进程](Linux_Process.md)
 
 [Linux线程](Linux_Thread.md)
 
-[[Linux网络编程]]
+[网络编程](Linux_Network_Programming.md)
 
-[[Linux系统日志]]
+[系统日志](Linux_System_Log.md)
 
-[[openssl]]
+[OpenSSL](Linux_OpenSSL.md)

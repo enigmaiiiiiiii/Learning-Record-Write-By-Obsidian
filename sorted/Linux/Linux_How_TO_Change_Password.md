@@ -1,6 +1,6 @@
 # passwd修改密码过程
 
-[[Linux文件ID]]
+[文件ID](Linux_File_ID.md)
 
 - 了解Linux修改密码的机制是学习[[Linux_File_Permission]]的好方式
 - 与修改密码相关的文件权限

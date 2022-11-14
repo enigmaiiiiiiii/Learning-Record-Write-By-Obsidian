@@ -18,7 +18,7 @@ vim-commentary
 
 我此时(2021.6.24)的vim配置
 
-```c++
+```bash
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'  // nerdtree插件(方便查看文件列表)
@@ -31,7 +31,7 @@ call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
 
-set number                 
+set number
 set relativenumber
 ```
 

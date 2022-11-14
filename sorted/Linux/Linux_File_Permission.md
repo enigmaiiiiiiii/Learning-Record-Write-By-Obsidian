@@ -4,7 +4,7 @@
 
 [[Linux_Account_Manage_Related_File]]
 
-[[Linux文件ID]]
+[文件ID](Linux_File_ID.md)
 
 ## 文件属性权限
 

@@ -18,7 +18,7 @@
 
 `@Component`注解类用来标记Spring组件
 
-```java 
+```java
 @Component
 public class Component {
     // ...

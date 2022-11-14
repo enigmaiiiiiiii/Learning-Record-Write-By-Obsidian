@@ -17,11 +17,8 @@ set expandtab
   
 map Q gq  
 map <CapLocks> <ESC>  
-nmap <;> $  
 nmap <C-j> 10j
 vmap <C-j> 10j  
 nmap <C-k> 10k  
 vmap <C-k> 10k  
-nmap <C-h> ^  
-imap <C-,> <Esc>ea<space><S-,>
 ```

@@ -1,8 +1,4 @@
-# docker
-
-- 程序运行的环境而不包括操作系统额外的界面
-
-## 安装
+# 安装
 
 [official install docuementation](https://docs.docker.com/engine/install/)
 
@@ -18,15 +14,23 @@ sudo yum remove docker \
 ```
 
 ```bash
+# yum-utils
 sudo yum install -y yum-utils
+# 配置仓库地址
 sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
+- 使用aliyun地址: http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+
+
+
 ```bash
 sudo yum install [--allowerasing] docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
+
+- `--allowerasing`: 有时需要避免问题
 
 ## 启动
 
@@ -40,16 +44,4 @@ sudo systemctl start docker
 sudo docker run hello-world
 ```
 
-## 命令
-
-help
-
-- `docker --help`
-- `docker [command] --help`
-
-
-
-## 术语
-
-[docker术语](Docker_Terms.md)
-
+## 设置镜像下载地址

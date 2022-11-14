@@ -32,3 +32,13 @@ spring:
 ## application.properties
 
 - key=value格式的配置文件
+
+## 使用变量
+
+```yml
+my:
+  server:
+    addr: 192.168.213.131
+
+server: ${my.server.addr}:8080
+```

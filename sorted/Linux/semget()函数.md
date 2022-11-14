@@ -15,8 +15,8 @@ int semget(key_t key, int nsems, int semflg);
     - `IPC_CREAT`: 如果不存在与key相连的信号量集合, 则创建一个
     - `IPC_EXCL`: 若已存在与KEY相连的信号量集合, 调用失败
 - 当创建一个新信号量集合时, 对[[semid_ds结构体]]的成员赋值
-  - cuid成员和uid成员设置为调用进程的[有效用户id](Linux文件ID.md) 
-  - cgid成员和gid成员设置为调用进程的[有效用户组id](Linux文件ID.md) 
+  - cuid成员和uid成员设置为调用进程的[有效用户id](Linux_File_ID.md) 
+  - cgid成员和gid成员设置为调用进程的[有效用户组id](Linux_File_ID.md) 
   - sem_otime设置为0
   - sem_ctime设置为当前时间
   - sem_nsems设置为`nsems`

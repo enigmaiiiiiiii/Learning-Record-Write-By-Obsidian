@@ -8,7 +8,7 @@
 
 [[进程通信]]
 
-[[进程控制]]
+[[Linux_Process_Control]]
 
 [[Linux_Process_Relation]]
 

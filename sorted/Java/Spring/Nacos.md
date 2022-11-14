@@ -22,3 +22,7 @@ startup.cmd -m standalone
 - 永久实例: 服务启动后注册到nacos, 服务停止后从nacos注销
   - 不会心跳规则从服务中心移除
 - 临时实例:
+
+## 原理
+
+[Nacos原理](Nacos_Principle.md)

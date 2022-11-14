@@ -27,7 +27,7 @@
   - `-x`
   - `-g`
 
-[[passwd修改密码的过程]]
+[修改密码时发生了什么](Linux_How_TO_Change_Password.md)
 
 ## 一般流程
 
