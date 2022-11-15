@@ -17,9 +17,21 @@
 
 [参考Spring多模块项目](SpringBoot_Multi_Module.md)
 
-## 配置中心
+## 使用配置中心
 
+[]
 
+[]
+
+依赖
+
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+    <version>0.2.1.RELEASE</version>
+</dependency>
+```
 
 ## 工具
 

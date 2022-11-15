@@ -31,6 +31,9 @@ cd elasticSearch-<version> # 进入安装目录
 
 [API](ElasticSearch_API.md)
 
+## ELK日志同步
+
+- ELK: Elasticsearch, Logstash, Kibana
 
 ## ik分词器
 

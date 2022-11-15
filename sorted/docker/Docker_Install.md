@@ -22,9 +22,12 @@ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-- 使用aliyun地址: http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-
-
+使用aliyun地址
+```bash
+sudo yum-config-manager \
+    --add-repo \
+    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+```
 
 ```bash
 sudo yum install [--allowerasing] docker-ce docker-ce-cli containerd.io docker-compose-plugin
