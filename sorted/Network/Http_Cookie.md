@@ -1,6 +1,6 @@
 # Cookie
 
-![cookie.svg](../../src/Cookie.svg)
+![cookie.svg](Cookie.svg)
 
 - 保存在**客户端**中
 - 只保存字符串类型数据

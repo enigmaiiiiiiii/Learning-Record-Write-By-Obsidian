@@ -37,7 +37,7 @@ Seata在开始工作时,会将方法相关对象**序列化**后保存在对应�
 
 但是Seata序列化的方式支持很多中,常见的jackson格式序列化的情况下,不支持java对象LocalDataTime类型的序列化,序列化运行时会发送错误
 
-![seata](/src/seata_exception.png)
+![seata](seata_exception.png)
 
 两个解决方法
 

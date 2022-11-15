@@ -4,7 +4,7 @@
 > 学习过程就是建立连接的过程
 
 局部关系效果图:
-![screenshot](/src/Screenshot.png)
+![screenshot](Screenshot.png)
 
 
 ## 内容
@@ -28,4 +28,4 @@
 - Navigation 索引
 - sorted 分类笔记
 - unsorted 未分类笔记
-- src 附件
+- media 附件

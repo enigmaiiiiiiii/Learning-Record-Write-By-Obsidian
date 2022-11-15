@@ -14,6 +14,8 @@
 
 [文件描述符](Linux_File_Descriptor.md)
 
+[linux系统进程](Linux_System_Process.md)
+
 ## Linux命令
 
 [实用命令](/sorted/Linux/Linux实用命令.md)

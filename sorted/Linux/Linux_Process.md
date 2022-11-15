@@ -8,8 +8,8 @@
 
 [[进程通信]]
 
-[[Linux_Process_Control]]
+[进程控制](Linux_Process_Control.md)
 
-[[Linux_Process_Relation]]
+[进程关系](Linux_Process_Relation.md)
 
-[[Linux_Daemon_Process]]
+[编写守护进程](Linux_Daemon_Process.md)

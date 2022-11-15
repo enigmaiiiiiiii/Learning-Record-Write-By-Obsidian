@@ -31,4 +31,4 @@ const int pi = 3;
 
 ## 典型布局
 
-![C程序典型布局](C程序典型布局.excalidraw)
+![C程序典型布局](C程序典型布局.excalidraw.md)

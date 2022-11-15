@@ -1,6 +1,6 @@
 # SpringSecurity在Servlet中的层次结构 
 
-![filterChain](../../../src/filterchain.png)
+![filterChain](filterchain.png)
 
 ## 首先了解Servlet的FilterChain
 

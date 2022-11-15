@@ -1,10 +1,10 @@
 # Freeroad
 
-## 自动回复 
+## 自动回复
 
 freeman105@gmail.com
 
-## 设置代理 
+## 设置代理
 
 
 ### linux
@@ -14,6 +14,8 @@ freeman105@gmail.com
 ```bash
 export https_proxy=http://127.0.0.1:8580 http_proxy=http://127.0.0.1:8580 all_proxy=socks5://127.0.0.1:858
 ```
+
+export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:8100 all_proxy=socks5://192.168.231.1:810
 
 ### windows
 

@@ -6,7 +6,7 @@
 
 ## 根目录
 
-![linux1](linux目录结构.png)
+![linux1](Linux目录结构.png)
 
 - **<font color = "darkgreen">/bin</font>**  
   常用命令(cd,vim,rm,find)

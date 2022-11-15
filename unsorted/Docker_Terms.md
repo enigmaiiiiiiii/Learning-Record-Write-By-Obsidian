@@ -4,13 +4,27 @@
 
 - 只读**模板**文件
 - 用来创建docker容器
+
 > **镜像**和**容器**的关系就像面向对象编程中的**类**和**对象**
 
 ## container(容器)
 
 - 一个运行中的镜像**实例**
-- 容器是一个独立的进程
+- 容器是一个独立的**进程**,或特定的任务
+- 不会运行一个**Operating System(操作系统)**
 - 运行在一个隔离的环境中
+
+```bash
+docker run ubuntu
+```
+```bash
+docker ps
+```
+- show nothing
+
+```bash
+docker ps -a
+```
 
 ## 镜像仓库
 

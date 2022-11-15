@@ -23,9 +23,9 @@
 ## 图片
 
 
-![图片](/src/320px-Markdown-mark.svg.png)  
+![图片](320px-Markdown-mark.svg.png)  
 
-![图片](/src/320px-Markdown-mark.svg.png) {:height=50% width=50%}   
+![图片](320px-Markdown-mark.svg.png) {:height=50% width=50%}   
 ## 超链接
 
 直接链接<https://www.runoob.com/markdown/md-tutorial.html>  

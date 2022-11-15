@@ -21,8 +21,6 @@
 
 [Dubbo](Dubbo.md): 远程调用[RPC]框架
 
-[RestTemplate](RestTemplate.md): 远程调用
-
 [seata](Seata.md): 分布式事务
 
 [Sentinel](Sentinel.md): 以流量为切入点保护微服务的稳定性
@@ -34,3 +32,7 @@
 [RabbitMQ](RabbitMQ.md): 消息队列
 
 [ZooKeeper](ZooKeeper.md): 分布式协调服务
+
+## SpringCloud提供的工具类
+
+[RestTemplate](RestTemplate.md): 远程调用

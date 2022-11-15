@@ -4,7 +4,7 @@
 
 ## 认证上下文结构
 
-![SpringSecurity_Authentication](/src/securitycontextholder.png)
+![SpringSecurity_Authentication](securitycontextholder.png)
 
 - [SecurityContextHolder](SpringSecurity_SecurityContextHolder.md): 保存当前用户的认证信息
   - [SecurityContext](SpringSecurity_SecurityContext_Interface.md): 从SecurityContextHolder中获取的, 包含当前用户的认证信息
