@@ -5,12 +5,13 @@
 - 允许非root用户运行docker守护进程和容器
 - 减少守护进程和容器运行时的潜在漏洞
 - rootless模式下不会携带[SETUID](/sorted/linux/Linux_File_Id.md)使用可执行文件
+- 使用vscode的docker插件时需要使用rootless模式
 
 ## 使用rootless模式的准备工作
 
 ```bash
 sudo dnf install -y fuse-overlayfs
-sudo dnf install -y install
+sudo dnf install -y iptables
 ```
 
 ## 使用限制
@@ -40,6 +41,11 @@ systemctl --user restart docker
 
 ## 开始安装
 
+> 如果系统范围的Docker daemon已经运行，需要先停止它
+> ```bash
+> sudo systemctl disable --now docker.service docker.socket
+> ```
+
 ```bash
 dockerd-rootless-setuptool.sh install
 ```
@@ -63,3 +69,25 @@ systemctl --user enable docker
 sudo loginctl enable-linger $(whoami)
 ```
 
+daemon config
+
+- 在`~/.config/docker/`目录下配置
+
+## 配置rootless模式的registry mirror
+
+在`~/.config/docker/daemon.json`中添加, 没有daemon.json则创建
+
+```json
+{
+  "registry-mirrors": [
+    "https://registry.docker-cn.com"
+  ]
+}
+```
+
+1. `systemctl --user daemon-reload`
+2. `systemctl --user restart docker`
+
+## rootless模式下的数据文件
+
+`~/.local/share/docker`
