@@ -48,9 +48,9 @@
 
 [系统变量](MySQL_Server_System_Variables.md)
 
-[MySql概念](MySQL_concept.md)
+[概念](MySQL_concept.md)
 
-[MySql存储引擎](MySQL_Engine.md)
+[存储引擎](MySQL_Engine.md)
 
 [索引](MySql_Index.md)
 
@@ -59,3 +59,7 @@
 [MySql Shell](MySql_Shell.md)
 
 [MySql C语言API](MySQL_C_API.md)
+
+[同步](MySQL_Lock.md)
+
+[MVCC](MySQL_MVCC.md)

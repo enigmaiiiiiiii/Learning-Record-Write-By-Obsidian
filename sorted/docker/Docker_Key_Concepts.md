@@ -26,10 +26,23 @@ docker ps
 docker ps -a
 ```
 
-## 镜像仓库
+## tag
+
+- 通过标签可以表示同一个镜像(images)的不同版本
+
+```bash
+docker tag 0e5574283393 fedora/httpd:version1.0
+```
+
+- 将镜像`0e5574283393`打上`version1.0`的标签
+
+## registry(镜像服务器)
+
+- 用来存放和传递内容的系统，包含了**镜像**和**标有不同标签的不同版本**
+- `docker pull ubuntu`是`docker pull docker.io/library/ubuntu`的简写
+- `docker pull myregistrydomain:5000/foo/bar`表示docker从`myregistrydomain`的`5000`端口查找镜像`foo/bar`
+
+## 镜像仓库(repository)
 
 - 容纳多个镜像的仓库
 
-## 镜像服务器
-
-- 镜像仓库占用的服务器

@@ -43,7 +43,7 @@ SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
 - 称为有效负载, 包含claims
 - claims是关于实体的语句, 包含三种类型: 
-  - [x] Registered claims: 预定义字段, 比如: 
+  - [x] Registered claims: 预定义字段, 比如
     - exp: 过期时间
     - sub: 主题
     - aud: 接收方

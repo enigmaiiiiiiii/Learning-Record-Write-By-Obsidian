@@ -4,14 +4,21 @@
 
 1. Open Git Bash
 2. Enter `ssh-keygen -t ed25519 -C "your_email@example.com"`
-    > 第二步, 用邮箱作为**标注**创建一个新的SSH key
-    - 生成 public/private 算法 钥匙对
-    - `-t`: 指定钥匙类型(算法类型)
-    - `-C`: 提供一个个comment
+
+> 第二步, 用邮箱作为**标注**创建一个新的SSH key
+
+- 基于算法ed25519, 生成 public/private 钥匙对
+- `-t`: 指定钥匙类型(算法类型)
+- `-C`: 提供一个个comment
+
 3. 系统提示`Enter a file in which to save the key(/c/Users/you/.ssh/id_algorithm): [Press Enter]`  
     - 设置key文件存放位置, 按Enter表示接受默认
 
-4. 提示输入安全短语
+4. 提示输入安全短语(passphrase)
+
+修改passphrase
+
+`ssh-keygen -p -f ~/.ssh/id_ed25519`
 
 ## 检查已存在的SSH keys
 

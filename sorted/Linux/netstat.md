@@ -18,7 +18,7 @@
 - Foreign Address: 远程的主机IP
 - stat:状态列， 参考[[TCP状态转移]]
 
-## example
+## 实用选项组合
 
 - 观察本机上所有的网络联机状态
   - `netstat -atunp`

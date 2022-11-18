@@ -11,11 +11,11 @@
 
 ## ps
 
-- 列出正在运行的容器
+- `docker ps`: 列出正在运行的容器
 
 ## stop
 
-- 停止容器
+- `docker stop <container>`: 停止容器
 
 ## rm
 
@@ -24,4 +24,8 @@
 ## pull
 
 - 从镜像仓库下载镜像
+
+## logs
+
+- `docker logs[options] <container>`: 查看容器的日志
 
