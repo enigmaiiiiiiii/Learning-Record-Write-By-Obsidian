@@ -48,3 +48,27 @@ sudo docker run hello-world
 ```
 
 ## 设置镜像下载地址
+
+在/etc/docker/daemon.json添加
+
+```json
+{
+  "registry-mirrors": [
+    "https://registry.docker-cn.com"
+   ]
+}
+```
+
+重启daemon, 重启docker使配置生效
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+检查是否修改成功
+
+- 如果启用了rootless模式, 需要使用sudo, 来查看default[上下文](Docker_Terms.md#docker-context)的配置
+
+```bash
+docker info
+```
