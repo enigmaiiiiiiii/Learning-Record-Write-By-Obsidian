@@ -6,7 +6,11 @@
 
 [Get Started](TypeScript_Get_Started.md)
 
-[基础](TypeScript_Fundation.md)
+[Features](TypeScript_Features.md)
+
+[Basic](TypeScript_Fundation.md)
+
+[code snippets explaination](TypeScript_Code_Snippets_Explaination.md)
 
 [Interface](TypeScript_Interface.md)
 

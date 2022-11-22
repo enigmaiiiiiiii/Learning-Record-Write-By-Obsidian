@@ -2,9 +2,31 @@
 
 - 指定一组函数成员而不实现他们的引用类型
 - 用关键字`interface`声明接口
-- 实现接口
-  - 在基类列表后列出接口名称, 多个接口用`,`隔开
-  - 为接口的每一个成员提供实现
+
+## 声明接口
+
+```csharp
+interface IMyInterface
+{
+    void methodA();
+    double methodB(string s, long x);
+}
+```
+
+## 实现接口
+
+- 必须为接口的每一个成员提供实现
+
+```csharp
+class MyClass: IMyInterface
+{
+    public void methodA() { ... }
+    public double methodB(string s, long x) { ... }
+}
+```
+
+- 如果继承了基类并实现接口, 接口名称必须在所有基类之后
+- 多个接口用`,`隔开
 
 ## 访问接口成员
 

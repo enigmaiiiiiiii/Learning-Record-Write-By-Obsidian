@@ -42,10 +42,26 @@
 
 ## 方法的参数
 
-- 传递方式： 是按值传递
 - 不能修改一个基本类型的参数
 - 可以改变一个对象参数的状态(内容)
 - 不能让对象引用一个新的对象
+
+传递方式: 是按值传递(按照 *java核心技术 卷I 4.5*的描述)
+
+传递方式说明代码
+
+```java
+public static void swap(Employee x, Employee y)
+{
+    Employee temp = x;
+    x = y;
+    y = temp;
+}
+Employee a = new Employee("Alice",1000);
+Employee b = new Employee("Bob",2000);
+swap(a, b);
+```
+
 
 ## 可变参数
 

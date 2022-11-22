@@ -1,5 +1,9 @@
 # tools
 
+## quickref
+
+[quickref](https://quickref.me)
+
 ## cheat.sh
 
 [cheat.sh](https://github.com/chubin/cheat.sh)
