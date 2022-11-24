@@ -1,12 +1,12 @@
 # Iteration In CSharp
 
-## 枚举器
+## IEnumerator(枚举器)
 
 [IEnumerator](CSharp_IEnumerator_Interface.md)
 
 - 可枚举类型调用GetEnumerator方法返回IEnumerator接口的实例
 
-## 可枚举类型
+## IEnumerable(可枚举类型)
 
 [IEnumerable](CSharp_IEnumerable.md)通过GetEnumerator方法返回一个IEnumerator
 

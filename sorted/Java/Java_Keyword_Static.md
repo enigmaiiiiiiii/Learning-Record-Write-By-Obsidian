@@ -1,8 +1,7 @@
 # 关键字: static
 
+[static in c++](c++_Keyword_Static.md)
 ##  静态字段
-
-[static in c++]()
 
 ```java
 class Employee {
@@ -12,6 +11,8 @@ class Employee {
 ```
 
 ## 静态方法
+
+[静态方法](Java_Method.md#静态方法)
 
 ## main()方法
 

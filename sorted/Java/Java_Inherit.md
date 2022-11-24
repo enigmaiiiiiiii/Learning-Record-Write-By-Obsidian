@@ -1,6 +1,5 @@
 # 继承
 
-
 [扩展Class](Java_Extend_Class.md)
 
 [实现Interface](Java_Implement_Interface.md)

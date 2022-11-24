@@ -2,10 +2,12 @@
 
 [.NET概念](dotNET_concept.md)
 
-## [c#](CSharp.md)
+## CSharp
+
+[CSharp](CSharp.md)
 
 [Unity](Unity.md)
 
 ## dotnet
 
-[dotnet命令管理项目](dotnet_compile_command.md)
+[dotnet命令](dotnet_compile_command.md)

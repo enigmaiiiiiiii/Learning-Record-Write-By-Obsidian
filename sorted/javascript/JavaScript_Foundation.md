@@ -13,3 +13,5 @@
 [预定义函数](JavaScript_Predefined_Functions.md)
 
 [语句](/sorted/javascript/JavaScript_Statement.md)
+
+[Symbol类型](JavaScript_Symbol.md)

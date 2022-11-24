@@ -31,7 +31,7 @@ int setpgrp(pid_t pid, pid_t pgid);  /* BSD version */
 - getty调用login，login获得用户名后执行后多项工作
 - 用户正确登录，login就将完成如下工作:
   - 将当前工作目录更改为该用户的其实目录（chdir) 
-  - 调用[[chown]]更改该终端的所有权，是登陆用户成为它的所有者
+  - 调用[chown](Linux_Command_Chown.md)更改该终端的所有权，使登陆用户成为它的所有者
   - 将对该终端设备的访问权限改变成“用户读写”
   - 调用setgid及initgroups设置进程组ID
   - 用login得到的所有信息初始化环境：起始目录(HOME),shell(SHELL), 用户名(USER和LOGNAME)以及一个系统默认路径(PATH)

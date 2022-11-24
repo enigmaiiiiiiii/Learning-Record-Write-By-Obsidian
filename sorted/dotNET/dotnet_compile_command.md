@@ -23,3 +23,13 @@ export PATH=$PATH:$HOME/dotnet
 ```
 
 在命令行输入，只能暂时添加dotnet命令
+
+## 修改dotnet命令输出的提示信息的语言
+
+设置为English
+
+```bash
+setx DOTNET_CLI_UI_LANGUAGE en
+```
+
+- goto `dotnet/sdk/<version>`, delete language directory,  for example `zh-Hans`

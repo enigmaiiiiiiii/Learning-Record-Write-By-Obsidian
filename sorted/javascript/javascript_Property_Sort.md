@@ -26,10 +26,10 @@ Object.defineProperty(person, "name", {
   value: "Nicholas"
 });
 ```
-- 用来修改默认属性 
-- 接收3个参数， 
+- 用来修改默认属性
+- 接收3个参数
   - 被修改的属性对象
-  - 被修改的属性 
+  - 被修改的属性
   > 该参数可以是一个Object, 可以一次修改多个属性特性
   - 数据属性对应的四个特性(Configurable,Enumerable,Writable, value)
 
@@ -43,4 +43,4 @@ Object.defineProperty(person, "name", {
 - 接收多个Object参数
   - 一个目标对象参数
   - 多个源对象参数, 多个源对象的相同属性，使用最后一个源对象的值
-- 赋值期间出错，操作终止，且不会回滚 
+- 赋值期间出错，操作终止，且不会回滚

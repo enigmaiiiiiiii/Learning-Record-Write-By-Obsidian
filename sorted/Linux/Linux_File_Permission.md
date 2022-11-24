@@ -56,7 +56,7 @@
  ## 改变文件权限
  
  - `chgrp`: 改变所属群组
- - `chown`: 改变所属用户 [[chown]]
+ - [chown](Linux_Command_Chown.md): 改变所属用户 
  - `chmod`: 改变文件的属性，可读，可写，SUID等 [[chmod]]
  
  ## 文件种类概念

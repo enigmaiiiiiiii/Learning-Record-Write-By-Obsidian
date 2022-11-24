@@ -1,5 +1,7 @@
 # MySQL
 
+[文档下载, 包括guide, Example Databases](https://dev.mysql.com/doc/index-other.html)
+
 ## I
 
 [安装](MySQL_Install.md)
@@ -40,11 +42,11 @@
 
 [mysql client](MySQL_Mysql_Client.md): 命令行客户端
 
-[mysqlimport](MySQL_Mysqlimport.md): 导入数据
+[mysql import](MySQL_Mysqlimport.md): 导入数据
 
-[mysqldump](MySQL_Mysqldump.md): 转存数据库
+[mysql dump](MySQL_Mysqldump.md): 转存数据库
 
-## IIII
+## IV
 
 [系统变量](MySQL_Server_System_Variables.md)
 
@@ -62,4 +64,18 @@
 
 [同步](MySQL_Lock.md)
 
+[隔离级别](MySQL_Isolation_Level.md)
+
 [MVCC](MySQL_MVCC.md)
+
+## V high performance
+
+工具
+
+[查询日志](MySQL_Query_Log.md)
+
+[EXPLAIN](MySQL_EXPLAIN.md)
+
+如何优化
+
+[查询性能优化](MySQL_Query_Performance_Optimization.md)

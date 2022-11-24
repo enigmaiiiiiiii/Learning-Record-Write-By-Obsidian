@@ -4,10 +4,11 @@
 
 
 ```shell
-dotnet new console -n microsort.botsay -f net6.0
+dotnet new console -n microsoft.botsay -f net6.0
 ```
 
--f: 设置框架
+- -f: 设置框架(net6.0, net7.0, ...)
+- -n: 项目名称
 
 ***
 
@@ -34,5 +35,4 @@ microsoft.botsay.csproj项目设置文件, 格式为:
 </Project>
 ```
 
-- 标签
-  - `<TargetFramework>`: 目标框架，可以设置多个框架，用`;`隔开
+- `<TargetFramework>`: 目标框架，可以设置多个框架，用`;`隔开

@@ -4,7 +4,7 @@
 
 [类](Java_Class.md)
 
-[方法](Java_Class_Method.md)
+[方法](Java_Method.md)
 
 [访问权限](Java_Access_Permission.md)
 
