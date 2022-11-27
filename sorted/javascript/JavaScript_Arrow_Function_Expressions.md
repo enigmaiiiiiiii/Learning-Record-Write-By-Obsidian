@@ -4,6 +4,7 @@
 
 ```javascript
 (param) => expression
+
 (param, paramN) => {
     // function body
 }

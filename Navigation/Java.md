@@ -50,7 +50,7 @@
 
 ## IIII
 
-[Maven](/sorted/Java/Java_Maven.md): 项目构建工具
+[Maven](Java_Maven.md): 项目构建工具
 
 [Spring框架](Spring.md)
 

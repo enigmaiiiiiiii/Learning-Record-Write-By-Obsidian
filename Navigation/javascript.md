@@ -48,7 +48,7 @@
 
 ## III
 
-[node.js](/sorted/javascript/NodeJs.md)
+[node.js](NodeJs.md)
 
 [Vue.js](/sorted/javascript/Vue.md)
 

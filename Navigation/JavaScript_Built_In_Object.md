@@ -7,3 +7,9 @@ JSON.stringify() 方法用于将 JavaScript 值转换为 JSON 字符串。
 ```js
 console.log(JSON.stringify({x: 5, y: 6}));  // {"x":5,"y":6}
 ```
+
+## Function
+
+- 每个函数都是一个Function对象
+
+> function(){}.constructor === Function

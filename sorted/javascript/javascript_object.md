@@ -1,6 +1,9 @@
 # 对象
 
-- 属性名永远都是字符串
+[创建对象](#创建对象)
+[对象属性](#对象属性)
+[对象解构](#对象解构)
+[getter/setter](#gettersetter)
 
 ## 创建对象
 
@@ -37,6 +40,12 @@ person.sayName = function() {
 - name和age是对象的属性, sayname是对象的方法
 - 字面量表示法中属性名可以是数值
 
+## 对象属性
+
+- 属性名永远都是字符串
+
+[属性](JavaScript_Property.md)
+
 ## 对象解构
 
 - 用对象来声明变量
@@ -61,3 +70,11 @@ let person = {
 };
 ({name: personName, age: personAge} = person);
 ```
+
+## getter/setter
+
+getter/setter
+
+[getter](JavaScript_Object_Getter.md)
+
+[setter](JavaScript_Obejct_Setter.md)

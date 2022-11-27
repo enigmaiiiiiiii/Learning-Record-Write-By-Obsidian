@@ -1,4 +1,11 @@
-# Features(特色)
+# Features(特性)
+
+[Type Annotations](#type-annotations)
+[Union Types](#union-types)
+[Type Aliases](#type-aliases)
+[interface](#interface)
+[Narrowing](#narrowing)
+[ts中的类型检查](#ts中的类型检查)
 
 ## Type Annotations
 
@@ -138,3 +145,31 @@ logPoint(color);   // error
 1. 在上面的例子中`point`并没有声明为`Point`类型，typescript类型检查时对比point的**shape**和Point的**shape**，如果相同则认为是Point类型
 2. ts匹配的是对象字段的子集, `point3`, `rect`中有x, y字段, `color`中没有, 所以color不是Point类型
 3. 类型检查对于`class实例`同样有效
+
+## Generic Functions
+
+```ts
+function firstElement<Type>(arr: Type[]): Type {
+    return arr[0];
+}
+```
+
+- 通过`<Type>`声明, 可以**将返回值和参数类型联系在一起**
+- 这样声明的泛型函数可以接受任意类型的参数
+
+**限制**泛型函数的参数类型
+
+```ts
+finction longest<Type extends {length: number}>(a: Type, b: Type) {
+    if (a.length >= b.length) {
+        return a;
+    } else {
+        return b;
+    }
+}
+```
+- **类型参数**限制为: 包含`.length`属性, 并且属性类型为`number`
+
+## function type
+
+

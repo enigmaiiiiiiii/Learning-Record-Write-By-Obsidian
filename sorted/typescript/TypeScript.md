@@ -10,10 +10,12 @@
 
 [Basic](TypeScript_Fundation.md)
 
-[code snippets explaination](TypeScript_Code_Snippets_Explaination.md)
-
 [Interface](TypeScript_Interface.md)
+
+[Class](TypeScript_Class.md)
 
 [Module系统](TypeScript_Module.md)
 
 [TSConfig File](TypeScript_Config_File.md)
+
+[code snippets explaination](TypeScript_Code_Snippets_Explaination.md)

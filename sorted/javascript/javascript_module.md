@@ -1,5 +1,11 @@
 # 模块模式
 
+[html页面中引入module](#html页面中引入module)
+[ECMAScript模块模式](#ecmascript模块模式)
+[CommonJS模块模式](#commonjs模块模式)
+[CommonJS与ES6的异同点](#commonjs与es6的异同点)
+[.mjs模块文件](#mjs模块文件)
+
 ## html页面中引入module
 
 设置script标签type属性为`type="module"`
@@ -27,7 +33,7 @@
 
 [CommonJS](javascript_module_CommonJS.md)
 
-## CommonJS与ES6
+## CommonJS与ES6的异同点
 
 区别
 

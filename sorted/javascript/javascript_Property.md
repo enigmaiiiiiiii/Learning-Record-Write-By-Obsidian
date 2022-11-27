@@ -12,10 +12,6 @@ myObject.foo = "bar";
 2. 如果不存在, 则遍历对象的`[[Prototype]]`链
 3. 如果`[[Prototype]]`上不存在名为foo的属性, 则在myObject上创建一个名为foo的新属性
 
-## 属性屏蔽
-
-*to be add...*
-
 ## 访问属性
 
 - 也称为属性的`[[get]]`操作
@@ -38,5 +34,7 @@ myObject["a"];  // 2
 
 [属性](javascript_Property_Sort.md)
 
+## 属性屏蔽
 
+[ ] to do
 

@@ -59,7 +59,6 @@ git commit -m "commit with partial files"
 git add <forgotten_file>
 git commit --amend
 ```
-
 ## 取消修改文件
 
 - 危险命令，会丢失未提交的本地修改
@@ -67,3 +66,5 @@ git commit --amend
 ```bash
 git checkout -- <file>
 ```
+
+## 
