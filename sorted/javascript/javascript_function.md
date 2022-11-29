@@ -15,17 +15,17 @@
 
 [定义函数](JavaScript_Function_Definition.md)
 
-## 闭包
+## 参数
 
-[闭包](JavaScript_Closures.md)
-
-## 参数对象
-
-[参数](JavaScript_Arguments_Object.md)
+[参数](JavaScript_Function_Arguments.md)
 
 ## 函数表达式
 
 [函数表达式](JavaScript_Function_Expression.md)
+
+## 闭包
+
+[闭包](JavaScript_Closures.md)
 
 ## 函数的属性和方法
 

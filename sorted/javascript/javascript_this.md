@@ -1,5 +1,7 @@
 # this对象
 
+- this绑定的对象是由函数的调用方式决定的
+
 ## 闭包中的this
 
 - 内部函数没有使用[箭头函数], 则this绑定在到执行函数的上下文
@@ -23,7 +25,7 @@ obj.foo(); // this绑定到obj
 ## this显示绑定的对象
 
 - 通过call(), bind(), apply()方法可以显式设置this绑定的对象
-- 在[回调函数](callback_function.md)中会失去参数中绑定的this, 因为[参数](JavaScript_Arguments_Object.md)传递是一种赋值 
+- 在[回调函数](callback_function.md)中会失去参数中绑定的this, 因为[参数](JavaScript_Function_Arguments.md)传递是一种赋值 
 - 所以在回调函数中使用this的方法，可以回调函数之前使用bind()返回新函数
 
 ***

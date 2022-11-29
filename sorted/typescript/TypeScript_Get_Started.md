@@ -1,6 +1,4 @@
-# Usage
-
-## compile
+# get start
 
 **Install** typescript globally:
 

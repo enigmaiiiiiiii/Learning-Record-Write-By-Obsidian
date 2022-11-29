@@ -4,13 +4,13 @@
 
 [TypeScript Cheat Sheets](TypeScript_Cheat_Sheets.md)
 
-[Get Started](TypeScript_Get_Started.md)
+[Start With Compile](TypeScript_Get_Started.md)
+
+[Introduction](Typescript_Introduction.md)
 
 [Features](TypeScript_Features.md)
 
 [Basic](TypeScript_Fundation.md)
-
-[Interface](TypeScript_Interface.md)
 
 [Class](TypeScript_Class.md)
 

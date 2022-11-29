@@ -2,6 +2,11 @@
 
 - 基于原型`[[prototype]]`
 
+[通过prototype属性实现继承](#通过prototype属性实现继承)
+[类的继承](#类的继承)
+[如何确定继承关系](#如何确定继承关系)
+
+
 ## 通过prototype属性实现继承
 
 > 或者说javascript中继承的本质
@@ -20,7 +25,7 @@ Bar.prototype = Object.create(Foo.prototype);
 ```
 ## 类的继承
 
-- 使用extends关键字可以继承任何拥有[[construct]]和[[prototype]]属性的对象, 这意味着可以继承普通函数
+- 使用**extends**关键字可以继承任何拥有`[[construct]]`和`[[prototype]]`属性的对象, 这意味着可以继承普通函数
 
 继承类
 
@@ -67,8 +72,6 @@ class Bus extends Vehicle {
     }
 }
 ```
-
-
 
 ## 如何确定继承关系
 

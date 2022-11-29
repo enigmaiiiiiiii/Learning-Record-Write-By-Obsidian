@@ -2,8 +2,9 @@
 
 [创建对象](#创建对象)
 [对象属性](#对象属性)
-[对象解构](#对象解构)
+[对象解构](#object-destructured)
 [getter/setter](#gettersetter)
+
 
 ## 创建对象
 
@@ -46,7 +47,7 @@ person.sayName = function() {
 
 [属性](JavaScript_Property.md)
 
-## 对象解构
+## Object Destructured
 
 - 用对象来声明变量
 
@@ -72,8 +73,6 @@ let person = {
 ```
 
 ## getter/setter
-
-getter/setter
 
 [getter](JavaScript_Object_Getter.md)
 

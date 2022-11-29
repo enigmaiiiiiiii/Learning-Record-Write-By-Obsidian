@@ -10,9 +10,7 @@
 - `arguments.length`返回参数个数
 - arguments参数不反映参数的默认值
 
-## default parameters 
-
-默认参数初始值可以是原始值，对象，函数返回值
+## default parameters
 
 ```javascript
 function multiply(a, b = 1) {
@@ -20,5 +18,22 @@ function multiply(a, b = 1) {
 }
 ```
 
-[destructured]() parameters with default value assignment
+- 默认参数初始值可以是原始值，对象，函数返回值
 
+对象解构来分配对象参数类型的默认属性
+
+- 数组元素默认值参数
+
+```js
+function filledArray([x = 1, y = 2] = []) {
+    return x + y;
+}
+```
+
+- 对象属性默认值参数
+
+```js
+function filledObject({x = 1, y = 2} = {}) {
+    return x + y;
+}
+```

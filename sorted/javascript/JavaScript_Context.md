@@ -17,5 +17,5 @@
 ## 函数上下文
 
 - 函数上下文关联的变量对象为活动对象
-- 活动对象最初只有一个: [arguments](JavaScript_Arguments_Object.md)
+- 活动对象最初只有一个: [arguments](JavaScript_Function_Arguments.md#arguments对象)
 - 函数调用时，会将函数上下文推到一个上下文栈上，执行完后弹出

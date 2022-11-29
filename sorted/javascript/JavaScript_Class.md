@@ -2,18 +2,17 @@
 
 - 本质上是一个特殊[函数](JavaScript_Function.md)
 
-- [JavaScript 中的 Class](#javascript-中的-class)
-  - [定义一个class](#定义一个class)
-  - [构造方法](#构造方法)
-  - [method](#method)
-  - [静态方法](#静态方法)
-  - [字段(属性)](#字段属性)
-  - [继承](#继承)
-  - [抽象基类](#抽象基类)
-  - [可以继承ECMA内置类型](#可以继承ecma内置类型)
-  - [局部Class](#局部class)
-  - [javascript中的class](#javascript中的class)
-  - [new和class有什么关系](#new和class有什么关系)
+[定义一个class](#定义一个class)
+[构造方法](#构造方法)
+[method](#method)
+[静态方法](#静态方法)
+[Field(Property)](#fieldproperty)
+[继承](#继承)
+[抽象基类](#抽象基类)
+[可以继承ECMA内置类型](#可以继承ecma内置类型)
+[局部Class](#局部class)
+[javascript中的class](#javascript中的class)
+[new和class有什么关系](#new和class有什么关系)
 
 ## 定义一个class
 
@@ -74,9 +73,9 @@ Person.locate();
 p.locate();  // TypeError: p.locate is not a function
 ```
 
-## 字段(属性)
+## Field(Property)
 
-- 公有类字段
+- 公有字段
 
 ```js
 class Point {
@@ -84,7 +83,7 @@ class Point {
 }
 ```
 
-- 私有类字段, 字段前加`#`
+- 私有字段, 字段前加`#`
 
 ```js
 class Point {
