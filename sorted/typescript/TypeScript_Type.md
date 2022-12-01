@@ -1,18 +1,18 @@
 # type in typescript
 
+[What Is Type Annotation](#what-is-type-annotation)
 [what can be used as a type](#what-can-be-used-as-a-type)
-[Type Annotation](#type-annotation)
-[type aliases](#type-aliases)
+[type statement](#type-statement)
 [Union Types](#union-types)
 [type check](#type-check)
 [function type](#function-type)
 [type inference](#type-inference)
 [type assertion](#type-assertion)
-[keyof operator](#keyof-operator)
+[Narrowing](#narrowing)
+[Keyof operator](#keyof-operator)
+[Mapped Type](#mapped-type)
 
-- **types are always fully erased at runtime**
-
-## Type Annotation
+## What Is Type Annotation
 
 - Type annotations are a way to tell TypeScript what type of value a variable will refer to.
 
@@ -44,6 +44,8 @@ function getFavoriteNumber(): number {
 ```
 
 ## what can be used as a type
+
+primitive types
 
 anonymous object type
 
@@ -79,31 +81,11 @@ function greet(fn: (a: string) => void) {
 }
 ```
 
-## type aliases
+[type working with function](TypeScript_Function.md#other-type-working-with-function)
 
-- 定义type
-- 方便Union Types的使用
-- 可用于对象, 也可以用于基本类型
+## type statement
 
-```ts
-type ID = number | string;
-type Point = {
-    x: number;
-    y: number;
-}
-```
-- Point表示一个类型符号, 这个类型有x和y两个属性, 且类型都是number
-
-可以用`&`来组合类型, 实现**extends**的效果
-
-```ts
-type Animal = {
-    name: string;
-}
-type Bear = Animal & {
-    honey: boolean;
-}
-```
+[TypeScript_Type.md](TypeScript_Type_statement.md)
 
 ## Union Types
 
@@ -183,10 +165,102 @@ window.onmousedown = function(mouseEvent) {
 
 > like type annotation, removed by compiler
 
+- 有时候对于有些值, coder自己知道类型, 而ts无法推断出来, 这时候可以使用类型断言
+- 使用类型断言后可以调用断言类型的方法
+
+```ts
+interface Point {
+    x: number;
+    y: number;
+}
+interface Point3d extends Point {
+    z: number;
+}
+function fb(p: Point) {
+    return (p as Point3d).z;
+}
+```
+
 ## Narrowing
 
 - Narrowing: 通过分析[type check](#type-check), 将类型提炼为更具体的类型
 
+## Keyof operator
 
-## keyof operator
+- takes an **object type** and produces a string or numeric literal union of its keys
+- key的含义是Object的属性, 也就是属性的类型, **不是属性值的类型**
+- object key 的类型只能是string或者number
+- 经常用于[mapped type](#mapped-types)
 
+```ts
+type A = keyof { [n: number]: unknown };  // A = number
+type M = keyof { [n: string]: unknown };  // M = string | number
+```
+
+## Mapped Type
+
+- build on [index signature](TypeScript_Interface.md#index-signatures)
+- 通过另一个type来生成一个新的type, 从而避免避免repeat
+
+比如结合[keyof operator](#keyof-operator)来生成一个新类型, 可以用少量的代码来**修改一个类型的所有属性值的类型**
+
+```ts
+type OnlyBoolsAndHorses = {
+    [key: string]: boolean | Horse;
+};
+type OptionsFlags<Type> = {
+    [Property in keyof Type]: boolean;
+}
+```
+
+`readonly`和`?` 这两种属性修饰符可以通过mapped type来修改
+
+- 使用`+`和`-`前缀来添加或者删除属性, 无前缀表示`+`
+
+```ts
+type Createmutable<Type> = {
+    -readonly [Property in key of Type]: Type[Property];
+type LockedAccount = {
+    readonly id: string;
+    readonly name: string;
+};
+type UnlockedAccount = CreateMutable<LockedAccount>;
+```
+
+- remove `readonly` modifier from old type to create a new type
+
+## Type Compatibility
+
+对象类型
+
+> 属性少的兼容属性多的, 属性少的可以当做超类
+
+- 声明为超类的对象的值可以是派生类
+
+函数参数兼容
+
+- 就参数数量而言
+  - 参数多的兼容参数少的, 参数多的可以当做超类
+  - 与参数名称无关, 只看参数类型
+- 参数类型兼容
+  - 超类形参兼容派生类实参
+  - 函数体中只能访问超类的属性和方法
+  - 使用[type assertion](#type-assertion)可以访问派生类的属性和方法
+
+```ts
+interface Point {
+    x: number;
+    y: number;
+}
+interface Point3d extends Point {
+    z: number;
+}
+function fa(p: Point) {
+    return p.z;  // not allowed
+}
+function fb(p: Point) {
+    return (p as Point3d).z;
+}
+let p: Point3d = { x: 10, y: 20, z: 30 };
+console.log(fb(p));
+```

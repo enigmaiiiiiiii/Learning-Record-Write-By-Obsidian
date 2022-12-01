@@ -9,3 +9,18 @@ TSConfig file in a directory indicate that the directory is the root of a TypeSc
 ```bash
 tsc --init
 ```
+
+## strict
+
+```json
+{
+    "compilerOptions": {
+        "strict": true
+    }
+}
+```
+
+- true: all on
+- noImplicitAny:
+- strictNullChecks: 是否处理null和undefined
+

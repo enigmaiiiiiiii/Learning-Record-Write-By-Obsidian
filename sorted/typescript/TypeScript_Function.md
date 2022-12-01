@@ -1,5 +1,14 @@
 # Function
 
+- [Function](#function)
+  - [Optional Parameters](#optional-parameters)
+  - [Function Overload](#function-overload)
+  - [Generic Functions](#generic-functions)
+  - [Callable Signatures](#callable-signatures)
+  - [Construct Signatures](#construct-signatures)
+  - [other type working with function](#other-type-working-with-function)
+
+
 ## Optional Parameters
 
 `function f(param_name?: type)`表示可选参数
@@ -60,6 +69,7 @@ function firstElement<Type>(arr: Type[]): Type {
 
 - 通过`<Type>`声明, 可以**将返回值和参数类型联系在一起**
 - 这样声明的泛型函数可以接受任意类型的参数
+- 调用时不需要指定泛型函数的参数类型, 会自动推断
 
 **限制**泛型函数的参数类型
 
@@ -76,19 +86,59 @@ finction longest<Type extends {length: number}>(a: Type, b: Type) {
 
 ## Callable Signatures
 
+1. an interface with call signatures
+2. an instance has this this interface as type annotation
+3. the instance can be called as a function
 
 ```ts
-type DescribableFunction = {
-  description: string;
-  (someArg: number): boolean;  // Callable Signatures
+type OneCallable = {
+  x: string;
+  (x: number): boolean;  // Callable Signatures
 };
-function doSomething(fn: DescribableFunction) {
-  console.log(fn.description + " returned " + fn(6));
+function doSomething(fn: OneCallable) {
+  console.log(fn.x + " returned " + fn(6));
 }
 ```
 
 ## Construct Signatures
 
+1. an interface with construct signatures
+2. an instance has this this interface as type annotation
+3. the instance can be invoked with `new` operator
+
 ```ts
-type
+type SomeConstructor = {
+    new (s: string): SomeObject;
+}
+function fn(ctor: SomeConstructor) {
+    return new ctor("hello");
+}
 ```
+## other type working with function
+
+void
+
+object
+
+unknown
+
+- similar to `any`, but **access to any members are illegal**
+
+```ts
+function f1(a: unknown, b: any) {
+    a.foo(); // error
+    b.foo(); // ok
+}
+```
+
+never
+
+- function never return
+
+```ts
+function fail(msg: string): never {
+    throw new Error(msg);
+}
+```
+
+Function

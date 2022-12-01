@@ -8,7 +8,7 @@ import default_name from 'module_path'
 - module_path: 模块标识, 可以是绝对路径或相对路径，必须是纯字符串
   - 相对路径名引用必须以`/, ./, ../`开始
 - 必须出现在顶部
- 
+
 ## 默认导入
 
 ```javascript

@@ -1,5 +1,36 @@
 # git命令
 
+[git stash](#git-stash)
+[git merge](#git-merge)
+[git revert](#git-revert)
+[git reset](#git-reset)
+[git clean](#git-clean)
+[git checkout](#git-checkout)
+[git cherry-pick](#git-cherry-pick)
+[git add](#git-add)
+[git rebase](#git-rebase)
+
+## git stash
+
+- 保存当前工作区的修改在一个 dirty working directory(临时目录)
+- 使用场景: 像记录当前工作状态, 去查看一个已提交commit时, 又不想为当前更改创建一个commit时
+
+`git stash push`: 保存当前修改到一个临时目录, 并恢复到HEAD状态
+
+- 默认添加的描述是: `WIP on branchname: commitid "commit message"`
+- `git stash push -m "message"`: 保存当前修改到一个临时目录, 并恢复到HEAD状态, 并添加一个message
+- `git stash`: 同git stash push
+
+`git stash list`: 查看当前临时目录中保存的文件快照
+
+`git stash apply`: 应用最近一次保存的临时目录中的文件快照
+
+- `git stash apply --index <index>`: 应用指定index的临时目录中的文件快照
+- index可以通过`git stash list`查看
+- `git stash apply --index 0`: 应用最近一次临时目录中的文件快照
+
+`git stash pop`: 应用最近一次保存的临时目录中的文件快照, 并删除该临时快照
+
 ## git merge
 
 - `git merge <commit>`: 将指定的commit的更改(包括历史更改)合并到当前分支
@@ -32,7 +63,7 @@
 - `git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>...]`
   - 通过[交互式模式](Git_Interactively_Mode.md)完成文件覆盖操作
 
-### option
+options
 
 - `-f`: 切换分支时，即使index或working tree 与HEAD不同, 即使其中有untracked file, 用来丢弃本地更改和untracked file or directory的方式
 
@@ -44,119 +75,4 @@
 
 ## git rebase
 
-
-***
-
-## 1. Start
-
-<table>
-    <tr>
-        <td>命令</td>
-        <td>例</td>
-        <td>描述</td>
-    </tr>
-    <tr>
-        <td>clone</td>
-        <td>git clone git@github.com:enigmaiiiiiiii/Learning-record.git</td>
-        <td>copyies remote repository into your current directory.</td>
-    </tr>
-    <tr>
-        <td>init</td>
-        <td>git init</td>
-        <td>Creates a new empty repo in your current directory.</td>
-    </tr>
-    <tr>
-        <td>add</td>
-        <td>git add *file1* *file2*</td>
-        <td>Adds *file1* and *file2* to the staging area.</td>
-    </tr>
-    <tr>
-        <td>status</td>
-        <td>git status</td>
-        <td>Lists changes in wirking directory,and staged files.</td>
-    </tr>
-    <tr>
-        <td rowspan=2>commit</td>
-        <td>git commit</td>
-        <td>Records everything in the staging area to your reposity.The default text editor will prompt you for a commit message.</td>
-    </tr>
-    <tr>
-        <td>git commit -m "commit message"</td>
-        <td>commit with message.</td>
-    </tr>
-    <tr>
-        <td>log</td>
-        <td>git log</td>
-        <td>print git commit history.</td>
-    </tr>
-    <tr>
-        <td>reset</td>
-        <td>git reset</td>
-        <td>removes all files from staging area.(Opposite of *git add*)</td>
-    </tr>
-</table>
-
-## 2. Remote
-
-|command|||
-| -- | -- | -- |
-| fetch(获取) | git fetch | Gets status of 'origin'.git fetch does not change your working directory or local repositoty (see git pull). |
-| pull | git pull | Incorporates(包含了) changes from 'origin' into local repo. |
-|| git pull *repo* *branch* | Incorporates changes from local repo into *repo* *branch* |
-| push | git push | Incorporates changes from local repo into 'orgin'
-|| git push *repo* *branch* | Incorporates changes from local repo into *repo* *branch* |
-
-## 3. repo
-
-||||
-| -- | -- | -- |
-
-## 4. Branches
-
-<table>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td rowspan=2>branch</td>
-        <td>git branch</td>
-        <td>List branches.</td>
-    </tr>
-    <tr>
-        <td>git branch *branch-name*</td>
-        <td>Creat new branch *branch-name*</td>
-    </tr>
-    <tr>
-        <td rowspan=2>checkout</td>
-        <td>git checkout *branch*</td>
-        <td>Switch to editing branch *branch-name*</td>
-    </tr>
-    <tr>
-        <td>git checkout *commit*</td>
-        <td>Switch to editing history commit</td>
-    </tr>
-    <tr>
-        <td>merge</td>
-        <td>git merge *branch-name*</td>
-        <td>Merge *branch-name* into current branch.</td>
-    </tr>
-</table>
-
-***
-
-## 5. 文件操作
-
-<table>
-    <tr>
-        <td rowspan=2>rm</td>
-        <td>git rm [file]</td>
-        <td>从目录和暂存区中删除文件</td>
-    </tr>
-    <tr>
-        <td>git rm -r --cached [file]</td>
-        <td>--cached从暂存区中删除文件(移出git)<br> -r递归删除</td>
-    </tr>
-</table>
 

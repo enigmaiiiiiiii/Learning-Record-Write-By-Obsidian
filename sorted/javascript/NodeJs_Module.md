@@ -31,7 +31,7 @@
 
 ## `module` object
 
-[module](NodeJs_Moduel_Object.md)
+[module](NodeJs_Module_Object.md)
 
 ## 导出模块
 
@@ -58,12 +58,14 @@ node --input-type=module --eval "import {sep} from 'node:path'; console.log(sep)
 - `.cjs`扩展名文件
 - `.js`扩展名文件最近的父级[package.json](NodeJs_Package_Json.md)的type字段为`"type": "commonjs"`
 - `.js`扩展名文件最近的父级`package.json`的没有type字段
+
 > package作者应该包含type字段, 即使所有源文件都是CommonJS)
+
 - 文件扩展名不是`.mjs`, `cjs`, `json`, `.node`, `.js`
+
 > 这些文件被require时, 被识别为CommonJS, 而不是在程序的入口点(entry point)
 
-
-## 处理Circle
+## 处理Circle(循环依赖)
 
 a.js
 

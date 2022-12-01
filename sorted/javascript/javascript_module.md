@@ -37,7 +37,7 @@
 
 区别
 
-- CommonJS模块输出的是值的拷贝，ES6输出值的引用 
+- CommonJS模块输出的是值的拷贝，ES6输出值的引用
 - CommonJS导出单个值，ES6导出多个值
 - CommonJS运行时加载，ES6编译时输出接口
 - CommonJS可以写在语句里，ES6只能写在[顶层](JavaScript_Context.md)
@@ -46,7 +46,7 @@
 ***
 
 - ES只将`.js`, `.mjs`, `cjs`扩展名文件当做javascript文件
-- CommonJS把所有缺少`.json`和`.node`扩展名的文件当做javascript文件 
+- CommonJS把所有缺少`.json`和`.node`扩展名的文件当做javascript文件
 
 ***
 

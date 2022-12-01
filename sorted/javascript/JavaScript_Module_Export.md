@@ -18,28 +18,25 @@ export default function() { ... }
 - 一个模块可以用多个命名导出
 - 导入时必须使用导出的名称
 
-```javascript
-exprot {myfunction, myVariable}
+```js
+export {myfunction, myVariable}
 ```
 
 ## 重导出/聚合导出
 
 - 为了提高模块可用性，可以在一个父模块中**导入同时导出**不同的模块
 
-```javascript
-export {default as function1, function2} from "bar.js";
-```
 export from导入导出方式，function1, function2 在当前模块**不可用**
 
 ```javascript
-import {default as function1, function2} from 'bar.js';
-export {function1, function2};
+export {default as function1, function2} from "bar.js";
 ```
 
 import, export分开，function1, function2 在当前模块可用
 
 ```javascript
-import 
+import {default as function1, function2} from 'bar.js';
+export {function1, function2};
 ```
 
 ## 语法

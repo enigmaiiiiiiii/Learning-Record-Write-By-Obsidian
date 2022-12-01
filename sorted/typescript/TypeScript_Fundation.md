@@ -1,4 +1,4 @@
-# 基础
+# type
 
 ## Primitive Types
 
