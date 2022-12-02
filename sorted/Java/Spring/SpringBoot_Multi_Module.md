@@ -1,8 +1,8 @@
-# 微服务项目
+# 多模块项目
 
 [基于maven多模块项目](Maven_Multi_Module.md)
 
-- [springboot中的relativepath](https://robintegg.com/2019/01/20/why-does-spring-initializr-set-the-parent-pom-relativepath-to-empty.html)
+[springboot中的relativepath](https://robintegg.com/2019/01/20/why-does-spring-initializr-set-the-parent-pom-relativepath-to-empty.html)
 
 ## 父项目配置
 

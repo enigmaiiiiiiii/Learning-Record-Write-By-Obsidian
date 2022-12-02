@@ -2,7 +2,7 @@
 
 ## Linux概念
 
-[系统目录解构](Linux_System_Directory.md)
+[系统目录结构](Linux_System_Directory.md)
 
 [原生软件](Linux原生软件.md)
 
@@ -18,7 +18,7 @@
 
 ## Linux命令
 
-[实用命令](/sorted/Linux/Linux实用命令.md)
+[实用命令](Linux_Practical_Command.md)
 
 [账户管理](Linux_Account.md)
 
@@ -28,7 +28,7 @@
 
 [应用程序](Linux_Application_Command.md)
 
-[网络](/sorted/Linux/Linux_Network_Command.md)
+[网络](Linux_Network_Command.md)
 
 [进程命令](Linux_Process_Command.md)
 

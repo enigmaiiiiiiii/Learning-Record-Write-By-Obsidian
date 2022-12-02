@@ -1,5 +1,14 @@
 # 网络命令
 
+[查看网络状态](#查看网络状态)
+[telnet](#telnet)
+[ftp](#ftp)
+[lftp](#lftp)
+[gaim](#gaim)
+[数据包截获工具](#数据包截获工具)
+[curl](#curl)
+
+
 ## 查看网络状态
 
 - [[netstat]]
@@ -41,8 +50,13 @@
 
 语法: 
 
+`curl [options] [url]`
+
+输出文件名是远程文件名
+
 ```bash
-curl [options] [url]
+curl -O, --remote-name [url]
 ```
+
 
 

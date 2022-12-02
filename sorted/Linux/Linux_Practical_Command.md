@@ -20,6 +20,7 @@ apt-file search filename
 [定位](Linux_Locate.md)
 
 ## 工具
+
 - `date` 显示日期
 - `cal` 显示日历
 - `bc` 计算器
@@ -67,7 +68,6 @@ apt-file search filename
 
 - `arp`:查看和修改ARP高速缓存, 主机内ARP table中存储着其他主机的MAC地址
 - `nestat`显示网络状态
-
 
 ## 辅助命令
 

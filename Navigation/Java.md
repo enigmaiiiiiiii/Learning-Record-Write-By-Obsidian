@@ -4,7 +4,7 @@
 
 [安装](Java_Environment_Install.md)
 
-[术语概念](/sorted/Java/Java_Terms_And_Concept.md)
+[术语概念](Java_Terms_And_Concept.md)
 
 [Java命令行工具](/sorted/Java/Java_Tools.md)
 
@@ -46,11 +46,17 @@
 
 [JVM](Java_JVM.md)
 
+[字节码](Java_Byte_Code.md)
+
 [类型转换](Java_Conversion.md)
 
 ## IIII
 
 [Maven](Java_Maven.md): 项目构建工具
+
+[Servlet](Javax_Servlet.md)
+
+[Tomcat](Java_Tomcat.md)
 
 [Spring框架](Spring.md)
 
@@ -71,10 +77,6 @@
 [gson](/sorted/Java/Java_Gson.md): json in java google
 
 [quartz](/sorted/Java/Java_Quartz.md): 定时任务
-
-[Servlet](Javax_Servlet.md)
-
-[Tomcat](Java_Tomcat.md)
 
 ## 应用
 

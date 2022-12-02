@@ -115,3 +115,20 @@ org.springframework.data.redis.serializer.SerializationException: Could not writ
 @JsonSerialize(using = LocalDateTimeSerializer.class)
 @JsonDeserialize(using = LocalDateTimeDeserializer.class)
 ```
+
+## No.10
+
+IDE代码检查bug report
+
+`references to interface static methods are allowed only at source level 1.8 or above`
+
+解决办法
+
+pom.xml
+
+```xml
+<properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+```
