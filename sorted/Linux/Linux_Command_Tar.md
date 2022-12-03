@@ -2,13 +2,13 @@
 
 ## 示例
 
-将文件file1和目录dir2压缩为package.tar, 列出详细信息
+将文件file1和目录dir2**压缩**为package.tar, 列出详细信息
 
 ```bash
 tar -cvf package.tar file1 dir2
 ```
 
-提取package.tar中的文件, 并输出到/tmp目录
+**提取**package.tar中的文件, 并输出到/tmp目录
 
 ```bash
 tar -xvf package.tar -C /tmp

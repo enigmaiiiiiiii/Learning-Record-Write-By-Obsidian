@@ -2,7 +2,7 @@
 
 [文件ID](Linux_File_ID.md)
 
-- 了解Linux修改密码的机制是学习[[Linux_File_Permission]]的好方式
+- 了解Linux修改密码的机制是学习[文件权限](Linux_File_Permission.md)的好方式
 - 与修改密码相关的文件权限
 
 <table align="center">
@@ -28,4 +28,3 @@
   - 这个s就是Set UID
   - 当使用者执行该文件是，可以暂时获得root权限
 - 使用命令`chmod u-s /usr/bin/passwd`去掉s权限后，普通用户将无法修改密码
-  

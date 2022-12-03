@@ -1,6 +1,10 @@
 # 系统
 
-export
+## alternatives
+
+[alternatives](Linux_Alternatives.md)
+
+## export
 
 ```shell
 export [-fnp][名称]=[值]

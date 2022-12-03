@@ -22,6 +22,7 @@
 **<font color = "darkgreen">/etc (没有体会，不懂)</font>**  
 
 - etc 是 etcetera(等等) 的缩写,这个目录用来存放所有的系统管理所需要的配置文件和子目录。
+- `etc/profile`: 设置[系统的环境变量](Linux_System_Environment.md)
 
 **<font color = "darkgreen">/home</font>**
 

@@ -3,7 +3,10 @@
 ## Linux下vim插件  
 
 首先安装插件管理工具Vim-plug
-> curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
 vim-commentary
 

@@ -1,6 +1,7 @@
 # Function
 
 - [Function](#function)
+  - [function type expressions](#function-type-expressions)
   - [Optional Parameters](#optional-parameters)
   - [Function Overload](#function-overload)
   - [Generic Functions](#generic-functions)
@@ -8,6 +9,26 @@
   - [Construct Signatures](#construct-signatures)
   - [other type working with function](#other-type-working-with-function)
 
+## function type expressions
+
+to describe a function **type**
+
+```ts
+function greet(fn: (a: string) => void) {
+    fn("Hello, World");
+}
+```
+
+- `(a: string) => void`: a function that takes a string and returns nothing
+
+name a function type
+
+```ts
+type GreetFunction = (a: string) => void;
+function greet(fn: GreetFunction) { fn("Hello, World"); }
+```
+
+more about function type [Compatibility](TypeScript_Type.md#type-compatibility)
 
 ## Optional Parameters
 
@@ -99,7 +120,6 @@ function doSomething(fn: OneCallable) {
   console.log(fn.x + " returned " + fn(6));
 }
 ```
-
 ## Construct Signatures
 
 1. an interface with construct signatures

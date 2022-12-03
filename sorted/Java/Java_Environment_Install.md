@@ -20,4 +20,3 @@ export PATH=jdk/bin:$PATH
 ```
 
 - Windows中设置环境变量
-

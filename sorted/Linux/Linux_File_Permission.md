@@ -9,7 +9,9 @@
 ## 文件属性权限
 
 - `ls -al`
+
 > -al 列出所有文件详细信息
+
 <table>
     <tr align = "center">
         <td>drwxrwxrwx</td>
@@ -57,7 +59,7 @@
  
  - `chgrp`: 改变所属群组
  - [chown](Linux_Command_Chown.md): 改变所属用户 
- - `chmod`: 改变文件的属性，可读，可写，SUID等 [[chmod]]
+ - [chmod](Linux_Command_Chmod.md): 改变文件的属性，可读，可写，SUID等
  
  ## 文件种类概念
  

@@ -17,3 +17,11 @@ curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.
 cd /opt/tomcat
 sudo tar xzvf path/to/apache-tomcat-10.0.27.tar.gz
 ```
+
+## 运行
+
+**网络服务器通常不以特权(sudo/root)用户运行**
+
+```bash
+useradd -r -d /opt/tomcat -s /bin/false tomcat
+```

@@ -1,16 +1,17 @@
 # type in typescript
 
-[What Is Type Annotation](#what-is-type-annotation)
-[what can be used as a type](#what-can-be-used-as-a-type)
-[type statement](#type-statement)
-[Union Types](#union-types)
-[type check](#type-check)
-[function type](#function-type)
-[type inference](#type-inference)
-[type assertion](#type-assertion)
-[Narrowing](#narrowing)
-[Keyof operator](#keyof-operator)
-[Mapped Type](#mapped-type)
+- [type in typescript](#type-in-typescript)
+  - [What Is Type Annotation](#what-is-type-annotation)
+  - [what can be used as a type](#what-can-be-used-as-a-type)
+  - [type statement](#type-statement)
+  - [Union Types](#union-types)
+  - [type check](#type-check)
+  - [type inference](#type-inference)
+  - [type assertion](#type-assertion)
+  - [Narrowing](#narrowing)
+  - [Keyof operator](#keyof-operator)
+  - [Mapped Type](#mapped-type)
+  - [Type Compatibility](#type-compatibility)
 
 ## What Is Type Annotation
 
@@ -45,9 +46,9 @@ function getFavoriteNumber(): number {
 
 ## what can be used as a type
 
-primitive types
+1. primitive types
 
-anonymous object type
+2. anonymous object type
 
 - `p: {name: string, age: number}`: `p` is an Object with this two properties
 
@@ -57,7 +58,7 @@ function greet(person: { name: string; age: number }) {
 }
 ```
 
-interface
+3. interface
 
 - `p: Person`
 
@@ -71,15 +72,9 @@ function greet(person: Person) {
 }
 ```
 
-anonymous function type
+4. anonymous function type
 
-- `fn: (a: string) => void`: `fn` is a function that takes a string and returns nothing
-
-```ts
-function greet(fn: (a: string) => void) {
-    fn("Hello, World");
-}
-```
+[function type](TypeScript_Function.md#function-type-expressions)
 
 [type working with function](TypeScript_Function.md#other-type-working-with-function)
 
@@ -138,9 +133,6 @@ logPoint(color);   // error
 2. ts匹配的是对象字段的子集, `point3`, `rect`中有x, y字段, `color`中没有, 所以color不是Point类型
 3. 类型检查对于`class实例`同样有效
 
-
-## function type
-
 ## type inference
 
 - 对于没有显式[type annotation](#type-annotation)的变量, ts会自动推断出类型
@@ -183,7 +175,26 @@ function fb(p: Point) {
 
 ## Narrowing
 
-- Narrowing: 通过分析[type check](#type-check), 将类型提炼为更具体的类型
+- Narrowing: 根据[type check](#type-check), refine type more specific
+
+```ts
+function padLeft(padding: number | string, input: string) {
+  return "a".repeat(padding) + input;  // error
+}
+```
+
+- 上面的例子中, padding是联合类型, 不能直接使用repeat方法
+
+```ts
+function padLeft(padding: number | string, input: string) {
+  if (typeof padding === "number") {
+    return "a".repeat(padding) + input;
+  }
+  return padding + input;
+}
+```
+
+- if语句中, ts会根据type check的结果, refine `padding` 为string类型
 
 ## Keyof operator
 
@@ -231,11 +242,30 @@ type UnlockedAccount = CreateMutable<LockedAccount>;
 
 ## Type Compatibility
 
+ts中的类型兼容性是基于结构, **仅基于成员来关联类型**, 而**不是基于命名**
+
+```ts
+interface Pet {
+    name: string;
+}
+class Dog {
+    name: string;
+}
+let pet: Pet;
+pet = new Dog(); // OK
+```
+
 对象类型
 
 > 属性少的兼容属性多的, 属性少的可以当做超类
+> 声明为超类的对象的值可以是派生类
 
-- 声明为超类的对象的值可以是派生类
+
+- 检查类型时, 只检查**是否包含目标类型成员**
+
+`let pet: Pet = dog;`
+
+- in this code, target type is `Pet`, source type is `Dog`
 
 函数参数兼容
 
