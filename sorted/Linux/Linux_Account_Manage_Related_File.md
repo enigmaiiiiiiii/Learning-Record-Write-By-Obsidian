@@ -20,16 +20,16 @@
 - 密码记录在`/etc/shadow`这个文件下
 - 只有root有读写权限
 
-"username:$id$encoded-password:last-password-change:minimum-password-age:maximum-password-age:password-warning-period:password-inactive-period:account-expiration-date:reserved-field"
+**"username:$id$encoded-password:last-password-change:minimum-password-age:maximum-password-age:password-warning-period:password-inactive-period:account-expiration-date:reserved-field"**
 
 - 账号名称
 - 密码, 以`$id`开头, 
-  - `$id$`表示加密方式, 有以下几种加密方式
+  - `$id$`表示[加密方式](Message_Digest_Algorithm.md), 有以下几种加密方式
     - 1: MD5
     - 2a: Blowfish
     - 5: SHA-256
     - 6: SHA-512
-  - `encoded-password`是加密后的密码
+  - `encoded-password`加密后的密码
 - 最近更动密码的日期
 - 密码不可被更动的天数
 - 密码需要被重新变更的天数
@@ -38,15 +38,16 @@
 - 账号失效日期
 - 保留
 
-
-
 ## /etc/group
 
 - 所有群组名称都记录在`/etc/group`
-  - 群组名称
-  - 群组密码
-  - GID
-  - 支持的账号
+
+"groupname:password:GID:user-list"
+
+- 群组名称
+- 群组密码
+- GID
+- 支持的账号
 
 ## 登入过程
 

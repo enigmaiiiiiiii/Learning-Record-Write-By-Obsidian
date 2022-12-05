@@ -15,7 +15,7 @@ options
 - `-d`: 指定某个目录作为用户存放文件目录
 - `-r`: 创建系统用户
   - 系统用户在`/etc/shadow`没有aging(可用时间)信息
-  - 系统用户的数字ID在常数`SYS_UID_MIN-SYS_UID_MAX`之间, 而不是`UID_MIN-UID_MAX`
+  - 系统用户的数字ID在常数`SYS_UID_MIN` ~ `SYS_UID_MAX`之间, 而不是`UID_MIN` ~ `UID_MAX`
   - 不会创建home目录,使用`-m`可以创建
 - `-s`: 指定一个shell， 默认`/bin/bash`
 

@@ -40,6 +40,20 @@
 
 语法: `usermod [-c/d/e/g/G/l/s/u/L/U] username`
 
+options
+
+- `-a`: add user to group
+- `-b`
+- `-c`: change comment field
+- `-d`: change home directory
+- `-e`: change expiration date
+
+将用户添加到分组
+
+```bash
+usermod -a -G groupname username
+```
+
 ## userdel
 
 - 删除用户
@@ -62,7 +76,28 @@ options
 
 - create a new [group](Linux_Group.md)
 
+`groupadd [options] group`
+
+新建分组, 命名为temp
+
+```bash
+groupadd temp
+```
+
+options
+
+- `-f`: force
+- `-g`: group ID
+- `-r`: create a system group
+  - GID is between `SYS_GID_MIN` ~ `SYS_GID_MAX`
+  - instead of `GID_MIN` ~ `GID_MAX`
+
+group相关的文件
+
 `/etc/group`: Group account information
+
+- 文件内容格式: `group_name:password:GID:user_list`
+
 `/etc/gshadow`: Group account information
 `/etc/login.defs`: Login defaults
 
