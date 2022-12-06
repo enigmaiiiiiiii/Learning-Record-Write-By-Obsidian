@@ -72,7 +72,7 @@
 
 [JJWT](/sorted/Java/Java_JJWT.md): jwt in java
 
-[fastjson](/sorted/Java/Java_FastJson.md): json in java ali
+[fastjson](Java_FastJson.md): json in java ali
 
 [gson](/sorted/Java/Java_Gson.md): json in java google
 

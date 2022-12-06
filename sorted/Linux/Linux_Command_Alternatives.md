@@ -1,5 +1,7 @@
 # alternatives
 
+## what for
+
 假设有两个版本的java, java8(java-1.8.0-openjdk)和java17(java-17-openjdk), 通过alternatives可以设置默认的java版本
 
 当运行java命令时, 实际上是运行的/usr/bin/java, 该命令是一个链接, 指向了alternatives的一个版本

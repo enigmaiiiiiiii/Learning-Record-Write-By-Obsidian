@@ -2,7 +2,7 @@
 
 ## alternatives
 
-[alternatives](Linux_Alternatives.md)
+[alternatives](Linux_Command_Alternatives.md)
 
 ## export
 

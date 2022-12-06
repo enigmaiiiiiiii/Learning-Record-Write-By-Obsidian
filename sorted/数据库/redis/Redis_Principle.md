@@ -1,5 +1,15 @@
 # 原理
 
+- [原理](#原理)
+  - [缓存淘汰策略](#缓存淘汰策略)
+  - [redis击穿](#redis击穿)
+  - [redis穿透](#redis穿透)
+  - [redis雪崩](#redis雪崩)
+  - [redis持久化](#redis持久化)
+  - [redis存储原理](#redis存储原理)
+  - [redis集群](#redis集群)
+
+
 ## 缓存淘汰策略
 
 - 当内存不足时，新写入操作会报错: noeviction
