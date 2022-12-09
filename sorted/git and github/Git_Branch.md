@@ -1,5 +1,16 @@
 # Branch
 
+- [Branch](#branch)
+  - [Git Commit](#git-commit)
+  - [新建Branch](#新建branch)
+  - [切换Branch](#切换branch)
+  - [合并branch](#合并branch)
+    - [解决冲突](#解决冲突)
+  - [删除分支](#删除分支)
+  - [管理分支](#管理分支)
+  - [Branch workflow](#branch-workflow)
+  - [HEAD指针](#head指针)
+
 ## Git Commit
 
 - commit时保存[暂存区]的[文件快照]的指针
@@ -57,6 +68,10 @@ git branch <branch_name>
 ## 管理分支
 
 - `git branch`: 显示所有分支名称
+- `git branch -a`: 显示所有分支名称, 包括远程分支
+
+***
+
 - `git branch -v`: 显示分支名称和最后一次提交信息
 - `git branch --merged <branch>`: 查看**branch**合并过的分支, 省略branch默认为当前分支
 - `git branch --no-merged <branch>`: 查看branch未合并过的分支, 省略branch默认为当前分支

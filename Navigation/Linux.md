@@ -12,15 +12,17 @@
 
 [文件权限的概念](Linux_File_Permission.md)
 
-[软件安装](Linux_Software_Install.md)
-
 [文件描述符](Linux_File_Descriptor.md)
 
-[linux系统进程](Linux_System_Process.md)
+[系统进程](Linux_System_Process.md)
 
 ## Linux 使用
 
 [实用命令](Linux_Practical_Command.md)
+
+[软件安装](Linux_Software_Install.md)
+
+[下载](Linux_DownLoad_Command.md)
 
 [账户管理](Linux_Account_Command.md)
 

@@ -4,7 +4,7 @@
 
 [git术语](Git_Concept.md)
 
-[git安装使用](Git_Install_And_Use.md)
+[git安装和配置](Git_Install_And_Use.md)
 
 [Commit](Git_Commit.md)
 
@@ -20,11 +20,11 @@
 
 ## III
 
-[解决问题的命令](Git_Useful_Command.md)
+[Practical Command](Git_Useful_Command.md)
 
 [.gitignore文件](Git_Ignore.md)
 
-[GIthub搜索技巧](Github_Search_Skills.md)
+[Github搜索技巧](Github_Search_Skills.md)
 
 [Detached head](Git_Detached_Head.md)
 

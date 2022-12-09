@@ -20,3 +20,11 @@ crtl+shift+p -> Remote-SSH: Connect to Host
 
 输入: ssh tmp@192.168.231.16 -A
 
+
+## config proxy
+
+```json
+{
+    "http.proxy": "http://proxy.server.com:port
+}
+```

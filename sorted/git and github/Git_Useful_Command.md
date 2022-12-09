@@ -91,3 +91,11 @@ git stash
 git stash pop
 ```
 
+## 查看所有分支
+
+- `git clone` 的 repository 使用`git branch` 查看分支时只显示本地分支
+
+```bash
+git branch -a
+```
+

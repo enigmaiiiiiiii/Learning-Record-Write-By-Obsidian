@@ -13,3 +13,5 @@ netstat -ano
 ```bash
 netstat -ano | findstr "8080"
 ```
+
+## winget

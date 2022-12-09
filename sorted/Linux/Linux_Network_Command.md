@@ -8,7 +8,6 @@
 [数据包截获工具](#数据包截获工具)
 [curl](#curl)
 
-
 ## 查看网络状态
 
 - [[netstat]]
@@ -43,20 +42,3 @@
 ## 数据包截获工具
 
 - tcpdump
-
-## curl
-
-- 不使用UI界面, 向url发送数据的工具
-
-语法: 
-
-`curl [options] [url]`
-
-输出文件名是远程文件名
-
-```bash
-curl -O, --remote-name [url]
-```
-
-
-

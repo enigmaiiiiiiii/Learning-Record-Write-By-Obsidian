@@ -17,6 +17,7 @@ chmod 777 file
 ```
 
 - 字符类型改变档案权限
+
   <table>
     <tr>
         <td>chmod</td>
@@ -32,7 +33,8 @@ chmod 777 file
 ugoa: user, group, other, all
 rwx: read, write, execute
 
-
 ```bash
 chmod g+rwx file
 ```
+
+组用户添加rwx权限
