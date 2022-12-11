@@ -4,7 +4,7 @@
   - [创建一个项目](#创建一个项目)
   - [POM配置文件](#pom配置文件)
   - [编译Maven](#编译maven)
-  - [打包maven项目: Package Maven project](#打包maven项目-package-maven-project)
+  - [Package Maven project](#package-maven-project)
   - [添加到maven仓库](#添加到maven仓库)
 
 
@@ -62,16 +62,16 @@ maven compile
 mvn test
 ```
 
-## 打包maven项目: Package Maven project 
+## Package Maven project 
 
-create 
+create
 
 - `pom.xml`文件的`<packaging>`元素指定了打包类型
   - `<packaging>jar</packaging>`: 生成[jar package](Java_Jar_File.md)
   - `<packaging>war</packaging>`: 生成[war package](Java_War_File.md)
 
 ```bash
-mvn package # 生成指定类型package
+mvn package # 生成pom.xml指定的package
 mvn clean package
 ```
 

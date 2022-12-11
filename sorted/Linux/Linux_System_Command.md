@@ -16,7 +16,7 @@ export [-fnp][名称]=[值]
 
 ## systemctl
 
-- 在linux文档中systemctl操作的是单元, ~~~目前理解为服务~~~
+- 在linux文档中systemctl操作的是单元, ~~目前理解为服务~~
 
 > 与控制[systemd]管理的程序进行交互
 
@@ -39,7 +39,7 @@ sudo systemctl start [服务名]
 ```bash
 sudo systemctl enable [服务名]
 ```
-enabled的同时启动服务
+enable 的同时启动服务
 
 ```bash
 sudo systemctl enable --now [服务名]

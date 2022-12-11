@@ -16,6 +16,23 @@
 
 [telnet](telnet.md)
 
+## scp
+
+- OpenSSH secure file copy
+
+```bash
+scp file/path [user@]host:[remote/filename]
+```
+
+- path/of/file: 本地文件路径
+- user: 远程主机的用户名
+- host: 远程主机的ip地址
+- remote/filename: 远程主机的文件路径
+
+options
+
+- r: 递归复制目录
+
 ## ftp
 
 `-n`:  不使用自动登录
@@ -39,6 +56,6 @@
 
 ## gaim
 
-## 数据包截获工具
+## tcpdump
 
-- tcpdump
+- 数据包截获工具

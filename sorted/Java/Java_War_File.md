@@ -2,16 +2,15 @@
 
 - WAR: **Web Application** Resource
 - collection of [Jar files](Java_Jar_File.md), [JavaServer Pages(JSP)](), [Java Servlets](), [Java Classes](), XML, tag libraries, static web pages
-- /WEB-INF/web.xml: web application deployment descriptor
-  - 定义了web应用程序的解构
-
-## deploy
-
-Tomcat
-
-- copy war file to `webapps` directory
 
 ## web.xml
+
+./WEB-INF/web.xml:
+
+- web application deployment descriptor
+- 定义了web应用程序解构
+
+web.xml文件大致内容
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,3 +41,9 @@ Tomcat
     </resource-ref>
 </web-app>
 ```
+
+## deploy on tomcat
+
+Tomcat
+
+- copy war file to `webapps` directory

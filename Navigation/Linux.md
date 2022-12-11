@@ -16,7 +16,7 @@
 
 [系统进程](Linux_System_Process.md)
 
-## Linux 使用
+## Linux 命令
 
 [实用命令](Linux_Practical_Command.md)
 

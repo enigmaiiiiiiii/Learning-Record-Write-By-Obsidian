@@ -42,6 +42,6 @@
 
 ## 应用
 
-[布隆过滤器](../sorted/数据解构和算法/Algorithm_Bloom_Filter.md)
+[布隆过滤器](../sorted/数据结构和算法/Algorithm_Bloom_Filter.md)
 
 [消息摘要算法](../sorted/数据结构和算法/Message_Digest_Algorithm.md)

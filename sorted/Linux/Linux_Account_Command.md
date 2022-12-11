@@ -107,3 +107,9 @@ group相关的文件
 
 - print the groups a user is in
 - 查看用户所属的组
+
+output looks like:
+
+```
+username: group1 group2 group3
+```

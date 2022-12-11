@@ -33,6 +33,7 @@ sudo tar xzvf path/to/apache-tomcat-10.0.27.tar.gz
 ```bash
 alternatives --list | grep java
 ```
+
 假如输出内容如下:
 
 ```
@@ -56,7 +57,8 @@ export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64"
 
 ## 创建用户
 
-> web server通常不以特权用户运行
+
+**网络服务器通常不以特权(sudo/root)用户运行**
 
 创建用户`tomcat`
 
@@ -72,9 +74,12 @@ chown -R tomcat: /opt/tomcat
 
 ## 设置Web Management Accounts
 
+此账号用于管理tomcat, 通过`http://localhost:8080/manager/html`访问
+
 ```bash
 vim /opt/tomcat/conf/tomcat-users.xml
 ```
+访问`http://localhost:8080/manager/html`时, 需要输入用户名和密码, 用于验证
 
 ```xml
 <tomcat-users>
@@ -84,6 +89,9 @@ vim /opt/tomcat/conf/tomcat-users.xml
   <user username="admin" password="mystrongpassword" roles="admin-gui,manager-gui"/>
 </tomcat-users>
 ```
+
+- 设置用户名和密码分别为`admin`和`mystrongpassword`
+
 ## Configure Remote Host
 
 > tomcat默认只允许本地访问, 需要修改配置文件
@@ -100,14 +108,14 @@ vim /opt/tomcat/webapps/manager/META-INF/context.xml
 
 ## allow external access
 
-```bash
+```sh
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --reload
 ```
 
 ## run as service
 
-```bash
+```sh
 vim /etc/systemd/system/tomcat.service
 ```
 
