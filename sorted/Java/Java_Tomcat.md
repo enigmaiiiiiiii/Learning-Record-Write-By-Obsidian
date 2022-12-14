@@ -29,15 +29,9 @@ Enviromment Variables
 
 - `$CATALINA_HOME/bin/startup.sh`
 
-## configure Roles
+## Configure
 
-- 为了安全起见，Tomcat默认不允许任意用户访问管理页面，需要配置用户角色
-
-```xml
-<role rolename="manager-gui"/>
-<role rolename="manager-script"/>
-<user username="admin" password="password" roles="manager-gui, manager-script"/>
-```
+[Configure](Tomcat_Configure.md)
 
 ## Web Application Deloyment
 

@@ -1,5 +1,25 @@
 # 命令大全
 
+## 有用的复制粘贴
+
+- `"+y`: 复制到系统剪贴板
+- `"+p`: 粘贴系统剪贴板内容
+- `"2p`: paste previous of last copy
+
+## 窗口
+
+- `:sp file`: 水平分割窗口
+- `:vp file`: 垂直分割窗口
+
+`C-w`系列
+
+- `<C-w> s`: 水平分割窗口
+- `<C-w> v`: 垂直分割窗口
+- `<C-w> q`: quit a window
+- `<C-w> - / +`: Decrease/Increase height
+- `<C-w> < / >`: Decrease/Increase width
+- `<C-w> j/k/h/l`: Move to window below/above/left/right
+
 ## 基础命令
 
 -   `ctrl+q` 可以联合复制，粘贴，替换用 行操作

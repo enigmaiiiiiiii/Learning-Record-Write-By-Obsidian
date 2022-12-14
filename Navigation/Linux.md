@@ -20,27 +20,31 @@
 
 [实用命令](Linux_Practical_Command.md)
 
-[软件安装](Linux_Software_Install.md)
+[App install](Linux_Software_Install.md)
 
-[下载](Linux_DownLoad_Command.md)
+[Download](Linux_DownLoad_Command.md)
 
-[账户管理](Linux_Account_Command.md)
+[Account Management](Linux_Account_Command.md)
 
-[文件管理](Linux_File_Manage.md)
+[File Management](Linux_File_Manage.md)
 
 [压缩备份](Linux_File_Back_Command.md)
 
-[系统](Linux_System_Command.md)
+[System Command](Linux_System_Command.md)
 
-[bash内置](Linux_Bash_BuiltIn_Command.md)
+[Internel Bash](Linux_Bash_BuiltIn_Command.md)
 
-[网络](Linux_Network_Command.md)
+[Network](Linux_Network_Command.md)
 
-[进程](Linux_Process_Command.md)
+[Process](Linux_Process_Command.md)
 
-## Linux III
+## Linux Shell
 
-[设置系统环境](Linux_System_Environment.md)
+[Shell](Linux_Shell.md)
+
+[execute shell script](Linux_Execute_Shell_Script.md)
+
+[environment variable](Linux_System_Environment.md)
 
 [Shell编程](Linux_Shell_Programming.md)
 

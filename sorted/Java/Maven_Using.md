@@ -7,7 +7,6 @@
   - [Package Maven project](#package-maven-project)
   - [添加到maven仓库](#添加到maven仓库)
 
-
 ## 创建一个项目
 
 ```bash

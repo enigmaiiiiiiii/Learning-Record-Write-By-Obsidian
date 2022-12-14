@@ -2,7 +2,7 @@
 
 > god of editor
 
-[命令集](Vim_CommandSet.md)
+[Command Set](Vim_CommandSet.md)
 
 [Vim编辑模式](Vim_Edit_Mode.md)
 

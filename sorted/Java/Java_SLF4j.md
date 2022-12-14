@@ -2,7 +2,7 @@
 
 ## spring中使用SLF4j日志
 
-- 添加Lombok依赖
+- 添加[Lombok](Lombok.md)依赖
 - 在任何类上添加`@Slf4j`注解
 - 使用`log.info("log info")`, `log.debug("log info")`等方法
 

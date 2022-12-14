@@ -10,6 +10,8 @@
 
 [node]
 
+oh-my-posh
+
 zsh
 
 [java](Java.md)

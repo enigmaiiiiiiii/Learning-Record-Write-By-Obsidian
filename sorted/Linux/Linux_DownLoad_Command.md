@@ -21,6 +21,8 @@ curl -O [url]
 curl -o [filename] [url]
 ```
 
+### handle url redirect
+
 下载文件时, 若url被重定向, 即[响应状态码为302](/sorted/Network/Http_Response_Message.md#状态行), 返回内容不是想要的
 
 - 可以先使用`-I`选项, 查看返回的头信息
@@ -47,3 +49,12 @@ location: https://someurl
 ```bash
 curl -L [url]
 ```
+
+### download file with authentication
+
+- 使用`-u`选项, 指定用户名和密码
+
+```bash
+curl -u username:password https://someurl
+```
+

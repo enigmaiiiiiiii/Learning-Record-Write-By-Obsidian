@@ -2,6 +2,21 @@
 
 - 简化POJO类的开发, 添加注解，编译期自动生成getter/setter/toString/equals/hashCode等方法
 
+## maven dependency
+
+```xml
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.20</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+## annotation
+
+[lombok annotation](Lombok_Annotation.md)
+
 ## `@Data`
 
 - 注解在实体类上

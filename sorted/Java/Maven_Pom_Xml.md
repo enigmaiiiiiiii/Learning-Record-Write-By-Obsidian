@@ -1,5 +1,18 @@
 # pom.xml
 
+- [pom.xml](#pomxml)
+  - [Introduction](#introduction)
+  - [properties](#properties)
+  - [dependencies元素](#dependencies元素)
+  - [version元素](#version元素)
+  - [build元素](#build元素)
+    - [build元素的子元素](#build元素的子元素)
+  - [packaging元素](#packaging元素)
+  - [dependencyManagement元素](#dependencymanagement元素)
+
+
+## Introduction
+
 - Project Object Model: 项目对象模型
 - 代表了一个maven项目, 包含了一个maven项目的所有信息
 
