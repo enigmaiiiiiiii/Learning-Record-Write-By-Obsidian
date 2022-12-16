@@ -7,20 +7,22 @@
 ## 默认导出
 
 - 一个模块中只能有一个默认导出
-- 导入时可以使用任意名称
 
-```javascript
+```js
 export default function() { ... }
 ```
+
+- 导入时可以使用任意名称
 
 ## 命名导出
 
 - 一个模块可以用多个命名导出
-- 导入时必须使用导出的名称
 
 ```js
 export {myfunction, myVariable}
 ```
+
+- 导入时必须使用导出的名称
 
 ## 重导出/聚合导出
 
@@ -74,7 +76,6 @@ export default function () { /* … */ }
 export default class { /* … */ }
 export default function* () { /* … */ }
 ```
-
 
 ```javascript
 // Aggregating modules

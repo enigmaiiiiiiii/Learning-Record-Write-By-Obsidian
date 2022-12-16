@@ -1,6 +1,6 @@
 # import
 
-```javascript
+```js
 import default_name from 'module_path'
 ```
 
@@ -11,14 +11,14 @@ import default_name from 'module_path'
 
 ## 默认导入
 
-```javascript
+```js
 import myDefault from '/modules/my-module.js';
 ```
 
 - 导入`/modules/my-module.js`的[default]
 - myDefault可以是what you like
 
-```javascript
+```js
 import myDefault, * as MyModule from 'modules/my-module.js'
 ```
 
@@ -28,7 +28,7 @@ import myDefault, * as MyModule from 'modules/my-module.js'
 
 - 可以有效避免命名冲突
 
-```javascript
+```js
 import * as MyModule from '/modules/my-module.js'
 
 myModule.doThings()
@@ -46,7 +46,7 @@ myModule.doThings()
 
 ## 语法
 
-```javascript
+```js
 import defaultExport from "module-name";
 import * as name from "module-name";
 import { export1 } from "module-name";
@@ -69,7 +69,7 @@ import "module-name";
 
 ## 动态加载模块
 
-```javascript
+```js
 import('/modules/myModule.js')
   .then(Module)=> {
     // do something with module

@@ -1,12 +1,14 @@
-# type
+# Foundation
 
-## Primitive Types
+## type
+
+Primitive Types
 
 - string
 - number
 - boolean
 
-## Arrays
+Arrays
 
 > [1, 2, 3]
 

@@ -52,9 +52,9 @@
 
 [Vue.js](/sorted/javascript/Vue.md)
 
-[React.js](/sorted/javascript/React.md)
+[React.js](React.md)
 
-[eslint](/sorted/javascript/Eslint.md)
+[eslint](Eslint.md)
 
 [qs.js](/sorted/javascript/NodeJs_Qs.md): json对象 to url query string
 
