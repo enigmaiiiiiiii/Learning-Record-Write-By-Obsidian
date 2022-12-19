@@ -1,5 +1,7 @@
 # NextJs
 
+## server-side rendering
+
 ## Directive
 
 `"use client"`

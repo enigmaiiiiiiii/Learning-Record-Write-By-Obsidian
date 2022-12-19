@@ -22,11 +22,13 @@
 
 [上下文](JavaScript_Context.md)
 
-[ECMAScript正则](ECMAScript_Regex.md)
-
 [模块管理](JavaScript_Module.md)
 
 [生成器](JavaScript_Iteration.md)
+
+[异步](JavaScript_Async.md)
+
+[ECMAScript正则](ECMAScript_Regex.md)
 
 ## II Web API
 

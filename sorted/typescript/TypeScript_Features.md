@@ -27,22 +27,12 @@
 
 ## namespace
 
-- 避免命名冲突
+[namespace](TypeScript_Namespace.md)
 
-```ts
-namespace MyMath {
-  export const PI = 3.14;
-  export function calculateCircumference(diameter: number) {
-    return diameter * PI;
-  }
-  export class Rectangle {
-    constructor(public width: number, public length: number) {}
-    calcSize() {
-      return this.width * this.length;
-    }
-  }
-}
-```
+
+## module
+
+[Module](TypeScript_Module.md)
 
 ## mark variable, parameter, properties
 

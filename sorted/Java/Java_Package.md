@@ -1,4 +1,4 @@
-# Package: 包
+# Package
 
 - 表示一个目录, subpackages表示子目录
 - 使用包将java类组织起来，主要原因是确保类名称的唯一性

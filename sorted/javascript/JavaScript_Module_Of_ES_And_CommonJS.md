@@ -1,6 +1,6 @@
 # difference And Common Between CommonJS And ES6
 
-## 区别
+## difference
 
 - CommonJS模块输出的是值的拷贝，ES6输出值的引用
 - CommonJS导出单个值，ES6导出多个值
@@ -18,7 +18,7 @@
 - CommonJS不允许加载ES6模块, ES6可以加载CommonJS模块
 - ES不支持以文件夹作为模块加载
 
-## 相同特性
+## same
 
 - 模块代码只在加载后执行
 - 模块只能加载一次
@@ -27,7 +27,7 @@
 - 模块可以请求加载其他模块
 - 支持循环依赖
 
-## EC6新增特性
+## ES6 addition features
 
 - 默认严格模式下执行
 - 不共享全局命名空间

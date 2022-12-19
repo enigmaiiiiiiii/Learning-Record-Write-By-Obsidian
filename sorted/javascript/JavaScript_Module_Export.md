@@ -77,11 +77,21 @@ export default class { /* … */ }
 export default function* () { /* … */ }
 ```
 
-```javascript
+聚合模块: 将多个模块聚合到一个模块中
+
+- export moduleA with file scope
+- export moduleB with nameb, 在其它模块中使用 `agg.nameb` 访问
+- export moduleC
+- export moduleD
+- export moduleE
+
+agg.js
+
+```js
 // Aggregating modules
-export * from "module-name";
-export * as name1 from "module-name";
-export { name1, /* …, */ nameN } from "module-name";
-export { import1 as name1, import2 as name2, /* …, */ nameN } from "module-name";
-export { default, /* …, */ } from "module-name";
+export * from "moduleA";
+export * as nameb from "moduleB";
+export { name1, /* …, */ nameN } from "moduleC";
+export { import1 as named, import2 as named2, /* …, */ nameN } from "moduleD";
+export { default, /* …, */ } from "moduleE";
 ```
