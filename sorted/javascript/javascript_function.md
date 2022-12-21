@@ -8,7 +8,7 @@
 [参数对象](#参数对象)
 [函数表达式](#函数表达式)
 [函数的属性和方法](#函数的属性和方法)
-[箭头函数](#箭头函数)
+[箭头函数](#arrow-function)
 [函数执行过程](#函数执行过程)
 
 ## 定义函数
@@ -31,7 +31,7 @@
 
 [函数属性和方法](javascript_function_property_and_method.md)
 
-## 箭头函数
+## Arrow Function
 
 [箭头函数](JavaScript_Arrow_Function_Expressions.md)
 

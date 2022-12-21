@@ -1,6 +1,12 @@
-# 在命令行使用node
+# Command node
 
-## 命令行参数
+## run a .js script
+
+```bash
+node main.js
+```
+
+## 参数
 
 main.js
 
@@ -13,7 +19,7 @@ process.argv.forEach((val, index)=>{
 命令行输入
 
 ```shell
-node main.js joe 
+node main.js joe
 ```
 
 ```

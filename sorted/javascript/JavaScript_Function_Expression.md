@@ -2,7 +2,7 @@
 
 ## 定义函数表达式
 
-- 对于函数声明: `function func_name(){...}`, 函数名func_name就是函数表达式
+- 对于函数声明: `function func_name(){...}`, 函数名`func_name`就是函数表达式
 - 使用匿名函数定义函数表达式: `let func_name = function(){...}`
 
 ```js
@@ -11,6 +11,11 @@ const square = function(number) {
 }
 var x = square(4);
 ```
+
+## 匿名函数表达式
+
+[arrow function](JavaScript_Function.md#arrow-function)
+
 ## 函数表达式可以作为参数传递
 
 ```js

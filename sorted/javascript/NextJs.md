@@ -1,6 +1,32 @@
 # NextJs
 
-## server-side rendering
+## introduction
+
+- Next.js is a framework for building server-rendered React applications
+
+## features
+
+- 路由系统
+- Pre-redering, SSG and SSR
+- 自动代码分割, faster page loads
+- 优化预抓取的客户端路由
+- fast refresh development environment
+- API routes to build API endpoints with Serverless Functions
+- Fully extendable
+
+## create NextJs app
+
+```bash
+npx create-next-app
+```
+
+## file system routing
+
+[file system routing](NextJs_File_System_Routing.md)
+
+## API
+
+[API](NextJs_API.md)
 
 ## Directive
 
@@ -13,7 +39,7 @@
 
 [Rendering](NextJs_Rendering.md)
 
-## first refresh
+## fast refresh
 
 **Limitation**
 

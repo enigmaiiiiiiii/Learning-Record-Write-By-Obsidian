@@ -10,7 +10,6 @@
 
 [相同和不同](JavaScript_Module_Of_ES_And_CommonJS.md)
 
-
 ## html页面中引入module
 
 设置script标签type属性为`type="module"`

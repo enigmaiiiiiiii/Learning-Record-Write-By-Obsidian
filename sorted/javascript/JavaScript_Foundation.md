@@ -6,7 +6,7 @@
 
 [全局对象](JavaScript_Global_Object.md)
 
-[变量](/sorted/javascript/javascript_variable.md)
+[变量](javascript_variable.md)
 
 [运算符](/sorted/javascript/JavaScript_Operator.md)
 

@@ -1,5 +1,17 @@
 # import
 
+- [import](#import)
+  - [abstract](#abstract)
+  - [默认导入](#默认导入)
+  - [命名空间导入](#命名空间导入)
+  - [导入多个接口](#导入多个接口)
+  - [导入带别名接口](#导入带别名接口)
+  - [语法](#语法)
+  - [动态加载模块](#动态加载模块)
+
+
+## abstract
+
 ```js
 import default_name from 'module_path'
 ```

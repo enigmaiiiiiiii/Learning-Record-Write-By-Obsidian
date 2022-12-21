@@ -47,9 +47,9 @@
 
 - `.mjs`扩展名文件
 - `.js`扩展名文件最近的父级[package.json](NodeJs_Package_Json.md)的type字段为`"type": "module"`
-- 命令行参数传入`--input-type=module`
+- 将命令字符串当做module, 使用`node --input-type=module -eval "..."`
 
-```shell
+```sh
 node --input-type=module --eval "import {sep} from 'node:path'; console.log(sep);"
 ```
 

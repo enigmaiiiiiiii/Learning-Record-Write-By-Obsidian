@@ -7,6 +7,7 @@ converts the your code to user interface
 - 将组件划分为server and client的好处
   - server component 使开发者充分利用服务器的基础设施
 
+
 ## client side
 
 - client side 的功能: **send request** to server

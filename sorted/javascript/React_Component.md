@@ -11,6 +11,7 @@
   - [instance properties](#instance-properties)
   - [lifecycle](#lifecycle)
   - [handling events](#handling-events)
+  - [effect](#effect)
 
 
 ## they are components
@@ -231,3 +232,7 @@ const element = (
     <button>send</button>
 </form>
 ```
+
+## effect
+
+

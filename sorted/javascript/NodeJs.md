@@ -7,7 +7,7 @@
 
 ## get start
 
-[开始使用NodeJs](NodeJs_Using.md)
+[Use NodeJs](NodeJs_Using.md)
 
 ## NodeJs Module
 

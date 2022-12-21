@@ -38,7 +38,7 @@
 
 [内置对象](JavaScript_Built_In_Object.md)
 
-[服务器数据](../sorted/javascript/JavaScript_Server_API.md)
+[Fetch API](../sorted/javascript/JavaScript_Server_API.md)
 
 [Canvas]
 

@@ -4,8 +4,27 @@
 
 - `let array = [1, 2, 3, 4, 5]`
 
-方法
+## 属性
 
-- `.length`
-- `push()`, 数组末尾添加元素, 返回数组长度
-- `pop()`, 删除数组最后一个元素, 返回已删除元素
+## 方法
+
+`.length`
+
+`push()`
+
+- 数组末尾添加元素, 返回数组长度
+
+`pop()`
+
+- 删除数组最后一个元素, 返回已删除元素
+
+`map(callbackfn)`
+
+- 对数组中的每个元素调用`callbackfn`函数
+- 返回值: **新数组**
+- callbackfn自动传入三个参数: `element, index, array`
+- type of callbackfn: `(element, index, array) => {}`
+  - element: 数组中的元素
+  - index: 元素在数组中的索引
+  - array: 数组本身
+

@@ -8,9 +8,11 @@
 
 [nodejs安装](NodeJs_Install.md)
 
-## 命令行程序
+## node Command
 
 [node command](NodeJs_Command_Node.md)
 
-## npm
+## npm Command
+
+[npm command](NodeJs_Npm.md)
 

@@ -11,8 +11,6 @@ when to use Refs?
 
 ## create Refs
 
-- `React.createRef()` create a ref
-- use ref attribute attached to React element
 
 ```js
 class MyComponent extends React.Component {
@@ -20,6 +18,12 @@ class MyComponent extends React.Component {
         super(props);
         this.myRef = React.createRef();
     }
+    render() {
+        // attach the ref to a React element
+        return <div ref={this.myRef} />;
+    }
 }
 ```
 
+- `React.createRef()` create a ref
+- use `<component ref="{this.myRef}">`:attribute attached the `ref` to React element

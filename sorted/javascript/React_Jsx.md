@@ -59,7 +59,6 @@ there are two key point in previous code:
 - 可以用来设置style
 - 或传递一个[Object](JavaScript_Object.md)
 
-
 ## jsx语句是一个表达式
 
 - 这表示jsx语句可以在if语句和for语句中使用

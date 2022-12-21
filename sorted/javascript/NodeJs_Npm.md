@@ -2,7 +2,7 @@
 
 - Node.js的包管理工具
 
-npm可以用来
+## npm可以用来
 
 - 调整应用程序代码包 
 - 下载立即使用的独立工具
@@ -30,11 +30,10 @@ npm可以用来
 - `key=value`格式组成的文件
 - 环境变量用`${VARIABLE_NAME}`表示
 
-## 开始使用npm
+## Use npm
 
 [使用](Npm_Using.md)
 
-## npm exec
 
 ## npm init
 
@@ -42,7 +41,7 @@ npm可以用来
 
 - 语法: `npm init <initializer>`
   - `initializer`: 是npm package, 创建或更新package
-  - 如果`initializer`被忽略, 则通过命令行询问的方式生成package.json
+  - 如果`initializer`被忽略, 则通过命令行询问的方式生成[package.json](NodeJs_Package_Json.md)
 
 `npm init` 转换为对应 `npm exec`
 
@@ -69,10 +68,18 @@ npm init -w packages/a
   - package-lock.json
   - yarn.lock
 
-选项
+选项:
 
-- `--save-dev`: 将包添加到`devDependencies`中
+`--save-dev`:
+
+- 将包添加到`devDependencies`中
+- 开发工具的依赖, 如语法检查
+
+## npm run
+
 
 ## npm package
 
 [npm包](NodeJs_Npm_Package.md)
+
+## npm exec
