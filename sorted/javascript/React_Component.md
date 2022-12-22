@@ -3,26 +3,25 @@
 - [Components](#components)
   - [they are components](#they-are-components)
   - [this is not a component](#this-is-not-a-component)
-  - [Passing Props](#passing-props)
+  - [Props](#props)
+  - [State](#state)
   - [use a component](#use-a-component)
   - [Component Compose of other Component](#component-compose-of-other-component)
   - [keep component pure](#keep-component-pure)
   - [class properties](#class-properties)
-  - [instance properties](#instance-properties)
   - [lifecycle](#lifecycle)
   - [handling events](#handling-events)
   - [effect](#effect)
 
-
 ## they are components
 
-- component is a [javascript function](JavaScript_Function.md)
+-   component is a [javascript function](JavaScript_Function.md)
 
-> component 有class的形式, 但是class本质上还是一个function
+> component 有 class 的形式, 但是 class 本质上还是一个 function
 
-function component
+**function component**
 
-- `props` are read-only, function body must not change `props`
+-   `props` are read-only, function body must not change `props`
 
 ```jsx
 function Welecom(props) {
@@ -30,7 +29,7 @@ function Welecom(props) {
 }
 ```
 
-class component
+**class component**
 
 ```jsx
 class Welcom extends React.Component {
@@ -49,43 +48,23 @@ const element = <h1>Hello, world!</h1>;
 export default element; // this is not a component
 ```
 
-## Passing Props
+## Props
 
-- props is argument of function
-- props is an Object
-- Object's **property** is the component's **attribute**
+[Props](React_Component_Props.md)
 
-```js
-function Welcome({name, age}) {
-    return <h1>Hello, {name}, {age}</h1>;
-}
-export default function paramedWelcome() {
-    return <Welcome name="Sara" age="18" />;
-}
-```
+- as component attribute
+- use nest Children Component or HTML tag inside a **JSX tag**
 
-`<Welcome name="Sara" age="18">` 等价于 `{Welcome({name: "Sara", age: "18")} `
+## State
 
-使用 props 传播语法, 将父组件参数传递给子组件, 可以简化代码
+[State](React_Component_State.md)
 
-```jsx
-funciton Welcome(props) {
-    return <h1>Hello, {props.name}, {props.age}</h1>;
-}
-export default function paramedWelcome(props) {
-    return (
-        <div>
-            <Welcome {...props} />;
-        </div>
-}
-```
-
-- `<Welcome {...props}>` is the spread syntax
+- a data can be changed
 
 ## use a component
 
-- lowercase tag name: html tag, `<section>, <div>`
-- 区别于html标签, react组件规定start with capital, like `<Welcome />`
+-   lowercase tag name: html tag, `<section>, <div>`
+-   区别于 html 标签, react 组件规定 start with capital, like `<Welcome />`
 
 ```js
 function Welcome(props) {
@@ -109,20 +88,20 @@ component-a.jsx
 ```jsx
 const componentA = () => {
     return <h1>Hello, world!</h1>;
-}
+};
 ```
 
 component-b.jsx
 
 ```jsx
-import A from './component-a.jsx';
+import A from "./component-a.jsx";
 
 function B() {
-    return (
-        <div>
-            <A />
-        </div>
-    );
+  return (
+    <div>
+      <A />
+    </div>
+  );
 }
 ```
 
@@ -132,41 +111,25 @@ pure function
 
 ```js
 function sum(a, b) {
-    return a + b;
+  return a + b;
 }
 ```
 
 impure function
 
-- change its input
+-   change its input
 
 ```js
 function withdraw(account, amount) {
-    account.total -= amount;
+  account.total -= amount;
 }
 ```
 
 ## class properties
 
-- defaultProps
-- displayName
+-   defaultProps
+-   displayName
 
-## instance properties
-
-- props
-- state
-
-props
-
-- [ ] to do
-
-state
-
-- contains data specific **to this component** that may **change over time**
-- what value don't need put in state?
-    - used fro rendering
-    - data flow(like a timer ID)
-- use `setState()` to update state
 
 ## lifecycle
 
@@ -175,19 +138,15 @@ state
 ## handling events
 
 ```jsx
-function Button({handleClick}) {
-  return (
-    <button onClick={handleClick}>
-      Click me
-    </button>
-  );
+function Button({ handleClick }) {
+    return <button onClick={handleClick}>Click me</button>;
 }
 export default function Toolbar() {
     return (
         <div>
-            <Button handleClick={() => alert('clicked')} />
+            <Button handleClick={() => alert("clicked")} />
         </div>
-    )
+    );
 }
 ```
 
@@ -197,42 +156,40 @@ event propagation(事件传播)
 
 ```js
 const element = (
-    <div className="Toolbar" onClick={()=>alert("from children")}>
-        <Button onClick={()=>alert("click button")}>
-            click me
-        </Button>
+    <div className="Toolbar" onClick={() => alert("from children")}>
+        <Button onClick={() => alert("click button")}>click me</Button>
     </div>
-)
+);
 ```
 
 阻止事件传播, 使用 `e.stopPropagation()`
 
 ```js
-<Button 
-    onClick={ e => {
+<Button
+    onClick={(e) => {
         e.stopPropagation();
         onClick();
-}}>
+    }}
+>
     click me
 </Button>
 ```
 
 阻止默认事件, 使用 `e.preventDefault()`
 
-- 以form为例, 默认事件是提交表单, 页面刷新
-- 使用 `e.preventDefault()`, 阻止页面刷新
+-   以 form 为例, 默认事件是提交表单, 页面刷新
+-   使用 `e.preventDefault()`, 阻止页面刷新
 
 ```js
 <form
-    onClick={e => {
+    onClick={(e) => {
         e.preventDefault();
         onClick();
-}}>
-    <input/>
+    }}
+>
+    <input />
     <button>send</button>
 </form>
 ```
 
 ## effect
-
-

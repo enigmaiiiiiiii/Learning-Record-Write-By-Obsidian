@@ -28,7 +28,6 @@
 
 ## III
 
-[CSR And SSR](React_CSR_And_SSR.md)
 
 [NextJs](NextJs.md)
 

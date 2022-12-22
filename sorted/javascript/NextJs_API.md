@@ -37,3 +37,18 @@ export default function MyApp({Component, pageProps}) {
   - `lazyOnload`: load the script after the page is interactive and the user is idle
   - `worker`: load the script as a web worker
 
+## next/image
+
+1. 必要属性
+
+src
+
+width
+
+height
+
+2. 可选属性
+
+priority
+
+- true: high priority, and lazy loading is automatically disabled
