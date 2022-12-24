@@ -11,8 +11,6 @@ Map<String, Object> claims = new HashMap<>();
 claims.put("object_key", object);  // object可以是任意类型
 ```
 
-
-
 ```java
 String jwt = Jwts.builder()
     .setHeaderParam("alg", "HS256")
@@ -31,7 +29,6 @@ String jwt = Jwts.builder()
 
 ## 解析jwt
 
-
 ```java
 Claims claims = Jwts.parser()
     .setSigningKey(secret)
@@ -43,3 +40,7 @@ Claims claims = Jwts.parser()
 - `Jws<Claims> parseClaimsJws(String jwt)`: 解析字符串
   - 参数jwt: 被解析的字符串
   - 返回`Jws<Claims>`
+
+Claims对象
+
+- `get(String key)`: 获取payload中的数据

@@ -1,6 +1,6 @@
 # file system routing
 
-## routes
+## what can be routes
 
 [Routes](NextJs_Routes.md)
 

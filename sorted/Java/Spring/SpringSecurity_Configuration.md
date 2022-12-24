@@ -39,8 +39,9 @@ protected void configure(final AuthenticationManagerBuilder auth) throws Excepti
 }
 ```
 
-- 设置密码编码器passwordEncoder 
-  - 将密码编码器配置为Spring的[组件](Spring_Component.md)  
+设置密码编码器passwordEncoder 
+
+- 将密码编码器配置为Spring的[组件](Spring_Component.md)
 
 ```java
 @Configuration
@@ -53,7 +54,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 }
 ```
 
-## http安全配置: HttpSecurity 
+## http安全配置: HttpSecurity
 
 [HttpSecurity](SpringBoot_SpringSecurity_Configuration_HttpSecurity.md)
 

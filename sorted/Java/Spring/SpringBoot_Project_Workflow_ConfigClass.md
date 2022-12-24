@@ -1,4 +1,4 @@
-# 配置类
+# package of 配置类
 
 - 配置类的package
 - 类上均添加`@Configuration`, 表示为配置类
@@ -8,6 +8,8 @@
   - WebMvcConfiguration.java
 
 ## MybatisConfiguration.java
+
+- 设置Mybatis接口所在的package
 
 ```java
 @Configuration
@@ -49,8 +51,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
 - 继承`WebSecurityConfigurerAdapter`
 - 初始化Spring组件
-  - [AuthenticationManager](): 认证管理器
-  - [PasswordEncoder](): 密码编码器
+  - [AuthenticationManager](SpringSecurity_AuthenticationManager_Interface.md): 认证管理器
+  - [PasswordEncoder](SpringSecurity_PasswordEncoder.md): 密码编码器
 - 重写`configure(HttpSecurity http)`
 
 ```java
@@ -103,8 +105,11 @@ protected void configure(HttpSecurity http) throws Exception {
     // 关闭csrf
     http.csrf().disable();  
 
-    // 添加token过滤器
+    // 添加token过滤器, 在UsernamePasswordAuthenticationFilter之前
     http.addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);
+
+    // 允许跨域
+    http.cors();
 }
 ```
 
@@ -112,7 +117,7 @@ protected void configure(HttpSecurity http) throws Exception {
 
 ## ScheduleConfiguration.java
 
-- 使用`@EnableScheduling`注解配置类来启用定时任务 
+- 使用`@EnableScheduling`注解配置类来**启用定时任务**
 
 > 不需要其它添加其它方法
 

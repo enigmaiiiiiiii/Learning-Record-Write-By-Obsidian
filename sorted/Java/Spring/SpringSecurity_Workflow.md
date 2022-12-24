@@ -13,9 +13,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 UserDetailServiceImpl.java
 
-```java
-```
-
 ## 捕获异常
 
 ## 单点登录

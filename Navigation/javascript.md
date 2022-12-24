@@ -6,7 +6,7 @@
 
 [术语](JavaScript_Terms.md)
 
-[语言基础](JavaScript_Foundation.md)
+[JS基础](JavaScript_Foundation.md)
 
 [面向对象](JavaScript_Object_Oriented.md)
 
@@ -18,8 +18,6 @@
 
 [作用域链](JavaScript_Scope_Chain.md)
 
-[操作符]
-
 [上下文](JavaScript_Context.md)
 
 [模块管理](JavaScript_Module.md)
@@ -28,9 +26,17 @@
 
 [异步](JavaScript_Async.md)
 
-[ECMAScript正则](ECMAScript_Regex.md)
+[ECMAScript Regex](ECMAScript_Regex.md)
 
-## II Web API
+## II
+
+[error](JavaScript_Error.md)
+
+[Worker](JavaScript_Worker.md)
+
+[event](JavaScript_Event.md)
+
+## III Web API
 
 [浏览器对象模型(BOM)](javascript_BOM.md)
 
@@ -48,7 +54,7 @@
 
 [AJAX](/sorted/javascript/JavaScript_AJAX.md)
 
-## III
+## IV 
 
 [node.js](NodeJs.md)
 
@@ -62,11 +68,13 @@
 
 [clsx](Node_Clsx.md)
 
-## IV: 构建工具
+## V: tool chain
 
 [webpack](/sorted/javascript/Webpack.md)
 
-## V
+## VI
+
+[Module And Code Bundling](JavaScript_Module_And_Code_Bundling.md)
 
 [Vue + Element 工作流程](/sorted/javascript/Vue_Element_UI_Workflow.md)
 

@@ -15,3 +15,5 @@
 [语句](/sorted/javascript/JavaScript_Statement.md)
 
 [Symbol类型](JavaScript_Symbol.md)
+
+[Spread Syntax](JavaScript_Spread_Syntax.md)

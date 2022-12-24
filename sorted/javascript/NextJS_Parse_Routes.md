@@ -91,7 +91,6 @@ export default function Page(props) {
 }
 ```
 
-
 ## router.prefetch
 
 - to make a faster transition

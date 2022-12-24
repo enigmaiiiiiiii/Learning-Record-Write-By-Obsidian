@@ -1,4 +1,4 @@
-# javascript中的面向对象
+# Javascript中的面向对象
 
 [对象](Javascript_Object.md)
 

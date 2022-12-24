@@ -12,6 +12,8 @@
 
 [Features](NextJS_Features.md)
 
+[Terminology](NextJS_Terminology.md)
+
 ## create NextJs app
 
 ```bash
@@ -29,6 +31,8 @@ npx create-next-app
 
 ## II
 
+[Route API](NextJS_Route_API.md)
+
 [Core Concepts](NextJS_Core_Concepts.md)
 
 ## Directive
@@ -42,21 +46,8 @@ npx create-next-app
 
 [Rendering](NextJs_Rendering.md)
 
-## fast refresh
+## Learn From Bug
 
-**Limitation**
+[LearnFromBug](NextJS_Learn_From_Bug.md)
 
-1. the file you're editing might have other exports in addition to a React component
 
-- that is to say, **file name** must be same as **component name**
-
-welcome.jsx
-
-```js
-const Welcome = () => {
-    return <h1>Welcome to Next.js!</h1>
-}
-export default welcome;
-```
-
-2. Anonymous arrow function like `export default () => <div>Hi</div>` is not supported

@@ -4,9 +4,13 @@
 - `&`数学环境下跳列符
 - `_`数学环境下的下标命令符
 - `$`数学环境命令符
-- 数学公式
-  $f(x)=a_nx^n+a_{n-1}$
-  
+
+---
+
+数学公式
+
+$f(x)=a_nx^n+a_{n-1}$
+
 $$
 z = \overbrace{
    \underbrace{x}_\text{real} + i
@@ -25,7 +29,7 @@ $$
 
 - 大括号
 
-$$ 
+$$
 f(x)=\left\{          % 表示大括号
 \begin{aligned}
 x & = & \cos(t) \\
@@ -34,8 +38,6 @@ z & = & \frac xy
 \end{aligned}
 \right.
 $$
-
-- 
 
 $$
 \begin{aligned}

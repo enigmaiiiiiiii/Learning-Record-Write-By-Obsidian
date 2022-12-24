@@ -3,13 +3,16 @@
 Next.js is a framework for building server-rendered React applications
 
 - [pre-rendering](#pre-rendering)
-- [SSG](#static-site-generationssg)
-- [SSR](#server-side-renderingssr)
-- [CSR](#client-side-renderingcsr)
+- [Static Site Generation(SSG)](#static-site-generationssg)
+- [Server-side Rendering(SSR)](#server-side-renderingssr)
+- [Client-side Rendering(CSR)](#client-side-renderingcsr)
+- [Data Fetching](#data-fetching)
+- [SEO](#seo)
+- [Fast Refresh](#fast-refresh)
 
 ## pre-rendering
 
-- NestJS pre-rendering a page, **instead** of rendering a page all by **client side javascript** 
+- NestJS pre-rendering a page, **instead** of rendering a page all by **client side javascript**
 
 > 而不是全部通过客户端javascript来渲染一个页面
 
@@ -24,21 +27,9 @@ two forms pre-rendering
 [Server-side Rendering(SSR)](#server-side-renderingssr)
 [Client-side Rendering(CSR)](#client-side-renderingcsr)
 
-
 ## Static Site Generation(SSG)
 
-- generated the **HTML** at **build time**
-- **reused** on each request
-- for `.js`, `.jsx`, `.ts`, `.tsx` files in `/pages` directory, assosiated with a route based on **file name**
-- can be cached by a **CDN** for performance
-
-static Generation with external data
-
-- `getStaticProps` function
-
-when use static Generation
-
-- a page can be pre-rendered ahead of a user's request
+[SSG](NextJS_Static_Generation.md)
 
 ## Server-side Rendering(SSR)
 
@@ -51,6 +42,33 @@ when use static Generation
 1. run a script on browser(client), called **client-side script**
 2. browser rendering client-side script to HTML and CSS
 
-## SEO
+## Data Fetching
+
+[getStaticProps()](NextJS_DataFetching_GetStaticProps.md)
+
+[getStaticPaths()](NextJS_DataFetching_GetStaticPaths.md)
+
+[getServerSideProps()](NextJS_DataFetching_GetServerSideProps.md)
+
+## SEO(搜索引擎优化)
 
 - Search engine optimization
+
+## Fast Refresh
+
+**Limitation**
+
+1. the file you're editing might have other exports in addition to a React component
+
+- that is to say, **file name** must be same as **component name**
+
+welcome.jsx
+
+```js
+const Welcome = () => {
+    return <h1>Welcome to Next.js!</h1>
+}
+export default welcome;
+```
+
+2. Anonymous arrow function like `export default () => <div>Hi</div>` is not supported
