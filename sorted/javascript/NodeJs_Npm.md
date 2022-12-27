@@ -4,7 +4,7 @@
 
 ## npm可以用来
 
-- 调整应用程序代码包 
+- 调整应用程序代码包
 - 下载立即使用的独立工具
 - 使用npx运行包而不下载
 - 将代码限制为特定开发人员
@@ -33,7 +33,6 @@
 ## Use npm
 
 [使用](Npm_Using.md)
-
 
 ## npm init
 
@@ -74,6 +73,12 @@ npm init -w packages/a
 
 - 将包添加到`devDependencies`中
 - 开发工具的依赖, 如语法检查
+
+`--no-save`:
+
+- prevent saving to `dependencies`
+- 不会添加到`package.json`
+
 
 ## npm run
 

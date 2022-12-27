@@ -1,11 +1,6 @@
 # 笔记
 
-> obsidian是一款双向连接笔记软件, 通过\[\[文件名\]\]来连接文件, 
-> 学习过程就是建立连接的过程
-
-局部关系效果图:
-![screenshot](Screenshot.png)
-
+- Build Connection in my mind
 
 ## 内容
 
@@ -15,15 +10,17 @@
 - [Java](/Navigation/Java.md)
 - [Computer NetWork](Navigation/NetWork.md)
 - [JavaScript](Navigation/JavaScript.md)
-- [机器学习](Navigation/机器学习.md)
-- IDE快捷键
-- git相关
-- html
-- 计算机基础
-- vim编辑器和编辑模式
+- [机器学习](/Navigation/机器学习.md)
 - MarkDown
+- git
+- html
+- css
+- javascript
+- typescript
+- computer foundation
+- vim
 
-## 文件夹说明
+## 目录
 
 - Navigation 索引
 - sorted 分类笔记

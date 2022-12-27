@@ -24,7 +24,7 @@ entity body
 - get将请求的数据附在url后
 - post将提交的数据放在报文主体(entity body)中
 
-## 请求头
+## 请求头字段
 
 > 其它命名消息头, 首部行
 

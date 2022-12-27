@@ -6,7 +6,6 @@ freeman105@gmail.com
 
 ## 设置代理
 
-
 ### linux
 
 - 代理服务器已知
@@ -25,3 +24,6 @@ export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:810
 
 [Goflyway](https://github.com/bannedbook/fanqiang/wiki/Goflyway%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
+## gofly
+
+[gofly](https://we.gofly.cyou/)

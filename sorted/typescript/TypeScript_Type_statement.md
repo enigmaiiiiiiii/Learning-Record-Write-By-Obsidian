@@ -41,12 +41,21 @@ type Bear = Animal & {
 }
 ```
 
-## use with generics
+## Use With Generics
 
 - 可以把`custom<T>`理解为函数, T是这个函数的参数
 
 ```ts
 type customType<T> = {
+    name: string;
+    data: T;
+}
+```
+
+默认参数类型, `T = string`
+
+```ts
+type customType<T = string> = {
     name: string;
     data: T;
 }
