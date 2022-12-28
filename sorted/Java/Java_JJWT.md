@@ -1,6 +1,6 @@
 # jjwt
 
-- [JWT](../Network/Http_Token.md#jwt)
+- java [JWT](../Network/Http_Token.md#jwt)
 
 ## 引入依赖
 
@@ -12,10 +12,13 @@
 </dependency>
 ```
 
+## signatures
+
+- signatures string is encoded by base64
+
 ## API
 
 [API](Java_JJWT_API.md)
-
 
 ## 异常
 

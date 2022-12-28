@@ -44,7 +44,7 @@
 
 [内置对象](JavaScript_Built_In_Object.md)
 
-[Fetch API](../sorted/javascript/JavaScript_Server_API.md)
+[Web API](../sorted/javascript/JavaScript_Server_API.md)
 
 [Canvas]
 

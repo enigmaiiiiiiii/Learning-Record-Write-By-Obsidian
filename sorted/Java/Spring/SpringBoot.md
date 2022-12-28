@@ -2,18 +2,10 @@
 
 - 整合了Spring、SpringMVC、Maven, MyBatis
 
-## 快速开始
-
 [Quick Start](SpringBoot_QuickStart.md)
 
-## SpringBoot Project
+[SpringBoot配置文件](SpringBoot_Configuration.md)
 
 [SpringBoot项目流程](SpringBoot_Project_Workflow.md)
-
-## 配置
-
-[SpringBoot配置](SpringBoot_Configuration.md)
-
-## 多模块项目
 
 [SpringBoot多模块项目](SpringBoot_Multi_Module.md)

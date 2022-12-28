@@ -1,6 +1,6 @@
 # vscode 设置
 
-我的setting.json
+setting.json
 
 ```json
 {
@@ -92,6 +92,4 @@
     },
     "editor.unicodeHighlight.ambiguousCharacters": false
 }
-
-
 ```

@@ -1,14 +1,25 @@
 # Fetch
 
-```javascript
-fetch('https://api.github.com/users/github')
-  .then(response => response.json())
-  .then(data => console.log(data));
-```
+- [Introduction](#introduction)
+- [take a look](#take-a-look)
+- [Syntax](#syntax)
+- [fetch()和jQuery.ajax()的区别](#fetch和jqueryajax的区别)
+- [response](#response)
+- [header](#header)
+- [fecth in node](#fecth-in-node)
 
 ## Introduction
 
 - 用于发起获取资源请求
+- 返回包含响应结果的[promise](JavaScript_Promise.md)对象
+
+## take a look
+
+```js
+fetch('https://api.github.com/users/github')
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
 
 ## Syntax
 
@@ -56,8 +67,9 @@ exception(异常)
 
 方法
 
-- `Response.json()`: 返回一个promise对象, 里面包含了响应的json数据
+- `Response.json()`: 读取Response()对象, 并设置为已读(只能堆区一次), 返回一个内容被解析为JSON的promise对象
 - `Response.formData()`: 返回一个promise对象, 里面包含了响应的FormData数据
+- `Response.text()`: 设置为已读, 返回一个解析为String类型的promise对象,
 
 ## header
 

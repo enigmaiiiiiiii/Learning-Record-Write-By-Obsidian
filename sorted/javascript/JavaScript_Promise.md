@@ -1,12 +1,11 @@
 # Promise对象
 
-- [Promise对象](#promise对象)
-  - [State of Promise](#state-of-promise)
-  - [Create Promise](#create-promise)
-  - [await a promise](#await-a-promise)
-  - [Promise Instance method](#promise-instance-method)
-  - [chained promise](#chained-promise)
-  - [Promise reject event](#promise-reject-event)
+- [State of Promise](#state-of-promise)
+- [Create Promise](#create-promise)
+- [await a promise](#await-a-promise)
+- [Promise Instance method](#promise-instance-method)
+- [chained promise](#chained-promise)
+- [Promise reject event](#promise-reject-event)
 
 ## State of Promise
 

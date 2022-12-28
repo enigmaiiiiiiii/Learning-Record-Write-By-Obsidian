@@ -1,10 +1,10 @@
 # 项目流程
 
-- [项目配置](#配置)
-- [配置类](#config-class)
+- [配置](#配置)
+- [Config Class](#config-class)
 - [mapper](#mapper)
 - [pojo目录](#pojo目录)
-- [controller目录](#controller目录)
+- [directory controller](#directory-controller)
 - [service](#service)
 - [src/resource](#srcresource)
 - [exception](#exception)
@@ -32,7 +32,7 @@
 
 [pojo类](SpringBoot_Project_Workflow_Pojo.md)
 
-## controller目录
+## directory controller
 
 [controller](SpringBoot_Project_Workflow_Controller.md)
 

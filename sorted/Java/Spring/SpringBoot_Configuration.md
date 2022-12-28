@@ -26,14 +26,14 @@
 ```yml
 spring:
   profiles:
-    active: env_name
+    active: profile_name
 ```
 
 ## application.properties
 
 - key=value格式的配置文件
 
-## 使用变量
+## 定义在配置文件中使用变量
 
 ```yml
 my:
@@ -41,4 +41,21 @@ my:
     addr: 192.168.213.131
 
 server: ${my.server.addr}:8080
+```
+
+## 定义在代码中使用的常量
+
+application.yml
+
+```yml
+myVariable: "hello world"
+```
+
+Demo.java
+
+```java
+public class Demo{
+  @Value("${myVariable}")
+  private String myVariable;
+}
 ```

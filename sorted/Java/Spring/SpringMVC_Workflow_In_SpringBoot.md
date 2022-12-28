@@ -21,11 +21,12 @@ spring.servlet.multipart.max-file-size=10MB
 ```
 2. 添加`@Controller`注解类, 并添加`@RequestMaping(String str)`注解的方法
 
-- 执行客户端指定的方法的方法
-  - \<form>标签的`action="/method"`属性
-  - \<a>标签`href="/method"`属性
-  - ajax请求url属性值
-- str参数: url请求中的路径 
+- 标注客户端请求的需要执行的方法
+  - url请求的路径
+  - `<form>`标签的`action="/method"`属性
+  - `<a>`标签`href="/method"`属性
+  - `ajax`请求url属性值
+- str参数: url请求中的路径
 
 > 比如: 客户端发送http://host/name?param1=value1&param2=value2请求后, 将执行`@RequestMapping("/name")`注解的方法
 

@@ -1,4 +1,10 @@
-# Vscode
+# vscode
+
+## my settings
+
+[setting](vscode_Settings.md)
+
+[keybindings](vscode_keybindings.md)
 
 ## 同时启动多个项目配置方式
 
@@ -19,7 +25,6 @@ crtl+shift+p -> Remote-SSH: Connect to Host
 如虚拟机地址为192.168.231.16， 用户名为tmp，密码为123456
 
 输入: ssh tmp@192.168.231.16 -A
-
 
 ## config proxy
 
