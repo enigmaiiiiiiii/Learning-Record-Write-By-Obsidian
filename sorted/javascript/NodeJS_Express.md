@@ -27,6 +27,8 @@ app.listen(port, () => {
 app.use(express.static('public'))
 ```
 
+so the file `/public/images/kitten.jpg` can be accessed by `http://localhost:3000/images/kitten.jpg`
+
 ## Express API
 
 [ExpressAPI](NodeJS_Express_API.md)

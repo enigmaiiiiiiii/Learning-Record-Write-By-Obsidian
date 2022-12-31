@@ -33,14 +33,11 @@ two forms pre-rendering
 
 ## Server-side Rendering(SSR)
 
-1. HTML generated on each request
-2. run a script on server, such script called **server-side script**
-3. rendering it to **static** HTML and CSS and send to browser(client).
+[SSR](NextJS_Server_Side_Rendering.md)
 
 ## Client-side Rendering(CSR)
 
-1. run a script on browser(client), called **client-side script**
-2. browser rendering client-side script to HTML and CSS
+[CSR](NextJS_Client_Side_Rendering.md)
 
 ## Data Fetching
 

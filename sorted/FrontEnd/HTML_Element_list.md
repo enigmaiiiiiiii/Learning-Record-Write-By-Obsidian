@@ -49,6 +49,15 @@ HTML5新增
   - script: javaScript代码定义于此
   - base: 没有意义
 
+## link
+
+
+integrity
+
+`<link href="style.css" integrity="hashvalue">`
+
+- 用于验证资源的完整性, 防止资源被篡改
+
 ## meta标签
 
 - name属性

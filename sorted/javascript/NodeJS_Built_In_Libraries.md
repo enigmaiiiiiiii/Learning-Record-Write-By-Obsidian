@@ -1,6 +1,6 @@
-# Node API
+# Node Built In Library
 
-- 不需要 to install
+- no need to `npm install <package>`
 
 ## fs
 
@@ -21,11 +21,6 @@ path.join()
 path.join('/foo', 'bar', 'baz/asdf', 'quux', '..')
 // '/foo/bar/baz/asdf/quux/..'
 ```
-
-## express
-
-[ExpressAPI](NodeJS_Express.md)
-
 ## Buffer
 
 - converting between buffer(binary code) and string
@@ -57,4 +52,5 @@ console.log(Buffer.from('hello world', 'utf8'));
   - hex
 - start: 开始位置, 默认为0
 - end: 结束位置, 默认为buffer.length
+
 

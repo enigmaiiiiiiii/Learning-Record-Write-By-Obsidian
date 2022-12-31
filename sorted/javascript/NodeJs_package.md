@@ -1,6 +1,6 @@
 # Package
 
-- 
+-
 
 ## CommonJS规范package应包含以下文件 
 

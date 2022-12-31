@@ -96,6 +96,8 @@ export default function Page(props) {
 - to make a faster transition
 - `router.prefetch(url, as, options)` is used to prefetch a page
 
+## router.isFallback
+
 ## URLObject
 
 

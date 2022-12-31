@@ -15,8 +15,8 @@
 - git
 - html
 - css
-- javascript
-- typescript
+- [JavaScript](JavaScript.md)
+- [TypeScript](TypeScript.md)
 - computer foundation
 - vim
 

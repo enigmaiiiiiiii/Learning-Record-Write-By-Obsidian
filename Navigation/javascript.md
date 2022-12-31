@@ -32,9 +32,11 @@
 
 [error](JavaScript_Error.md)
 
-[Worker](JavaScript_Worker.md)
+[worker](JavaScript_Worker.md)
 
 [event](JavaScript_Event.md)
+
+[websocket](JavaScript_WebSocket.md)
 
 ## III Web API
 
@@ -54,7 +56,7 @@
 
 [AJAX](/sorted/javascript/JavaScript_AJAX.md)
 
-## IV 
+## IV
 
 [node.js](NodeJs.md)
 
@@ -79,3 +81,7 @@
 [Vue + Element 工作流程](/sorted/javascript/Vue_Element_UI_Workflow.md)
 
 [Babel](/sorted/javascript/Babel.md)
+
+## VII
+
+[Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature

@@ -1,11 +1,24 @@
 # Cookie
 
-![cookie.svg](Cookie.svg)
+- [feature](#feature)
+- [工作原理](#工作原理)
+- [set cookie to client](#set-cookie-to-client)
+- [cookies in request](#cookies-in-request)
+- [cookies properties](#cookies-properties)
+- [access to cookies by bowser console](#access-to-cookies-by-bowser-console)
+- [security problim](#security-problim)
+- [会话cookie和持久cookie](#会话cookie和持久cookie)
+
+## feature
 
 - 保存在**客户端**中
 - 只保存字符串类型数据
 - 单个cookie大小限制为4KB
 - 每个**主机名**都有对应的cookie
+- **automatically** sent by browser to server
+- when cookie HttpOnly property is true, client-side javascript cannot access to cookie
+
+![cookie.svg](Cookie.svg)
 
 ## 工作原理
 
@@ -57,6 +70,8 @@ cookies: key1=value1; key2=value2; key3=value
 - Expires: Expiry date of cookie in [GMT]()
 - Secure: marked the cookies to be used with HTTPS only
 - HttpOnly
+  - true: cookie can only be accessed by the web server
+  - false: cookie can be accessed by client side script
 - SameSite
   - Strict:
   - Lax: default value

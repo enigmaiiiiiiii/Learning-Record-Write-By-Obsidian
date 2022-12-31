@@ -28,7 +28,7 @@ git remote add origin <REMOTE_URL>
 
 [GitHub个人令牌(Personal Access Token)](Github_Personal_Access_Token.md)
 
-## Contribute to Project 
+## Contribute to Project
 
 [personal team]
 

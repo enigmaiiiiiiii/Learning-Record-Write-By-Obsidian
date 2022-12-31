@@ -5,12 +5,11 @@
 ## 发送预检请求
 
 - 首部方法为`OPTIONS`
-- 有浏览器自动生成预检请求
-- 发送检查服务器是否支持CORS的http请求
-  - 一般包括以下几个头部字段
-    - Origin
-    - Access-Control-Request-Method
-    - Access-Control-Request-Headers
+- 由浏览器自动生成预检请求
+- 发送检查服务器是否支持CORS的http请求, 一般包括以下几个头部字段
+  - Origin
+  - Access-Control-Request-Method
+  - Access-Control-Request-Headers
 
 需要执行预检请求的代码
 
@@ -54,10 +53,11 @@ xhr.send('<person><name>Arun</name></person>');
 
 ## 如果服务器允许, 会响应这个预检请求
 
-- 一般包括以下几个头部字段
-  - Access-Control-Allow-Origin
-  - Access-Control-Allow-Methods
-  - Access-Control-Allow-Headers
-  - Access-Control-Max-Age: 在此时间内浏览器无需为同一请求再次发送预检请求
-  - Access-Control-Allow-Credentials
-  - Access-Control-Expose-Headers
+一般包括以下几个头部字段
+
+- Access-Control-Allow-Origin
+- Access-Control-Allow-Methods
+- Access-Control-Allow-Headers
+- Access-Control-Max-Age: 在此时间内浏览器无需为同一请求再次发送预检请求
+- Access-Control-Allow-Credentials
+- Access-Control-Expose-Headers

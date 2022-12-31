@@ -4,6 +4,6 @@
 - 浏览器要求使用**XMLHttpRequest**对象发起的跨域(port)HTTP请求，必须得到服务器的许可
 - 服务器标记除了自己的以外的其它origin(域, 协议， 端口)
 
-## 预检请求 
+## 预检请求
 
-[预检请求](Http_CORS_Preflighted_Requests.md)
+[预检请求](/sorted/Network/Http_CORS_Preflighted_Requests.md)

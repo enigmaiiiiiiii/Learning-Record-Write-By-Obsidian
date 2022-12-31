@@ -19,6 +19,9 @@
 ```bash
 npx create-next-app
 ```
+
+[project structure]
+
 ## I
 
 [file system routing](NextJs_File_System_Routing.md)
@@ -31,7 +34,7 @@ npx create-next-app
 
 ## II
 
-[Route API](NextJS_Route_API.md)
+[API Route](NextJS_API_Routes.md)
 
 [Core Concepts](NextJS_Core_Concepts.md)
 

@@ -1,14 +1,36 @@
 # git命令
 
-[git stash](#git-stash)
-[git merge](#git-merge)
-[git revert](#git-revert)
-[git reset](#git-reset)
-[git clean](#git-clean)
-[git checkout](#git-checkout)
-[git cherry-pick](#git-cherry-pick)
-[git add](#git-add)
-[git rebase](#git-rebase)
+- [git stash](#git-stash)
+- [git merge](#git-merge)
+- [git revert](#git-revert)
+- [git reset](#git-reset)
+- [git clean](#git-clean)
+- [git checkout](#git-checkout)
+- [git cherry-pick](#git-cherry-pick)
+- [git add](#git-add)
+- [git rebase](#git-rebase)
+
+## git restore
+
+- 恢复工作区的指定文件
+
+example
+
+- switch master
+- reverts the makefile to two versions back
+- delete hello.c by mistake
+- gets it back from [index]()
+
+```bash
+git switch -c master
+git restore --source master~2 Makefile
+rm -f hello.c
+git restore hello.c
+```
+
+## git status
+
+- 查看当前工作区的状态
 
 ## git stash
 

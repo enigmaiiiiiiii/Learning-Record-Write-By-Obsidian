@@ -4,17 +4,17 @@
 - [jwt结构](#jwt结构)
   - [header](#header)
   - [payload](#payload)
-  - [verify signature](#verify-signature)
+  - [signature](#signature)
 - [jwt编码](#jwt编码)
 - [用途](#用途)
-- [如何使用](#如何使用)
-
+- [how to use](#how-to-use)
 
 ## feature
 
 - JWT: JSON Web Token
 - 作用: 保障数据的来源**可靠**, 验证数据是否被篡改
-- 
+- header, payload可以被解析, 但是signature是加密的, 无法被解析
+- 所以保证数据来源可靠是通过signature来实现的
 - ~~生成的jwt与服务器是绑定的, 在**其它服务器**生成的jwt即使signature相同, 也是无效的~~
 
 ## jwt结构
@@ -71,6 +71,7 @@ SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ### signature
 
 - 用于验证token是否被篡改
+- **secret part of jwt**
 
 signature由 经过编码的header, payload, 以及一个secret 拼接而成
 
@@ -89,15 +90,18 @@ HMACSHA256(
 ## jwt编码
 
 
-## 用途
 
-- 授权: 用户每个请求都将包括jwt, 如单点登录
-- 信息交换: jwt可以被认为是一个JSON对象, 可以验证内容又没有被篡改
-
-## 如何使用
+## how to use
 
 1. 客户端向**授权服务器**发送身份验证请求, 身份验证成功时, 服务器返回一个jwt
-2. 客户端将jwt保存在[本地存储](../javascript/JavaScript_BOM.md#localStorage)中, 每次请求都将其添加到请求头中
+2. 客户端将jwt保存在[本地存储](../javascript/JavaScript_BOM.md#localStorage)或[cookie](Http_Cookie.md)中, 每次请求都将其添加到请求头中
 3. 用户想要访问受保护的资源时, 用户应发送带有Authorization字段的[请求头](./Http_Request_Message.md#请求头)
 
 > jwt不应该包含太多信息，有些服务器会限制请求头大小在8kb内, 确实需要包含太多信息时, 可以选用[替代方案]
+
+- combine jwt with httponly cookie can get extra security
+
+## Practical use
+
+- 授权: 用户每个请求都将包括jwt, 如单点登录
+- 信息交换: jwt可以被认为是一个JSON对象, 可以验证内容又没有被篡改

@@ -108,7 +108,7 @@ your app have a very large number of **static pages** that **depend on data**, a
 #### fallback page
 
 - page [props](NextJS_DataFetching_GetStaticProps.md) will be empty
-- [router](NextJS_Parse_Route.md) 可以检测需要是否渲染fallback page
+- [router.isFallback](NextJS_Parse_Routes.md#routerisfallback) 可以检测需要是否渲染fallback page
 
 ```js
 import { useRouter } from 'next/router'

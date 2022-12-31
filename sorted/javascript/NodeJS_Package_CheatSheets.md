@@ -37,3 +37,9 @@ let date = parseISO('2022-12-23')
 console.log(date);  // 2022-12-23T00:00:00.000Z
 console.log(format(date, 'yyyy-MM-dd'));  // 2022-12-23
 ```
+
+## Socket.IO
+
+```bash
+npm install socket.io
+```

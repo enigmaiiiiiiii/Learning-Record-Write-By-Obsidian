@@ -1,4 +1,4 @@
-# function getStaticProps()
+# Function getStaticProps()
 
 - 页面的静态数据
 - run during `next build`
@@ -7,8 +7,10 @@
 
 ```js
 export async function getStaticProps(context) {
+  const res = await fetch('https://.../posts');
+  const posts = await res.json();
   return {
-    props: { /* props for your component */ }
+    props: { props }
   }
 }
 export default function Welcome(props) {
@@ -32,3 +34,4 @@ dev and prod
 - In development `getStaticProps()` runs on every request
 - In production `getStaticProps()` runs at build time
 
+## 

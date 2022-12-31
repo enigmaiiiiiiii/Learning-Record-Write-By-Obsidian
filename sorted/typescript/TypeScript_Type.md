@@ -199,8 +199,13 @@ function padLeft(padding: number | string, input: string) {
 ## Keyof operator
 
 - takes an **object type** and produces a string or numeric literal union of its keys
-- key的含义是Object的属性, 也就是属性的类型, **不是属性值的类型**
-- object key 的类型只能是string或者number
+
+```ts
+type Point = { x: number; y: number };
+type P = keyof Point;  // P = "x" | "y"
+```
+
+- 如果一个类型包含[index signature](TypeScript_Interface.md#index-signatures), keyof 返回的是 `string` or `string | number`
 - 经常用于[mapped type](#mapped-types)
 
 ```ts
@@ -208,10 +213,12 @@ type A = keyof { [n: number]: unknown };  // A = number
 type M = keyof { [n: string]: unknown };  // M = string | number
 ```
 
+> M is string | number because JavaScript object keys are always coerced to strings, `obj[0]` sames as `obj["0"]`
+
 ## Mapped Type
 
 - build on [index signature](TypeScript_Interface.md#index-signatures)
-- 通过另一个type来生成一个新的type, 从而避免避免repeat
+- 通过另一个type来生成一个新的type, 从而避免repeat
 
 比如结合[keyof operator](#keyof-operator)来生成一个新类型, 可以用少量的代码来**修改一个类型的所有属性值的类型**
 

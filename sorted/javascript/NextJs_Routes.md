@@ -14,11 +14,21 @@
 
 > 使用`[]`语法
 
-- `pages/blog/[slug].js` $\rightarrow$ `/blog/:slug`
-- `pages/[username]/setting.js` $\rightarrow$ `/:username/setting`
-- `pages/post/[...all].js ` $\rightarrow$ `/post/*`
+`pages/blog/[id].js`
 
-react component `./components/[id].js`
+- route `/blog/1`, `/blog/2`, ..., will be matched
+
+`pages/[username]/setting.js`
+
+- `/abc/setting`
+
+`pages/post/[...all].js `
+
+- route like `/post/a/b/c` will be matched
+
+***
+
+there is a react component in `./components/[id].js`
 
 ```js
 export function getStaticPaths() {
@@ -32,16 +42,16 @@ export function getStaticPaths() {
 }
 ```
 
-`./index.js`
+link to `/components/1`, `/components/2`, `/components/3` in `./index.js`
 
 ```js
 import {Link} from 'next/link'
 export default function Home() {
   return (
     <>
-      <Link href="/components/1">route</Link><br/>
-      <Link href="/components/1">route</Link><br/>
-      <Link href="/components/1">route</Link><br/>
+      <Link href="/components/1">Link 1</Link><br/>
+      <Link href="/components/2">Link 2</Link><br/>
+      <Link href="/components/3">Link 3</Link><br/>
     </>
   )
 }
