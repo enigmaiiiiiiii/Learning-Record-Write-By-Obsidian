@@ -1,13 +1,14 @@
-## 使用场景
-  
-1. 复用socket 
+# 使用场景
+
+1. 复用socket
+
 > 如果在已经处于 ESTABLISHED状态下的socket(一般由端口号和标志符区分）调用close(socket)（一般不会立即关闭, 会经历[TIME_WAIT](TCP状态转移.md)的过程）后想继续重用该socket：
- 
- ```c
- int reuse = 1;
- setsockopt(s, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(int));
- ```
- 
+
+```c
+int reuse = 1;
+setsockopt(s, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(int));
+```
+
 2. 如果要已经处于连接状态的soket在调用close(socket)后强制关闭，不经历TIME_WAIT的过程：
 
 ```c
@@ -26,9 +27,10 @@ setsockopt(socket，SOL_S0CKET, SO_RCVTIMEO，(char *)&nNetTimeout,sizeof(int));
 ```
 
 4. 设置socket缓冲区
- >. 在send()的时候，返回的是实际发送出去的字节(同步)或发送到socket缓冲区的字节(异步),系统默认的状态发送和接收一次为8688字节(约为8.5K)；在实际的过程中发送数据和接收数据量比较大，可以设置socket缓冲区，而避免了send(),recv()不断的循环收发：
- 
- ```c
+
+>. 在send()的时候，返回的是实际发送出去的字节(同步)或发送到socket缓冲区的字节(异步),系统默认的状态发送和接收一次为8688字节(约为8.5K)；在实际的过程中发送数据和接收数据量比较大，可以设置socket缓冲区，而避免了send(),recv()不断的循环收发：
+
+```c
  // 接收缓冲区
 int nRecvBuf=32*1024; // 设置为32K
 setsockopt(s,SOL_SOCKET,SO_RCVBUF,(const char*)&nRecvBuf,sizeof(int));
@@ -68,8 +70,9 @@ if (setsockopt (m_nSock, SOL_SOCKET, SO_KEEPALIVE, &opt, sizeof(int)) == -1)
 }
 ```
 
-9. 延迟接收, 
-  > 实际上就是当接收到第一个数据之后，才会创建连接。对于像http这类非交互式的服务器，这个很有意义，可以防御空连接攻击。
+9. 延迟接收
+
+> 实际上就是当接收到第一个数据之后，才会创建连接。对于像http这类非交互式的服务器，这个很有意义，可以防御空连接攻击。
 
 ```text
 int val = 5;

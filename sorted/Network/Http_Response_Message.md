@@ -7,7 +7,6 @@
   - [空行`<CR><LF>`](#空行crlf)
   - [entity body](#entity-body)
 
-
 ## Example response
 
 ```http
@@ -54,7 +53,10 @@ entity body
 
 > 服务器响应为302时，有些浏览器会发送空的请求
 
-状态码分类 
+- 101 Switching Protocols: 服务器将遵从客户的请求转换到另外一种协议
+
+状态码分类
+
 <table>
 <tr>
 <td>1xx</td>

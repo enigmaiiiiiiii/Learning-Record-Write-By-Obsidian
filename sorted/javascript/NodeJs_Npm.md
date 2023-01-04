@@ -59,6 +59,10 @@ npm init react-app ./my-react-app
 npm init -w packages/a
 ```
 
+options
+
+- `-y`: skip questions
+
 ## npm-install
 
 - 安装一个包及其依赖包
