@@ -22,11 +22,11 @@
 
 [BFC](CSS_Block_Formatting_Context.md)
 
+[Function](CSS_Function.md)
+
 [shorthand and longhand](CSS_Shorthand_And_Longhand.md)
 
-
-[CSS属性列表](CSS_Property_List.md)
-
+[properties list](CSS_Property_List.md)
 
 ## II
 
@@ -35,7 +35,6 @@
 [\@规则(at-rules)](CSS_At_Rules.md)
 
 [scss](SCSS.md)
-
 
 ## III
 

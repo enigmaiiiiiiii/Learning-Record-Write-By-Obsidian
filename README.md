@@ -1,8 +1,8 @@
-# 笔记
+# Note
 
 - Build Connection in my mind
 
-## 内容
+## Content
 
 - [C/C++](/Navigation/c++_and_C.md)
 - [数据结构和算法](/Navigation/DataStructure_And_Algorithm.md)
@@ -20,7 +20,7 @@
 - computer foundation
 - vim
 
-## 目录
+## Intruction
 
 - Navigation 索引
 - sorted 分类笔记

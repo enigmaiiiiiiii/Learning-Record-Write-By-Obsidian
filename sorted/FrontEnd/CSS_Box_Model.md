@@ -50,7 +50,7 @@
 - width = border + padding + content width
 - height = border + padding + content height
 
-这段代码放到样式表开都已经是普遍做法了
+这段代码放到样式表开头已经是普遍做法了
 
 ```css
 *, ::before, ::after {

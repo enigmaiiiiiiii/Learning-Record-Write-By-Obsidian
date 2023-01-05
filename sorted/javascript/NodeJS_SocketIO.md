@@ -13,17 +13,36 @@
 - HTTP long-polling fallback
 - Packet bufferring
 
-## init server
+## Getting Started
 
-io.on(event, callback)
+[Getting Started](NodeJS_SocketIO_Getting_Started.md)
 
-## create connection
+## API
 
-## send message to client
+## Event
 
-## send message to specific client
+event is a **string** pass to
 
-## send message with
+- io.on('eventName', callback);
+- socket.on('eventName', callback);
+- socket.emit('eventName', message);
 
-## disconnection
+## Buit-in Events
 
+socket
+
+- connect
+- connect_error
+- disconnect
+
+Room Event
+
+- create-room
+- delete-room
+- join-room
+- leave-room
+
+## Namespace
+
+- a virtual channel
+- 将单个共享连接从逻辑上分割成多个频道

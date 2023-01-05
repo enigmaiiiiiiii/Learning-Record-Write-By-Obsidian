@@ -6,4 +6,4 @@
 
 ## Flexbox
 
-[Flexbox](CSS_Flexbox.md)
+[Flexbox](CSS_Flex.md)

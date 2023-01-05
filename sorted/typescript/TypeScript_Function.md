@@ -56,11 +56,11 @@ f(1); // ok
 function fx(x: number): number;
 function fx(x: number, y: number): number;
 function fx(x: number, y?: number): number {
-    if (y) {
-        return x + y;
-    } else {
-        return x;
-    }
+  if (y) {
+    return x + y;
+  } else {
+    return x;
+  }
 }
 ```
 
@@ -70,11 +70,11 @@ function fx(x: number, y?: number): number {
 function fx(x: number): void;
 function fx(x: boolean): void;
 function fx(x: number | boolean) {
-    if (typeof x === "number") {
-        console.log("number");
-    } else {
-        console.log("boolean");
-    }
+  if (typeof x === "number") {
+    console.log("number");
+  } else {
+    console.log("boolean");
+  }
 }
 fx(1);
 fx(true);
@@ -134,6 +134,7 @@ function fn(ctor: SomeConstructor) {
     return new ctor("hello");
 }
 ```
+
 ## other type working with function
 
 void
@@ -146,8 +147,8 @@ unknown
 
 ```ts
 function f1(a: unknown, b: any) {
-    a.foo(); // error
-    b.foo(); // ok
+  a.foo(); // error
+  b.foo(); // ok
 }
 ```
 

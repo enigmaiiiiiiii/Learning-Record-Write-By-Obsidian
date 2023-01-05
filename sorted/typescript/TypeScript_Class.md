@@ -1,21 +1,18 @@
 # class
 
-- [class](#class)
-  - [constructor](#constructor)
-  - [method](#method)
-  - [getters/setters](#getterssetters)
-  - [readonly](#readonly)
-  - [index signature](#index-signature)
-  - [inheritance](#inheritance)
-  - [Member Visibility](#member-visibility)
-  - [Generic Classes](#generic-classes)
-  - [have read about this in javascript](#have-read-about-this-in-javascript)
-  - [a function that loses its "this" context](#a-function-that-loses-its-this-context)
-  - [this as parameter type annotation](#this-as-parameter-type-annotation)
-  - [Class Expressions](#class-expressions)
-  - [abstract Classes and Members](#abstract-classes-and-members)
-
-
+- [constructor](#constructor)
+- [method](#method)
+- [getters/setters](#getterssetters)
+- [readonly](#readonly)
+- [index signature](#index-signature)
+- [inheritance](#inheritance)
+- [Member Visibility](#member-visibility)
+- [Generic Classes](#generic-classes)
+- [about `this` in javascript](#about-this-in-javascript)
+- [a function that loses its "this" context](#a-function-that-loses-its-this-context)
+- [this as parameter type annotation](#this-as-parameter-type-annotation)
+- [Class Expressions](#class-expressions)
+- [Abstract Classes And Members](#abstract-classes-and-members)
 
 ## constructor
 
@@ -154,9 +151,9 @@ class Box<Type> {
 }
 ```
 
-## have read about this in javascript
+## about `this` in javascript
 
-[this in javascript](JavaScript_This.md)
+[`this` in javascript](JavaScript_This.md)
 
 ## a function that loses its "this" context
 
@@ -223,5 +220,5 @@ const someClass = class {
 const m = new someClass("hello");
 ```
 
-## abstract Classes and Members
+## Abstract Classes And Members
 

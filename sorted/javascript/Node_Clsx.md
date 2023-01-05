@@ -1,6 +1,6 @@
 # clsx
 
-## use
+## start
 
 ```js
 import styles from './alert.module.css';

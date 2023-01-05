@@ -62,13 +62,7 @@
 
 [React.js](React.md)
 
-[eslint](Eslint.md)
-
 [Vue.js](Vue.md)
-
-[qs.js](/sorted/javascript/NodeJs_Qs.md): json对象 to url query string
-
-[clsx](Node_Clsx.md)
 
 ## V: tool chain
 

@@ -6,7 +6,7 @@
 
 - `position: static`: 静态定位
   - **默认**定位方式
-  - 仅仅意味着将元素放入它在Normal Flow中的正常位置
+  - 仅仅意味着将元素放入它在Normal Flow中的**常规**位置
 - `position: relative`: 相对定位
   - 允许通过属性top, right, bottom, left来修改元素在文档中的位置
     - top, right, bottom, left可以理解为力的来源方向
@@ -19,11 +19,11 @@
   - 相对位置**窗口**固定
   - 脱离[normal document flow](CSS_Normal_Flow.md)
 
-> positioned element(定位元素): position属性为，relative, absolute, fixed, sticky的元素  
+> positioned element(定位元素): position属性为，relative, absolute, fixed, sticky的元素
 
 定位上下文(Positioning contexts)
 
-- todo
+- [ ] todo
 
 ## 对齐
 

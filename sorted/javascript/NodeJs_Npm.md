@@ -61,7 +61,7 @@ npm init -w packages/a
 
 options
 
-- `-y`: skip questions
+- `npm init -y`: skip questions
 
 ## npm-install
 
@@ -73,7 +73,7 @@ options
 
 选项:
 
-`--save-dev`:
+`-D --save-dev`:
 
 - 将包添加到`devDependencies`中
 - 开发工具的依赖, 如语法检查

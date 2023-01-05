@@ -1,5 +1,11 @@
 # Spread Syntax
 
+## feature
+
+- similar to [rest parameters](javascript_rest_parameters.md)
+
+## introduction
+
 数组, 字符串, 对象展开
 
 example code for array and string
@@ -26,3 +32,4 @@ console.log(mergeobj2); // {obj1: {foo: "bar", x: 42}, y: 13}
 ```
 
 - without `...`, object will be a **property** of the new object
+
