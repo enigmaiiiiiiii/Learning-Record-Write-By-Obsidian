@@ -18,8 +18,8 @@ export function SameWelcome({name}) {
 
 ## As component Attribute
 
--   `prop` is name of function argument
--   Object's **property** is the component's **attribute**
+- `prop` is name of function argument
+-  Object's **property** is the component's **attribute**
 
 ```js
 function Welcome({ name, age }) {
@@ -40,13 +40,14 @@ export default function paramedWelcome() {
 
 ```jsx
 funciton Welcome(props) {
-    return <h1>Hello, {props.name}, {props.age}</h1>;
+  return <h1>Hello, {props.name}, {props.age}</h1>;
 }
 export default function paramedWelcome(props) {
-    return (
-        <div>
-            <Welcome {...props} />;
-        </div>
+  return (
+    <div>
+      <Welcome {...props} />;
+    </div>
+  )
 }
 ```
 

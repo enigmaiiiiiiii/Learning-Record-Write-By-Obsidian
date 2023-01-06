@@ -1,10 +1,27 @@
 # flex
 
-- 两根轴线
-  -   main axis
-  -   cross axis
--   **flex容器**: 属性设置为 display: flex 的元素称为 flex container
+## introduction
+
+- 一种将元素布局在单一维度的布局方式
+- main axis: 元素分布维度
+- cross axis: 元素分布维度的垂直方向
+- **flex容器**: 属性设置为 display: flex 的元素称为 flex container
 - **flex元素**: flex container 的所有子元素称为 flex item
+
+## Main Axis
+
+- main axis: 主轴, 默认是水平方向
+
+`flex-direction: value;`定义主轴, value取值
+
+- row: 水平方向
+- row-reverse: 水平方向, 反向
+- column: 垂直方向
+- column-reverse: 垂直方向, 反向
+
+## Cross Axis
+
+- cross axis: 交叉轴, 默认是垂直方向
 
 ## flex 容器
 
@@ -36,16 +53,17 @@ article:nth-of-type(3) {
 
 flex item 最小尺寸 200px, 剩余空间按比例分配
 
-## justify-content
-
-定义内容如何分布
-
-- `justify-content: flex-start;`: 默认值, 左对齐
-- `justify-content: space-between;`: 两端对齐, 间距相等
-
 ## flex-grow
 
 [剩余空间](#)分配比例
+
+```css
+#one { flex-grow: 1 }
+#two { flex-grow: 2 }
+#thr { flex-grow: 3 }
+```
+
+- if without wrap, 元素one, two, three分别占据 1/6, 2/6, 3/6
 
 ## rest space
 

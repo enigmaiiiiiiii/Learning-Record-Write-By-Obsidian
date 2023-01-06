@@ -27,9 +27,6 @@ two forms pre-rendering
 [Server-side Rendering(SSR)](#server-side-renderingssr)
 [Client-side Rendering(CSR)](#client-side-renderingcsr)
 
-## Static Site Generation(SSG)
-
-[SSG](NextJS_Static_Generation.md)
 
 ## Server-side Rendering(SSR)
 
@@ -38,6 +35,10 @@ two forms pre-rendering
 ## Client-side Rendering(CSR)
 
 [CSR](NextJS_Client_Side_Rendering.md)
+
+## Static Site Generation(SSG)
+
+[SSG](NextJS_Static_Generation.md)
 
 ## Data Fetching
 

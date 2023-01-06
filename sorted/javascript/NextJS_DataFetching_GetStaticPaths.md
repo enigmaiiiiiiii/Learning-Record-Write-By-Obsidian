@@ -1,8 +1,17 @@
 # getStaticPaths
 
+- [what's for](#whats-for)
+- [take a look](#take-a-look)
+- [return value](#return-value)
+  - [path](#path)
+    - [params: an object of match route pararmeters](#params-an-object-of-match-route-pararmeters)
+  - [fallback](#fallback)
+    - [when `fallback: ture`](#when-fallback-ture)
+    - [fallback page](#fallback-page)
+
 ## what's for
 
-- generate pages with **dynamic routes** at build time
+- generate pages with **dynamic routes** at **build time**
 - 需要在build time生成的用动态路径表示[页面](NextJS_Terminology.md#pages)
 
 ## take a look
@@ -11,7 +20,7 @@
 export async function getStaticPaths() {
   return {
     paths: [
-      {params: {}}
+      { params: { id: 1 } }
     ],
     fallback: true;
   }

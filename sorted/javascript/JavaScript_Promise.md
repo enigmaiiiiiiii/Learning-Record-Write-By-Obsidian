@@ -7,7 +7,7 @@
 - [chained promise](#chained-promise)
 - [Promise reject event](#promise-reject-event)
 
-## State of Promise
+## State Of Promise
 
 - promise对象有三种状态: pending, fulfilled, rejected
   - pending: 初始状态, 待定状态
@@ -73,7 +73,7 @@ myPromise
     .catch(err => console.log(err));
 ```
 
-await/async的相似过程:
+[await]()/async的相似过程:
 
 ```js
 async function foo() {

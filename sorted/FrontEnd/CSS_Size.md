@@ -8,17 +8,9 @@
 
 [CSS单位](CSS_Units.md)
 
-## 定位
-
-[定位](CSS_Positioning.md)
-
 ## overflow
 
 [overflow](CSS_Overflow.md)
-
-## flex模型
-
-[flex模型](CSS_Flex.md)
 
 ## z-index
 

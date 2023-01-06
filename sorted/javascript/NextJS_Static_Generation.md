@@ -1,5 +1,8 @@
 # Static Generation
 
+- generate page at build time
+- that means in production, the HTML page is already here
+
 ## Introduction
 
 - generated the **HTML** at **build time**
@@ -8,6 +11,20 @@
 - can be cached by a **CDN** for performance
 
 ## how to implement Static-site Generation
+
+page **content** depend on external data: use [`getStaticProps`](NextJS_DataFetching_GetStaticProps.md)
+
+```js
+export async function getStaticPros(context) {
+  return {
+    props: {},
+  }
+}
+```
+
+page [**path**](NextJS_Routes.md#dynamic-route) depend on external data: use [`getStaticPaths`](NextJS_DataFetching_GetStaticPaths.md)
+
+- `getStaticPaths()` is required in static generate dynamic routes page
 
 ## when use static Generation
 

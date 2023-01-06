@@ -1,9 +1,18 @@
 # Function getStaticProps()
 
+- [feature](#feature)
+- [static Generation with external data](#static-generation-with-external-data)
+- [when does `getStaticProps()` run?](#when-does-getstaticprops-run)
+- [](#)
+
+## feature
+
 - 页面的静态数据
 - run during `next build`
 
-## static Generation with external data
+## take a look
+
+static Generation with external data
 
 ```js
 export async function getStaticProps(context) {
@@ -19,6 +28,7 @@ export default function Welcome(props) {
 ```
 
 - `props` will be passed to the page component, 对于上面代码, `props` 会被传递给 `<Welcome/>` 组件
+- parameter [context](#parameters) introduction
 
 ## when does `getStaticProps()` run?
 
@@ -34,4 +44,18 @@ dev and prod
 - In development `getStaticProps()` runs on every request
 - In production `getStaticProps()` runs at build time
 
-## 
+## parameters
+
+`context` Object with following keys:
+
+- params: dynamic routes parameters, `page/[id].js` 中的 `id`
+- preview: `true` if the page is in preview mode
+- previewData
+- locale
+- locales
+- defaultLocale
+
+## return values
+
+- `props`: pass to page component as [props](React_Component_Props.md)
+- `revalidate`: amount of seconds re-generate the page

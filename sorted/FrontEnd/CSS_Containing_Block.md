@@ -1,6 +1,6 @@
 # CSS包含块
 
-- 包含块大多数时候是ancester中最近的**block-level元素**, 并不总是
+- 包含块大多数时候是ancester(祖先)中最近的**block-level元素**, ~~并不总是父元素~~
 
 如何确定包含块, 完全依赖于元素的[position](CSS_Positioning.md)属性
 

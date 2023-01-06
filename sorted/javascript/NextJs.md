@@ -20,7 +20,7 @@
 npx create-next-app
 ```
 
-[project structure]
+[project structure]()
 
 ## I
 

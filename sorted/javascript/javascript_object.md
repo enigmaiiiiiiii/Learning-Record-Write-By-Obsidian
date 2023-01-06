@@ -5,7 +5,6 @@
 [对象解构](#object-destructured)
 [getter/setter](#gettersetter)
 
-
 ## 创建对象
 
 1. 字面量表示法，`{key1:value1, key2: value2}`的形式
