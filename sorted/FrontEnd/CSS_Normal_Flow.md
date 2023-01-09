@@ -10,6 +10,6 @@
 
 - 脱离Normal Flow的元素
   - floated items
-  - position: absolute或fix
+  - [position](): absolute或fix
   - html根元素
 - 脱离Normal Flow会创建一个新的[BFC](CSS_Block_Formatting_Context.md)

@@ -40,3 +40,7 @@ grid container as an absolute positioned element [containing block](CSS_Containi
   left: 40px;
 }
 ```
+
+- box3 has taken out of the [flow](CSS_Normal_Flow.md), and not cause additional row
+
+##

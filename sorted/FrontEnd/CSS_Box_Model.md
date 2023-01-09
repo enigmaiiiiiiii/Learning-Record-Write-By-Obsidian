@@ -1,5 +1,11 @@
 # CSS的盒子模型
 
+- [标准盒子模型](#标准盒子模型)
+- [模型属性](#模型属性)
+- [block and inline](#block-and-inline)
+- [display属性](#display属性)
+- [盒子模型的替代模型](#盒子模型的替代模型)
+
 ## 标准盒子模型
 
 - box-sizing: content-box
@@ -58,6 +64,8 @@
 }
 ```
 
+or
+
 ```css
 :root {
     box-sizing: border-box;
@@ -67,3 +75,4 @@
     box-sizing: inherit;
 }
 ```
+> ::after, ::before是CSS3的[伪元素](CSS_Selector.md#伪元素选择器)

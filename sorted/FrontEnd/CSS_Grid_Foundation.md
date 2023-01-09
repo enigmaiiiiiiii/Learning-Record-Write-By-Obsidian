@@ -12,6 +12,8 @@
 ## feature
 
 - 网格中的元素可以重叠
+- inline direction: left to right(main directio)
+- block direction: downward(cross direction)
 
 ## 声明网格容器
 
@@ -59,7 +61,7 @@
 
 - row height: 100px ~ auto
 
-## 跨轨道(行, 列)元素
+## cross row or column elements
 
 - `grid-column-start`: 起始列
 - `grid-column-end`: 结束列

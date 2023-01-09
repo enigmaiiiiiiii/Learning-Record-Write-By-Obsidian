@@ -32,14 +32,14 @@
 - `flex-flow: row wrap;`: 等于同时设置 flex-direction, flex-wrap
 - `aligin-items: center`:
 
-## flex 元素属性
+## flex 属性
 
 - `flex: 200px`: 最小宽度
 - `flex: 2`: 所占单元格数量
 - `flex` is shoothand for `flex-grow`, `flex-shrink`, `flex-basis`
-  -   flex-grow: item 比例
-  -   flex-shrink: 最小可收缩到的尺寸
-  -   flex-basis:
+  - 1. flex-grow: item 比例
+  - 2. flex-shrink: 最小可收缩比例
+  - 3. flex-basis:
 
 ```css
 article {
@@ -51,7 +51,15 @@ article:nth-of-type(3) {
 }
 ```
 
-flex item 最小尺寸 200px, 剩余空间按比例分配
+- flex item 最小尺寸 200px, 剩余空间按比例分配
+
+flex-basis
+
+- grow or shrink 的基准值
+
+flex: 0 0 300px
+
+- 相当于创建了一个inflixible item
 
 ## flex-grow
 
@@ -64,6 +72,10 @@ flex item 最小尺寸 200px, 剩余空间按比例分配
 ```
 
 - if without wrap, 元素one, two, three分别占据 1/6, 2/6, 3/6
+
+## create gap
+
+
 
 ## rest space
 

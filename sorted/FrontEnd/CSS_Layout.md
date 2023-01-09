@@ -18,4 +18,14 @@
 
 ## 对齐
 
-[align](CSS_Alignment.md)
+[Align](CSS_Alignment.md)
+
+## stack context
+
+[Stacking Context](CSS_Stacking_Context.md)
+
+## direction
+
+- 设置元素在文档流中的方向, 默认是`ltr`
+- `direction: ltr`
+- `direction: rtl`
