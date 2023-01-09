@@ -12,6 +12,10 @@
 
 [理解层叠性](CSS_Understanding_The_Cascade.md)
 
+[BFC](CSS_Block_Formatting_Context.md)
+
+[Stacking Context](CSS_Stacking_Context.md)
+
 [Normal Flow](CSS_Normal_Flow.md)
 
 [元素尺寸](CSS_Size.md)
@@ -22,9 +26,13 @@
 
 [背景和边框](CSS_Background_And_Border.md)
 
-[BFC](CSS_Block_Formatting_Context.md)
-
 [Function](CSS_Function.md)
+
+[Transform](CSS_Transform.md)
+
+[Transition](CSS_Transition.md)
+
+[Animation](CSS_Animation.md)
 
 [shorthand and longhand](CSS_Shorthand_And_Longhand.md)
 

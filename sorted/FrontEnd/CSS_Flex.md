@@ -75,7 +75,8 @@ flex: 0 0 300px
 
 ## create gap
 
-
+- margin
+- negative margin on flex container
 
 ## rest space
 

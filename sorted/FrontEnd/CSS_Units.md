@@ -1,8 +1,13 @@
 # 单位
 
+## Abosulte Unit
+
+px
+
+- Pixels
 - 大多数浏览器默认字号为16px
 
-## 相对单位
+## Relative Unit
 
 em
 
@@ -17,3 +22,12 @@ rem
 percentage
 
 - 百分比: 父元素或[Containing block](CSS_Containing_Block.md)CSS属性的百分比
+
+vw, vh
+
+> view port
+
+- 1% of viewport width
+- 1% of viewport height
+
+## 

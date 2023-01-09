@@ -29,13 +29,16 @@
 
 `position: sticky`: 粘性定位
 
+[sticky sidebar inside box](sticky-inside-box.md)
+
 - 相对于最近的[Containing Block]()定位, 使用top, right, bottom, left属性定位
 - 必须指定top, right, bottom, left中的一个, 使sticky正常工作
 
+## positioned element
 
-> positioned element(定位元素): position属性为，relative, absolute, fixed, sticky的元素
+- positioned element(定位元素): position属性为，relative, absolute, fixed, sticky的元素
 
-定位上下文(Positioning contexts)
+## 定位上下文(Positioning contexts)
 
 - [ ] todo
 

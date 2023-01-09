@@ -7,7 +7,8 @@
 
 ## justify-content
 
-定义 **flex** container 的内容和空间沿**main axis**上的分布方式
+定义 flex container 的内容和空间沿**main axis**上的分布方式
+定义 grid container 的内容和空间沿**inline direction**上的分布方式
 
 - `justify-content: flex-start;`: 默认值, 左对齐
 - `justify-content: space-between;`: 两端对齐, 间距相等

@@ -13,7 +13,7 @@ basic
 - [Computer NetWork](Navigation/NetWork.md)
 - [JavaScript](Navigation/JavaScript.md)
 - [机器学习](/Navigation/机器学习.md)
-- MarkDown
+- markdown
 - git
 - html
 - css

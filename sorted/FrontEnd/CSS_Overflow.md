@@ -1,4 +1,4 @@
-# overflow 
+# Overflow
 
 ## Introduction
 
@@ -19,8 +19,10 @@ overflow属性可以避免让内容看起来乱
 
 ## overflow property
 
-- `overflow: visible`: 装不下的内容不会被剪裁, 不会创建新的[BFC](CSS_Block_Formatting_Context.md)
-- `overflow: hidden`: 内容将被剪裁以适应填充框
+- `overflow: visible;`: 装不下的内容不会被剪裁, 不会创建新的[BFC](CSS_Block_Formatting_Context.md)
+- `overflow: hidden;`: 内容将被剪裁以适应填充框, 并隐藏 Scroll Bar
+  - `overflow-x: hidden;`
+  - `overflow-y: hidden;`
 - `overflow: scroll`: 为overflow内容添加滚动轴
 - `overflow: clip`
   - 类似hidden
