@@ -7,15 +7,19 @@
 
 ## justify-content
 
-定义 flex container 的内容和空间沿**main axis**上的分布方式
-定义 grid container 的内容和空间沿**inline direction**上的分布方式
+- 定义 flex container 的内容和空间沿**main axis**上的分布方式
+- 定义 grid container 的内容和空间沿**inline direction**上的分布方式
+
+value
 
 - `justify-content: flex-start;`: 默认值, 左对齐
 - `justify-content: space-between;`: 两端对齐, 间距相等
 
 ## align-items
 
-- 描述**子元素**的分布方式
+> 定义 子元素, not container self, not **其它后代元素** either
+
+- 描述了**子元素**的分布方式
 - 在**flex容器**中, 控制**Cross Axis**方向上子元素的分布方式
 - 在**grid容器**中, 控制子元素在网格中的分布方式
 

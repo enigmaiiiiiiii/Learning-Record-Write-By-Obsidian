@@ -10,6 +10,10 @@
 
 [同时启动多个项目](Vscode_Compound_Launch_Configurations.md)
 
+## launch.json
+
+[launch.json](vscode-launch-json.md)
+
 ## vscode 中的任务
 
 [vscode 中的任务](Vscode_Tasks.md)

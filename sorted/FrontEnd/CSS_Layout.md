@@ -18,7 +18,7 @@
 
 ## 对齐
 
-[Align](CSS_Alignment.md)
+[Align](CSS_Flexible_Alignment.md)
 
 ## direction
 

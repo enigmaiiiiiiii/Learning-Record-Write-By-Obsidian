@@ -1,6 +1,6 @@
 # weak_ptr
 
-- 指向一个由[[c++_Shared_Ptr]]控制的对象 
+- 指向一个由[Shared_Ptr](c++_Shared_Ptr.md)控制的对象
   - 不会改变shared_ptr的计数
   - shared_ptr对象被销毁, weak_ptr一同被销毁
 - `weak_ptr`要用`shared_ptr`来初始化

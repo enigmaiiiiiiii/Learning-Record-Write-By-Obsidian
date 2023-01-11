@@ -3,7 +3,7 @@
 ## Introduction
 
 - rotate, scale, skew, translate an element
-- 几何变换
+- 几何变换, **不是动画**
 
 ## feature
 

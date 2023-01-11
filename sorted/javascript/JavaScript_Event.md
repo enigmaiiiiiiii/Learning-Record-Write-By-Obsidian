@@ -1,5 +1,9 @@
 # Event
 
+## Event Loop
+
+[Event Loop](JavaScript_Event_Loop.md)
+
 ## web预定义事件
 
 clickEvent as a example
@@ -49,17 +53,13 @@ keyboard event as a example
 ```js
 document.onkeydown = function(e) {
   if (e && e.keyCode == 27) {
-    // 按 Esc
-    //要做的事情
+    // things to do when ESC key is pressed
   }
   if (e && e.keyCode == 113) {
-    // 按 F2
-    //要做的事情
+    // things to do when F2 key is pressed
   }
   if (e && e.keyCode == 13) {
-    // enter 键
-    //要做的事情
+    // thing to do when enter key is pressed
   }
 };
 ```
-

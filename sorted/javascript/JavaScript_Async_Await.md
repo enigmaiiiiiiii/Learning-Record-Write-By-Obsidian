@@ -10,7 +10,6 @@
 - await make [async function](#async-function) look like synchronous
 - purpose of await/async is to简化了promise的使用
 
-
 ## async function
 
 - 一个可以使用await的函数

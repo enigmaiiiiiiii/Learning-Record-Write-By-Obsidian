@@ -6,7 +6,7 @@
 
 ## vertical-align
 
-- set vertical alignment 
+- set vertical alignment
 - available in **inline**, **inline-block** **table-cell box**
 
 ## text-align

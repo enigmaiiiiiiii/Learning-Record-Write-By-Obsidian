@@ -6,7 +6,7 @@
 
 [[Data_Structure_Hash_Table]]
 
-[[Data_Structure_Stack]]
+[Stack](Data_Structure_Stack.md)
 
 [[队列]]
 

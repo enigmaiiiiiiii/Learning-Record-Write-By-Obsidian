@@ -24,14 +24,14 @@
 const success = true;
 const fail = false;
 const promise = new Promise((resolve, reject) => {
-    // do something
-    if (success) {
-        resolve(value);
-    } else if(fail) {
-        reject(reject);
-    } else {
-        throw error;
-    }
+  // do something
+  if (success) {
+    resolve(value);
+  } else if(fail) {
+    reject(reject);
+  } else {
+    throw error;
+  }
 });
 ```
 
@@ -41,11 +41,13 @@ promise的返回值:
 - `reject(reason)`: 将reason包装为**Promise对象**
 - `throw error`: 将error包装为的**Promise对象**
 
+
+
 ## await a promise
 
 - **unwrap** a promise
 
-[await](JavaScript_Await.md)
+[await](JavaScript_Async_Await.md)
 
 ```js
 let value = await promise;

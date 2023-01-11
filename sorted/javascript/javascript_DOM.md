@@ -1,6 +1,12 @@
 # DOM
 
-## select DOM element
+## Element
+
+[Element](JavaScript_DOM_Element.md)
+
+[HTMLDocument](JavaScript_DOM_HTMLDocument.md)
+
+## Select DOM Element
 
 - 文档对象模型(Document Object Model)
 - 用document表示HTML对象
@@ -9,15 +15,6 @@
 
 ```javascript
 var x = document.getElementById("maze");
-```
-
-返回html元素的style属性
-
-- style属性是一个CSSStyleDeclaration对象
-- 不包含通过层叠机制从文档样式和外部样式中继承而来的样式
-
-```javascript
-var x = document.getElementById("maze").style.property;
 ```
 使用css选择器选择document对象
 

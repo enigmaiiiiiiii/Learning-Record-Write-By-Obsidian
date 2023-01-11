@@ -38,8 +38,6 @@
 - 基于Unix原理的开源**操作系统内核**
 - 通常所说的Linux发行版通常指的是GNU/Linux的发行版
 - Linux操作系统包含了Linux内核与其他自由软件项目中的GNU组件和软件
-  
-
 
 ### What is GNU
 
@@ -50,11 +48,11 @@
 
 #### GNU组成
 
-- GCC——GNU编译器套装
-- glibc——GNU的C库
-- coreutils——以及GNU核心工具组 
-- GDB——GNU调试器[[GDB]]
-- binutils——GNU二进制实用程序
+- GCC: GNU编译器套装
+- glibc: GNU的C库
+- coreutils——以及GNU核心工具组
+- [GDB](UNIX_GDB.md): GNU调试器
+- binutils: GNU二进制实用程序
 
 
 ## UNIX实现

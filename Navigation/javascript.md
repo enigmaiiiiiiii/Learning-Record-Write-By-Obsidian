@@ -30,6 +30,8 @@
 
 ## II
 
+[Memory](JavaScript_Memory_Management.md)
+
 [error](JavaScript_Error.md)
 
 [worker](JavaScript_Worker.md)
