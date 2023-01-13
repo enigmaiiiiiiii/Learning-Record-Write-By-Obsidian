@@ -4,7 +4,7 @@
 
 [Element](JavaScript_DOM_Element.md)
 
-[HTMLDocument](JavaScript_DOM_HTMLDocument.md)
+[HTMLElement](JavaScript_DOM_HTMLElement.md)
 
 ## Select DOM Element
 

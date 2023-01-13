@@ -1,6 +1,5 @@
 # HTMLElement
 
-
 ## HTMLElement.style
 
 getting style
@@ -22,3 +21,7 @@ setting style
 ```js
 element.style.backgroundColor = "red";
 ```
+
+## HTMLElement.offsetTop
+
+- read-only property

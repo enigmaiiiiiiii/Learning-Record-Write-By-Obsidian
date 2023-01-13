@@ -15,7 +15,7 @@ console.log(JSON.stringify({x: 5, y: 6}));
 
 > function(){}.constructor === Function
 
-## setTimeout
+## setTimeout()
 
 set a timer which executes a function or specified piece of code once the timer expires
 
@@ -29,7 +29,11 @@ Parameters:
 - `delay`: the number of milliseconds to wait before the function is executed
 - `param1, param2, ...`: optional parameters to be passed to the function
 
-## setInterval
+return value
+
+- a positive integer means timeoutID
+
+## setInterval()
 
 set a timer which executes a function or specified piece of code **repeatedly**, with a fixed time delay between each call to the function
 
@@ -41,3 +45,22 @@ Parameters
 
 - same to `setTimeout`
 
+## setImmediate()
+
+- 中断长时间运行的操作
+- 在浏览器完成其它操作后执行
+- nodejs中[setImmediate()](NodeJS_Timers.md#setimmediate)
+
+## clearTimeout()
+
+`clearTimeout(timeoutID)`
+
+- clear a timeout previously established by setTimeout()
+
+## WeakMap
+
+[WeakMap](JavaScript_Built_In_Object_WeakMap.md)
+
+## Intl
+
+[Intl](JavaScript_Built_In_Object_Intl.md)

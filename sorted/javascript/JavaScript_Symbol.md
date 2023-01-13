@@ -1,20 +1,36 @@
 # Symbol
 
+## Introduction
+
 - ECMA6新增的数据类型
+- 用于创建唯一的标识符
+
+## create a symbol
+
+create by `Symbol("key")`
 
 ```js
-let sym = Symbol();
+let sym = Symbol("foo");
 ```
 
-使用全局符号注册
+使用`Symbol.for("key")`
+
+- 如果已经存在, 则返回已有的, 否则创建一个新的
 
 ```js
-let fooGlobalSymbol = Symbol.for('foo');
-let otherFooGlobalSymbol = Symbol.for('foo');
+let fooGlobalSymbol = Symbol.for("foo");
+let otherFooGlobalSymbol = Symbol.for("foo");
 console.log(fooGlobalSymbol === otherFooGlobalSymbol);  // true
 ```
 
-- Symbol.for(name), 如果已经存在, 则返回已有的, 否则创建一个新的
+## get symbol key
+
+Symbol.keyFor()
+
+```js
+Symbol.keyFor(Symbol.for("tokenString")) === "tokenString";
+```
+
 
 ## 符号可以作为属性
 

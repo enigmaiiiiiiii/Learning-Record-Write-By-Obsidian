@@ -1,10 +1,19 @@
 # JavaScript Memory Management
 
-## Garbage Collection
+## Visual Representation of Memory
 
-1. Reference Counting Garbage Collection
+![visual representation of memory](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop/the_javascript_runtime_environment_example.svg)
+
+- heap represent a large region of memory
+- Object are allocated in a heap
+
+## Reference Counting Garbage Collection
+
+[instruct code](garbage-collection.md)
 
 - 引用计数垃圾回收
+
+simple instruction
 
 ```js
 // Obejct {a: {b: 2}} is created
@@ -36,7 +45,14 @@ z = null;
 // Object reference count = 0, can be collected
 ```
 
-2. Mark and Sweep Garbage Collection
+
+## Mark and Sweep Garbage Collection
+
+- 避免因循环引用而无法完成垃圾回收
+
+> WeakMap and WeakSet
+
+[WeakMap](JavaScript_Built_In_Object_WeakMap.md) Principle in simplified code
 
 ## Configuring Engine Memory
 
@@ -51,7 +67,3 @@ expose garbage collection for [debug](NodeJs_Debug.md)
 ```bash
 node --expose-gc --inspect index.js
 ```
-
-## WeakMap and WeakSet
-
-- only store object

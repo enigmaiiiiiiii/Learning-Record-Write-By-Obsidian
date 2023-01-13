@@ -29,7 +29,7 @@ btn.onclick = function() {
 
 ## Event接口
 
-Event(): 
+Event():
 
 - Event对象的构造函数
 

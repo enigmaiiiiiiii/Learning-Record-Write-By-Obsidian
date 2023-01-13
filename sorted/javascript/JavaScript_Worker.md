@@ -50,15 +50,15 @@ onmessage = function(e) {
 ## postMessage()
 
 - in one word: is a method to send message to each other
-- script postMessage send **message** to creator
-- worker postMessage send **message** to worker script
-- **message** send to each other is method agument
+- **script** postMessage() send **message** to creator
+- **worker** postMessage() send **message** to worker script
+- **message** send to each other is method agrument
 
 creator.js
 
 ```js
-const oneworker = new Worker('script/worker.js')
-oneworker.postMessage(message)
+const oneWorker = new Worker('script/worker.js')
+oneWorker.postMessage(message)
 ```
 
 worker.js

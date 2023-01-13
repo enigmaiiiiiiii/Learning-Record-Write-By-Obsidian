@@ -1,6 +1,6 @@
 # Promise对象
 
-- [State of Promise](#state-of-promise)
+- [State Of Promise](#state-of-promise)
 - [Create Promise](#create-promise)
 - [await a promise](#await-a-promise)
 - [Promise Instance method](#promise-instance-method)
@@ -18,7 +18,7 @@
 
 ## Create Promise
 
-- `new Promise((resolve, reject) => { ... }))`
+`new Promise((resolve, reject) => { ... }))`
 
 ```js
 const success = true;
@@ -35,13 +35,11 @@ const promise = new Promise((resolve, reject) => {
 });
 ```
 
-promise的返回值:
+promise的返回值
 
 - `resolve(value)`: 将value包装为**Promise对象**
 - `reject(reason)`: 将reason包装为**Promise对象**
 - `throw error`: 将error包装为的**Promise对象**
-
-
 
 ## await a promise
 
@@ -55,6 +53,14 @@ console.log(value);
 ```
 
 value from `resolve(value)` or `reject(reason)`
+
+## Static Method
+
+Promise.all()
+
+Promise.resolve()
+
+Promise.reject()
 
 ## Promise Instance method
 

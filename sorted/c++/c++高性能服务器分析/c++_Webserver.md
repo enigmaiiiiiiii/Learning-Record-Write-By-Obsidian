@@ -8,7 +8,7 @@
 
 [[webserver_epoller类]]
 
-[[webserver_threadpool类]]
+[[webserver_threadpool]]
 
 ## http系统
 

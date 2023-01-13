@@ -46,7 +46,15 @@
 
 [Debug NodeJs](NodeJs_Debug.md)
 
+[Event](NodeJs_Event.md)
 
+[Worker Pool](NodeJS_Worker_Pool.md)
+
+[REPL](NodeJS_REPL.md)
+
+[Timers](NodeJS_Timers.md)
+
+[Process](NodeJS_Process.md)
 
 ## Specific Business
 

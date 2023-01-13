@@ -3,11 +3,10 @@
 - 最常用作配置文件
 - 后缀为`.yml`
 
-
 ## 映射
 
 ```yml
-key: 
+key:
   subkey1: value1
   subkey2: value2
 ```
@@ -62,28 +61,28 @@ store:
 
 ```json
 {
-    "store": {
-        "book": [
-            {
-                "name": "Harry Potter",
-                "price": 10
-            },
-            {
-                "name": "Lord of the Rings",
-                "price": 15
-            }
-        ],
-        "food": [
-            {
-                "name": "Apple",
-                "price": 1
-            },
-            {
-                "name": "Orange",
-                "price": 2
-            }
-        ]
-    }
+  "store": {
+    "book": [
+      {
+        "name": "Harry Potter",
+        "price": 10
+      },
+      {
+        "name": "Lord of the Rings",
+        "price": 15
+      }
+    ],
+    "food": [
+      {
+        "name": "Apple",
+        "price": 1
+      },
+      {
+        "name": "Orange",
+        "price": 2
+      }
+    ]
+  }
 }
 ```
 
