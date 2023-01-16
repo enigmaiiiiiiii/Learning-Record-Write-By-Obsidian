@@ -42,3 +42,17 @@ difference between call and bind
 
 - bind返回一个函数object
 - call直接调用
+
+## arrow function bind
+
+when using `call()`, `apply()`, `bind()` on arrow function, `thisArg` parameter is ignored
+
+```js
+const globalObject = this;
+const foo = () => this;
+const obj = {name: 'obj'};
+
+console.log(foo.call(obj) === globalObject);  // true
+const boundFoo = foo.bind(obj);
+console.log(boundFoo() === globalObject);  // true
+```

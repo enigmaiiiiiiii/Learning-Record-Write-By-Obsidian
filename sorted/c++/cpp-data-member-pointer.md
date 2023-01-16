@@ -1,4 +1,4 @@
-# 成员数据指针
+# C++ Data Member Pointer
 
 - 数据成员指针声明: `const string Screen::*pdata`,
   - pdata声明为指向 类Screen 中数据成员的指针,该数据成员类型为string

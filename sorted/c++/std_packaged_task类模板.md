@@ -1,6 +1,6 @@
 # std::packaged_task
 
-- 包装[[c++_可调用类型]]对象，使被包装对象能够异步调用，返回值存储在[[std_future类模板]]对象中
+- 包装[[cpp-callable-type]]对象，使被包装对象能够异步调用，返回值存储在[[std_future类模板]]对象中
 
 ```c++
 template<class R, class ...Args>

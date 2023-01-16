@@ -22,7 +22,7 @@
 - SLOT宏 
 - QMetaMethod
 - 成员函数指针
-- [functor](c++_可调用类型.md)
+- [functor](cpp-callable-type.md)
 
 ## 连接方式参数
 

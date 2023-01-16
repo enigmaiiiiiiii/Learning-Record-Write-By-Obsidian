@@ -1,114 +1,185 @@
-# Promise对象
+# JavaScript Promise
 
-- [State Of Promise](#state-of-promise)
-- [Create Promise](#create-promise)
-- [await a promise](#await-a-promise)
-- [Promise Instance method](#promise-instance-method)
-- [chained promise](#chained-promise)
-- [Promise reject event](#promise-reject-event)
+- [Foundation](#foundation)
+- [Introduction](#introduction)
+- [three common mistake](#three-common-mistake)
+- [Thenables](#thenables)
 
-## State Of Promise
+## Foundation
 
-- promise对象有三种状态: pending, fulfilled, rejected
-  - pending: 初始状态, 待定状态
-  - fulfilled: 意味着操作成功完成
-  - rejected: 意味着操作失败
-- promise的`fulfilled`或`rejected`状态都是`settled`状态
-- promise必是三种状态之一
+[Something About Promise](JavaScript_Promise_Foundation.md)
 
-## Create Promise
+## Introduction
 
-`new Promise((resolve, reject) => { ... }))`
+- Promise is an Object representing the eventual completion or failure of an **asynchronous operation**
+
+Promise 是为了满足 这样的**异步**操作:
+
+一个普遍需求是: 有时需要多个异步操作一个接一个的执行, 而后一个操作需要前一个操作的结果, success or false
+
+without promise lead to the **callback pyramid of doom**
 
 ```js
-const success = true;
-const fail = false;
-const promise = new Promise((resolve, reject) => {
-  // do something
-  if (success) {
-    resolve(value);
-  } else if(fail) {
-    reject(reject);
-  } else {
-    throw error;
+doSomething(function(result) {
+  doSomethingElse(result, function(newResult) {
+    doThirdThing(newResult, function(finalResult) {
+      console.llg(`Got the final result: ${finalResult}`);
+    }, failureCallback);
+  }, failureCallback);
+}, failureCallback);
+```
+use promise
+
+```js
+const promise = doSomething();
+const promise2 = promise.then(successCalback, failureCallback);
+```
+
+- `promise2` is not just represent the result of `promise`
+- but also represent the result of `successCallback` or `failureCallback` passed in
+
+with promise, we can accomplish
+
+```js
+doSomething()
+  .then(function(result) {
+    return doSomethingElse(result);
+  })
+  .then(function(newResult) {
+    return doThirdThing(newResult);
+  })
+  .then(function (finalResult) {
+    console.log(`Gott the final result: ${finalResult}`);
+  })
+  .catch(failureCallback);
+```
+
+## three common mistake
+
+1. forget return a result for next `then`
+
+- 如果下一个[then()](JavaScript_Promise_Then.md)的callback需要用到前一个Promise的结果, 必须要return
+
+> if next `then` callback use the result as a parameter
+
+```js
+doSomething()
+  .then((url) => {
+    // should reture a value, but didn't
+    fetch(url);
+  })
+  .then(result) => {
+    // result is undefined
   }
-});
 ```
 
-promise的返回值
+- `result` will be undefined
 
-- `resolve(value)`: 将value包装为**Promise对象**
-- `reject(reason)`: 将reason包装为**Promise对象**
-- `throw error`: 将error包装为的**Promise对象**
-
-## await a promise
-
-- **unwrap** a promise
-
-[await](JavaScript_Async_Await.md)
+2. nest unnecessaryily
 
 ```js
-let value = await promise;
-console.log(value);
+doSomething()
+  .then(function(result) {
+    // unneccessary nest
+    return doSomethingElse(result)
+      .then((newResult) => doThirdThing(newResult));
+  })
+  .then(() => doFourThing());
+  .catch(failureCallback);
 ```
 
-value from `resolve(value)` or `reject(reason)`
-
-## Static Method
-
-Promise.all()
-
-Promise.resolve()
-
-Promise.reject()
-
-## Promise Instance method
-
-[then()](JavaScript_Promise_Then.md)
-
-[catch()](JavaScript_Promise_Catch.md)
-
-[finally()](JavaScript_Promise_Finally.md)
-
-- 通过`then(), catch(), finally()`方法, 可以将promise对象链接起来
-
-## chained promise
+3. forget to terminate chains with `catch`
 
 ```js
-myPromise
-    .then(value => {value + ' and bar'})
-    .then(value => {value + ' and bar again'})
-    .catch(err => console.log(err));
+doSomething()
+  .then(function(result) {
+    return doSomethingElse(result);
+  })
+  .then(function(newResult) {
+    return doThirdThing(newResult);
+  })
+  .then(function (finalResult) {
+    console.log(`Gott the final result: ${finalResult}`);
+  });
+  // forget to add catch
 ```
 
-[await]()/async的相似过程:
+**a good practice**
 
 ```js
-async function foo() {
-    try {
-        const result = await syncDosomething();
-        const newResult = await syncDoSomethingElse(result);
-        const finalResult = await syncDoThirdThing(newResult);
-        console.log(`Got the final result: ${finalResult}`);
-    } catch {
-        failureCallback(err);
-    }
+doSomething()
+  .then(function(result) {
+    return doSomethingElse(result);
+  })
+  .then((newResult) => doThirdThing(newResult)
+  .then(() => doFourthThing())
+  .catch((error) => console.error(error));
+```
+
+## Promise And Old Callback API
+
+old api like `setTimeout()` doesn't have success and failure callback
+
+```js
+setTimeout(() => someFunction(), 1000);
+```
+
+wrap in a promise to catch the state
+
+```js
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+wait(10000)
+  .then(() => saySomething)
+  .catch(failureCallback)
+```
+
+## when the callback in the promise will be called
+
+```js
+function doSomething(callback) {
+  if (Math.random() > 0.5) {
+    callback();
+  } else {
+    setTimeout(() => callback, 1000);
+  }
 }
 ```
 
-## Promise reject event
+- callback won't be invoked before the completion of current event loop 
+- callback will be invoked in the order they are added
 
-- unhandledrejection: 当一个Promise对象被拒绝, 且没有reject处理器时, 会触发unhandledrejection事件
-- rejectionhandled: 当一个Promise对象被拒绝, 且有reject处理器时, 会触发rejectionhandled事件
+## Thenables
+
+- all promies-like objects are thenables
+- thenables object implement `then()` method
+- `then()` has two **callback** arguments
+  - one for fulfilled
+  - one for rejected
+## feature
+
+- promise callbacks are handled as a [microtask](JavaScript_Tasks_And_Microtasks.md#microtasks)
+
+> whereas `setTimeout()` callbacks are handled as a task queues
 
 ```js
-const myPromise = new Promise((resolve, reject) => {
-    if (success) {
-        resolve(value);
-    } else {
-        reject(error);
-    }
+const promise = new Promise((resolve, reject) => {
+  console.log("Promise callback");
+  resolve();
+}).then((result) => {
+  console.log("Promise callback (.then)");
 });
+
+setTimeout(() => {
+  console.log("event-loop cycle: Promise (fulfilled)", promise);
+}, 0);
+
+console.log("Promise (pending)", promise);
 ```
 
-- `reject(error)`: this is the reject handler
+```
+Promise callback
+Promise (pending) Promise { <pending> }
+Promise callback (.then)
+event-loop cycle: Promise (fulfilled) Promise {<fulfilled>}
+```
+

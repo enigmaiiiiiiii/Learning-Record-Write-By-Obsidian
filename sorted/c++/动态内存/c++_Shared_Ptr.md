@@ -16,7 +16,7 @@ get成员函数
 
 智能指针可以确保在程序发生异常时资源被正确释放
 
-- 通过[析构函数](c++_Destructor.md)或[自定义操作](c++_可调用类型.md)销毁
+- 通过[析构函数](c++_Destructor.md)或[自定义操作](cpp-callable-type.md)销毁
 
 > 对于没有析构函数的类可以通过shared_ptr来释放对象`shared_ptr<T> p(p1, deletefunc);`
 

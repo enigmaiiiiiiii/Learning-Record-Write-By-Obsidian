@@ -13,7 +13,24 @@
 - [guide line of not blocking the event loop](#guide-line-of-not-blocking-the-event-loop)
 - [why should i avoid blocking the event loop and the worker pool](#why-should-i-avoid-blocking-the-event-loop-and-the-worker-pool)
 
+## When to enter the event loop
+
+instruction from a video:
+
+![Event Loop](https://i.stack.imgur.com/4gSZv.png)
+
+order of a thread
+
+1. initialize program
+2. top level code
+3. require modules
+4. execute top level code
+5. Regiester event callbacks
+6. enter event loop
+
 ## Introduction
+
+- event loop inside a thread
 
 event loop's order
 
@@ -45,9 +62,6 @@ event loop's order
 - 每一阶段都会执行队列中的callback, 知道队列中的callback耗尽
 - **当队列中的callback被耗尽**或者**达到队列的最大限制**时, 事件循环将会进入下一个阶段
 
-another picture instruction from a video:
-
-![Event Loop](https://i.stack.imgur.com/4gSZv.png)
 
 ## feature
 
@@ -66,6 +80,13 @@ event loop does not actually maintain a queue
 
 - `setTimeout()` and `setInterval()`
 - `setImmediate()` is special, it will be executed after [poll phase](4-poll-phase)
+- [poll phase](4-poll-phase) control when timer are executed
+
+a schedule execute after 100ms
+
+a reading file asynchronously task start at 95ms
+
+total delay will be 105ms
 
 ### 2. pending callbacks phase
 

@@ -36,10 +36,7 @@ const woker = new Worker('script/worker.js')
 
 - `script/worker.js` is 脚本文件路径
 
-
-this is the worker
-
-- `script/worker.js`
+this is the worker `script/worker.js`
 
 ```js
 onmessage = function(e) {
@@ -90,6 +87,6 @@ onmessage = function(e) {
 }
 ```
 
-- e: the message object, 
+- e: the message object
 - e.data: the message data, send by creator [postMessage()](#postmessage) method, equal to its argument
 

@@ -1,16 +1,16 @@
-#  可调用类型
- 
+#  C++ Callbale Type
+
 [函数指针](c++_function_pointer.md)
- 
- [[成员数据指针]], 可以作为参数，尽管不发生调用
- 
+
+[数据成员指针](cpp-data-member-pointer.md), 可以作为参数，尽管不发生调用
+
 [lambda表达式](c++_lambda.md)
 
-[重载调用运算符的类](重载函数调用运算符.md)
+[重载调用运算符的类](cpp-overload-call-operator.md)
 
-[[标准库function类模板]]
+[标准库的function模板](cpp-std-function-template.md)
 
-[[标准库定义的可调用对象]]
+[标准库定义的可调用对象](cpp-std-define-callable-object.md)
 
 - 包含各种可调用对象的map
 

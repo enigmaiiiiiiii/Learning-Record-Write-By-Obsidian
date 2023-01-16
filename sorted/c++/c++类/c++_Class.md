@@ -18,7 +18,7 @@
 
 [静态成员](c++_Static_Member.md)
 
-[[成员数据指针]]
+[[cpp-data-member-pointer]]
 
 [成员函数指针](c++_Class_Member_Function_Pointer.md)
 
