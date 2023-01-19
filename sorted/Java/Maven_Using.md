@@ -1,11 +1,25 @@
 # 使用Maven
 
-- [使用Maven](#使用maven)
-  - [创建一个项目](#创建一个项目)
-  - [POM配置文件](#pom配置文件)
-  - [编译Maven](#编译maven)
-  - [Package Maven project](#package-maven-project)
-  - [添加到maven仓库](#添加到maven仓库)
+- [创建一个项目](#创建一个项目)
+- [POM配置文件](#pom配置文件)
+- [编译Maven](#编译maven)
+- [Package Maven project](#package-maven-project)
+- [添加到maven仓库](#添加到maven仓库)
+- [display plugins/goals attribute](#helpdescribe)
+
+## basic syntax
+
+```shell
+mvn [options] [<goal(s)>] [<phase(s)>]
+```
+
+define plugin parameters
+
+```
+mvn plugin:goal -Dproperty=value
+```
+
+for example [help:descripe](#helpdescribe)
 
 ## 创建一个项目
 
@@ -83,3 +97,32 @@ install in locally 安装到本地仓库
 ```bash
 mvn install
 ```
+
+## compile
+
+- compile `.java` to `.class`
+
+```bash
+mvn compile
+```
+
+## help:describe
+
+goals list of a phase
+
+```bash
+mvn help:describe -Dcmd=<phaseName>
+```
+
+goals list of a plugin
+
+```bash
+mvn help:describe -Dplugin=<pluginName>
+```
+
+查看custom plugin in [this example](Maven_Custom_Plugin.md#a-simple-plugin-example)的信息
+
+```
+mvn help:describe -Dplugin=code
+```
+

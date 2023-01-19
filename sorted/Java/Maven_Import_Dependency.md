@@ -4,11 +4,11 @@
 
 ## scope
 
-compile: default scope, 类路径可用, 会传播到其它依赖
+`<scope>compile</scope>`: default scope, 类路径可用, 会传播到其它依赖
 
 - 可通过import导入
 
-provided: 运行时依赖
+`<scope>provided</scope>`: 运行时依赖
 
 - web application 部署在container中, container本身提供依赖和相关lib
 
@@ -21,7 +21,7 @@ provided: 运行时依赖
 </dependency>
 ```
 
-runtime: 运行时依赖, 不会出现在编译后的class文件中
+`<scope>runtime</scope>`: 运行时依赖, 不会出现在编译后的class文件中
 
 - 在完成项目代码时并不需要的依赖
 
@@ -34,9 +34,9 @@ runtime: 运行时依赖, 不会出现在编译后的class文件中
 </dependency>
 ```
 
-test: 测试时依赖
+`<scope>test</scope>`: 测试时依赖
 
-system:
+`<scope>system</scope>`:
 
 - 类似provided, 但是需要显式指定jar文件的位置
 

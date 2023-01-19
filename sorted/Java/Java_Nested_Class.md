@@ -11,8 +11,8 @@ class OuterClass {
 }
 ```
 
-- 实例化内部类必须先实例化外部类  
-- 内部类实例化语法  
+- 实例化内部类必须先实例化外部类
+- 内部类实例化语法
 - 编译成OuterClass$InnerClass.class
 
 ```java

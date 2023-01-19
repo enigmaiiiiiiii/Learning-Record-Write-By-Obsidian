@@ -1,5 +1,11 @@
 # lambda表达式
 
+- [Introduction](#introduction)
+- [Instantiate a Functional Interface](#instantiate-a-functional-interface)
+- [变量访问](#变量访问)
+
+## Introduction
+
 lamdba由以下三部分构成:
 
 ```java
@@ -17,9 +23,40 @@ lamdba由以下三部分构成:
 
 ```java
 // 需要一个返回boolean的函数式接口的实例
-Predicate<String> p = (String s) -> list.add(s);  
+Predicate<String> p = (String s) -> list.add(s);
 // 需要一个返回void的函数式接口的实例
 Consumer<String> b = (String s) -> list.add(s);
+```
+
+## Instantiate a Functional Interface
+
+- lambda can used for any suitable functional interface
+
+Functional interface `Foo`:
+
+```java
+@FunctionalInterface
+public interface Foo {
+    String method(String string);
+}
+```
+
+foo instance
+
+```java
+Foo foo = parameter -> parameter + " from lambda";
+```
+
+***
+
+- 只能在定义了目标类型的上下文中指定lambda表达式
+- 当将lambda表达式赋值给函数接口引用时，将创建一个实例
+
+> 目标类型上下文: 包括变量赋值，变量初始化, 返回语句和方法参数, 强制类型转换
+
+```java
+Object o = ()->{System.out.println("Hello");}  // Object不是函数式接口, 无法根据上下文推断出lambda的类型
+Object o = (Runnable)()->{System.out.println("Hello");}  // 强制转换
 ```
 
 ## 变量访问
@@ -29,17 +66,3 @@ Consumer<String> b = (String s) -> list.add(s);
   - 捕获的变量必须是[effectively final](Java_Keyword_Final.md)
 - lambda的参数不能与 **lambda表达式所在的作用域(一对`{}`)**的[局部变量]同名
 - lambda中的this与包含lambda的上下文有关
-
-## lambda的类型
-
-[目标类型]
-
-- 只能在定义了目标类型的上下文中指定lambda表达式
-- 当将lambda表达式赋值给函数接口引用时，将创建一个实例
-
-> 目标类型上下文包括变量赋值，变量初始化, 返回语句和方法参数, 强制类型转换
-
-```java
-Object o = ()->{System.out.println("Hello");}  // Object不是函数式接口, 无法根据上下文推断出lambda的类型
-Object o = (Runnable)()->{System.out.println("Hello");}  // 强制转换
-```

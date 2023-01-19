@@ -6,15 +6,29 @@
 
 ## 函数式接口的实例
 
-[lambda表达式](Java_Lambda.md)
+1. [lambda表达式](Java_Lambda.md)
 
-[方法引用](Java_Method_References.md)
+2. 方法引用
 
 - `ClassName::MethodName` 通过类名调用
 - `this::instanceMethod`
 - `super::instanceMethod`
 
-构造器引用
+```java
+public class MethodReference {
+    public static void main(String[] args) {
+    }
+
+    public void takeMethodFunc(String a, String b, Function<T> func) {
+        func.apply(a, b);
+    }
+
+    public void fx()
+
+}
+```
+
+3.contructor reference
 
 - `ClassName::new`
 

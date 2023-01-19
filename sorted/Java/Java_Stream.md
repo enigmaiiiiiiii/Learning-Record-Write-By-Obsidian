@@ -9,7 +9,47 @@
 
 > 内部迭代便于Java提供优化，若采用for-each这样的外部迭代, 就要自己管理并行问题了
 
-## 中间操作(Intermediate operation)) 
+## create stream
+
+empty stream
+
+```java
+Stream<String> empty = Stream.empty();
+```
+
+from [Collection](Java_Collection.md)
+
+```java
+Collection<String> collection = Arrays.asList("a", "b", "c");
+Stream<String> StreamOfCollection = collection.stream();
+```
+
+from [Array](Java_Array.md)
+
+```java
+Stream<String> StreamOfArray = Stream.of("a", "b", "c");
+```
+
+- from existing array
+
+```java
+String[] arr = new String[] {"a", "b", "c"};
+Stream<String> streamOfArrayFull = Arrays.stream(arr);
+Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
+```
+
+Stream Builder
+
+```java
+```
+
+
+## Pipeline
+
+```java
+```
+
+## 中间操作(Intermediate operation)
 
 - 返回另一个Stream
 - filter()

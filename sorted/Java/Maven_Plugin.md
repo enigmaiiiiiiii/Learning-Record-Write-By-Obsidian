@@ -1,40 +1,52 @@
 # Plugin
 
-- maven中完成实际功能的的组件
+## Introduction
 
-## source
+- plugin is a group of [goals](Maven_Terms.md#mojogoal)
+- maven实际上是一组maven plugin的核心框架
+- 换句话说, plugin执行大部分的实际操作
 
-- 为源文件创建一个jar文档
+插件分为两种
 
-```xml
-<project>
-  ...
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>3.2.1</version>
-        <configuration>
-          <outputDirectory>/absolute/path/to/the/output/directory</outputDirectory>
-          <finalName>filename-of-generated-jar-file</finalName>
-          <attach>false</attach>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  ...
-</project>
-```
+- build plugin
+  - executed during the build lifecycle
+  - configured in `<build/>` from [POM]
+- reporting plugin
+  - execute during site generation
+  - configured in `<reporting/>` from [POM]
 
 ## core plugin
 
-[核心插件](Maven_Core_Plugin.md)
+- corresponding to default core phases
 
-## Mojo
+core plugin list:
 
-- mojo是maven中的目标
+- clean
+- compiler
+- deploy
+- failsafe
+- install
+- resources
+- site
+- surefire
+- verifier
 
-## custom plugin: 自定义插件
+[Core Plugin Detail](Maven_Core_Plugin.md)
+
+## Where Plugins Located 
+
+- locate in `~/m2/repository/org/apache/maven/plugins`
+
+
+## packaging plugin
+
+[Maven Source Plugin](Maven_Source_Plugin.md)
+
+
+## Tools Plugin
+
+[Maven AntRun Plugin](Maven_AntRun_Plugin.md)
+
+## Custom A Plugin
 
 [自定义插件](Maven_Custom_Plugin.md)

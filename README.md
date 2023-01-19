@@ -19,7 +19,7 @@ basic
 - css
 - [JavaScript](JavaScript.md)
 - [TypeScript](TypeScript.md)
-- computer foundation
+- Computer foundation
 - vim
 
 product

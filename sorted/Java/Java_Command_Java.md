@@ -1,5 +1,7 @@
 # java命令
 
+## Introduction
+
 运行一个类文件
 
 - 目标参数通常是:
@@ -17,7 +19,7 @@
 
 [描述](Java_Command_Java_Description.md)
 
-[选项参数](Java_Command_Java_Options.md)
+[options](Java_Command_Java_Options.md)
 
 [参数文件](Java_Command_Java_Argument_File.md)
 

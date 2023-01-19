@@ -18,7 +18,7 @@
 
 [[c++中的strict weak order]]
 
-[[pair]]
+[[cpp-pair]]
 
 [[关联容器迭代器操作]]
 

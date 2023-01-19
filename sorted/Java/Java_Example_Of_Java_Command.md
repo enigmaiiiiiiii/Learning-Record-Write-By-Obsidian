@@ -2,7 +2,7 @@
 
 ## mainclass
 
-## jar
+## execute .jar
 
 执行jar文件
 
@@ -12,4 +12,4 @@ java -jar MyProgram.jar
 
 ## module
 
-## 运行single-source file
+## execute single-source file

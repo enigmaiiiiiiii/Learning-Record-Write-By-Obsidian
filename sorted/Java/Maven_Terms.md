@@ -1,15 +1,30 @@
 # 术语
 
-## plugin
+- [plugin](#plugin)
+- [Mojo](#mojo)
+- [POM](#pom)
+- [坐标(coordinate)](#坐标coordinate)
+- [Repository](#repository)
+- [本地仓库(Local Repository)](#本地仓库local-repository)
+- [目录结构](#目录结构)
+- [依赖机制](#依赖机制)
 
-- maven实际上是一组maven plugin的核心框架
-- 换句话说, plugin执行大部分的实际操作
+## Lifecycle
 
-## Mojo
+[Life Cycle](Maven_Lifecycle.md)
 
-- mojo是maven中的目标, plugin是由任意数量的mojo组成的
+## Plugin
+
+[Plugin](Maven_Plugin.md)
+
+## Mojo(goal)
+
+- mojo represents a specific task
+- mojo是maven中的goal, [plugin]是由任意数量的mojo组成的
 - 可以定义为带注释的java类或BeanShell脚本
 - mojo指定了关于目标的元数据, 绑定的生命周期, 需要的参数
+
+[define a goal in plugin](Maven_Custom_Plugin.md#simple-mojo-class)
 
 # 原型(archetype)
 
@@ -53,7 +68,7 @@ project
 
 - groupId, artifactId, version共同组成maven项目的坐标
 
-groupId: 
+groupId:
 
 - 在organization 或 organization 中通常是唯一的
 
@@ -98,9 +113,9 @@ c:\users\administrator\.m2\repository\org\sample
             _remote.repositories
 ```
 
-## 目录布局
+## 目录结构
 
-src: 存放源文件
+src: source file directory
 
 - src/main/java
 - src/main/resources
@@ -115,13 +130,15 @@ src: 存放源文件
 
 说明文本
 
-LICENSE.txt
-NOTICE.txt
-README.txt
+- LICENSE.txt
+- NOTICE.txt
+- README.txt
 
-target: 存放构建项目的输出目录
+target
+
+- 存放构建项目的输出目录
 
 ## 依赖机制
 
-[Dependency](Maven_Term_Dependency.md)
+[Dependency](Maven_Dependency_Mechanism.md)
 

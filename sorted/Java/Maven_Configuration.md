@@ -1,9 +1,12 @@
 # 配置Maven
 
-- 分为3个等级
-  - Project: pom.xml设置
-  - Installation: 
-  - User: 在`${user.home}/.m2/settings.xml`进行全局配置
+## Configuration Level
+
+分为3个等级
+
+- Project Level: pom.xml设置
+- Installation Level: ????
+- User: 在`${user.home}/.m2/settings.xml`进行全局配置
 
 ## 配置文件
 
@@ -67,8 +70,41 @@ export MAVEN_OPTS=-Dmaven.artifact.threads=3
 </settings>
 ```
 
+## Set Java Compiler
+
+Set default property in `pom.xml`
+
+```xml
+<project>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>
+```
+
+[Comfigure plugin](Maven_Pom_Xml.md#subelements-of-build) directly
+
+```xml
+<project>
+  ...
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  ...
+</project>
+```
+
 ## profiles
 
 - downloadsources
-
-## 

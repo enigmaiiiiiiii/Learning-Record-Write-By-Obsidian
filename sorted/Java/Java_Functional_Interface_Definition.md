@@ -1,6 +1,10 @@
-# Java_Functional_Interface_Definition
+# Java Functional Interface Definition
 
-## 定义
+- [Define A Functional Interface](#define-a-functional-interface)
+- [Take A Look](#take-a-look)
+- [Use `@FunctionalInterface` Annotation](#use-functionalinterface-annotation)
+
+## Define A Functional Interface
 
 - 只有一个**抽象**方法, 意味着
   - 可以包含Object类中的public方法
@@ -23,7 +27,7 @@ interface NonFunc {
 }
 ```
 
-## 示例
+## Take A Look
 
 声明函数式接口
 
@@ -33,7 +37,8 @@ publijc interface IntConsumer {
     void accept(int value);
 }
 ```
-接口类型作为参数的方法
+
+参数类型为**函数接口**的方法
 
 ```java
 public class FunctionCaller {
@@ -45,7 +50,7 @@ public class FunctionCaller {
 }
 ```
 
-## \@FunctionalInterface标记
+## Use `@FunctionalInterface` Annotation
 
 - 编译器会检查该接口是否为函数式接口
 - javadoc会指出这是一个函数式接口

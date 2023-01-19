@@ -29,7 +29,7 @@ run and debug a simple app
 
 - `"program"`: the entry file of the app
 
-## launch.json Attributes
+## launch.json Configurations Field Attributes
 
 mandatory for every launch configuration
 
@@ -40,9 +40,12 @@ mandatory for every launch configuration
 大多数调试器支持的Attributes
 
 - `"program"`: the entry file of the app
-- `"args"`: the arguments pass to the app
+- `"args"`: the arguments **pass to the app**
 - `"cwd"`: current working directory of the app
 
+for java
+
+`"vmargs"`: the [arguments](Java_Command_Java_Options.md) pass to the Java
 
 ## Debug Mode
 

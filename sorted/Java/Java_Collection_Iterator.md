@@ -1,11 +1,17 @@
 # 迭代器
 
+## get Iterator
+
+```java
+Iterator it = coll.iterator();
+```
+
+- 迭代器起始位置在集合的第一个元素之前
+
 ## 遍历元素
 
-- 声明迭代器: Iterator it = coll.iterator();
-  - 迭代器起始位置在集合的第一个元素之前
-- it.next()返回集合coll中下一个元素
-- it.hasNext()判断集合coll中是否还有元素
+- it.next(): 返回集合coll中下一个元素
+- it.hasNext(): 判断集合coll中是否还有元素
 
 ## remove()方法
 
