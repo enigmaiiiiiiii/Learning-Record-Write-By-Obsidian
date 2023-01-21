@@ -3,8 +3,7 @@
 ## 显式初始化
 
 ```java
-class Employee 
-{
+class Employee {
     private String name = "";
 }
 ```
@@ -14,15 +13,13 @@ class Employee
 - 静态初始化块， 普通块前加static
 
 ```java
-class Employee 
-{
+class Employee {
     {
         id =nextId;
         nextId++;
     }
 
-    static
-    {
+    static {
         Random rd = new Random();
         nextId = rd.nextInt(10000);
     }

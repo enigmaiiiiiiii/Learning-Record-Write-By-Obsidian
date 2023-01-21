@@ -1,7 +1,6 @@
 # 注解列表
 
-- 遵循[java注解语法](../Java_Annotation)
-
+- 遵循[java注解语法]()
 
 ## `@Value("${key}")`: 
 

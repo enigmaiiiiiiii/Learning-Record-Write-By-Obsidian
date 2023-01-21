@@ -1,35 +1,23 @@
-# 术语
+# Java Terms
 
-JDK
+[简称](Java_Abbreviation.md)
 
-- Java Development Kit
-- 编写Java程序的软件
-- 程序员使用
+[源文件](Java_Source_File.md)
 
-JRE
+[类文件](Java_Class_File.md)
 
-- Java Runtime Environment
-- 运行Java程序的软件
-- 用户使用
+[package](Java_Package.md)
 
-Server JRE
+[jar文件](Java_Jar_File.md)
 
-- 在服务器上运行Java程序的软件
+[war package](Java_War_File.md)
 
-openJDK
+[module](Java_Module.md)
 
-- Java SE的免费开源实现，不包含JavaFX
+[Mainclass](Java_MainClass.md)
 
-SE
+[目标类型]
 
-- Standard Edition
-- 用于桌面或简单服务器应用的Java平台
+[ground target type]
 
-EE
-
-- Enterprise Edition
-- 用于复杂服务器应用的Java平台
-
-NetBeans
-
-- Oracle的集成开发环境
+[局部变量]

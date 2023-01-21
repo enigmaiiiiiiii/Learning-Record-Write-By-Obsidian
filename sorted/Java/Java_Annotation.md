@@ -1,29 +1,69 @@
-# 注释
+# Java Annotation
 
-- 注释放在所描述结构前
-- 被抽取的注释放在`/**...*/`之间
+- [Introduction](#introduction)
+- [Custom Annotation](#custom-annotation)
+- [Use Annotation](#use-annotation)
+- [Built-in Annotation](#built-in-annotation)
+- [Annotation接口](#annotation接口)
 
-从注释中抽取信息, 主要从以下几个结构
+## Introduction
 
-- 包
-- 公有类和接口
-- 公有的和受保护的构造器及方法
-- 公有的和受保护的域
+- 注解是源代码中标签
+- 编译器对于包含注解和不包含注解的代码会生成相同的虚拟机指令
 
-## 类注释
+## Custom Annotation
 
-## 注释提取
+[Custom Annotation](Java_Custom_Annotation_Type.md)
 
-单个包
+## Use Annotation
 
-```shell
-javadoc -d docDirectory package_name
+- can be used declarations of classed, fileds, methods
+
+```java
+@ClassPreamble(
+    auther = "John Doe",
+    date = "01/01/2017",
+    reviewers = {"Alice", "Bob", "Charlie"}
+)
+public class Generation3List {
+    // ...
+}
 ```
 
-多个包
+使用单值注解
 
-```shell
-javadoc -d docDirectory package_name1 package_name2
+- 可以省略`value=`
+
+```java
+@Copyright("2017")
+public class Generation3List {
+    // ...
+}
 ```
 
-> docDirectory为提取的文档的保存目录
+## Built-in Annotation
+
+Normal Built-in Annotation
+
+- `@Deprecated`
+- `@Override`:
+- `@FunctionalInterface`: 用于标记[函数式接口](Java_Functional_Interface.md)
+- `@SuppressWarnings`
+- `@SafeVarargs`
+
+应用于其他注解的注解, or called meta annotation
+
+- `@Retention`
+  - RetentionPolicy.SOURCE: 不包括在类文件中的注解
+  - RetentionPolicy.CLASS: 包括在类文件中的注解, 但是虚拟机额不需要将他们载入
+  - RetentionPolicy.RUNTIME: 包括在类文件中的注解，并由虚拟机载入, **通过反射可访问**
+- `@Repeatable`: 允许同一个元素多次使用同一个注解
+- `@Documented`: elements using this should documented by javadoc tools
+- `@Target`: 限制注解的作用元素
+- `@Inherited`: 注解类型被自动继承
+  - 查找这种类型的注解时, 若没有在当前类中找到, 则会在其父类中查找
+  - 查找过程会一直沿着继承链向上查找, **直到找到**或**达到Object**
+
+## Annotation接口
+
+[Interface Annotation](Java_Interface_Annotation.md)

@@ -1,5 +1,18 @@
 # Collection
 
+- [Introduction](#introduction)
+- [feature](#feature)
+- [Implementations](#implementations)
+- [Iterator](#iterator)
+- [Create Collection](#create-collection)
+- [Instance Method](#instance-method)
+- [Static Class Collections](#static-class-collections)
+  - [Interface `Comparator<T>`](#interface-comparatort)
+  - [Interface `Comparable<T>`](#interface-comparablet)
+- [Arrays类](#arrays类)
+- [foreach](#foreach)
+
+
 ## Introduction
 
 [通用接口](Java_Collection_Interface.md)
@@ -23,7 +36,7 @@
 - `Collection<T> c = new ArrayList<T>();`: 创建空集合
 - `Collection<T> c = new ArrayList<T>(c1);`: 用另一个集合的元素创建一个新的集合
 
-## 集合的实例方法
+## Instance Method
 
 [Collection](Java_Collection_Method.md)
 

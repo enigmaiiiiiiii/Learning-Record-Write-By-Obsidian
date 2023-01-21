@@ -1,9 +1,17 @@
-# 定义注解
+# Custom Annotation Type
+
+- [Define A Annotation Type](#define-a-annotation-type)
+- [Annotation Element](#annotation-element)
+- [标记注解(Marked Annotation Interface)](#标记注解marked-annotation-interface)
+- [单值注解(Single-Element Annotation Interface)](#单值注解single-element-annotation-interface)
+- [(Repeatable)可重复接口](#repeatable可重复接口)
+
+## Define A Annotation Type
 
 ```java
 public @interface ClassPreamble {
     String author();
-    String date() default "[unassigned]";  // 默认值
+    String date() default "[unassigned]";  // 默认值: [unassigned]
     // Note user of array
     String[] reviewers();
 }
@@ -18,37 +26,43 @@ public @interface ClassPreamble {
 
 > 想要使Classpreamble的注释信息出现在Javadoc-generated(JavaDoc命令生成)文档中, 要在注释类的定义上一行加@Documented
 
-## 注解的元素
+## Annotation Element
 
-- **注解元素**: 注释接口中的方法声明
-- 限制
+`String author()` is an Annotation Element, looks like a method declaration
+
+- limitation
   - 不能有形参, 类型参数
   - 不能有throws语句
   - 不能是private, default, static
-  - 返回类型限定为：
-    - 基本类型
+  - 返回类型限定为
+    - [primitives](Java_Primitives_Type.md)
     - String
-    - Class类
-    - enum class type
+    - [Class](Java_Class.md): not **java.lang.Class**
+    - [enum](Java_Enum_Type.md)) 
     - annotation interface type
     - 由以上类型元素组成的数组(排除嵌套数组)
 - 不能覆盖Object类和java.lang.annotation.Annotation类声明为public和protexted的方法
-- 注释接口类型`T`不能包含类型`T`的元素
+
+注释接口类型`Foo`不能包含类型`Foo`的元素
 
 ```java
 // this is illegal
-@interface SelfRef {SelfRef value();}
+@interface Foo{Foo value();}
 ```
 
-## 标记注解(Marked Annotation Interface)
+## Marked Annotation Interface
 
-- 没有元素, 或
-- 所有元素都使用默认值
+> 标记注解
 
-## 单值注解(Single-Element Annotation Interface)  
+- 没有元素
+- 或所有元素都使用默认值
+
+## Single-Element Annotation Interface
+
+> 单值注解
 
 - 只有一个元素的注释接口
-- 按照约定, 单元素注释接口元素名称为value
+- **按照约定**, 单元素注释接口元素名称为value
 
 ```java
 public @interface Copyright {

@@ -14,9 +14,9 @@
 
 [字符串](Java_String.md)
 
-[注释](Java_Annotation.md)
-
 [泛型](Java_Generics.md)
+
+[Annotation](Java_Annotation.md)
 
 ## II API
 
@@ -83,6 +83,8 @@
 [quartz](/sorted/Java/Java_Quartz.md): 定时任务
 
 [lwjgl](/sorted/Java/Java_LWJGL.md): 游戏引擎
+
+[Javassist](/sorted/Java/Java_Javassist.md): 字节码操作
 
 ## 应用
 

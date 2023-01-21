@@ -2,7 +2,7 @@
 
 [Java中对类之间关系的描述](Java_Object_Description.md)
 
-[类](Java_Class.md)
+[Class](Java_Class.md)
 
 [方法](Java_Method.md)
 
@@ -19,7 +19,5 @@
 [类型转换](Java_Type_Convert.md)
 
 [Object类](Java_Object_Class.md)
-
-[嵌套类](Java_Nested_Class.md)
 
 [枚举类型](Java_Enum_Type.md)

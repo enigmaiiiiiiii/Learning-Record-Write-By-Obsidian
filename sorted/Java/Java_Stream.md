@@ -9,56 +9,52 @@
 
 > 内部迭代便于Java提供优化，若采用for-each这样的外部迭代, 就要自己管理并行问题了
 
-## create stream
+## Create Stream
 
-empty stream
-
-```java
-Stream<String> empty = Stream.empty();
-```
-
-from [Collection](Java_Collection.md)
-
-```java
-Collection<String> collection = Arrays.asList("a", "b", "c");
-Stream<String> StreamOfCollection = collection.stream();
-```
-
-from [Array](Java_Array.md)
-
-```java
-Stream<String> StreamOfArray = Stream.of("a", "b", "c");
-```
-
-- from existing array
-
-```java
-String[] arr = new String[] {"a", "b", "c"};
-Stream<String> streamOfArrayFull = Arrays.stream(arr);
-Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
-```
-
-Stream Builder
-
-```java
-```
-
+[Create Stream](Java_Create_Stream.md)
 
 ## Pipeline
 
+three part:
+
+- source
+- [intermediate operation](#Intermediate-operation)
+- [terminal operation](#Terminal-Operations)
+
+## Intermediate operation
+
+- return a new Stream
+- 可以链式调用
+
 ```java
+Stream<String> twiceModifiedStream = stream.skip(1).map(element -> element.substring(0, 3));
 ```
 
-## 中间操作(Intermediate operation)
+Lazy Invocation
 
-- 返回另一个Stream
+```java
+public static void main(String[] args) {
+    Stream<String> stream = Stream.of("d2", "a2", "b1", "b3", "c")
+        .filter(s -> {
+            System.out.println("filter: " + s);
+            return true;
+        });
+}
+```
+
+- **output nothing**, filter() is not invoked
+
+[Method List](Java_Stream_Intermediate_Operations_Method.md)
+
 - filter()
 - map()
 - limit()
 - takeWhile(Predictate<? super T> predicate)
 
-## 终端操作(Terminal operations)
+## Terminal Operations
 
-- 用于收集数据
-- count(), forEach(), collect()
-- 生成结果，如List, Integer
+- mark the end of stream
+- return a result
+- one terminal operation **only use once** for one stream
+
+[Method List](Java_Stream_Terminal_Operations_Method.md)

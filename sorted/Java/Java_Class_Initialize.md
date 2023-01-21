@@ -1,6 +1,10 @@
 # 初始化
 
+## Constructor
+
 [构造器](Java_Class_Constructor.md)
+
+## Field
 
 [字段初始化](Java_Class_Field_Initialize.md)
 
