@@ -6,7 +6,7 @@
 
 [配置Maven](Maven_Configuration.md)
 
-[使用Maven](Maven_Using.md)
+[使用Maven](Maven_Practical_Use.md)
 
 [引入依赖](Maven_Import_Dependency.md)
 
@@ -14,4 +14,4 @@
 
 ## II
 
-[Command to Solve practical problems](Maven_Practical_Command.md)
+[Stuck In Use](Maven_Stuck_In_Use.md)

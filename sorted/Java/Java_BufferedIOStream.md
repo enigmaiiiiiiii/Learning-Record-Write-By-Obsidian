@@ -1,4 +1,4 @@
-# 缓冲流: BufferInputStream/BufferOutputStream 
+# 缓冲流: BufferInputStream/BufferOutputStream
 
 - 扩展自FilterInputStream/FilterOutputStream
 - 创建时会创建一个内部的缓冲区数组(byte[] buf)

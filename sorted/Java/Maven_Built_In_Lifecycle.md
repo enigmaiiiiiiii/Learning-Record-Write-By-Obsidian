@@ -1,6 +1,5 @@
 # Maven Three Built-in Lifecycles
 
-
 ## Introduction
 
 1. default
@@ -11,7 +10,7 @@ default life cycle as example, 包含几个主要的[build phase](#build-phase)
 
 - validate: 验证
 - compile: 编译
-- text: 测试
+- test: 测试
 - package: 打包
 - verify: 检查
 - install: 安装到local repository

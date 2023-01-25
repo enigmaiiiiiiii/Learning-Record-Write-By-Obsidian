@@ -1,12 +1,8 @@
-# Freeroad
-
-## 自动回复
-
-freeman105@gmail.com
+# Free Road
 
 ## 设置代理
 
-### linux
+linux
 
 - 代理服务器已知
 
@@ -14,9 +10,11 @@ freeman105@gmail.com
 export https_proxy=http://127.0.0.1:8580 http_proxy=http://127.0.0.1:8580 all_proxy=socks5://127.0.0.1:858
 ```
 
-export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:8100 all_proxy=socks5://192.168.231.1:810
+windows
 
-### windows
+```bash
+export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:8100 all_proxy=socks5://192.168.231.1:810
+```
 
 设置 $\rightarrow$ 网络和Internet $\rightarrow$ 代理 $\rightarrow$ 代理ip, 代理端口
 
@@ -27,3 +25,7 @@ export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:810
 ## gofly
 
 [gofly](https://we.gofly.cyou/)
+
+## 自动回复
+
+freeman105@gmail.com

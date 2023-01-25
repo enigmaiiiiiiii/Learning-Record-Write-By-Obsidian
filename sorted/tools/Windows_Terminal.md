@@ -1,4 +1,4 @@
-# Windows Terminal命令与插件
+# Windows Terminal
 
 ## PowerLine
 
@@ -14,24 +14,10 @@ Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
 ## PowerShell命令
 
-- Get-Help 获得帮助文档
-  - Get-Help cmdlet 获得某个cmdlet的帮助文档
-  - Get-Help About_&lt;topic-name&gt;
-- cd
-  - 切换磁盘和目录
-  - ``cd d:/path``
-  - ``cd ..`` 返回上级目录
-- md
-  - 新建文件夹
-- dir
-  - 显示目录中文件列表
-- tree
-  - 显示目录树
-  - `tree /f` 显示文件
 
 ## Windows Terminal快捷键
 
-- ``Alt + shift + '+'`` 右侧新建窗口
+- `Alt + shift + '+'` 右侧新建窗口
 - `Alt + shift + '-'` 下侧新建窗口
 
 ## oh my posh

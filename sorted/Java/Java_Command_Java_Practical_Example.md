@@ -2,6 +2,13 @@
 
 ## mainclass
 
+```java
+java -cp sample/classes com.example.App
+```
+
+- [classpath](): sample/classes
+- mainclass: com.example.App
+
 ## execute .jar
 
 执行jar文件

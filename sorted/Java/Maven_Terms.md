@@ -1,7 +1,8 @@
 # 术语
 
-- [plugin](#plugin)
-- [Mojo](#mojo)
+- [Lifecycle](#lifecycle)
+- [Plugin](#plugin)
+- [Mojo(goal)](#mojogoal)
 - [POM](#pom)
 - [坐标(coordinate)](#坐标coordinate)
 - [Repository](#repository)

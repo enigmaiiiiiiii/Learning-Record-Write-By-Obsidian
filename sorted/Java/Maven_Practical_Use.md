@@ -1,27 +1,32 @@
 # 使用Maven
 
-- [创建一个项目](#创建一个项目)
+- [Common Syntax](#common-syntax)
+- [Create A Project](#create-a-project)
 - [POM配置文件](#pom配置文件)
-- [编译Maven](#编译maven)
 - [Package Maven project](#package-maven-project)
 - [添加到maven仓库](#添加到maven仓库)
-- [display plugins/goals attribute](#helpdescribe)
+- [compile](#compile)
+- [clean](#clean)
+- [run single test](#run-single-test)
+- [help:describe](#helpdescribe)
 
-## basic syntax
+## Common Syntax
 
 ```shell
 mvn [options] [<goal(s)>] [<phase(s)>]
 ```
 
-define plugin parameters
+define plugin properties in command line
 
-```
+```shell
 mvn plugin:goal -Dproperty=value
 ```
 
-for example [help:descripe](#helpdescribe)
+- set properties in [pom.xml](Maven_Pom_Xml_Build_Element.md#plugin元素) use `<configuration/>` element
 
-## 创建一个项目
+> set parameter example [help:descripe](#helpdescribe)
+
+## Create A Project
 
 ```bash
 mvn archetype:generate -DgroupId=com.mycompany.app
@@ -59,23 +64,7 @@ crtl+shift+p -> maven: generate from archetype
 
 [pom.xml](Maven_Pom_Xml.md)
 
-## 编译Maven
-
-编译应用程序
-
-> 在pom.xml所在的目录下，执行命令
-
-```shell
-maven compile
-```
-
-编译test
-
-```shell
-mvn test
-```
-
-## Package Maven project 
+## Package Maven project
 
 create
 
@@ -100,10 +89,28 @@ mvn install
 
 ## compile
 
-- compile `.java` to `.class`
+compile `.java` to `.class`
+
+> 在pom.xml所在的目录下，执行命令
 
 ```bash
 mvn compile
+```
+
+compile test
+
+```shell
+mvn test
+```
+
+## clean
+
+- remove the `target` directory
+
+## run single test
+
+```bash
+mvn test -Dtest=<testClassName>#<testMethodName>
 ```
 
 ## help:describe

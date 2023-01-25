@@ -10,15 +10,22 @@
 
 ## 创建PrinterWriter对象
 
-- 通过File类构建
-  - 可以指定字符集
-- 通过**OutputStream**构建: PrintWriter(OutputStream out, boolean autoFlush, Charset charset)
-  - 允许指定字符集
-  - 是否自动刷新
-- 通过Writer构建
-  - 可以指定自动刷新参数
-- 通过文件路径构建
-  - 可以指定字符集
+通过[File](Java_File_Class.md)类构建
+
+- 可以指定字符集
+
+通过**OutputStream**构建: PrintWriter(OutputStream out, boolean autoFlush, Charset charset)
+
+- 允许指定字符集
+- 是否自动刷新
+
+通过Writer构建
+
+- 可以指定自动刷新参数
+
+通过文件路径构建
+
+- 可以指定字符集
 
 ## 向文件写入字符的方法
 

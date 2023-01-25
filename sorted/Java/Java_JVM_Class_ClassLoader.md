@@ -1,8 +1,10 @@
 # ClassLoader类
 
+## Introduction
+
 - ClassLoader类是一个**抽象类**
 - 每个[Class](Java_Reflect_Class.md)对象都包含一个对定义它的ClassLoader的引用
-- ClassLoader还负责定位资源
+- ClassLoader还负责[定位资源]
 - defineClass()方法将字节码转换为Class对象
 
 network class must define findClass() and loadClass()
@@ -18,12 +20,12 @@ class NetworkClassLoader extends ClassLoader {
     }
 
     private byte[] loadClassData(String name) {
-        // load the class data from network 
+        // load the class data from network
     }
 }
 ```
 
-## 抽象方法
+## 方法
 
 `URL getResource(String name)`
 
