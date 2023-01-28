@@ -25,22 +25,23 @@ class NetworkClassLoader extends ClassLoader {
 }
 ```
 
-## 方法
+## Method
 
 `URL getResource(String name)`
 
 - 默认实现首先在parent class loader中搜做指定资源
-  - 返回URL
+- 返回[URL]()
   - 如果parent is null, 则搜索JVM的内置class loader
   - 如果没有找到，则调用findResource()方法
+  - 对于[用户定义的类](Java_ClassLoader.md#run-time-built-in-class-loaders)classloader, if name is `""`
+    - getResource() 返回[-cp](Java_Command_Java.md)指定的路径
+    - Maven Project return `target/classes`
 
-> 当前目录`.`, 同[-cp](Java_Command_Java.md)指定的classpath路径
-
-URL findResource(String name)
+`URL findResource(String name)`
 
 - 返回被查找资源的URL, Class Loader应该重写此方法
 
-URL findResource(String moduleName, String name)
+`URL findResource(String moduleName, String name)`
 
 - 返回 **类加载器定义的** Module中的资源的URL
 - 支持 **从模块加载** 的 **类加载器** 应该重写此方法

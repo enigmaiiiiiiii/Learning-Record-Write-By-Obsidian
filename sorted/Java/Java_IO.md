@@ -4,12 +4,13 @@
 - [Practical Use](#practical-use)
 - [File IO](#file-io)
 - [字节流](#字节流)
-- [字符流](#字符流)
+- [Reader/Writer](#readerwriter)
+- [Why Buffer IO faster than unbuffered IO](#why-buffer-io-faster-than-unbuffered-io)
 - [IO Class Hierarchy](#io-class-hierarchy)
 
 ## feature
 
-- 流使用完毕后，必须关闭流
+- **必须关闭流**
 - 低级流(节点流): 实际连接程序与另一端的流，负责读写字节数据
 - 高级流(处理流): 用于简化读写操作, 不能独立存在, 必须建立在其他流上
 
@@ -44,9 +45,13 @@ File Byte IO Stream
 - [Object Stream](Java_ObjectIOStream.md): 将对象序列化与反序列化的流
 - [Data Stream](Java_DataIOStream.md): 读写[基本数据类型](Java_Primitives_Type.md)的流
 
-## 字符流
+## Reader/Writer
 
-基类: [Reader/Writer]
+抽象基类
+
+[Reader/Writer](Java_IO_Character_Stream.md)
+
+> write to a stream need close() flush the buffer
 
 **转换** 字节流为字符流
 

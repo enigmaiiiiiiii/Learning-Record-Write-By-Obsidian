@@ -11,14 +11,16 @@ class OuterClass {
 }
 ```
 
-- 实例化内部类必须先实例化外部类
-- 内部类实例化语法
-- 编译成OuterClass$InnerClass.class
+Instantiate a Inner Class
+
+- **必须先实例化外部类**
 
 ```java
 OuterClass outerObject = new OuterClass();
 OuterClass.InnerClass innerObject = outerObject.new InnerClass();
 ```
+
+Inner Class is compiled to `OuterClass$InnerClass.class`
 
 ## Static Inner Class(静态内部类)
 
@@ -39,7 +41,7 @@ StaticInnerClass innerObject = outerObject.new StaticInnerClass(); // 编译错�
 - 访问权限
   - 本地类只能访问声明为final的本地变量
   - 可以访问[封闭块]()中的final或[effectively final](Java_Keyword_Final.md)局部变量
-  - *自Java SE 8*, 开始可以访问所在方法的参数
+  - *from Java SE 8*, 开始可以访问所在方法的参数
 
 ## Anonymous Class(匿名类)
 

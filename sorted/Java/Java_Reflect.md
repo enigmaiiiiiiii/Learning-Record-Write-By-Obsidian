@@ -1,10 +1,12 @@
 # 反射
 
 ## Introduction
+
 - 反射机制的用途
   - **运行时**分析类
   - **运行时**查看对象
   - 通用数组操作代码
+  - 定位资源位置
   - ~~Method对象, 很像[c++中的函数指针](c++_Function_Pointer.md)~~
 
 ## Feature

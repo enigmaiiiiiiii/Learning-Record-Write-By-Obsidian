@@ -83,8 +83,6 @@ why is `<executions/>`
 
 - bind to a `process-test-resources` phase
 
-
-
 ## 组合插件(plugin)和build phase
 
 ```shell

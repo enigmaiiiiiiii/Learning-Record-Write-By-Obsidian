@@ -14,14 +14,8 @@
 
 ## URL类
 
-- URL类**并不**根据RFC2396定义的机制对其字符串内容进行解码或编码
-- caller在调用前负责对转义字符进行编码
 
-方法
-
-- `new URL(String);` 构建URL对象
-- `public InputStream openStream();`: 获得资源内容
-  - 相当于`openConnection().getInputStream()`
+[Net](Java_Net_URL.md)
 
 URLDecoder: HTML解码工具类
 

@@ -1,8 +1,10 @@
 # java.lang.Class
 
 - [Introduction](#introduction)
-- [获得Class实例](#获得class实例)
-- [方法](#方法)
+- [Get Class Instance](#get-class-instance)
+- [通过Class创建对象](#通过class创建对象)
+- [Method](#method)
+- [Get Class from Inner Class](#get-class-from-inner-class)
 
 ## Introduction
 
@@ -107,10 +109,10 @@ ClassLoader
 > `.`: 当前目录, `/`: 根目录
 
 - `URL getResource(String name)`: 查找与**调用该方法的类**相关指定资源
-  - 如果class在一个[命名Module]中, 则通过调用Class loader的getResource()方法
+  - 如果class在一个[命名Module]中, 则通过调用[Classloader的getResource()](Java_Lang_ClassLoader.md)方法
   - 如果class在一个[非命名Module]中, Class Object被bootstrap class loader加载, 该方法调用ClassLoader.getSystemResource(Java.lang.String)
-- getResourceAsStream(String name)
-  - 如果name以`/`开始, 则资源的绝对路径名是`/`后面的部分
+  - 如果name以`/`开始, 则资源的路径是**绝对路径**
+  - if name without `/`, then resource path is **relative to the package of the class**
 
 ## Get Class from Inner Class
 

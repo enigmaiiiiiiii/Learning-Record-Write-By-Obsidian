@@ -1,5 +1,12 @@
 # Plugin
 
+- [Introduction](#introduction)
+- [core plugin](#core-plugin)
+- [Where Plugins Located](#where-plugins-located)
+- [packaging plugin](#packaging-plugin)
+- [Tools Plugin](#tools-plugin)
+- [Custom A Plugin](#custom-a-plugin)
+
 ## Introduction
 
 - plugin is a group of [goals](Maven_Terms.md#mojogoal)
@@ -14,6 +21,10 @@
 - reporting plugin
   - execute during site generation
   - configured in `<reporting/>` from [POM]
+
+## Custom A Plugin
+
+[自定义插件](Maven_Custom_Plugin.md)
 
 ## core plugin
 
@@ -33,20 +44,15 @@ core plugin list:
 
 [Core Plugin Detail](Maven_Core_Plugin.md)
 
-## Where Plugins Located 
+## Where Plugins Located
 
 - locate in `~/m2/repository/org/apache/maven/plugins`
-
 
 ## packaging plugin
 
 [Maven Source Plugin](Maven_Source_Plugin.md)
 
-
 ## Tools Plugin
 
 [Maven AntRun Plugin](Maven_AntRun_Plugin.md)
 
-## Custom A Plugin
-
-[自定义插件](Maven_Custom_Plugin.md)

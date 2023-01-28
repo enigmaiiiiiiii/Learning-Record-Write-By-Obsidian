@@ -50,6 +50,8 @@
 
 3. 系统类加载器
 
+> ~~主要指的是**用户定义的类**~~
+
 - 由 CLASSPATH 环境变量或在[命令行option](Java_Command_Javac.md)中设置的类路径中查找这些类
 
 ## 类加载器层次结构
@@ -68,7 +70,7 @@
 
 ## ClassLoader类
 
-[ClassLoader类](Java_JVM_Class_ClassLoader.md)
+[ClassLoader类](Java_Lang_ClassLoader.md)
 
 ## Module类
 
