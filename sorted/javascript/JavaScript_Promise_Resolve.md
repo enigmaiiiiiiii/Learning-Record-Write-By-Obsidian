@@ -20,7 +20,7 @@ Promise.resolve("Success").then(
     console.log(value);
   }
   (reason) => {
-    // 
+    //
   }
 )
 ```

@@ -15,7 +15,7 @@
 
 Promise 是为了满足 这样的**异步**操作:
 
-一个普遍需求是: 有时需要多个异步操作一个接一个的执行, 而后一个操作需要前一个操作的结果, success or false
+一个普遍需求是: 有时需要多个异步操作一个接一个的执行, 而后一个操作需要前一个操作的结果, success or fail
 
 without promise lead to the **callback pyramid of doom**
 

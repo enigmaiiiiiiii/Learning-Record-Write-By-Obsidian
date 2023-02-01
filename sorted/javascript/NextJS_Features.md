@@ -27,7 +27,6 @@ two forms pre-rendering
 [Server-side Rendering(SSR)](#server-side-renderingssr)
 [Client-side Rendering(CSR)](#client-side-renderingcsr)
 
-
 ## Server-side Rendering(SSR)
 
 [SSR](NextJS_Server_Side_Rendering.md)

@@ -9,6 +9,7 @@
 - [clean](#clean)
 - [run single test](#run-single-test)
 - [help:describe](#helpdescribe)
+- [package jar to target directory](#package-jar-to-target-directory)
 
 ## Common Syntax
 
@@ -121,7 +122,9 @@ goals list of a phase
 mvn help:describe -Dcmd=<phaseName>
 ```
 
+
 goals list of a plugin
+
 
 ```bash
 mvn help:describe -Dplugin=<pluginName>
@@ -133,3 +136,6 @@ mvn help:describe -Dplugin=<pluginName>
 mvn help:describe -Dplugin=code
 ```
 
+## package jar to target directory
+
+[Maven AntRun Plugin](Maven_AntRun_Plugin.md#copy-jar-file-to-specific-directory)

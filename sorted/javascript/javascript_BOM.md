@@ -37,3 +37,7 @@
 ## window对象
 
 [Window](JavaScript_BOM_Window.md)
+
+## Navigator
+
+[Navigator](JavaScript_BOM_Navigator.md)

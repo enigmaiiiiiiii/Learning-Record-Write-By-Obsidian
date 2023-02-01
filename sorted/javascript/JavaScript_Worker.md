@@ -11,6 +11,7 @@
 > in other lauguage, maybe called **thread**
 
 - a background task
+- a feature in javascript, **not in nodejs**
 - can send message back to its creator
 - javascript 通过 `Worker` 实现线程 communication
 - note main consist of three parts
@@ -31,12 +32,14 @@ create a worker
 - `main.js`
 
 ```js
-const woker = new Worker('script/worker.js')
+const worker = new Worker('script/worker.js')
 ```
 
 - `script/worker.js` is 脚本文件路径
 
 this is the worker `script/worker.js`
+
+- worker will listen [onmessage](#onmessage) event
 
 ```js
 onmessage = function(e) {
@@ -84,6 +87,7 @@ worker.js
 ```js
 onmessage = function(e) {
   // do something
+  console.log(e.data)
 }
 ```
 

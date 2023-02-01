@@ -24,7 +24,7 @@ npx create-next-app
 
 ## I
 
-[file system routing](NextJs_File_System_Routing.md)
+[File System Routing](NextJs_File_System_Routing.md)
 
 [API](NextJs_API.md)
 
@@ -34,7 +34,7 @@ npx create-next-app
 
 ## II
 
-[API Route](NextJS_API_Routes.md)
+[API Route](NextJS_Routes_API.md)
 
 [Core Concepts](NextJS_Core_Concepts.md)
 

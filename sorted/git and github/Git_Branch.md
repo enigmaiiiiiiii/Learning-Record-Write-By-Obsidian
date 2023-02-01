@@ -54,12 +54,18 @@ git branch <branch_name>
 
 ## 合并branch
 
-- merge基本用法, 如合并到master: 1. 切换到master分支 2. `git merge <branch>`, branch要合并的分支名称
-- 一般合并会用到三个快照: 两个分支末端和作为合并基准的共同祖先
+merge基本用法 如: 合并到master
+
+1. 切换到master分支
+2. `git merge <branch>`, branch要合并的分支名称
+
+- 一般合并会用到三个快照: **两个分支末端**和作为合并基准的**共同祖先**
 - git会决定使用哪个祖先作为最佳合并基准
 - fast-forward: 如果想要合并的commit可以直接回溯到当前目前所在的commit, Git直接将指针向前推进
 
-### 解决冲突
+## Resolved Conflict
+
+
 
 ## 删除分支
 

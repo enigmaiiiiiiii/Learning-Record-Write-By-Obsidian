@@ -1,5 +1,14 @@
 # Something About Promise
 
+- [State Of Promise](#state-of-promise)
+- [Create Promise](#create-promise)
+- [await a promise](#await-a-promise)
+- [Static Method](#static-method)
+- [Promise Instance method](#promise-instance-method)
+- [chained promise](#chained-promise)
+- [Promise reject event](#promise-reject-event)
+
+
 ## State Of Promise
 
 - promise对象有三种状态: pending, fulfilled, rejected

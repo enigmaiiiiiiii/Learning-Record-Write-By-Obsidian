@@ -1,17 +1,16 @@
 # Components
 
-- [Components](#components)
-  - [they are components](#they-are-components)
-  - [this is not a component](#this-is-not-a-component)
-  - [Props](#props)
-  - [State](#state)
-  - [use a component](#use-a-component)
-  - [Component Compose of other Component](#component-compose-of-other-component)
-  - [keep component pure](#keep-component-pure)
-  - [class properties](#class-properties)
-  - [lifecycle](#lifecycle)
-  - [handling events](#handling-events)
-  - [effect](#effect)
+- [they are components](#they-are-components)
+- [this is not a component](#this-is-not-a-component)
+- [Props](#props)
+- [State](#state)
+- [use a component](#use-a-component)
+- [Component Compose of other Component](#component-compose-of-other-component)
+- [keep component pure](#keep-component-pure)
+- [class properties](#class-properties)
+- [lifecycle](#lifecycle)
+- [handling events](#handling-events)
+- [effect](#effect)
 
 ## they are components
 

@@ -55,4 +55,3 @@ core plugin list:
 ## Tools Plugin
 
 [Maven AntRun Plugin](Maven_AntRun_Plugin.md)
-

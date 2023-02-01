@@ -3,14 +3,13 @@
 - [Introduction](#introduction)
 - [Create Route API In Next.js APP](#create-route-api-in-nextjs-app)
 - [function handler(req, res)](#function-handlerreq-res)
-- [res](#res)
-- [req](#req)
-- [config](#config-object)
+- [config](#config)
 
 ## Introduction
 
 - create an [API](/unsorted/API.md) endpoint inside Next.js APP
 - do not fetch API Route from `getStaticProps` or `getServerSideProps`
+- access use `http://localhost:3000/apidir/jsfilename`
 
 ## Create Route API In Next.js APP
 

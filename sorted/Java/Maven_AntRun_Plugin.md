@@ -43,6 +43,31 @@ An example write target in pom.xml `<configuration/>`
 </project>
 ```
 
+## Copy Jar File To specific Directory
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-antrun-plugin</artifactId>
+    <version>1.8</version>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <configuration>
+                <target>
+                    <copy file="target/demo.jar" tofile="../lib/demo.jar"/>
+                </target>
+            </configuration>
+            <goals>
+                <goal>run</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+
+- copy `demo.jar` to `../lib/demo.jar`
+
 ## use Ant build.xml
 
 configure build process in `build.xml`

@@ -4,7 +4,9 @@
 
 [git术语](Git_Concept.md)
 
-[git安装和配置](Git_Install_And_Use.md)
+[Git Installation](Git_Installation.md)
+
+[Git Configuration](Git_Configuration.md)
 
 [Commit](Git_Commit.md)
 
@@ -12,15 +14,19 @@
 
 [git远程](Git_Remote.md)
 
-[git命令](Git_Command.md)
+[Git Command List](Git_Command_List.md)
 
 ## Github
 
 [GitHub Issues](GitHub_Issues.md)
 
+[Pull Request](GitHub_Pull_Request.md)
+
+[Pull Request Workflow](Github_Pull_Request_Workflow.md)
+
 ## III
 
-[Practical Command](Git_Useful_Command.md)
+[Practical Use](Git_Practical_Command.md)
 
 [.gitignore文件](Git_Ignore.md)
 
@@ -32,7 +38,7 @@
 
 [Git Internals](Git_Internals.md)
 
-## issue
+## Problems
 
 1. error when git clone
 

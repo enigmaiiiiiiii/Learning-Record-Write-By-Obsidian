@@ -1,6 +1,12 @@
 # package.json字段
 
-- 包含被nodejs识别的字段和被npm识别的字段
+> 包含被nodejs识别的字段和被npm识别的字段
+
+- [必须包含name和version字段](#必须包含name和version字段)
+- [scripts](#scripts)
+- [package入口点: "main"和"export"](#package入口点-main和export)
+- [dependencies](#dependencies)
+- [devDependencies](#devdependencies)
 
 ## 必须包含name和version字段
 
@@ -99,6 +105,34 @@ npm install <package_name> [--save-prod]
 ```shell
 npm install <package_name> --save-dev
 ```
+
+in `package.json`
+
+```json
+{
+  "dependencies": {
+    "package_name": "semver-version"
+  }
+}
+```
+
+[semver-version](/unsorted/semantic-versioning.md )
+
+- `>`: 严格大于
+- `>=`
+- `<`
+- `<=`
+- `~`:
+  - 如果指定了minor version, 则允许patch version的更新
+  - 如果未指定patch version, 则允许minor version的更新
+  - `~1.2.3` = `>=1.2.3 <1.(2+1).0` = `>=1.2.3 <1.3.0`
+  - `~1.2` = `>=1.2.0 <1.(2+1).0` = `>=1.2.0 <1.3.0`
+- `^`:
+  - `^1.2.3` = `>=1.2.3 <2.0.0`
+  - `^0.2.3` = `>=0.2.3 <0.3.0`
+- `x`
+  - `1` = `>=1.0.0 <2.0.0`
+- `*`: `>=0.0.0`
 
 ## devDependencies
 

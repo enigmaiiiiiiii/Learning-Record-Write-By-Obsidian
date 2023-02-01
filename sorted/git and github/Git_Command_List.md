@@ -1,5 +1,7 @@
 # git命令
 
+- [git restore](#git-restore)
+- [git status](#git-status)
 - [git stash](#git-stash)
 - [git merge](#git-merge)
 - [git revert](#git-revert)

@@ -1,6 +1,7 @@
 # 实用命令
 
-- [提交日志](#提交日志)
+- [Resovle Conflict](#resovle-conflict)
+- [Check Commit Log](#check-commit-log)
 - [撤销已提交commit](#撤销已提交commit)
 - [将文件移出暂存区](#将文件移出暂存区)
 - [丢掉本地所有改动](#丢掉本地所有改动)
@@ -11,9 +12,15 @@
 - [暂存当前修改, 使我能去并查看其它commit, 而不需要commit当前修改](#暂存当前修改-使我能去并查看其它commit-而不需要commit当前修改)
 - [查看所有分支](#查看所有分支)
 
-## 提交日志
+## Resovle Conflict
 
+
+## Check Commit Log
+
+
+```bash
 git log
+```
 
 ```shell
 commit d590a26b3b988f24842d433d4b64708ff545d399 (HEAD -> main)

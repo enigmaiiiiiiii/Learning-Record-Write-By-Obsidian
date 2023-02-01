@@ -1,6 +1,16 @@
 # npm
 
-- Node.js的包管理工具
+> Node.js的包管理工具
+
+- [npm可以用来](#npm可以用来)
+- [配置npm](#配置npm)
+- [Use npm](#use-npm)
+- [npm init](#npm-init)
+- [npm-install](#npm-install)
+- [npm run](#npm-run)
+- [npm package](#npm-package)
+- [npm exec](#npm-exec)
+
 
 ## npm可以用来
 
@@ -30,9 +40,6 @@
 - `key=value`格式组成的文件
 - 环境变量用`${VARIABLE_NAME}`表示
 
-## Use npm
-
-[使用](Npm_Using.md)
 
 ## npm init
 
