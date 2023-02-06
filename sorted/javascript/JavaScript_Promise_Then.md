@@ -27,7 +27,6 @@ p1.then(
 )
 ```
 
-
 if `onFulfilled` is not a function, 内部被替代为`((x) => x)`
 
 ## onRejected
@@ -51,10 +50,13 @@ return a promise called `p`, **if the handler function:**
 ## Example
 
 ```js
+const flag = 1;
 const p1 = new Promise((resolve, reject) => {
-    setTimeout(function(){
-        resolve("Success!");
-    }, 250);
+  if(flag === 1) {
+    resolve("success!");
+  } else {
+    reject("error!");
+  }
 });
 
 p1.then(
@@ -66,3 +68,4 @@ p1.then(
     }
 );
 ```
+

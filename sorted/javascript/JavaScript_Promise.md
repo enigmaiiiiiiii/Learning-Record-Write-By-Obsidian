@@ -3,7 +3,11 @@
 - [Foundation](#foundation)
 - [Introduction](#introduction)
 - [three common mistake](#three-common-mistake)
+- [Promise And Old Callback API](#promise-and-old-callback-api)
+- [when the callback in the promise will be called](#when-the-callback-in-the-promise-will-be-called)
 - [Thenables](#thenables)
+- [feature](#feature)
+- [Misunderstanding](#misunderstanding)
 
 ## Foundation
 
@@ -183,3 +187,50 @@ Promise callback (.then)
 event-loop cycle: Promise (fulfilled) Promise {<fulfilled>}
 ```
 
+## Misunderstanding
+
+**misunderstanding 1**: callback pass to then() will be called after promise execute
+
+```js
+const p = new Promise((resolve, reject) => {
+  console.log('promise log');
+})
+p.then(() => {
+  console.log('then log');
+})
+```
+
+- actually if promise didn't change state, **then handler function will not be called**
+- so the output is only `promise log`:
+
+**misunderstanding 2**: resolve is called after all task complete in promise
+
+- actually promise is settled immediately after `resolve` or `reject` is called
+
+```js
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("promise task");
+  }, 3000)
+  setTimeout(() => {
+    resolve("p1 resolve");
+  }, 2000)
+  console.log("promise created");
+});
+
+p1.then(
+  (msg) => {
+    console.log(msg);
+    console.log("p1 then");
+  }
+);
+```
+
+output:
+
+```
+promise created
+p1 resolve
+p1 then
+promise task
+```
