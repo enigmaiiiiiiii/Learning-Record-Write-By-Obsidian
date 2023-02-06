@@ -1,5 +1,8 @@
 # JavaScript Regex
 
+- [Create A Regex](#create-a-regex)
+- [Escape Character](#escape-character)
+
 ## Create A Regex
 
 this three ways are to create the same regex
@@ -43,3 +46,10 @@ flags
 - `/ab\+c/`: match string that contains `ab+c`
 
 
+## Methods
+
+[Regex Method](JavaScript_Regex_Method.md)
+
+## Practical Use
+
+[Regex Pratical Use](JavaScript_Regex_Practical_Use.md)
