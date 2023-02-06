@@ -47,6 +47,8 @@ flags
 
 ## Methods
 
+## Methods
+
 [Regex Method](JavaScript_Regex_Method.md)
 
 ## Practical Use

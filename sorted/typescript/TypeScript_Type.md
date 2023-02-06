@@ -1,17 +1,16 @@
 # type in typescript
 
-- [type in typescript](#type-in-typescript)
-  - [What Is Type Annotation](#what-is-type-annotation)
-  - [what can be used as a type](#what-can-be-used-as-a-type)
-  - [type statement](#type-statement)
-  - [Union Types](#union-types)
-  - [type check](#type-check)
-  - [type inference](#type-inference)
-  - [type assertion](#type-assertion)
-  - [Narrowing](#narrowing)
-  - [Keyof operator](#keyof-operator)
-  - [Mapped Type](#mapped-type)
-  - [Type Compatibility](#type-compatibility)
+- [What Is Type Annotation](#what-is-type-annotation)
+- [what can be used as a type](#what-can-be-used-as-a-type)
+- [type statement](#type-statement)
+- [Union Types](#union-types)
+- [type check](#type-check)
+- [type inference](#type-inference)
+- [type assertion](#type-assertion)
+- [Narrowing](#narrowing)
+- [Keyof operator](#keyof-operator)
+- [Mapped Type](#mapped-type)
+- [Type Compatibility](#type-compatibility)
 
 ## What Is Type Annotation
 
@@ -84,7 +83,7 @@ function greet(person: Person) {
 
 ## Union Types
 
-[c++用也有union type](c++_union_type.md)
+[c++中也有union type](c++_union_type.md)
 
 ```ts
 function pringId(id: number | string) {
