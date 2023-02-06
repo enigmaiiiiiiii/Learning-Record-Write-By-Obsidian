@@ -2,7 +2,7 @@
 
 - element is cheap to create
 
-## conditional render 
+## Conditional Render
 
 with logical `&&` operator
 
@@ -17,4 +17,4 @@ render() {
 }
 ```
 
-##
+- if `count` is [true](JavaScript_Foundation_Primitive.md#boolean), the element right after `&&` will be rendered

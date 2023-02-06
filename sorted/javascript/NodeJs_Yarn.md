@@ -9,8 +9,6 @@
 
 ## Install
 
-
-
 ## yarn init
 
 ## yarn and yarn install
@@ -34,3 +32,9 @@
 ## yarn run
 
 - run a script
+
+## yarn check package latest version
+
+```bash
+yarn info [package] version
+```

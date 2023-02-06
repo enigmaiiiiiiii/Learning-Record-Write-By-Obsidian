@@ -11,8 +11,7 @@
 - [npm package](#npm-package)
 - [npm exec](#npm-exec)
 
-
-## npm可以用来
+## npm used for
 
 - 调整应用程序代码包
 - 下载立即使用的独立工具
@@ -39,7 +38,6 @@
 
 - `key=value`格式组成的文件
 - 环境变量用`${VARIABLE_NAME}`表示
-
 
 ## npm init
 
@@ -90,7 +88,6 @@ options
 - prevent saving to `dependencies`
 - 不会添加到`package.json`
 
-
 ## npm run
 
 
@@ -99,3 +96,9 @@ options
 [npm包](NodeJs_Npm_Package.md)
 
 ## npm exec
+
+## npm show latest package version
+
+```bash
+npm show [package-name] version
+```

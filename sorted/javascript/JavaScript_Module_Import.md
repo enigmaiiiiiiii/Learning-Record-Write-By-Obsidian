@@ -1,14 +1,12 @@
 # import
 
-- [import](#import)
-  - [abstract](#abstract)
-  - [默认导入](#默认导入)
-  - [命名空间导入](#命名空间导入)
-  - [导入多个接口](#导入多个接口)
-  - [导入带别名接口](#导入带别名接口)
-  - [语法](#语法)
-  - [动态加载模块](#动态加载模块)
-
+- [abstract](#abstract)
+- [默认导入](#默认导入)
+- [命名空间导入](#命名空间导入)
+- [导入多个接口](#导入多个接口)
+- [导入带别名接口](#导入带别名接口)
+- [语法](#语法)
+- [动态加载模块](#动态加载模块)
 
 ## abstract
 
@@ -21,14 +19,14 @@ import default_name from 'module_path'
   - 相对路径名引用必须以`/, ./, ../`开始
 - 必须出现在顶部
 
-## 默认导入
+## Default Import
 
 ```js
 import myDefault from '/modules/my-module.js';
 ```
 
-- 导入`/modules/my-module.js`的[default]
-- myDefault可以是what you like
+- 导入`/modules/my-module.js`的[default export](JavaScript_Module_Export.md#default-export)
+- myDefault可以是*whatever you like*
 
 ```js
 import myDefault, * as MyModule from 'modules/my-module.js'

@@ -1,5 +1,10 @@
 # CSS support
 
+- [Component level CSS](#component-level-css)
+- [Global CSS](#global-css)
+- [From node_modules](#from-node_modules)
+- [Sass Support](#sass-support)
+
 ## Component level CSS
 
 naming convention: `ComponentName.module.css`
@@ -35,6 +40,8 @@ export function Button() {
 ## Global CSS
 
 import `style.css` file in `pages/_app.js`
+
+- `style.css` will apply to all pages and components
 
 ```js
 import '../styles.css'

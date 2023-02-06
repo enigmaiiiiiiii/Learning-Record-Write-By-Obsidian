@@ -2,7 +2,7 @@
 
 - CSRF: cross site request forgery 跨站请求伪造
 - 欺骗用户的浏览器去访问一个曾经[认证过](SpringSecurity_Authentication.md)的网站, 并执行一些操作; 由于认证过, 网站会认为这个请求是用户自己操作
-- 与[xss](Web_Cross_Site_Scripting.md)不同
+- 与[xss](Web_XSS.md)不同
   - xss是利用**用户对网站的信任**
   - csrf是利用**网站对用户的信任**
 
@@ -63,4 +63,4 @@ In short
 
 ## demonstrate code
 
-[example](/sorted\Code-Snippet\javascript\Csrf-attack-and-prevention.md)
+[example](/sorted/Code-Snippet/javascript/Csrf-attack-and-prevention.md)

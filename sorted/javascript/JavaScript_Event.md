@@ -29,14 +29,8 @@ btn.onclick = function() {
 
 ## Event接口
 
-Event():
+[Event Interface](JavaScript_Event_Interface.md)
 
-- Event对象的构造函数
-
-属性
-
-- Event.bubbles
-- Event.type: 事件类型
 
 ## 基于Event接口的事件
 

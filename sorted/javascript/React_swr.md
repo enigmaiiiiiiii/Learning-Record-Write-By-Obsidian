@@ -2,9 +2,13 @@
 
 ## Introduction
 
-a React Hooks library for remote data fetching
+- a React Hooks library for [**fetch promise data**](JavaScript_Promise.md)
 
 ## Take A Look
+
+[another example](swr-data-fetch.md)
+
+official example
 
 ```js
 import React from "react";
@@ -30,3 +34,8 @@ export default function SWRDemo() {
   )
 }
 ```
+
+
+## useSWR
+
+- `useSWR(url, fetcher)`: `fetcher` is a [async function](javascript_async_await.md#async-function) that accepts the `key` as parameter

@@ -1,5 +1,13 @@
 # 基本类型
 
+- [number](#number)
+- [bigint](#bigint)
+- [string](#string)
+- [boolean](#boolean)
+- [null](#null)
+- [undifined](#undifined)
+- [symbol](#symbol)
+
 ## number
 
 - 64位浮点格式
@@ -27,14 +35,14 @@ var b = Number('123');  // b === 123 is true
 ## boolean
 
 - false值
-  - false关键字
-  - 0
-  - -0
-  - 0n: bigint作为bool值
-  - "": 空字符串 
-  - null: 缺少值
-  - undefined
-  - NaN: 非数值
+  - `false` 关键字
+  - `0`
+  - `-0`
+  - `0n`: bigint作为bool值
+  - `""`: 空字符串 
+  - `null`: 缺少值
+  - `undefined`
+  - `NaN`: 非数值
 - true值
   - 被定义为false值以外的任何值
 

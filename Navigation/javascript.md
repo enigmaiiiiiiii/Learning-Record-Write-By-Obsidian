@@ -28,7 +28,7 @@
 
 [ECMAScript Regex](ECMAScript_Regex.md)
 
-## II
+## II Built-in Object
 
 [Memory](JavaScript_Memory_Management.md)
 
@@ -41,6 +41,8 @@
 [websocket](JavaScript_WebSocket.md)
 
 [Tasks And Microtasks](JavaScript_Tasks_And_Microtasks.md)
+
+[JSON](/sorted/javascript/JavaScript_JSON.md)
 
 ## III Web API
 
@@ -68,6 +70,8 @@
 
 [Vue.js](Vue.md)
 
+[Bootstrap](/sorted/javascript/Bootstrap.md)
+
 ## V: tool chain
 
 [webpack](/sorted/javascript/Webpack.md)
@@ -76,7 +80,7 @@
 
 [Module And Code Bundling](JavaScript_Module_And_Code_Bundling.md)
 
-[Vue + Element 工作流程](/sorted/javascript/Vue_Element_UI_Workflow.md)
+[Vue + Element workflow](/sorted/javascript/Vue_Element_UI_Workflow.md)
 
 [Babel](/sorted/javascript/Babel.md)
 
