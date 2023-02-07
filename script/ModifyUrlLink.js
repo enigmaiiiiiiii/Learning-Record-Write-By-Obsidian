@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+const fs = require('fs');
+const path = require('path');
 
 function modifyLinks(dir) {
   console.log(`modifyLinks`)
@@ -45,6 +45,6 @@ function modifyLinks(dir) {
   })
 }
 
-const notePath = "D:/MyGitHubRepo/playground/nodejs/sample/targetnote";
+const notePath = "C:/Users/lixin/Documents/NoteLab";
 
 modifyLinks(notePath);

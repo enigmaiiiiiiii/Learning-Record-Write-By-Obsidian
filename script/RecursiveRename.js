@@ -1,7 +1,5 @@
-import fs from "fs";
-import path from "path";
-
-const notePath = "D:/MyGitHubRepo/playground/nodejs/sample/targetnote";
+const fs = require('fs');
+const path = require('path');
 
 function renameFiles(dir) {
   fs.readdir(dir, (err, files) => {
@@ -27,5 +25,7 @@ function renameFiles(dir) {
     }
   });
 }
+
+const notePath = "C:/Users/lixin/Documents/NoteLab";
 
 renameFiles(notePath);
