@@ -25,4 +25,4 @@ startup.cmd -m standalone
 
 ## 原理
 
-[Nacos原理](Nacos_Principle.md)
+[Nacos原理](nacos-principle.md)

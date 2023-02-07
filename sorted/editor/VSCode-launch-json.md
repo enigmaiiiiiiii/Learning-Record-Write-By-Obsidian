@@ -45,7 +45,7 @@ mandatory for every launch configuration
 
 for java
 
-`"vmargs"`: the [arguments](Java_Command_Java_Options.md) pass to the Java
+`"vmargs"`: the [arguments](java-command-java-options.md) pass to the Java
 
 ## Debug Mode
 

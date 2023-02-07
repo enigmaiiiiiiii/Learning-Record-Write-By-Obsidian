@@ -1,9 +1,9 @@
 # Markdown
 
-[语法](MarkDown_语法.md)
+[语法](markdown-语法.md)
 
-[技巧](MarkDown_进阶.md)
+[技巧](markdown-进阶.md)
 
-[画图](MarkDown_Mermaid.md)
+[画图](markdown-mermaid.md)
 
-[LaTex](LaTex语法.md)
+[LaTex](latex语法.md)

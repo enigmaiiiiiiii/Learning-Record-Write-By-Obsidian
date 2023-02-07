@@ -2,13 +2,13 @@
 
 ## my settings
 
-[setting](vscode_Settings.md)
+[setting](vscode-settings.md)
 
-[keybindings](vscode_keybindings.md)
+[keybindings](vscode-keybindings.md)
 
 ## 同时启动多个项目配置方式
 
-[同时启动多个项目](Vscode_Compound_Launch_Configurations.md)
+[同时启动多个项目](vscode-compound-launch-configurations.md)
 
 ## launch.json
 
@@ -16,11 +16,11 @@
 
 ## vscode 中的任务
 
-[vscode 中的任务](Vscode_Tasks.md)
+[vscode 中的任务](vscode-tasks.md)
 
 ## launch.json和task.json配置中的预定义vscode变量
 
-[variable替换](Vscode_Variable_Substitution.md)
+[variable替换](vscode-variable-substitution.md)
 
 ## vscode远程登录
 

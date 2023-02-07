@@ -2,7 +2,7 @@
 
 ## How to use
 
-[Next.js](NextJs_CSS_Support.md#from-node_modules)
+[Next.js](nextjs-css-support.md#from-node-modules)
 
 `pages/_app.js`
 

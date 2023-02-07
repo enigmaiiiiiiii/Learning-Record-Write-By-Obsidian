@@ -11,7 +11,7 @@ sighandler_t signal(int signum, sighandler_t handler);
 ```
 
 - 信号句柄
-  - 是一个sighandler_t, 表示一个[函数指针](c++_function_pointer.md)
+  - 是一个sighandler_t, 表示一个[函数指针](c++-function-pointer.md)
   - 指向的函数的形参是表示信号值的int参数
   - 实参是进程接收到的信号
   - 指向的函数返回类型为void

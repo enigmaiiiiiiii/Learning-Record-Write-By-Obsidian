@@ -6,25 +6,25 @@
 
 basic
 
-- [C/C++](/Navigation/c++_and_C.md)
-- [数据结构和算法](/Navigation/DataStructure_And_Algorithm.md)
-- [Linux](/Navigation/Linux.md)
-- [Java](/Navigation/Java.md)
-- [Computer NetWork](Navigation/NetWork.md)
-- [JavaScript](Navigation/JavaScript.md)
-- [机器学习](/Navigation/机器学习.md)
+- [C/C++](/navigation/c++-and-c.md)
+- [数据结构和算法](/navigation/datastructure-and-algorithm.md)
+- [Linux](/navigation/linux.md)
+- [Java](/navigation/java.md)
+- [Computer NetWork](navigation/network.md)
+- [JavaScript](navigation/javascript.md)
+- [机器学习](/navigation/机器学习.md)
 - markdown
 - git
 - html
 - css
-- [JavaScript](JavaScript.md)
-- [TypeScript](TypeScript.md)
+- [JavaScript](javascript.md)
+- [TypeScript](typescript.md)
 - Computer foundation
 - vim
 
 product
 
-- [Dev To Product](/sorted/DevToProduction/DevToProduction.md)
+- [Dev To Product](/sorted/devtoproduction/devtoproduction.md)
 
 ## Instruction
 

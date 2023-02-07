@@ -2,16 +2,16 @@
 
 ## 核心
 
-[SpringData Repository](SpringData_Repository.md)
+[SpringData Repository](springdata-repository.md)
 
 ## API
 
-[SpringDataAPI](SpringData_API.md)
+[SpringDataAPI](springdata-api.md)
 
-[SpringDataPage](SpringData_API_Page.md)
+[SpringDataPage](springdata-api-page.md)
 
 ## 框架
 
-[SpringData Redis](SpringData_Redis.md)
+[SpringData Redis](springdata-redis.md)
 
-[SpringData Elasticsearch](SpringData_Elasticsearch.md)
+[SpringData Elasticsearch](springdata-elasticsearch.md)

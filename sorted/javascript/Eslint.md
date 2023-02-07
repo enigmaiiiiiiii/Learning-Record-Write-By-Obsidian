@@ -68,7 +68,7 @@ npm install --save-dev eslint
 npm init @eslint/config
 ```
 
-[Configuration File](Eslint_Configuration_File.md)
+[Configuration File](eslint-configuration-file.md)
 
 ## use eslint
 

@@ -2,12 +2,12 @@
 
 > god of editor
 
-[Command Set](Vim_CommandSet.md)
+[Command Set](vim-commandset.md)
 
-[Vim编辑模式](Vim_Edit_Mode.md)
+[Vim编辑模式](vim-edit-mode.md)
 
-[JetBrain中的vim插件配置](Vim_In_Jetbrain.md)
+[JetBrain中的vim插件配置](vim-in-jetbrain.md)
 
-[Vim编辑器](Vim_Editor.md)
+[Vim编辑器](vim-editor.md)
 
-[查找替换](Vim_Replace_Command.md)
+[查找替换](vim-replace-command.md)

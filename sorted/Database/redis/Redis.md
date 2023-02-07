@@ -90,4 +90,4 @@ tenant:user:1:roles
 
 ## redis原理
 
-[redis原理](Redis_Principle.md)
+[redis原理](redis-principle.md)

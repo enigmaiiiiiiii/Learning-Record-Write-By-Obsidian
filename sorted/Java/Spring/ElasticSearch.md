@@ -6,11 +6,11 @@
 
 ## 术语
 
-[术语](ElasticSearch_Terms.md)
+[术语](elasticsearch-terms.md)
 
 ## 原理
 
-[原理](ElasticSearch_Principle.md)
+[原理](elasticsearch-principle.md)
 
 ## 启动
 
@@ -22,14 +22,14 @@ cd elasticSearch-<version> # 进入安装目录
 
 ## 交互
 
-[ElasitcSearch](ElasticSearch_Interact.md)
+[ElasitcSearch](elasticsearch-interact.md)
 
 ## 映射
 
-[映射](ElasticSearch_Mapping.md)
+[映射](elasticsearch-mapping.md)
 ## API
 
-[API](ElasticSearch_API.md)
+[API](elasticsearch-api.md)
 
 ## ELK日志同步
 

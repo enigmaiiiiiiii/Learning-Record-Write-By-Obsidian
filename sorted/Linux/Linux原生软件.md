@@ -8,4 +8,4 @@
 
 [[squid]]
 
-[wget](Linux_Wget.md)
+[wget](linux-wget.md)

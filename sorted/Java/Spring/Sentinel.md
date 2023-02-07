@@ -4,7 +4,7 @@
 
 ## 下载Sentinel Jar文件
 
-[download address](https://github.com/alibaba/Sentinel/releases)
+[download address](https://github.com/alibaba/sentinel/releases)
 
 - sentinel-dashboard-1.7.2.jar: 控制台项目
 - sentinel-core-1.7.2.jar: 核心项目

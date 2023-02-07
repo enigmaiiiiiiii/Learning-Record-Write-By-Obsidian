@@ -1,7 +1,7 @@
 # SQLite
 
-[SQLite使用场景](Appropriate_Uses_For_SQLite.md)
+[SQLite使用场景](appropriate-uses-for-sqlite.md)
 
-[特点](Distinctive_Features_Of_SQLite.md)
+[特点](distinctive-features-of-sqlite.md)
 
-[SQLite语句](SQLite_Statement.md)
+[SQLite语句](sqlite-statement.md)

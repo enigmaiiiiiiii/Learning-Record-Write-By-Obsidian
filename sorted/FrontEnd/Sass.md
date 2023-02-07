@@ -18,4 +18,4 @@ sass source/styles.sass dist/styles.css
 ```
 ## scss syntax
 
-[scss](SCSS.md)
+[scss](scss.md)

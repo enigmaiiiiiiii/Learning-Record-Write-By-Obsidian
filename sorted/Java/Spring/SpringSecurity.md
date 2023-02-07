@@ -14,15 +14,15 @@
 
 ## workflow
 
-[Spring Security工作流程](SpringSecurity_Workflow.md)
+[Spring Security工作流程](springsecurity-workflow.md)
 
 ## 配置
 
-[配置](SpringSecurity_Configuration.md)
+[配置](springsecurity-configuration.md)
 
 ## Spring Security in Servlet
 
-[Spring Security in Servlet](SpringSecurity_In_Servlet.md)
+[Spring Security in Servlet](springsecurity-in-servlet.md)
 
 ## 注解
 
@@ -35,7 +35,7 @@
 ## 密码编码器: PasswordEncoder
 
 - Spring Security 5.0 之后，密码必须使用加密的方式存储
-- BCryptPasswordEncoder: 使用[BCrypt算法](../../../unsorted/Message_Digest_Algorithm.md)加密密码
+- BCryptPasswordEncoder: 使用[BCrypt算法](../../../unsorted/message-digest-algorithm.md)加密密码
 
 PasswordEncode接口
 
@@ -56,7 +56,7 @@ public Interface PasswordEncoder {
 ## 异常
 
 - org.springframework.security.core.AuthenticationException: 认证异常
-  - [org.springframework.security.authentication.BadCredentialsException](SpringSecurity_AuthenticationManager_Interface.md): 如用户名不存在
+  - [org.springframework.security.authentication.BadCredentialsException](springsecurity-authenticationmanager-interface.md): 如用户名不存在
   - org.springframework.security.authentication.InternalAuthenticationServiceException:
 - DisabledException: 用户被禁用
 - AccessDeniedException: 访问被拒绝异常

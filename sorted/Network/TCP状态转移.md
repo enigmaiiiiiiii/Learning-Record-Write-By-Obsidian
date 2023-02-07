@@ -3,22 +3,22 @@
 - TCP连接在任一时刻都处于某种状态
 - TCP状态
   - LISTEN: 被动等待客户连接状态, 
-    - 客户端在SYN_RCVD状态接收到[RST](TCP报文头部结构.md)报文
-    - 服务端调用[listen()](Linux_socket_API_listen()函数.md)
+    - 客户端在SYN_RCVD状态接收到[RST](tcp报文头部结构.md)报文
+    - 服务端调用[listen()](linux-socket-api-listen()函数.md)
   - CLOSED: 
     - 服务端在LASK_ACK接收ACK报文
   - SYN_RCVD: 
     - 客户端在SYN_SENT状态接收SYN 或 发送SYN, ACK
     - 服务端在LISTEN状态接收RST 或 发送SYN, ACK
   - SYN_SENT:
-    - 客户端在CLOSED调用[connect()](Linux_Socket_API_connect()函数.md), 发送[SYN](TCP报文头部结构.md)报文
+    - 客户端在CLOSED调用[connect()](linux-socket-api-connect()函数.md), 发送[SYN](tcp报文头部结构.md)报文
   - ESTABLISHED: 连接双方能够进行双向数据传输的状态
-    - 服务端在SYNRCVD状态接收[ACK](TCP报文头部结构.md)报文
+    - 服务端在SYNRCVD状态接收[ACK](tcp报文头部结构.md)报文
     - 客户端在SYN_SENT状态接收SYN,ACK 或 发送ACK
   - CLOSE_WAIT: 客户端主动关闭连接, 
-    - 服务器在ETABLISH发送[ACK](TCP报文头部结构.md)或接收FIN报文进入CLOSE_WAIT
+    - 服务器在ETABLISH发送[ACK](tcp报文头部结构.md)或接收FIN报文进入CLOSE_WAIT
   - LAST_ACK:等到客户端对结束报文段的最后一次确认，一旦确认完成，连接彻底关闭
-    - 服务端在close_wait状态发送[FIN](TCP报文头部结构.md)报文
+    - 服务端在close_wait状态发送[FIN](tcp报文头部结构.md)报文
 
 > Linux中通过[netstat](netstat.md)命令可以查看当前状态
 

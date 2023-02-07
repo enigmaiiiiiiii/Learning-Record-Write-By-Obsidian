@@ -2,7 +2,7 @@
 
 - `template <typename T> class Blob {}`
 - 类的成员函数也是一个模板, 必须以`template <typename T>`开头
-- 类内部的成员函数隐式声明为[内联函数](c++_inline_function.md)
+- 类内部的成员函数隐式声明为[内联函数](c++-inline-function.md)
 - 编译器不能为类模板推断模板参数类型
 - 如果一个成员函数没有被使用就不会被实例化
 - 定义在类外部的成员函数必须以关键字template开始，类名称后接模板形参列表

@@ -1,9 +1,9 @@
 # tools
 
-[通用](Tools_Common.md)
+[通用](tools-common.md)
 
-[linux](Tools_Linux.md)
+[linux](tools-linux.md)
 
-[windows](Tools_Windows.md)
+[windows](tools-windows.md)
 
-[website](Tools_Website.md)
+[website](tools-website.md)

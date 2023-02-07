@@ -30,7 +30,7 @@ struct aiocb {
   - aio_fildes: 被操作的[[Linux_File_Descriptor]] 
   - aio_offset: 文件偏移量
   - aio_buf: 缓冲地址
-  - aio_nbytes : [缓冲大小](Linux_IO_Stream.md)
+  - aio_nbytes : [缓冲大小](linux-io-stream.md)
 - 异步io特有成员    
   - aio_reqprio : 响应优先级  
   - aio_sigevent: 异步io完成时的通知方式, [[sigevent结构体]]

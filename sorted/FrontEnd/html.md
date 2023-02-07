@@ -4,11 +4,11 @@
 
 - 从开始标签到结束标签中间的所有代码
 
-[元素分类](HTML_Element_Sort.md)
+[元素分类](html-element-sort.md)
 
-[元素属性](HTML_Element_Attribute.md)
+[元素属性](html-element-attribute.md)
 
-[元素列表](HTML_Element_list.md)
+[元素列表](html-element-list.md)
 
 ## 内容分类(Content categories)
 

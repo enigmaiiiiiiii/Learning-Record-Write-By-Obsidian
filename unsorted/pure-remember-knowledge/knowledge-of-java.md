@@ -14,7 +14,7 @@
 
 ## redis中数据持久化策略
 
-[note](Redis_Principle.md#redis持久化)
+[note](redis-principle.md#redis持久化)
 
 - RDB: 保存快照, 效率高
 - AOF: 保存操作日志

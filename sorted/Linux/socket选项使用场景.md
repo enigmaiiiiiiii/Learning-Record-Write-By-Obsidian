@@ -2,7 +2,7 @@
 
 1. 复用socket
 
-> 如果在已经处于 ESTABLISHED状态下的socket(一般由端口号和标志符区分）调用close(socket)（一般不会立即关闭, 会经历[TIME_WAIT](TCP状态转移.md)的过程）后想继续重用该socket：
+> 如果在已经处于 ESTABLISHED状态下的socket(一般由端口号和标志符区分）调用close(socket)（一般不会立即关闭, 会经历[TIME_WAIT](tcp状态转移.md)的过程）后想继续重用该socket：
 
 ```c
 int reuse = 1;

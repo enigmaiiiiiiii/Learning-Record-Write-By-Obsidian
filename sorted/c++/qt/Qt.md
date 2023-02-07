@@ -2,74 +2,74 @@
 
 ## CORE
 
-[Object Model](Qt_Object_Model.md)
+[Object Model](qt-object-model.md)
 
-[对象树](Qt_Object_Tree.mdj)
+[对象树](qt-object-tree.mdj)
 
-[信号和槽](Qt_Signal_And_Slot.md)
+[信号和槽](qt-signal-and-slot.md)
 
-[Meta-Object](Qt_Meta_Object_System.md)
+[Meta-Object](qt-meta-object-system.md)
 
-[GUI系统](Qt_GUI.md)
+[GUI系统](qt-gui.md)
 
-[构建Qt项目](sorted/c++/qt/QT_Build_Tools.md)
+[构建Qt项目](sorted/c++/qt/qt-build-tools.md)
 
 ## Ⅱ
 
-[自定义类](Qt_Custom_Class.md)
+[自定义类](qt-custom-class.md)
 
-[对象容器](Qt_Object_Container.md)
+[对象容器](qt-object-container.md)
 
-[Model/View结构](Qt_Model_View.md)
+[Model/View结构](qt-model-view.md)
 
-[资源系统](sorted/c++/qt/Qt_Resource_System.md)
+[资源系统](sorted/c++/qt/qt-resource-system.md)
 
-[文件读写](Qt_File_System.md)
+[文件读写](qt-file-system.md)
 
-[进程与线程](Qt_ProcessAndThread.md)
+[进程与线程](qt-processandthread.md)
 
 ## Ⅲ
 
-[QString](Qt_String.md)
+[QString](qt-string.md)
 
 [Qt容器]
 
-[事件](Qt_Event_System.md)
+[事件](qt-event-system.md)
 
-[QT Creator](sorted/c++/qt/QT_Creator.md)
+[QT Creator](sorted/c++/qt/qt-creator.md)
 
-[Qt API](Qt_API.md)
+[Qt API](qt-api.md)
 
-[QDebug](Qt_Debug.md)
+[QDebug](qt-debug.md)
 
-[QDoc](Qt_QDoc.md)
+[QDoc](qt-qdoc.md)
 
-[QByteArray](Qt_QByteArray.md)
+[QByteArray](qt-qbytearray.md)
 
-[QWindow](Qt_Window.md)
+[QWindow](qt-window.md)
 
 图形
 
-[Paint System](Qt_Paint_System.md)
+[Paint System](qt-paint-system.md)
 
-[QPainter](Qt_QPainter.md):绘制类
+[QPainter](qt-qpainter.md):绘制类
 
-[图像类](Qt_Image_Class.md)
+[图像类](qt-image-class.md)
 
 数据
 
-[Sql](Qt_SqlDatabase.md)
+[Sql](qt-sqldatabase.md)
 
 [xml]
 
 样式
 
-[qss](Qt_Style_Sheets.md)
+[qss](qt-style-sheets.md)
 
 ## IIII
 
-[D-Pointer](Qt_D_Pointer.md)
+[D-Pointer](qt-d-pointer.md)
 
 ## 学习笔记
 
-[笔记](Qt_note.md)
+[笔记](qt-note.md)

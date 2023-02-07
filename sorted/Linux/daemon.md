@@ -5,11 +5,11 @@
 
 观察daemon
 
-- 使用[pstree](Linux_pstree.md)观察运行在机器上的进程
+- 使用[pstree](linux-pstree.md)观察运行在机器上的进程
 
 ## 创建Daemon的方式
 
-- init进程调用[fork()](Linux_Process_fork().md)创建子进程
+- init进程调用[fork()](linux-process-fork().md)创建子进程
 - 一个进程调用fork()后, 立刻调用exit(), fork创建的子进程成为孤儿进程, init进程会收养孤儿进程
 
 ## daemon分类

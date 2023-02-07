@@ -1,7 +1,7 @@
 # Dubbo
 
-- 从[微服务](/unsorted/Micro_Service.md)注册中心发现服务, 并调用
-- [RPC](/sorted/network/Network_RPC.md)框架
+- 从[微服务](/unsorted/micro-service.md)注册中心发现服务, 并调用
+- [RPC](/sorted/network/network-rpc.md)框架
 -   开源分布式服务框架
 -   支持的协议
     -   dubbo 协议

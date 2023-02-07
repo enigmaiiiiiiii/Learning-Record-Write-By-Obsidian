@@ -2,7 +2,7 @@
 
 ## Unix
 
-[neovim](Neovim.md)
+[neovim](neovim.md)
 
 [vscode]()
 
@@ -14,7 +14,7 @@ oh-my-posh
 
 zsh
 
-[java](Java.md)
+[java](java.md)
 
 tools
 

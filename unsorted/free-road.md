@@ -20,7 +20,7 @@ export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:810
 
 ## Goflyway
 
-[Goflyway](https://github.com/bannedbook/fanqiang/wiki/Goflyway%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
+[Goflyway](https://github.com/bannedbook/fanqiang/wiki/goflyway%e5%85%8d%e8%b4%b9%e8%b4%a6%e5%8f%b7)
 
 ## gofly
 

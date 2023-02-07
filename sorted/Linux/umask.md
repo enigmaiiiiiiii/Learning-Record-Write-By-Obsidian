@@ -11,7 +11,7 @@ mode_t umask(mode_t mask);
 
 - 设置创建文件的默认mask
 - 返回设置前的文件掩码
-- [open()函数](Linux_file_API_fd_open.md)和mkdir等创建文件函数会用到umask函数设置的默认文件权限
+- [open()函数](linux-file-api-fd-open.md)和mkdir等创建文件函数会用到umask函数设置的默认文件权限
 - 文件的最终权限是mode & ~umask
   - mode是open和mkdir的函数的参数
   

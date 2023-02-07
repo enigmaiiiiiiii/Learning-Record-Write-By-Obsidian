@@ -2,7 +2,7 @@
 
 ## 配置
 
-[配置](Webpack_Configuration.md)
+[配置](webpack-configuration.md)
 
 ## Loader
 

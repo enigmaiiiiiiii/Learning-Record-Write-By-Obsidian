@@ -10,9 +10,9 @@
 
 ## Features
 
-[Features](NextJS_Features.md)
+[Features](nextjs-features.md)
 
-[Terminology](NextJS_Terminology.md)
+[Terminology](nextjs-terminology.md)
 
 ## create NextJs app
 
@@ -24,19 +24,19 @@ npx create-next-app
 
 ## I
 
-[File System Routing](NextJs_File_System_Routing.md)
+[File System Routing](nextjs-file-system-routing.md)
 
-[API](NextJs_API.md)
+[API](nextjs-api.md)
 
-[CSS Support](NextJs_CSS_Support.md)
+[CSS Support](nextjs-css-support.md)
 
-[Custom APP](NextJS_Custom_App.md)
+[Custom APP](nextjs-custom-app.md)
 
 ## II
 
-[API Route](NextJS_Routes_API.md)
+[API Route](nextjs-routes-api.md)
 
-[Core Concepts](NextJS_Core_Concepts.md)
+[Core Concepts](nextjs-core-concepts.md)
 
 ## Directive
 
@@ -47,10 +47,10 @@ npx create-next-app
 
 ## Rendering
 
-[Rendering](NextJs_Rendering.md)
+[Rendering](nextjs-rendering.md)
 
 ## Learn From Bug
 
-[LearnFromBug](NextJS_Learn_From_Bug.md)
+[LearnFromBug](nextjs-learn-from-bug.md)
 
 

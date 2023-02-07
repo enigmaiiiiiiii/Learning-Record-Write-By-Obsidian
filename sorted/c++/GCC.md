@@ -16,10 +16,10 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ```
 
 - 源文件 $\longrightarrow$ 预处理 $\longrightarrow$ 编译汇编$\longrightarrow$ 链接
-- .cpp $\longrightarrow$ .i $\longrightarrow$ .s(汇编) $\longrightarrow$.o([目标文件](C_ObjectFile.md))$\longrightarrow$  可执行文件
+- .cpp $\longrightarrow$ .i $\longrightarrow$ .s(汇编) $\longrightarrow$.o([目标文件](c-objectfile.md))$\longrightarrow$  可执行文件
 - 链接
   - 处理静态库、动态库阶段, 连接成可执行程序
-  - GNU中[ld](GNU_linker.md)命令设置连接选项
+  - GNU中[ld](gnu-linker.md)命令设置连接选项
   - 连接库文件格式
     - 静态链接库: .a(UNIX)/.lib (windows) 
     - 动态链接库: .so(UNIX)/.dll(windows)
@@ -47,4 +47,4 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 
 ## 文章  
 
-[gcc构建动态链接库](GCC_Build_Shared_Libraries.md)
+[gcc构建动态链接库](gcc-build-shared-libraries.md)

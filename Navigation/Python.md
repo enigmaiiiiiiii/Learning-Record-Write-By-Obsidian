@@ -2,9 +2,9 @@
 
 [命令行工具]()
 
-[环境配置](Python_Environment_Configuration.md)
+[环境配置](python-environment-configuration.md)
 
-[numpy](Python_Numpy.md)
+[numpy](python-numpy.md)
 
 [[Pytorch]]
 

@@ -1,19 +1,19 @@
 # SpringMVC
 
-[SpringMVC 流程](SpringMVC_Workflow_In_SpringBoot.md): workflow of SpringMVC
+[SpringMVC 流程](springmvc-workflow-in-springboot.md): workflow of SpringMVC
 
 ## M: Model
 
-[SpringBoot使用MyBatis](SpringBoot_MyBatis.md)
+[SpringBoot使用MyBatis](springboot-mybatis.md)
 
-[配置SQL语句](Java_SpringMVC_Config_SQL.md)
+[配置SQL语句](java-springmvc-config-sql.md)
 
 ## V: View
 
-[SpringWeb](SpringWeb.md)
+[SpringWeb](springweb.md)
 
 ## C: Controller
 
-[Spring Boot Validation](SpringBoot_Validation.md)
+[Spring Boot Validation](springboot-validation.md)
 
-[SpringMVC异常处理](SpringMVC_Exception.md)
+[SpringMVC异常处理](springmvc-exception.md)

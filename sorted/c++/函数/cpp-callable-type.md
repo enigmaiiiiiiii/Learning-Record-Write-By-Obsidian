@@ -1,10 +1,10 @@
 #  C++ Callbale Type
 
-[函数指针](c++_function_pointer.md)
+[函数指针](c++-function-pointer.md)
 
 [数据成员指针](cpp-data-member-pointer.md), 可以作为参数，尽管不发生调用
 
-[lambda表达式](c++_lambda.md)
+[lambda表达式](c++-lambda.md)
 
 [重载调用运算符的类](cpp-overload-call-operator.md)
 
@@ -26,6 +26,6 @@ map<string, function<int(int, int)>>binops = {
 
 ## 相关标准库
 
-[std::result_of](std_result_of模板.md)
+[std::result_of](std-result-of模板.md)
 
 [std::bind](标准库bind函数.md)

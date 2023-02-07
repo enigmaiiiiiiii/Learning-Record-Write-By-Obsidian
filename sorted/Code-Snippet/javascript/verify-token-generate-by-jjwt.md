@@ -2,7 +2,7 @@
 
 ## generate token
 
-by [jjwt](Java_jjwt.md)
+by [jjwt](java-jjwt.md)
 
 depend on [springMVC]
 

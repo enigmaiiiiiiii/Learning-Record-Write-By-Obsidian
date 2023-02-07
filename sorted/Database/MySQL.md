@@ -4,78 +4,78 @@
 
 ## I
 
-[安装](MySQL_Install.md)
+[安装](mysql-install.md)
 
-[配置](MySQL_Configuration.md)
+[配置](mysql-configuration.md)
 
-[MySql命令行客户端](MySql_Command_Line_Client.md)
+[MySql命令行客户端](mysql-command-line-client.md)
 
 [[MySql账户]]
 
-[修改密码](MySQL_change_root_password.md)
+[修改密码](mysql-change-root-password.md)
 
-[sql语句](SQL_statement.md)
+[sql语句](sql-statement.md)
 
 ## II
 
-[开始使用MySql](MySql_Start.md)
+[开始使用MySql](mysql-start.md)
 
-[数据类型](MySQL_Data_Type.md)
+[数据类型](mysql-data-type.md)
 
-[数据表(Table)操作](MySQL_Statements_Table.md)
+[数据表(Table)操作](mysql-statements-table.md)
 
-[MySql查询语句](MySQL_Query_Statements.md)
+[MySql查询语句](mysql-query-statements.md)
 
-[MySql修改语句](MySQL_Modify_Statements.md)
+[MySql修改语句](mysql-modify-statements.md)
 
-[主键](MySQL_Primary_Key.md)
+[主键](mysql-primary-key.md)
 
-[外键约束](MySQL_Foreign_Key.md)
+[外键约束](mysql-foreign-key.md)
 
-[关联查询](MySQL_Related_Query.md)
+[关联查询](mysql-related-query.md)
 
-[字符集](MySQL_Charset.md)
+[字符集](mysql-charset.md)
 
-[事务](MySQL_Transaction.md)
+[事务](mysql-transaction.md)
 
 ## III
 
-[mysql client](MySQL_Mysql_Client.md): 命令行客户端
+[mysql client](mysql-mysql-client.md): 命令行客户端
 
-[mysql import](MySQL_Mysqlimport.md): 导入数据
+[mysql import](mysql-mysqlimport.md): 导入数据
 
-[mysql dump](MySQL_Mysqldump.md): 转存数据库
+[mysql dump](mysql-mysqldump.md): 转存数据库
 
 ## IV
 
-[系统变量](MySQL_Server_System_Variables.md)
+[系统变量](mysql-server-system-variables.md)
 
-[概念](MySQL_concept.md)
+[概念](mysql-concept.md)
 
-[存储引擎](MySQL_Engine.md)
+[存储引擎](mysql-engine.md)
 
-[索引](MySql_Index.md)
+[索引](mysql-index.md)
 
-[mysqld](MySQL_Mysqld.md)
+[mysqld](mysql-mysqld.md)
 
-[MySql Shell](MySql_Shell.md)
+[MySql Shell](mysql-shell.md)
 
-[MySql C语言API](MySQL_C_API.md)
+[MySql C语言API](mysql-c-api.md)
 
-[同步](MySQL_Lock.md)
+[同步](mysql-lock.md)
 
-[隔离级别](MySQL_Isolation_Level.md)
+[隔离级别](mysql-isolation-level.md)
 
-[MVCC](MySQL_MVCC.md)
+[MVCC](mysql-mvcc.md)
 
 ## V high performance
 
 工具
 
-[查询日志](MySQL_Query_Log.md)
+[查询日志](mysql-query-log.md)
 
-[EXPLAIN](MySQL_EXPLAIN.md)
+[EXPLAIN](mysql-explain.md)
 
 如何优化
 
-[查询性能优化](MySQL_Query_Performance_Optimization.md)
+[查询性能优化](mysql-query-performance-optimization.md)

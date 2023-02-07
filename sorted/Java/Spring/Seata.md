@@ -24,7 +24,7 @@
 
 ## 开始使用
 
-[开始使用](Seata_Getting_Started.md)
+[开始使用](seata-getting-started.md)
 
 ## 事务模式
 

@@ -4,13 +4,13 @@
 - Clion自动生成CMakeLists.txt
 - cmake中， windows系统变量区别于其他系统
 
-[用CMake从0开始构建一个项目](CMake_From_Zero_To_One.md)
+[用CMake从0开始构建一个项目](cmake-from-zero-to-one.md)
 
-[CMake Error](CMake_Errors.md)
+[CMake Error](cmake-errors.md)
 
-[CMake概念](CMake_Concept.md)
+[CMake概念](cmake-concept.md)
 
-[命令行工具: cmake](CMake_Command_Line_Tools.md)
+[命令行工具: cmake](cmake-command-line-tools.md)
   
 [[CMake_Command]]
 
@@ -22,12 +22,12 @@
 
 [[cmake生成表达式]]
 
-[Linux下的安装](CMake_Install_On_Linux.md)
+[Linux下的安装](cmake-install-on-linux.md)
 
-[用于快速学习的例子](CMake_Example.md)
+[用于快速学习的例子](cmake-example.md)
 
-[完整项目用到的CMake命令](CMake_Learn_From_Large_Project.md)
+[完整项目用到的CMake命令](cmake-learn-from-large-project.md)
 
-[文章: Modern CMake](CMake_Article_1.md)
+[文章: Modern CMake](cmake-article-1.md)
 
 

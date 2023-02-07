@@ -1,5 +1,5 @@
 # DevToProduction
 
-[Optimize Production](Optimize_Production.md)
+[Optimize Production](optimize-production.md)
 
-[Production Logic](Production_Logic.md)
+[Production Logic](production-logic.md)
