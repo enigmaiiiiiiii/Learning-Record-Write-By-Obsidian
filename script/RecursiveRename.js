@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+
 function renameFiles(dir) {
   fs.readdir(dir, (err, files) => {
     if (err) throw err;
@@ -26,6 +27,6 @@ function renameFiles(dir) {
   });
 }
 
-const notePath = "C:/Users/lixin/Documents/NoteLab";
+const notePath = path.dirname(process.cwd());
 
 renameFiles(notePath);

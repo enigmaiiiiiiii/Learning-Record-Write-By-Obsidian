@@ -45,6 +45,6 @@ function modifyLinks(dir) {
   })
 }
 
-const notePath = "C:/Users/lixin/Documents/NoteLab";
+const notePath = path.dirname(process.cwd());
 
 modifyLinks(notePath);
