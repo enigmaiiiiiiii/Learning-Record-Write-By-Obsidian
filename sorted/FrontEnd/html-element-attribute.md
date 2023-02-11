@@ -1,4 +1,12 @@
-# 属性
+# HTLM Tag Attribute
+
+## boolean attribute
+
+`<input type="checkbox" checked>`
+
+- `checked` represents a value whether true or false
+
+## common attribute
 
 class
 
@@ -10,3 +18,5 @@ class
 ```
 
 id
+
+- 用来唯一标识一个元素

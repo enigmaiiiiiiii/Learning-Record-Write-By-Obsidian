@@ -1,6 +1,11 @@
 # Component Props
 
-## props is a buit-in react object
+- [props is a buit-in react object](#props-is-a-buit-in-react-object)
+- [As component Attribute](#as-component-attribute)
+- [Passing JSX as children](#passing-jsx-as-children)
+- [props are unchangeable](#props-are-unchangeable)
+
+## props is a buit-in Object in react component
 
 welcome.js
 
@@ -12,7 +17,9 @@ export default function Welcome(props) {
 
 // props same as {name}
 export function SameWelcome({name}) {
-  return <h1>Hello, {name}</h1>; 
+  return (
+    <h1>Hello, {name}</h1>
+  )
 }
 ```
 
@@ -71,7 +78,7 @@ function Card({ children }) {
 export default function Profile() {
   return (
     <Card>
-      <Avatar /> 
+      <Avatar />
     </Card>
   );
 }
@@ -80,4 +87,5 @@ export default function Profile() {
 ## props are unchangeable
 
 - change props is ask parent component change the components attribute
+
 

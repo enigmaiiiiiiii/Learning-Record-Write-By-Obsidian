@@ -51,7 +51,7 @@ export default function MyApp({ Component, pageProps }) {
 }
 ```
 
-## From node_modules 
+## From node_modules
 
 ```js
 // components/ExampleDialog.js
@@ -109,5 +109,22 @@ export default function MyApp({ Component, pageProps}) {
 }
 ```
 
+## Restrict
 
+[global css](#global-css) cannot be import from file other than your `pages/_app.js`
 
+following code will not work
+
+- ./page/Demo.js
+
+```js
+import '../styles/demo.css'
+
+export default function Demo() {
+  return (
+    <div>
+      <h1>demo</h1>
+    </div>
+  )
+}
+```

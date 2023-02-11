@@ -8,9 +8,11 @@
 
 [Terminology](react-terminology.md)
 
-[Render element](react-render-element.md)
+[Render Element](react-render-element.md)
 
 [Component](react-component.md)
+
+[Features](react-features.md)
 
 [Router](react-router.md)
 
@@ -37,6 +39,8 @@
 [React Native](react-native.md): 使用ReactJS创建Android和iOS原生应用
 
 [React Query](react-query.md): 一个[React Hooks]()库
+
+[React Router](react-router-dom.md)
 
 [swr](react-swr.md)
 

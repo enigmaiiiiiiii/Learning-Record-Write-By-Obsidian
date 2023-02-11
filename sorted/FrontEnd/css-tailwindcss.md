@@ -1,6 +1,6 @@
 # tailwindcss
 
-## 安装
+## Install
 
 不在Node.js环境下使用的安装方式
 
@@ -14,3 +14,6 @@ npx tailwindcss init
 ```shell
 npm install -D tailwindcss postcss autoprefixer
 ```
+
+## `@apply`
+

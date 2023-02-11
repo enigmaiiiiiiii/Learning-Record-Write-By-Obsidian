@@ -1,5 +1,9 @@
 # NextJS API
 
+## next/router
+
+[router object](nextjs-router.md)
+
 ## next/head
 
 ## next/script
@@ -52,3 +56,7 @@ height
 priority
 
 - true: high priority, and lazy loading is automatically disabled
+
+## next/link
+
+

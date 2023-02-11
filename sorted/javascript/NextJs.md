@@ -53,4 +53,3 @@ npx create-next-app
 
 [LearnFromBug](nextjs-learn-from-bug.md)
 
-

@@ -3,11 +3,8 @@
 Next.js is a framework for building server-rendered React applications
 
 - [pre-rendering](#pre-rendering)
-- [Static Site Generation(SSG)](#static-site-generationssg)
-- [Server-side Rendering(SSR)](#server-side-renderingssr)
-- [Client-side Rendering(CSR)](#client-side-renderingcsr)
-- [Data Fetching](#data-fetching)
-- [SEO](#seo)
+- [Allow Using Node.js Modules In React Components](#allow-using-nodejs-modules-in-react-components)
+- [SEO(搜索引擎优化)](#seo搜索引擎优化)
 - [Fast Refresh](#fast-refresh)
 
 ## pre-rendering
@@ -24,28 +21,30 @@ Next.js is a framework for building server-rendered React applications
 
 two forms pre-rendering
 
-[Server-side Rendering(SSR)](#server-side-renderingssr)
-[Client-side Rendering(CSR)](#client-side-renderingcsr)
+[Server-side Rendering(SSR)](nextjs-server-side-rendering.md)
 
-## Server-side Rendering(SSR)
+[Client-side Rendering(CSR)](nextjs-client-side-rendering.md)
 
-[SSR](nextjs-server-side-rendering.md)
+one form of static generation
 
-## Client-side Rendering(CSR)
+[Static Site Generation(SSG)](nextjs-static-generation.md)
 
-[CSR](nextjs-client-side-rendering.md)
 
-## Static Site Generation(SSG)
+## Allow Using Node.js Modules In React Components
 
-[SSG](nextjs-static-generation.md)
+- Also known as **Data Fetching**
 
-## Data Fetching
+[best example](https://github.com/jherr/pokemon-next-three-ways)
 
 [getStaticProps()](nextjs-datafetching-getstaticprops.md)
 
 [getStaticPaths()](nextjs-datafetching-getstaticpaths.md)
 
 [getServerSideProps()](nextjs-datafetching-getserversideprops.md)
+
+## Another Data Fetching Function
+
+[getInitialProps()](nextjs-datafetching-getinitialprops.md)
 
 ## SEO(搜索引擎优化)
 

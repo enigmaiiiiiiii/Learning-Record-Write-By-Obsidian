@@ -1,19 +1,30 @@
 # 模块化工程中使用VueRouter
 
+- [Introduction](#introduction)
+- [write in main.js](#write-in-mainjs)
+- [写在router/index.js](#写在routerindexjs)
+- [write in app.vue](#write-in-appvue)
+- [引入并安装插件](#引入并安装插件)
+- [定义路径](#定义路径)
+- [创建VueRouter实例](#创建vuerouter实例)
+- [挂载根实例](#挂载根实例)
+- [页面内容](#页面内容)
+
+## Introduction
+
 - 其中**路径定义, 页面, 路由映射的组件**在单独文件中
 - **其它内容可在`main.js`中定义**
 
-## 写在main.js
+## write in main.js
 
 - [引入并安装插件](#引入并安装插件)
 - [创建路由对象](#创建路由对象)
 - [创建Vue实例](#创建vue实例)
-
 ## 写在router/index.js
 
 - [定义路径](#定义路径)
 
-## 写在app.vue
+## write in app.vue
 
 - [页面内容](#页面内容)
 
@@ -43,7 +54,7 @@ const routes = [
 
 ## 创建VueRouter实例
 
-- routes: 路径数组
+- routes: array of route
 - 还可以配置其它选项
 
 ```js

@@ -3,7 +3,7 @@
 - [what's for](#whats-for)
 - [take a look](#take-a-look)
 - [return value](#return-value)
-  - [path](#path)
+  - [paths](#paths)
     - [params: an object of match route pararmeters](#params-an-object-of-match-route-pararmeters)
   - [fallback](#fallback)
     - [when `fallback: ture`](#when-fallback-ture)
@@ -20,7 +20,8 @@
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { id: 1 } }
+      { params: { id: 1 } },
+      { params: { id: 2 } }
     ],
     fallback: true;
   }
@@ -31,13 +32,24 @@ export async function getStaticPaths() {
 
 ## return value
 
-### path
+### paths
 
 `paths` is an array of objects, elements represent a 具体的路径参数值
 
-paths中每个元素代表一个路径, 路径表示的页面会被**pre-rendered**
+`paths`中每个元素代表一个路径, 路径表示的页面会被**pre-rendered**
 
-properties of paths:
+properties of `paths` element:
+
+```js
+paths: [
+  {
+    params: {
+      id: '1',
+      locale: 'en'
+    }
+  },
+]
+```
 
 - params
 - locale
@@ -93,9 +105,9 @@ render root path `/`:
 1. `getStaticPaths()`返回的`paths`属性中的路径会在build time 被[getStaticProps()](nextjs-datafetching-getstaticprops.md)预渲染
 2. 不在`paths`中的路径, 不会导致404page, `Next.js` 会为首次访问的这种路径提供一个[备用页面](#fallback-page)
 3. nextjs 在后台静态的生成请求的页面, 包括运行getStaticProps()
-4. 当完成时, 浏览器根据[props]渲染一个页面
+4. 当完成时, 浏览器根据[props]()渲染一个页面
 
-> 第四点从用户的角度看, 页面从备用页面切换到渲染后的完整页面
+> 第四点, 从用户的角度看, 页面会从**fallback page**切换到渲染后的完整页面
 
 5. page navigated by `next/link` or `next/router` 不会提供备用页面, 行为和`fallback: blocking`一样
 

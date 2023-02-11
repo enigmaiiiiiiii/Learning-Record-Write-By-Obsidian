@@ -60,12 +60,13 @@ integrity
 
 ## meta标签
 
-- name属性
-  - `name="keywords/description/author/copyright"`
-  - keywords 网页关键字
-  - description 网页描述
-  - author 作者
-  - copyright 版权
+name属性
+
+- `name="keywords/description/author/copyright"`
+- keywords 网页关键字
+- description 网页描述
+- author 作者
+- copyright 版权
 
 ```html
 <!DOCTYPE html>
@@ -77,10 +78,14 @@ integrity
 </html>
 ```
 
-- http-equiv属性: 定义网页所使用编码，定义网页自动刷新跳转
-  - ```<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>```，声明页面所使用的编码是utf-8
-  - ```<meta charset="utf-8"/>```, HTML5中可以将上面代码简写成这种形式
-  - 如果打开时乱码首先考虑是这个属性
-  - ```<meta http-equiv="refresh" content="6:url=http://www.baidu.com"/>```, 表示页面6秒后自动跳转baidy.com
+http-equiv attribute: 定义网页所使用编码，定义网页自动刷新跳转
 
-***
+- `<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>`，声明页面所使用的编码是utf-8
+- `<meta charset="utf-8"/>`, HTML5中可以将上面代码简写成这种形式
+- 如果打开时乱码首先考虑是这个属性
+- `<meta http-equiv="refresh" content="6:url=http://www.baidu.com"/>`, 表示页面6秒后自动跳转baidy.com
+
+property attribute 取值
+
+- og:title:`<meta property="og:title" content="title"/>`
+  - og is Open Graph Protocol, provide a rich preview when a link is shared social media platforms

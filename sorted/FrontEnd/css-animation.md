@@ -13,10 +13,10 @@
 - 7. `animation-fill-mode`
 - 8. `animation-play-state`
 
-order of time values
+if value is time value, like 0.5s, 2s. Order of values is
 
-1. first value: `animation-duration`
-2. second value: `animation-delay`
+- 1. first value: `animation-duration`
+- 2. second value: `animation-delay`
 
 order of other values
 

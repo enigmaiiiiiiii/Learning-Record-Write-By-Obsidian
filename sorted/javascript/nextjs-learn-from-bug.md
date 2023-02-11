@@ -12,7 +12,8 @@ Preknowledge
 
 when this problem occurs
 
-- access to a page not in `paths` property of `getStaticPaths()`
+- use `fs` module outside the `getStaticProps()`, `getStaticPaths()`, `getServerSideProps()`
+- access to a page not in `paths` property of [`getStaticPaths()`](nextjs-datafetching-getstaticpaths.md)
 
 ## 2. TypeError: (0 , swr__WEBPACK_IMPORTED_MODULE_5__.useSWR) is not a function
 

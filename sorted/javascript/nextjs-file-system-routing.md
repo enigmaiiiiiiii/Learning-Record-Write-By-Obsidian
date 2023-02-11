@@ -27,10 +27,10 @@ function Home() {
 
 - `/about` $\rightarrow$ `pages/about.js`
 
-dynamic paths
+link dynamic pages
 
 ```js
-function Posts({posts}) {
+function Posts({ posts }) {
   return (
     <ul>
       {posts.map((post) => (
@@ -40,7 +40,7 @@ function Posts({posts}) {
               </Link>
             </li>
       ))}
-    <ul>
+    </ul>
   )
 }
 ```

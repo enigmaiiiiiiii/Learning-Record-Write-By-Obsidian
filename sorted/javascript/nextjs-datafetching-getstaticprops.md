@@ -1,9 +1,10 @@
 # Function getStaticProps()
 
 - [feature](#feature)
-- [static Generation with external data](#static-generation-with-external-data)
+- [take a look](#take-a-look)
 - [when does `getStaticProps()` run?](#when-does-getstaticprops-run)
-- [](#)
+- [parameters](#parameters)
+- [return values](#return-values)
 
 ## feature
 
@@ -19,7 +20,7 @@ export async function getStaticProps(context) {
   const res = await fetch('https://.../posts');
   const posts = await res.json();
   return {
-    props: { props }
+    props: { val }
   }
 }
 export default function Welcome(props) {
@@ -41,8 +42,8 @@ export default function Welcome(props) {
 
 dev and prod
 
-- In development `getStaticProps()` runs on every request
-- In production `getStaticProps()` runs at build time
+- In development `getStaticProps()` runs on **every request**
+- In production `getStaticProps()` runs at **build time**
 
 ## parameters
 

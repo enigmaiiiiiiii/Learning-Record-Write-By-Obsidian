@@ -2,6 +2,14 @@
 
 - in a word: 组件渲染时, 调用的函数
 
+> componentDidMount
+
+- [Effect And Event](#effect-and-event)
+- [why useEffect](#why-useeffect)
+- [write an Effect](#write-an-effect)
+- [Effect dependency](#effect-dependency)
+- [Cleanup effect](#cleanup-effect)
+
 ## Effect And Event
 
 - **event** is caused by a specific user action
@@ -81,5 +89,4 @@ useEffect(() => {
 ## Cleanup effect
 
 [Cleanup effect](react-effect-cleanup.md)
-
 
