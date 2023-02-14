@@ -30,7 +30,7 @@ ItemRepository itemRepository;
 
 public void test() {
 
-    itemRespository.save(new Item(1L, "小米手机"));
+    itemRespository.save(new Item(1L, "apple iphone"));
 
 }
 ```

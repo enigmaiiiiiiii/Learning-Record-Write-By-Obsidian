@@ -15,7 +15,6 @@
 - [preload](#preload)
 - [schedule](#schedule)
 
-
 ## 配置
 
 [application配置文件](springboot-project-workflow-configuration.md)

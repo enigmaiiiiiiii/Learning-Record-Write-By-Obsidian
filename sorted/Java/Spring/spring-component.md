@@ -1,5 +1,11 @@
 # 组件
 
+- [Introduction](#introduction)
+- [Component created by Spring](#component-created-by-spring)
+- [对象的作用域](#对象的作用域)
+
+## Introduction
+
 - spring管理的对象默认是单例的
 - 配置类上添加`@ComponentScan`注解用于扫描组件所在的package, 多个package用逗号分隔
 
@@ -8,7 +14,7 @@
 @ComponentScan('org.example.packageof.component', 'org.example.packageof.othercomponent')
 ```
 
-## 被Spring框架创建组件
+## Component created by Spring
 
 - `@Component`注解的类用于创建自定义组件
   - `@Repository`注解的类用于创建持久层组件

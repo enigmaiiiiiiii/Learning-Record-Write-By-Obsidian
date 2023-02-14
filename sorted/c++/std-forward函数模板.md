@@ -1,7 +1,7 @@
 # std::forward
 
 ```c++
-// lvalue 
+// lvalue
 template <class T> T&& forward (typename remove_reference<T>::type& arg) noexcept;
 // rvalue
 template <class T> T&& forward (typename remove_reference<T>::type&& arg) noexcept;
@@ -27,7 +27,7 @@ template <class T> void fn (T&& x) {
   ///  如果不用std::forward转发x,x会被当做左值传递给overload参数
   overloaded (x);                   // always an lvalue
   overloaded (std::forward<T>(x));  // rvalue if argument is rvalue
-  
+
 }
 
 int main () {

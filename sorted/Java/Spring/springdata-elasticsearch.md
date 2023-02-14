@@ -1,6 +1,6 @@
 # Spring Data Elasticsearch
 
-## pom依赖
+## add dependency in pom
 
 ```xml
 <dependency>
@@ -9,7 +9,7 @@
 </dependency>
 ```
 
-## 配置
+## Config File
 
 ```yml
 Spring.elasticsearch.rest.uris: http://localhost:9200
@@ -51,11 +51,12 @@ public class Item {
 private String title;
 ```
 
-- `@Field(type = FieldType.text, name = "property_name", analyzer = "ik_max_word", searchAnalyzer = "ik_max_word")`
-  - type: 字段类型
-  - name: 字段名称, 命名
-  - analyzer: 分词器
-  - searchAnalyzer: 搜索分词器
+`@Field(type = FieldType.text, name = "property_name", analyzer = "ik_max_word", searchAnalyzer = "ik_max_word")`
+
+- type: 字段类型
+- name: 字段名称, 命名
+- analyzer: 分词器
+- searchAnalyzer: 搜索分词器
 
 ## 使用Repository
 

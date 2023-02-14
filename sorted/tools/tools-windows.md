@@ -1,5 +1,5 @@
 # Windows tool
 
-[command](windows-terminal-command.md)
+[command](windows-practical-commands.md)
 
 [terminal](windows-terminal.md)

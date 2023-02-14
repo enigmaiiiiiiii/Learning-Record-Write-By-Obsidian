@@ -27,6 +27,7 @@ cd elasticSearch-<version> # 进入安装目录
 ## 映射
 
 [映射](elasticsearch-mapping.md)
+
 ## API
 
 [API](elasticsearch-api.md)

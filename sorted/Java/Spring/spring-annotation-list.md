@@ -1,8 +1,29 @@
 # 注解列表
 
-- 遵循[java注解语法]()
+- [`@Value("${key}")`](#valuekey)
+- [`@ControllerAdvice`](#controlleradvice)
+- [`@ExceptionHandler`](#exceptionhandler)
+- [`@Controller`](#controller)
+- [`@ResquestMapping(String str)`](#resquestmappingstring-str)
+- [`@ResponseBody`](#responsebody)
+- [`@RequestBody`](#requestbody)
+- [`@RestController`](#restcontroller)
+- [`@Autowired`](#autowired)
+- [`@ResponseBody`: 方法返回字符串作为响应内容](#responsebody-方法返回字符串作为响应内容)
+- [`@RestController()`](#restcontroller-1)
+- [`@Autowired`](#autowired-1)
+- [`@Mapper`](#mapper)
+- [`@Insert(String sql)`](#insertstring-sql)
+- [`@Result`](#result)
+- [@Configuration](#configuration)
+- [@Service](#service)
+- [@JsonInclude](#jsoninclude)
+- [@Scheduled](#scheduled)
 
-## `@Value("${key}")`: 
+
+> 遵循[java注解语法](java-annotation.md)
+
+## `@Value("${key}")`
 
 - 获得配置文件中的值, 用`${}`取值
 
@@ -55,6 +76,8 @@ public @interface RequestMapping {
 
 ## `@Autowired`
 
+## `@Qualifier`
+
 ## `@Mapper`
 
 ## `@Insert(String sql)`
@@ -81,15 +104,15 @@ ps.setInt(1, id);
 - `@autowired`: 自动装配
 - `@MapperScanner(String str)`: 指定包下的所有接口为mapper接口
 
-## @Configuration
+## `@Configuration`
 
-## @Service
+## `@Service`
 
-## @JsonInclude
+## `@JsonInclude`
 
 - `@JsonInclude(JsonInclude.Include.NON_NULL)`: 不序列化null值
 
-## @Scheduled
+## `@Scheduled`
 
 - 用于方法
 - `@Scheduled(fixedRate=1000)`: 每隔1s执行一次
