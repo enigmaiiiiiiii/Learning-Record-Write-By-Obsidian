@@ -1,6 +1,6 @@
 # Vue实例
 
-## html中的Vue实例
+## html中的vue实例
 
 index.html
 
@@ -19,10 +19,9 @@ var app = new Vue({
 </script>
 ```
 
-## Vue根实例
+## vue root instance
 
 - [new](javascript-operator-new.md) Vue()创建的Vue实例
-
 
 ## Vue实例的属性
 

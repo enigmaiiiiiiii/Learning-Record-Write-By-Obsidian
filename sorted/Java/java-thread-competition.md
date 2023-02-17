@@ -5,7 +5,7 @@
 - synchronized关键字修饰的代码块
 
 ```java
-syncronized(obj) {
+synchronized(obj) {
     // method body
 }
 ```

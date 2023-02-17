@@ -1,5 +1,10 @@
 # 注册组件
 
+- [全局注册](#全局注册)
+- [通过props传递组件数据](#通过props传递组件数据)
+- [局部注册](#局部注册)
+- [导入组件](#导入组件)
+
 ## 全局注册
 
 `Vue.component(id, [definition])`
@@ -38,7 +43,7 @@ Vue.component('button-counter', {
 需要向组件传递数据的场景
 
 ```html
-<blog-post 
+<blog-post
     title="My journey with Vue"
     likes="10"
     isPublished="true"
@@ -50,8 +55,13 @@ Vue.component('button-counter', {
 
 ```js
 Vue.component('blog-post', {
-    props: ['title', 'likes', 'isPublished', 'commentIds'],
-    template: '<h3>{{ title }}</h3>'
+  props: {
+    'title',
+    'likes',
+    'isPublished',
+    'commentIds'
+  },
+  template: '<h3>{{ title }}</h3>'
 })
 ```
 
@@ -69,11 +79,11 @@ var ComponentB = {/* ... */};
 
 ```js
 new Vue({
-    el: "#app",
-    components: {
-        'component-a': ComponentA,
-        'component-b': ComponentB
-    }
+  el: "#app",
+  components: {
+    'component-a': ComponentA,
+    'component-b': ComponentB
+  }
 })
 ```
 

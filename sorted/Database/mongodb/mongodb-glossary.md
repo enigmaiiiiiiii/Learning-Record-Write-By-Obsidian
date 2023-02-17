@@ -1,4 +1,4 @@
-# Terminology
+# glossary
 
 ## document
 
@@ -21,3 +21,10 @@
 
 - hold one or more collection
 
+## mongod
+
+- primary **daemon process** for the MongoDB
+
+## namespace
+
+- canonical name for a collection

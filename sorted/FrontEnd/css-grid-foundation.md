@@ -12,7 +12,7 @@
 ## feature
 
 - 网格中的元素可以重叠
-- inline direction: left to right(main directio)
+- inline direction: left to right(main direction)
 - block direction: downward(cross direction)
 
 ## 声明网格容器

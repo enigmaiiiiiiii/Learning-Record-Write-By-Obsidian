@@ -15,16 +15,16 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script>
-    // 注册Vue组件
-    Vue.component("blog-post", {
-        props: ["title"],
-        template: "<h3>{{ title }}</h3>",
-    });
+  // 注册Vue组件
+  Vue.component("blog-post", {
+    props: ["title"],
+    template: "<h3>{{ title }}</h3>",
+  });
 
-    // Vue根实例
-    new Vue({
-        el: "#app",
-    });
+  // Vue根实例
+  new Vue({
+    el: "#app",
+  });
 </script>
 </html>
 ```

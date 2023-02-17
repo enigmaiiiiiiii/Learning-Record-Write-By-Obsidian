@@ -8,7 +8,7 @@
 ## justify-content
 
 - 定义 flex container 的内容和空间沿**main axis**上的分布方式
-- 定义 grid container 的内容和空间沿**inline direction**上的分布方式
+- 定义 grid container 的内容和空间沿[**inline direction**](css-grid-foundation.md#feature)上的分布方式
 
 value
 
@@ -71,3 +71,10 @@ ___
 > align-content属性在grid容器中生效, 需要网格容器的尺寸大于所有内容的尺寸
 
 [code](css-align.md)
+
+## place-content
+
+shorthand for
+
+- [`align-content`](#align-content)
+- [`justify-content`](#justify-content)

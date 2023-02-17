@@ -119,3 +119,19 @@ ps.setInt(1, id);
 - `@Scheduled(fixedDelay=1000)`: 上一次执行完毕后隔1s执行一次
 - `@Scheduled(cron="0 0 0 * * ?")`: 每天0点执行一次
 
+## `@Transactional`
+
+Attribute
+
+- Isolation
+- Propagation: transaction Propagation type
+  - Propagation.REQUIRED
+  - Propagation.REQUIRES_NEW
+  - Propagation.MANDATORY
+  - Propagation.NESTED
+  - propagation.NEVER: Execute non-transactionally
+  - ...
+- readOnly
+- rollbackForClassName
+- timeout
+- label

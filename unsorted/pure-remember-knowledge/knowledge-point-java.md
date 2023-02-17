@@ -4,7 +4,7 @@
 
 1. JDBC
 2. jpa
-3. haibernate
+3. hibernate
 4. mybatis
 
 ## nginx反向代理
@@ -71,4 +71,16 @@
 7. 输入参数，List, Map, POJO
 8. 输出结果, 包装成java对象
 
-## 
+## RabbitMQ Business Condition
+
+article post platform
+
+1. Asynchronous article publishing
+2. Real-time notification
+3. comment moderation
+
+e-commerce platform
+
+1. Order processing: checking inventory, calculationg shipping costs, updating order status
+2. Inventory Management
+3. Payment Process

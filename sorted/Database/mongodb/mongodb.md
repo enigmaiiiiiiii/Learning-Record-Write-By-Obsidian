@@ -11,18 +11,25 @@ on windows
     - for local user: specify a period(.) for domain and set account password
     - for domain user: set account domain and account password
 
-## terminology
+## Glossary
 
-[mongodb terminology](mongodb-terminology.md)
+[mongodb Glossary](mongodb-glossary.md)
 
 ## Use MongoDB
 
 [Start To Use](mongodb-use.md)
 
+[Practical Operation](mongodb-practical-operation.md)
+
+[MongoDB Atlas](mongodb-atlas.md)
+
+[MongoDB Tools](mongodb-tools.md)
+
+## Operate Data
+
 [Database Operation](mongodb-database-operation.md)
 
 [Collection Operation](mongodb-collection-operation.md)
-
 
 ## advance
 

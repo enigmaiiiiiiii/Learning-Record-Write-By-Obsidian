@@ -1,6 +1,16 @@
 # 单文件组件
 
--   **使用单文件组件(SFC)必须使用构建工具**
+>   **使用单文件组件(SFC)必须使用构建工具**
+
+- [概念](#概念)
+- [使用单文件组件](#使用单文件组件)
+- [style 样式](#style-样式)
+- [template 模板](#template-模板)
+- [script 脚本](#script-脚本)
+- [style 样式](#style-样式-1)
+- [使用组件](#使用组件)
+- [自定义指令](#自定义指令)
+- [defineProps()和 defineEmits()](#defineprops和-defineemits)
 
 ## 概念
 
@@ -36,16 +46,14 @@ template.html, script.js, style.css 可以用一个如下的.vue 文件代替
 </style>
 ```
 
--   插槽选择器, `:slooted()`选择器
-
-    -   不受当前组件的`<style scoped>`影响
-    -   被认为是父组件所持有
-
--   `v-bind()`函数将 css 动态属性值与组件绑定
+- 插槽选择器, `:slooted()`选择器
+  - 不受当前组件的`<style scoped>`影响
+  - 被认为是父组件所持有
+- `v-bind()`函数将 css 动态属性值与组件绑定
 
 ## template 模板
 
--   `<template>`中只能有一个根元素
+- `<template>`中只能有一个根元素
 
 ## script 脚本
 

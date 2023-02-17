@@ -1,6 +1,6 @@
 # 定位
 
-## position属性
+## position property
 
 > 允许从Normal Flow中取出元素, 并使他们具有不同的行为, 如放在另一个元素上，或保持在浏览器同一位置
 
@@ -42,7 +42,7 @@
 
 - [ ] todo
 
-## 对齐
+## align
 
 vertical-align: 纵向对齐
 

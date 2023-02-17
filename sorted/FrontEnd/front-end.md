@@ -8,6 +8,8 @@
 
 [JavaScript](javascript.md)
 
+[SVG](svg.md)
+
 ## II 
 
 [CDN](cdn.md)

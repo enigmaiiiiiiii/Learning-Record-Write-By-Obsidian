@@ -1,14 +1,13 @@
 # ESlint
 
-- [ESlint](#eslint)
-  - [Introduction](#introduction)
-  - [terminology](#terminology)
-  - [安装eslint](#安装eslint)
-  - [配置文件.eslintrc.{js, yml, json}](#配置文件eslintrcjs-yml-json)
-  - [use eslint](#use-eslint)
-  - [eslint command](#eslint-command)
-  - [Vscode 中的 ESlint插件](#vscode-中的-eslint插件)
-  - [vue-cli 中的 ESlint](#vue-cli-中的-eslint)
+- [Introduction](#introduction)
+- [terminology](#terminology)
+- [安装eslint](#安装eslint)
+- [配置文件.eslintrc.{js, yml, json}](#配置文件eslintrcjs-yml-json)
+- [use eslint](#use-eslint)
+- [eslint command](#eslint-command)
+- [Vscode 中的 ESlint插件](#vscode-中的-eslint插件)
+- [vue-cli 中的 ESlint](#vue-cli-中的-eslint)
 
 ## Introduction
 

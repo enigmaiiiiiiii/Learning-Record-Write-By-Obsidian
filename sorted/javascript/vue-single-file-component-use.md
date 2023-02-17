@@ -4,39 +4,38 @@
 
 ```html
 <template>
-    <MyComponent />
+  <MyComponent />
 </template>
 
 <script>
-    import MyComponent from `./MyComponent.vue`
-    export default {
-        components: {
-            MyComponent
-        }
-    }
-</script>
+import MyComponent from `./MyComponent.vue`
 
+export default {
+  components: {
+    MyComponent
+  }
+}
+</script>
 ```
 
-> `<script setup>`标签中import的组件会自动注册为局部组件
-
+> [`<script setup>`]标签中import的组件会自动注册为[局部组件](vue-register-component.md#局部注册)
 
 动态组件: 通过`<component/>`的`:is`属性来动态绑定组件
 
 ```html:vue
 <script setup>
-    import Foo from `./Foo.vue`
-    import Bar from `./Bar.vue`
+import Foo from `./Foo.vue`
+import Bar from `./Bar.vue`
 </script>
 <template>
-    <component :is="Foo" />
-    <component :is="someCondition ? Foo : Bar" />
+  <component :is="Foo" />
+  <component :is="someCondition ? Foo : Bar" />
 </template>
 ```
 
 递归组件
 
-- 递归导入自身: FooBar.vue的组件可以在其模板中用<FooBar />使用自身
+- 递归导入自身: FooBar.vue的组件可以在其模板中用`<FooBar />`使用自身
 - 使用别名避免从外部导入的组件与自身命名冲突
 
 ```html:vue
