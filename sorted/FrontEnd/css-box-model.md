@@ -76,3 +76,7 @@ or
 }
 ```
 > ::after, ::before是CSS3的[伪元素](css-selector.md#伪元素选择器)
+
+## Margin Collapsing
+
+[Margin Collapsing](css-mastering-margin-collapsing.md)

@@ -16,7 +16,7 @@
 
 [Grid](css-grid.md)
 
-## 对齐
+## Flexible Alignment
 
 [Align](css-flexible-alignment.md)
 

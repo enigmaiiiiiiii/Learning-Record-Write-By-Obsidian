@@ -10,11 +10,15 @@
 
 [SVG](svg.md)
 
-## II 
+## II
 
 [CDN](cdn.md)
 
-## 页面美化
+## tools
+
+[StackBlitz](stackblitz.md): website IDE
+
+## beautiful 
 
 [font awesome](font-awesome.md)
 

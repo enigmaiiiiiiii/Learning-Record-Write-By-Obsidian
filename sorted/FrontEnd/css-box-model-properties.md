@@ -42,4 +42,4 @@ max-width, max-height, min-width, min-height
 - margin不包括在box的实际尺寸中, 属于不可见宽度
 - 百分比: 基于containing block的margin设置
 
-[外边距塌陷](css-mastering-margin-collapsing.md)
+[Margin Collapsing](css-mastering-margin-collapsing.md)

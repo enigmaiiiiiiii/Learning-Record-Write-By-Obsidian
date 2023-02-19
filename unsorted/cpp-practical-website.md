@@ -1,4 +1,4 @@
-# c++实用网站
+# C++ Practical Website
 
 [1. cppreference](https://en.cppreference.com/w/) 可以当作查询手册
 

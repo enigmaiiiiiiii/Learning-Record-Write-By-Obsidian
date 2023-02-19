@@ -89,13 +89,13 @@ git checkout -- <file>
 
 暂存修改
 
-```bash
+```sh
 git stash
 ```
 
 恢复修改并删除暂存记录
 
-```bash
+```sh
 git stash pop
 ```
 
