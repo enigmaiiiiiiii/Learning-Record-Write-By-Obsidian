@@ -1,6 +1,6 @@
 # PageHelper
 
--   MyBatis 分页插件
+-  MyBatis 分页插件
 
 ## 引入依赖
 
@@ -35,10 +35,10 @@ public PageInfo<T> selectAll(int pageNum, int pageSize) {
     return new PageInfo<>(list);              // 3
 ```
 
--   1. 通过 PageHelper 静态方法 startPage()设置分页参数
-    -   startPage(int pageNum, int pageSize)
-    -   pageNum: 页码
-    -   pageSize: 每页条数
+- 1. 通过 PageHelper 静态方法 startPage()设置分页参数
+  - startPage(int pageNum, int pageSize)
+  - pageNum: 页码
+  - pageSize: 每页条数
 -   2. 调用 Mybatis 接口 mapper 查询数据, PageHelper 会拦截查询, 并将分页参数添加到查询语句中
 -   3. 通过 PageInfo 构造函数将查询结果封装为 PageInfo 对象
 

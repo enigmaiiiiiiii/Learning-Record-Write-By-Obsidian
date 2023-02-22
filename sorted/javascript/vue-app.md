@@ -1,9 +1,12 @@
 # 组件和实例
 
-[实例](#实例)
-[组件](#组件)
-[生命周期](#生命周期)
-[API](#api)
+- [Introduction](#introduction)
+- [实例](#实例)
+- [组件](#组件)
+- [生命周期](#生命周期)
+- [API](#api)
+
+## Introduction
 
 ```html
 <body>
@@ -34,17 +37,17 @@
 - Vue根实例由多个[Vue组件](vue-component.md)组成
 - Vue组件是可复用的[Vue实例](vue-instance.md)
 
-## 实例
+## Instance
 
 [Vue实例](vue-instance.md)
 
-## 组件
+## Component
 
 [Vue组件](vue-component.md)
 
-## 生命周期
+## lifecycle 
 
-[Vue生命周期](vue-lifecycle.md)
+[Lifecycle](vue-lifecycle.md)
 
 ## API
 

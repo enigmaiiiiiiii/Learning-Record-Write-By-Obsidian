@@ -40,7 +40,7 @@
 
 ## fr unit
 
-- fr是一种单位 和属性 [flex-grow](css-flex.md#flex-grow) 有类似的效果
+- fr是一种单位和属性 [flex-grow](css-flex.md#flex-grow) 有类似的效果
 - 根据可用空间分配比例
 - a flexible size
 - 可以和绝对单位(px)混合使用

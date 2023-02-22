@@ -31,12 +31,13 @@ template.html, script.js, style.css 可以用一个如下的.vue 文件代替
 
 ## 使用单文件组件
 
-## style 样式
+## style
 
--   `<style>`表示全局样式
--   `<style scoped>`表示只在当前组件(.vue 文件)中生效
--   `<style module>`
--   `<style scoped>`中的样式想要影响子组件, 需要使用`:deep()`选择器
+- `<style>`表示全局样式
+- `<style scoped>`表示只在当前组件(.vue 文件)中生效, 不会作用于子组件
+- `<style module>`
+
+`<style scoped>`中的样式想要影响子组件, 需要使用`:deep()`选择器
 
 ```css
 <style scoped>
@@ -46,7 +47,7 @@ template.html, script.js, style.css 可以用一个如下的.vue 文件代替
 </style>
 ```
 
-- 插槽选择器, `:slooted()`选择器
+- 插槽选择器, `:sloted()`选择器
   - 不受当前组件的`<style scoped>`影响
   - 被认为是父组件所持有
 - `v-bind()`函数将 css 动态属性值与组件绑定

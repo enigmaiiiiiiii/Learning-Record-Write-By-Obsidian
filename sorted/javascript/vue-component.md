@@ -1,5 +1,13 @@
 # Vue Component
 
+- [Introduction](#introduction)
+- [通过Vue实例注册组件](#通过vue实例注册组件)
+- [.Vue文件组件](#vue文件组件)
+- [Vue Component Props](#vue-component-props)
+- [Component data](#component-data)
+- [Event Handling](#event-handling)
+- [Add Children To Component](#add-children-to-component)
+
 ## Introduction
 
 - 组件是可复用的[Vue实例](vue-instance.md)
@@ -24,6 +32,10 @@
 
 [Component Data](vue-component-data.md)
 
-## Component Slot
+## Event Handling
 
-[组件插槽](vue-component-slot.md)
+[Event Handling](vue-component-event-handling.md)
+
+## Add Children To Component
+
+[Children](vue-component-slot.md)

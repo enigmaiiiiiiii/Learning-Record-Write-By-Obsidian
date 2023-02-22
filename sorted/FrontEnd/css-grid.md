@@ -5,14 +5,13 @@
 - [Grid And Absolutely Positioned Elements](#grid-and-absolutely-positioned-elements)
 - [](#)
 
-
 ## Foundation
 
 [Grid Foundation](css-grid-foundation.md)
 
 ## flexible number of tracks(rows, columns)
 
-- use `auto-fit` and `minmax()` in repeat() function to implment flexible number of tracks
+- use `auto-fit` and `minmax()` in `repeat()` function to implment flexible number of tracks
 
 ```css
 .wrapper {
@@ -48,5 +47,3 @@ grid container as an absolute positioned element [containing block](css-containi
 ```
 
 - box3 has taken out of the [flow](css-normal-flow.md), and not cause additional row
-
-##

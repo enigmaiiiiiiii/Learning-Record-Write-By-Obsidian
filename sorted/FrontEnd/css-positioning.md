@@ -12,12 +12,12 @@
 
 `position: relative`: 相对定位
 
-- 允许通过属性top, right, bottom, left来修改元素在文档中的位置
+- 允许通过属性**top, right, bottom, left**来修改元素在文档中的位置
 - `top, right, bottom, left` 可以理解为**力的来源**方向
 
 `position: absolute`: 绝对定位
 
-- 允许通过属性top, right, bottom, left来修改元素在**文档**中的位置
+- 允许通过属性**top, right, bottom, left**来修改元素在**文档**中的位置
 - 定位相对于最近的**positioned ancestor**或[containing block](css-containing-block.md)
 - 脱离normal document flow[文档流](css-normal-flow.md)
 - 大多数时候height或width设置为auto以适应其内容, 或用来填充可用空间

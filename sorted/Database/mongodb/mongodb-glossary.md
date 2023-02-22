@@ -1,4 +1,4 @@
-# glossary
+# Glossary
 
 ## document
 
@@ -21,6 +21,10 @@
 
 - hold one or more collection
 
+## Field
+
+- key in a document
+
 ## mongod
 
 - primary **daemon process** for the MongoDB
@@ -28,3 +32,8 @@
 ## namespace
 
 - canonical name for a collection
+- like `[database-name].[collection-or-index-name]`
+
+## server
+
+## cluster

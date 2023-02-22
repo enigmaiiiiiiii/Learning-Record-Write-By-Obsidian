@@ -1,10 +1,9 @@
 # 生命周期
 
-- [生命周期](#生命周期)
-  - [beforeCreate](#beforecreate)
-  - [created](#created)
-  - [beforeMount](#beforemount)
-  - [mounted](#mounted)
+- [beforeCreate](#beforecreate)
+- [created](#created)
+- [beforeMount](#beforemount)
+- [mounted](#mounted)
 
 [生命周期图示](https://cn.vuejs.org/v2/guide/instance.html#生命周期图示)
 
@@ -12,7 +11,7 @@
 
 ## created
 
-## beforeMount 
+## beforeMount
 
 ## mounted
 

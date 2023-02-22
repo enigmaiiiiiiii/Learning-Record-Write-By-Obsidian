@@ -21,6 +21,8 @@ on windows
 
 [Practical Operation](mongodb-practical-operation.md)
 
+[mongo shell](mongodb-shell.md)
+
 [MongoDB Atlas](mongodb-atlas.md)
 
 [MongoDB Tools](mongodb-tools.md)
@@ -33,5 +35,5 @@ on windows
 
 ## advance
 
-[Index](mongodb-index.md)
+[Index](mongodb-text-index.md)
 

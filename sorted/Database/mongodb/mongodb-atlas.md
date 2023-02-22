@@ -7,26 +7,7 @@
 
 ## Start To Use
 
-1. [install atlas cli](mongodb-atlas-cli.md#install)
-
-2. Add IP Access List Entries
-
-- define an IP access list for your database
-
-3. Manage Database Users
-
-[mongodb atlas manage user](mongodb-atlas-manage-user.md)
-
-- Create an Atlas database admin user named `myAdmin` for the project with ID `5e2211c17a3e5a48f5497de3`:
-
-```sh
-atlas dbusers create atlasAdmin --username myAdmin  --projectId 5e2211c17a3e5a48f5497de3
-```
-
-4. Connect to your Database
-
-
-
+[mongodb atlas start to use](mongodb-atlas-use.md)
 
 ## atlas cli
 

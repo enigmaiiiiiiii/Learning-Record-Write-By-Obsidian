@@ -1,6 +1,6 @@
-s# 插槽
+# Vue Slot
 
-## 插槽是什么
+## What is Slot
 
 - 插槽是 Vue 组件的一个特殊的自定义区域，用于承载外部传入的内容
 - 使用组件时, 插槽用于传递**模板内容**
@@ -8,7 +8,7 @@ s# 插槽
   - vue template标签中的内容
   - 也可以是其它组件
 
-假设组件模板\<button-demo/>定义是这样的:
+假设组件模板`<button-demo/>`定义是这样的
 
 ButtonDemo.vue
 
@@ -20,15 +20,15 @@ ButtonDemo.vue
 </template>
 ```
 
-当使用\<button-demo>组件时, 可以在\<button-demo>标签内部使用任何template内容
+当使用`<button-demo>`组件时, 可以在`<button-demo>`标签内部使用任何template内容
 
 ```html
 <button-demo>
-    <span>提交</span>
+    <span>Submit</span>
 </button-demo>
 ```
 
-`<slot>`部分将被替换为`<span>提交</span>`
+`<slot>`部分将被替换为`<span>Submit</span>`
 
 ## 作用域插槽
 

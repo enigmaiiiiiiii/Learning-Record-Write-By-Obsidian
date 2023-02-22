@@ -1,6 +1,5 @@
-# 实用命令
+# Practical Command of Git
 
-- [Resovle Conflict](#resovle-conflict)
 - [Check Commit Log](#check-commit-log)
 - [撤销已提交commit](#撤销已提交commit)
 - [将文件移出暂存区](#将文件移出暂存区)
@@ -11,12 +10,9 @@
 - [取消修改文件](#取消修改文件)
 - [暂存当前修改, 使我能去并查看其它commit, 而不需要commit当前修改](#暂存当前修改-使我能去并查看其它commit-而不需要commit当前修改)
 - [查看所有分支](#查看所有分支)
-
-## Resovle Conflict
-
+- [Resovle Conflict](#resovle-conflict)
 
 ## Check Commit Log
-
 
 ```bash
 git log
@@ -107,3 +103,4 @@ git stash pop
 git branch -a
 ```
 
+## Resovle Conflict
