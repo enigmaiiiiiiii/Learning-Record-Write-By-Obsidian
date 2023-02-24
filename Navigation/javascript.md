@@ -87,3 +87,7 @@
 ## VII
 
 [Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature
+
+## VIII
+
+[JavaScript practical function](/sorted/javascript/javascript-practical-function.md)

@@ -21,7 +21,9 @@ on windows
 
 [Practical Operation](mongodb-practical-operation.md)
 
-[mongo shell](mongodb-shell.md)
+[Data Type](mongobd-data-type.md)
+
+[Mongo Shell](mongodb-shell.md)
 
 [MongoDB Atlas](mongodb-atlas.md)
 
@@ -33,7 +35,8 @@ on windows
 
 [Collection Operation](mongodb-collection-operation.md)
 
-## advance
+## Advance
 
-[Index](mongodb-text-index.md)
+[Query Strategies](mongodb-query-strategies.md)
 
+[Index](mongodb-index.md)

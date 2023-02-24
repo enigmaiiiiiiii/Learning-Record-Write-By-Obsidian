@@ -1,7 +1,9 @@
-what's this function doing?
+# JavaScript Practical Function
+
+## throttle
 
 ```js
-export function throttle(fn, delay) {
+function throttle(fn, delay) {
   let last = 0,
     timer = null;
 
@@ -11,11 +13,13 @@ export function throttle(fn, delay) {
     let now = +new Date();
 
     if (now - last < delay) {
-      clearTimeout(timer);
-      timer = setTimeout(function() {
+      if (timer) {
+        cancelAnimationFrame(timer);
+      }
+      timer = requestAnimationFrame(function() {
         last = now;
         fn.apply(context, args);
-      }, delay);
+      });
     } else {
       last = now;
       fn.apply(context, args);

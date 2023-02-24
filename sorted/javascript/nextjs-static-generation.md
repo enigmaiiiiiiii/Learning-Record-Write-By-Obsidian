@@ -1,11 +1,11 @@
 # Static Generation
 
-- generate page at build time
-- that means in production, the HTML page is already here
-
 ## Introduction
 
-- generated the **HTML** at **build time**
+- generated the **Web Page** at **build time**
+
+> that means in production, the HTML page is already here
+
 - **reused** on each request
 - for `.js`, `.jsx`, `.ts`, `.tsx` files in `/pages` directory, assosiated with a route based on **file name**
 - can be cached by a **CDN** for performance
@@ -15,7 +15,7 @@
 page **content** depend on external data: use [`getStaticProps`](nextjs-datafetching-getstaticprops.md)
 
 ```js
-export async function getStaticPros(context) {
+export async function getStaticProps(context) {
   return {
     props: {},
   }

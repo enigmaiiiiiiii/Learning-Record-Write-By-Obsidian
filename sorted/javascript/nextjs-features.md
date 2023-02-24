@@ -19,18 +19,17 @@ Next.js is a framework for building server-rendered React applications
 
 > hydration: process of **load JS** makes the page interactive that loaded by browser
 
-two forms pre-rendering
+two forms **pre-rendering**
 
 [Server-side Rendering(SSR)](nextjs-server-side-rendering.md)
 
 [Client-side Rendering(CSR)](nextjs-client-side-rendering.md)
 
-one form of static generation
+one form of **static generation**
 
 [Static Site Generation(SSG)](nextjs-static-generation.md)
 
-
-## Allow Using Node.js Modules In React Components
+## **Allow Using Node.js Modules** In React Components
 
 - Also known as **Data Fetching**
 
