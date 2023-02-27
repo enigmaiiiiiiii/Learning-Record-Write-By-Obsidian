@@ -68,6 +68,10 @@ db.collection.find({price: {$ne: 15000} })
 
 `$regex`: regular expression
 
+```js
+db.collection.find({title: {$regex: /.*The.*/}})
+```
+
 ## Result Sort
 
 ```js

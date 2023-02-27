@@ -1,24 +1,37 @@
-# CSS 选择器
+# CSS Selector
 
-## 元素选择器
+- [Element Selector](#element-selector)
+- [id Selector "#"](#id-selector-)
+- [class 选择器 "."](#class-选择器-)
+- [后代元素选择器](#后代元素选择器)
+- [子元素选择器](#子元素选择器)
+- [群组选择器](#群组选择器)
+- [属性选择器](#属性选择器)
+- [相邻兄弟选择器](#相邻兄弟选择器)
+- [伪类选择器](#伪类选择器)
+- [伪元素选择器](#伪元素选择器)
+- [通用兄弟选择器](#通用兄弟选择器)
+- [Pure Css Selector](#pure-css-selector)
 
--   选择 Html 元素
+## Element Selector
+
+- 选择 Html 元素
 
 ```css
 element {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 ```
 
 div, p, h1, h2 都是元素
 
-## id 选择器 "\#"
+## id Selector "\#"
 
 ```css
 #id {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
 }
 ```
 
@@ -28,8 +41,8 @@ div, p, h1, h2 都是元素
 
 ```css
 .classvalue {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 ```
 
@@ -41,8 +54,8 @@ div, p, h1, h2 都是元素
 
 ```css
 div p {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 ```
 
@@ -52,8 +65,8 @@ div p {
 
 ```css
 div > p {
-    width: 100px;
-    heigth: 100px;
+  width: 100px;
+  height: 100px;
 }
 ```
 
@@ -140,3 +153,25 @@ p ~ span {
     color: red;
 }
 ```
+
+## Exclude A Selector
+
+select p element except with class fancy
+
+```css
+p:not(.fancy) {
+
+}
+```
+
+select element not div and span
+
+```css
+body :not(div):not(span) {
+  /* ... */
+}
+```
+
+## Pure Css Selector
+
+- contain at least one local **class or id**

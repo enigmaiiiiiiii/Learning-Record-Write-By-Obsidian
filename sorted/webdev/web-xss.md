@@ -17,3 +17,7 @@ this is a regular paragraph
 // milicious paragraph
 <script>alert('hi')</script>
 ```
+
+## method to mitigate it
+
+XSS filter

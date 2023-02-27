@@ -14,13 +14,13 @@
 
 ## they are components
 
--   component is a [javascript function](javascript-function.md)
+- component is a [javascript function](javascript-function.md)
 
 > component 有 class 的形式, 但是 class 本质上还是一个 function
 
 **function component**
 
--   `props` are read-only, function body must not change `props`
+- `props` are read-only, function body must not change `props`
 
 ```jsx
 function Welecom(props) {
@@ -62,8 +62,8 @@ export default element; // this is not a component
 
 ## use a component
 
--   lowercase tag name: html tag, `<section>, <div>`
--   区别于 html 标签, react 组件规定 start with capital, like `<Welcome />`
+- lowercase tag name: html tag, `<section>, <div>`
+- 区别于 html 标签, react 组件规定 start with capital, like `<Welcome />`
 
 ```js
 function Welcome(props) {
@@ -126,9 +126,8 @@ function withdraw(account, amount) {
 
 ## class properties
 
--   defaultProps
--   displayName
-
+- defaultProps
+- displayName
 
 ## lifecycle
 

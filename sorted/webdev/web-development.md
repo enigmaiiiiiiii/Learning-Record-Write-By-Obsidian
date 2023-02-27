@@ -1,4 +1,4 @@
-# 前端
+# Web Dev
 
 ## I
 
@@ -18,7 +18,9 @@
 
 [StackBlitz](stackblitz.md): website IDE
 
-## beautiful 
+[browser dev tools](browser-dev-tools.md)
+
+## beautiful
 
 [font awesome](font-awesome.md)
 

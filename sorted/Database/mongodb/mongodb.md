@@ -37,6 +37,8 @@ on windows
 
 [Collection Query](mongodb-query-collection.md)
 
+[Collection Modify](mongodb-modify-collection.md)
+
 ## Program MongoDB
 
 [program with nodejs](mongodb-nodejs.md)

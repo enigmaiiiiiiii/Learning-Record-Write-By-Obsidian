@@ -10,7 +10,6 @@
   - sender: object类型，事件的发布者
   - e:  保存状态信息, 例如用于传递发布者信息
 
-
 ```c#
 class Program
 {
@@ -24,7 +23,6 @@ class Program
     }
 }
 ```
-
 
 ##  传递数据
 

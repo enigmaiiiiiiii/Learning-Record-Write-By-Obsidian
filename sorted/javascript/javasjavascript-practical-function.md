@@ -2,6 +2,8 @@
 
 ## throttle
 
+[throttle](throttle.md)
+
 ```js
 function throttle(fn, delay) {
   let last = 0,

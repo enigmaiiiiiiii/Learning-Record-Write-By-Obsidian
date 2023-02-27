@@ -1,5 +1,9 @@
 # Program With nodejs
 
+- [Connect to MongoDB Server](#connect-to-mongodb-server)
+- [Query data](#query-data)
+- [Api](#api)
+
 ## Connect to MongoDB Server
 
 basic connect without set client info
@@ -38,6 +42,10 @@ client.connect()
 ## Query data
 
 [mongodb node driver query data](mongodb-nodejs-query-data.md)
+
+## Modify data
+
+[mongodb node driver modify data](mongodb-nodejs-modify-data.md)
 
 ## Api
 

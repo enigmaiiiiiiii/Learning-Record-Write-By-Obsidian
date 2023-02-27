@@ -19,6 +19,31 @@
 })()
 ```
 
+Detial of findOne() method
+
+- return a [Promise](javascript-promise.md)
+- so we can use `then()` method to get the result
+  - onresolve: return a queried Document
+  - onreject trigger on
+    - connection error
+    - query error
+
+```js
+movies.find(query, options).then(
+  (movie) => {
+    console.log(movie);
+  },
+  () => {
+    console.log("onreject");
+  }).catch((error) => {
+    console.log(error);
+  });
+client.close();
+```
+
+- if close the connection before wait for the result, onreject callback will be called
+
+
 ## find multiple documents
 
 ```js
@@ -42,3 +67,6 @@ use FindCursor to method
 ```js
 const cursor = movies.find(query).project({_id: 0, title: 1, imdb: 1}).sort({"imbd.rating": -1});
 ```
+
+## exception
+
