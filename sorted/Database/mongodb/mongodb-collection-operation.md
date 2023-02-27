@@ -1,5 +1,9 @@
 # MongoDB Collection Operation
 
+- [create collection](#create-collection)
+- [remove collection](#remove-collection)
+- [rename field](#rename-field)
+
 ## create collection
 
 - MongoDB will create collection when insert document into it
@@ -10,12 +14,10 @@ db.demoCollection.insertOne({ x: 1 })
 
 ## remove collection
 
-## collection query
+## rename field
 
-[collection query](mongodb-query-collection.md)
-
-
-## aggregate query
-
+```js
+db.collection.updateMany({}, {$rename: {"oldField": "newField"}})
+```
 
 

@@ -1,14 +1,13 @@
-# 数组
+# JavaScript Array
 
 - 任何类型元素都可以存储在数组中
-
 - `let array = [1, 2, 3, 4, 5]`
 
-## 属性
+## Property
 
-## 方法
+`length`
 
-`.length`
+## Methods
 
 `push()`
 

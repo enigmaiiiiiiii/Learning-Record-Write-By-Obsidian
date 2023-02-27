@@ -21,3 +21,9 @@ show dbs
 ```sh
 use <database name>
 ```
+
+4. list collections in current database
+
+```sh
+show collections
+```

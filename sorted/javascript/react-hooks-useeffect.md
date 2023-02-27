@@ -1,14 +1,16 @@
 # useEffect
 
-- in a word: 组件渲染时, 调用的函数
-
-> componentDidMount
-
 - [Effect And Event](#effect-and-event)
 - [why useEffect](#why-useeffect)
 - [write an Effect](#write-an-effect)
 - [Effect dependency](#effect-dependency)
 - [Cleanup effect](#cleanup-effect)
+
+## Introduction
+
+- in a word: 组件渲染时, 调用的函数
+
+> as `componentDidMount()` in [class component](react-component.md#they-are-components)
 
 ## Effect And Event
 

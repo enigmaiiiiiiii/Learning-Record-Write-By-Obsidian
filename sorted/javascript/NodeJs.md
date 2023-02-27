@@ -46,6 +46,10 @@
 
 [Process](nodejs-process.md)
 
+[http.response](nodejs-http-response.md)
+
+[http.request](nodejs-http-request.md)
+
 ## Advance
 
 [Debug NodeJs](nodejs-debug.md)

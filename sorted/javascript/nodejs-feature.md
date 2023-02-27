@@ -1,4 +1,8 @@
-# NodeJS Introduction
+# NodeJS Feature
+
+## never block
+
+- reference read [node event](nodejs-event.md)
 
 ## NodeJs依赖的组件
 

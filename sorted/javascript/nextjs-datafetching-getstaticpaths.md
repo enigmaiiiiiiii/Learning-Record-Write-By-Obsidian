@@ -100,10 +100,10 @@ render root path `/`:
 
 `fallback: false`: 404 page will be rendered if the path is not in `paths`
 
-`fallback: true`: function [getStaticProps()]() behavior changes in following ways:
+`fallback: true`: function [getStaticProps()](nextjs-datafetching-getstaticprops.md) behavior changes in following ways:
 
 1. `getStaticPaths()`返回的`paths`属性中的路径会在build time 被[getStaticProps()](nextjs-datafetching-getstaticprops.md)预渲染
-2. 不在`paths`中的路径, 不会导致404page, `Next.js` 会为首次访问的这种路径提供一个[备用页面](#fallback-page)
+2. 不在`paths`中的路径, 不会导致 404 page, `Next.js` 会为首次访问的这种路径提供一个[备用页面](#fallback-page)
 3. nextjs 在后台静态的生成请求的页面, 包括运行getStaticProps()
 4. 当完成时, 浏览器根据[props]()渲染一个页面
 

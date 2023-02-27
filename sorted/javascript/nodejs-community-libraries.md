@@ -6,6 +6,8 @@
 
 [Socket.IO](nodejs-socketio.md)
 
+[axios](nodejs-axios.md)
+
 ## quality control
 
 [eslint](eslint.md)

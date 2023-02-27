@@ -1,5 +1,10 @@
 # MongoDB Practical Operation
 
+- [dump data from atlas to local file](#dump-data-from-atlas-to-local-file)
+- [restore data from local file to local mongodb](#restore-data-from-local-file-to-local-mongodb)
+- [get collection index](#get-collection-index)
+- [check process connecting to mongodb](#check-process-connecting-to-mongodb)
+
 ## dump data from atlas to local file
 
 ```sh

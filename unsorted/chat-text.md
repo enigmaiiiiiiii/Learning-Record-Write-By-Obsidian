@@ -1,25 +1,3 @@
-what's this function doing?
+why the findOne method need keyword await in mongodb node driver?
 
-```js
-export function throttle(fn, delay) {
-  let last = 0,
-    timer = null;
-
-  return function() {
-    let context = this;
-    let args = arguments;
-    let now = +new Date();
-
-    if (now - last < delay) {
-      clearTimeout(timer);
-      timer = setTimeout(function() {
-        last = now;
-        fn.apply(context, args);
-      }, delay);
-    } else {
-      last = now;
-      fn.apply(context, args);
-    }
-  };
-}
-```
+const movie = await movies.findOne({ title: "The Matrix" });

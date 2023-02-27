@@ -1,5 +1,9 @@
 # NextJs Dynamic Route
 
+- [Introduction](#introduction)
+- [get routes params](#get-routes-params)
+- [multiple dynamic routes](#multiple-dynamic-routes)
+
 ## Introduction
 
 > 使用`[]`语法
@@ -47,7 +51,9 @@ export default function Home() {
 }
 ```
 
-## router.query
+## get routes params
+
+- **use object `router.query`**
 
 for file `pages/post/[pid].js`
 

@@ -28,3 +28,21 @@ mongoose.connect('mongodb://host:port/database_name', {
 })
 ```
 
+## query data
+
+```js
+const movieSchema = new mongoose.Schema({
+  title: String,
+  year: Number
+})
+
+const model = mongoose.model('movies', schema);
+
+model.find({ year: 1997 }, (err, docs) => {
+  if(err) {
+    console.error(err);
+  } else {
+    console.log(docs);
+  }
+})
+```

@@ -32,9 +32,11 @@ npx create-next-app
 
 [Custom APP](nextjs-custom-app.md)
 
+[nextjs config](nextjs-config.md)
+
 ## II
 
-[API Route](nextjs-routes-api.md)
+[Route API](nextjs-routes-api.md)
 
 [Core Concepts](nextjs-core-concepts.md)
 

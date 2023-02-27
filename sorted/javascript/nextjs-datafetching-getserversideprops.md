@@ -28,7 +28,7 @@ export async function getServerSideProps(context) {
 
 - fetch data **on each request**
 
-> distinguish from [getStaticProps](nextjs-datafetching-getstaticpaths.md), which fetch data **at build time**
+> fetch data **at build time** for [getStaticProps](nextjs-datafetching-getstaticpaths.md)
 
 - Time to first byte(TTFB) will be slower than [getStaticProps](nextjs-datafetching-getstaticprops.md)
   - 因为它会在每次请求发生时使 server 生成计算结果

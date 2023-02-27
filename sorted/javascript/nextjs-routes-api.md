@@ -2,7 +2,9 @@
 
 - [Introduction](#introduction)
 - [Create Route API In Next.js APP](#create-route-api-in-nextjs-app)
+- [Dynamic API Route](#dynamic-api-route)
 - [function handler(req, res)](#function-handlerreq-res)
+- [send a response](#send-a-response)
 - [config](#config)
 
 ## Introduction
@@ -10,6 +12,7 @@
 - create an [API](/unsorted/api.md) endpoint inside Next.js APP
 - do not fetch API Route from `getStaticProps` or `getServerSideProps`
 - access use `http://localhost:3000/apidir/jsfilename`
+- respect the [file system routing](nextjs-file-system-routing.md) rules
 
 ## Create Route API In Next.js APP
 
@@ -45,21 +48,77 @@ function handler(req, res) takes two arguments:
 
 parameters
 
-> use req, res to set the detail of http request and response
+- use **req, res** to set the detail of http **request** and **response**
 
-res
+## send a response
+
+> refer to [http.response](nodejs-http-response.md)
+
+```js
+export default async function handler(req, res) {
+  res.status(200).send({name: 'john doe'});
+}
+```
 
 - `res.status(code)`: set Http status code
-- `res.json(body)`: send response body
-- res.send()
-- res.redirect()
-- res.revalidate(urlPath)
+- `res.json(body)`: send a JSON response, body must can be convert to json string
+- `res.send()`: sends http response, and automatically set the content-type
+- `res.end()`: end the response and send any data in buffered
+- `res.redirect()`
+- `res.revalidate(urlPath)`
 
-req
+## handle request
+
+req parameter in function handler(req, res)
+
+> refer to [http.request](nodejs-http-request.md)
 
 - req.cookies: An Object of cookies sent by the request
-- req.query: An Object of query string
+- req.query: An Object of **query string**
 - req.body: An Object of request body, paresed by content-type
+
+## Dynamic API Route
+
+`/api/posts/[postId].js`
+
+- matches route like
+  - `/api/posts/1`
+  - `/api/posts/abc`
+- `req.query` is an object like
+  - `{postId: '1'}`
+  - `{postId: 'abc'}`
+
+```js
+export default function handler(req, res) {
+  const { postId } = req.query;
+  res.end(`Post: ${pid}`)
+}
+```
+
+`/api/posts/[..slug]`: match extend routes
+
+- can matches route like
+  - `/api/posts/1/2/3`
+  - `/api/posts/a/b`
+- `req.query` is an object like
+  - `{slug: ['1', '2', '3']}`
+  - `{slug: ['a', 'b']}`
+
+`/api/posts/[[...slug]].js`: match extend routes and empty route
+
+- can matches route like
+  - `/api/posts/1/2/3`
+  - `/api/posts/a/b`
+  - `/api/posts/`
+- req.query is an object like
+  - `{slug: ['1', '2', '3']}`
+  - `{slug: ['a', 'b']}`
+  - `{slug: []}`
+
+
+
+
+
 
 ## config
 

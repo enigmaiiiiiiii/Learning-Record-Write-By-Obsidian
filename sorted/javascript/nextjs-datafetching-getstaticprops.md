@@ -10,6 +10,22 @@
 
 - 页面的静态数据
 - run during `next build`
+- when page generated, props data for component is already there
+
+contrast with `useEffect()`
+
+- use `useEffect()` to get data when page is rendered
+- for `component.js`
+
+```js
+export default function Welcome(props) {
+  let data;
+  useEffect(() => {
+    data = await fetch('https://.../posts');
+  }, []);
+  return <h1>Hello, {props.name}</h1>;
+}
+```
 
 ## take a look
 
