@@ -1,6 +1,5 @@
 # Font Awesome
 
-
 ## What It Is
 
 - 是一个图标字体库，包括图标字体、CSS框架、LESS/SASS源文件、Web字体文件、SVG矢量图标、PNG图像等。
@@ -70,7 +69,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 - fa-solid: 图标外观
 - fa-user-secret: 图标内容
-
 
 ## Animating Icons
 

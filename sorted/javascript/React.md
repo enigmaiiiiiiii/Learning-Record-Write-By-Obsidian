@@ -6,7 +6,7 @@
 
 [What is jsx](react-jsx.md)
 
-[Terminology](react-terminology.md)
+[Glossary](react-glossary.md)
 
 [Render Element](react-render-element.md)
 
@@ -25,6 +25,8 @@
 [useEffect](react-hooks-useeffect.md)
 
 [useRef](react-hooks-useref.md)
+
+[useLayoutEffect](react-hooks-uselayouteffect.md)
 
 ## API
 
@@ -46,4 +48,4 @@
 
 ## Bug
 
-[React Hooks](react-learn-from-bug.md)
+[get stuck](react-learn-from-bug.md)

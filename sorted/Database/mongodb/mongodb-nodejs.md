@@ -43,6 +43,8 @@ client.connect()
 
 [mongodb node driver query data](mongodb-nodejs-query-data.md)
 
+[Perform Text Search](mongodb-nodejs-text-search.md)
+
 ## Modify data
 
 [mongodb node driver modify data](mongodb-nodejs-modify-data.md)

@@ -116,7 +116,7 @@ function sum(a, b) {
 
 impure function
 
--   change its input
+- change its input
 
 ```js
 function withdraw(account, amount) {

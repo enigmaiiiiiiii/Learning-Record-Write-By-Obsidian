@@ -1,4 +1,6 @@
-# 盒子属性
+# CSS Box Attribute
+
+## Feature
 
 - 这些属性在[block box](css-box-model-sorted.md#block-box)中可以被完全体现
 - 而部分作用于[inline box](css-box-model-sorted.md)
@@ -18,7 +20,7 @@ max-width, max-height, min-width, min-height
 
 ## padding
 
-内边距
+> 内边距
 
 - 属性: padding
   - `padding: 20px 10px;`: 纵向padding 20px, 横向padding 10px
@@ -27,7 +29,7 @@ max-width, max-height, min-width, min-height
 
 ## border
 
-边框
+> 边框
 
 - 属性: border
   - 共四个边框, 每个边框可以设置style, width, color, 每个边框可独立设置
@@ -35,7 +37,7 @@ max-width, max-height, min-width, min-height
 
 ## margin
 
-外边界
+> 外边距
 
 - 属性: margin
   - 可以是负值

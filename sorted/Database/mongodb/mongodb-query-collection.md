@@ -4,7 +4,6 @@
 - [condition query](#condition-query)
 - [query operator](#query-operator)
 - [Result Sort](#result-sort)
-- [text search](#text-search)
 - [query nested document](#query-nested-document)
 - [query array](#query-array)
 - [return specific fields](#return-specific-fields)
@@ -41,7 +40,6 @@ Or Condition
 ```js
 db.collection.find({$or: [{status: "A"}, {qty: {$lt: 40}}]}})
 ```
-
 
 ## query operator
 
@@ -83,17 +81,6 @@ db.collection.find({price: {$gte: 15000} }).sort({ field: 1 })
 
 > `field: 1` for ascending sort the result
 
-## text search
-
-`$text` operator
-
-- requires that you specify the search field in a **text index** on your collection
-
-if you want search title field text, create text index on title filed
-
-```js
-db.movies.createIndex({ title: "text"})
-```
 
 ## query nested document
 

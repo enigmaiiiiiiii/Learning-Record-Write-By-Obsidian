@@ -21,6 +21,16 @@ fetch('https://api.github.com/users/github')
   .then(data => console.log(data));
 ```
 
+> response.json() is also a promise object
+
+```js
+async () => {
+  const response = await fetch('https://api.github.com/users/github');
+  const data = await response.json();
+  console.log(data);
+}
+```
+
 ## Syntax
 
 `Promise<Response> fetch(input[, init]);`
@@ -42,9 +52,9 @@ fetch('https://api.github.com/users/github')
   - referrerPolicy
   - intergrity
 
-返回值
+return value
 
-- 正常情况返回一个[response对象](#response-object), 也是一个[promise对象](javascript-promise.md)
+- 正常情况返回一个[response对象](#response), 也是一个[promise对象](javascript-promise.md)
 
 exception(异常)
 
@@ -60,6 +70,7 @@ exception(异常)
 
 属性
 
+- `Response.body`: 返回一个ReadableStream对象, 用于读取响应体
 - `Response.ok`: 返回一个布尔值, 表示请求是否成功, 也就是状态码是否在200-299之间
 - `Response.status`: 返回状态码
 - `Response.statusText`: 返回状态码对应的文本
@@ -67,7 +78,9 @@ exception(异常)
 
 方法
 
-- `Response.json()`: 读取Response()对象, 并设置为已读(只能堆区一次), 返回一个内容被解析为JSON的promise对象
+- `Response.json()`
+  - 读取Response()对象, 并设置为已读(只能堆区一次)
+  - return a **promise object**, inside is a json object
 - `Response.formData()`: 返回一个promise对象, 里面包含了响应的FormData数据
 - `Response.text()`: 设置为已读, 返回一个解析为String类型的promise对象,
 

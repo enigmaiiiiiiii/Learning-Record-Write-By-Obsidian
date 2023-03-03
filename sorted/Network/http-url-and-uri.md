@@ -5,14 +5,15 @@
 - [主机和端口](#主机和端口)
 - [用户名和密码](#用户名和密码)
 - [参数](#参数)
-- [查询](#查询)
+- [Query String](#query-string)
+- [prag](#prag)
 - [相对 URL](#相对-url)
 - [编码机制](#编码机制)
 - [URI](#uri)
 
 ## Introduction
 
--   统一资源定位系统
+- 统一资源定位系统
 
 > 如: URL 地址：`http://www.baidu.com/someDepartment/picture.gif` > `http:`: 表示访问数据源的机制
 > `www.baidu.com`: 主机名
@@ -54,7 +55,7 @@ http://joe:joespasswd@www.joes-hardware.com/sales
 
 ## 参数
 
-## 查询
+## Query String
 
 <center>
 http://www.joes-hardware.com/inventory-checkj.cgi?item=12345&quantity=1
@@ -64,7 +65,7 @@ http://www.joes-hardware.com/inventory-checkj.cgi?item=12345&quantity=1
 -   `?key1=value1&key2=value2`提供给网络服务器的额外参数
 -   网关可以当作访问其他应用程序的访问点
 
-prag
+## prag
 
 -   用于进一步划分资源
 

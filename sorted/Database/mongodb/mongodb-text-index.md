@@ -3,20 +3,55 @@
 ## Introdution
 
 - for **text search**, must have a text index on your collection
+- to perform text search, you must create a **text index** on collection
+- text index can include fields that
+  - value is string
+  - or an array of string
+- A Collection Can Have **At Most One** TextIndex
 
 ## Feature
 
-- A Collection Can Have **At Most One Text** Index
+case insensitive
+
+- text does not distinguish between **é, É, e, and E.**
+
+Tokenization Delimiters(分词符号)
+
+> 用于创建搜索关键词
+
+- Dash(-)
+- Pattern_Syntax(正则表达式)
+- White_Space(空白字符)
+- Punctuation(标点符号)
+- Quotation_Mark(引号)
+
+search language
+
+- language value specify of "none", mongodb will simplify the search process
+
 
 ## create text index
 
+if you want search `title` field text, create text index on `title` field
+
 ```js
-db.reviews.createIndex({content: "text"})
+db.movies.createIndex({ title: "text"})
 ```
 
 - `"text"` represents the type of index
 
-## search weight
+index multiple fields for text index
+
+```js
+db.reviews.createIndex(
+  {
+    subject: "text",
+    comments: "text"
+  }
+)
+```
+
+## Config Field Weight
 
 ```js
 db.blog.createIndex(
@@ -47,6 +82,59 @@ db.collection.createIndex({ "$**": "text" })
 
 - allows for text search on all fields in a document
 
-## search language
 
-- language value specify of "none", mongodb will simplify the search process
+## Drop a Text Index
+
+first get the index name
+
+```js
+db.collection.getIndexes()
+```
+
+output like this
+
+```json
+[
+  {
+    "v" : 2,
+    "key" : {
+       "_id" : 1
+    },
+    "name" : "_id_"
+  },
+  {
+    "v" : 2,
+    "key" : {
+       "cat" : -1
+    },
+    "name" : "catIdx"
+  },
+  {
+    "v" : 2,
+    "key" : {
+       "cat" : 1,
+       "dog" : -1
+    },
+    "name" : "cat_1_dog_-1"
+  }
+]
+```
+
+drop index by index name
+
+```js
+db.collectoin.dropIndex("catIdx");
+```
+
+## Performance
+
+- fit RAM will make phrase query more effectively
+- impact on insertion performance
+
+## Requirements
+
+- make sure the **high limit** on open [file descriptors](linux-file-descriptor.md), when building a largve text index on collection
+
+## Restriction
+
+- text query in an $or expression, all clauses must use the same text index 

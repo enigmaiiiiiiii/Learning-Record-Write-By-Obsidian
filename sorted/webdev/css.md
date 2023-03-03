@@ -18,13 +18,13 @@
 
 [Normal Flow](css-normal-flow.md)
 
-[元素尺寸](css-size.md)
+[Element Size](css-size.md)
 
 [Content](css-content.md)
 
-[布局](css-layout.md)
+[Layout](css-layout.md)
 
-[背景和边框](css-background-and-border.md)
+[Background](css-background-and-border.md)
 
 [Function](css-function.md)
 
@@ -36,7 +36,8 @@
 
 [shorthand and longhand](css-shorthand-and-longhand.md)
 
-[properties list](css-property-list.md)
+[Properties List](css-property-list.md)
+
 
 ## II
 
@@ -48,10 +49,9 @@
 
 [SASS](sass.md)
 
-
 ## III
 
-[可替换元素](css-replaced-elements.md)
+[replace elements](css-replaced-elements.md)
 
 [元素宽度问题](css-elements-width-problem.md)
 

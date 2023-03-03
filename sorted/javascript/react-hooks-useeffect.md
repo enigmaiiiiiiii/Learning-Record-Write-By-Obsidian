@@ -8,14 +8,40 @@
 
 ## Introduction
 
-- in a word: 组件渲染时, 调用的函数
+- only call it at the top level of your component
 
 > as `componentDidMount()` in [class component](react-component.md#they-are-components)
 
-## Effect And Event
+`uesEffect(setup, dependencies)`
+
+- `setup`
+  - optionally return a cleanup function, cleanup funtion will called:
+    - re-render on dependencies value change
+    - component is removed from the DOM
+  - **setup function can't be async, because async function return a promise, not cleanup function**
+  - setup will run when component first and to DOM
+  - also run when re-render caused by dependecies change
+    - react will first run the cleanup function on old dependencies value
+    - then run the setup function on new dependencies value
+- `dependencies`: reactive value, check how to [Specifying dependency](#specifying-dependency)
+
+return value
+
+- undifined
+
+mechanism
+
+- after hyour component re-renders, React will look at the array of dependencies
+
+## feature
+
+- React will let browser paint the update before running effect, if `useEffect` wasn't cause by an interaction(like a click), 
+- only run on the client
+
+## Difference Between Effect And Event
 
 - **event** is caused by a specific user action
-  - submit an HTTP request
+  - such as submit an HTTP request
 - **effect** is caused by rendering itself
 
 ## why useEffect
@@ -23,7 +49,10 @@
 - React component is a [pure function](react-component.md#keep-component-pure)
 - when component render, the DOM node does not exist yet
 
-## write an Effect
+when connecting to external system: network, database, etc
+
+## Usage
+
 
 in a word
 
@@ -74,19 +103,26 @@ export default function App() {
 }
 ```
 
-## Effect dependency
+## Specifying Dependencies
 
-- 通常, effect 会在每次 render 时都执行, 但是有时候我们只想在某些值发生变化时才执行 effect
+- Every **[reactive value](react-reactive-value.md) used by your effect's code** must be declared as a dependency 
 
 specify dependency
 
 ```js
 useEffect(() => {
-    // do something after render
-}, [dependency1, dependency2])
+  const connection = createConnection(serverUrl, roomId);
+  connection.connect();
+  return () => connection.disconnect();
+}, [serverUrl, roomId])
 ```
 
-- 让react skip re-running the effect if both values are the same during previous render
+- `serverUrl, roomId` are dependencies
+- let react skip re-running the callback in useEffect if both values are the same during previous render
+
+empty dependencies
+
+- Effect only run when component mounts
 
 ## Cleanup effect
 

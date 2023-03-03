@@ -60,10 +60,16 @@ export default async function handler(req, res) {
 }
 ```
 
+methods detail
+
 - `res.status(code)`: set Http status code
 - `res.json(body)`: send a JSON response, body must can be convert to json string
-- `res.send()`: sends http response, and automatically set the content-type
-- `res.end()`: end the response and send any data in buffered
+- `res.send(body)`: 
+  - sends http response, and automatically set the content-type
+  - `body` can be string, object, array, buffer
+- `res.end(data)`
+  - end the response and send any data in buffered
+  - type of `data` is string | [Buffer](nodejs-buffer.md) | Unit8Array
 - `res.redirect()`
 - `res.revalidate(urlPath)`
 
@@ -71,11 +77,24 @@ export default async function handler(req, res) {
 
 req parameter in function handler(req, res)
 
-> refer to [http.request](nodejs-http-request.md)
+> refer:
+> - [http.incomingmessage](nodejs-http-request.md)
+> - [res](nodejs-express-api-request.md)
 
 - req.cookies: An Object of cookies sent by the request
-- req.query: An Object of **query string**
+- req.query: An Object of [**query string**] or [Dynamic Route]() parameters
 - req.body: An Object of request body, paresed by content-type
+
+request with query string
+
+- for url `http://localhost:port/api/hello?name=john&age=20`
+
+```js
+export default function handler(req, res) {
+  const {name, age} = req.query;
+  res.end(`Hello ${name}, you are ${age} years old`);
+}
+```
 
 ## Dynamic API Route
 
@@ -114,11 +133,6 @@ export default function handler(req, res) {
   - `{slug: ['1', '2', '3']}`
   - `{slug: ['a', 'b']}`
   - `{slug: []}`
-
-
-
-
-
 
 ## config
 

@@ -43,6 +43,8 @@
 
 - primary **daemon process** for the MongoDB
 
+## mongos
+
 ## namespace
 
 - canonical name for a collection

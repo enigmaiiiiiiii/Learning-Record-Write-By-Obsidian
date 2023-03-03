@@ -1,4 +1,4 @@
-# 背景和边框
+# BackGroud
 
 ## background
 
@@ -16,7 +16,7 @@
   - percentage
 - `background-position:` 设置背景图片位置
 
-## gradient(渐进)
+## gradient
 
 - 由两种或多种颜色组成的渐进效果
 - linear-gradient

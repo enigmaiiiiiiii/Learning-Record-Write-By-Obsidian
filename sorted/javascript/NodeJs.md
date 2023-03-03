@@ -50,6 +50,8 @@
 
 [http.request](nodejs-http-request.md)
 
+[Buffer](nodejs-buffer.md)
+
 ## Advance
 
 [Debug NodeJs](nodejs-debug.md)
