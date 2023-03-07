@@ -10,8 +10,6 @@
 
 - only call it at the top level of your component
 
-> as `componentDidMount()` in [class component](react-component.md#they-are-components)
-
 `uesEffect(setup, dependencies)`
 
 - `setup`

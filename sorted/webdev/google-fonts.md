@@ -1,15 +1,14 @@
 # Google Fonts
 
-[Google Fonts地址](https://developers.google.com/fonts)
+> [Google Fonts地址](https://developers.google.com/fonts)
 
-## 导入
+## Import
 
 ### HTML
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 ```
-
 ### CSS
 
 ```css
@@ -22,16 +21,11 @@
 
 - 指定样式用`:`分隔, 多个样式用`,`分隔
 
+## Usage
 
-## 使用
+[google font usage](google-fonts-usage.md)
 
-```css
-.css-selector {
-    font-family: 'Font Name', sans-serif;
-}
-```
 
 ## 查看可用字体
 
 [字体地址](font.google.com)
-

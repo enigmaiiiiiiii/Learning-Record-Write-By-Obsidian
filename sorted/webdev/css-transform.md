@@ -36,6 +36,8 @@ translate()
 - `transform: translate(x, y)`: translate on 2D plane
 - `transform: translateX(20px)`: translate on $(x, y)$ to $(x + 20px, y)$
 - `transform: translateX(20%)`: 20% is relative to the size [transform box](#transform-box)
+  - percentage value is **different** from `left, right, top, bottom` in [positioning](css-positioning.md)
+  - `positioning` is relative to the [**containing block**](css-containing-block.md)
 
 scale()
 
@@ -54,7 +56,7 @@ perspective(): 透视
 - `transform-box: content-box`: content box is used as the reference box
 - `transform-box: border-box`: border box is used
 - `transform-box: fill-box`: default, object bounding box is used as reference box
-- `transform-box: stroke-box`: 
+- `transform-box: stroke-box`:
 - `transform-box: view-box`: the nearest SVG viewport is used as reference box
 
 ## Cartesian Coordinates

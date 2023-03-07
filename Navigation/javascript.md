@@ -2,31 +2,33 @@
 
 ## I
 
-[浏览器中使用JavaScript](javascript-using.md)
+[JavaScript In Browser](javascript-using.md)
 
-[术语](javascript-terms.md)
+[Glossary](javascript-terms.md)
 
-[JS基础](javascript-foundation.md)
+[JS Foundation](javascript-foundation.md)
 
-[面向对象](javascript-object-oriented.md)
+[Object Oriented](javascript-object-oriented.md)
 
-[函数](javascript-function.md)
+[Function](javascript-function.md)
 
-[集合引用类型](javascript-集合引用类型.md)
+[Collection](javascript-collection.md)
 
 [原始值与引用值](javascript-variable-copy-and-reference.md)
 
-[作用域链](javascript-scope-chain.md)
+[Scope Chain](javascript-scope-chain.md)
 
-[上下文](javascript-context.md)
+[Context](javascript-context.md)
 
-[模块管理](javascript-module.md)
+[module](javascript-module.md)
 
-[生成器](javascript-iteration.md)
+[iterator](javascript-iteration.md)
 
-[异步](javascript-async.md)
+[Async](javascript-async.md)
 
 [ECMAScript Regex](ecmascript-regex.md)
+
+[JSDoc](javascript-jsdoc.md)
 
 ## II Built-in Object
 
@@ -38,7 +40,7 @@
 
 [event](javascript-event.md)
 
-[websocket](javascript-websocket.md)
+[WebSocket](javascript-websocket.md)
 
 [Tasks And Microtasks](javascript-tasks-and-microtasks.md)
 

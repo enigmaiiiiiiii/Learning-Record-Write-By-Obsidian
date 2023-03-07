@@ -1,6 +1,11 @@
 # Request Header
 
-## Host:
+## referer
+
+- allow server to identify the source of request
+- when **clicks on a link** or makes a request to server, the browser will add `Referer` header to the request
+
+## Host
 
 - 请求资源所在的服务器
 

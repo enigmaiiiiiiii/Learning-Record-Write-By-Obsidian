@@ -42,3 +42,9 @@ db.currentOp(true).inprog.forEach(function(op) {
   - client(process) name
   - client driver name
   - client driver version
+
+## check mongodb connection number
+
+```sh
+db.serverStatus().connections
+```

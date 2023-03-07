@@ -6,11 +6,12 @@
 - [后代元素选择器](#后代元素选择器)
 - [子元素选择器](#子元素选择器)
 - [群组选择器](#群组选择器)
-- [属性选择器](#属性选择器)
+- [attribute selector](#attribute-selector)
 - [相邻兄弟选择器](#相邻兄弟选择器)
 - [伪类选择器](#伪类选择器)
 - [伪元素选择器](#伪元素选择器)
 - [通用兄弟选择器](#通用兄弟选择器)
+- [Exclude A Selector](#exclude-a-selector)
 - [Pure Css Selector](#pure-css-selector)
 
 ## Element Selector
@@ -86,13 +87,15 @@ p {
 
 表示同时选择 h3,p 元素
 
-## 属性选择器
+## attribute selector
 
 ```css
 input[type="submit"] {
     width: 100px;
 }
 ```
+
+- select input element with attribute type="submit"
 
 ## 相邻兄弟选择器
 
@@ -140,9 +143,30 @@ li:nth-child(-n + 3) {
 
 > html 中不存在的元素
 
-- `::before`: 在元素之前插入内容
-- `::after`: 在元素之后插入内容
-- 通常通过content属性设置插入的内容
+`::before`: 在元素之前插入内容, `::after`: 在元素之后插入内容
+
+- 通常通过`content`属性设置插入的内容
+
+```html
+<p class="boring-text">Here is some plain old boring text.</p>
+<p>Here is some normal text that is neither boring nor exciting.</p>
+<p class="exciting-text">Contributing to MDN is easy and fun.</p>
+```
+
+
+```css
+.exciting-text::after {
+  content: " <- EXCITING!";
+  color: green;
+}
+
+.boring-text::after {
+  content: " <- BORING";
+  color: red;
+}
+```
+
+- 结合[伪类选择器](#伪类选择器), 选择特定元素的特定状态
 
 ## 通用兄弟选择器
 

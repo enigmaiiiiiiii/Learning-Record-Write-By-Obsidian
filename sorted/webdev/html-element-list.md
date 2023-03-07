@@ -21,9 +21,18 @@
 
 ## a
 
-- href属性: 跳转链接
-  - 取值"javascript:void(0)"表示不跳转
+attribute
 
+- href: 跳转链接
+  - 取值"javascript:void(0)"表示不跳转
+- target
+  - _blank: 在新窗口打开
+  - _self: 在当前窗口打开
+  - _parent: 在父窗口打开
+  - _top: 在顶层窗口打开
+- rel:
+  - noopenner: the resource naviagtes to is will not setting [`window.opener`]() property on **browsing context**
+  - noreferrer: to omit [`refferrer`](http-request-header.md#referer) header when navigating to the URL
 
 ## form
 

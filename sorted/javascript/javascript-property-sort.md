@@ -1,14 +1,14 @@
-# 属性
+# Property Sort
 
-## 数据属性
+## Data property
 
 - 数据属性包含一个保存数据值的位置
 - 有四个特性描述属性的行为
-  - Configurable: 属性是否可通过[delete](javascript-delete.md)删除, 属性的特性是否可修改  
+  - Configurable: 属性是否可通过[delete](javascript-delete.md)删除, 属性的特性是否可修改
   - Enumerable: 表示属性是否可通过[for-in](javascript-statement-)循环返回, 直接定义的属性，这个特性默认为true
   - Writable: 表示属性的值是否可被修改, 默认为true, 表示可被修改
   - Value: 包含属性实际的值, 即属性值的写入位置
-  
+
 ## 访问器属性
 
 - 访问器属性不包含数据值

@@ -22,3 +22,9 @@
 设定了特定内部元素display的子元素display值
 
 - table-cell: 元素行为类似于\<td>标签, 创建[BFC](css-block-formatting-context.md)
+
+element visible
+
+> compare with [visibility](css-visibility.md)
+
+- none: remove element from [normal flow](css-normal-flow.md)

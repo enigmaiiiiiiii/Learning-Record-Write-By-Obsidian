@@ -1,6 +1,6 @@
-# 集合
+# Collection
 
-## array
+## Array
 
 创建一个空数组
 

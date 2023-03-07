@@ -16,6 +16,3 @@ core idea: [commonjs module](javascript-module-of-es-and-commonjs.md) system bec
 
 - it's allow to import module dynamically
 - can be write in statement
-
-
-

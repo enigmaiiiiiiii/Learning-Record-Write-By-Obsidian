@@ -1,12 +1,13 @@
 # CSS的盒子模型
 
-- [标准盒子模型](#标准盒子模型)
-- [模型属性](#模型属性)
-- [block and inline](#block-and-inline)
-- [display属性](#display属性)
+- [Standard Box Model](#standard-box-model)
+- [Box Property](#box-property)
+- [Block And Inline](#block-and-inline)
+- [display property](#display-property)
 - [盒子模型的替代模型](#盒子模型的替代模型)
+- [Margin Collapsing](#margin-collapsing)
 
-## 标准盒子模型
+## Standard Box Model
 
 - box-sizing: content-box
 - CSS中的所有元素都有一个盒子模型
@@ -36,17 +37,21 @@
 
 > background作用于内容和padding
 
-## 模型属性
+## Box Property
 
 [盒子模型的属性](css-box-model-properties.md)
 
-## block and inline
+## Block And Inline
 
 [block box和inline box](css-box-model-sorted.md)
 
-## display属性
+## display property
 
-[display属性](css-display.md)
+[display property](css-display.md)
+
+## Visibility Property
+
+[visibility property](css-visibility.md)
 
 ## 盒子模型的替代模型
 

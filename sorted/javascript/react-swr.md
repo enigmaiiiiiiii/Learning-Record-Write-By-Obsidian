@@ -1,12 +1,16 @@
-# SWR
+# React SWR
 
 - [Introduction](#introduction)
 - [Complex Data Client-side fecthing](#complex-data-client-side-fecthing)
 - [Take A Look](#take-a-look)
 - [useSWR](#useswr)
 
-## Introduction
+## What it is
 
+- swr is a Strategy to:
+  - first return the old data
+  - then send fetch request
+  - finally come with the up-to-date data
 - a React Hooks library for [**fetch promise data**](javascript-promise.md)
 - simplify the data fetching from client
 
@@ -72,14 +76,13 @@ export default function SWRDemo() {
 - `fetcher` is a [async function](javascript-async-await.md#async-function)
 - accepts the `key` as parameter
 
-return value
+Property of Return Object
 
 - data: the data returned from `fetcher`
 - error: error thrown by `fetcher`
 - isLoading:
 - isValidating:
 - mutate:
-
 
 ## config swr
 
@@ -111,3 +114,9 @@ function App () {
 }
 ```
 
+## State Machine
+
+data
+
+- first data to `undefined`
+- then set to fetched `value`

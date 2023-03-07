@@ -46,6 +46,14 @@
 
 [swr](react-swr.md)
 
+## Debug
+
+tips of debug in vscode
+
+- start debug by click `debug` in `package.json`
+- add breakpoint after run
+
 ## Bug
 
-[get stuck](react-learn-from-bug.md)
+[get stucked](react-learn-from-problem.md)
+

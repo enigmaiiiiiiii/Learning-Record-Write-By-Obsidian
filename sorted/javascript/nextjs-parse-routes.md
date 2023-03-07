@@ -1,13 +1,16 @@
 # parse routes
 
-- access to url information
+- [what is this](#what-is-this)
+- [get router object](#get-router-object)
+- [router properties](#router-properties)
+- [router.push](#routerpush)
+- [router.prefetch](#routerprefetch)
+- [router.isFallback](#routerisfallback)
+- [URLObject](#urlobject)
 
-- [parse routes](#parse-routes)
-  - [get router object](#get-router-object)
-  - [router properties](#router-properties)
-  - [router.push](#routerpush)
-  - [router.prefetch](#routerprefetch)
-  - [URLObject](#urlobject)
+## what is this
+
+- access to url information
 
 ## get router object
 
@@ -15,6 +18,7 @@
 
 ```js
 import {useRouter} from 'next/router'
+
 const router = useRouter();
 ```
 
@@ -43,7 +47,7 @@ export default function Demo() {
 }
 ```
 
-- if request `/components/abc`, then the page looks like
+if request `/components/abc`, then the page looks like
 
 ```
 pathname: /components/[param]
@@ -51,25 +55,7 @@ query: abc
 asPath: /components/abc
 ```
 
-2. for file `./components/[...all].js`, give a request `/components/a/b/c, 
-
-router.query会有这样一项:
-
-```js
-{all: ['a', 'b', 'c']}
-```
-
-## router.push
-
-- `router.push(url, as, options)` is used to navigate to another page
-  - `url: UrlObject | String`: the URL to navigate to
-  - `as: UrlObject | String`(optional): the URL to show in browser
-  - `optoins`(optional)
-    - scroll
-    - shallow
-    - locale
-
-`pages/[slug].js`
+for route `pages/[id].js`
 
 ```js
 import Link from 'next/link'
@@ -81,7 +67,7 @@ export default function Page(props) {
   const [count, setCount] = useState(0)
   return (
     <div>
-      <h1>Page: {router.query.slug}</h1>
+      <h1>Page: {router.query.id}</h1>
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Increase count</button>
       <Link href="/one">one</Link>
@@ -90,6 +76,27 @@ export default function Page(props) {
   )
 }
 ```
+
+for file `./components/[...all].js`, give a request `/components/a/b/c, 
+
+- router.query会有这样一项:
+
+```js
+{all: ['a', 'b', 'c']}
+```
+
+## router.push
+
+`router.push(url, as, options)` is used to navigate to another page
+
+- `url: UrlObject | String`: the URL to navigate to
+- `as: UrlObject | String`(optional): the URL to shown in browser
+- `optoins`: Optional Object
+  - `'scroll'`: scrolling to the top of the page, default `true`
+  - `'shallow'`: update the path of the current page without rerunning `getStaticProps`, `getServerSideProps`, `getInitialProps`
+  - `'locale'`: locale of the new page
+
+> don't use `router.push` for external URLs, `window.location` is better
 
 ## router.prefetch
 

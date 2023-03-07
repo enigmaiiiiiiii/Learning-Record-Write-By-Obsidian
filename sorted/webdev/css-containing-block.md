@@ -1,6 +1,13 @@
-# CSS包含块
+# CSS Containing Block
 
 - 包含块大多数时候是ancester(祖先)中最近的**block-level元素**, ~~并不总是父元素~~
+
+## How to determine containing block
+
+- if [positioned element's](css-positioning.md#positioned-element) containing block is nearest positioned ancestor
+- if not containing block is the nearest block container
+
+## Description in MDN
 
 如何确定包含块, 完全依赖于元素的[position](css-positioning.md)属性
 
@@ -10,7 +17,7 @@
 
 - 其包含块可能由最近的**祖先块元素**的内容区边缘组成
 - 可能是一个block container
-- 可能是新的[formatting context]
+- 可能是新的[formatting context]()
 
 如果position属性为`absolute`
 

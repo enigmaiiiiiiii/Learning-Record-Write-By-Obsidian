@@ -1,12 +1,17 @@
 # 定位
 
+- [position property](#position-property)
+- [positioned element](#positioned-element)
+- [定位上下文(Positioning contexts)](#定位上下文positioning-contexts)
+- [align](#align)
+
 ## position property
 
 > 允许从Normal Flow中取出元素, 并使他们具有不同的行为, 如放在另一个元素上，或保持在浏览器同一位置
 
 `position: static`: 静态定位
 
-- **默认**定位方式
+- **default** position value
 - 仅仅意味着将元素放入它在Normal Flow中的**常规**位置
 - `top, right, bottom, left` has no effect
 
@@ -36,7 +41,7 @@
 
 ## positioned element
 
-- positioned element(定位元素): position属性为，relative, absolute, fixed, sticky的元素
+- position value is relative, absolute, fixed, sticky
 
 ## 定位上下文(Positioning contexts)
 

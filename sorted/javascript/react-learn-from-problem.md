@@ -1,4 +1,4 @@
-# React Learn From Bug
+# React Learn From Problem
 
 ## 1. TypeError: destroy is not a function
 

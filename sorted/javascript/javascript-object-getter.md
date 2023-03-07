@@ -1,5 +1,11 @@
 # getter
 
+## Why getter
+
+- Calculating a value dynamically
+- Data validation
+- Encapsulation(封装)
+
 ## get 语法
 
 ```js
@@ -29,12 +35,15 @@ Object.defineProperty(obj, 'prop_name', {
 });
 ```
 
-## 使用计算属性名
+## Computed Property Getter
+
+this is [computed property](javascript-property.md#computed-property)
 
 ```js
 var expr = 'foo';
 var obj = {
     get [expr]() { return 'bar'; }
 }
+console.log(obj.foo);
 ```
 

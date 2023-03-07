@@ -1,6 +1,6 @@
 # 属性
 
-## 属性设置
+## set property
 
 ```js
 myObject.foo = "bar";
@@ -8,7 +8,7 @@ myObject.foo = "bar";
 
 属性设置的过程, 以上面表达式为例:
 
-1. 检查myObject上是否有名为foo的属性, 如果存在则修改它的值
+1. 检查`myObject`上是否有名为`foo`的属性, 如果存在则修改它的值
 2. 如果不存在, 则遍历对象的`[[Prototype]]`链
 3. 如果`[[Prototype]]`上不存在名为foo的属性, 则在myObject上创建一个名为foo的新属性
 
@@ -23,10 +23,22 @@ myObject.foo = "bar";
 var myObject = {
   a: 2
 };
-myObject.a;  // 2 
+myObject.a;  // 2
 myObject["a"];  // 2
 ```
-- 可计算属性名`myObject[prefix+"bar"] = "hello"`
+
+## Computed Property
+
+- define object **property name** that are dynamically computed
+- using `[]` and expression that evaluated as property name
+
+```js
+const propName = 'foo';
+const obj = {
+  [propName + 'bar']: 'hello'
+};
+console.log(obj.foobar);  // hello
+```
 
 ## 属性分类
 

@@ -4,7 +4,7 @@
 
 - import styles from another css file
 
-语法：
+语法:
 
 ```css
 @import url list-of-media-queries;

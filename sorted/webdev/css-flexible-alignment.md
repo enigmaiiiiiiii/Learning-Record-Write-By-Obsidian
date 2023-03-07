@@ -55,7 +55,7 @@ ___
 - 覆盖align-items的值
 - aligns the item on the **cross axis**
 
-取值
+value
 
 - `align-self: stretch;`
 - `align-self: center;`: at center

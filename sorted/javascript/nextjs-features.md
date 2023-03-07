@@ -1,6 +1,6 @@
 # Features
 
-Next.js is a framework for building server-rendered React applications
+> Next.js is a framework for building server-rendered React applications
 
 - [pre-rendering](#pre-rendering)
 - [Allow Using Node.js Modules In React Components](#allow-using-nodejs-modules-in-react-components)
@@ -21,13 +21,12 @@ Next.js is a framework for building server-rendered React applications
 
 two forms **pre-rendering**
 
-[Server-side Rendering(SSR)](nextjs-server-side-rendering.md)
-
-[Client-side Rendering(CSR)](nextjs-client-side-rendering.md)
+- [Server-side Rendering(SSR)](nextjs-server-side-rendering.md)
+- [Client-side Rendering(CSR)](nextjs-client-side-rendering.md)
 
 one form of **static generation**
 
-[Static Site Generation(SSG)](nextjs-static-generation.md)
+- [Static Site Generation(SSG)](nextjs-static-generation.md)
 
 ## **Allow Using Node.js Modules** In React Components
 

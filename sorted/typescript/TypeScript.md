@@ -14,8 +14,10 @@
 
 [Class](typescript-class.md)
 
-[Module系统](typescript-module.md)
+[Module System](typescript-module.md)
 
 [TSConfig File](typescript-config-file.md)
 
 [code snippets explaination](typescript-code-snippets-explaination.md)
+
+[JSDoc Support](typescript-jsdoc-support.md)

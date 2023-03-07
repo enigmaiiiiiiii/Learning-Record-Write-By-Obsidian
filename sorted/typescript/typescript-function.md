@@ -1,13 +1,12 @@
 # Function
 
-- [Function](#function)
-  - [function type expressions](#function-type-expressions)
-  - [Optional Parameters](#optional-parameters)
-  - [Function Overload](#function-overload)
-  - [Generic Functions](#generic-functions)
-  - [Callable Signatures](#callable-signatures)
-  - [Construct Signatures](#construct-signatures)
-  - [other type working with function](#other-type-working-with-function)
+- [function type expressions](#function-type-expressions)
+- [Optional Parameters](#optional-parameters)
+- [Function Overload](#function-overload)
+- [Generic Functions](#generic-functions)
+- [Callable Signatures](#callable-signatures)
+- [Construct Signatures](#construct-signatures)
+- [other type working with function](#other-type-working-with-function)
 
 ## function type expressions
 

@@ -1,18 +1,18 @@
 # JavaScript 中的 Class
 
-- 本质上是一个特殊[函数](javascript-function.md)
+> 本质上是一个特殊[函数](javascript-function.md)
 
-[定义一个class](#定义一个class)
-[构造方法](#构造方法)
-[method](#method)
-[静态方法](#静态方法)
-[Field(Property)](#fieldproperty)
-[继承](#继承)
-[抽象基类](#抽象基类)
-[可以继承ECMA内置类型](#可以继承ecma内置类型)
-[局部Class](#局部class)
-[javascript中的class](#javascript中的class)
-[new和class有什么关系](#new和class有什么关系)
+- [定义一个class](#定义一个class)
+- [构造方法](#构造方法)
+- [method](#method)
+- [静态方法](#静态方法)
+- [Field(Property)](#fieldproperty)
+- [继承](#继承)
+- [抽象基类](#抽象基类)
+- [可以继承ECMA内置类型](#可以继承ecma内置类型)
+- [局部Class](#局部class)
+- [javascript中的class](#javascript中的class)
+- [new和class有什么关系](#new和class有什么关系)
 
 ## 定义一个class
 
