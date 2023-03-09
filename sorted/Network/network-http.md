@@ -12,8 +12,6 @@
 
 [Session](http-session.md)
 
-[Token](http-token.md)
-
 ## II
 
 [Web服务器](http-webserver.md)

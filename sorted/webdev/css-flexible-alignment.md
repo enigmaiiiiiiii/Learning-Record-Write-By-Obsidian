@@ -17,7 +17,7 @@ value
 
 ## align-items
 
-> 定义 子元素, not container self, not **其它后代元素** either
+> 定义 直接子元素, not container self, not **其它元素** either
 
 - 描述了**子元素**的分布方式
 - 在**flex容器**中, 控制**Cross Axis**方向上子元素的分布方式
@@ -64,7 +64,7 @@ value
 
 ## align-content
 
-- 描述 **将子元素视为一个整体** 在 **可用空间** 的分布方式
+- 描述 **将所有子元素视为一个整体** 在 **可用空间** 的分布方式
 - 在flex box中, 描述 **主轴** 分布
 - 在grid容器中的**分布**方式, when use area is **smaller** than the grid container
 

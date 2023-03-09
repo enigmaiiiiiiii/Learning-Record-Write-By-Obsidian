@@ -21,7 +21,7 @@ export default function() { ... }
 - 一个模块可以用多个命名导出
 
 ```js
-export {myfunction, myVariable}
+export { myfunction, myVariable }
 ```
 
 - 导入时必须使用导出的名称

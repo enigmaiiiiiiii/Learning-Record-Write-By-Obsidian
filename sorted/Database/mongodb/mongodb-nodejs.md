@@ -6,38 +6,8 @@
 
 ## Connect to MongoDB Server
 
-basic connect without set client info
+[Connect to Server](mongodb-nodejs-connect.md)
 
-```js
-const { MongoClient } = require('mongodb');
-const url = 'mongodb://localhost:27017';
-const client = new MongoClient(url);
-client.connect()
-  .then(() => {
-    // check if connected
-    console.log('connected to MongoDB')
-  })
-  .catch(err => {
-    console.error(err);
-  })
-```
-
-connect with driver info
-
-```js
-const { MongoClient } = require('mongodb');
-const client = new MongoClient(url, {
-  appname: 'myapp',
-  driverInfo: {name: 'node-mongodb-driver', version: '1.0.0'}
-})
-client.connect()
-  .then(() => {
-    console.log('connected to MongoDB')
-  })
-  .catch(err => {
-    console.error(err);
-  })
-```
 
 ## Query data
 

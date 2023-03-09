@@ -1,5 +1,7 @@
 # module
 
+## check module object
+
 main.js
 
 ```javascript
@@ -10,7 +12,7 @@ module.paths
 node main.js
 ```
 
-输出
+the output is like:
 
 ```shell
 [

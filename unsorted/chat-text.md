@@ -1,6 +1,5 @@
-in my nextjs app, how to implement this feature
+create a header bar satisfies the following requirements:
 
-click a link, the page jump to a new page
-then click go back of browser
-the page return to the previous page
-keep the previous page's state same to before click a link
+1. on mobile device, the bar should be hidden, supply a button to show the bar
+2. on the desktop, the bar shown as normal
+3. use tailwind css

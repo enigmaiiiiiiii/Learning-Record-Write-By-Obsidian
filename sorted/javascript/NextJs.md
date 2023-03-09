@@ -20,9 +20,7 @@
 npx create-next-app
 ```
 
-[project structure]()
-
-## I
+## Foundation
 
 [File System Routing](nextjs-file-system-routing.md)
 
@@ -34,7 +32,9 @@ npx create-next-app
 
 [API](nextjs-api.md)
 
-## II
+[support typescript](nextjs-typescript.md)
+
+## Further
 
 [Route API](nextjs-routes-api.md)
 

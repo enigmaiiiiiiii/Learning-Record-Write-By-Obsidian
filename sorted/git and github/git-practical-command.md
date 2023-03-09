@@ -89,6 +89,12 @@ git checkout -- <file>
 git stash
 ```
 
+暂存修改和新增的文件
+
+```sh
+git stash --include-untracked
+```
+
 恢复修改并删除暂存记录
 
 ```sh

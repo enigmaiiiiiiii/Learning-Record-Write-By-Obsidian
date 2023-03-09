@@ -46,3 +46,7 @@ if you want to use arbitray values
   <!-- ... -->
 </div>
 ```
+
+## Responsive Design
+
+[Responsive Design](css-tailwind-responsive-design.md)

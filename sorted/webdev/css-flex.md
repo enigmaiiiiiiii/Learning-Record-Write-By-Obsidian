@@ -46,7 +46,8 @@
 - `flex: 200px`: 最小宽度
 - `flex: 2`: 所占单元格数量
 - `flex` is shoothand for `flex-grow`, `flex-shrink`, `flex-basis`
-  - 1. flex-grow: item 比例
+  - 1. `flex-grow: <number>`: ratio of the remaining space
+    - when number is positive, allow item to fill any available space
   - 2. flex-shrink: 最小可收缩比例
   - 3. flex-basis:
 

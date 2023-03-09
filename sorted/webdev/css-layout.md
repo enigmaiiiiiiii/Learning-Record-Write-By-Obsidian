@@ -1,10 +1,10 @@
 # 布局
 
-## position
+## Position
 
 [定位](css-positioning.md)
 
-## float
+## Float
 
 [CSS浮动](css-float.md)
 

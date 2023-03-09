@@ -1,10 +1,12 @@
 # Features(特性)
 
-[key of typescript: type](#key-of-typescript-type)
-[interface](#interface)
-[Narrowing](#narrowing)
-[function](#function)
-[class](#class)
+- [key of typescript: type](#key-of-typescript-type)
+- [interface](#interface)
+- [function](#function)
+- [class](#class)
+- [namespace](#namespace)
+- [module](#module)
+- [mark variable, parameter, properties](#mark-variable-parameter-properties)
 
 ## key of typescript: type
 

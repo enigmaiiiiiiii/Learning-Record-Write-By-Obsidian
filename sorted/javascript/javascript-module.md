@@ -8,7 +8,7 @@
 
 > [ECMASCript]支持模块之前的模块加载模式
 
-[相同和不同](javascript-module-of-es-and-commonjs.md)
+[Relate](javascript-module-of-es-and-commonjs.md)
 
 ## html页面中引入module
 

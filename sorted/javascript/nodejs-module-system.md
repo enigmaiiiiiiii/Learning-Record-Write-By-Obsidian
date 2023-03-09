@@ -1,5 +1,18 @@
 # NodeJs模块管理系统
 
+- [What is this](#what-is-this)
+- [Core mudules 核心模块](#core-mudules-核心模块)
+- [module file 模块文件](#module-file-模块文件)
+- [`module` object](#module-object)
+- [导出模块](#导出模块)
+- [导入模块](#导入模块)
+- [How Node Determine Module System](#how-node-determine-module-system)
+- [处理Circle(循环依赖)](#处理circle循环依赖)
+- [Folders as module 文件夹当做模块](#folders-as-module-文件夹当做模块)
+- [deep into module system](#deep-into-module-system)
+
+## What is this
+
 - NodeJs中一个文件就是一个模块
 - Node.js包括两个模块系统
   - [ECMAScript modules](javascript-module-es6.md)
@@ -13,11 +26,7 @@
 - `require('node: http');`
 - `require('http')`: 省略`node:`也能找到核心模块
 
-[内置模块](nodejs-internal-module.md)
-
-### fs
-
-- 提供了大量和文件系统交互的函数
+[Built In Object](nodejs-built-in-libraries.md)
 
 ## module file 模块文件
 
@@ -41,7 +50,7 @@
 
 [导入模块](nodejs-module-imports.md)
 
-## Node是如何确定模块系统
+## How Node Determine Module System
 
 被认为ES modules的情况
 
@@ -114,7 +123,7 @@ console.log('in main, a.done = %j, b.done = %j', a.done, b.done);
     - `./somefolder/index.js`
     - `./somefolder/index.node`
 
-## 深入了解模块系统
+## deep into module system
 
 require, exports, module变量在文件中并没有定义
 

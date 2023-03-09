@@ -1,10 +1,10 @@
-# ES6模块
+# ES6 Module
 
-## import(导入)
+## import
 
 [import](javascript-module-import.md)
 
-## export(导出)
+## export
 
 [export](javascript-module-export.md)
 

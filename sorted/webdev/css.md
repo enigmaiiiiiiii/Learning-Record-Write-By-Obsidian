@@ -4,6 +4,8 @@
 
 ## I
 
+[Practical Use](css-practical-use.md)
+
 [Where to set CSS](css-where-css-can-be-used.md)
 
 [CSS Selector](css-selector.md)
@@ -62,7 +64,7 @@
 
 [postcss](css-postcss.md)
 
-[tailwindcss](css-tailwindcss.md)
+[tailwind](css-tailwindcss.md)
 
 ## get Stucked
 

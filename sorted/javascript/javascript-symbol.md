@@ -1,6 +1,6 @@
 # Symbol
 
-## Introduction
+## What is This
 
 - ECMA6新增的数据类型
 - 用于创建唯一的标识符
@@ -13,7 +13,7 @@ create by `Symbol("key")`
 let sym = Symbol("foo");
 ```
 
-使用`Symbol.for("key")`
+create by `Symbol.for("key")` 
 
 - 如果已经存在, 则返回已有的, 否则创建一个新的
 
@@ -30,7 +30,6 @@ Symbol.keyFor()
 ```js
 Symbol.keyFor(Symbol.for("tokenString")) === "tokenString";
 ```
-
 
 ## 符号可以作为属性
 
@@ -49,7 +48,7 @@ let o = {
 };
 ```
 
-## Symbols 不能在for...in中被枚举
+## Symbols 不能在 for...in中被枚举
 
 ```js
 const obj = {};

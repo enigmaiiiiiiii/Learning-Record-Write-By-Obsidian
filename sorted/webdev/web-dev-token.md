@@ -11,7 +11,4 @@
 
 ## JWT
 
-[JWT](./http-token-jwt.md)
-
-
-
+[JWT](web-dev-token-jwt.md)

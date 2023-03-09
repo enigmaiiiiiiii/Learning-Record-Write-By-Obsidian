@@ -10,6 +10,12 @@
 
 ## import types
 
+use `import type`
+
+```ts
+import { APIRespoonse } from './api';
+```
+
 ## dynamic import
 
 core idea: [commonjs module](javascript-module-of-es-and-commonjs.md) system because:
