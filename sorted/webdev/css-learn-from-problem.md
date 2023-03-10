@@ -41,3 +41,62 @@ analysis:
 
 - because size of `absolute` position element will restrict by its container block
 - when next word is too long, it will wrap to adapt the width of container block
+
+## 2. overflow inside a flex item
+
+> not inside a flex container
+
+description
+
+when
+
+`.container` style is `display: flex`
+
+`.content` style is `overflow: auto`
+
+the content will overflow the container, the scroll-x bar will show. And with .container style `display: block`, the scroll-x bar will not show.
+
+- index.html
+
+```html
+<div class="container">
+  <div class="box">
+    <div class="content">
+      The item is sized according to its width and height
+      <br/>
+      properties.
+      <br/>
+      It shrinks to its minimum size to      fit the container, but does not grow to absorb any extra free space in the flex container. This is equivalent to setting "flex: 0 1 auto".
+      auto
+    </div>
+  </div>
+</div>
+```
+
+- style.css
+
+```css
+.container {
+  display: flex;
+}
+
+.content {
+  overflow: auto
+}
+```
+
+solution
+
+- set `.box` style `overflow: auto`
+
+```css
+.box {
+  overflow: auto;
+}
+```
+
+analysis
+
+- flex container will make its children flex item
+- and a flex item size try to adapt its content size
+- so style the flex item with [`overflow: auto`](css-overflow.md#overflow-property) to add scroll bar for the content

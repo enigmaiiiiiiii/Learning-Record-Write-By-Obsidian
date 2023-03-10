@@ -31,7 +31,6 @@
 
 [namespace](typescript-namespace.md)
 
-
 ## module
 
 [Module](typescript-module.md)

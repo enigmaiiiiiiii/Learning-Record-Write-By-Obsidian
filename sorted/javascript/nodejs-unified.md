@@ -21,6 +21,20 @@ const htmlPromise = await unified()
 const html = htmlPromise.toString()
 ```
 
+parse markdown ast
+
+```js
+import unified from 'unified'
+import remarkParse from 'remark-parse'
+
+const markdownText = '# Hello World'
+const ast = unified()
+  .use(remarkParse)  // parse markdown to mdast
+  .parse(markdownText)
+
+console.log(ast)
+```
+
 # use plugin
 
 ```js
@@ -30,7 +44,7 @@ const markdownText = '# Hello World'
 
 const result = await unified()
   .use(remarkParse)
-  .process(markdownText)
+  .parse(markdownText)
 ```
 
 ## custom plugin

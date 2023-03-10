@@ -47,7 +47,15 @@ function getFavoriteNumber(): number {
 
 1. primitive types
 
-2. anonymous object type
+2. typescript special types
+
+- `any`: you don't want to **cause typechecking error** when use particular value
+  - access to any property, property type is `any` too
+  - you can call it like a funtion
+  - assign it to a value of any type
+- `noImplicitAny`:
+
+3. anonymous object type
 
 - `p: {name: string, age: number}`: `p` is an Object with this two properties
 
@@ -57,7 +65,7 @@ function greet(person: { name: string; age: number }) {
 }
 ```
 
-3. interface
+4. interface
 
 - `p: Person`
 
@@ -71,7 +79,7 @@ function greet(person: Person) {
 }
 ```
 
-4. anonymous function type
+5. function type
 
 [function type](typescript-function.md#function-type-expressions)
 
@@ -214,10 +222,10 @@ type M = keyof { [n: string]: unknown };  // M = string | number
 
 > M is string | number because JavaScript object keys are always coerced to strings, `obj[0]` sames as `obj["0"]`
 
-## Mapped Type
+## Mapped Types
 
 - build on [index signature](typescript-interface.md#index-signatures)
-- 通过另一个type来生成一个新的type, 从而避免repeat
+- 通过另一个type来生成一个新的type, to avoid repeat
 
 比如结合[keyof operator](#keyof-operator)来生成一个新类型, 可以用少量的代码来**修改一个类型的所有属性值的类型**
 
@@ -230,7 +238,7 @@ type OptionsFlags<Type> = {
 }
 ```
 
-`readonly`和`?` 这两种属性修饰符可以通过mapped type来修改
+map属性中的**属性修饰符** `readonly`和`?` 可以被修改
 
 - 使用`+`和`-`前缀来添加或者删除属性, 无前缀表示`+`
 

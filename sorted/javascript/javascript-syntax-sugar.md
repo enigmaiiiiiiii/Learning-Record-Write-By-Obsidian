@@ -1,4 +1,4 @@
-## 对象语法糖
+# JavaScript Syntax Sugar
 
 - 属性值简写
 

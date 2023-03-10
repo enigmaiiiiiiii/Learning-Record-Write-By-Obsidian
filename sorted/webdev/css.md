@@ -10,7 +10,7 @@
 
 [CSS Selector](css-selector.md)
 
-[控制继承](css-inheritance.md)
+[Inheritance](css-inheritance.md)
 
 [理解层叠性](css-understanding-the-cascade.md)
 

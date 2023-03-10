@@ -1,4 +1,4 @@
-# CSS样式表
+# Where CSS can be used
 
 ## 外部样式表
 
@@ -14,9 +14,9 @@
 
 ```html
 <style type="text/css">
-    div {
+  div {
 
-    }
+  }
 </style>
 ```
 

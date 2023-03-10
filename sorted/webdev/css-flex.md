@@ -32,7 +32,7 @@
 
 - cross axis: 交叉轴, 默认是垂直方向
 
-## flex 容器
+## flex Container
 
 属性
 
@@ -41,7 +41,7 @@
 - `flex-flow: row wrap;`: 等于同时设置 flex-direction, flex-wrap
 - `aligin-items: center`:
 
-## flex 属性
+## flex Property
 
 - `flex: 200px`: 最小宽度
 - `flex: 2`: 所占单元格数量

@@ -38,4 +38,31 @@ output
 
 ## parse markdown ast
 
+```js
+import unified from 'unified';
+import remarkPares from 'remark-parse';
 
+const text = `# Hello, *World*!`;
+
+const root = unified()
+  .use(remarkPares);
+  .parse(markdown);
+
+console.log(root)
+```
+
+## walk ast
+
+```js
+import { visiParents } from 'unist-util-visit-parents';
+
+const root = unified()
+  .use(remarkPares);
+  .parse(markdown);
+
+visiParents(root, 'link', (node, parents) => {
+  node.url = node.url.replace('.md', '')
+}
+```
+
+- this code will remove `.md` suffix from all links in markdown file
