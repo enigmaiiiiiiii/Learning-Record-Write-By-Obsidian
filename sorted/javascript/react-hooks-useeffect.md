@@ -1,9 +1,11 @@
 # useEffect
 
-- [Effect And Event](#effect-and-event)
+- [Introduction](#introduction)
+- [feature](#feature)
+- [Difference Between Effect And Event](#difference-between-effect-and-event)
 - [why useEffect](#why-useeffect)
-- [write an Effect](#write-an-effect)
-- [Effect dependency](#effect-dependency)
+- [Usage](#usage)
+- [Specifying Dependencies](#specifying-dependencies)
 - [Cleanup effect](#cleanup-effect)
 
 ## Introduction
@@ -122,7 +124,7 @@ empty dependencies
 
 - Effect only run when component mounts
 
-## Cleanup effect
+## Cleanup Effect
 
 [Cleanup effect](react-effect-cleanup.md)
 

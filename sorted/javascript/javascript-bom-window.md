@@ -7,7 +7,9 @@
 
 Parameter
 
-- callback: 下一帧重绘时调用的函数, 该函数会接收一个DOMHighResTimeStamp参数, 表示当前时间
+- callback
+  - 下一帧重绘时调用的函数
+  - 该函数会接收一个DOMHighResTimeStamp参数, 表示当前时间
 
 example 1: element 每帧旋转
 

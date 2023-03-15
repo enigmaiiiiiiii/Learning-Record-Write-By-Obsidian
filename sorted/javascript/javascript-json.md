@@ -9,3 +9,10 @@ console.log(typeof {x: 5, y: 6})  // object
 console.log(typeof JSON.stringify({x: 5, y: 6}))  // string
 ```
 
+## JSON.parse()
+
+- parses a JSON string, constructing the **Object**
+
+```js
+const obj = JSON.parse('{"x":5,"y":6}')
+```

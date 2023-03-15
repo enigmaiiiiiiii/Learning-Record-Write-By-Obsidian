@@ -29,7 +29,7 @@
 
 - 服务器通过**Set-Cookie**[首部字段](http-response-message.md)来设置cookie
 
-by nodejs express
+use [nodejs express](nodejs-express-api-response.md)
 
 ```js
 import express from `express`;

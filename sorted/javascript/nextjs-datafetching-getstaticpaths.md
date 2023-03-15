@@ -11,8 +11,17 @@
 
 ## what's for
 
+- for page with [dynamic routes](nextjs-routes.md#dynamic-route)
 - generate pages with **dynamic routes** at **build time**
 - 需要在build time生成的用动态路径表示[页面](nextjs-terminology.md#pages)
+
+## feature
+
+- must be used with `getStaticProps`
+- cannot use with `getServerSideProps`
+- cannot exort getStaticpaths from non-page file(e.g. components folder)
+
+## when to use
 
 ## take a look
 
@@ -114,7 +123,7 @@ render root path `/`:
 `fallback: blocking`: function [getStaticProps()]() behavior changes in following ways:
 
 1. `getStaticPaths()`返回的`paths`属性中的路径会在build time 被[getStaticProps()]预渲染
-2. 不在`paths`中的路径, 不会导致404page, Next.js会为首次访问的路径面开始SSR
+2. 不在`paths`中的路径, 不会导致 404 page, Next.js会为首次访问的路径面开始SSR
 
 > `Next.js` 不会**提供备用页面
 

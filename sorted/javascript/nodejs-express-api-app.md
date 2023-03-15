@@ -1,5 +1,8 @@
 # Application
 
+- [app.get()](#appget)
+- [app.use()](#appuse)
+
 ## app.get()
 
 `app.get('path', callback[, callback])`

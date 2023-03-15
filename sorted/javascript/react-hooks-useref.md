@@ -1,6 +1,10 @@
 # Hooks UseRef
 
-## Introduction
+- [Introduction](#introduction)
+- [Properties](#properties)
+- [Contrast To UseState](#contrast-to-usestate)
+
+## take a look
 
 - reference a value that't not needed for rendering
 
@@ -25,18 +29,20 @@ function MyComponent() {
 - internal is `0`
 - use `intervalRef.current` to set and get the value
 
-## Properties
+## feature
+
+- changing a ref does not cause re-render
+
 
 ## Contrast To UseState
 
 React Component `PlusOne.js`
 
 - this component create two button
-- click first button will change state immediately, and cause re-render
-- click second button didn't have any effect, because it's not cause re-render
-- re-render will cause useRef state change
-
-
+- click first button will change state immediately, and cause **re-render**
+- click second button doesn't have **any effect**, because it's not cause re-render
+- click first button again can see the change second button valuse change
+- that mean re-render will cause useRef state change
 
 ```js
 import { useState, useRef } from 'react';

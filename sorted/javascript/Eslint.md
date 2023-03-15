@@ -2,9 +2,9 @@
 
 - [Introduction](#introduction)
 - [terminology](#terminology)
-- [安装eslint](#安装eslint)
-- [配置文件.eslintrc.{js, yml, json}](#配置文件eslintrcjs-yml-json)
-- [use eslint](#use-eslint)
+- [Install Eslint](#install-eslint)
+- [config file](#config-file)
+- [config rules eslint](#config-rules-eslint)
 - [eslint command](#eslint-command)
 - [Vscode 中的 ESlint插件](#vscode-中的-eslint插件)
 - [vue-cli 中的 ESlint](#vue-cli-中的-eslint)
@@ -53,7 +53,7 @@
 
 - controls apprearance of the results
 
-## 安装eslint
+## Install Eslint
 
 ```bash
 npm install --save-dev eslint
@@ -61,7 +61,9 @@ npm install --save-dev eslint
 
 - 因为esling是代码检查工具, 所以通过`--save-dev`安装在开发环境中
 
-## 配置文件.eslintrc.{js, yml, json}
+## config file
+
+.eslintrc.{js, yml, json}
 
 ```bash
 npm init @eslint/config
@@ -69,7 +71,9 @@ npm init @eslint/config
 
 [Configuration File](eslint-configuration-file.md)
 
-## use eslint
+## Practical Usage
+
+[Practical Usage](eslint-practical-usage.md)
 
 
 ## eslint command

@@ -48,11 +48,11 @@
 
 ## III Web API
 
-[浏览器对象模型(BOM)](javascript-bom.md)
+[Browser Object Model](javascript-bom.md)
 
-[HTML对象模型(DOM)](../sorted/javascript/javascript-dom.md)
+[Docuement Object Model](../sorted/javascript/javascript-dom.md)
 
-[内置对象](javascript-built-in-object.md)
+[Built-In Object](javascript-built-in-object.md)
 
 [Web API](../sorted/javascript/javascript-server-api.md)
 

@@ -20,7 +20,7 @@
 })()
 ```
 
-Detial of findOne() method
+detail of findOne() method
 
 - return a [Promise](javascript-promise.md)
 - so we can use `then()` method to get the result
@@ -48,7 +48,6 @@ client.close();
 ## find multiple documents
 
 `find()` method return a result [FindCursor](mongodb-nodejs-api.md#findcursor)
-
 
 ```js
 (async () => {

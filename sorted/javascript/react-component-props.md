@@ -5,6 +5,12 @@
 - [Passing JSX as children](#passing-jsx-as-children)
 - [props are unchangeable](#props-are-unchangeable)
 
+## Feature
+
+> props are unchangeable
+
+- change props is ask parent component change the components attribute
+
 ## props is a buit-in Object in react component
 
 welcome.js
@@ -25,7 +31,7 @@ export function SameWelcome({name}) {
 
 ## As component Attribute
 
-- `prop` is name of function argument
+- `props` is name of function argument
 -  Object's **property** is the component's **attribute**
 
 ```js
@@ -58,11 +64,15 @@ export default function paramedWelcome(props) {
 }
 ```
 
--   `<Welcome {...props}>` is the spread syntax
+- `<Welcome {...props}>` is the spread syntax
 
 ## Passing JSX as children
 
-- `children` is a property of `props` object, will receive content inside this JSX tag
+for to use component as a wrapper like: `<parent><child /></parent>`
+
+- both parent and child are react component
+
+`children` is a property of `props` object, will receive content inside this JSX tag
 
 ```js
 import Avatar from './Avatar.js';
@@ -84,8 +94,49 @@ export default function Profile() {
 }
 ```
 
-## props are unchangeable
+## Define props for Component
 
-- change props is ask parent component change the components attribute
+for react component `Avatar.js`
 
+```js
+function Avatar({ person, size }) {
+  // component detail
+}
+```
+
+or
+
+```js
+function Avatar(props) {
+  // component detail
+}
+```
+
+## Set props for Component
+
+then parent to set the component attribute
+
+```js
+import Avatar from "./Avatar";
+
+function App() {
+  return (
+    <div>
+      <Avatar person="Sara" size="18" />
+    </div>
+  );
+}
+```
+
+or
+
+```js
+function App(props) {
+  return (
+    <div>
+      <Avatar {...props} />
+    </div>
+  );
+}
+```
 

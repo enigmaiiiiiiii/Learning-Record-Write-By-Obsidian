@@ -37,3 +37,7 @@
 ## Specific Business
 
 [parse markdown file](web-dev-parse-markdown.md)
+
+## blogs
+
+[$nbsp and white space](web-dev-nbsp-and-white-space.md)

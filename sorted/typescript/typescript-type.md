@@ -47,6 +47,9 @@ function getFavoriteNumber(): number {
 
 1. primitive types
 
+- string, number, boolean
+- Arrays: `number[]`, `string[]`, `object[]`
+
 2. typescript special types
 
 - `any`: you don't want to **cause typechecking error** when use particular value

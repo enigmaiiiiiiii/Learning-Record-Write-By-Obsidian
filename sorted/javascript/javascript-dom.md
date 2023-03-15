@@ -1,5 +1,7 @@
 # DOM
 
+
+
 ## Element
 
 [Element](javascript-dom-element.md)

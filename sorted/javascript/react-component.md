@@ -47,6 +47,38 @@ const element = <h1>Hello, world!</h1>;
 export default element; // this is not a component
 ```
 
+## curly braces
+
+> window to javascript expression
+
+```js
+function TodoList(user) {
+
+    const name = 'Gergorio Y. Zara';
+    return (
+        <h1>{name}'s To Do List</h1>
+    )
+}
+```
+
+double curlies for **object** attribute value
+
+```jsx
+function TodoList() {
+  return (
+    <div>
+      <h1 styles={
+        {
+          color: 'red',
+          fontSize: '20px'
+        }
+      }>To Do List
+      </h1>
+    </div>
+  )
+}
+```
+
 ## Props
 
 [Props](react-component-props.md)

@@ -55,24 +55,35 @@ export default function Welcome(props) {
 - is called before initial render when using `fallback: blocking`
 - runs in the background when using [revalidate]()
 - runs on-demand in the background when using [revalidate()]
+- **In development** will be called on every request
 
 dev and prod
 
 - In development `getStaticProps()` runs on **every request**
 - In production `getStaticProps()` runs at **build time**
 
-## parameters
+## context parameters
 
 `context` Object with following keys:
 
-- params: dynamic routes parameters, `page/[id].js` 中的 `id`
+- params: [**dynamic routes**](nextjs-dynamic-route.md) parameters, `page/[id].js` 中的 `id`
 - preview: `true` if the page is in preview mode
-- previewData
+- previewData:
 - locale
 - locales
 - defaultLocale
 
-## return values
+## Return Object
+
+return an object may containing following keys
 
 - `props`: pass to page component as [props](react-component-props.md)
 - `revalidate`: amount of seconds re-generate the page
+- `notFound`: allow page to return a 404 status
+  - use case: user-generated content removed by its author(but data may be still store in somewhere)
+- `redirect`:
+
+## Where to use
+
+- only can be exported from a [page](nextjs-terminology.md#pages)
+- needs to have all the data **before** the page is **render**

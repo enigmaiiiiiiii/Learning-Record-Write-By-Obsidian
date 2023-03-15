@@ -38,6 +38,10 @@ npx create-next-app
 
 [Route API](nextjs-routes-api.md)
 
+[Middleware](nextjs-middleware.md)
+
+[Custom Server](nextjs-custom-server.md)
+
 [Core Concepts](nextjs-core-concepts.md)
 
 ## Directive
