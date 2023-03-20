@@ -1,6 +1,6 @@
 # 机器学习
 
-[[统计机器学习]]
+[统计机器学习](statistics-mechine-learning.md)
 
 [[深度学习]]
 

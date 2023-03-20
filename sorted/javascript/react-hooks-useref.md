@@ -1,10 +1,42 @@
 # Hooks UseRef
 
-- [Introduction](#introduction)
-- [Properties](#properties)
+- [take a look](#take-a-look)
+- [feature](#feature)
 - [Contrast To UseState](#contrast-to-usestate)
 
-## take a look
+## reference a component DOM
+
+```js
+import { useRef } from 'react'
+function myComponent() {
+
+  const tmpRef = useRef(null);
+
+  function foo() {
+    tmpRef.current.appendChild()
+  }
+
+  return (
+    <div>
+      <input ref={tmpRef} />
+      <button
+        onClick={() => {
+          const child = document.createElement('div');
+          child.innerHTML = 'hello child';
+          ref.current.appendChild(child);
+        }}
+      >
+        focus
+      </button>
+    </div>
+  )
+}
+```
+
+- useRef return an Object `tmpRef`
+- with single property `current`, reference to the [DOM Element](javascript-dom-element.md)
+
+## reference a value
 
 - reference a value that't not needed for rendering
 
@@ -32,7 +64,6 @@ function MyComponent() {
 ## feature
 
 - changing a ref does not cause re-render
-
 
 ## Contrast To UseState
 

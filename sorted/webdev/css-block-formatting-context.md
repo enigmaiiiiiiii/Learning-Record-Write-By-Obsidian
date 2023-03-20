@@ -4,7 +4,7 @@
 
 ## 创建BFC的情况
 
-- [x] 文档根元素`<html>`, root element of document, 
+- [x] 文档根元素`<html>`, root element of document
 - [x] 浮动元素, float elements(float属性不等于none)
 - [x] Absolutely positioned elements, `position: absolute or fixed`
 - [x] Inline-block(display: inline-block)
@@ -23,7 +23,7 @@
 
 ### 1. 包含内部浮动, contain internal floats
 
-设置父元素属性为: 
+设置父元素属性为:
 
 - overflow: auto
 - display: flow-root

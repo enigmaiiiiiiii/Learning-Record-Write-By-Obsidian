@@ -1,5 +1,6 @@
-# 迷宫任务抽象过程
-![迷宫任务](maze-task.excalidraw.md)
+# Abstract Of Maze Task
+
+![maze task](maze-task.excalidraw.md)
 
 - 以迷宫任务为例
 
@@ -43,10 +44,10 @@ $P(s'=8,r=1|s=7,a=1)=1$
 
 ## 动作价值: $Q^\pi(s,a)=R$
 
-在状态$s=7$，选择动作向右$a=1$, 
+在状态$s=7$，选择动作向右$a=1$,
 到达目标状态S8, 奖励r=1, 因此动作价值为:
 
-$Q^\pi(s=7,a=1)=R_{t+1}=1$  
+$Q^\pi(s=7,a=1)=R_{t+1}=1$
 
 在状态$s=7$，选择动作向上$a=0$，
 经过$S7\rightarrow S4 \rightarrow S7\rightarrow S8$, 动作价值为:
@@ -61,7 +62,7 @@ $V^\pi(s=4)=R_{t+1}+\gamma*V^\pi(s=7)$
 
 复杂环境最优动作可能有多个
 
-## 价值算法 
+## 价值算法
 
 - 初始化动作价值$Q$, a行，b列的矩阵，a为状态个数，b为动作个数
 

@@ -17,8 +17,6 @@
 
 instruction from a video:
 
-![Event Loop](https://i.stack.imgur.com/4gszv.png)
-
 order of a thread
 
 1. initialize program

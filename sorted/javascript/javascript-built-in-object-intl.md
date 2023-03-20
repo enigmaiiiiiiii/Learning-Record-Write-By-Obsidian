@@ -1,5 +1,9 @@
 # JavaScript Intl
 
+- [Introduction](#introduction)
+- [Constructor Properties](#constructor-properties)
+- [locales argument](#locales-argument)
+
 ## Introduction
 
 a name space for the ECMAScript Internationalization API, which provides:

@@ -34,16 +34,32 @@
 
 `position: sticky`: 粘性定位
 
-[sticky sidebar inside box](sticky-inside-box.md)
+> a hybrid between `relative` and `fixed`
 
-- 相对于最近的[Containing Block]()定位, 使用top, right, bottom, left属性定位
+- act like relatively positioned until scroll to a certain threshold
+- then act like fixed positioned
+- 相对于最近的[containing block](css-containing-block.md)定位, 使用top, right, bottom, left属性定位
 - 必须指定top, right, bottom, left中的一个, 使sticky正常工作
+
+```css
+.box {
+  position: sticky;
+  top: 100px;
+}
+```
+
+- when sticky element top property larger than 100px
+  - positioned as `relative`
+- when sticky element top property smaller than 100px
+  - positioned as `fixed` at `top: 100px`
+
+> [sticky sidebar inside box](sticky-inside-box.md)
 
 ## positioned element
 
 - position value is relative, absolute, fixed, sticky
 
-## 定位上下文(Positioning contexts)
+## Positioning Contexts
 
 - [ ] todo
 

@@ -1,4 +1,4 @@
-# Eslint Practical Usage
+# ESLint Practical Usage
 
 ## supress warning
 

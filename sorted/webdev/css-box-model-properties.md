@@ -1,11 +1,18 @@
 # CSS Box Attribute
 
+- [Feature](#feature)
+- [Content](#content)
+- [padding](#padding)
+- [border](#border)
+- [margin](#margin)
+
+
 ## Feature
 
 - 这些属性在[block box](css-box-model-sorted.md#block-box)中可以被完全体现
 - 而部分作用于[inline box](css-box-model-sorted.md)
 
-## content
+## Content
 
 width, height
 
@@ -17,6 +24,10 @@ width, height
 max-width, max-height, min-width, min-height
 
 - 如果容器内容数量是变化的, 元素大小会随着调整, min/max可以限制元素的调整范围
+- Values
+  - max-content:
+  - min-content:
+  - `<percentage>`:
 
 ## padding
 

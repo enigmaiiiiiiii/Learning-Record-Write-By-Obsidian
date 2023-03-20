@@ -4,8 +4,8 @@
 
 [贝尔曼方程](贝尔曼方程.md)
 
-[[策略梯度]]
+[策略梯度](策略梯度.md)
 
-[[价值迭代算法]]
+[价值迭代算法](价值迭代算法.md)
 
-[[迷宫任务抽象过程]]
+[maze task abstraction](maze-task-abstraction.md)

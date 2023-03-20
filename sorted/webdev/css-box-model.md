@@ -1,4 +1,4 @@
-# CSS的盒子模型
+# CSS Box Model
 
 - [Standard Box Model](#standard-box-model)
 - [Box Property](#box-property)
@@ -12,7 +12,7 @@
 - box-sizing: content-box
 - CSS中的所有元素都有一个盒子模型
 
-层次关系
+layer relationship
 
 > margin: 用**空白区域**扩展边框
 >> border: 扩展自padding
@@ -39,11 +39,11 @@
 
 ## Box Property
 
-[盒子模型的属性](css-box-model-properties.md)
+[Property Of Box Model](css-box-model-properties.md)
 
 ## Block And Inline
 
-[block box和inline box](css-box-model-sorted.md)
+[Block Box And Inline Box](css-box-model-sorted.md)
 
 ## display property
 

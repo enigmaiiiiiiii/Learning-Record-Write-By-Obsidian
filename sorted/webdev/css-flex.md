@@ -3,19 +3,20 @@
 - [introduction](#introduction)
 - [Main Axis](#main-axis)
 - [Cross Axis](#cross-axis)
-- [flex 容器](#flex-容器)
-- [flex 属性](#flex-属性)
+- [flex Container](#flex-container)
+- [flex Property](#flex-property)
 - [flex-grow](#flex-grow)
 - [create gap](#create-gap)
 - [rest space](#rest-space)
 
 ## introduction
 
+- element set `display: flex` performance for outside like [**block box**](css-box-model-sorted.md#block-box)
 - 一种将元素布局在单一维度的布局方式
 - main axis: 元素分布维度
 - cross axis: 元素分布维度的垂直方向
-- **flex容器**: 属性设置为 display: flex 的元素称为 flex container
-- **flex元素**: flex container 的所有子元素称为 flex item
+- **flex container**: 属性设置为 display: flex 的元素称为 flex container
+- **flex Element**: flex container 的所有子元素称为 flex item
 
 ## Main Axis
 
@@ -43,13 +44,15 @@
 
 ## flex Property
 
-- `flex: 200px`: 最小宽度
-- `flex: 2`: 所占单元格数量
+sets how **flex item** will grow
+
+- `flex: 200px`:
+- `flex: 2`
 - `flex` is shoothand for `flex-grow`, `flex-shrink`, `flex-basis`
   - 1. `flex-grow: <number>`: ratio of the remaining space
     - when number is positive, allow item to fill any available space
-  - 2. flex-shrink: 最小可收缩比例
-  - 3. flex-basis:
+  - 2. `flex-shrink`: 最小可收缩比例
+  - 3. `flex-basis`
 
 ```css
 article {
@@ -65,11 +68,9 @@ article:nth-of-type(3) {
 
 flex-basis
 
-- grow or shrink 的基准值
+- grow or shrink 基准值
 
-flex: 0 0 300px
-
-- 相当于创建了一个inflixible item
+> flex: 0 0 300px 相当于创建了一个inflixible item
 
 ## flex-grow
 

@@ -20,7 +20,7 @@ var name = "bob", time = "today";
 console.log(`Hello ${name}, how are you ${time}`);
 ```
 
-## 方法
+## Method
 
 `.length`: 字符串长度
 

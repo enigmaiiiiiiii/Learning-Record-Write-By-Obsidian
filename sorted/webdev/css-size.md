@@ -14,8 +14,6 @@
 
 ## z-index
 
-***
-
 ## 包含块
 
 [包含块](css-containing-block.md)

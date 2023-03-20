@@ -1,4 +1,4 @@
-# 强化学习概念
+# Reinforcement Learning Concept
 
 -  符号:
 
@@ -33,8 +33,17 @@
 - $G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+...$
 
 > $R_{t}$  : 即时奖励
-  
+
 ## 状态转移, 价值函数, 策略函数
 
 - 状态价值和动作价值均与状态转移函数有关
 
+## algorithm
+
+[Q-learning]
+
+[Sarsa]
+
+[策略梯度]
+
+[Actor-Critic]

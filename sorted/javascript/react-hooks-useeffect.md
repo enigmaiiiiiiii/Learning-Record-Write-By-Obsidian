@@ -6,11 +6,9 @@
 - [why useEffect](#why-useeffect)
 - [Usage](#usage)
 - [Specifying Dependencies](#specifying-dependencies)
-- [Cleanup effect](#cleanup-effect)
+- [Cleanup Effect](#cleanup-effect)
 
-## Introduction
-
-- only call it at the top level of your component
+## What it si
 
 `uesEffect(setup, dependencies)`
 
@@ -36,6 +34,7 @@ mechanism
 ## feature
 
 - React will let browser paint the update before running effect, if `useEffect` wasn't cause by an interaction(like a click), 
+- only call it at the top level of your component
 - only run on the client
 
 ## Difference Between Effect And Event

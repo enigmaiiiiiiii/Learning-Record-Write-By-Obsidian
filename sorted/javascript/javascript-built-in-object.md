@@ -1,5 +1,16 @@
 # 内置对象
 
+- [JSON](#json)
+- [Function](#function)
+- [setTimeout()](#settimeout)
+- [setInterval()](#setinterval)
+- [setImmediate()](#setimmediate)
+- [clearTimeout()](#cleartimeout)
+- [WeakMap](#weakmap)
+- [Intl](#intl)
+- [Performance](#performance)
+- [uri decode and encode](#uri-decode-and-encode)
+
 ## JSON
 
 `JSON.stringify()` 方法用于将 JavaScript Object 转换为 JSON 字符串。
@@ -64,3 +75,29 @@ Parameters
 ## Intl
 
 [Intl](javascript-built-in-object-intl.md)
+
+## Performance
+
+[Performance](javascript-built-in-object-performance.md)
+
+## uri decode and encode
+
+- `decodeURI()` for decode uri
+- `encodeURI()` a string to uri format
+
+```js
+const uri = 'https://mozilla.org/?x=шеллы';
+const encoded = encodeURI(uri);
+console.log(encoded);
+// Expected output: "https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"
+
+try {
+  console.log(decodeURI(encoded));
+  // Expected output: "https://mozilla.org/?x=шеллы"
+} catch (e) { // Catches a malformed URI
+  console.error(e);
+}
+```
+
+- i didn't find difference between `encodeURI()` and `encodeURIComponent()`
+- and `decodeURI()` and `decodeURIComponent()`

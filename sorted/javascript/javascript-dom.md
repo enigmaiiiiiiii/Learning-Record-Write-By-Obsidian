@@ -1,12 +1,35 @@
 # DOM
 
+- [Node](#node)
+- [Document](#document)
+- [Element](#element)
+- [Select DOM Element](#select-dom-element)
+- [EventTarget.addEventlistener()](#eventtargetaddeventlistener)
+- [HTMLCollection](#htmlcollection)
+- [XMLHttpRequest](#xmlhttprequest)
+## Node
 
+- represents a node in the DOM tree
+
+## Document
+
+- is a Special [Node](#node) represents the entire Web page
+
+[Document Object](javascript-dom-document.md)
 
 ## Element
 
-[Element](javascript-dom-element.md)
+- Every Element is a [Node](#node)
+- but not every Node is an Element
 
-[HTMLElement](javascript-dom-htmlelement.md)
+structure
+
+- [Element](javascript-dom-element.md)
+  -[HTMLElement](javascript-dom-htmlelement.md)
+
+## Event
+
+[event](javascript-dom-event.md)
 
 ## Select DOM Element
 

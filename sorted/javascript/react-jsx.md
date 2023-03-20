@@ -1,4 +1,6 @@
-# What is JSX
+# React JSX
+
+## What is JSX
 
 - `.jsx`是JavaScript语法的扩展
 
@@ -8,7 +10,7 @@
 
 ## Take a Look
 
-```jsx
+```js
 function formatName(user) {
     return user.firstName + ' ' + user.lastName;
 }
@@ -18,7 +20,6 @@ const user = {
 };
 const welcome = <h1>Hello, {formatName(user)}</h1>;
 const todoList = (
-
     <ul style={{
           backgroundColor: 'black',
           color: 'pink'
@@ -27,6 +28,7 @@ const todoList = (
       <li>Prepare aeronautics lectures</li>
     </ul>
 )
+
 export default function demo() {
     return (
         <div>

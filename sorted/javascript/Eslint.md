@@ -1,10 +1,10 @@
-# ESlint
+# ESLint
 
 - [Introduction](#introduction)
-- [terminology](#terminology)
-- [Install Eslint](#install-eslint)
+- [Glossary](#glossary)
+- [Install ESLint](#install-eslint)
 - [config file](#config-file)
-- [config rules eslint](#config-rules-eslint)
+- [Practical Usage](#practical-usage)
 - [eslint command](#eslint-command)
 - [Vscode 中的 ESlint插件](#vscode-中的-eslint插件)
 - [vue-cli 中的 ESlint](#vue-cli-中的-eslint)
@@ -17,11 +17,11 @@
   - 没有遵循最佳实践
   - 格式问题
 
-## terminology
+## Glossary
 
 `rules`
 
-- ESlint的核心
+- ESLint的核心
 
 `plugins`
 
@@ -53,13 +53,13 @@
 
 - controls apprearance of the results
 
-## Install Eslint
+## Install ESLint
 
 ```bash
 npm install --save-dev eslint
 ```
 
-- 因为esling是代码检查工具, 所以通过`--save-dev`安装在开发环境中
+- 因为eslint是代码检查工具, 所以通过`--save-dev`安装在开发环境中
 
 ## config file
 

@@ -1,4 +1,4 @@
-# 模块化工程中使用VueRouter
+# VueRouter In Modular Project
 
 - [Introduction](#introduction)
 - [write in main.js](#write-in-mainjs)

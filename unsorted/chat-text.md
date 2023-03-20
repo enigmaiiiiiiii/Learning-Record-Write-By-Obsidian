@@ -1,1 +1,2 @@
-difference between getInitialProps and getStaticProps in nextjs
+
+how to make a flex box performance like a inline-block

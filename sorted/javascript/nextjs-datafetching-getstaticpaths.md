@@ -120,7 +120,7 @@ render root path `/`:
 
 5. page navigated by `next/link` or `next/router` 不会提供备用页面, 行为和`fallback: blocking`一样
 
-`fallback: blocking`: function [getStaticProps()]() behavior changes in following ways:
+`fallback: blocking`: function [getStaticProps()]() behavior changes in following ways
 
 1. `getStaticPaths()`返回的`paths`属性中的路径会在build time 被[getStaticProps()]预渲染
 2. 不在`paths`中的路径, 不会导致 404 page, Next.js会为首次访问的路径面开始SSR
@@ -169,7 +169,7 @@ export async function getStaticProps({ params }) {
   const post = await new Promise((resolve) => {
     setTimeout(() => {
       resolve({
-        name: 'enigma',
+        name: 'second',
         age: 19
       })
     }, 2000)

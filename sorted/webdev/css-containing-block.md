@@ -15,7 +15,7 @@
 
 如果position属性为`static, relative, sticky`
 
-- 其包含块可能由最近的**祖先块元素**的内容区边缘组成
+- 其包含块可能由最近的**ancester block**的内容区边缘组成
 - 可能是一个block container
 - 可能是新的[formatting context]()
 

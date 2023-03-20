@@ -1,6 +1,10 @@
 # URI
 
-## 语法
+- [Syntax](#syntax)
+- [opaque URI](#opaque-uri)
+- [hierarchical URI](#hierarchical-uri)
+
+## Syntax
 
 `[scheme:]scheme-specific-part[#fragment]`
 
@@ -8,7 +12,9 @@
 - scheme-specific-part: 协议中的具体内容，如http://www.baidu.com/someDepartment/picture.gif
 - fragment: 资源的片段，用于指定资源的一部分，如#fragment
 
-***
+## Encoded URI
+
+- uri may have special characters, which can not be transmit over the internet
 
 ## opaque URI
 

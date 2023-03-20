@@ -38,7 +38,7 @@
 
 [worker](javascript-worker.md)
 
-[event](javascript-event.md)
+[event loop](javascript-event-loop.md)
 
 [WebSocket](javascript-websocket.md)
 
@@ -58,9 +58,9 @@
 
 [Canvas]
 
-[音频和视频]
+[]
 
-[客户端数据存储]
+[]
 
 [AJAX](/sorted/javascript/javascript-ajax.md)
 
@@ -90,6 +90,6 @@
 
 [Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature
 
-## VIII
+## Technique
 
 [JavaScript practical function](/sorted/javascript/javascript-practical-function.md)
