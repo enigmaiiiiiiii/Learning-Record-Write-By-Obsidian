@@ -1,5 +1,7 @@
 # Lifecycle
 
+## class component
+
 ```jsx
 class Clock extends React.Component {
   constructor(props) {

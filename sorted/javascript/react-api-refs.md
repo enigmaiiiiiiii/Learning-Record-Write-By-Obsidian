@@ -1,9 +1,9 @@
-# Refs
+# Ref
 
 - 通常通过[props](react-component.md)完成component之间的interaction
 - 在少数情况, need Access to DOM, 可以使用Refs
 
-when to use Refs?
+## when to use Refs?
 
 - manage focus, text selection, or media playback
 - trigger imperative(必要的) animations

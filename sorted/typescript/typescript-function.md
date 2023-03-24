@@ -91,7 +91,7 @@ function firstElement<Type>(arr: Type[]): Type {
 - 这样声明的泛型函数可以接受任意类型的参数
 - 调用时不需要指定泛型函数的参数类型, 会自动推断
 
-**限制**泛型函数的参数类型
+**限制**泛型函数的参数类型 Constraints Argument Types
 
 ```ts
 finction longest<Type extends {length: number}>(a: Type, b: Type) {

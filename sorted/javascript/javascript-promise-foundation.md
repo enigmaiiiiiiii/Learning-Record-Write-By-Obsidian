@@ -17,6 +17,46 @@
 - promise的`fulfilled`或`rejected`状态都是`settled`状态
 - promise必是三种状态之一
 
+**pending promise**
+
+```js
+(async () => {
+  const promise = new Promise(() => {
+    setTimeout(() => {
+    }, 1000);
+  }).then(() => {
+    console.log('nothing')
+  });
+})();
+```
+
+- If i don't call `resolve` or `reject` in promise, promise will be **pending**
+- And there will be **no output**
+- Because the promise is **still pending**, function in then will never be called
+
+**settled promise**
+
+```js
+const success = true;
+(async () => {
+  const promise = new Promise((resolve, reject) => {
+    if(success) {
+      resolve(value);
+    } else if(fail) {
+      reject(reason);
+    } else {
+      throw error;
+    }
+  }).then(
+    () => console.log('success'),
+    () => console.log('fail'),
+  )
+})()
+```
+
+- when `success` is `true`, there will be **success** output
+- when `success` is `false`, there will be **fail** output
+
 ## Create Promise
 
 `new Promise((resolve, reject) => { ... }))`
@@ -36,7 +76,7 @@ const promise = new Promise((resolve, reject) => {
 });
 ```
 
-promise的返回值
+promise's return value
 
 - `resolve(value)`: 将value包装为**Promise对象**
 - `reject(reason)`: 将reason包装为**Promise对象**

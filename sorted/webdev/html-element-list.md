@@ -11,15 +11,15 @@
 - [link](#link)
 - [meta标签](#meta标签)
 
+## textarea
+
+- can use like a comment on a review or feedback form
+
 ## pre
 
 - for persented **exactly** what is written in the html
 
 Attribute
-
-
-
-
 
 ## tb
 

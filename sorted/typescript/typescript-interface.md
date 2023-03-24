@@ -1,15 +1,16 @@
 # Interface
 
+- [what it is](#what-it-is)
+- [Define an interface](#define-an-interface)
+- [Extend an interface](#extend-an-interface)
+- [Add properties to an interface](#add-properties-to-an-interface)
+- [Index Signatures](#index-signatures)
+
+## what it is
+
 - can be use for **type annotation**
 - can be **implement** by a class
 - can be **extended** by another interface
-
-- [Interface](#interface)
-  - [Define an interface](#define-an-interface)
-  - [Extend an interface](#extend-an-interface)
-  - [Add properties to an interface](#add-properties-to-an-interface)
-  - [Index Signatures](#index-signatures)
-
 
 ## Define an interface
 
@@ -42,12 +43,10 @@ interface Point {
 
 ## Index Signatures
 
-- 索引的类型
+index signature 用于**在以下这种情况**声明一个[interface](typescript-interface.md) or [class](typescript-class.md) 的property type
 
-index signature 用于**在以下这种情况**声明一个interface type
-
-1. 确定一个类型的属性值的类型
-2. 同时, 不确定属性的名称时
+1. don't know all the name of properties
+2. know the type of the value
 
 ```ts
 interface StringArray {
@@ -59,6 +58,31 @@ const secondItem = myArray[1];  // secondItem is string
 
 - this code means: an interface named StringArray has a index signature
 
-index Signature 允许的类型: `string`, `number`, [symbol](javascript-symbol.md), template string pattern or union of these types
+index signature **enforce** that **all properties** its types
 
+```ts
+interface NumberDictionary {
+    [index: string]: number;
+    length: number;  // ok, length is a number
+    name: string;  // error, the type of 'name' is not a subtype of the indexer
+}
+```
 
+index Signature 允许的类型
+
+- `string`
+- `number`
+- [symbol](javascript-symbol.md)
+- template string pattern
+- union of these types
+
+## generic interface
+
+```ts
+interface Box<T> {
+  value: T;
+}
+
+const box1: Box<string> = { value: 'hello'};
+const box2: Box<number> = { value: 42};
+```

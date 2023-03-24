@@ -8,7 +8,7 @@
 `const a = await expression`: expression: 一个promise对象
 
 - use to unwrap(拆开) a promise对象
-- await**只能用于**async function中
+- await **只能用于** async function中
 - await pauses the [async function](#async-function)) until the promise is [settled](javascript-promise.md#state-of-promise)
 - await make [async function](#async-function) look like synchronous
 - purpose of await/async is to简化了promise的使用
@@ -70,7 +70,7 @@ async function foo() {
 }
 // 等价函数
 async function foo() {
-    return Promise.resolve(1).then(() => udndefined);
+    return Promise.resolve(1).then(() => undefined);
 }
 ```
 

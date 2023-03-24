@@ -1,22 +1,24 @@
 # useEffect
 
-- [Introduction](#introduction)
+- [What it is](#what-it-is)
 - [feature](#feature)
 - [Difference Between Effect And Event](#difference-between-effect-and-event)
 - [why useEffect](#why-useeffect)
 - [Usage](#usage)
 - [Specifying Dependencies](#specifying-dependencies)
 - [Cleanup Effect](#cleanup-effect)
+- [reactive value change unintentionally](#reactive-value-change-unintentionally)
 
-## What it si
+## What it is
 
 `uesEffect(setup, dependencies)`
 
 - `setup`
-  - optionally return a cleanup function, cleanup funtion will called:
+  - optionally return a [cleanup function](), cleanup funtion will called:
     - re-render on dependencies value change
     - component is removed from the DOM
   - **setup function can't be async, because async function return a promise, not cleanup function**
+    - it is possible to use async function inside setup function
   - setup will run when component first and to DOM
   - also run when re-render caused by dependecies change
     - react will first run the cleanup function on old dependencies value
@@ -104,7 +106,7 @@ export default function App() {
 
 ## Specifying Dependencies
 
-- Every **[reactive value](react-reactive-value.md) used by your effect's code** must be declared as a dependency 
+- Every **[reactive value](react-glossary.md#reactive-value) used by your effect's code** must be declared as a dependency 
 
 specify dependency
 
@@ -127,3 +129,29 @@ empty dependencies
 
 [Cleanup effect](react-effect-cleanup.md)
 
+## Unneccessary useEffects
+
+[Unneccessary useEffects](react-remove-unneccessary-useeffect.md)
+
+
+## reactive value change unintentionally
+
+```jsx
+exprot default function Demo() {
+
+  const [count, setCount] = useState(0);
+  const [flag, setFlag] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('click', () => {
+      setCount(count + 1);
+    })
+  })
+
+  return (
+    <>
+      <div>{count}</div>
+    </>
+  )
+}
+```

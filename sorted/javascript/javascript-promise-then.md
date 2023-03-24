@@ -1,6 +1,12 @@
 # then()
 
-**Promise实例**状态改变时, 要执行的函数, 返回一个新的**Promise实例**
+## Feature
+
+**when promise instance [state](javascript-promise-foundation.md#state-of-promise) changing**
+
+the **function** pass to then() argument will be called
+
+return a new **Promise Instance**
 
 - promiseInstance.then(onFulfilled, onRejected)
 

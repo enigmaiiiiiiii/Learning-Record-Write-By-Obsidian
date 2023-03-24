@@ -18,6 +18,8 @@
 
 [context](react-context.md)
 
+[lazy loading](react-lazy-loading.md)
+
 ## Hooks
 
 [Rules of Hooks](react-rules-of-hooks.md)
@@ -34,11 +36,14 @@
 
 [useMemo]()
 
+
 ## API
 
 [Access to DOM](react-api-refs.md)
 
 [React API](react-api.md)
+
+[lazy](react-api-lazy.md)
 
 ## III
 

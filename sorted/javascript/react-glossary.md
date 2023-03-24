@@ -1,14 +1,16 @@
 # React Glossary
 
+- [Reactive value](#reactive-value)
+
 ## Reactive value
 
-[useState value](react-hooks-usestate.md)
+1. [useState value](react-hooks-usestate.md)
 
 ```js
 const [count, setCount] = useState(0);
 ```
 
-component [prop](react-component-props.md)
+2. component [prop](react-component-props.md)
 
 ```js
 function MyComponent(props) {
@@ -16,7 +18,7 @@ function MyComponent(props) {
 }
 ```
 
-All variables declared in the component body
+3. All variables declared in the component body
 
 ```js
 function ChatRoom({ roomId, selectedServerUrl}) {

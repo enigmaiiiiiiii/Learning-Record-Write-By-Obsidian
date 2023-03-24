@@ -136,6 +136,10 @@ function B() {
 }
 ```
 
+## render
+
+- re-render on state change
+
 ## keep component pure
 
 pure function

@@ -1,2 +1,1 @@
-
-how to make a flex box performance like a inline-block
+is there any difference in use promise in typescript

@@ -1,24 +1,43 @@
 # useState
 
-## add state to component
+## Basic
+
+[useState basic use](react-hooks-usestate-basic.md)
+
+## Principles For Structuring State
+
+1. Group Related state
+
+- you can do this
 
 ```js
-function MyComponent() {
-  const [count, setCount] = useState(0);
-  return (
-    // jsx literal
-  );
+const [x, setX] = useState(0);
+const [y, setY] = useState(0);
+```
+
+- if two state are related, you can group them together
+
+```js
+const [position, setPosition] = useState({ x: 0, y: 0 });
+```
+
+2. Avoid contradictions(矛盾) in state
+
+
+**3. Avoid Redundant State**
+
+```js
+import { useState } from 'react';
+
+export default function form() {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setlastName] = useState('');
+
+  const fullname = firstname + ' ' + lastName;
 }
+
 ```
 
-## return an array
+4. Avoid duplication in state
 
-返回一个数组, 并通过[解构赋值](javascript-variable-assignment.md#数组解构)
-
-```js
-const [count, setCount] = useState(0);
-```
-
-1. a `current state` of state variable, initial value set to you provided, `count` is 0
-2. a `set function` to update the state variable, `setCount(1)` set `count` to 1
-
+5. Avoid deeply nested state

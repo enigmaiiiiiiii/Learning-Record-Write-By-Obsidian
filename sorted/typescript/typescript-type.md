@@ -9,8 +9,9 @@
 - [type assertion](#type-assertion)
 - [Narrowing](#narrowing)
 - [Keyof operator](#keyof-operator)
-- [Mapped Type](#mapped-type)
+- [Mapped Types](#mapped-types)
 - [Type Compatibility](#type-compatibility)
+
 
 ## What Is Type Annotation
 
@@ -50,12 +51,9 @@ function getFavoriteNumber(): number {
 - string, number, boolean
 - Arrays: `number[]`, `string[]`, `object[]`
 
-2. typescript special types
+2. typescript [special types](#special-types)
 
-- `any`: you don't want to **cause typechecking error** when use particular value
-  - access to any property, property type is `any` too
-  - you can call it like a funtion
-  - assign it to a value of any type
+- `any`: 
 - `noImplicitAny`:
 
 3. anonymous object type
@@ -87,6 +85,35 @@ function greet(person: Person) {
 [function type](typescript-function.md#function-type-expressions)
 
 [type working with function](typescript-function.md#other-type-working-with-function)
+
+## Special Types
+
+void
+
+unknown
+
+never
+
+- annotation function never return a value
+
+```ts
+function fn(x: string | number) {
+    if (typeof x === "string") {
+        //
+    } else if (typeof x === "number") {
+        //
+    } else {
+        x; // type is never
+    }
+}
+```
+
+any
+
+- you don't want to **cause typechecking error** when use particular value
+- access to any property, property type is `any` too
+- you can call it like a funtion
+- assign it to a value of any type
 
 ## type statement
 

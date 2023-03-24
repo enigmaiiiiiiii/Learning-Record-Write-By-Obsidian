@@ -1,5 +1,7 @@
 # get start
 
+## Install
+
 **Install** typescript globally:
 
 ```bash
@@ -14,6 +16,10 @@ npm install -D typescript
 npm install -D ts-node
 ```
 
+## CLI Tools
+
+[ts-node](typescript-ts-node.md)
+
 ## compile single .ts file to js:
 
 `tsc`: compile ts to js
@@ -24,13 +30,14 @@ tsc script.ts
 
 ## run single .ts file
 
-`ts-node`: compile and run
+use `ts-node`: compile and run
 
 > **excute** a script as `node` + `tsc`
 
-```bash
+```s
 ts-node script.ts
 ```
+
 
 ## index.d.ts
 

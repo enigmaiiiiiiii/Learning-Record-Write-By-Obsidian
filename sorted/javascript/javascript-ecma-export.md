@@ -1,4 +1,4 @@
-# export
+# ECMAScript Module Export
 
 ## feature
 

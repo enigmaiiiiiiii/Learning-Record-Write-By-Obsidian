@@ -1,12 +1,12 @@
 # 模块模式
 
-## 两种模块模式
+## Two Module Systems
 
-[ECMAScript模块](javascript-module-es6.md)
+[ECMAScript](javascript-ecma-module.md)
 
-[CommonJS](javascript-module-commonjs.md)
+[CommonJS](javascript-commonjs-module.md)
 
-> [ECMASCript]支持模块之前的模块加载模式
+> [ECMASCript]~~支持模块之前的模块加载模式~~
 
 [Relate](javascript-module-of-es-and-commonjs.md)
 

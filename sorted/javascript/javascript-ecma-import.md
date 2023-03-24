@@ -1,14 +1,14 @@
-# import
+# ECMAScript Module Import
 
-- [abstract](#abstract)
-- [默认导入](#默认导入)
-- [命名空间导入](#命名空间导入)
+- [whats this](#whats-this)
+- [default import](#default-import)
+- [namespace import](#命名空间导入)
 - [导入多个接口](#导入多个接口)
 - [导入带别名接口](#导入带别名接口)
 - [语法](#语法)
 - [动态加载模块](#动态加载模块)
 
-## abstract
+## whats this
 
 ```js
 import default_name from 'module_path'
@@ -34,8 +34,10 @@ import myDefault, * as MyModule from 'modules/my-module.js'
 
 - MyModule.default和myDefault指向同一个导出绑定
 
-## 命名空间导入
+## namespace import
 
+- import a module namespace object
+- a module namespace object is an object describes all exports from a module
 - 可以有效避免命名冲突
 
 ```js
@@ -76,12 +78,3 @@ import "module-name";
   - 相对路径名引用必须以`/, ./, ../`开始
 - export: 被导入模块导出的接口名称
 - name: 导入模块对象的别名
-
-## 动态加载模块
-
-```js
-import('/modules/myModule.js')
-  .then(Module)=> {
-    // do something with module
-  }
-```
