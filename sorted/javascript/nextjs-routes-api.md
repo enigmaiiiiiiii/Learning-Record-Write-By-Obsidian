@@ -7,11 +7,11 @@
 - [send a response](#send-a-response)
 - [config](#config)
 
-## Introduction
+## What is this
 
 - create an [API](/unsorted/api.md) endpoint inside Next.js APP
 - do not fetch API Route from `getStaticProps` or `getServerSideProps`
-- access use `http://localhost:3000/apidir/jsfilename`
+- access use url like `http://example.com/apidir/jsfilename`
 - respect the [file system routing](nextjs-file-system-routing.md) rules
 
 ## Create Route API In Next.js APP
@@ -22,7 +22,7 @@ key points:
 
 talk about create a `http://localhost:3000/api/hello` in Next.js APP
 
-pages/api/hello.js
+- for `pages/api/hello.js`
 
 ```js
 export default function handler(req, res) {

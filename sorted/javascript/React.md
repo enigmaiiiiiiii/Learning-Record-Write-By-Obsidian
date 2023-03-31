@@ -67,4 +67,3 @@ tips of debug in vscode
 ## Bug
 
 [get stucked](react-learn-from-problem.md)
-

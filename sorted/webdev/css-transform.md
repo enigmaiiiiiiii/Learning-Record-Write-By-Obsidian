@@ -1,6 +1,6 @@
 # CSS Transform
 
-- [Introduction](#introduction)
+- [What it is](#what-it-is)
 - [feature](#feature)
 - [transform function pass to transform properties](#transform-function-pass-to-transform-properties)
 - [transform-box](#transform-box)
@@ -8,10 +8,10 @@
 - [Homogeneous Coordinates](#homogeneous-coordinates)
 - [transform functions](#transform-functions)
 
-## Introduction
+## What it is
 
 - rotate, scale, skew, translate an element
-- 几何变换, **不是动画**
+- 几何变换, **not animation**
 
 ## feature
 
@@ -33,21 +33,25 @@ rotate()
 
 translate()
 
+> transform element more about element its self
+
 - `transform: translate(x, y)`: translate on 2D plane
 - `transform: translateX(20px)`: translate on $(x, y)$ to $(x + 20px, y)$
 - `transform: translateX(20%)`: 20% is relative to the size [transform box](#transform-box)
   - percentage value is **different** from `left, right, top, bottom` in [positioning](css-positioning.md)
   - `positioning` is relative to the [**containing block**](css-containing-block.md)
 
-scale()
+> can't instead `top`, `left`, `bottom`, `right` in position property like `fixed`, `absolute`
+
+`scale()`
 
 - `transform: scale(val)`: scale on 2D plane
 
-matrix(): 变换矩阵
+`matrix()`: 变换矩阵
 
 - `matrix(a, b, c, d, tx, ty)`
 
-perspective(): 透视
+`perspective()`: (透视)
 
 - use for 3D transform
 

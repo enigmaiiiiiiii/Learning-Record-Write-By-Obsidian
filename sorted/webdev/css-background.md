@@ -2,7 +2,7 @@
 
 ## background
 
-- 作用于盒子模型的padding和内容区域
+- 作用于[盒子模型](css-box-model.md)的padding和内容区域
 
 属性设置
 

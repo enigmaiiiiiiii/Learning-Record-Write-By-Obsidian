@@ -6,7 +6,6 @@
 - [border](#border)
 - [margin](#margin)
 
-
 ## Feature
 
 - 这些属性在[block box](css-box-model-sorted.md#block-box)中可以被完全体现

@@ -12,7 +12,8 @@
 - `-C`: 提供一个个comment
 
 3. 系统提示`Enter a file in which to save the key(/c/Users/you/.ssh/id_algorithm): [Press Enter]`  
-    - 设置key文件存放位置, 按Enter表示接受默认
+
+- 设置key文件存放位置, 按Enter表示接受默认
 
 4. 提示输入安全短语(passphrase)
 
@@ -20,14 +21,19 @@
 
 `ssh-keygen -p -f ~/.ssh/id_ed25519`
 
+file list create in `~/.ssh` by above steps
+
+- id_ed25519
+- id_ed25519.pub
+
 ## 检查已存在的SSH keys
 
 1. Open Git Bash
 2. Enter `ls -al ~/.ssh`
-3. 如果已存在public SSH key, 则可能的文件为:  
+3. 如果已存在public SSH key, 则可能的文件为:
     - id_rsa.pub
     - id_ecdsa.pub
-    - id_de25519.pub
+    - id_ed25519.pub
 
 ## ssh-agent
 

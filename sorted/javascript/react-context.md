@@ -1,5 +1,9 @@
 # React Context
 
+- [what is this](#what-is-this)
+- [when to use](#when-to-use)
+- [how to use](#usage)
+
 ## what is this
 
 - provide some informations to entire **tree blow** it
@@ -15,7 +19,7 @@
   - a lot of state closer the top of app, so if
   - long distance component want to change the state of app
 
-## Usage
+## how to use
 
 create a context
 

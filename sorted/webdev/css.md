@@ -12,7 +12,7 @@
 
 [Inheritance](css-inheritance.md)
 
-[理解层叠性](css-understanding-the-cascade.md)
+[understanding the casade](css-understanding-the-cascade.md)
 
 [BFC](css-block-formatting-context.md)
 
@@ -29,6 +29,8 @@
 [Background](css-background-and-border.md)
 
 [Font](css-font.md)
+
+[box shadow](css-box-shadow.md)
 
 [Function](css-function.md)
 

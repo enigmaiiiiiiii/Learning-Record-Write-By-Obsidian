@@ -1,17 +1,15 @@
 # npm
 
-> Node.js的包管理工具
-
-- [npm可以用来](#npm可以用来)
+- [npm is used to](#npm-is-used-to)
 - [配置npm](#配置npm)
-- [Use npm](#use-npm)
 - [npm init](#npm-init)
 - [npm-install](#npm-install)
 - [npm run](#npm-run)
 - [npm package](#npm-package)
 - [npm exec](#npm-exec)
+- [npm show latest package version](#npm-show-latest-package-version)
 
-## npm used for
+## npm is used to
 
 - 调整应用程序代码包
 - 下载立即使用的独立工具
@@ -25,7 +23,7 @@
 - 发现解决同一难题的多种方法。
 - 寻找正在处理类似问题和项目的其他开发人员。
 
-## 配置npm
+## config npm
 
 - 命令行参数设置
 - 环境变量`npm_config_<key>`
@@ -87,6 +85,13 @@ options
 
 - prevent saving to `dependencies`
 - 不会添加到`package.json`
+
+`--legacy-peer-deps`
+
+- from npm version 7, default behavior for resoving peer dependencies has changed
+- npm only allow installation of packages that have compatible peer dependencies
+- `--legacy-peer-deps` allows to use the older algorithm for resolving peer dependencies
+- not recommended for production use
 
 ## npm run
 

@@ -55,7 +55,7 @@ export default function Home() {
 
 - **use object `router.query`**
 
-for file `pages/post/[pid].js`
+next page code like this
 
 ```js
 import { useRouter } from 'next/router'
@@ -70,6 +70,8 @@ const Post = () => {
 export default Post
 ```
 
+for file `pages/post/[pid].js`
+
 - url like `/post/1`
 
 ```js
@@ -82,6 +84,15 @@ export default Post
 ```js
 // router.query is
 {pid: 'abc', foo: 'bar'}
+```
+
+for file `pages/post/[...slug].js`
+
+- url like `/post/a/b/c`
+
+```js
+// router.query
+{pid: ['a', 'b', 'c']
 ```
 
 ## multiple dynamic routes

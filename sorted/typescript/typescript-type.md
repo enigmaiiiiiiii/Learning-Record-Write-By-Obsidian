@@ -12,7 +12,6 @@
 - [Mapped Types](#mapped-types)
 - [Type Compatibility](#type-compatibility)
 
-
 ## What Is Type Annotation
 
 - Type annotations are a way to tell TypeScript what type of value a variable will refer to.
@@ -53,7 +52,7 @@ function getFavoriteNumber(): number {
 
 2. typescript [special types](#special-types)
 
-- `any`: 
+- `any`:
 - `noImplicitAny`:
 
 3. anonymous object type
@@ -194,19 +193,26 @@ window.onmousedown = function(mouseEvent) {
 
 > like type annotation, removed by compiler
 
+- use `as` keyword
 - 有时候对于有些值, coder自己知道类型, 而ts无法推断出来, 这时候可以使用类型断言
 - 使用类型断言后可以调用断言类型的方法
+
+```ts
+const x = "hello" as number; // error
+```
 
 ```ts
 interface Point {
     x: number;
     y: number;
 }
+
 interface Point3d extends Point {
     z: number;
 }
+
 function fb(p: Point) {
-    return (p as Point3d).z;
+    return (p as Point3d).z;  // access to z is legal
 }
 ```
 

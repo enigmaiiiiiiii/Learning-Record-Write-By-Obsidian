@@ -1,14 +1,21 @@
-# Display属性
+# Property Display
 
-- 决定一个元素的内部和外部显示类型
-  - 外部类型决定元素是块级元素还是行内元素
-  - 内部类型控制子元素的布局
+## what is this
+
+决定一个元素的内部和外部显示类型
+
+- [外部类型](#outer-dispaly-type)决定元素是块级元素还是行内元素
+- [内部类型](#inside-display-type)控制子元素的布局
+
+## Outer Display Type
 
 设置**元素对外**表现方式(Outer Display Type)
 
 - block: 生成一个[块级元素](css-box-model-sorted.md), 标签h1-h6, p, div默认block
 - inline: 生成一个[行内元素](css-box-model-sorted.md), 标签span, a, b, i, u, s默认inline
 - inline-block: 等价于inline flow-root
+
+## Inside Display Type
 
 设置**内部元素**表现方式(Inside Display Type)
 
@@ -23,8 +30,8 @@
 
 - table-cell: 元素行为类似于\<td>标签, 创建[BFC](css-block-formatting-context.md)
 
-element visible
+## element visible
 
 > compare with [visibility](css-visibility.md)
 
-- none: remove element from [normal flow](css-normal-flow.md)
+- none: **remove** element from [normal flow](css-normal-flow.md)

@@ -1,8 +1,14 @@
-# Effect Clean Up
+# When need Clean Up for useEffect
 
-## Handle Effect firing twice**
+- [Handle Effect firing twice](#handle-effect-firing-twice)
+- [Practical usage](#practical-usage)
+- [add event listener](#add-event-listener)
+- [connect to server](#connect-to-server)
+- [Fetch data](#fetch-data)
 
-- 因为react in development mode will remounts every commponent once immediately after its initial mount
+## Handle Effect firing twice
+
+- cause react intentionally run effect twice in dev mode
 - 所以需要考虑如何避免 [effect firing twice](react-create-app.md#development-mod)
 - 处理的思路通常集中在如何实现[cleanup function](#cleanup-effect)
 
@@ -14,7 +20,17 @@ useEffect(() => {
 }, [])
 ```
 
-## 实际应用场景
+## add event listener
+
+```js
+useEffect(() => {
+  functoin handleScroll(e) {
+    console.log(window.scrollX, window.scrollY);
+  }
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll)
+})
+```
 
 ## connect to server
 
@@ -51,3 +67,19 @@ useEffect(() => {
     }
 })
 ```
+
+## Triggering Animations
+
+```js
+useEffect(() => {
+  const node = ref.current;
+  node.style.opacity = 1;
+  return () => {
+    node.style.opacity = 0;
+  }
+}, [])
+```
+
+## sending analytics
+
+

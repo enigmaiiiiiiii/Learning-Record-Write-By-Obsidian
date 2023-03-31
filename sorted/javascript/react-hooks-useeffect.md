@@ -121,18 +121,25 @@ useEffect(() => {
 - `serverUrl, roomId` are dependencies
 - let react skip re-running the callback in useEffect if both values are the same during previous render
 
-empty dependencies
+empty array dependencies for Effect only run on **component mounts**
 
-- Effect only run when component mounts
+```js
+useEffect(fn, [])
+```
+
+omit the dependencies argument, the Effect will run after **every render**
+
+```js
+useEffect(fn)
+```
 
 ## Cleanup Effect
 
-[Cleanup effect](react-effect-cleanup.md)
+[Cleanup effect](react-hooks-effect-cleanup.md)
 
 ## Unneccessary useEffects
 
 [Unneccessary useEffects](react-remove-unneccessary-useeffect.md)
-
 
 ## reactive value change unintentionally
 

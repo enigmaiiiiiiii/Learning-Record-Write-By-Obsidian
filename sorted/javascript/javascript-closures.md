@@ -1,9 +1,11 @@
-# 闭包
+# Closure
+
+## what is a closure
 
 - 嵌套函数就是一个闭包
 - 闭包: 可以访问外部函数的参数和变量, 外部函数却不能使用它的参数和变量
 
-## 嵌套函数
+## nest function
 
 ```js
 function addSquares(a, b) {

@@ -46,7 +46,7 @@ one form of **static generation**
 
 ## SEO(搜索引擎优化)
 
-- Search engine optimization
+- search engine optimization
 
 ## Fast Refresh
 

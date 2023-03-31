@@ -26,6 +26,10 @@
 
 [Google Fonts](google-fonts.md)
 
+[emoji](emoji.md)
+
+[color scheme](web-dev-color-scheme.md)
+
 ## security
 
 [Token](web-dev-token.md)

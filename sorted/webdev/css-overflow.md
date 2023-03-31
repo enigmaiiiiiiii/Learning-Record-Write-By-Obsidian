@@ -1,6 +1,9 @@
 # Overflow
 
-## What for
+- [What's for](#whats-for)
+- [overflow Property](#overflow-property)
+
+## What's for
 
 - 当内容太多导致大于box的尺寸时, CSS为了不让内容丢失, 会发生overflow
 
@@ -19,7 +22,10 @@ overflow属性可以避免让内容看起来乱
 
 ## overflow Property
 
-- `overflow: visible;`: 装不下的内容不会被剪裁, 不会创建新的[BFC](css-block-formatting-context.md)
+- `overflow: visible;`
+  - Content is not Clipped
+  - may be rendered outside the content box
+  - 不会创建新的[BFC](css-block-formatting-context.md)
 - `overflow: hidden;`: 内容将被剪裁以适应填充框, 并隐藏 Scroll Bar
   - `overflow-x: hidden;`
   - `overflow-y: hidden;`
@@ -30,6 +36,8 @@ overflow属性可以避免让内容看起来乱
   - 不会创建新的[BFC](css-block-formatting-context.md)
   - ~~可以通过display: flow-root创建新的flow-root~~
 - `overflow: auto`
-  - 如果内容包含在padding box中，看起来和`overflow: visible`一样, 但是会创建[BFC](css-block-formatting-context.md)
-  - **provide scroll bar** if content overflows on desktop browser
-- `overflow: overlay`: 占用内容空间添加Scrollbar
+  - 如果内容包含在padding box中，看起来和`overflow: visible`一样
+  - establishes a new [BFC](css-block-formatting-context.md)
+  - on desktop browser, **provide scroll bar** if content overflows 
+- `overflow: overlay`
+  - add scrollbar for overflow content

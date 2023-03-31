@@ -9,14 +9,14 @@
 - [create gap](#create-gap)
 - [rest space](#rest-space)
 
-## introduction
+## what is this
 
 - element set `display: flex` performance for outside like [**block box**](css-box-model-sorted.md#block-box)
 - 一种将元素布局在单一维度的布局方式
 - main axis: 元素分布维度
 - cross axis: 元素分布维度的垂直方向
 - **flex container**: 属性设置为 display: flex 的元素称为 flex container
-- **flex Element**: flex container 的所有子元素称为 flex item
+- **flex item**: flex container 的所有子元素称为 flex item
 
 ## Main Axis
 
@@ -35,12 +35,12 @@
 
 ## flex Container
 
-属性
+property
 
 - `flex-direction: row;`: 设置 main axis 方向, 默认是 row
 - `flex-wrap: wrap;`: 内容太多会换行显示
 - `flex-flow: row wrap;`: 等于同时设置 flex-direction, flex-wrap
-- `aligin-items: center`:
+- `align-items: center`:
 
 ## flex Property
 

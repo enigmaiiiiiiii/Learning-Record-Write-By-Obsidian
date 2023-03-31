@@ -35,9 +35,35 @@ export default function form() {
 
   const fullname = firstname + ' ' + lastName;
 }
-
 ```
 
 4. Avoid duplication in state
 
 5. Avoid deeply nested state
+
+## inside useState
+
+```js
+let state;
+let id;
+
+function useState(initialState) {
+  state = state || initialState;
+    function setState(newState) {
+    state = newState;
+    render();
+  }
+  return [state, setState];
+}
+
+function render() {
+  const [count, setCount] = useState(0);
+  if (!id) {
+    // simulate trigger a event
+    id = setTimeout(() => setCount(10), 1000);
+  }
+  console.log(`render a component with state: ${count}`);
+}
+
+render();
+```

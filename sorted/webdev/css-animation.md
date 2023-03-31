@@ -2,7 +2,7 @@
 
 ## Animation Property
 
-`animation` property is short hand for:
+`animation` property is **shorthand** for:
 
 - 1. `animation-name`
 - 2. `animation-duration`
@@ -12,6 +12,23 @@
 - 6. `animation-direction`
 - 7. `animation-fill-mode`
 - 8. `animation-play-state`
+
+```css
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+```
+
+replace by
+
+```css
+p {
+  animation: 3s infinite alternate slidein;
+}
+```
 
 if value is time value, like 0.5s, 2s. Order of values is
 
@@ -52,6 +69,41 @@ order of other values
   100 {
     top: 100%;
     left: 100%;
+  }
+}
+```
+
+## Create An Animation
+
+index.html
+
+```html
+<link rel="stylesheet" href="style.css" />
+<body>
+  <div class="block">hello animation</div>
+</body>
+```
+
+style.css
+
+```css
+.block {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  background-color: #900;
+}
+
+@keyframes slidein {
+
+  from {
+    margin-top: 100%;
+    width: 30%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 ```
