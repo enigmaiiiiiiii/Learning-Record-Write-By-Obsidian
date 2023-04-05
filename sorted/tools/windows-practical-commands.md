@@ -1,5 +1,13 @@
 # Practical Command
 
+- [Check Port](#check-port)
+- [winget](#winget)
+- [Get-Help 获得帮助文档](#get-help-获得帮助文档)
+- [md](#md)
+- [dir](#dir)
+- [Directory Tree](#directory-tree)
+- [print env variable](#print-env-variable)
+
 ## Check Port
 
 查看所有端口
@@ -38,4 +46,9 @@ netstat -ano | findstr "8080"
 
 ```shell
 $env:VARIABLE_NAME
+```
+## command location
+
+```sh
+where.exe <command>
 ```

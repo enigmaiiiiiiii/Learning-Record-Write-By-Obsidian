@@ -16,9 +16,9 @@
 
 ## create NextJs app
 
-```bash
-npx create-next-app
-```
+[create nextjs app](nextjs-create-nextjs-app.md)
+
+
 
 ## Foundation
 

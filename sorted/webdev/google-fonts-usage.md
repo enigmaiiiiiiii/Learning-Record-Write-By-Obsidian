@@ -1,5 +1,8 @@
 # Use Google Font
 
+- [get google url from official website](#get-google-url-from-official-website)
+- [use in nextjs](#use-in-nextjs)
+
 ## get google url from official website
 
 click at right top corner to get url
@@ -46,3 +49,26 @@ export default function MyLayout({ children }) {
   )
 }
 ```
+
+## in tailwind css
+
+tailwind.config.js
+
+```js
+moduel.exports = {
+  content: [
+    './pages/**/*.js',
+    './components/**/*.js',
+  ],
+  theme: [
+    extend: {
+      fontFamily: {
+        'press-start-2p': ['\"Press Start 2P"', 'cursive'],
+        'smokum': ['Smokum', 'cursive'],
+      }
+    }
+  ]
+}
+```
+
+> font style with space must use `\"` to escape

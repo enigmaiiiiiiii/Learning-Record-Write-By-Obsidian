@@ -117,7 +117,9 @@ body * + * {
 
 ## 伪类选择器
 
-- 以`:`开头, 用于选择特殊状态的元素
+[pseudo-class list](css-pesudo-class.md)
+
+> 以`:`开头, 用于选择特殊状态的元素
 
 ---
 

@@ -32,6 +32,8 @@
 
 [box shadow](css-box-shadow.md)
 
+[outline](css-outline.md)
+
 [Function](css-function.md)
 
 [Transform](css-transform.md)

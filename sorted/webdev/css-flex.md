@@ -44,15 +44,31 @@ property
 
 ## flex Property
 
-sets how **flex item** will grow
+- set how **flex item** will grow
 
-- `flex: 200px`:
-- `flex: 2`
-- `flex` is shoothand for `flex-grow`, `flex-shrink`, `flex-basis`
-  - 1. `flex-grow: <number>`: ratio of the remaining space
-    - when number is positive, allow item to fill any available space
-  - 2. `flex-shrink`: 最小可收缩比例
-  - 3. `flex-basis`
+`flex` is shoothand for `flex-grow`, `flex-shrink`, `flex-basis`
+
+- 1. `flex-grow: <number>`: ratio of how much of the **remaining space** should be assigned
+  - default: 0
+  - Nagative values are invalid
+  - when number is positive, allow item to fill any available space
+- 2. `flex-shrink`: when flex item is too big, how much should it shrink
+  - default: 1
+- 3. `flex-basis`: initial main size of a flex item
+  - basis value(基准值) grow or shrink
+  - default: auto
+  - flex: 0 0 300px 相当于创建了一个inflixible item
+
+may be specified using 1, 2, 3 values
+
+- one-value
+  - `flex: 2`: `flex 2 1 0`, means `flex: <flex-grow> 1 0`
+  - `flex: 200px`: `flex 1 1 200px`, means `flex: 1 1 200px`
+- two-value
+  - fisrt must be `flex-grow``
+  - number value with unit for `flex-shrink`
+  - number value without unit for `flex-basis`
+- three-value
 
 ```css
 article {
@@ -66,11 +82,6 @@ article:nth-of-type(3) {
 
 - flex item 最小尺寸 200px, 剩余空间按比例分配
 
-flex-basis
-
-- grow or shrink 基准值
-
-> flex: 0 0 300px 相当于创建了一个inflixible item
 
 ## flex-grow
 

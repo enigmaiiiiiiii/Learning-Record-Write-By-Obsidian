@@ -7,7 +7,7 @@
 - [section](#section)
 - [分区标签](#分区标签)
 - [img标签](#img标签)
-- [head标签](#head标签)
+- [head tag](#head标签)
 - [link](#link)
 - [meta标签](#meta标签)
 
@@ -46,9 +46,9 @@ attribute
 
 ## section
 
-- 代表一节
+- a section of a document, such as a chapter, a header, a footer, or a sidebar
 
-## 分区标签
+## divide area tag
 
 - div: 独占一行
 - span: **行内**元素共占一行
@@ -62,12 +62,12 @@ HTML5新增
 - section
 - nav
 
-## img标签
+## img tag
 
 - **行内块**元素, 共占一行
 - 可以修改宽高
 
-## head标签
+## head tag
 
 - 包含6个标签
   - title: 浏览器中显示的标签名称

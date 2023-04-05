@@ -22,7 +22,7 @@
 > thisArg is optional
 
 - 对数组中的每个元素调用`callbackfn`函数
-- 返回值: **新数组**
+- 返回值: **new array**
 - callbackfn自动传入三个参数: `element, index, array`
 - type of callbackfn: `(element, index, array) => {}`
   - element: 数组中的元素

@@ -28,6 +28,18 @@ optionally values
 
 - `inset`: shadow inside the frame
 
+```css
+.info {
+  box-shadow: 10px 10px 5px red inset;
+}
+```
+
 > display the content as if it were debossed(凹入) inside the box
 
 - `color`: shadow color
+
+```css
+.info {
+  box-shadow: 10px 10px 5px red inset, 0 0 5px blue;
+}
+```

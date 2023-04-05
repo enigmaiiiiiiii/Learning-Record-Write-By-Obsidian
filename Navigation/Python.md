@@ -1,11 +1,19 @@
 # python
 
-[命令行工具]()
+[Command Line]()
 
-[环境配置](python-environment-configuration.md)
+## Glossary
+
+[Python Interpreter](python-interperter.md)
+
+[Virtual Environment](python-virtual-environment.md)
+
+[conda](python-conda.md)
+
+## library
 
 [numpy](python-numpy.md)
 
-[[Pytorch]]
+[Pytorch]
 
-[[ctypes]]
+[ctypes]

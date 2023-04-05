@@ -1,6 +1,6 @@
 # JavaScript BOM Window
 
-# requestAnimationFrame(callback)
+## requestAnimationFrame(callback)
 
 - 浏览器的下一次重绘之前调用callback
 - 如果想要下次重绘时再次调用callback, 必须在callback中调用`window.requestAnimationFrame(callback)`

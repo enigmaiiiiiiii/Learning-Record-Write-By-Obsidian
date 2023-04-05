@@ -74,6 +74,8 @@
 
 [Bootstrap](/sorted/javascript/bootstrap.md)
 
+[three.js](/sorted/javascript/threejs.md)
+
 ## V: tool chain
 
 [webpack](/sorted/javascript/webpack.md)
