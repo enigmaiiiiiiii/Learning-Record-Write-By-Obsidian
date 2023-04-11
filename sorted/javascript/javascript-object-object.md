@@ -16,3 +16,7 @@
 `Object.keys(obj)`
 
 - 返回一个数组, 包含对象的所有可枚举属性的名称
+
+`Object.values(obj)`
+
+- return an **array** containing the given object's own [enumerable](javascript-property-sort.md#data-property) string-keyed property values

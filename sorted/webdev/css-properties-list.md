@@ -9,3 +9,15 @@
 ## letter-spacing
 
 - horizontal spacing behavior between text characters
+
+## pointer-events
+
+set a element can become the target of mouse events
+
+- `pointer-events: none`: never target of pointer events
+- `pointer-events: auto`:
+
+## z-index
+
+- set z-order of a [positioned](css-positioning.md#positioned-element) element
+- larger one cover smaller one

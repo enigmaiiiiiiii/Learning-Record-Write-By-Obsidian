@@ -1,12 +1,12 @@
-# 运算符
+# JavaScript Operator
 
-## 数学运算符
+## Math Operator
 
 - `+`, `-`, `*`, `/`, `%`, `**`
 - `++`, `--`
 - `+=`, `-=`, `*=`, `/=`
 
-## 比较运算符
+## Compare Operator
 
 `==`: 操作数相等返回true
 
@@ -15,3 +15,17 @@
 `===`: 操作数相等且**类型相同**返回true
 
 - 被比较值都不进行隐式转换
+
+## delete
+
+- remove **property** from object
+
+```js
+const Employee = {
+  firstname: 'John',
+  lastname: 'Doe',
+}
+
+delete Employee.firstname
+console.log(Employee.firstname) // undefined
+```

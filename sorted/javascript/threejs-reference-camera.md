@@ -17,6 +17,8 @@ Orthographic projection
 Constructor
 
 - `OrthographicCamera( left, right, top, bottom, near, far )`
+  - left, right, top, bottom: **view frustum** plane
+  - near, far: object outside this range will not be rendered
 
 ## Perspective Camera
 
@@ -25,3 +27,13 @@ Perspective projection
 - mimic the way the **human eye** sees
 - suitable for **realistic** and **natural-looking** rendering
 
+constructor
+
+- `PerspectiveCamera( fov, aspect, near, far )`
+  - fov: field of view
+  - aspect: aspect ratio
+  - near, far: object outside this range will not be rendered
+
+attribute
+
+- anything inside the definded frustum will be drawn. anything outside will not

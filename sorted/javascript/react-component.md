@@ -67,12 +67,13 @@ double curlies for **object** attribute value
 function TodoList() {
   return (
     <div>
-      <h1 styles={
-        {
+      <h1
+        styles={{
           color: 'red',
           fontSize: '20px'
-        }
-      }>To Do List
+        }}
+      >
+        To Do List
       </h1>
     </div>
   )
@@ -139,6 +140,23 @@ function B() {
 ## render
 
 - re-render on state change
+
+## inline style
+
+> css property value is string
+
+```jsx
+const element = (
+    <div
+        styles={{
+            color: 'red',
+            fontSize: '20px'
+        }}
+    >
+        To Do List
+    </div>
+);
+```
 
 ## keep component pure
 

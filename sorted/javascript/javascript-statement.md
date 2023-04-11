@@ -9,11 +9,13 @@ for-in
 
 for-of
 
-- 用于遍历可迭代对象的**元素**, 比如数组
+- each iteration create a new variable
+- reassigning the variable inside loop does not affect the original value
 
 ```js
-for (let v of list) {
-  // statement
+const list = [1, 2, 3];
+for (let l of list) {
+  console.log(l);
 }
 ```
 

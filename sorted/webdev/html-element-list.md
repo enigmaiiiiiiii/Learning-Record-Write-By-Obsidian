@@ -11,6 +11,10 @@
 - [link](#link)
 - [meta标签](#meta标签)
 
+## canvas
+
+- default size is 300x150
+
 ## textarea
 
 - can use like a comment on a review or feedback form

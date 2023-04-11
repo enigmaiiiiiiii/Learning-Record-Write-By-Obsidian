@@ -1,6 +1,25 @@
 # Getting started of Three.js
 
-## create camera
+- [Import Library](#import-library)
+- [Display Something](#display-something)
+- [bind renderer to DOM](#bind-renderer-to-dom)
+- [animate](#animate)
+
+## Import Library
+
+```js
+import * as THREE from 'three';
+```
+
+## Display Something
+
+to actually to display anything with three.js, we need three things: 
+
+- scene
+- camera
+- renderer
+
+create camera
 
 ```js
 import * as THREE from 'three';
@@ -12,17 +31,15 @@ const camera = new THREE.PerspectiveCamera(
   0.1,  //
   1000
 );
-
 ```
 
-PerspectiveCamera(fov, aspect, near, far)
+- PerspectiveCamera(fov, aspect, near, far)
+  - fov: field of view, value is in degrees(单位 is degrees)
+  - aspect: width / height
+  - near: objects closer than `near` won't be rendered
+  - far: objects further than `far` won't be rendered
 
-- fov: field of view, value is in degrees(单位 is degrees)
-- aspect: width / height
-- near: objects closer than `near` won't be rendered
-- far: objects further than `far` won't be rendered
-
-## render
+Create Scene
 
 ```js
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -31,6 +48,29 @@ const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 camera.position.z = 5;
+```
+
+Create Renderer
+
+```js
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+```
+
+## bind renderer to DOM
+
+Bind To React Component
+
+```js
+export default function Foo() {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    ref.current.appendChild(renderer.domElement);
+  }, []);
+
+  return <div ref={ref} />;
+}
 ```
 
 ## animate

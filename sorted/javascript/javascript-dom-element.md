@@ -13,6 +13,7 @@
 - clientWidth
   - includes [padding](css-box-model-properties.md)
   - but exculdes [border, margin](css-box-model-properties.md), scrollbars
+  - read only
 
 ## method
 

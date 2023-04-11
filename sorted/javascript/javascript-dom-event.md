@@ -57,6 +57,10 @@ document.onkeydown = function(e) {
 };
 ```
 
+## prevent pointer event
+
+[pointer-events style](/sorted/webdev/css-properties-list.md#pointer-events)
+
 ## constructor
 
 Event():

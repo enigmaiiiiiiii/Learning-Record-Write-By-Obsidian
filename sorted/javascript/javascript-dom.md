@@ -11,6 +11,16 @@
 
 - represents a node in the DOM tree
 
+remove all child node
+
+```js
+while (node.hasChildNodes()) {
+    node.removeChild(node.firstChild);
+}
+```
+
+> use for ... of modifying the DOM tree will cause unintended consequences
+
 ## Document
 
 - is a Special [Node](#node) represents the entire Web page
@@ -25,7 +35,8 @@
 structure
 
 - [Element](javascript-dom-element.md)
-  -[HTMLElement](javascript-dom-htmlelement.md)
+  - [HTMLElement](javascript-dom-htmlelement.md)
+  - [HTMLCanvasElement](javascript-dom-htmlcanvaselement.md)
 
 ## Event
 

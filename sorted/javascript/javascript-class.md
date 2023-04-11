@@ -41,19 +41,19 @@ p.__proto__.locate();  // on prototype
 - 在1处, this上的所有内容都会被添加到每个实例上
 - 在2处, locate()方法会被添加到[prototype](javascript-prototype.md)上
 
-## 构造方法
+## Contructor
 
 - `new Rectangle()`会调用`constructor`方法
 - 没有指定返回值, 会自动返回`this`
 - 但是可以指定返回值, 返回一个对象
 
-## method
+## Method
 
 原型方法: [prototype](javascript-prototype.md) method
 
 生成器方法: [Generator Method](javascript-generator-function.md)
 
-## 静态方法
+## Static Method
 
 [java](java-method.md#静态方法)和[c++](c++-static-member.md)中拥有相似的概念
 
@@ -75,7 +75,7 @@ p.locate();  // TypeError: p.locate is not a function
 
 ## Field(Property)
 
-- 公有字段
+- public property
 
 ```js
 class Point {
@@ -83,19 +83,19 @@ class Point {
 }
 ```
 
-- 私有字段, 字段前加`#`
+- private property, with prefix `#`
 
 ```js
 class Point {
-    #x = 0;  // 私有字段
+    #x = 0;  // private field
 }
 ```
 
-## 继承
+## Inheritance
 
 [继承](javascript-inheritance.md#类的继承)
 
-## 抽象基类
+## Abstract class
 
 - ECMAScript没有提供抽象基类的语法
 - 可以**目标抽象类**的构造函数使用new.target来判断该类是否可以被创建

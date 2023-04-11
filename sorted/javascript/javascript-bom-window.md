@@ -1,15 +1,19 @@
 # JavaScript BOM Window
 
-## requestAnimationFrame(callback)
+- [requestAnimationFrame(callback)](#requestanimationframe)
+
+## requestAnimationFrame
 
 - 浏览器的下一次重绘之前调用callback
 - 如果想要下次重绘时再次调用callback, 必须在callback中调用`window.requestAnimationFrame(callback)`
 
-Parameter
+Parameters
 
 - callback
-  - 下一帧重绘时调用的函数
-  - 该函数会接收一个DOMHighResTimeStamp参数, 表示当前时间
+  - function to call when next repaint
+  - callback receives a single argument
+    - parameter for this **callback** is **optional**
+    - a DOMHighResTimeStamp representing the **current time**
 
 example 1: element 每帧旋转
 

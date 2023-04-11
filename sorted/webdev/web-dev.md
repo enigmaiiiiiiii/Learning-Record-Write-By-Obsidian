@@ -14,6 +14,8 @@
 
 [CDN](cdn.md)
 
+[WebGL](webgl.md)
+
 ## tools
 
 [StackBlitz](stackblitz.md): website IDE

@@ -30,9 +30,11 @@
 
 [Font](css-font.md)
 
+[Color](css-color.md)
+
 [box shadow](css-box-shadow.md)
 
-[outline](css-outline.md)
+[Outline](css-outline.md)
 
 [Function](css-function.md)
 
@@ -44,7 +46,7 @@
 
 [shorthand and longhand](css-shorthand-and-longhand.md)
 
-[Properties List](css-property-list.md)
+[Properties List](css-properties-list.md)
 
 ## II
 

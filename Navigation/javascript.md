@@ -14,7 +14,7 @@
 
 [Collection](javascript-collection.md)
 
-[原始值与引用值](javascript-variable-copy-and-reference.md)
+[Primitive Value and Reference](javascript-variable-copy-and-reference.md)
 
 [Scope Chain](javascript-scope-chain.md)
 
@@ -46,13 +46,13 @@
 
 [JSON](/sorted/javascript/javascript-json.md)
 
+[Built-In Object List](javascript-built-in-object.md)
+
 ## III Web API
 
 [Browser Object Model](javascript-bom.md)
 
 [Docuement Object Model](../sorted/javascript/javascript-dom.md)
-
-[Built-In Object](javascript-built-in-object.md)
 
 [Web API](../sorted/javascript/javascript-server-api.md)
 

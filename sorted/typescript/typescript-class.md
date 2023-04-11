@@ -16,6 +16,17 @@
 
 ## constructor
 
+```ts
+class GoodGreeter {
+
+    name: string;
+
+    constructor() {
+        this.name = "hello";
+    }
+}
+```
+
 ## method
 
 ## getters/setters

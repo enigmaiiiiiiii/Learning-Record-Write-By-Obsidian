@@ -1,5 +1,15 @@
 # BOM
 
+- [Browser Object Model](#browser-object-model)
+- [location对象](#location)
+- [localStorage](#localstorage)
+- [sessionStorage](#sessionstorage)
+- [history对象](#history对象)
+- [window对象](#window对象)
+- [Navigator](#navigator)
+
+## Browser Object Model
+
 - 浏览器对象模型(Browser Object Model)
 - window对象，提供全局属性和方法, 可以省略window
 
@@ -10,7 +20,7 @@
   - TimeHandler: [函数对象](javascript-function.md)
   - number: 毫秒
 
-## location对象
+## location
 
 - location: 浏览器连接到的对象位置
 - location.href: 包含整个URL

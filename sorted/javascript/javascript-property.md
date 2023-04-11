@@ -40,11 +40,11 @@ const obj = {
 console.log(obj.foobar);  // hello
 ```
 
-## 属性分类
+## Property Sort
 
 - 属性的只读
 
-[属性](javascript-property-sort.md)
+[property sort](javascript-property-sort.md)
 
 ## 属性屏蔽
 
