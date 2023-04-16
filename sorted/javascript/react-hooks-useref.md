@@ -1,8 +1,9 @@
 # Hooks UseRef
 
-- [take a look](#take-a-look)
-- [feature](#feature)
-- [Contrast To UseState](#contrast-to-usestate)
+* [reference a component DOM](#reference-a-component-dom)
+* [reference a value](#reference-a-value)
+* [feature](#feature)
+* [Contrast To UseState](#contrast-to-usestate)
 
 ## reference a component DOM
 
@@ -38,7 +39,7 @@ function myComponent() {
 
 ## reference a value
 
-- reference a value that't not needed for rendering
+- reference a value whose changing won't cause re-render
 
 create useRef Obejct
 
@@ -58,7 +59,7 @@ function MyComponent() {
 }
 ```
 
-- internal is `0`
+- intervalRef.current **init** value is `0`
 - use `intervalRef.current` to set and get the value
 
 ## feature

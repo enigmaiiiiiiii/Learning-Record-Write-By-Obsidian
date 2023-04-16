@@ -30,3 +30,11 @@
 
 ## Viewing Frustum(视锥体)
 
+## alpha test
+
+- a technique to **reduce** the number of **pixels** that need to be **rendered**
+- use pixels alpha value to determine whether to render it or not
+- which can avoiding the performance overhead, for example
+  - leaves on a tree
+  - window on a building
+

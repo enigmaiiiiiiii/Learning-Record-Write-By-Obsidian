@@ -8,9 +8,9 @@
 ## 泛化(继承)
 
 - 派生类指向基类: 实线 + 空心三角箭头, 箭头指向基类
-- 主流[面向对象](c++-object-qriented-programming.md)语言中的继承
+- 主流[面向对象](c++-object-oriented-programming.md)语言中的继承
   -  派生类继承基类的所有特性, 并且可能覆盖基类的方法
-  - [可替换性](c++-object-qriented-programming.md#有继承关系的类型之间的转换): 在任何可以使用基类的代码中，应该能够替换为派生类
+  - [可替换性](c++-object-oriented-programming.md#有继承关系的类型之间的转换): 在任何可以使用基类的代码中，应该能够替换为派生类
 
 ## 依赖
 

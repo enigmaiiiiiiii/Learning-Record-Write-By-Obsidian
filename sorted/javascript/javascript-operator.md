@@ -29,3 +29,32 @@ const Employee = {
 delete Employee.firstname
 console.log(Employee.firstname) // undefined
 ```
+
+## bit operator
+
+`<<`: left shift
+
+- excess bits are discarded
+- zero bits are added to the right
+
+```js
+const a = 5  // 00000000000000000000000000000101
+const b = a << 2  // 00000000000000000000000000010100
+console.log(b)  // 20
+```
+
+- equal to `a * 2^2`
+
+`>>`: right shift
+
+- excess bits are discarded
+- zero bits are added to the left
+
+```js
+const a = 100  // 00000000000000000000000001100100
+const b = a >> 2  // 00000000000000000000000000011001
+console.log(b)  // 25
+```
+
+- equal to `a / 2^2`
+

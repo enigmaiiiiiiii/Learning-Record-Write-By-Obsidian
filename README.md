@@ -1,6 +1,6 @@
 # Note
 
-- Build Connection in my mind
+- Build Connection en Mind
 
 ## Content
 

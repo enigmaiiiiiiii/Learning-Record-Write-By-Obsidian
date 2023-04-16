@@ -1,5 +1,9 @@
 # Animation
 
+* [Animation Property](#animation-property)
+* [keyframes](#keyframes)
+* [Create An Animation](#create-an-animation)
+
 ## Animation Property
 
 `animation` property is **shorthand** for:
@@ -42,7 +46,7 @@ order of other values
 ## keyframes
 
 ```css
-@keyframes animationId {
+@keyframes animationName {
   from {
     property: value;
   }
@@ -52,10 +56,10 @@ order of other values
 }
 ```
 
-- animationId: name of the animation
+- `animationName`: relate to `animation-name` property value
 
 ```css
-@keyframes animationId {
+@keyframes animationName {
   0% {
     top: 0;
     left: 0;

@@ -28,7 +28,7 @@ function Welecom(props) {
 }
 ```
 
-**class component**
+[**class component**](react-class-component.md)
 
 ```jsx
 class Welcom extends React.Component {

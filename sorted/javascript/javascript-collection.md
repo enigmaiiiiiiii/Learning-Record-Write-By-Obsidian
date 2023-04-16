@@ -2,20 +2,26 @@
 
 ## Array
 
-创建一个空数组
+create an empty array
 
 ```javascript
 let colors = new Array();
 ```
 
-用数组字面量创建数组
+use array literal to create an array
 
 ```javascript
 let colors = ["red", "blue", "green"];
 ```
 
+## Set
+
+```js
+const s = new Set();  //
+```
+
 ## Map
 
 ```javascript
-const m = new Map();  // 创建一个空映射
+const m = new Map();  // create an empty map
 ```

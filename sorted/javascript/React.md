@@ -36,7 +36,6 @@
 
 [useMemo]()
 
-
 ## API
 
 [Access to DOM](react-api-refs.md)

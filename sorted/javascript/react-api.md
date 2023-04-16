@@ -1,5 +1,50 @@
 # API
 
+## forwardRef
+
+- lets component **expose a DOM node** to parent component
+
+`React.forwardRef(render)`
+
+- `render`: a function with `props` and `ref` as arguments
+  - `props`: props passed by parent component
+  - `ref`: mostly a variable return by [`useRef`]
+
+forward component
+
+```jsx
+const MyInput = React.forwardRef((props, ref) => {
+  const {label, ...otherProps} = props;
+
+  return (
+    <label>
+      {label}
+      <input {...otherProps} ref={ref} />
+    </label>
+  );
+
+});
+```
+
+parent component
+
+```jsx
+function Form() {
+  const ref = useRef(null);
+  function handleClick(){
+    ref.current.focus();
+  }
+  return (
+    <form>
+      <MyInput label="Name" ref={ref} />
+      <button type="button" onClick={handleClick}>
+        Edit
+      </button>
+    </form>
+  )
+}
+```
+
 ## react-dom/server
 
 ## ReactDOM

@@ -1,4 +1,4 @@
-# Basic Usage Of UseState
+# Basic Usage Of useState
 
 ## add state to component
 
@@ -13,7 +13,7 @@ function MyComponent() {
 
 ## return an array
 
-返回一个数组, 并通过[解构赋值](javascript-variable-assignment.md#数组解构)
+return an array, assignment through [unpack value](javascript-variable-assignment.md#数组解构)
 
 ```js
 const [count, setCount] = useState(0);

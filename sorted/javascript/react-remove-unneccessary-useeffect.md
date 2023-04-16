@@ -9,7 +9,7 @@
 - [Initializing the application](#initializing-the-application)
 - [Notifying parent components about state changes](#notifying-parent-components-about-state-changes)
 
-## caching expensive calculations
+## Caching Expensive Calculations
 
 - unnecessary and inefficient
 
@@ -30,6 +30,7 @@ function TodoList({ todos, filter }) {
 
 ```js
 function TodoList({todos, filter}) {
+
   const [newTodo, setNewToto] = useState('');
 
   const visibleTodos = getFilteredTodos(todos, filter);
@@ -72,7 +73,7 @@ export default function ProfilePage({ userId }) {
 ```js
 export default function ProfilePage({ userId }) {
   return (
-    <Profiel
+    <Profile
       userid={userId}
       key={userId}
     />
@@ -86,7 +87,7 @@ function Profile({ userId }) {
 }
 ```
 
-## adjusting some state when a prop changes
+## Adjusting some state when a prop changes
 
 for example reset `selection` to `null` whenever the `items` change
 
@@ -103,7 +104,7 @@ function List({ items }) {
 ```
 
 - Every time the `items` change, cause render with stale `selection`
-- then run `useEffect`, the `setSelection(null)` will cause another re-render
+- then run `useEffect`, the `setSelection(null)` will cause **another re-render**
 
 adjust the state directly during rendering
 

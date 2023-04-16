@@ -27,20 +27,20 @@
 ## Ⅲ
 
 [重载运算符](c++-reload-operator.md)
-  
+
 [[动态内存]]
 
 [构造，拷贝，析构](c++-construct-copy-destruct.md)
 
-[面向对象程序设计](c++-object-qriented-programming.md)
+[object](c++-object-qriented-programming.md)
 
-[模板编程](c++-template.md)
+[template](c++-template.md)
 
 [[c++_io类]]
 
-[多线程](c++-multithread.md)
+[multithread](c++-multithread.md)
 
-[正则表达式](c++-regex.md.md)
+[c++ regex](c++-regex.md.md)
 
 [STL](c++-stl.md)
 

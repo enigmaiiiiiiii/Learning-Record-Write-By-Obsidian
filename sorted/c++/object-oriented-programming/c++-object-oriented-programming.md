@@ -1,4 +1,4 @@
-# 面向对象程序设计
+# C++ Object oriented programming
 
 - OOP的核心思想是**多态(polymorphism)**
 

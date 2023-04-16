@@ -6,9 +6,9 @@
 
 ## introduction
 
-数组, 字符串, 对象展开
+> array, string, object spread
 
-example code for array and string
+for array and string
 
 ```js
 function fx(x, y, z) {
@@ -20,7 +20,7 @@ fx(numbers);  // 1, 2, 3
 fx(str);      // h, e, l
 ```
 
-example code for object
+for object
 
 ```js
 const obj1 = {foo: 'bar', x: 42};

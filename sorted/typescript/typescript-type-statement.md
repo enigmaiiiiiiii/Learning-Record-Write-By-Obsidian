@@ -9,12 +9,12 @@
 
 ## Introduction
 
-type语句在typescript有很多灵活的应用
+type statement in typescript has many flexible use
 
-- 用于**灵活创建**类型
-- 定义type aliases
-- 可以方便Union Types的使用
-- 可用于对象, 也可以用于基本类型
+- flexible type definition
+- define type aliases
+- define union types
+- can be use in both object and primitive types
 
 ## Name Type Alias
 
@@ -25,16 +25,36 @@ type Point = {
     y: number;
 }
 ```
-- Point表示一个类型符号, 这个类型有x和y两个属性, 且类型都是number
 
-## Use To Extend Type
+- `Point` represents a type symbol, this type has two properties, x and y, and the type of both properties is number
 
-可以用`&`来组合类型, 实现**extends**的效果
+## Extend type
+
+```ts
+interface Colorful {
+    color: string;
+}
+
+interface Circle {
+    radius: number;
+}
+
+interface ColorfulCircle extends Colorful, Circle {}
+const cc: ColorfulCircle = {
+    color: "red",
+    radius: 10,
+}
+```
+
+## Intersection Type
+
+use `&` to combine types
 
 ```ts
 type Animal = {
     name: string;
 }
+
 type Bear = Animal & {
     honey: boolean;
 }

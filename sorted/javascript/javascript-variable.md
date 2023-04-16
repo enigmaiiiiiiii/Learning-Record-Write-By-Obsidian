@@ -1,18 +1,18 @@
-# 变量
+# variable
 
-## 声明
+## Declaration
 
-[声明](javascript-variable-declaration.md)
+[Declaration](javascript-variable-declaration.md)
 
-## 赋值
+## Assignment
 
-[赋值](javascript-variable-assignment.md)
+[Assignment](javascript-variable-assignment.md)
 
-## 确定类型
+## check type
 
-- `typeof a;` 返回a的类型
+- `typeof a;` return type of a
 
-## NULL值
+## NULL
 
 - 表示一个空对象指针
 - 可以用来初始化一个未知对象的变量
@@ -29,7 +29,7 @@ let myNameArray = ['Chris', 'Bob','Jim',]
 let dog = {name: 'Spot', breed: 'Dalmatian'};
 ```
 
-## 赋值操作中的查询
+## LHS and RHS
 
 ```javascript
 function foo(a) {
@@ -39,7 +39,7 @@ function foo(a) {
 var c = foo(2);
 ```
 
-LHS查询
+LHS
 
 - `c=`
 - `a=2`, 隐式变量分配

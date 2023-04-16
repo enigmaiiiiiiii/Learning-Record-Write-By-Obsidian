@@ -1,15 +1,8 @@
 # Getting started of Three.js
 
-- [Import Library](#import-library)
-- [Display Something](#display-something)
-- [bind renderer to DOM](#bind-renderer-to-dom)
-- [animate](#animate)
-
-## Import Library
-
-```js
-import * as THREE from 'three';
-```
+* [Display Something](#display-something)
+* [Binding renderer to DOM](#binding-renderer-to-dom)
+* [animate](#animate)
 
 ## Display Something
 
@@ -57,7 +50,15 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 ```
 
-## bind renderer to DOM
+for MeshPhongMaterial, **need light**
+
+```js
+
+const light = new THREE.PointLight(0xffffff, 1, 100);
+scene.add(light);
+```
+
+## Binding renderer to DOM
 
 Bind To React Component
 

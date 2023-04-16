@@ -20,3 +20,12 @@
 scroll
 
 - Element.scrollIntoView()
+
+position only
+
+size only
+
+position and size
+
+- getBoundingClientRect()
+  - return [DOMRect](javascript-dom.md#domrect) object

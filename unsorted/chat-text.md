@@ -1,0 +1,1 @@
+how to type a object type is set in typescript

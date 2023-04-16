@@ -7,6 +7,16 @@
 - [EventTarget.addEventlistener()](#eventtargetaddeventlistener)
 - [HTMLCollection](#htmlcollection)
 - [XMLHttpRequest](#xmlhttprequest)
+
+## DOMRect
+
+- [DOMRect](javascript-dom-domrect.md)
+
+properties
+
+- x, y: position of the top-left corner of the rectangle
+- width, height: rectangle size include padding and border width
+
 ## Node
 
 - represents a node in the DOM tree

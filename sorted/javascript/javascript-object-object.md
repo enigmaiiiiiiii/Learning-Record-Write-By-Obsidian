@@ -2,14 +2,22 @@
 
 - 所有引用类型继承自Object
 
-## 方法
+## Method
 
-- toString(): 返回表示该对象的字符串
-- valueOf(): 返回对象的原始值
+- toString(): return a string representing the object
+- valueOf(): return the primitive value of the specified object
 - isPrototypeOf()
 - create()
-  - 创建一个新对象, 使用现有对象作为新对象的原型
+  - create a new object, using an existing object as the [prototype](javascript-prototype.md) of the newly created object
 
+## Static Method
+
+Object.Keys(obj)
+
+- return an array of obj property names
+  - [**enumerable**](javascript-property-sort.md) property
+  - string-keyed property names
+  - directly defined on the object
 
 ## Static Method
 

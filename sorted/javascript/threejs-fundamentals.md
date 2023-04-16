@@ -110,6 +110,30 @@ const material = new THREE.MeshBasicMaterial({
 })
 ```
 
+built-in materials
+
+- MeshBasicMaterial: not affected by light
+- MeshPhongMaterial: computes lighting at every pixel
+- MeshLambertMaterial: computes lighting only at the [vertices](webgl.md#vertex)
+- MeshNormalMaterial: use **vectors** to determine color for each pixel
+  - x is red
+  - y is green
+  - z is blue
+
+shared properties
+
+```js
+const material = new THREE.MeshBasicMaterial({
+  // ... properties
+})
+```
+
+- flatShading: faceted or smooth
+- side: which side to show
+  - THREE.FrontSide
+  - THREE.BackSide
+  - THREE.DoubleSide
+
 ## Texture
 
 - **image** data used to draw the geometry

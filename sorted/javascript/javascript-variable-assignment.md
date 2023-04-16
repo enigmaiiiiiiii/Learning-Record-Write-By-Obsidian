@@ -1,10 +1,6 @@
-# 赋值
+# Variable Assignment
 
-## 解构赋值
-
-- 语法允许 unpack**数组中的值** 或 **对象属性**
-
-## 数组解构
+## Destructure Array
 
 ```javascript
 var foo = ['one','two','three'];
@@ -13,11 +9,11 @@ var [a = 1, b = 2, c = 3, d = 4] = foo;  // 提供默认值
 [a, b] = [b, a];
 ```
 
-正则表达式提取值
+regex group destructure
 
-- todo
+- [ ] to do
 
-## 对象解构
+## Destructure Object
 
 ```javascript
 const user = {id: 42, isVerified: true};
@@ -25,7 +21,7 @@ const {id, isVerified} = user;  // p=42, q=true
 var {p: foo, q: bar} = user; // foo=42, bar=true
 ```
 
-解构函数参数
+## Desctructure Function Parameter
 
 ```javascript
 function userDisplayName({displayName: name}) {

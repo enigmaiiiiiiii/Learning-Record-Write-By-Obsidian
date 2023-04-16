@@ -6,41 +6,82 @@
 
 [Fundamentals](threejs-fundamentals.md)
 
-[Loading 3d Model](threejs-loading-3d-model.md)
+[Loading 3D Model](threejs-loading-3d-model.md)
 
-## reference
+[Render Targets](threejs-render-targets.md)
 
-[Object3D](threejs-reference-object3d.md)
+[Freeing Resources](threejs-dispose-object.md)
 
-[Renderer](threejs-reference-renderer.md)
+## Structure
 
-[Scene](threejs-reference-scene.md)
-
-[Camera](threejs-reference-camera.md)
-
-[Control](threejs-reference-controls.md)
-
-[Light]()
-
-[geometry](threejs-reference-geometry.md)
-
-[Point](threejs-reference-point.md)
-
-[material](threejs-reference-materials.md)
-
-[uniform](threejs-reference-uniform.md)
-
-[texture]()
-
-[mesh ](threejs-reference-mesh.md))
-
-[Group](threejs-group.md): almost identical to Object3D
-
-[CameraHelper]
-
-## Next
-
-[dispose](threejs-dispose-object.md)
+- core
+  - [Object3D](threejs-reference-object3d.md)
+  - [BufferGeometry](threejs-reference-buffergeometry.md)
+  - [Raycaster](threejs-reference-raycaster.md)
+  - [uniform](threejs-reference-uniform.md)
+- [Renderer](threejs-reference-renderer.md)
+  - WebGLRenderer
+  - WebGL1Renderer
+  - [RendererTarget](threejs-reference-renderertarget.md)
+    - WebGL3DRenderTarget
+    - WebGLArrayRenderTarget
+    - WebGLCubeRenderTarget
+    - WebGLMultipleRenderTargets
+- [Scene](threejs-reference-scene.md)
+  - Fog
+  - FogExp2
+  - Scene
+- [Camera](threejs-reference-camera.md)
+  - [PerspectiveCamera]()
+  - [OrthographicCamera]()
+- [Light](threejs-reference-light.md)
+  - AmbienLight
+  - AmbientLightProbe
+  - DirectionalLight
+  - HemisphereLight
+  - PointLight
+  - ...
+- [geometry](threejs-reference-geometry.md)
+  - BoxGeometry
+  - CircleGeometry
+  - CapsuleGeometry
+  - Conegeometry
+  - CylinderGeometry
+  - DodeCachedronGeometry
+  - ...
+- [material](threejs-reference-materials.md)
+  - MeshBasicMaterial
+  - MeshNormalMaterial
+  - MeshPhongMeterial
+  - MeshDepthMaterial
+  - MeshDistanceMaterial
+  - MeshLambertMaterial
+  - LineBasicMaterial
+  - ...
+- [Objects]
+  - [mesh](threejs-reference-mesh.md))
+  - line
+  - LineLoop
+  - LineSegments
+  - LOD
+  - Mesh
+  - [Point](threejs-reference-point.md)
+  - Skeleton
+  -[Group](threejs-reference-group.md): almost identical to Object3D
+  - ...
+- [texture]()
+  - CanvasTexture
+  - Compressedtexture
+  - CompressedArrayTexture
+  - CubeTexture
+  - Data3DTexture
+  - ...
+- [Controls](threejs-reference-controls.md)
+  - ArcballControls
+  - DragControls
+  - OrbitControls
+- helpers
+  - [CameraHelper]
 
 ## solutions
 
