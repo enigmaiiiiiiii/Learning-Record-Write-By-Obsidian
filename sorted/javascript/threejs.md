@@ -12,6 +12,8 @@
 
 [Freeing Resources](threejs-dispose-object.md)
 
+[.clone method](threejs-clone-method)
+
 ## Structure
 
 - core
@@ -22,7 +24,7 @@
 - [Renderer](threejs-reference-renderer.md)
   - WebGLRenderer
   - WebGL1Renderer
-  - [RendererTarget](threejs-reference-renderertarget.md)
+  - [RendererTarget](threejs-reference-rendertarget.md)
     - WebGL3DRenderTarget
     - WebGLArrayRenderTarget
     - WebGLCubeRenderTarget
@@ -69,7 +71,7 @@
   - Skeleton
   -[Group](threejs-reference-group.md): almost identical to Object3D
   - ...
-- [texture]()
+- [texture](threejs-reference-texture.md)
   - CanvasTexture
   - Compressedtexture
   - CompressedArrayTexture
@@ -81,7 +83,8 @@
   - DragControls
   - OrbitControls
 - helpers
-  - [CameraHelper]
+  - [CameraHelper]()
+  - [AxesHelper]()
 
 ## solutions
 

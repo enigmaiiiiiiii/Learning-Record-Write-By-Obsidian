@@ -1,6 +1,6 @@
-# 基础
+# Foundation
 
-[primitive type](javascript-foundation-primitive.md)
+[Primitive Type](javascript-foundation-primitive.md)
 
 [Array](javascript-foundation-array.md)
 
@@ -12,7 +12,7 @@
 
 [Prefined Function](javascript-predefined-functions.md)
 
-[Statement](/sorted/javascript/javascript-statement.md)
+[Statement](javascript-statement.md)
 
 [Symbol](javascript-symbol.md)
 

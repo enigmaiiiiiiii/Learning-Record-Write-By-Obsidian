@@ -67,3 +67,7 @@ function render() {
 
 render();
 ```
+
+## desmonstrate with a simple example
+
+[example](simple-usestate-plain-js-implement.md)

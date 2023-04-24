@@ -19,7 +19,7 @@ function render() {
   const [count, setCount] = useState(0);
 
   if (!id) {
-    // simulate to trigger a event
+    // simulate to trigger an event
     id = setTimeout(() => {
       setCount(count + 1)
     }, 1000);

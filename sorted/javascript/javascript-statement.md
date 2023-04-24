@@ -19,17 +19,21 @@ for (let l of list) {
 }
 ```
 
-## break和continue
+## break vs continue
 
-- break退出循环
-- `break label`退出循环并执行label后的语句
-- continue跳过本次循环的剩余语句,进入下次循环
-- `continue label` 跳过本次循环执行label后的下一次循环
+- `break`: exit the loop
+- `break label`: exit the loop then execute the statement after the label
+- `continue`: skip the current iteration. enter the next iteration
+- `continue label`: skip the current iteration. enter the next iteration then execute the statement after the label
 
-## 标签语句
+## label statement
 
-- 语法`label: statement`
-- 用于break或continue语句实现控制流
+- `label: statement`
+- to implement stream control in break or continue statement
 
-## with语句
+```js
+```
+
+## with statement
+
 

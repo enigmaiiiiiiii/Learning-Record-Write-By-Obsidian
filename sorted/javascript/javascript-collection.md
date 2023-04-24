@@ -20,6 +20,10 @@ let colors = ["red", "blue", "green"];
 const s = new Set();  //
 ```
 
+`forEach()`
+
+- does not able to reassigned the value of element
+
 ## Map
 
 ```javascript

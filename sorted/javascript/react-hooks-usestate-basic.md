@@ -13,7 +13,7 @@ function MyComponent() {
 
 ## return an array
 
-return an array, assignment through [unpack value](javascript-variable-assignment.md#数组解构)
+return an array, assignment through [unpack value](javascript-variable-assignment.md#destructure-array)
 
 ```js
 const [count, setCount] = useState(0);

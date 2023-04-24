@@ -1,6 +1,10 @@
 # blender
 
-## hotkey
+## Switch Mode
+
+tab
+
+## Object Mode
 
 - g: grab
 - gx: grab and move on x axis
@@ -9,6 +13,20 @@
 - s: scale
 - sx: scale on x axis
 
-## operate
+## Edit Mode
 
+- g: grab
+- alt + s: flat translate select
+- crtl + l: select linked part
 
+## Useful Panel
+
+- `z`: object shading
+
+## Glossary
+
+- subvision
+
+## Moving
+
+- snap moving: shift + tab

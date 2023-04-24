@@ -86,5 +86,5 @@ document.querySelector("#maze");
 
 [XMLHttpRequest](javascript-xmlhttprequest.md)
 
-- 允许页面在不刷新的情况下与服务器交换数据
-- 大量用于AJAX编程
+- allow page to update without reloading the page
+- plenty use for AJAX programming

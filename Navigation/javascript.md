@@ -6,7 +6,7 @@
 
 [Glossary](javascript-terms.md)
 
-[JS Foundation](javascript-foundation.md)
+[Foundation](javascript-foundation.md)
 
 [Object Oriented](javascript-object-oriented.md)
 
@@ -57,6 +57,8 @@
 [Web API](../sorted/javascript/javascript-server-api.md)
 
 [Canvas]
+
+[WebGL](webgl.md)
 
 []
 

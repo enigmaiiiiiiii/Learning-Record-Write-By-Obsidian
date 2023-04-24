@@ -1,4 +1,4 @@
-# Threejs Foundamentals
+# Threejs Fundamentals
 
 ![threejs](/image/threejs-structure.svg)
 
@@ -11,6 +11,8 @@
 * [Material](#material)
 * [Texture](#texture)
 * [Light](#light)
+* [Animate](#animate)
+* [Render Target](#render-target)
 
 ## Summerize
 
@@ -72,7 +74,7 @@ function resizeRendererToDisplaySize(renderer) {
 ## Scene Graph
 
 - tree-like structure
-- [`scene`](threejs-api-scene.md) object defines the root of the tree
+- [`scene`](threejs-reference-scene.md) object defines the root of the tree
 - children are positioned and oriented relative to their parent
 - consist of
   - multiple Mesh
@@ -120,19 +122,11 @@ built-in materials
   - y is green
   - z is blue
 
-shared properties
-
 ```js
 const material = new THREE.MeshBasicMaterial({
   // ... properties
 })
 ```
-
-- flatShading: faceted or smooth
-- side: which side to show
-  - THREE.FrontSide
-  - THREE.BackSide
-  - THREE.DoubleSide
 
 ## Texture
 
@@ -167,3 +161,5 @@ function render(time) {
   requestAnimationFrame(render);
 }
 ```
+
+## Render Target

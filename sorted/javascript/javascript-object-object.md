@@ -12,7 +12,7 @@
 
 ## Static Method
 
-Object.Keys(obj)
+Object.keys(obj)
 
 - return an array of obj property names
   - [**enumerable**](javascript-property-sort.md) property
