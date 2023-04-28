@@ -24,27 +24,34 @@ C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
     - 静态链接库: .a(UNIX)/.lib (windows) 
     - 动态链接库: .so(UNIX)/.dll(windows)
 
+## Options
 
+`-o`
 
-## 参数
+- `gcc -o executable_file sourcefile`
+- running **complete** compile process, generate file with postfix `.exe` or `.out`
+- this file called [executable file](executable-file.md)
 
-- `-o`: 执行完整编译过程, 编译生成的[[可执行文件(executablefile)]]并命名为file
+`-S`
 
-  > `gcc -o executable_file sourcefile` 
-  
-- `-S`:执行前两步，编译生成汇编代码,对应文件后缀.s
+- `gcc -S sourcefile`
+- running first two steps, generate file with postfix `.s`
+- this file called [assembly file](c-assembly.md)
 
-  > `gcc -S sourcefile` 
-  
-- `-E`:只激活预处理
+`-E`:
 
-  > `gcc -E hello.c > hello.txt`
-  
-- `-v`
-- `-c`: 执行前三步，编译源文件但不链接，生成后缀名为.obj或.o的目标文件 
+- `gcc -E hello.c > hello.txt`
+- only active the preprocess step
 
-  > `gcc -c hello.c`
+`-v`
 
-## 文章  
+`-c`
 
-[gcc构建动态链接库](gcc-build-shared-libraries.md)
+- running first three steps, but not link, generate file with postfix `.obj` or `.o`
+- this file called [object file](c-objectfile.md)
+
+`gcc -c hello.c`
+
+## related article
+
+[gcc build shared lib](gcc-build-shared-libraries.md)

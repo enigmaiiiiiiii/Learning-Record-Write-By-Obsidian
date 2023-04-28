@@ -1,9 +1,10 @@
-# 对象移动
+# Object Move
 
-- 移动构造函数`Foo(Foo&&) {}`
+- move constructor `Foo(Foo&&) {}`
+
 - 移动赋值运算符`Foo operator=(Foo &&rhs) noexcept`
 
-[[c++_rvalue_reference]]
+[rvalue reference](c++-rvalue-reference.md)
 
 [[std_move函数]]
 

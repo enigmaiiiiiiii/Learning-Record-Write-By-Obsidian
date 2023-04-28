@@ -8,6 +8,8 @@
 
 [Constant](webgl-constants.md)
 
+[texture](webgl-texture.md)
+
 [Boilerplate](webgl-boilerplate.md)
 
 ## API

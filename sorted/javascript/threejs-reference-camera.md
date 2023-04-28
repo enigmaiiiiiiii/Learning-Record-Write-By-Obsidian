@@ -34,6 +34,7 @@ constructor
   - aspect: aspect ratio
   - near, far: object outside this range will not be rendered
 
-attribute
+feature
 
 - anything inside the definded frustum will be drawn. anything outside will not
+- `updateProjectionMatrix()` must be called after any change of parameters

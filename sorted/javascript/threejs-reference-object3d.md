@@ -56,3 +56,11 @@ scale
 ## Methods
 
 
+`getObjectByName(name: string): Object3D`
+
+- return the fisrt object with a matching name
+
+> most object name is empty, name need set manually
+
+getObjectById()
+

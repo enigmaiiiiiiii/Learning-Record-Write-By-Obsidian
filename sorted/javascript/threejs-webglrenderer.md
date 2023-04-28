@@ -1,9 +1,8 @@
 # WebGLRender
 
 * [Contructor](#contructor)
-* [properties](#properties)
-* [create a renderer](#create-a-renderer)
-* [render a scene](#render-a-scene)
+* [Properties](#properties)
+* [Methods](#methods)
 
 ## Contructor
 
@@ -19,22 +18,13 @@ parameters: object with properties defining the renderer's behaviour
 ## Properties
 
 - domElement: a **canvas element**
+- autoClear: Defines whether the renderer should automatically clear its output
 
-## Create A Renderer
+> it's useful to set false if render sperate viewport from different camera on the same canvas
 
-```js
-const renderer = new THREE.WebGLRenderer();
-```
+## Methods
 
-## Render A Scene
-
-```js
-renderer.render(fooScene, fooCamera);
-```
-
-- render picture that shoot by the `fooCamera` on the `fooScene`
-
-## Method
+`render(scene, camera)`
 
 `setRenderTarget(renderTarget, activeCubeFace, activeMipmapLevel)`
 
@@ -48,10 +38,12 @@ renderer.render(fooScene, fooCamera);
 
 - read pixel data from render target into buffer
 - parameters
-  - renderTarget
-  - x
-  - y
-  - width
-  - height
+  - renderTarget: 
+  - x: x coordinate of the left top corner of the area to read
+  - y: y coordinate of the left top corner of the area to read
+  - width: width of the area to read
+  - height: height of the area to read
   - buffer
+    - read pixel data into buffer
+    - `Uint8Array` type is supported in all cases
   - activeCubefaceIndex

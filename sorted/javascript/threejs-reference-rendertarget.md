@@ -10,9 +10,9 @@
 
 `WebGLRenderTarget(width, height, options)`;
 
-- width
-- height
-- options:
+- width: number of horizontal pixels, default 1
+- height: number of vertical pixels, default 1
+- options
   - ...
 
 ## use on material

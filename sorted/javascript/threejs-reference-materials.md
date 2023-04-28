@@ -23,6 +23,8 @@ opacity
 transparent: boolean
 
 - whether material is transparent
+- default is false
+- not effect on its [emissive color](threejs-reference-meshphongmaterial.md#properties)
 
 blending: Blending constant
 
@@ -36,19 +38,21 @@ blending: Blending constant
 
 ## MeshBasicMaterial
 
+```js
+const material = new THREE.MeshBasicMaterial({
+  color: 0x44aa88,
+  map: texture,
+  transparent: true,
+  opacity: 0.5,
+  blending: THREE.AdditiveBlending
+});
+```
 
 ## MeshNormalMaterial
 
 ## MeshPhongMaterial
 
-- a material that computes lighting on every pixel
-
-properties
-
-- emissive: a [color](threejs-reference-color.md) value, represent the material color affected by light
-  - default is black
-
-> object apperence color is the **combination** of emissive color and metarial color
+[threejs-reference-materials.md](threejs-reference-meshphongmaterial.md)
 
 ## MeshLambertMaterial
 

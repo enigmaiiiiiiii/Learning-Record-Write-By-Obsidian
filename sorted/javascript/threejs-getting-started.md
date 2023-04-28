@@ -12,7 +12,7 @@ to actually to display anything with three.js, we need three things:
 - camera
 - renderer
 
-create camera
+## Camera
 
 ```js
 import * as THREE from 'three';
@@ -32,7 +32,7 @@ const camera = new THREE.PerspectiveCamera(
   - near: objects closer than `near` won't be rendered
   - far: objects further than `far` won't be rendered
 
-Create Scene
+## Scene
 
 ```js
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -43,24 +43,27 @@ scene.add( cube );
 camera.position.z = 5;
 ```
 
-Create Renderer
+## Renderer
+
+> pencil of threejs
+
+create on existed [canvas](javascript-dom-htmlcanvaselement.md)
 
 ```js
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
+const canvas = document.querySelector('#three');
+const renderer = new THREE.WebGLRenderer({ canvas });
 ```
 
-for MeshPhongMaterial, **need light**
+- `canvas` is optional, if not provided, it will create a new one
+
+Add as child of DOM after Create
 
 ```js
-
-const light = new THREE.PointLight(0xffffff, 1, 100);
-scene.add(light);
+const element = document.querySelector('#three');
+element.appendChild(renderer.domElement);
 ```
 
-## Binding renderer to DOM
-
-Bind To React Component
+To React Component
 
 ```js
 export default function Foo() {
@@ -74,7 +77,15 @@ export default function Foo() {
 }
 ```
 
-## animate
+## Render A Scene
+
+```js
+renderer.render(scene, camera);
+```
+
+- `renderer` will render the `scene` shoot by the `camera`
+
+## Animate
 
 ```js
 function animate() {
@@ -82,8 +93,6 @@ function animate() {
 
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
-
-  rnderer.render(scene, camera);
 }
 
 animate();
@@ -91,3 +100,12 @@ animate();
 
 > here is the explaination [requestAnimationFrame()](javascript-bom-window.md#requestanimationframecallback)
 
+## light
+
+for MeshPhongMaterial, **need light**
+
+```js
+
+const light = new THREE.PointLight(0xffffff, 1, 100);
+scene.add(light);
+```

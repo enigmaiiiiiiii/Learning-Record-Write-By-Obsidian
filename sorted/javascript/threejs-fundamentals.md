@@ -13,6 +13,7 @@
 * [Light](#light)
 * [Animate](#animate)
 * [Render Target](#render-target)
+* [Basic Unit](#basic-unit)
 
 ## Summerize
 
@@ -27,11 +28,14 @@ object part
 - [ geometry ](#geometry)
 - [ material ](#material)
 - [ texture ](#texture)
-- [ light ](#mesh)
+- [ mesh ](#mesh)
+- [light](#light)
 
 Animate part
 
 - [requestAnimation](javascript-bom-window.md#requestanimationframe)
+
+unit
 
 ## Renderer
 
@@ -70,6 +74,7 @@ function resizeRendererToDisplaySize(renderer) {
   return needResize;
 }
 ```
+
 
 ## Scene Graph
 
@@ -163,3 +168,47 @@ function render(time) {
 ```
 
 ## Render Target
+
+a render target with 1 pixel
+
+```js
+const rtg = new THREE.WebGLRenderTarget(1, 1);
+```
+
+## Basic Unit
+
+- pixel is the basic unit
+- a pixel data is a 4 length array , `[r, g, b, a]`
+
+use renderer, [render target](), camera, scene to demonstrate
+
+- method `readRenderTargetPixels()` will read the pixel data from render target
+
+```js
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera(75, 1, 1, 10000);
+camera.position.z = 3;
+
+scene.add(camera);
+const geometry = new THREE.BoxGeometry(1, 1, 1);
+const material = new THREE.MeshBasicMaterial({
+  color: 0x2ae57f,
+})
+const mesh = new THREE.Mesh(geometry, material);
+scene.add(mesh);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: canvas });
+const rtg = new THREE.WebGLRenderTarget(1, 1);
+renderer.render(scene, camera)
+
+// use an array with 4 uint8 type element
+// if render target is 2x2, the array will be 4x4
+const buffer = new Uint8Array(4);
+render.readRenderTargetPixels(rtg, 0, 0, 1, 1, buffer);
+console.log(buffer)  // Unit8Array(4) [42, 229, 127, 255]
+```
+
+## Position
+
+- Object3D.position is the position of object's local position

@@ -1,15 +1,16 @@
-# 复制与引用 
+# copy and reference
 
-- 原始值时简单的数据，引用值则是由多个值构成的对象
-- **原始值**赋值行为是**复制**, 两变量相互独立
-- **对象**赋值行为是**引用**, 两变量指向同一对象
-- 所有函数的参数传递方式是复制
+- **primitive value** is simple data, reference value is object that consist of multiple values
+- **original value** is **copy**, two variables are independent
+- assignment value to an **Object** is **reference**, two variables point to the same object
+- all function parameters passing method are **copy**
 
-> 当对象作为参数时，参数和变量指向同一个对象, 该对象在堆内存上
-> 在改变参数所指内存之前，函数内修改参数的属性会反映到函数外部的对象上
-> 这并不意味着函数参数的传递方式是引用
-> 修改函数内部参数所指内存对象，将不会影响外部对象
-> 可以理解为传递对象参数实际传递的是对象[指针](c++-指针.md)的复制
+> when use object as parameter, the parameter and variable point to the same object, the object is on heap memory
+> before change the parameter point to memory, the function change the parameter's property will reflect to the object outside the function
+> this is **not** mean function parameter is passed by **reference**
+> modify the parameter's memory that point to will not affect the object outside the function
+> for example use `new` to reassign the parameter, the parameter will point to a new object
+> can be treat as pass object parameter is pass copy of [pointer](c++-pointer.md) point to the object
 
 ```javascript
 function setName(obj) {

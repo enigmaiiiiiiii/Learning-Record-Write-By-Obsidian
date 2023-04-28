@@ -1,10 +1,10 @@
 # Free Road
 
-## 设置代理
+## Set Proxy
 
 linux
 
-- 代理服务器已知
+- proxy server is known
 
 ```bash
 export https_proxy=http://127.0.0.1:8580 http_proxy=http://127.0.0.1:8580 all_proxy=socks5://127.0.0.1:858
@@ -16,7 +16,7 @@ windows
 export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:8100 all_proxy=socks5://192.168.231.1:810
 ```
 
-设置 $\rightarrow$ 网络和Internet $\rightarrow$ 代理 $\rightarrow$ 代理ip, 代理端口
+set $\rightarrow$ 网络和Internet $\rightarrow$ 代理 $\rightarrow$ 代理ip, 代理端口
 
 ## Goflyway
 
@@ -26,6 +26,6 @@ export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:810
 
 [gofly](https://we.gofly.cyou/)
 
-## 自动回复
+## Auto Response
 
 freeman105@gmail.com

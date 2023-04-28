@@ -27,4 +27,9 @@ void main() {
 
 ## uniform
 
+- provide values that will be the **same for everything** drawn in the frame
+
 ## varying
+
+- declared by vertex shader
+- used to pass data to fragment shader

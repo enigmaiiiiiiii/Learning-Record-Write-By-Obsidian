@@ -10,8 +10,7 @@ Dynamic import
 
 - or lazy loading
 - or asynchronously loading
-
-[import()](javascript-ecma-dynamic-import.md)
+- relate function [import()](javascript-ecma-dynamic-import.md)
 
 ## export
 

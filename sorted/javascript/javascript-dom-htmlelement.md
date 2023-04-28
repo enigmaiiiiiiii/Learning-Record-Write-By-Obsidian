@@ -4,15 +4,18 @@
 - [HTMLElement.offsetTop](#htmlelementoffsettop)
 - [HTMLElement.offsetParent](#htmlelementoffsetparent)
 
+
 ## HTMLElement.style
 
 getting style
 
-- style属性是一个CSS StyleDeclaration对象
-- **不包含**通过层叠机制从文档样式和外部样式中继承而来的样式
+- property `style` is a `CSS StyleDeclaration` object
+- **DOES NOT CANTAIN** style inherited from
+  - document
+  - external style sheets, eg: `<link rel="stylesheet" href="style.css">`
 
 ```javascript
-var x = document.getElementById("maze").style.property;
+const x = document.getElementById("maze").style.property;
 ```
 
 setting style

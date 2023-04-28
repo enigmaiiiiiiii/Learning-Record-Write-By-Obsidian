@@ -1,12 +1,11 @@
 # ECMAScript Module Import
 
-- [whats this](#whats-this)
-- [default import](#default-import)
-- [namespace import](#命名空间导入)
-- [导入多个接口](#导入多个接口)
-- [导入带别名接口](#导入带别名接口)
-- [语法](#语法)
-- [动态加载模块](#动态加载模块)
+* [whats this](#whats-this)
+* [Default Import](#default-import)
+* [namespace import](#namespace-import)
+* [import multiple module](#import-multiple-module)
+* [import multiple module with alias](#import-multiple-module-with-alias)
+* [语法](#语法)
 
 ## whats this
 
@@ -50,13 +49,13 @@ myModule.doThings()
 - 没有通配符直接引入的形式，如`import * from "module-name"`
 
 
-## 导入多个接口
+## import multiple module
 
-## 导入带别名接口
+## import multiple module with alias
 
 ***
 
-## 语法
+## Syntax
 
 ```js
 import defaultExport from "module-name";

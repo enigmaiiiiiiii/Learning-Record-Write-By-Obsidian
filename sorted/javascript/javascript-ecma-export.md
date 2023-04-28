@@ -1,51 +1,62 @@
 # ECMAScript Module Export
 
+* [feature](#feature)
+* [default export](#default-export)
+* [named export](#named-export)
+* [re-export/aggregation export](#re-exportaggregation-export)
+* [Syntax](#syntax)
+
 ## feature
 
-- 可以导出函数，变量，类
-- 要放在最外层，不能使用在函数中
-- 可以在声明之前export
+- function, variable, class can be export
+- must at the top level
+- can't be use inside function
+- can be export before declaration
 
 ## default export
 
-- 一个模块中只能有一个默认导出
+- one module can have **only one** default export
 
 ```js
 export default function() { ... }
 ```
 
-- 导入时可以使用任意名称
+- can use any name when import
 
-## 命名导出
+## named export
 
-- 一个模块可以用多个命名导出
+- one module can have multiple named exports
 
 ```js
 export { myfunction, myVariable }
 ```
 
-- 导入时必须使用导出的名称
+- must use export name when import
 
-## 重导出/聚合导出
+## re-export/aggregation export
 
-- 为了提高模块可用性，可以在一个父模块中**导入同时导出**不同的模块
+- to increase the modularity of your code, you can re-export in an parent module
 
-export from导入导出方式，function1, function2 在当前模块**不可用**
+`export from` import and export，
 
-```javascript
-export {default as function1, function2} from "bar.js";
+- `fooA`, `fooB` is not available in current module
+
+```js
+export {default as fooA, fooB} from "bar.js";
 ```
 
-import, export分开，function1, function2 在当前模块可用
+sperate `import`and `export`，
+
+- then `fooA`, `fooB` can be used in current module
 
 ```javascript
-import {default as function1, function2} from 'bar.js';
-export {function1, function2};
+import {default as fooA, fooB} from 'bar.js';
+export {fooA, fooB};
 ```
 
-## 语法
+## Syntax
 
-导出声明
+export declaration
 
 ```javascript
 // Exporting declarations

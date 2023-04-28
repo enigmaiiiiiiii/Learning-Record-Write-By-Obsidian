@@ -1,6 +1,6 @@
 # JavaScript Array
 
-- 任何类型元素都可以存储在数组中
+- can store element of any type
 - `let array = [1, 2, 3, 4, 5]`
 
 ## Property
@@ -11,26 +11,57 @@
 
 `push()`
 
-- 数组末尾添加元素, 返回数组长度
+- add element to the end of array
 
 `pop()`
 
-- 删除数组最后一个元素, 返回已删除元素
+- delete last element in array, return deleted element
 
 `map(callbackfn[, thisArg])`
 
 > thisArg is optional
 
-- 对数组中的每个元素调用`callbackfn`函数
-- 返回值: **new array**
-- callbackfn自动传入三个参数: `element, index, array`
+- call `callbackfn` function for each element in array
+- return value: **a new array**
+- `callbackfn` pass three parameter automaticlly: `element, index, array`
 - type of callbackfn: `(element, index, array) => {}`
-  - element: 数组中的元素
-  - index: 元素在数组中的索引
-  - array: 数组本身
+  - `element`: current element
+  - `index`: element index
+  - `array`: array its self
 - thisArg: callbackfn中的this值
 
-`forEach()`
+`forEach(callbackFn)`
 
-- 与map的区别是返回值, forEach()返回**undefined**
+> difference with `map()` is return value
 
+- `forEach()` return **undefined**
+
+`find(callbackFn)`
+
+- `callbackFn` is a function should return a boolean
+  - a [truthy value](javascript-foundation-primitive.md#boolean) to indicate a matching element has been found
+  - a falsy value otherwise
+  - arguments `element, index, array` are same as `map()`
+  - return the first element in the array that satisfies the provided testing function
+  - Otherwise, undefined is returned
+
+```js
+const inventory = [
+  { name: 'apples', quantity: 2 },
+  { name: 'bananas', quantity: 0 },
+  { name: 'cherries', quantity: 5 }
+]
+function isCherries(fruit) {
+  return fruit.name === 'cherries'
+}
+console.log(inventory.find(isCherries));
+```
+
+`flat(depth)`
+
+- create a new array with all sub-array elements concatenated into it
+- depth: default 1
+
+```
+[0, 1, 2, [3, 4]] -> [0, 1, 2, 3, 4]
+```

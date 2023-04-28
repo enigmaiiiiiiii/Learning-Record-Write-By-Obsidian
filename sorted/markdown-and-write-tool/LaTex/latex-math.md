@@ -1,11 +1,11 @@
 # LaTex数学
 
-- `^`: 数学环境下的上标
-- `&`: 数学环境下跳列符
-- `_`: 数学环境下的下标命令符
-- `$`: 数学环境命令符
+## Symbol
 
----
+- `^`: upper index
+- `&`: 数学环境下跳列符
+- `_`: foot label
+- `$`: math environment delimiter
 
 ## overbrace
 
@@ -76,9 +76,10 @@ inline matrix
 
 - inline matrix here $\begin{pmatrix} a & b \\[1mm] c & d \end{pmatrix}$
 - or
-$
-\begin{bmatrix}
-a & b \\[1mm]
-c & d
-\end{bmatrix}
-$
+  $
+  \begin{bmatrix}
+  a & b \\[1mm]
+  c & d
+  \end{bmatrix}
+  $
+

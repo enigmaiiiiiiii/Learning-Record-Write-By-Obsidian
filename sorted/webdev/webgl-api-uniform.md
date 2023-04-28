@@ -1,6 +1,10 @@
 # WegGL API uniform
 
-syntax
+## what for
+
+- specify values of [uniform](webgl-data-in-webgl.md#uniform) variable
+
+## syntax
 
 `uniform[1234][fi][v](location, value)`
 

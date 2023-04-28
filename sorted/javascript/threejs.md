@@ -56,13 +56,11 @@
   - MeshNormalMaterial
   - MeshPhongMeterial
   - MeshDepthMaterial
-  - MeshDistanceMaterial
-  - MeshLambertMaterial
   - LineBasicMaterial
   - ...
 - [Objects]
-  - [mesh](threejs-reference-mesh.md))
-  - line
+  - [mesh](threejs-reference-mesh.md)
+  - [line](threejs-reference-line.md)
   - LineLoop
   - LineSegments
   - LOD
@@ -85,6 +83,22 @@
 - helpers
   - [CameraHelper]()
   - [AxesHelper]()
+- [Math](threejs-math.md)
+  - [Vector3](threejs-reference-vector3.md)
+  - Vector4
+  - Vector2
+  - Matrix3
+  - [Matrix4](threejs-reference-matrix4.md)
+  - Box2
+  - Box3
+  - Line3
+  - [Color](threejs-reference-color.md)
+  - Frustum
+  - Cylindrical
+  - Euler
+  - ...
+- Extras/Curves
+  - [ CatmullRomCurve3 ](threejs-reference-catmullromcurve3.md)
 
 ## solutions
 

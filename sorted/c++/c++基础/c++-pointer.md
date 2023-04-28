@@ -1,12 +1,12 @@
-# 指针
+# Pointer
 
-- 指针存放某个对象的**地址**
-- 指针类型type*
+- Pointer store the **address** of an object
+- type of a Pointer is `Foo*`
 - 属于复合类型
-- 指针的值
-  - 指向一个对象
+- value of a pointer
+  - point to an object
   - 指向紧邻对象所占空间的下一个位置
-  - 空指针，字面值**nullptr**
+  - empty pointer，literal value is `nullptr`
   - 无效指针
   > 对于第二种和第三种，其使用受到限制，这些指针没有指向具体对象，试图访问这类指针的行为是不被允许的
 - 解引用符*
