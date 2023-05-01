@@ -4,23 +4,26 @@
 
 ## requestAnimationFrame
 
-- 浏览器的下一次重绘之前调用callback
-- 如果想要下次重绘时再次调用callback, 必须在callback中调用`window.requestAnimationFrame(callback)`
+- `window.requestAnimationFrame(callback)`
+- browser want to called `callback` on next repaint
+- you must call `requestAnimationFrame(callback)` in callback body, if you want to call callback on next repaint
+- generally match the display refresh rate
 
 Parameters
 
-- callback
+- `callback`
   - function to call when next repaint
   - callback receives a single argument
     - parameter for this **callback** is **optional**
     - a DOMHighResTimeStamp representing the **current time**
 
-example 1: element 每帧旋转
+example 1: element rotate on every repaint
 
 ```js
 function rotate(element) {
   function update(time) {
     element.style.transform = `rotate(${time / 1000}turn)`;
+    // call window.requestAnimationFrame() in callback body
     window.requestAnimationFrame(update);
   }
   update(0);

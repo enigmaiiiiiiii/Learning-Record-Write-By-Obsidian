@@ -61,7 +61,6 @@ a pair of functions
 
 [shader](webgl-shader.md)
 
-
 ## WebGL Constants
 
 - store the data that rendering pipeline needs

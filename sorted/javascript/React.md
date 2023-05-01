@@ -8,9 +8,11 @@
 
 [Glossary](react-glossary.md)
 
-[Render Element](react-render-element.md)
-
 [Component](react-component.md)
+
+[Render and Commit](react-render-and-commit.md)
+
+[Render Element](react-render-element.md)
 
 [Features](react-features.md)
 
@@ -34,7 +36,13 @@
 
 [useLayoutEffect](react-hooks-uselayouteffect.md)
 
-[useMemo]()
+---
+
+useful when optimize child component
+
+[useCallback](react-hooks-usecallback.md)
+
+[useMemo](react-hooks-usememo.md)
 
 ## API
 
@@ -43,6 +51,8 @@
 [React API](react-api.md)
 
 [lazy](react-api-lazy.md)
+
+[memo](react-api-memo.md): memoize a **component** props to avoid re-render
 
 ## III
 

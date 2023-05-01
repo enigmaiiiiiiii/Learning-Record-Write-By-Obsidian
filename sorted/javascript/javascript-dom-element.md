@@ -27,7 +27,7 @@
 
 scroll
 
-- Element.scrollIntoView()
+- `scrollIntoView()`
 
 position only
 
@@ -35,5 +35,9 @@ size only
 
 position and size
 
-- getBoundingClientRect()
+- `getBoundingClientRect()`
   - return [DOMRect](javascript-dom.md#domrect) object
+
+modify
+
+- `appendChild()`

@@ -1,7 +1,7 @@
 # Threejs Renderer
 
 * [Feature](#feature)
-* [Renerer Object](#renerer-object)
+* [Renderer Object](#renderer-object)
 * [Render Target](#render-target)
 * [Create Renderer](#create-renderer)
 * [Render Scene](#render-scene)
@@ -12,7 +12,7 @@
 
 - renderer will create a canvas element
 
-## Renerer Object
+## Renderer Object
 
 [WebGLRenderer](threejs-webglrenderer.md)
 

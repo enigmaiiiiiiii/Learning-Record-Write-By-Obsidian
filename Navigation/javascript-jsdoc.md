@@ -1,6 +1,6 @@
 # JSDoc
 
-## What it is
+## What It Is
 
 - API documentation generator for JavaScript
 
@@ -10,7 +10,7 @@ use jsdoc tools generate a HTML website
 jsdoc book.js
 ```
 
-## create jsdoc
+## Create Jsdoc
 
 - document syntax similar to **markdown**
 

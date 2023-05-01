@@ -1,5 +1,7 @@
 # Threejs CatmullRomCurve3
 
+## Constructor
+
 - create smooth 3d spline curve from a series of points
 
 ```js
@@ -18,4 +20,3 @@ CatmullRomCurve3(
   - chordal
   - catmullrom
 - tension: default 0.5
-

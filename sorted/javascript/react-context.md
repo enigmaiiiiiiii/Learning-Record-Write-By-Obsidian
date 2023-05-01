@@ -6,11 +6,9 @@
 
 ## what is this
 
-- provide some informations to entire **tree blow** it
+- provide some informations to entire **tree below** it
 
 ## when to use
-
-> don't overuse it, sometimes you don't need it
 
 - Theming: if you app lets the user change the theme
 - Current account: many components might need to know the currently logged in user
@@ -19,9 +17,11 @@
   - a lot of state closer the top of app, so if
   - long distance component want to change the state of app
 
+> don't overuse it, sometimes you don't need it
+
 ## how to use
 
-create a context
+1. create a context
 
 - common way is to manange a context in a file
 - `DemoContext.js`
@@ -35,7 +35,7 @@ export const LevelContext = createContext(val)
 - `val` is default context value
 - if you don't provide a default value, you can use `null`
 
-create root component for context
+2. create root component for context
 
 ```js
 import LevelContext from './DemoContext.js'
@@ -44,7 +44,7 @@ export default function ContextRoot() {
 
   return  (
     <LevelContext.Provider value={val}>
-      <App />
+      <Foo />
     </LevelContext.Provider>
   )
 }
@@ -52,7 +52,7 @@ export default function ContextRoot() {
 
 - `val` is context for the tree blow it
 
-read context
+3. read context in a child component of root
 
 ```js
 import { useContext } from 'react';

@@ -192,16 +192,17 @@ event-loop cycle: Promise (fulfilled) Promise {<fulfilled>}
 **misunderstanding 1**: callback pass to then() will be called after promise execute
 
 ```js
-const p = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
   console.log('promise log');
 })
-p.then(() => {
+promise.then(() => {
   console.log('then log');
 })
 ```
 
 - actually if promise didn't change state, **then handler function will not be called**
-- so the output is only `promise log`:
+- so the output is only `promise log`
+- add **resolve statement** in promise will lead to `then log` output
 
 **misunderstanding 2**: resolve is called after all task complete in promise
 

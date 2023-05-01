@@ -1,5 +1,7 @@
 # 2s duration animation with requestAnimationFrame
 
+function [requestAnimationFrame](/sorted/javascript/javascript-bom-window.md#requestanimationframe)
+
 ```js
 const element = document.getElementById('some-element-you-want-to-animate');
 let start, previousTimeStamp;

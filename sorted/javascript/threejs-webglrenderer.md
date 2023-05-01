@@ -30,20 +30,26 @@ parameters: object with properties defining the renderer's behaviour
 
 - set [render target]()
 - parameters
-  - renderTarget: a [render target](threejs-reference-renderertarget.md)
-  - activeCubeFace:
-  - activeMipmapLevel
+  - `renderTarget`: a [render target](threejs-reference-renderertarget.md)
+  - `activeCubeFace`:
+  - `activeMipmapLevel`
 
 `readRenderTargetPixels(renderTarget, x, y, width, height, buffer, activeCubefaceIndex)`
 
 - read pixel data from render target into buffer
 - parameters
-  - renderTarget: 
-  - x: x coordinate of the left top corner of the area to read
-  - y: y coordinate of the left top corner of the area to read
-  - width: width of the area to read
-  - height: height of the area to read
-  - buffer
+  - `renderTarget`
+  - `x`: x coordinate of the left top corner of the area to read
+  - `y`: y coordinate of the left top corner of the area to read
+  - `width`: width of the area to read
+  - `height`: height of the area to read
+  - `buffer`
     - read pixel data into buffer
     - `Uint8Array` type is supported in all cases
   - activeCubefaceIndex
+
+`setSize(width: Interger, height: Interger, updateStyle: Boolean)`
+
+- updateStyle
+  - default true
+  - if true, `width/height` will be applied to canvas style

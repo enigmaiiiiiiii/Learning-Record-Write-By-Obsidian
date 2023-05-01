@@ -14,7 +14,7 @@ function myComponent() {
   const tmpRef = useRef(null);
 
   function foo() {
-    tmpRef.current.appendChild()
+    tmpRef.current.focus()
   }
 
   return (
@@ -34,7 +34,7 @@ function myComponent() {
 }
 ```
 
-- useRef return an Object `tmpRef`
+- `useRef` return an Object `tmpRef`
 - with single property `current`, reference to the [DOM Element](javascript-dom-element.md)
 
 ## reference a value

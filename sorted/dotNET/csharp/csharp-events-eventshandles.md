@@ -1,4 +1,4 @@
-# 标准事件
+# Standard Event
 
 [code](csharp-standard-event-code.md)
 
@@ -24,7 +24,7 @@ class Program
 }
 ```
 
-##  传递数据
+## Passing Data
 
 - 声明一个类IncrementerEvnetArgs，派生自EvenetsArgs
 - 事件发布者使用这个类实例化泛型委托`EventHandler<IncrementerEvnetArgs>`

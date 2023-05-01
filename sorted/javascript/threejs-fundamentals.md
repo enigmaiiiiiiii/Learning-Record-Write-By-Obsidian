@@ -55,11 +55,11 @@ resolution
 const needResize = canvas.clientWidth !== canvas.width || canvas.clientHeight !== canvas.height;
 ```
 
-HD-DPI
+Handle HD-DPI
 
 - HD-DPI devices have 9x pixels for every pixels in non-HD-DPI devices
 - use `renderer.setPixelRatio()` is **not recommended**
-- to always know what the size being used. the other way is to do it yourself 
+- to always know what the size being used. the other way is to do it yourself
 
 ```js
 function resizeRendererToDisplaySize(renderer) {
@@ -74,7 +74,6 @@ function resizeRendererToDisplaySize(renderer) {
   return needResize;
 }
 ```
-
 
 ## Scene Graph
 
@@ -92,7 +91,7 @@ function resizeRendererToDisplaySize(renderer) {
 ## Mesh
 
 - drawing a specific `geometry` with a specific `material`
-- both `material` and `geometry` objsects can be used by multiple `Mesh`
+- both `material` and `geometry` object can be used by **multiple** by `Mesh`
 
 ```js
 const boxWidth = 1;

@@ -28,3 +28,11 @@ Object.keys(obj)
 `Object.values(obj)`
 
 - return an **array** containing the given object's own [enumerable](javascript-property-sort.md#data-property) string-keyed property values
+
+`Object.is(val1, val2)`
+
+- `NaN === NaN` is `false` ,but `Object.is(NaN, NaN)` is `true`
+
+```js
+Object.is([], [])  // false
+```

@@ -8,13 +8,40 @@
 
 ## Compare Operator
 
-`==`: 操作数相等返回true
+`==`: loose equality
 
-- 比较时，等式两边先转换为相同类型, 最终比较方式等同于`===`
+- when compare，two operands will first convert to same type, then compare use `===`
 
-`===`: 操作数相等且**类型相同**返回true
+```js
+"1" == 1 // true
+0 == false // true
+0 == null // false
+null == undefined // true
+```
 
-- 被比较值都不进行隐式转换
+`===`:
+
+- do not convert type before compare
+
+```js
+"hello" === "hello"; // true
+"hello" === "hola"; // false
+
+3 === 3; // true
+3 === 4; // false
+
+true === true; // true
+true === false; // false
+
+null === null; // true
+[] === [];  // false
+```
+
+`Object.is(val1, val2)`
+
+```js
+Object.is([], [])
+```
 
 ## delete
 

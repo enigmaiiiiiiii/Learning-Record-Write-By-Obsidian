@@ -1,4 +1,4 @@
-# std::future类模板
+# Template std::future
 
 - 通过[[std_async函数模板]]， [[std_promise类模板]]或[[std_packaged_task类模板]]异步操作提供一个std::future对象给该异步操作的创建者
 - 模板类型参数`T`表示异步操作的返回值的类型

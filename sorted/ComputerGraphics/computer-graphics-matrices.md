@@ -1,5 +1,9 @@
 # Matrices
 
+* [Transformation Matrices](#transformation-matrices)
+* [Only Translate On Position](#only-translate-on-position)
+* [Scaling Matrix](#scaling-matrix)
+
 ## Transformation Matrices
 
 $$
@@ -35,6 +39,31 @@ $$
 0 & 1 & 0 & y\\[1mm]
 0 & 0 & 1 & z\\[1mm]
 0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+translate vector $[1, 1, 1, 1]$ to $[4, 1, 1, 1]$
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 & 3\\[1mm]
+0 & 1 & 0 & 0\\[1mm]
+0 & 0 & 1 & 0\\[1mm]
+0 & 0 & 0 & 1
+\end{bmatrix}
+\times
+\begin{bmatrix}
+1 \\[1mm]
+1 \\[1mm]
+1 \\[1mm]
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+4 \\[1mm]
+1 \\[1mm]
+1 \\[1mm]
+1
 \end{bmatrix}
 $$
 

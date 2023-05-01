@@ -12,6 +12,8 @@
 
 [Freeing Resources](threejs-dispose-object.md)
 
+[transform](threejs-transform.md)
+
 [.clone method](threejs-clone-method)
 
 ## Structure
@@ -98,7 +100,9 @@
   - Euler
   - ...
 - Extras/Curves
+  - [curve](threejs-reference-curve.md)
   - [ CatmullRomCurve3 ](threejs-reference-catmullromcurve3.md)
+  - ...
 
 ## solutions
 
