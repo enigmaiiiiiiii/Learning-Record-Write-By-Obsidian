@@ -1,14 +1,15 @@
 # 网络命令
 
-[查看网络状态](#查看网络状态)
-[telnet](#telnet)
-[ftp](#ftp)
-[lftp](#lftp)
-[gaim](#gaim)
-[数据包截获工具](#数据包截获工具)
-[curl](#curl)
+* [查看网络状态](#查看网络状态)
+* [telnet](#telnet)
+* [scp](#scp)
+* [ftp](#ftp)
+* [lftp](#lftp)
+* [gaim](#gaim)
+* [tcpdump](#tcpdump)
 
-## 查看网络状态
+
+## network status
 
 - [[netstat]]
 

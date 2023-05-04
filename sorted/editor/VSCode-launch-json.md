@@ -35,9 +35,9 @@ mandatory for every launch configuration
 
 - `"type"`: the type of the app, `"node"` for built-in node debugger
 - `"request"`: `launch` or `attach`
-- `"name"`: Debug window 展示的名称
+- `"name"`: Display name of Debug window
 
-大多数调试器支持的Attributes
+Attributes that most debugger support
 
 - `"program"`: the entry file of the app
 - `"args"`: the arguments **pass to the app**

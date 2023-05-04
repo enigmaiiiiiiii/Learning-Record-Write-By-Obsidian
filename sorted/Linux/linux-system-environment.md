@@ -2,14 +2,16 @@
 
 ## set environment variable
 
-export
+export set `name` to `foo`
 
 ```sh
-export name="value"
+export name="foo"
 ```
 
+concatenate `name` value with `:bar` and set to `name`
+
 ```sh
-export name="$name:other_value"
+export name="$name:foo"
 echo $name
 ```
 
@@ -28,4 +30,3 @@ value:other_value
 ```bash
 env
 ```
-

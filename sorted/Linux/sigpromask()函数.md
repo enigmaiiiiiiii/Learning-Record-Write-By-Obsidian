@@ -1,4 +1,4 @@
-# 设置信号mask
+# set signal mask
 
 ```c
 #include <signal.h>

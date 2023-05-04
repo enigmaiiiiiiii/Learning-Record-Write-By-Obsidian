@@ -9,21 +9,19 @@ Windows    ~/AppData/Local/nvim/init.vim  (or init.lua)
 
 ## packer
 
-> Neovim中的插件管理工具
+> Plugin manager in neovim
 
-packer 提供的 command:
+commands provided by packer:
 
-- `:PackerInstall`: 安装插件
-- `:PackerClean`: 移除未使用或不能使用的插件
+- `:PackerInstall`: Install plugins
+- `:PackerClean`: remove unused plugins
 - `:PackerUpdate`: Clean and update
-- `:PackerCompile`: 修改插件配置后, recompile才能生效
-- `:PackerSync`: 执行 PackerUpdate 和 PackerCompile
+- `:PackerCompile`: after modify the plugin config, recompile to make it work
+- `:PackerSync`: execute `PackerUpdate` and `PackerCompile` in one
 
 ## Nvimtree
 
 ## TeleScope
-
-- 文件查找, 查看变量定义, 变量引用
 
 command:
 

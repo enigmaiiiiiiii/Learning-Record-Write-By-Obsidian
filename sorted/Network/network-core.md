@@ -1,8 +1,8 @@
 # 网络核心
 
-[报文](报文.md)
+[message](network-message.md)
 
-[分组](分组.md)
+[network-group](network-group.md)
 
 [socket](socket.md)
 

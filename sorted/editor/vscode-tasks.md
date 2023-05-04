@@ -1,11 +1,40 @@
-# 任务
+# Task
 
-- 通过vscode中的task可以配置为**运行脚本**和**启动程序**
+## what is this
 
-## 自定义任务
+- automate jobs inside and outside the development loop
+- Lots of tools exist to automate tasks like linting, building, packaging, testing
+  - Compiler like: Typescript Compiler
+  - Linters like: ESLint, TSLint
+  - build system: Make, Ant, Gulp, MSBuild
+- use task to **run scripts** and **launch programs**
 
-1. Terminal -> Configure Tasks -> Create tasks.json file from template -> Others
-2. 替换task.json中的内容
+## Create Task
+
+- Terminal -> Configure Tasks -> Create tasks.json file from template -> Others
+
+```json
+{
+  "version": "2.0.0",
+  "task": [
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": ["$eslint-stylish"]
+    }
+  ]
+}
+```
+
+- this let vscode run `npm run lint`
+
+## Run Task
+
+- Command Palette -> Run Task
+
+## Create Custom Task
+
+- this will create a `Run tests` task when run task command in vscode
 
 ```json
 {
@@ -30,20 +59,20 @@
 }
 ```
 
-- label: 在UI界面中显示的名称
-- type: 可以是shell或process
-  - shell: 通过shell运行脚本, bash, cmd, PowerShell
-  - process: 要执行的进程
+- `label`: 在UI界面中显示的名称
+- `type`: can be *shell script* or *process*
+  - shell: use shell run script, eg. bash, cmd, PowerShell
+  - process: eg. `node`, `npm`, `python`
 - **command**: 要执行的命令
-- windows: 命令行程序
-- group: 分组，
-- persentation: 如何处理任务输出
-  - reveal取值
-    - always: 总是显示输出
+- `windows`: 命令行程序
+- `group`: 分组，
+- `persentation`: how to handle the output
+  - `reveal` values
+    - always: always show the output
     - never
     - silent
-  - panel取值
-    - new: 创建新终端
+  - `panel` values
+    - new: create new terminal
     - shared
     - dedicated
     - current

@@ -7,7 +7,7 @@ linux
 - proxy server is known
 
 ```bash
-export https_proxy=http://127.0.0.1:8580 http_proxy=http://127.0.0.1:8580 all_proxy=socks5://127.0.0.1:858
+export https_proxy=http://127.0.0.1:11001 http_proxy=http://127.0.0.1:11001 all_proxy=socks5://127.0.0.1:11000
 ```
 
 windows
@@ -16,7 +16,7 @@ windows
 export https_proxy=http://192.168.231.1:8100 http_proxy=http://192.168.231.1:8100 all_proxy=socks5://192.168.231.1:810
 ```
 
-set $\rightarrow$ 网络和Internet $\rightarrow$ 代理 $\rightarrow$ 代理ip, 代理端口
+Settings $\rightarrow$ network and Internet $\rightarrow$ proxy $\rightarrow$ proxy ip and port
 
 ## Goflyway
 

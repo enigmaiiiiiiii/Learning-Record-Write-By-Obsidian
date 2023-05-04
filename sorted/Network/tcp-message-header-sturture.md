@@ -1,4 +1,4 @@
-# TCP 报文头部结构
+# TCP message header structure
 
 <table>
   <tr align="center">

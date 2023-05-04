@@ -1,4 +1,4 @@
-# 原生软件
+# Built-in Linux Software
 
 [[telnet]]
 

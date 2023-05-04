@@ -1,26 +1,26 @@
 # Linux
 
-## Linux概念
+## Linux Basic
 
-[系统目录结构](linux-system-directory.md)
+[Directory Structure](linux-system-directory.md)
 
-[原生软件](linux原生软件.md)
+[Built Software](linux-built-in-software.md)
 
-[用户 and 分组](linux-user-and-group.md)
+[user and group](linux-user-and-group.md)
 
-[账户管理相关目录](linux-account-manage-related-file.md)
+[File About Account Manange](linux-account-manage-related-file.md)
 
-[文件权限的概念](linux-file-permission.md)
+[File Permission](linux-file-permission.md)
 
-[文件描述符](linux-file-descriptor.md)
+[File Discriptor](linux-file-descriptor.md)
 
-[系统进程](linux-system-process.md)
+[System Process](linux-system-process.md)
 
-## Linux 命令
+## Linux Command
 
-[实用命令](linux-practical-command.md)
+[Practical Command](linux-practical-command.md)
 
-[App install](linux-software-install.md)
+[App Install](linux-software-install.md)
 
 [Download](linux-download-command.md)
 
@@ -28,7 +28,7 @@
 
 [File Management](linux-file-manage.md)
 
-[压缩备份](linux-file-back-command.md)
+[Compress and File Backup](linux-file-back-command.md)
 
 [System Command](linux-system-command.md)
 
@@ -46,7 +46,7 @@
 
 [environment variable](linux-system-environment.md)
 
-[Shell编程](linux-shell-programming.md)
+[Shell Programming](linux-shell-programming.md)
 
 ## Linux系统编程
 

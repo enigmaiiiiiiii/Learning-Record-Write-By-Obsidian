@@ -1,19 +1,18 @@
-# ideavim配置
+# Ideavim Config
 
-点击ideavim插件图标可以修改`~/.ideavimrc`配置文件
+click ideavim plugin icon and edit the  `~/.ideavimrc` config
 
-- 当前(20211020)配置文件内容
+- current(20211020) .ideavimrc
 
 ```vim
 set scrolloff=5
 
 set incsearch
-set hlsearch        " 高亮搜索
-set relativenumber  " 相对行号
+set hlsearch        " high light search result
+set relativenumber  " relative line number
 set nu
 set ts = 4
 set expandtab
-
 
 map Q gq
 map <CapLocks> <ESC>

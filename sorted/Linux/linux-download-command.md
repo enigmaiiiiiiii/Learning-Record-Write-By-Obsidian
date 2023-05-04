@@ -1,21 +1,24 @@
-# 软件下载
+# Download
+
+* [curl](#curl)
+  * [handle url redirect](#handle-url-redirect)
+  * [download file with authentication](#download-file-with-authentication)
 
 ## curl
 
-- 不使用UI界面, 向url发送数据的工具
 - if use `curl` with no options, it will do a GET request and display the result to Screen
 
-语法:
+syntax:
 
 `curl [options] [url]`
 
-输出文件名是远程文件名
+the file name will be the remote file name
 
 ```bash
 curl -O [url]
 ```
 
-或指定文件名
+specify the file name
 
 ```bash
 curl -o [filename] [url]
@@ -23,15 +26,23 @@ curl -o [filename] [url]
 
 ### handle url redirect
 
-下载文件时, 若url被重定向, 即[响应状态码为302](/sorted/network/http-response-message.md#状态行), 返回内容不是想要的
+description of this problem
 
-- 可以先使用`-I`选项, 查看返回的头信息
-- 或使用`-v`选项, 查看详细信息
+- after download a file, its size is 0
+- this is happenned when url being redirect
+- whose response is [status code 302](/sorted/network/http-response-message.md#状态行)
+- the return content is not the file you want
+
+solution
+
+- use `-I` option first, to check the response header
+- or use `-v` option, to check the verbose information
 
 ```bash
 curl -I [url]
 ```
-可能看到这样的信息
+
+probably output like this
 
 ```
 HTTP/2 302
@@ -42,9 +53,9 @@ vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accep
 location: https://someurl
 ```
 
-说明url被重定向到了`https://someurl`
+that is to say, url is redirect to `https://someurl`
 
-- 使用`-L`选项, 自动跟随重定向, 可以下载到想要的文件
+- use `-L` option, track the redirect url, and download the file
 
 ```bash
 curl -L [url]
@@ -52,7 +63,7 @@ curl -L [url]
 
 ### download file with authentication
 
-- 使用`-u`选项, 指定用户名和密码
+- use option `-u` to specify username and password
 
 ```bash
 curl -u username:password https://someurl

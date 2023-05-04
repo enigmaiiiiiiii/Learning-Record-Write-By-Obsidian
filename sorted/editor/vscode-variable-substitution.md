@@ -1,10 +1,15 @@
-# 变量替换
+# variable subsitution
 
-- 使用${variableName}来引用变量
+- to reference variable `foo`: `${foo}`
+
+## Variable List
+
 - ${userHome}
-- ${workspaceFolder}: vscode 打开目录的路径
+- ${workspaceFolder}: the opening directory path of vscode
 
-## 使用task.json查看变量
+## use task.json check variable
+
+[task.json](vscode-tasks.md)
 
 ```json
 {

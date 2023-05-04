@@ -1,0 +1,1 @@
+how to remove window environment path in wsl bash
