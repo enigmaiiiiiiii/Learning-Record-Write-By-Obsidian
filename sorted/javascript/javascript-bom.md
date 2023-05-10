@@ -35,12 +35,12 @@ Method
 
 [sessionStorage](javascript-bom-sessionstorage.md)
 
-## history对象
+## history
 
-- 浏览器的会话历史，不是WebExtensions history
-- back(), forward(), go()方法来完成在记录中向后向前跳转
+- browser session history，not WebExtensions history
+- provide `back()`, `forward()`, `go()` methods to jump backward or forward through the history stack
 
-## window对象
+## window
 
 [Window](javascript-bom-window.md)
 

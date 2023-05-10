@@ -50,6 +50,8 @@
 
 [http.request](nodejs-http-request.md)
 
+[readline](nodejs-readline.md)
+
 [Buffer](nodejs-buffer.md)
 
 ## Advance

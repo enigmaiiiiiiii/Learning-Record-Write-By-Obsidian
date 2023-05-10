@@ -2,13 +2,15 @@
 
 ## what is this
 
-- 用于在服务端实现模块代码组织
-- 如果想在浏览器中使用CommonJS模块，需要构筑桥梁, 比如[browserify](npm-browserify.md)
-- 使用module.exports指定模块的导出内容
+- use for organize code in server side
+- if you want to use CommonJS module，need tools, like [browserify](npm-browserify.md)
+- use module.exports to export object
 
-> 模块的主要用途是托管类定义
+> module's main purpose is to host class definition
 
-## 无论用require加载多少次，模块永远是单例
+## always singleton
+
+- no matter how many times you use `require` to load a module, the module is always a singleton
 
 ```javascript
 console.log('moduleA');
@@ -17,13 +19,13 @@ var a2 = require('./moduleA')
 console.log(a1 === a2); // true
 ```
 
+## exports Object
 
-## export
+- module is a object represent current module itself
+- exports is a property of module
+- exports value is an object use to export module
 
-- exports对象用于导出模块
-- exports是module的属性
-- module对象对象代表模块自身
-- node中一个文件就是一个模块
+> in node a file is a module
 
 use `module.exports` to export object
 
@@ -61,13 +63,13 @@ console.log(a);  // 50.26548245743669
 console.log(circle.r); // 4
 ```
 
-
-- 使用require()指定依赖
+- use `require()` to specify dependencies
 
 ```javascript
 var moduleA = require('/module')
 ```
-- node.js中require的参数可以使用
-  - 相对路径
-  - 绝对路径
-  - node_modules目录中的依赖标识符
+
+- node.js `require()` parameter can be the following string
+  - relative path
+  - absolute path
+  - node_modules directory dependency identifier

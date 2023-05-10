@@ -1,4 +1,4 @@
-# 参数
+# Parameter
 
 - [feature](#feature)
 - [Arguments Object](#arguments对象)
@@ -6,7 +6,7 @@
 
 ## Feature
 
-- ECMAScript不关心参数的数据类型, 也不关心参数的个数
+- ECMAScript don't care about the number or type of arguments
 
 ## Arguments Object
 

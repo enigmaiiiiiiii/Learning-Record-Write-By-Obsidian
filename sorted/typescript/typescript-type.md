@@ -35,7 +35,7 @@ function greet(name: string) {
 }
 ```
 
-函数返回值类型注解
+function return type annatation
 
 ```ts
 function getFavoriteNumber(): number {
@@ -116,7 +116,7 @@ any
 
 ## type statement
 
-[TypeScript_Type.md](typescript-type-statement.md)
+[type statement](typescript-type-statement.md)
 
 ## Union Types
 

@@ -12,10 +12,10 @@
 
 ## Static Method
 
-Object.keys(obj)
+`Object.keys(obj)`
 
 - return an array of obj property names
-  - [**enumerable**](javascript-property-sort.md) property
+  - [**enumerable**](javascript-property.md) property
   - string-keyed property names
   - directly defined on the object
 
@@ -24,6 +24,7 @@ Object.keys(obj)
 `Object.keys(obj)`
 
 - 返回一个数组, 包含对象的所有可枚举属性的名称
+- return a array, containing the names of [all enumerable properties](javascript-foundation-) of the given object
 
 `Object.values(obj)`
 
@@ -35,4 +36,19 @@ Object.keys(obj)
 
 ```js
 Object.is([], [])  // false
+```
+
+`Object.defineProperty(obj, prop, descriptor)`
+
+`Object.freeze(obj)`
+
+- prevent modification of existing property attributes and values
+
+```js
+const obj = {
+  prop: 42
+};
+Object.freeze(obj);
+obj.prop = 33;  // silently fail, throw error in strict mode
+console.log(obj.prop);  // 42
 ```

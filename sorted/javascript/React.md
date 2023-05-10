@@ -16,11 +16,13 @@
 
 [Features](react-features.md)
 
-[Router](react-router.md)
+[Access To Dom](react-access-to-dom.md)
 
 [context](react-context.md)
 
 [lazy loading](react-lazy-loading.md)
+
+[Router](react-router.md)
 
 ## Hooks
 
@@ -44,9 +46,11 @@ useful when optimize child component
 
 [useMemo](react-hooks-usememo.md)
 
-## API
+---
 
-[Access to DOM](react-api-refs.md)
+[custom hooks](react-hooks-custom-hooks.md)
+
+## API
 
 [React API](react-api.md)
 
@@ -54,13 +58,15 @@ useful when optimize child component
 
 [memo](react-api-memo.md): memoize a **component** props to avoid re-render
 
+[forward](react-api-forward.md): forward a **ref** to a child component
+
 ## III
 
 [NextJs](nextjs.md)
 
-[React Native](react-native.md): 使用ReactJS创建Android和iOS原生应用
+[React Native](react-native.md): use ReactJS to create Android And iOS application
 
-[React Query](react-query.md): 一个[React Hooks]()库
+[React Query](react-query.md): a [React Hooks]() library
 
 [React Router](react-router-dom.md)
 

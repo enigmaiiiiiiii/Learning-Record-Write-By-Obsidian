@@ -121,13 +121,13 @@ useEffect(() => {
 - `serverUrl, roomId` are dependencies
 - let react skip re-running the callback in useEffect if both values are the same during previous render
 
-empty array dependencies for Effect only run on **component mounts**
+**empty array dependencies** for Effect only run on **component mounts**
 
 ```js
 useEffect(fn, [])
 ```
 
-omit the dependencies argument, the Effect will run after **every render**
+**omit the dependencies** argument, the Effect will run after **every render**
 
 ```js
 useEffect(fn)

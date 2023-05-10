@@ -21,9 +21,10 @@
 
 ## how to use
 
-1. create a context
+1. create a **context**
 
 - common way is to manange a context in a file
+- use `createContext`
 - `DemoContext.js`
 
 ```js
@@ -35,7 +36,7 @@ export const LevelContext = createContext(val)
 - `val` is default context value
 - if you don't provide a default value, you can use `null`
 
-2. create root component for context
+2. create **root component** for context
 
 ```js
 import LevelContext from './DemoContext.js'
@@ -52,7 +53,7 @@ export default function ContextRoot() {
 
 - `val` is context for the tree blow it
 
-3. read context in a child component of root
+3. **read** context in a child component of root
 
 ```js
 import { useContext } from 'react';

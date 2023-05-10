@@ -8,7 +8,7 @@
 
 [Introduction](typescript-introduction.md)
 
-[Features](typescript-features.md)
+[Fundamentals](typescript-fundamentals.md)
 
 [Basic](typescript-fundation.md)
 

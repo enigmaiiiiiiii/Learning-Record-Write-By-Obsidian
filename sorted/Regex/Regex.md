@@ -1,54 +1,60 @@
 # regex
 
-- [1. `[]`匹配单个字符](#1-匹配单个字符)
-- [2. 量词](#2-量词)
-- [3. 预定义字符](#3-预定义字符)
-- [Group](#4-group)
+* [match single character](#match-single-character)
+* [number of occurrences](#number-of-occurrences)
+* [predefined characters](#predefined-characters)
+* [Group](#group)
 
-## 1. `[]`匹配单个字符
+## match single character
 
-- `[a-z]`: 匹配小写字符
-- `[a-z0-9]`: 匹配小写字符和数字
-- `[^abc]`: `^在`[]`表示取反, 不包含abc的字符
+use `[]` to match single character
 
-## 2. 量词
+- `[a-z]`: match the character from a to z
+- `[a-z0-9]`: match the character from a to z and 0 to 9
+- `[^abc]`: `^` in `[]`, represents not, match any character except a, b, c
 
-- `?`: ?前的内容出现0-1次, 相当于{0，1}
-- `+`: +前的内容最少出现1次, 相当于{1, }
-- `*`: *前的内容出现任意次, 相当于{0, }
-- `{n}`: {n}前面的内容出现n次
-- `{n, m}`: {n, m}前面的内容出现n次到m次
-- `{n, }`: {n, }前面的内容最少n次
+## number of occurrences
 
-## 3. 预定义字符
+- `?`: match the previous character/[group](#group) 0 or 1 time, equivalent to `{0, 1}`
+- `+`: match the previous character/group 1 or more times, equivalent to `{1, }`
+- `*`: match the previous character/group 0 or more times, equivalent to `{0, }`
+- `{n}`: match the previous character/group `n` times
+- `{n, m}`: match the previous character/group from `n` to `m` times
+- `{n, }`: match the previous character/group at least `n` times
 
-- `.`: 任意字符
+## predefined characters
+
+- `.`: any single character except `\n`
 - `\cx`:
-- `\n`: 换行符
-- `\r`: 回车符
-- `\s`: 空白字符, 包括空格，制表符，换页符
-- `\S`: 非空白字符
-- `\f`: 换页符
-- `\t`: 制表符
-- `\v`: 垂直制表符
+- `\n`: new line character
+- `\r`: carriage return character
+- `\s` whitespace character, including
+  - space
+  - tab
+  - form feed
+  - line feed
+- `\S`: Match non-whitespace character
+- `\f`: a form feed character
+- `\t`: tab character
+- `\v`: Match a vertical tab character
 
 ***
 
-- `\d`: 匹配一个数字字符
-- `\D`: 一个非数字
-- `\w`: 字母
-- `\W`: 非字母
-- `\num`: 正整数
-- `\b`: 单词边界，如：`er\b` 匹配*never*中的*er*,不能匹配*verb*中的*er*
+- `\d`: match any digit
+- `\D`: match any non-digit
+- `\w`: match any word characters, including digit, letter, and underscore
+- `\W`: not word characters
+- `\num`: match the num-th group
+- `\b`: match word boundary, which is the position between a word character
 
 ***
 
-`^`: 行首
-`$`: 行尾
+`^`: line start
+`$`: line end
 
 ## Group
 
-`()`用于分组, ()内为一组
+`()` use to group, inside `()` is one group
 
-(abc){3}: 匹配字符串abcabcabc
+`(abc){3}`: match string `abcabcabc`
 

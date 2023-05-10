@@ -1,5 +1,11 @@
 # get start
 
+* [Install](#install)
+* [CLI Tools](#cli-tools)
+* [compile single .ts file to js:](#compile-single-ts-file-to-js)
+* [run single .ts file](#run-single-ts-file)
+* [index.d.ts](#indexdts)
+
 ## Install
 
 **Install** typescript globally:
@@ -38,6 +44,13 @@ use `ts-node`: compile and run
 ts-node script.ts
 ```
 
+run single script in project with package.json
+
+- use `--skipProject` to skip loading `tsconfig.json`
+
+```s
+ts-node --skipProject script.ts
+```
 
 ## index.d.ts
 

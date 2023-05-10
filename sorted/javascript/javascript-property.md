@@ -1,52 +1,89 @@
-# 属性
+# Property
 
-## set property
+* [Basic](#basic)
+* [Object.defineProperty()](#objectdefineproperty)
+* [Data property](#data-property)
+* [Accessor properties](#accessor-properties)
+* [Object.getOwnPropertyDescriptor()](#objectgetownpropertydescriptor方法)
+* [Object.assign()](#objectassign方法)
 
-```js
-myObject.foo = "bar";
-```
+## Basic
 
-属性设置的过程, 以上面表达式为例:
+[Basic](javascript-property-basic.md);
 
-1. 检查`myObject`上是否有名为`foo`的属性, 如果存在则修改它的值
-2. 如果不存在, 则遍历对象的`[[Prototype]]`链
-3. 如果`[[Prototype]]`上不存在名为foo的属性, 则在myObject上创建一个名为foo的新属性
+## Object.defineProperty()
 
-## 访问属性
+- change detail of [property descriptor]()
+- defines a new property directly on an object
 
-- 也称为属性的`[[get]]`操作
-- 原始值不能有属性，但是添加属性的语句不会报错
-
-两条属性访问语句访问的是同一位置
+`Object.defineProperty(obj, prop, descriptor)`
 
 ```javascript
-var myObject = {
-  a: 2
-};
-myObject.a;  // 2
-myObject["a"];  // 2
+Object.defineProperty(person, "name", {
+  writable: false,
+  value: "Nicholas"
+});
 ```
 
-## Computed Property
+- parameter
+  - `obj`: the object on which to define the property
+  - `prop`: the name or Symbol of the property to be defined or modified
+  - `descriptor`: the [descriptor](#propertye-descriptor) for the property being defined or modified
 
-- define object **property name** that are dynamically computed
-- using `[]` and expression that evaluated as property name
+## Property Descriptor
 
-```js
-const propName = 'foo';
-const obj = {
-  [propName + 'bar']: 'hello'
-};
-console.log(obj.foobar);  // hello
-```
+- a object that describes a property
+- property descriptor hava 2 type
+  - data property
+  - accessor property
 
-## Property Sort
+Both data and accessor descriptors shared keys
 
-- 属性的只读
+- `configurable`: when to false
+  - property descriptor can't be changed
+  - property can't be deleted
+  - other attribute of its descriptor cannot be changed
+    - except `writable` can be changed from true to false
+- `enumerable`: whether can be use [`for-in` loop](javascript-statement.md#for-statement)
 
-[property sort](javascript-property-sort.md)
+data property keys
 
-## 属性屏蔽
+- `value`
+- `writable`
 
-[ ] to do
+accessor property keys
 
+- `get`
+- `set`
+
+## Data property
+
+- hava a position that holds a value
+
+data property hava 4 descriptor
+
+- Configurable: 属性是否可通过[delete](javascript-delete.md)删除, 属性的特性是否可修改
+- Enumerable: 表示属性是否可通过[for-in]()循环返回, 直接定义的属性，这个特性默认为true
+- Writable: 表示属性的值是否可被修改, 默认为true, 表示可被修改
+- Value: 包含属性实际的值, 即属性值的写入位置
+
+## Accessor properties
+
+- 访问器属性不包含数据值
+- 访问器属性的4个特性
+  - Configurable: 表示属性是否可以通过delete删除并重新定义, 特性是否可修改，是否可以改为数据属性
+  - Enumerable: 表示属性是否可通过[for-in](javascript-statement-)循环返回
+  - Get: 获取函数，在读取属性时调用。default `undefined`
+  - Set: 设置函数，在写入属性时调用，defalut `undefined`
+
+## Object.getOwnPropertyDescriptor()
+
+- get property's Descriptor , use descriptor to read the attribute
+
+## Object.assign()
+
+- merge multiple object, 复制源对象中Enumerable特性为true和自有属性赋值到目标对象
+- 接收多个Object参数
+  - 一个目标对象参数
+  - 多个源对象参数, 多个源对象的相同属性，使用最后一个源对象的值
+- 赋值期间出错，操作终止，且不会回滚

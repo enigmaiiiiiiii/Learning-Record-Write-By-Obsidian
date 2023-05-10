@@ -1,36 +1,36 @@
-# 原型
+# Prototype
 
-- JavaScript的对象有都一个特殊的**prototype**内置属性, 称为对象的**原型**
-- 通过`new`关键字创建的对象, 会继承prototype中的属性和方法
-- prototype属性的值是一个**对象**
+- every JavaScript object has a special **prototype** built-in property
+- when use `new` create a new object, object will will link to prototype
+- value of `prototype` is an **object**
 
-## 访问对象的原型
+## access to prototype
 
-> 官方没有提供直接访问对象原型的方法
+> official doesn't provide a way to access prototype
 
-- ~~JavaScript中通过`[[prototype]]`访问~~
-- 浏览器和`nodejs`提供了`__proto__`属性
+- ~~In JavaScript use `[[prototype]]` to access~~
+- browser and `nodejs` provide `__proto__` property to access prototype
 
-## prototype属性对属性访问的影响
+## prototype affect on property access
 
-**使用**一个**对象属性** 或 调用一个**对象方法**时
+when **read** to a **object property** or call a **object method**
 
-1. 触发[get]操作, get操作第一步是检查**对象本身**是否有这个属性
-2. 当属性不在当前对象中，需要从**原型属性**中递归查找
+1. trigger [get] operation, first check if **object itself** has this property
+2. when property not found in current object, search in prototype recursively
 
-**添加**一个**prototype链上层已存在的foo属性**时 , 存在三种情况:
+**add** a property that **already exist in top prototype chain**, there are three cases:
 
-1. 数据属性的[writable](javascript-property.md)特性没有被标记为只读, 当前对象添加一个新的foo属性，屏蔽上层属性
-2. writable被标记为只读，不会发生屏蔽
-3. 上层foo属性是一个[setter]属性, 会调用setter， 不会发生屏蔽
+1. if data property's [writable](javascript-property.md#property-descriptor) is not marked as readonly, current object add a new foo property, will shadow the upper foo property
+2. writable is marked as readonly, will not shadow the upper foo property
+3. upper foo property is [setter], will call setter， will not shadow the upper foo property
 
-## 原型链
+## Prototype Chain
 
-- 对象内部的属性查找链, 当前对象的prototype是第一个搜索范围
-- prototype链的顶层指向内置[Object.prototype](javascript-object.md)
-- Object.prototype包含JavaScript中许多通用功能，如toString(), valueOf()
+- the property search chain in object, current object's prototype is the first search scope
+- prototype chain top layer is point to [Object.prototype](javascript-object.md)
+- there are many common functions in Object.prototype, such as toString(), valueOf()
 
-## 模拟类的函数
+## use function to simulate class
 
 ```javascript
 function Foo() {
@@ -40,6 +40,6 @@ var a = new Foo();
 Object.getPrototypeOf(a) === Foo.prototype;
 ```
 
-调用new Foo()创建a时，将a的Prototype链接到Foo.prototype所指对象
+use `new Foo()` create `a`，will link `a`'s prototype to `Foo.prototype`
 
-- javascript中并没有创建类的多个实例的机制，只能创建多个对象，他们[Prototype链](javascript-原型链.md)关联同一个对象
+- there no mechanism to create multiple instances of a class in javascript, only can create multiple objects, their [prototype chain]() link to same object

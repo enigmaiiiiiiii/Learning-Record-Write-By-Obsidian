@@ -1,10 +1,45 @@
 # Generator Function
 
-## yield关键字
+* [Generator Function](#generator-function-1)
+* [keyword yield](#keyword-yield)
 
-[yield in CSharp](csharp-yield.md)
+## Generator Function
 
-语法
+- use `function*` declare a generator function
+- `*methodName()` declare a generator method
+
+generator function
+
+```js
+function* generator(i) {
+    yield i + 1;
+    yield i + 2;
+    yield i + 3;
+}
+const gen = generator(2);
+console.log(gen.next().value); // 3
+console.log(gen.next().value); // 4
+console.log(gen.next().value); // 5
+```
+
+generator method
+
+```js
+class Foo {
+    *generatorMethod(i) {
+        yield i + 1;
+        yield i + 2;
+        yield i + 3;
+    }
+}
+```
+
+
+## keyword yield
+
+[here is yield in CSharp](csharp-yield.md)
+
+syntax
 
 `[rv] = yield [expression]`
 
@@ -23,7 +58,7 @@ console.log(gen.next()); // { value: 'foo', done: false }
 console.log(gen.next(5)); // 执行x=5, 返回{ value: 5, done: false }
 ```
 
-理解yield关键字要点
+how to understand yield
 
 1. 用来暂停和恢复生成器函数的执行
 2. 生成器函数在遇到`yield`表达式之前, 正常执行
@@ -53,36 +88,3 @@ function* generatorFn() {
     yield* [1, 2, 3];
 }
 ```
-
-## 定义生成器函数
-
-- 用`function*`声明生成器函数
-- `*methodName()`声明一个生成器方法
-
-
-生成器函数
-
-```js
-function* generator(i) {
-    yield i + 1;
-    yield i + 2;
-    yield i + 3;
-}
-const gen = generator(2);
-console.log(gen.next().value); // 3
-console.log(gen.next().value); // 4
-console.log(gen.next().value); // 5
-```
-
-生成器方法
-
-```js
-class Foo {
-    *generatorMethod(i) {
-        yield i + 1;
-        yield i + 2;
-        yield i + 3;
-    }
-}
-```
-

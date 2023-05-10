@@ -1,6 +1,6 @@
 # Threejs Vector3
 
-## method
+## Method
 
 `lerpVectors(v1, v2, alpha): this`
 
@@ -19,3 +19,7 @@ console.log(v3); // Vector3 { x: 0.8, y: 0.8, z: 0.8 }
 
 - set x, y, z of this vector
 
+`length()`
+
+- Euclidean length of this vector
+- length = $\sqrt{x^2 + y^2 + z^2}$

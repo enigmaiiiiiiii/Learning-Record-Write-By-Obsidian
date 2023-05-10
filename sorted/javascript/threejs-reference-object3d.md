@@ -1,6 +1,10 @@
 # three.js Object3D
 
-## what is this
+* [What Is This](#what-is-this)
+* [Properties](#properties)
+* [Methods](#methods)
+
+## What Is This
 
 - base class for all objects in three.js
 - mostly use as a parent of a model
@@ -18,7 +22,7 @@ root
  └─*no-name*[Points]
 ```
 
-## properties
+## Properties
 
 parent
 
@@ -55,12 +59,14 @@ scale
 
 ## Methods
 
-
 `getObjectByName(name: string): Object3D`
 
 - return the fisrt object with a matching name
 
 > most object name is empty, name need set manually
 
-getObjectById()
+`getObjectById()`
+
+`getWorldDirection(target: Vector3)`
+
 

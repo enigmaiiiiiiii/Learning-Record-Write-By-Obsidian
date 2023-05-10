@@ -2,15 +2,15 @@
 
 ## I
 
-[术语概念](network-concept-and-terms.md)
+[Concept](network-concept-and-terms.md)
 
-[TCP&IP体系](tcp-ip-protocol-system.md)
+[TCP&IP System](tcp-ip-protocol-system.md)
 
-[网络核心](network-core.md)
+[Core of network](network-core.md)
 
-## 应用层
+## application layer
 
-[描述](network-application-layer.md)
+[description](network-application-layer.md)
 
 [http](network-http.md)
 
@@ -20,13 +20,13 @@
 
 [SSL](/sorted/network/network-ssl.md)
 
-[Web多媒体](network-web-media.md)
+[Web media](network-web-media.md)
 
-[浏览器](/sorted/network/network-browser.md)
+[Browser](/sorted/network/network-browser.md)
 
-## 运输层
+## transport layer
 
-[描述](/sorted/network/network-transport-layer.md)
+[description](/sorted/network/network-transport-layer.md)
 
 [TCP](tcp.md)
 

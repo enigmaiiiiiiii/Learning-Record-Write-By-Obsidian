@@ -1,22 +1,35 @@
 # Iteration in JavaScript
 
-- **调用**生成器函数, 会返回一个[Generator](javascript-generator.md)对象
-  - 生成器对象开始时处于暂停状态, 也就是说函数体内的代码还没有执行
-  - 生成器函数在首次调用`next()`方法时, 开始执行
-- 通过调用生成器对象的next()方法
-- yield关键字
+* [Description](#description)
+* [Generator Function](#generator-function)
+* [Generator](#generator)
+* [yield](#yield)
+* [Iterator protocol](#iterator-protocol)
+* [Iterable protocol](#iterable-protocol)
 
-## Generator Function(生成器函数)
+## Description
 
-[生成器函数](javascript-generator-function.md)
+- **calling** generator function, will return a [Generator](javascript-generator.md)对象
+  - at the beginning, [generator function](#generator-function) at paused state
+    - that is to say, the code in function body has not been executed
+  - generator function will execute at the first time when `next()` method is called
+    - the `next()` method is called through [ generator object ](#generator)
+- keyword yield
 
-## 生成器对象
+## Generator Function
+
+[Generator Function](javascript-generator-function.md)
+
+## Generator
 
 [Generator](javascript-generator.md)
 
-## Iterator protocol(迭代器协议)
+## yield
 
-- 用于定义JS中对象的迭代行为, 如`for...of`语句
+- used to pause and resume a generator function
 
-## Iterable protocol(可迭代协议)
+## Iterator protocol
+
+- use to define the iteration behavior of an object, such as `for...of` statement
+## Iterable protocol
 

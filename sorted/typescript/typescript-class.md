@@ -85,9 +85,9 @@ class MyClass {
 
 ## inheritance
 
-implements语句
+implements statement
 
-- 检查一个class是否满足一个interface
+> implements is only to check whether class has all the members of the **interface**
 
 ```ts
 interface Pingable {
@@ -100,19 +100,19 @@ class Sonar implements Pingable {
 }
 ```
 
-> implements只是检查class是否可以被看作interface
+extends statemant
 
-extends语句
+- subclass has all the members of the **base class**
+- subclass can define its own members
 
-- 派生类拥有基类的所有成员, 并定义额外成员
 
 ```ts
 ```
 
 fields Declarations
 
-- 在派生类中使用declare关键字, 可以声明一个更精确的类型
-- 不会对runtime产生影响
+- in sub class `declare` to define a more specific type
+- won't effect on runtime
 - do not have effect on the generated JavaScript code
 - only ensures the types are correct
 
@@ -128,19 +128,18 @@ class DogHouse extends AnimalHouse {
 
 Inheriting built-in types
 
-- 根据ECMAScript 6标准, 调整了Error, Array时的prototype chain
-- 在ECMAScript 5中没有保证new.target, 所以继承Error, Array时, constructor可能会返回undifined
+- according to ECMAScript6 standard, adjust the prototype chain of `Error`, `Array`
+- In ECMAScript5 doesn't ensure `new.target`, so inherit from `Error`, `Array`, constructor may return `undefined`
 
 ## Member Visibility
 
-- 用户控制哪些成员可以被外部访问
-  - public: 默认, 可以被外部访问
-  - protected: 只能在**类本身内部**或**派生类内部**访问
-  - private: 只能在**类本身内部**访问
+- public: default, can be accessed from anywhere
+- protected: only be accessed inside **class self** or **sub class**
+- private: only be accessed inside **class self**
 
-> 访问控制仅限于**语法检查**时, 也就是说JavaScript代码仍可以访问任何成员
+> access control only limit to **syntax check**, that is to say, JavaScript code can still access any member
 
-可以在派生类中expose protected member in Base
+you expose member from derived class which is protected in base class
 
 ```ts
 class Base {
@@ -149,6 +148,8 @@ class Base {
 class Derived extends Base {
     m = 15;  // public
 }
+const d = new Derived();
+console.log(d.m);
 ```
 
 ## Generic Classes
@@ -166,48 +167,49 @@ class Box<Type> {
 
 [`this` in javascript](javascript-this.md)
 
-## a function that loses its "this" context
 
-arrow function
+## arrow function
+
+- a function that loses its `this` context
 
 ```ts
 class MyClass {
     name = "MyClass";
-    getName = () =>  {return this.name;}
+    getName = () =>  { return this.name; }
 }
 const c = new MyClass();
 const g = c.getName;
 console.log(g()); // "MyClass"
 ```
 
-this as parameter
+- guaranteed to be correct at runtime, even for code not checked with typescript
+- use more memory: Because each class instance has its own copy of the [arrow function](javascript-arrow-function.md)
+- cannot use `super.getName` in derived class, because entry in [prototype](javascript-prototype.md) chain to fetch the base class method from
 
-- this参数在typescript中用于检查方法的调用有正确的上下文
-- 编译后删除
+## this as method parameter
+
+- an initial parameter named `this` has special meaning in typescript
+- `this` parameter typescript use to check who call the method
+- erased during compilation
 
 ```ts
 class MyClass {
     name = "MyClass";
-    getName(this:MyClass) {
+    getName(this: MyClass) {
         return this.name;
     }
 }
 const c = new MyClass();
-c.getName();  // this 被正确推断为 c
+c.getName();  // c is asserted correctly as type of this
 const g = c.getName;
 console.log(g()); // undefined
 ```
 
-**arrow function** compare to **this as parameter**
+trade-off
 
-- for arrow function
-  - 保证总是能够被正确调用
-  - 因为class的每个实例都会有一个函数的复制, 会消耗更多内存
-  - 不能使用super调用
-- for this as parameter
-  - this是绑定到调用的对象上的
-  - 每个class只有一个函数定义, 而不是每个实例都有一个函数定义
-  - 可以通过super调用
+- may incorrectly use above code in javascript without realizing it
+- every class shared the same function definition, rather than each instance has its own function definition
+- can be called via `super`
 
 ## this as parameter type annotation
 

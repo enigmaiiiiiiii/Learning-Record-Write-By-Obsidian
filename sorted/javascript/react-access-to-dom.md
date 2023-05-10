@@ -1,5 +1,13 @@
 # Access To DOM With Refs
 
+* [Description](#description)
+* [when to use Refs?](#when-to-use-refs)
+* [Create A Ref](#create-a-ref)
+* [When React Attach The Ref](#when-react-attach-the-ref)
+* [legacy create Refs](#legacy-create-refs)
+
+## Description
+
 - usually use [props](react-component.md) to reach the interaction between
 - in a few cases, need Access to DOM, you can use Refs
 

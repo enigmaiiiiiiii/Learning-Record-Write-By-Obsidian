@@ -30,6 +30,8 @@
 
 [JSDoc](javascript-jsdoc.md)
 
+[Design Pattern](javascript-design-pattern.md)
+
 ## II Built-in Object
 
 [Memory](javascript-memory-management.md)
@@ -46,6 +48,12 @@
 
 [JSON](/sorted/javascript/javascript-json.md)
 
+[Proxy](javascript-proxy.md)
+
+[Reflect](javascript-reflect.md)
+
+[File](javascript-file.md)
+
 [Built-In Object List](javascript-built-in-object.md)
 
 ## III Web API
@@ -59,10 +67,6 @@
 [Canvas]
 
 [WebGL](webgl.md)
-
-[]
-
-[]
 
 [AJAX](/sorted/javascript/javascript-ajax.md)
 
@@ -89,10 +93,6 @@
 [Vue + Element workflow](/sorted/javascript/vue-element-ui-workflow.md)
 
 [Babel](/sorted/javascript/babel.md)
-
-## VII
-
-[Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature
 
 ## Technique
 

@@ -1,1 +1,1 @@
-how to remove window environment path in wsl bash
+can you provide me a example of car build process example contains this four part

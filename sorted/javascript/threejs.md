@@ -12,7 +12,9 @@
 
 [Freeing Resources](threejs-dispose-object.md)
 
-[transform](threejs-transform.md)
+[Transform](threejs-transform.md)
+
+[Use Bound Box](threejs-bound-box.md)
 
 [.clone method](threejs-clone-method)
 
@@ -92,7 +94,7 @@
   - Matrix3
   - [Matrix4](threejs-reference-matrix4.md)
   - Box2
-  - Box3
+  - [Box3](threejs-reference-box3.md)
   - Line3
   - [Color](threejs-reference-color.md)
   - Frustum

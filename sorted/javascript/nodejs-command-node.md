@@ -6,7 +6,7 @@
 node main.js
 ```
 
-## 参数
+## options
 
 main.js
 
@@ -16,11 +16,13 @@ process.argv.forEach((val, index)=>{
 })
 ```
 
-命令行输入
+when run this command in shell
 
-```shell
+```bash
 node main.js joe
 ```
+
+output
 
 ```
 0: /home/usr/.nvm/versions/node/v18.8.0/bin/node

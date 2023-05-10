@@ -12,11 +12,14 @@
 type statement in typescript has many flexible use
 
 - flexible type definition
-- define type aliases
+- [define type aliases]()
 - define union types
 - can be use in both object and primitive types
+- cannot define a class
 
 ## Name Type Alias
+
+> use type keyword to name a type alias
 
 ```ts
 type ID = number | string;
@@ -71,7 +74,7 @@ type customType<T> = {
 }
 ```
 
-默认参数类型, `T = string`
+default parameter type, `T = string`
 
 ```ts
 type customType<T = string> = {

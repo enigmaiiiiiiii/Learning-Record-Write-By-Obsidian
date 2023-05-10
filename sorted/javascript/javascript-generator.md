@@ -1,8 +1,17 @@
-# Generator
+# JavaScript Object Generator
 
-[CSharp中也有类似的概念](csharp-ienumerator-interface.md)
+* [what is this](#what-is-this)
+* [next()](#next)
+* [return()](#return)
+* [throw()](#throw)
+* [内置Generator对象](#内置generator对象)
 
-- 三个方法: next(), return(), throw()
+## what is this
+
+- the Object return by a [generator function](javascript-generator-function.md)
+- have three method: `next()`, `return()`, `throw()`
+
+> [Simalar Concept in CSharp](csharp-ienumerator-interface.md)
 
 ## next()
 

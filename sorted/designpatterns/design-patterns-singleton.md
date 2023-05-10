@@ -1,11 +1,23 @@
-# 单例模式
+# Singleton
+
+## What is Singleton
+
+- ensures that a class has only one instance and provides a global point of access to that instance
+
+## use scenarios
+
+- database connections
+- logging
+- configuration
+
+## java
 
 ```java
 public class Singleton {
     /*
-     * 1. 私有化构造方法, 防止外部创建对象
-     * 2. 私有化静态变量, 用于保存唯一的实例
-     * 3. 提供静态方法, 用于获取唯一的实例
+     * 1. private constructor, prevent create object from outside
+     * 2. private static variable, to ensure only one instance
+     * 3. provide static method, for outside to get the instance
      */
     private static Singleton instance = new Singleton();
 
@@ -19,7 +31,6 @@ public class Singleton {
 
 - 最简单的单例模式, 也是饿汉模式: 类加载时创建
 - 懒加载: 类加载时不创建, 调用时创建
-
 
 ```java
 public class Singleton {
@@ -41,5 +52,4 @@ public class Singleton {
         return instance;
     }
 }
-```
 ```

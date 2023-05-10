@@ -1,12 +1,12 @@
-## 属性
+## property
 
-- 完整形式
+- complete format
 
 ```
 visibility name: type mutiplicity = default {property-string}
 ```
 
-例如: 
+for example
 
 ```
 - name: String [1] = "Untitled" {readOnly}

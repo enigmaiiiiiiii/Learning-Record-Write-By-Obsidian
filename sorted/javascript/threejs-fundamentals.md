@@ -156,12 +156,9 @@ scene.add(light);
 ```js
 function render(time) {
   time *= 0.001; // convert time to seconds
-
   cube.rotation.x = time;
   cube.rotation.y = time;
-
   renderer.render(scene, camera);
-
   requestAnimationFrame(render);
 }
 ```
@@ -210,4 +207,10 @@ console.log(buffer)  // Unit8Array(4) [42, 229, 127, 255]
 
 ## Position
 
-- Object3D.position is the position of object's local position
+local position
+
+- `Object3D.position` is the position of object's local position
+
+world position
+
+- `Object3D.getWorldPosition(target: Vector3)`

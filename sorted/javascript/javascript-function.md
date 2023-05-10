@@ -1,29 +1,31 @@
-# 函数
+# Javascript Function
 
 ## feature
 
-- **没有重载**
-- 是一个[function对象](#function-object)
+- **no override**
+- is a [function Object](#function-object)
 
 ## I
 
-[定义函数](javascript-function-definition.md)
+[Define a Function](javascript-function-definition.md)
 
-[参数](javascript-function-arguments.md)
+[Parameter](javascript-function-arguments.md)
 
-[函数表达式](javascript-function-expression.md)
+[Function Expression](javascript-function-expression.md)
 
-[闭包](javascript-closures.md)
+[anonymous function](javascript-anonymous-function.md)
 
-[箭头函数](javascript-arrow-function-expressions.md)
+[Arrow Function](javascript-arrow-function.md)
 
-## 函数执行过程
+[Closures](javascript-closures.md)
 
-[执行过程](javascript-function-execution-procedure.md)
+## Execution Procedure
+
+[Function Procedure](javascript-function-execution-procedure.md)
 
 ## Function Object
 
-[函数对象的属性](javascript-function-property.md)
+[property of function object](javascript-function-property.md)
 
-[函数对象的方法](javascript-function-method.md)
+[method of function object](javascript-function-method.md)
 

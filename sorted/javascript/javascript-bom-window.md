@@ -38,3 +38,6 @@ rotate(element);
 example2: 2 second duration animation
 
 [code](requestanimationframe-2s-duration.md)
+
+
+## prompt

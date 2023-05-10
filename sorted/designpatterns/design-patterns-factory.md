@@ -1,14 +1,14 @@
-# 工厂模式
+# Factory Method
 
-## 特点
+## Feature
 
 
 
-## 接口
+## Interface
 
 Creator.java
 
-- Creator接口, 包含一个抽象方法, 用于创建Product对象
+- Creator Interface, contains an abstract method, used to create Product object
 
 ```java
 public interface Creator {
@@ -18,7 +18,7 @@ public interface Creator {
 
 Product.java
 
-- Product接口
+- Product Interface
 
 ```java
 public interface Product {
@@ -28,7 +28,7 @@ public interface Product {
 }
 ```
 
-## 实现
+## Implementation
 
 ConcreteCreator.java
 
@@ -49,7 +49,7 @@ public class ConcreteProduct implements Product {
 
     @Override
     public void method1() {
-        // method body 
+        // method body
     }
 
     @Override
@@ -59,7 +59,7 @@ public class ConcreteProduct implements Product {
 }
 ```
 
-## 应用
+## Use Case
 
 ```java
 public class FactoryMethodDemo {

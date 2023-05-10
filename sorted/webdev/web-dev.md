@@ -24,6 +24,10 @@
 
 [browser dev tools](browser-dev-tools.md)
 
+[Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature
+
+[mobile friendly test](https://search.google.com/test/mobile-friendly): a website that tells you whether your website is mobile friendly
+
 ## beautify
 
 [font awesome](font-awesome.md)
@@ -34,7 +38,17 @@
 
 [color scheme](web-dev-color-scheme.md)
 
-## security
+## Design Patterns
+
+[Optimization Terminology](web-dev-optimization-terminology.md)
+
+[design pattern]()
+
+[rendering patterns](web-dev-rendering-patterns.md)
+
+[Performance patterns]()
+
+## Security
 
 [Token](web-dev-token.md)
 

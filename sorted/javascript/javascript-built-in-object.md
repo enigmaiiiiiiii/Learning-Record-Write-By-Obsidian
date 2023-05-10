@@ -22,7 +22,7 @@ console.log(JSON.stringify({x: 5, y: 6}));
 
 ## Function
 
-- 每个函数都是一个Function对象
+- every function is a Function Object
 
 > function(){}.constructor === Function
 

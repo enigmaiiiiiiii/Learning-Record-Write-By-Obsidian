@@ -1,6 +1,6 @@
 # Statement
 
-## for语句
+## for statement
 
 for-in
 

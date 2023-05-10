@@ -1,12 +1,13 @@
 # Function
 
-- [function type expressions](#function-type-expressions)
-- [Optional Parameters](#optional-parameters)
-- [Function Overload](#function-overload)
-- [Generic Functions](#generic-functions)
-- [Callable Signatures](#callable-signatures)
-- [Construct Signatures](#construct-signatures)
-- [other type working with function](#other-type-working-with-function)
+* [function type expressions](#function-type-expressions)
+* [Optional Parameters](#optional-parameters)
+* [default parameters](#default-parameters)
+* [Function Overload](#function-overload)
+* [Generic Functions](#generic-functions)
+* [Callable Signatures](#callable-signatures)
+* [Construct Signatures](#construct-signatures)
+* [other type working with function](#other-type-working-with-function)
 
 ## function type expressions
 
@@ -41,6 +42,14 @@ f(); // ok
 f(1); // ok
 ```
 
+## default parameters
+
+```ts
+function greet(name: string = "world") {
+  console.log(`Hello, ${name}!`);
+}
+```
+
 ## Function Overload
 
 > here is a overload signature
@@ -48,8 +57,12 @@ f(1); // ok
 > function greet(name: string): string;
 > ```
 
-- 通过编写多个overload signatures, **紧接着**编写函数的实现, 可以使一个函数通过不同的方式调用
-- 一个函数可以有多个overload signatures, 但是只能有一个实现
+- by write several overload signatures, **followed** by the **function implementation**
+- a function can have multiple overload signatures, but only one implementation
+- In summary
+  - if a function have 2 kind of parameter lists
+  - you need 2 **overload signatures** and 1 implementation
+  - so **3** function declarations in total
 
 ```ts
 function fx(x: number): number;
@@ -63,7 +76,7 @@ function fx(x: number, y?: number): number {
 }
 ```
 
-- 函数的实现必须**兼容** `overload signatures`
+- function implementattion must be compatible with all overload signatures
 
 ```ts
 function fx(x: number): void;
@@ -87,7 +100,7 @@ function firstElement<Type>(arr: Type[]): Type {
 }
 ```
 
-- 通过`<Type>`声明, 可以**将返回值和参数类型联系在一起**
+- through `<Type>` declaration, you can relate return type and parameter type
 - 这样声明的泛型函数可以接受任意类型的参数
 - 调用时不需要指定泛型函数的参数类型, 会自动推断
 
