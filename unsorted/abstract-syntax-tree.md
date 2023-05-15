@@ -1,4 +1,4 @@
-# 抽象语法树Abstract syntax tree
+# Abstract syntax tree
 
 - 一个用来表示代码结构的抽象树，树的每个节点表示文本中出现的结构
 

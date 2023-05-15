@@ -1,4 +1,4 @@
-# git命令
+# Git Command
 
 - [git restore](#git-restore)
 - [git status](#git-status)
@@ -32,28 +32,28 @@ git restore hello.c
 
 ## git status
 
-- 查看当前工作区的状态
+- check current status of working directory
 
 ## git stash
 
-- 保存当前工作区的修改在一个 dirty working directory(临时目录)
-- 使用场景: 像记录当前工作状态, 去查看一个已提交commit时, 又不想为当前更改创建一个commit时
+- save current working directory to a dirty working directory
+- secenario: when you want to record current working state and check a commit, but you don't want to create a commit for current changes
 
-`git stash push`: 保存当前修改到一个临时目录, 并恢复到HEAD状态
+`git stash push`: save current modification to a temporary directory, and restore to HEAD status
 
-- 默认添加的描述是: `WIP on branchname: commitid "commit message"`
-- `git stash push -m "message"`: 保存当前修改到一个临时目录, 并恢复到HEAD状态, 并添加一个message
-- `git stash`: 同git stash push
+- Add default description: `WIP on branchname: commitid "commit message"`
+- `git stash push -m "message"`: save current modification to a temporary directory, and restore to HEAD status, and add a `message`
+- `git stash`: equilevant `git stash push`
 
-`git stash list`: 查看当前临时目录中保存的文件快照
+`git stash list`: check the list of temporary directory
 
-`git stash apply`: 应用最近一次保存的临时目录中的文件快照
+`git stash apply`: apply the most recent file snapshot in the temporary directory
 
-- `git stash apply --index <index>`: 应用指定index的临时目录中的文件快照
-- index可以通过`git stash list`查看
+- `git stash apply --index <index>`: apply specific file snapshot in temporary directory by index
+- through `git stash list` you can check `index` value
 - `git stash apply --index 0`: 应用最近一次临时目录中的文件快照
 
-`git stash pop`: 应用最近一次保存的临时目录中的文件快照, 并删除该临时快照
+`git stash pop`: apply the most recent file snapshot in the temporary directory, and delete the snapshot
 
 ## git merge
 

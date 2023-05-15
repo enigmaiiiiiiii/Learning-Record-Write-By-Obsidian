@@ -1,13 +1,13 @@
 # Javascript Design Patterns - Command
 
-* [What It is](#what-it-is)
+* [Feature](#feature)
 * [Which Scenario to use](#which-scenario-to-use)
 * [Receiver](#receiver)
 * [Command](#command)
 * [Invoker](#invoker)
 * [Example Code](#example-code)
 
-## What It is
+## Feature
 
 - kind of behavioral design pattern
 - is a encapsulation of a request as an object
@@ -18,7 +18,7 @@ three components in command pattern
 - **Command**: holds a fields reference to receiver
 - **Invoker**: holds a fields ralated to command object
 
-## Which Scenario to use
+## Which Scenario To Use
 
 - undo/redo
 - GUI component
@@ -41,7 +41,7 @@ three components in command pattern
 
 ## Invoker
 
-- also has a method called `execute()` to call the command's `execute()` method
+- also has a method called `execute()` to call all command's `execute()` method
 - holds a fields reference to the [commands](#command) list
 - In summary, Invoker is responsible for
   - command execution
@@ -52,7 +52,7 @@ three components in command pattern
 
 ## Example Code
 
-create Command Object
+Create Command Object
 
 ```js
 class LightCommand {

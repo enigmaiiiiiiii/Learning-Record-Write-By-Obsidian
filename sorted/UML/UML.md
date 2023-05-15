@@ -1,19 +1,28 @@
 # UML
 
-* [Class](#class)
-* [Clear arrow (Inheritance)](#clear-arrow-inheritance)
-* [Line (Association)](#line-association)
+* [What it is](#what-it-is)
+* [Represent A Class](#represent-a-class)
+* [Clear Triangle Arrow(Inheritance)](#clear-triangle-arrowinheritance)
+* [Line: Association](#line-association)
 * [Clear Diamond (Aggregation)](#clear-diamond-aggregation)
 * [Black Diamond (Composition)](#black-diamond-composition)
 * [Multiplicity.](#multiplicity)
+* [cheat sheet](#cheat-sheet)
 
-## Class
+## What it is
 
-**class name** at the top of the box
+- uml is not about code implementation
+- uml is about objective design
+
+## Represent A Class
+
+1. **class name** at the top of the box
 
 ---
 
-The attributes (properties of the class). The properties have this format:
+2. attributes (properties of the class)
+
+- The properties format
 
 ```sh
 -name: string
@@ -23,11 +32,11 @@ The attributes (properties of the class). The properties have this format:
 
 - private is `-`
 - public is `+`
-- protected is `#`   (protected means it can only be accessed by the same class or subclasses)
+- protected is `#` (protected means it can only be accessed by the same class or subclasses)
 
 ---
 
-The methods are below the attributes and look like this:
+3. The methods are below the attributes and look like this:
 
 ```sh
 -setName()
@@ -35,22 +44,82 @@ The methods are below the attributes and look like this:
 +isActive
 ```
 
-## Clear arrow (Inheritance)
+## Clear Triangle Arrow(Inheritance)
 
-The clear arrows is a subclass that points to the parent class. THe subclass inherits the attributes of the parent.
+continous line with Triangle Arrow: **Extends Class**
 
-## Line (Association)
+- subclass inherits from the parent class.
+- subclass points to the parent class.
 
-A line prepresents an association between classes. The line could have text that described the association. A line between User and Food could have the text "eats"
-to describe the association between a user and food.
+dot line with Triangle Arrow: **Implements Interface**
+
+- subclass implements an interface.
+- subclass points to the interface.
+
+## Line: Association
+
+line with `>` arrow
+
+- represents an association between classes.
+- The line could have text that described the association.
+- if A $\rightarrow$ B, then A has an instance of B
+- not **visa versa**
+
+```js
+class A {
+  private b: B;
+}
+class B {
+
+}
+```
+
+> for example: A line between User and Food could have the text "eats"
+
+line without arrow
+
+- represents the dependency exist in each other
+
+```ts
+class A {
+  private b: B;
+}
+class B {
+  private a: A;
+}
+```
 
 ## Clear Diamond (Aggregation)
 
-This is an aggregation. An aggregation is a special type of association that specifies a thing and its parts.
+- Represents a "has a" relationship.
+- If diamond at A end, then A has an instance of B
+- And A cannot create without B
 
-A User might be part of a Squad, but doesn't have to be. The clear diamond in that case would point to the Squad from the User
+```ts
+class A {
+  private b: B;
+  constructor(b: B) {
+    this.b = b;
+  }
+}
+class B {}
+```
 
 ## Black Diamond (Composition)
+
+- If diamond at A side, then typically B will **new** in A's constructor
+- B can't exist without A
+- B can't reference outside of A
+
+```ts
+class A {
+  private b: B;
+  constructor() {
+    this.b = new B();
+  }
+}
+class B {}
+```
 
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -63,20 +132,17 @@ A User might be part of a Squad, but doesn't have to be. The clear diamond in th
         marker-end="url(#black-diamond)"/>
 </svg>
 
-When a child object can't exist without its parent object.
-THe black diamond would point to the parent from the child.
-
 ## Multiplicity.
 
-You can set number values to relationships using syntax such as 1..* (one to many).
+You can set number values to relationships using syntax such as 1..\* (one to many).
 
 0..1 Zero to one (optional)
 
 n specific number
 
-0..* zero to many
+0..\* zero to many
 
-1..*  one to many
+1..\* one to many
 
 m..n specific number range
 

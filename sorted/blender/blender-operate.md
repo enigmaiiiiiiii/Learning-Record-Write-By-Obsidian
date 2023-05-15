@@ -13,6 +13,7 @@
 - s: scale
 - sx: scale on x axis
 - `/`: local view or focus on select
+- n: 3D view properties
 
 ## Edit Mode
 
@@ -20,6 +21,13 @@
 - alt + s: flat translate select
 - crtl + l: select linked part
 - e: extrude
+- p: separate vertices to new object
+- n: 3D view properties
+
+
+## Moving
+
+- shift + tab: toggle snapping mode
 
 ## Useful Panel
 
@@ -28,7 +36,3 @@
 ## Glossary
 
 - subvision
-
-## Moving
-
-- snap moving: shift + tab

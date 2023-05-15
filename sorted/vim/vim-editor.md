@@ -1,8 +1,8 @@
 # vim of linux
 
-## Linux下vim插件  
+## Linux Vim Plugin
 
-首先安装插件管理工具Vim-plug
+Install plugin manager tool Vim-plug first
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -16,10 +16,11 @@ vim-commentary
 
 ### Usage
 
-打开vim配置文件
-> vim ~/.vimrc
+open vim config file
 
-我此时(2021.6.24)的vim配置
+- vim ~/.vimrc
+
+my vim config at time 2021.6.24
 
 ```bash
 call plug#begin('~/.vim/plugged')

@@ -14,7 +14,7 @@
 - [Class Expressions](#class-expressions)
 - [Abstract Classes And Members](#abstract-classes-and-members)
 
-## constructor
+## Constructor
 
 ```ts
 class GoodGreeter {
@@ -235,3 +235,7 @@ const m = new someClass("hello");
 
 ## Abstract Classes And Members
 
+feature
+
+- abstract class cannot be instantiated directly
+- abstract method doesn't have implementation

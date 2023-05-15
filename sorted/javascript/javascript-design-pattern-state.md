@@ -1,15 +1,25 @@
 # Javascript Design Patterns - State
 
-## What It Is
+* [What It Is](#what-it-is)
+* [What Problem To Solve](#what-problem-to-solve)
+* [Components For State Pattern](#components-for-state-pattern)
+* [Context](#context)
+* [state interface](#state-interface)
+* [concrete states](#concrete-states)
+* [code](#code)
+
+## Feature
 
 - kind of behavioral pattern
+- similar structure
+   - [strategy](javascript-design-pattern-strategy.md)
 
 ## What Problem To Solve
 
 - more and more state make the code hard to maintain
 - most method will contain monstrous conditions
 
-## Components For State Pattern
+## Class Consist of State Pattern
 
 - [context](#context)
 - [state interface](#state-interface)
@@ -17,11 +27,30 @@
 
 ## Context
 
-- hold a reference to the state object
+1. hold a fields reference to the [state object](#concrete-state)
+2. one or more methods that change the state
+
+```js
+class Context {
+  // 1. state field
+  private state: State;
+  // 2. changing state method
+  methodToChangeState() {
+    this.state = new ConcreteState();
+  }
+}
+```
 
 ## state interface
 
-- declares the state-specific method
+- declare all the methods that the context can call to change state
+
+```ts
+interface State {
+  changeToA(): void;
+  changeToB(): void;
+}
+```
 
 ## concrete states
 
@@ -29,7 +58,7 @@
 
 > may provide intermediate abstract class for duplicate code
 
-- state object may store a backreference to the [context object]()
+- state object store a backreference to the [context object]()
 - for fetch required info from [context object](#context)
 
 ## code
@@ -38,14 +67,8 @@ state interface
 
 ```js
 abstract class State {
-  pull(wrapper: Chain, direction: string): void {
-    if (direction === 'up') {
-      wrapper.setState(new Off());
-      console.log(" turning off");
-    } else if (direction === 'down') {
-      console.log(" turning off");
-    }
-  }
+  abstract pullUp(wrapper?: Chain): void;
+  abstract pullDown(wrapper?: Chain): void;
 }
 ```
 
@@ -53,54 +76,51 @@ concrete state
 
 ```ts
 class Off extends State {
-  pull(wrapper: Chain, direction: string) {
-    if (direction === 'up') {
-      wrapper.setState(new Low());
-      console.log(" low speed");
-    } else if (direction === 'down') {
-      console.log(" no change, turning off");
-    }
+  pullUp(wrapper?: Chain) {
+    wrapper?.setState(new Low());
+    console.log(' low speed');
+  }
+  pullDown() {
+    console.log(' already off');
   }
 }
 
 class Low extends State {
-  pull(wrapper: Chain, direction: string) {
-    if (direction === 'up') {
-      wrapper.setState(new Medium());
-      console.log(" medium speed");
-    } else if (direction === 'down') {
-      wrapper.setState(new Off())
-      console.log(" turning off");
-    }
+  pullUp(wrapper?: Chain) {
+    wrapper?.setState(new Medium());
+    console.log(' medium speed');
+  }
+  pullDown(wrapper?: Chain) {
+    wrapper?.setState(new Off());
+    console.log(' turning off');
   }
 }
 
 class Medium extends State {
-  pull(wrapper: Chain, direction: string) {
-    if (direction === 'up') {
-      wrapper.setState(new High());
-      console.log(" high speed");
-    } else if (direction === 'down') {
-      wrapper.setState(new Low());
-      console.log(" low speed");
-    }
+  pullUp(wrapper?: Chain) {
+    wrapper?.setState(new High());
+    console.log(' high speed');
+  }
+  pullDown(wrapper?: Chain) {
+    wrapper?.setState(new Low());
+    console.log(' low speed');
   }
 }
 
 class High extends State {
-  pull(wrapper: Chain, direction: string) {
-    if (direction === 'up') {
-      wrapper.setState(new Off());
-      console.log(" turning off");
-    } else if (direction === 'down') {
-      wrapper.setState(new Medium());
-      console.log(" medium speed");
-    }
+  pullUp(wrapper?: Chain) {
+    console.log(' already the highest');
+  }
+  pullDown(wrapper?: Chain) {
+    wrapper?.setState(new Medium());
+    console.log(' medium speed');
   }
 }
 ```
 
 context
+
+- `Chain.ts`
 
 ```ts
 class Chain {
@@ -111,8 +131,11 @@ class Chain {
   setState(state: State) {
     this.current = state;
   }
-  pull(direction: string = 'up') {
-    this.current.pull(this, direction)
+  pullUp() {
+    this.current.pullUp(this);
+  }
+  pullDown() {
+    this.current.pullDown(this);
   }
 }
 ```
@@ -127,20 +150,20 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 function switchState() {
-  rl.quest('any key to continue(\'q\' to exit)', (input) => {
+  rl.question('any key to continue(\'q\' to exit)', (input) => {
     if (input === 'q') {
       rl.close();
     } else if (input === 'up') {
-      chain.pull('up');
+      chain.pullUp();
       switchState();
     } else if (input === 'down') {
-      chain.pull('down');
+      chain.pullDown();
       switchState();
     } else {
-      console.log('invalid input');
+      console.error('invalid input')
       switchState();
     }
-  }
+  })
 }
 switchState();
 ```

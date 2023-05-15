@@ -1,38 +1,50 @@
 # Javascript Design Pattern - Observer
 
-* [What It Is](#what-it-is)
+* [Feature](#feature)
 * [Components For This Pattern](#components-for-this-pattern)
 * [Publisher](#publisher)
 * [Subscriber](#subscriber)
 * [Code](#code)
 
-## What It Is
+## Feature
 
 - kind of behavioral pattern
 - one-to-many communication between objects
 - many is called observers
 - one is called subject
-- when subject changes, all observers will be notified
+- when publisher changes, all observer will be notified
+- the subscribe operation is done by [publisher](#publisher)
+
+## VS Mediator
+
+VS [Mediator](javascript-design-pattern-mediator.md#vs-observer)
+
+- inheritance relationship
+  - subscribers typically inherit from a common interface or base class
+  - components not required to implement a common interface
+- dependency relationship
+  - subscribers do not hold a reference to the publisher
+  - in mediator, components and mediator depend on each other
 
 ## Components For This Pattern
 
 - [publisher](#publisher), also called subject, event emitter, event manager
-- [subscriber](#subscriber) also observer, listener
+- [subscriber interface](#subscriber-interface) also observer, listener
+- [concrete subscriber](#subscriber)
 
 ## Publisher
 
 - have a method like `notify()` to notify all [subscriber](#subscriber-interface)
   - execute when publisher state changes
   - this method should call its `update()` method for [each subscriber](#subscriber)
-- provide a way to add or remove observer
 - hold a **list** of [subscriber](#subscriber-interface) in the publisher class
-- patch publisher in [**publisher manager**](#event-manager)
+- provide a way to add or remove observer
 - have method to manage subscribers
   - `subscribe()`: add subscriber
   - `unsubscribe()`: remove subscriber
   - `mainBusinessLogic()`: main business logic
 
-## Subscriber
+## Subscriber Interface
 
 - An interface in most case consists of a single method like `update()`
 - observer or Concrete subscriber should implement the this interface
@@ -43,6 +55,10 @@ interface subscriber {
   update(data?: any): any;
 }
 ```
+
+## Concrete Subscriber
+
+- implement `update()` method to perform a action when notified by [publisher](#publisher)
 
 ## Code
 

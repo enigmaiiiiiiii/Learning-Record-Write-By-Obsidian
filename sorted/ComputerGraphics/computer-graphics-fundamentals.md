@@ -3,13 +3,14 @@
 ## Vertex
 
 - a point in 3D space
-- represents a specific postion on an object **surface**
-- defined by coordinates `(x, y, z)`
-- vertices is plural of vertex
+- represents a specific point on on a polygon or a [mesh](#mesh)
+- vertex typically has properties such as **position**, **color**, **texture**
+
+> vertices is plural(复数) of vertex
 
 ## mesh
 
-- mesh is a collectoin of vertices, edges and faces
+- mesh is a collectoin of [vertices](#vertex), edges and faces
 
 ## UV mapping
 
@@ -30,7 +31,7 @@
 
 ## Viewing Frustum(视锥体)
 
-## alpha test
+## Alpha Test
 
 - a technique to **reduce** the number of **pixels** that need to be **rendered**
 - use pixels alpha value to determine whether to render it or not

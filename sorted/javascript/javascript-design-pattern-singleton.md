@@ -1,12 +1,22 @@
 # Javascript Design Pattern - Singleton
 
+* [Summarize](#summarize)
+* [implement with regular object](#implement-with-regular-object)
+* [implement with class](#implement-with-class)
+
 ## Summarize
 
 - [Design Pattern of Singleton](design-pattern-singleton.md)
 - in many languages, we [need a class](#use-class-to-implement-singleton)
 - in javascript, we can achieve this by [use regular object](#use-regular-object)
 
-## use regular object
+## use scenarios
+
+- database connections
+- logging
+- configuration
+
+## implement with regular object
 
 `counter.js`
 
@@ -24,7 +34,7 @@ Object.freeze(counter);
 export { counter };
 ```
 
-## use class to implement singleton
+## implement with class
 
 `counter.js`
 
