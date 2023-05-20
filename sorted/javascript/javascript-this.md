@@ -1,18 +1,17 @@
-# this
+# Javascript - this
 
-> 重点是this绑定的对象
+* [what is "this"](#what-is-this)
+* [this in function](#this-in-function)
+* [This In Callback](#this-in-callback)
+* [This In Closure](#this-in-closure)
+* [This In Arrow Function](#this-in-arrow-function)
+* [this in constructor](#this-in-constructor)
+* [this in class](#this-in-class)
+* [this in global context](#this-in-global-context)
+* [how to check this bind to what](#how-to-check-this-bind-to-what)
+* [globalThis](#globalthis)
 
-- [什么是this](#什么是this)
-- [this in function](#this-in-function)
-- [This In Callback](#this-in-callback)
-- [This In Closure](#this-in-closure)
-- [This In Arrow Function](#this-in-arrow-function)
-- [new中的this](#new中的this)
-- [判断this的绑定对象的步骤](#判断this的绑定对象的步骤)
-- [globalThis](#globalthis)
-
-
-## 什么是this
+## what is "this"
 
 - 在方法中this表示该方法所属的[对象](javascript-object.md)
 - 全局函数中, 非严格模式this表示window, 严格模式下this为undifined
@@ -44,7 +43,7 @@ var obj = {a: 2, foo: foo};
 obj.foo(); // this绑定到obj
 ```
 
-- this绑定到obj
+- this is bind to obj
 
 通过call(), bind(), apply()方法可以设置this绑定的对象
 
@@ -55,9 +54,7 @@ var bar = foo.bind(null, 2);
 bar(3);
 ```
 
-使用object.create(null)创建的一个更空的对象
-
-- 不会创建Object.prototype
+`object.create(null)` create a object without prototype
 
 ```js
 var o0 = Object.create(null);
@@ -80,7 +77,7 @@ var bar = foo.bind(o0, 2);
 
 ## this in constructor
 
-- this表示: [构造函数](javascript-constructor.md)创建的对象
+- `this` represent the object create by [constructor](javascript-constructor.md)
 
 ```js
 function C() {
@@ -116,7 +113,7 @@ const f = new Foo();
 - in node module: `this === undifined` is true
 
 
-## 判断this的绑定对象的步骤
+## how to check this bind to what
 
 1. 判断是否是new绑定: var bar = new foo();
 2. 判断是否是显示绑定: var bar = foo.call(obj);
@@ -127,7 +124,7 @@ const f = new Foo();
 
 globalThis在不同的环境引用不同的对象
 
-- 在浏览器中，`globalThis` is `window`
+- in browser，`globalThis` is `window`
 - web worker中，`globalThis` is `self`
 - node中，globalThis is `globalThis` or `global`
 

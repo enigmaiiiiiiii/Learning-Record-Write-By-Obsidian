@@ -1,10 +1,15 @@
-# 绑定调用对象
+# Bind Function
 
-apply(), call(), bind()方法都可以用来设置调用函数的[this](javascript-this.md)
+* [apply()](#apply)
+* [call()](#call)
+* [bind()](#bind)
+* [arrow function bind](#arrow-function-bind)
 
-## function.prototype.apply()
+> method `apply`, `call()`, `bind()` can be use to set the value of [this](javascript-this.md) when calling a function
 
-- `func.apply(thisobj, argsArray)`
+## apply()
+
+`func.apply(thisobj, argsArray)`
 
 ```js
 function add(c, d) {
@@ -15,7 +20,11 @@ const o = {a: 1, b: 3};
 add.apply(o, numbers);
 ```
 
-- thisobj: 函数中[this]的值
+- `thisobj`: value `this` to the function
+
+return value
+
+- [Function object](javascript-function-object.md)
 
 ## call()
 
@@ -40,8 +49,8 @@ difference between call() and apply()
 
 difference between call and bind
 
-- bind返回一个函数object
-- call直接调用
+- bind return a [function object]()
+- [`call()`](#call) will call function directly
 
 ## arrow function bind
 

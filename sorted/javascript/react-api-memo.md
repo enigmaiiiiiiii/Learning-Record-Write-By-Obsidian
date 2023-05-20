@@ -21,7 +21,7 @@ parameter
 - `arePropsEqual`
   - function that accepts two arguments: 1. `oldProps` 2. `newProps`
   - should return true if old and new props are equal
-  - Usually not specify this function, react compare each props with [`Object.is`](javascript-object-object.md) by default
+  - Usually not specify this function, react compare each props with [`Object.is`](javascript-global-object.md) by default
 
 returns
 

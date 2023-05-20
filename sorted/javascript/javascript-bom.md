@@ -1,24 +1,17 @@
 # BOM
 
-- [Browser Object Model](#browser-object-model)
-- [location对象](#location)
-- [localStorage](#localstorage)
-- [sessionStorage](#sessionstorage)
-- [history对象](#history对象)
-- [window对象](#window对象)
-- [Navigator](#navigator)
+* [Browser Object Model](#browser-object-model)
+* [location](#location)
+* [localStorage](#localstorage)
+* [sessionStorage](#sessionstorage)
+* [history](#history)
+* [window](#window)
+* [Navigator](#navigator)
 
-## Browser Object Model
+## What is BOM
 
-- 浏览器对象模型(Browser Object Model)
-- window对象，提供全局属性和方法, 可以省略window
+- BOM: Browser Object Model
 
-Method
-
-- isNaN(number)判断是否是数字
-- setInterval(handler: TimeHandler, timeout?: number): 设置定时器, 每number毫秒执行一次TimeHandler
-  - TimeHandler: [函数对象](javascript-function.md)
-  - number: 毫秒
 
 ## location
 

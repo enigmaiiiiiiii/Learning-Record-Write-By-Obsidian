@@ -1,16 +1,19 @@
-# 继承
+# Javascript - Inheritance
 
-- 基于原型`[[prototype]]`
+* [Basic](#basic)
+* [use prototype to implement Inheritance](#use-prototype-to-implement-inheritance)
+* [Class Inheritance](#class-inheritance)
+* [how to determine the inheritance relationship](#how-to-determine-the-inheritance-relationship)
 
-[通过prototype属性实现继承](#通过prototype属性实现继承)
-[类的继承](#类的继承)
-[如何确定继承关系](#如何确定继承关系)
+## Basic
 
-## 通过prototype属性实现继承
+- javascript inheritance is based on `[[prototype]]`
 
-> 或者说javascript中继承的本质
+## use prototype implement Inheritance
 
-- 子类的`[[prototype]]`指向超类的`[[prototype]]`
+> or the essence of inheritance in javascript
+
+subclass's [`prototype`](javascript-three-prototype-concepts.md#prototype-property) point to super class's `prototype`
 
 ```js
 function Foo(name) {
@@ -22,11 +25,16 @@ function Bar(name, label) {
 }
 Bar.prototype = Object.create(Foo.prototype);
 ```
-## 类的继承
 
-- 使用**extends**关键字可以继承任何拥有`[[construct]]`和`[[prototype]]`属性的对象, 这意味着可以继承普通函数
+- `Object.create()` is to create a new object, and the new object's `[[prototype]]` point to the parameter
 
-继承类
+## Class Inheritance
+
+- use **extends** keyword to inherit any object that has `[[construct]]` and `[[prototype]]` properties
+
+> which means that you can **inherit ordinary functions**
+
+inherit class
 
 ```js
 class Vehicle{}
@@ -36,7 +44,7 @@ console.log(b instanceof Bus); // true
 console.log(b instanceof Vehicle); // true
 ```
 
-继承普通函数
+inherit function
 
 ```js
 function Person() {}
@@ -46,11 +54,13 @@ console.log(e instanceof Engineer); // true
 console.log(e instanceof Person); // true
 ```
 
-使用super表示超类
+use super represent super class
 
-- 仅限于在**派生类**的构造方法, 静态方法中使用
-- 不能单独使用
-- this不能出现在super之前
+- only can be used in **subclass**'s
+  - constructor
+  - static method
+- cannot be used individually
+- `this` cannot appear before `super`
 
 ```js
 class Vehicle {
@@ -72,13 +82,13 @@ class Bus extends Vehicle {
 }
 ```
 
-## 如何确定继承关系
+## how to determine the inheritance relationship
 
-instanceof操作符
+operator `instanceof`
 
-- 如果一个实例的[原型链](javascript-prototype.md)上出想过相应的构造函数, 则返回`true`
+- if an instance's [prototype](javascript-prototype.md) have a reference to the constructor's prototype, then the instance is the constructor's instance
 
-isPrototypeOf
+method `Object.isPrototypeOf()`
 
-- [Object对象中的isPrototypeof()](javascript-object-object.md)
+- [Object.isPrototypeof()](javascript-global-object.md)
 

@@ -1,5 +1,9 @@
 # JavaScript Practical Function
 
+* [debounce](#debounce)
+* [throttle](#throttle)
+* [partially applied function](#partially-applied-function)
+
 ## debounce
 
 [simple implement debounce](javascript-debounce-function.md)

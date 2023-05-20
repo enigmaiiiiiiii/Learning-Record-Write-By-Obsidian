@@ -1,14 +1,25 @@
 # Statement
 
-## for statement
+* [for...in statement](#forin-statement)
+* [for...of statement](#forof-statement)
+* [break vs continue](#break-vs-continue)
+* [label statement](#label-statement)
+* [with statement](#with-statement)
 
-for-in
+## for...in statement
 
-- 用于枚举对象中的非符号键**属性**
-- ECMAScript中对象属性是无序的，所有属性都会返回一次，但返回顺序可能会因浏览器而异
+- to enumerate the non-symbol keys of an object
+- include the properties inherited from the prototype chain
+- variable represents the property name or enumberable property
 
-for-of
+In ECMAScript, object properties are unordered
 
+- All properties will be returned once,
+- but the return order may vary from browser to browser
+
+## for...of statement
+
+- used to iterate over iterable objects like arrays, strings, maps, sets
 - each iteration create a new variable
 - reassigning the variable inside loop does not affect the original value
 

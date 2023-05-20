@@ -1,5 +1,26 @@
 # JavaScript Operator
 
+* [Math Operator](#math-operator)
+* [Compare Operator](#compare-operator)
+* [delete](#delete)
+* [bit operator](#bit-operator)
+
+## Logic Operator
+
+- `&&`, `||`, `!`
+
+```js
+function createArray(array) {
+  array || (array = new Array(5));
+  return array;
+}
+```
+
+expression `array || (array = new Array(5))` means
+
+- if `array` is [falsy](), then `array = new Array(5)` will be executed
+- else do nothing
+
 ## Math Operator
 
 - `+`, `-`, `*`, `/`, `%`, `**`

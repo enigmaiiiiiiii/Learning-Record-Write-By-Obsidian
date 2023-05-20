@@ -1,6 +1,6 @@
 # Javascript Function
 
-## feature
+## Feature
 
 - **no override**
 - is a [function Object](#function-object)
@@ -13,7 +13,7 @@
 
 [Function Expression](javascript-function-expression.md)
 
-[anonymous function](javascript-anonymous-function.md)
+[Anonymous function](javascript-anonymous-function.md)
 
 [Arrow Function](javascript-arrow-function.md)
 
@@ -25,7 +25,5 @@
 
 ## Function Object
 
-[property of function object](javascript-function-property.md)
-
-[method of function object](javascript-function-method.md)
+[Function Object](javascript-function-object.md)
 

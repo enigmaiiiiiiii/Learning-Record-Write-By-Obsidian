@@ -20,9 +20,9 @@
 
 [Context](javascript-context.md)
 
-[module](javascript-module.md)
+[Module](javascript-module.md)
 
-[iterator](javascript-iteration.md)
+[Iterator](javascript-iteration.md)
 
 [Async](javascript-async.md)
 
@@ -97,3 +97,5 @@
 ## Technique
 
 [JavaScript practical function](/sorted/javascript/javascript-practical-function.md)
+
+[deep copy](javascript-deep-copy.md)

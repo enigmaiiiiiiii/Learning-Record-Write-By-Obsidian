@@ -54,7 +54,7 @@ In above code demo
 - CLIENT try to call `getBar()` method in ADAPTEE
 - But CLIENT can't call directly
 - Use ADAPTER wrap the Adaptee And inherit the TARGET
-- Re-implement the client-compitable method use TARGET
+- Re-implement the client-compatible method use TARGET
 - CLIENT use ADAPTER's method to run business logic
 
 ## structure of adapter pattern

@@ -1,15 +1,10 @@
-# 对象
+# Object
 
-[创建对象](#创建对象)
-[对象属性](#对象属性)
-[对象解构](#object-destructured)
-[getter/setter](#gettersetter)
+## Create Object
 
-## 创建对象
+1. use literal，like `{key1:value1, key2: value2}`
 
-1. 字面量表示法，`{key1:value1, key2: value2}`的形式
-
-> 更流行的表示方法
+> more popular way
 
 ```javascript
 let person = {
@@ -24,9 +19,9 @@ let person = {
 }
 ```
 
-- name和age是属性，sayName是方法
+- `name` and `age` is property，`sayName` is method
 
-2. new object()方法
+2. new object() 
 
 ```javascript
 let person = new Object();
@@ -37,18 +32,13 @@ person.sayName = function() {
 }
 ```
 
-- name和age是对象的属性, sayname是对象的方法
-- 字面量表示法中属性名可以是数值
+- `name` and `age` is property，`sayName` is method
 
-## 对象属性
+## Object Property
 
-- 属性名永远都是字符串
-
-[属性](javascript-property.md)
+[property](javascript-property.md)
 
 ## Object Destructured
-
-- 用对象来声明变量
 
 ```javascript
 let person = {
@@ -62,7 +52,7 @@ let {name: personName, age: personAge} = person;
 
 对于已经声明的变量使用解构表达式赋值时，必须用`()`括起来
 
-```javascript
+```js
 let personName, personAge;
 let person = {
   name: "matt",

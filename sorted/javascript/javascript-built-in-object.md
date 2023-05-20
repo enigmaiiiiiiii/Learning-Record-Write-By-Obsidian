@@ -11,9 +11,39 @@
 - [Performance](#performance)
 - [uri decode and encode](#uri-decode-and-encode)
 
+## Date
+
+get ISO 8601 time
+
+- **ISO 8601** time is standard time for worldwide exchange and communication
+
+```js
+console.log(new Date().toISOString());
+```
+
+get UTC time
+
+- UTC time
+
+```ts
+console.log(new Date().toUTCString());
+```
+
+get local time
+
+```ts
+console.log(new Date().toLocaleString());
+```
+
+get time with time zone
+
+```ts
+console.log(new Date().toString());
+```
+
 ## JSON
 
-`JSON.stringify()` 方法用于将 JavaScript Object 转换为 JSON 字符串。
+`JSON.stringify()`: Convert an [Object]() to a JSON string
 
 ```js
 console.log(JSON.stringify({x: 5, y: 6}));

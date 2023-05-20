@@ -1,19 +1,19 @@
-# 方法
+# Method
 
-## 抽象方法
+## Abstract Method
 
-- 关键字abstract
-- 提供**签名** ，**返回类型**，**抛出异常类型**
-- 不提供实现(没有大括号，以分号结尾)
+- keyword `abstract`
+- provide **signature** ，**return type**，**throw exception type**
+- no implement
 
-## 默认方法
+## Default Method
 
-- 方法前 加 default关键字
+- add keyword `default` before method
 - 主要用于Interface
 - 隐式声明为public, 因此public关键字可省略
 - 默认方法能够向库的接口添加新功能，并确保与为这些接口的旧版本编写的代码的二进制兼容性
 
-## 静态方法
+## Static Method
 
 - 隐式声明为public, 因此public关键字可省略
 - 与**类**关联，而不是与任何**实例**关联

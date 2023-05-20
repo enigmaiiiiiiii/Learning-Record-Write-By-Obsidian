@@ -1,22 +1,25 @@
 # Prototype
 
-- every JavaScript object has a special **prototype** built-in property
-- when use `new` create a new object, object will will link to prototype
-- value of `prototype` is an **object**
+* [here are 3 concepts of prototype](#here-are-3-concepts-of-prototype)
+* [Prototype Affect on property access](#prototype-affect-on-property-access)
+* [Prototype Chain](#prototype-chain)
+* [Method relate to prototype](#method-relate-to-prototype)
+* [function to simulate class](#function-to-simulate-class)
 
-## access to prototype
+## here are 3 concepts of prototype
 
-> official doesn't provide a way to access prototype
+- internal prototype, also refer to as `[[prototype]]`
+- property named "prototype"
+- __proto__ property
 
-- ~~In JavaScript use `[[prototype]]` to access~~
-- browser and `nodejs` provide `__proto__` property to access prototype
+[confusion of 3 concept](javascript-three-prototype-concepts.md)
 
-## prototype affect on property access
+## Property Access Process
 
-when **read** to a **object property** or call a **object method**
+when **read** to an **object property** or call a **object method**
 
-1. trigger [get] operation, first check if **object itself** has this property
-2. when property not found in current object, search in prototype recursively
+1. first check if **object own property** has this property, trigger [get] operation,
+2. when property not found in current object, search in `[[prototype]]` recursively
 
 **add** a property that **already exist in top prototype chain**, there are three cases:
 
@@ -26,11 +29,24 @@ when **read** to a **object property** or call a **object method**
 
 ## Prototype Chain
 
-- the property search chain in object, current object's prototype is the first search scope
+- the property search chain in object, current object's `[[prototype]]` is the first search scope
 - prototype chain top layer is point to [Object.prototype](javascript-object.md)
 - there are many common functions in Object.prototype, such as toString(), valueOf()
 
-## use function to simulate class
+## Prototype Related Method
+
+`Object.getPrototypeOf(obj)`
+
+- used to get [internal prototype](javascript-three-prototype-concepts.md#internal-prototype)
+- return [internal prototype]() of obj
+
+`Object.create(proto)`
+
+- create a new Object using proto as the prototype of that object
+
+> detail [object.create()](javascript-global-object.md#objectcreate)
+
+## function to simulate class
 
 ```javascript
 function Foo() {

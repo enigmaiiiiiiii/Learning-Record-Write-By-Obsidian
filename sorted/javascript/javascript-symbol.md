@@ -2,8 +2,8 @@
 
 ## What is This
 
-- ECMA6新增的数据类型
-- 用于创建唯一的标识符
+- guaranteed to be unique
+- introduced in ECMAScript 2015(es6)
 
 ## create a symbol
 
@@ -13,9 +13,9 @@ create by `Symbol("key")`
 let sym = Symbol("foo");
 ```
 
-create by `Symbol.for("key")` 
+create by `Symbol.for("key")`
 
-- 如果已经存在, 则返回已有的, 否则创建一个新的
+- if already exists, return the existing one, otherwise create a new one
 
 ```js
 let fooGlobalSymbol = Symbol.for("foo");
@@ -31,9 +31,9 @@ Symbol.keyFor()
 Symbol.keyFor(Symbol.for("tokenString")) === "tokenString";
 ```
 
-## 符号可以作为属性
+## As property keys in object
 
-- 符号可以出现在使用字符串或数值作为属性的地方
+- symbol can be appear in the place where string or number can be used as property
 
 ```js
 let s1 = Symbol('foo');
@@ -48,7 +48,9 @@ let o = {
 };
 ```
 
-## Symbols 不能在 for...in中被枚举
+## Symbols Cannot be enumrated in for...in loop
+
+[for...in](javascript-statement.md#forin-statement) loop only iterates over enumerable, non-Symbol properties
 
 ```js
 const obj = {};
@@ -62,7 +64,7 @@ for (const i in obj) {
 // "c", "d"
 ```
 
-## 被JSON.stringify()忽略
+## omit by JSON.stringify()
 
 ```js
 JSON.stringify({[Symbol('foo')]: 'foo'});

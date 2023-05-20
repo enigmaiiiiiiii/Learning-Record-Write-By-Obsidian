@@ -1,26 +1,23 @@
-# Javascript中的面向对象
+# Javascript - Object Oriented
 
-[对象](javascript-object.md)
+[What Is Object](javascript-object.md)
 
-[属性](javascript-property.md)
+[property](javascript-property.md)
 
-[方法](javascript-method.md)
+[method](javascript-method.md)
 
 [this](/sorted/javascript/javascript-this.md)
 
-[原型](javascript-prototype.md)
+[prototype](javascript-prototype.md)
 
-[构造函数](javascript-constructor.md)
+[constructor](javascript-constructor.md)
 
-[new运算符](javascript-operator-new.md)
+[new operator](javascript-operator-new.md)
 
-[实例化](javascript-instantiation.md): 并非传统面向对象语言的属性copy
+[instantiation](javascript-instantiation.md): not the traditional object-oriented language's property copy
 
-[继承](javascript-inheritance.md)
+[Inheritance](javascript-inheritance.md)
 
-[Object](javascript-object-object.md)
+[Base Object](javascript-global-object.md)
 
 [Class](javascript-class.md)
-
-[对象语法糖](javascript-对象语法糖.md)
-

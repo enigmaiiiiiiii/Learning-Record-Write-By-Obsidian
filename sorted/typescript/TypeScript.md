@@ -21,3 +21,5 @@
 [code snippets explaination](typescript-code-snippets-explaination.md)
 
 [JSDoc Support](typescript-jsdoc-support.md)
+
+[compatible problem](typescript-compatible-problem.md)

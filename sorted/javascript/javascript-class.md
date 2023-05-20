@@ -1,6 +1,6 @@
-# JavaScript 中的 Class
+# JavaScript - Class
 
-> 本质上是一个特殊[函数](javascript-function.md)
+> essentially is a special [function](javascript-function.md)
 
 - [定义一个class](#定义一个class)
 - [构造方法](#构造方法)
@@ -14,7 +14,7 @@
 - [javascript中的class](#javascript中的class)
 - [new和class有什么关系](#new和class有什么关系)
 
-## 定义一个class
+## define a class
 
 直接添加在class内部(class{}之间)的属性会添加在prototype上
 
@@ -38,27 +38,36 @@ p.locate();  // on every instance
 p.__proto__.locate();  // on prototype
 ```
 
-- 在1处, this上的所有内容都会被添加到每个实例上
-- 在2处, locate()方法会被添加到[prototype](javascript-prototype.md)上
+- at `1`, this上的所有内容都会被添加到每个实例上
+- at `2`, locate()方法会被添加到[prototype](javascript-prototype.md)上
 
 ## Contructor
 
-- `new Rectangle()`会调用`constructor`方法
-- 没有指定返回值, 会自动返回`this`
-- 但是可以指定返回值, 返回一个对象
+- `constructor()` is a special method for creating and initializing an object created with a class
+- when use `new Rectangle()` will call the `constructor()` method
+- no default return value
+- but can specify a return value, return an object
+
+```js
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+```
 
 ## Method
 
-原型方法: [prototype](javascript-prototype.md) method
+[prototype](javascript-prototype.md) method
 
-生成器方法: [Generator Method](javascript-generator-function.md)
+[Generator Method](javascript-generator-function.md)
 
 ## Static Method
 
-[java](java-method.md#静态方法)和[c++](c++-static-member.md)中拥有相似的概念
+[java](java-method.md)和[c++](c++-static-member.md)中拥有相似的概念
 
-- 只能使用**类名**调用, 不需要实例化
-- 不能使用**实例**调用
+- Only Can be called by class name
 
 ```js
 class Person {
@@ -93,7 +102,7 @@ class Point {
 
 ## Inheritance
 
-[继承](javascript-inheritance.md#类的继承)
+[Class Inheritance](javascript-inheritance.md)
 
 ## Abstract class
 
@@ -110,7 +119,7 @@ class Vehicle {
 }
 ```
 
-## 可以继承ECMA内置类型
+## ECMA built-in type can be inherited
 
 ```js
 class Super extends Array {
@@ -123,9 +132,9 @@ console.log(a instanceof Array);  // true
 console.log(a instanceof SuperArray);  // true
 ```
 
-## 局部Class
+## Local Class
 
-- 有作用域限制的类
+- Define a class with scope stricted
 
 ```js
 let Rectangle = class {
@@ -134,13 +143,4 @@ let Rectangle = class {
         this.width = width;
     }
 }
-console.log(Rectangle.name); // "Rectangle"
 ```
-## javascript中的class
-
-- javascript中的class是一个语法糖, 本质上是一个函数
-
-## new和class有什么关系
-
-- 运算符new创建一个class实例之前, 必须定义class
-- 而new可以用于未定义的函数

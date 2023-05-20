@@ -1,6 +1,8 @@
-# 构造函数
+# Constructor function
 
-- 并没有真正意义上的构造函数
-- 构造函数: 使用new操作符时被调用的函数
+## What is this
 
-> 普通函数前加new操作符, 会变成构造函数
+- when use [new operator](javascript-new-operator), the function will be called as a constructor function
+- constructor function is used to create and initialize a new object
+- every function can be constructor
+

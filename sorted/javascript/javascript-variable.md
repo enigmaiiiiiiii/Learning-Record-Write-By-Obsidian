@@ -14,8 +14,8 @@
 
 ## NULL
 
-- 表示一个空对象指针
-- 可以用来初始化一个未知对象的变量
+- represent an empty object pointer
+- can be assigned to a variable as a representation of no value
 
 ## Array
 
