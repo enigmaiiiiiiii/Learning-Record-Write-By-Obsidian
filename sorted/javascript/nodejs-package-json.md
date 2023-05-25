@@ -1,19 +1,28 @@
 # package.json
 
-- 定义nodejs如何解释`.js`文件
-- 列出项目所依赖的包
-- 项目可以遵循**语义版本控制规则**指定包版本
-- 使项目构建可重现，因此更容易与其他开发人员共享
+## What It Is
 
-## 创建package.json
+- define metadata and configuration of project
 
-[创建package.json](nodejs-create-package-json.md)
+some important fields
 
-## package.json字段
+- medata: name, version, description
+- dependency
+- script
 
-[package.json字段](nodejs-package-json-field.md)
+## feature
 
-## 典型package.json文件
+- project can follow [**semantic versioning rules**](semantic-versioning.md) to specify package version
+
+## create package.json
+
+[create package.json](nodejs-create-package-json.md)
+
+## package.json fields
+
+[package.json field](nodejs-package-json-field.md)
+
+## typical package.json file
 
 package.json
 
@@ -51,5 +60,4 @@ package.json
     ]
   }
 }
-
 ```

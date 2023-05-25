@@ -1,21 +1,24 @@
 #  package-lock.json
 
-- 锁定依赖项的版本, 保证每次安装的依赖项都是一致的
-- 自动生成的
+## What's This
 
-## 格式
+- lock the version of dependencies, make sure the dependencies installed are consistent every time
+- automatically generated for any operations where npm modifies either the node_modules tree, or package.json
 
-- name: `"name": "projectname" `
-- version: `"version": "0.0.1"`
-- lockfileVersion : 一个整数版本号，从整数1开始,  `"lockfileVersion": 2`
-  - 未提供版本：来自 npm v5 之前的 npm 版本的“古老”[npm-shrinkwrap.json]()包装文件。
-  - 1: npm v5 和 v6 使用的 lockfile 版本。
-  - 2: npm v7 使用的 lockfile 版本，向后兼容 v1 lockfiles。
-  - 3: npm v7 使用的 lockfile 版本，没有向后兼容功能。这用于隐藏的锁定文件 node_modules/.package-lock.json，并且可能会在未来版本的 npm 中使用，一旦对 npm v6 的支持不再相关。
-- package:  根目录通常用`""`作为键值, package-lock.json中的[package.json](nodejs-package-json.md)
+## Format
+
+- `name`: like `"name": "projectname" `
+- `version`: like `"version": "0.0.1"`
+- `lockfileVersion`: an integer version number, starting at 1, like `"lockfileVersion": 2`
+  - no version provide: it is from "legacy" [npm-shrinkwrap.json]() packaging file from npm version before npm v5.
+  - 1: npm v5 and v6 use this lockfile version.
+  - 2: npm v7 use this lockfile version, backward compatible with v1 lockfiles.
+  - 3: npm v7 use this lock file version, no backward compatible feature. 
+- `package`: equivalent [package.json](nodejs-package-json.md) in package-lock.json
+  - root directory usually use `""` as key
 
 ```json
-package: {
+"package": {
   "": {
     "name": "examplename",
     "version": "0.0.1",
@@ -23,7 +26,7 @@ package: {
 }
 ```
 
-## 典型package-lock.json
+## typically package-lock.json
 
 ```json
 {

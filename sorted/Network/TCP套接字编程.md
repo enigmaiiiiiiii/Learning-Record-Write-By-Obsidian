@@ -4,7 +4,7 @@
 
 [socket](socket.md)
 
-[套接字](套接字.md)
+[computer-network-socket](computer-network-socket.md)
 
 ```mermaid
 flowchart LR 

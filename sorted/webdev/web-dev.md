@@ -10,6 +10,8 @@
 
 [nodejs](nodejs.md)
 
+[Ajax](web-dev-ajax.md)
+
 [Canvas](Canvas.md)
 
 [WebGL](webgl.md)

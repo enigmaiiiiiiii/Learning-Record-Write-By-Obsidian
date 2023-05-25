@@ -72,6 +72,8 @@ useful when optimize child component
 
 [swr](react-swr.md)
 
+[material ui](react-material-ui.md)
+
 ## Debug
 
 tips of debug in vscode

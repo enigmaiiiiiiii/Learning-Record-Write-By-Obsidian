@@ -65,6 +65,7 @@ function MyComponent() {
 ## feature
 
 - changing a ref does not cause re-render
+- use to store information doesn't affect the visual output
 
 ## Contrast To UseState
 

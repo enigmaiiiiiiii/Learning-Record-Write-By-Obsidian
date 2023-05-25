@@ -10,10 +10,12 @@
 WebGLRenderer(parameters);
 ```
 
-parameters: object with properties defining the renderer's behaviour
+`parameters`: **object** with properties defining the renderer's behaviour
 
 - object valid properties
   - canvas: where the renderer draws its output, create a new canvas element
+  - alpha: controls the alpha value, default false
+  - antiAlias(反锯齿): whether to perform antialiasing, default false
 
 ## Properties
 

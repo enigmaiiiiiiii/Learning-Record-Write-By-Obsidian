@@ -1,22 +1,23 @@
 # CSS Selector
 
-- [Element Selector](#element-selector)
-- [id Selector "#"](#id-selector-)
-- [class 选择器 "."](#class-选择器-)
-- [后代元素选择器](#后代元素选择器)
-- [子元素选择器](#子元素选择器)
-- [群组选择器](#群组选择器)
-- [attribute selector](#attribute-selector)
-- [相邻兄弟选择器](#相邻兄弟选择器)
-- [伪类选择器](#伪类选择器)
-- [伪元素选择器](#伪元素选择器)
-- [通用兄弟选择器](#通用兄弟选择器)
-- [Exclude A Selector](#exclude-a-selector)
-- [Pure Css Selector](#pure-css-selector)
+* [Element Selector](#element-selector)
+* [id Selector "#"](#id-selector-)
+* [class selector](#class-selector)
+* [Descendant Selector](#descendant-selector)
+* [children selector](#children-selector)
+* [group selector](#group-selector)
+* [attribute selector](#attribute-selector)
+* [adjacent sibling combinator](#adjacent-sibling-combinator)
+* [pseudo-class selector](#pseudo-class-selector)
+* [pseudo-element selector](#pseudo-element-selector)
+* [General Sibling Combinator](#general-sibling-combinator)
+* [Exclude A Selector](#exclude-a-selector)
+* [Pure Css Selector](#pure-css-selector)
+
 
 ## Element Selector
 
-- 选择 Html 元素
+- select Html element
 
 ```css
 element {
@@ -25,7 +26,7 @@ element {
 }
 ```
 
-div, p, h1, h2 都是元素
+div, p, h1, h2 are all element
 
 ## id Selector "\#"
 
@@ -36,9 +37,11 @@ div, p, h1, h2 都是元素
 }
 ```
 
-选择 id="value"的元素, id 具有唯一性
+select element `id="value"`, id is unique
 
-## class 选择器 "."
+## class selector
+
+- use prefix `.`
 
 ```css
 .classvalue {
@@ -47,11 +50,13 @@ div, p, h1, h2 都是元素
 }
 ```
 
-选择 class= "value"的所有元素
+select all elements with `class="value"`
 
-## 后代元素选择器
+## Descendant Selector
 
-- 父元素与后代元素用空格隔开
+use space to separete ancestor and descendant
+
+- select tag `div` with descendant tag `p`
 
 ```css
 div p {
@@ -60,9 +65,12 @@ div p {
 }
 ```
 
-- 选择 div 标签的所有后代标签 p
 
-## 子元素选择器
+## children selector
+
+use `>` to select children
+
+- select tag `div` with children tag `p`
 
 ```css
 div > p {
@@ -71,11 +79,12 @@ div > p {
 }
 ```
 
-选择 div 标签中子标签为 p 的标签
 
-## 群组选择器
+## group selector
 
-选择器之间用`,`隔开
+select multiple elements, separate selectors by `,`
+
+- select `h3` and `p` element at the same time
 
 ```css
 h3,
@@ -85,7 +94,6 @@ p {
 }
 ```
 
-表示同时选择 h3,p 元素
 
 ## attribute selector
 
@@ -97,7 +105,7 @@ input[type="submit"] {
 
 - select input element with attribute type="submit"
 
-## 相邻兄弟选择器
+## adjacent sibling combinator
 
 ```css
 img + p {
@@ -115,21 +123,23 @@ body * + * {
 }
 ```
 
-## 伪类选择器
+## pseudo-class selector
 
-[pseudo-class list](css-pesudo-class.md)
+> [pseudo-class list](css-pesudo-class.md)
 
-> 以`:`开头, 用于选择特殊状态的元素
-
----
+- start with `:`, select special state of element
 
 `selector:hover`
-`selector:nth-child(an + b)`: 选择每组匹配的兄弟元素序列中第$an + b$个元素, a, b 为整数
 
-- 兄弟元素: 具有**相同父元素**的**匹配元素**的**集合**
-- a 是整数
-- n 是从 0 开始代入所有整数, 知道$an + b$ > 兄弟元素的个数
-- `:nth-child(2)`: 兄弟元素的第二个元素
+- select element when mouse hover
+
+`selector:nth-child(an + b)`
+
+- select numeric position in a series of siblings matches the pattern $an + b$(a, b are integers)
+  - n is start from 0, until $an + b$ bigger than number of siblings
+- sibling element: a set of **matching elements** with the same **parent** element
+
+> `:nth-child(2)`: select second sibling element
 
 example
 
@@ -139,15 +149,15 @@ li:nth-child(-n + 3) {
 }
 ```
 
-- 选择 在同一父元素下的 li 标签的前三个元素
+- select first three li element at same parent element
 
-## 伪元素选择器
+## pseudo element selector
 
-> html 中不存在的元素
+> element that doesn't exist in the HTML markup
 
-`::before`: 在元素之前插入内容, `::after`: 在元素之后插入内容
-
-- 通常通过`content`属性设置插入的内容
+- `::before`: represent the first child of an element
+- `::after`: represent the last child of an element
+- often used with `content` property
 
 ```html
 <p class="boring-text">Here is some plain old boring text.</p>
@@ -168,11 +178,9 @@ li:nth-child(-n + 3) {
 }
 ```
 
-- 结合[伪类选择器](#伪类选择器), 选择特定元素的特定状态
+## General Sibling Combinator
 
-## 通用兄弟选择器
-
-- A ~ B: 选择 A 元素之后的所有同级 B 元素
+- A ~ B: select all B element that follow A element, immediately or not
 
 ```css
 p ~ span {

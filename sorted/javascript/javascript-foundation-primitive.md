@@ -1,12 +1,13 @@
-# 基本类型
+# Primitive
 
-- [number](#number)
-- [bigint](#bigint)
-- [string](#string)
-- [boolean](#boolean)
-- [null](#null)
-- [undifined](#undifined)
-- [symbol](#symbol)
+* [number](#number)
+* [bigint](#bigint)
+* [string](#string)
+* [boolean](#boolean)
+* [null](#null)
+* [undifined](#undifined)
+* [null vs undefined](#null-vs-undefined)
+* [symbol](#symbol)
 
 ## number
 
@@ -49,9 +50,27 @@ truthy
 
 - except falsy values
 
-
 ## null
+
+- **intentional** absence of any [object] value
 
 ## undifined
 
+- variable that has been declared not been assigned a value
+- function returns undefined if a value was not returned
+
+## null vs undefined
+
+```js
+typeof null;  // object
+typeof undefined // 'undefined'
+null === undefined; // false
+null == undefined; // true
+Number.isNaN(1 + null);  // false
+Number.isNaN(1 + undefined);  // true
+```
+
 ## symbol
+
+[symbol](javascript-symbol.md)
+

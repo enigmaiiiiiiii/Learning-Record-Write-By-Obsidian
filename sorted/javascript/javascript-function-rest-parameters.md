@@ -2,12 +2,12 @@
 
 - similar syntax to [spread syntax](javascript-spread-syntax.md)
 
-## Introduction
+## What is this
 
 - `...args` allows a function to accept an **indefinite number of arguments** as `args` **array**
 - A function can only one rest parameter in a function
 - rest parameter must be the last parameter in a function
-- 会导致**其余 未指定名称的 参数**都被包含在一个[数组](javascript-array.md)中
+- will cause all the rest arguments that have not been given a separate name to be placed within a [array](javascript-array.md)
 
 ```js
 function sum(...theArgs) {

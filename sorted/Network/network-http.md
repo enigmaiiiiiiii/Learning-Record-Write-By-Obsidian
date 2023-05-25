@@ -1,27 +1,34 @@
 # HTTP
 
-- 超文本传输协议
-- 定义了[Web](web.md)客户像Web服务器请求(如点击链接)Web页面的方式，以及服务器向客户传送Web页面的方式
-- 使用[TCP](network-tcp-protocol.md)作为运输协议
+## What is this
 
-## I
+- HyperText Transfer Protocol
+- define how web clients request web pages from web servers and how servers transfer web pages to clients
+- use [TCP](network-tcp-protocol.md) as transport protocol
 
-[HTTP报文](http-message.md)
+## Glossary
+
+[HTTP Message](http-message.md)
 
 [Cookie](http-cookie.md)
 
 [Session](http-session.md)
 
-## II
 
-[Web服务器](http-webserver.md)
+## Connection
 
-## III
+[Non Persistent HTTP](non-persistent-http.md)
 
-[非持续连接的HTTP](非持续连接的http.md)
+[Persistent HTTP](persistent-http.md)
 
-[持续连接的HTTP](持续连接的http.md)
+[HTTP/2]
+
+[SSL Connection]()
 
 ## IIII
 
 [CORS](http-cors.md)
+
+## Application
+
+[Web Server](http-webserver.md)

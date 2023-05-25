@@ -1,4 +1,4 @@
-# React forward Ref
+# React forwardRef
 
 ## what is for
 
@@ -31,7 +31,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 })
 ```
 
-## access to DOM node from parent
+## Access to DOM node from parent
 
 ```js
 function Form() {

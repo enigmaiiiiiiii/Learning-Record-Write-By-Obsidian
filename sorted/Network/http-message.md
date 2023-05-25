@@ -1,39 +1,52 @@
-# HTTP报文格式
+# HTTP Message
 
-- 编码字符集ISO-8859-1
+## What Is This
+
+- is [formatted message](#message-format) used to transfer data between client and server
+- divide into two parts
+  - [request message](#request-message)
+  - [response message](#response-message)
+
+## Message format
+
+- encode character set: ISO-8859-1
 
 <table>
   <tr>
-    <td>报文首部</td>
+    <td>message header</td>
   </tr>
   <tr>
-    <td>空行(CR+LF)</td>
+    <td>empty line(CR+LF)</td>
   </tr>
   <tr>
-    <td>报文主体</td>
+    <td>message body</td>
   </tr>
 </table>
 
-> CRLF: 表示回车符(CR)和换行符(LF)
->> 回车符(return): `\r`, CR, 13, 1010
->> 换行符(next line): `\n`, LF, 10, 1001
+> CRLF: abbreviations of Carriage Return and Line Feed
+>> CR: `\r`, CR, 13, 1010
+>> LF: `\n`, LF, 10, 1001
 
-[请求报文](http-request-message.md): 首行为请求行
+## Request Message
 
-[响应报文](/sorted/network/http-response-message.md): 首行为响应行
+[request message](http-request-message.md)
 
-[实体编码](http-content-encode.md)
+## Response Message
 
-## 首部字段(消息头)
+[response message](/sorted/network/http-response-message.md)
 
-- 以key: value的形式存在于报文首部中
-  - key为首部字段
-  - value为字段的值
+## Content Encode
 
-以响应报文为例
+[content encode](http-content-encode.md)
+
+## take look at message header
+
+- store in format `key: value`
+
+use response message as example
 
 ```http
-HTTp/1.1 200 OK
+HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
 Content-Length: 55743
 Connection: keep-alive
@@ -63,30 +76,20 @@ Age: 7
 
 ```
 
-> 首部字段为
->> Content-Type
->> Content-Length
->> Connection
->> Cache-Control
->> Content-Language
->> Date
->> ETag
->> Server
->> Strict-Transport-security
->> X-Content-Type-Options
->> X-Frame-Options
->> X-XSS-Protection
->> Vary
->> Age
+header field in above message is:
 
-## 首部参考
-
-请求头字段
-
-- Location: 将客户端导向某个资源地址
-- referer: 请求来源, 即当前页面是通过此来源页面的链接进入的
-  - referer: \<url\>
-  - 可能暴露用户浏览历史
-
-响应头字段
+- `Content-Type`
+- `Content-Length`
+- `Connection`
+- `Cache-Control`
+- `Content-Language`
+- `Date`
+- `ETag`
+- `Server`
+- `Strict-Transport-security`
+- `X-Content-Type-Options`
+- `X-Frame-Options`
+- `X-XSS-Protection`
+- `Vary`
+- `Age`
 

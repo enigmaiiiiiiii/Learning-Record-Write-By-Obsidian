@@ -1,4 +1,4 @@
-# 计算机网络
+# Computer Network
 
 ## I
 
@@ -14,7 +14,9 @@
 
 [http](network-http.md)
 
-[URL, URI](/sorted/network/http-url-and-uri.md)
+[URL](computer-network-url.md)
+
+[URI](/sorted/network/computer-network-uri.md)
 
 [RPC](/sorted/network/network-rpc.md)
 

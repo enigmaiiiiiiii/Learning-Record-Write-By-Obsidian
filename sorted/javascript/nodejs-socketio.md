@@ -2,8 +2,8 @@
 
 - not a WebSocket implementation
 - Socket.IO adds **additional** metadata to each packet
-  - **WebSocket Client** 不能直接连接到**Socket.IO Server**
-  - **Socket.IO Client** 也不能直接连接到单一的**WebSocket Server**
+  - **WebSocket Client** can't connect to **Socket.IO Server** directly
+  - **Socket.IO Client** also can't connect to a single **WebSocket Server** directly
 
 > [plain WebSocket](javascript-websocket.md) library [ws](), [μwebsocket]()
 
@@ -23,9 +23,9 @@
 
 event is a **string** pass to
 
-- io.on('eventName', callback);
-- socket.on('eventName', callback);
-- socket.emit('eventName', message);
+- `io.on('eventName', callback);`
+- `socket.on('eventName', callback);`
+- `socket.emit('eventName', message);`
 
 ## Buit-in Events
 
@@ -45,4 +45,4 @@ Room Event
 ## Namespace
 
 - a virtual channel
-- 将单个共享连接从逻辑上分割成多个频道
+- make single connection logically split into multiple channels

@@ -1,13 +1,13 @@
-# Linux网络API
+# Linux Network API
 
 [[服务器&客户端模型]]
 
 [[Linux字节序转换函数]]
 
-[[IP地址转换函数]] 
-  
+[[IP地址转换函数]]
+
 [socket](linux-socket-api.md)
-  
+
 [[bind()函数]]  将socket和地址绑定
 
 [listen()](linux-socket-api-listen()函数.md) 监听socket

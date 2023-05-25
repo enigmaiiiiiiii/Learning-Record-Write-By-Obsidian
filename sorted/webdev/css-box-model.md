@@ -1,16 +1,17 @@
 # CSS Box Model
 
-- [Standard Box Model](#standard-box-model)
-- [Box Property](#box-property)
-- [Block And Inline](#block-and-inline)
-- [display property](#display-property)
-- [盒子模型的替代模型](#盒子模型的替代模型)
-- [Margin Collapsing](#margin-collapsing)
+* [Standard Box Model](#standard-box-model)
+* [Box Property](#box-property)
+* [Block And Inline](#block-and-inline)
+* [display property](#display-property)
+* [Visibility Property](#visibility-property)
+* [Alternative Model of Box Model](#alternative-model-of-box-model)
+* [Margin Collapsing](#margin-collapsing)
 
 ## Standard Box Model
 
 - box-sizing: content-box
-- CSS中的所有元素都有一个盒子模型
+- every element in CSS is a box
 
 layer relationship
 
@@ -29,13 +30,13 @@ layer relationship
 }
 ```
 
-> 此box的实际尺寸是
+> real size of the box
 > wide: 350 + 25 + 25 + 5 + 5
 > high: 150 + 25 + 25 + 5 + 5
 
 - content area, padding, border组成盒子模型可见区域
 
-> background作用于内容和padding
+> background works on content and padding
 
 ## Box Property
 
@@ -53,15 +54,15 @@ layer relationship
 
 [visibility property](css-visibility.md)
 
-## 盒子模型的替代模型
+## Alternative Model of Box Model
 
-- 设置`box-sizing: border-box;`属性
-  - width, height属性即为可见宽度和高度
-  - border, padding会使内容区域更小
+- set `box-sizing: border-box;`
+  - `width`, `height` property is the visible width and height
+  - border, padding will make content area smaller
 - width = border + padding + content width
 - height = border + padding + content height
 
-这段代码放到样式表开头已经是普遍做法了
+put this code at the beginning of css file is a common practice
 
 ```css
 *, ::before, ::after {
@@ -80,7 +81,7 @@ or
     box-sizing: inherit;
 }
 ```
-> ::after, ::before是CSS3的[伪元素](css-selector.md#伪元素选择器)
+> ::after, ::before is [pseudo-element](css-selector.md#pseudo-element-selector)
 
 ## Margin Collapsing
 

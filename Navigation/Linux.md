@@ -62,8 +62,8 @@
 
 [Linux线程](linux-thread.md)
 
-[网络编程](linux-network-programming.md)
+[network progrogramming](linux-network-programming.md)
 
-[系统日志](linux-system-log.md)
+[system log](linux-system-log.md)
 
 [OpenSSL](linux-openssl.md)

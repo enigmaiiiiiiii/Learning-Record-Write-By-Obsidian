@@ -8,7 +8,7 @@
 
 `[scheme:]scheme-specific-part[#fragment]`
 
-- scheme: 语义化的协议名称，如http、ftp等
+- scheme: semantically meaningful protocol name, like `http`, `ftp`
 - scheme-specific-part: 协议中的具体内容，如http://www.baidu.com/someDepartment/picture.gif
 - fragment: 资源的片段，用于指定资源的一部分，如#fragment
 

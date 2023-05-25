@@ -16,7 +16,7 @@
 
 - component is a [javascript function](javascript-function.md)
 
-> component 有 class 的形式, 但是 class 本质上还是一个 function
+> you use `class` create a component, but class essentially is a function
 
 **function component**
 
@@ -96,7 +96,7 @@ function TodoList() {
 ## use a component
 
 - lowercase tag name: html tag, `<section>, <div>`
-- 区别于 html 标签, react 组件规定 start with capital, like `<Welcome />`
+- to separate with html tag, react component demand start with capital, like `<Welcome />`
 
 ```js
 function Welcome(props) {
@@ -160,7 +160,7 @@ const element = (
 
 ## keep component pure
 
-pure function
+*pure* function
 
 ```js
 function sum(a, b) {
@@ -168,7 +168,7 @@ function sum(a, b) {
 }
 ```
 
-impure function
+*impure* function
 
 - change its input
 
@@ -202,9 +202,9 @@ export default function Toolbar() {
 }
 ```
 
-event propagation(事件传播)
+event propagation
 
-事件传播方向 from a children, up to the tree
+event propagation direction from a children, up to the tree
 
 ```js
 const element = (
@@ -214,7 +214,7 @@ const element = (
 );
 ```
 
-阻止事件传播, 使用 `e.stopPropagation()`
+prevent event propagation, use `e.stopPropagation()`
 
 ```js
 <Button
@@ -227,21 +227,23 @@ const element = (
 </Button>
 ```
 
-阻止默认事件, 使用 `e.preventDefault()`
+prevent default event, use `e.preventDefault()`
 
--   以 form 为例, 默认事件是提交表单, 页面刷新
--   使用 `e.preventDefault()`, 阻止页面刷新
+-   use form as example, default behavior send request to server and refresh page
+-   `e.preventDefault()` to pervent refresh page
 
 ```js
-<form
-    onClick={(e) => {
-        e.preventDefault();
-        onClick();
-    }}
->
-    <input />
-    <button>send</button>
-</form>
+return (
+  <form
+      onClick={(e) => {
+          e.preventDefault();
+          onClick();
+      }}
+  >
+      <input />
+      <button>send</button>
+  </form>
+)
 ```
 
 ## effect

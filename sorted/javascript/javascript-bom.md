@@ -40,3 +40,7 @@
 ## Navigator
 
 [Navigator](javascript-bom-navigator.md)
+
+## XMLHttpRequest
+
+[XMLHttpRequest](javascript-bom-xmlhttprequest.md)

@@ -43,7 +43,7 @@ interface Point {
 
 ## Index Signatures
 
-index signature 用于**在以下这种情况**声明一个[interface](typescript-interface.md) or [class](typescript-class.md) 的property type
+index signature using under the following situation to declare a property type of an [interface]() or [class]
 
 1. don't know all the name of properties
 2. know the type of the value

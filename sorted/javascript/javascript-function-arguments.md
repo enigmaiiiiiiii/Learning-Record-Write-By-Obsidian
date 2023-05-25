@@ -1,8 +1,9 @@
 # Parameter
 
-- [feature](#feature)
-- [Arguments Object](#arguments对象)
-- [default parameters](#default-parameters)
+* [Feature](#feature)
+* [Arguments Object](#arguments-object)
+* [Default Parameters](#default-parameters)
+* [Rest Parameters](#rest-parameters)
 
 ## Feature
 
@@ -10,11 +11,11 @@
 
 ## Arguments Object
 
-- `arguments` Object 是一个可以在函数内部访问的参数数组
-  - `arguments[0]`: 第一个参数
-  - `arguments[1]`: 第二个参数
-- `arguments.length`返回参数个数
-- `arguments` Object 不反映参数的默认值
+- `arguments` is an array-like object accessible inside functions
+  - `arguments[0]`: represent the first argument
+  - `arguments[1]`: represent the second argument
+- `arguments.length`: represent the number of arguments
+- `arguments` won't show the default value of parameters
 
 ## Default Parameters
 
@@ -23,21 +24,19 @@ function multiply(a, b = 1) {
 }
 ```
 
-- 默认参数初始值可以是原始值，对象，函数返回值
+- default parameters value can be
+  - primitive
+  - object
+  - function return value
 
-对象解构来分配对象参数类型的默认属性
+object destructuring to assign default properties to object parameter types
 
-- 数组元素默认值参数
+- array/object destructuring
 
 ```js
 function filledArray([x = 1, y = 2] = []) {
     return x + y;
 }
-```
-
-- 对象属性默认值参数
-
-```js
 function filledObject({x = 1, y = 2} = {}) {
     return x + y;
 }

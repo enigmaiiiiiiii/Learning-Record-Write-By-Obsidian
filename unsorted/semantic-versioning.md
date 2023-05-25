@@ -1,9 +1,13 @@
 # Semantic Versioning
 
-## Introduction
+* [Introduction](#introduction)
+* [Version Format](#version-format)
+* [Semantic Versioning Rules](#semantic-versioning-rules)
+
+## What It Is
 
 - SemVer: Semantic Versioning Specification
-- 一种版本表示规范
+- a kind of versioning specification
 
 ## Version Format
 
@@ -20,9 +24,9 @@ Version number format: `MAJOR.MINOR.PATCH`
 3. once a versioned package has been released, the contents of that version **MUST NOT be modified**
 4. in `0.y.z` version, the public API **SHOULD NOT** be considered stable
 5. 1.0.0 defines the public API
-6. 如果引入了向后兼容的bug修复, patch version `Z` (x.y.Z | x > 0) **MUST** be incremented
-7. 如果引入了新的向后兼容的API, minor version `Y` (x.Y.z | x > 0) **MUST** be incremented, patch version `Z` **MUST** be reset to 0
-8. 如果引入了不向后兼容的API, major version `X` (X.y.z | X > 0) **MUST** be incremented, minor version `Y` and patch version `Z` **MUST** be reset to 0
+6. if backward-compatible bug fixes are introduced, patch version `Z` (x.y.Z | x > 0) **MUST** be incremented
+7. if backward-compatible API are introduced, minor version `Y` (x.Y.z | x > 0) **MUST** be incremented, patch version `Z` **MUST** be reset to 0
+8. if backward-incompatible API are introduced, major version `X` (X.y.z | X > 0) **MUST** be incremented, minor version `Y` and patch version `Z` **MUST** be reset to 0
 9. pre-release version **MAY** be denoted by appending a hyphen and a series of dot separated identifiers immediately following the patch version
 
 > 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7, 1.0.0-x.7.z.92

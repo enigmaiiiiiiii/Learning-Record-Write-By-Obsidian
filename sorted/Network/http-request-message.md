@@ -1,37 +1,44 @@
-# 请求报文
+# Http - Request Message
 
-## Example request
-
-> 方法为POST时，内容为用户提供的表单
+## typecal request message
 
 ```http
-GET /somedir/page.html HTTP/1.1
-Host: www.someschool.edu
-Connection: close
-User-agent:Mozilla/5.0
-Accept-language:fr
+GET /api/data HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+Accept: application/json
+Accept-Language: en-US,en;q=0.9
+Referer: https://www.example.com/
+Connection: keep-alive
 
-entity body
+<content>
 ```
+> when request method is post, the content is the form provided by user
 
-## 请求行
+## request line
 
-- 请求报文第一行, 包括请求方法、[URI](network-uri.md)、请求版本
-- `<请求方法><space><请求路径(URI)><space><HTTP版本><CRLF>`
+`GET /api/data HTTP/1.1` request line
 
-请求方法,包括GET,POST,HEAD,PUT,DELETE
+- first line of request message, including
+  - [request method](http-request-method.md)
+  - [URI](network-uri.md)
+  - request version
 
-- get将请求的数据附在url后
-- post将提交的数据放在报文主体(entity body)中
+request method, including GET, POST, HEAD, PUT, DELETE
 
-## 请求头字段
+- [method detail](http-request-method.md)
 
-> 请求头也有叫 "消息头", "首部行" 的
+## Header Fields
 
-[请求头字段](http-request-header.md)
+[request-header](http-request-header.md)
 
 
-## 空行`<CR><LF>`
+## empty line
+
+represent `<CR><LF>`
 
 - `<CR>`
 - `<LF>`
+
+## request body
+

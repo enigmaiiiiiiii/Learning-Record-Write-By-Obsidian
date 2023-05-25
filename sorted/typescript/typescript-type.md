@@ -1,16 +1,17 @@
 # type in typescript
 
-- [What Is Type Annotation](#what-is-type-annotation)
-- [what can be used as a type](#what-can-be-used-as-a-type)
-- [type statement](#type-statement)
-- [Union Types](#union-types)
-- [type check](#type-check)
-- [type inference](#type-inference)
-- [type assertion](#type-assertion)
-- [Narrowing](#narrowing)
-- [Keyof operator](#keyof-operator)
-- [Mapped Types](#mapped-types)
-- [Type Compatibility](#type-compatibility)
+* [What Is Type Annotation](#what-is-type-annotation)
+* [what can be used as a type](#what-can-be-used-as-a-type)
+* [Special Types](#special-types)
+* [type statement](#type-statement)
+* [Union Types](#union-types)
+* [type check](#type-check)
+* [type inference](#type-inference)
+* [type assertion](#type-assertion)
+* [Narrowing](#narrowing)
+* [Keyof operator](#keyof-operator)
+* [Mapped Types](#mapped-types)
+* [Type Compatibility](#type-compatibility)
 
 ## What Is Type Annotation
 
@@ -19,15 +20,15 @@
 > Doesn't use the left-style declarartions, like `int x = 0;`
 > will removed by compiler, won't affect the runtime
 
-声明变量
+declare variable
 
 ```ts
 let person: string = 'Chris';
 ```
 
-> 在变量后使用类型注释并不常用
+> this is not common to annotate the type of a variable
 
-定义函数时，可以使用类型注解
+function parameter with type annotation
 
 ```ts
 function greet(name: string) {
@@ -120,19 +121,27 @@ any
 
 ## Union Types
 
-[c++中也有union type](c++-union-type.md)
+[in c++, there is union type too](c++-union-type.md)
 
 ```ts
-function pringId(id: number | string) {
-    console.log(`Your ID is: ${id}`);
+function printId(id: number | string) {
+  console.log(`Your ID is: ${id}`);
 }
 ```
 
-- 不允许使用只有某个类型**特有**的方法
+not allow to use method that only exist in one type
+
+```ts
+function printId(id: number | string) {
+  console.log(id.toUpperCase()); // Error: Property 'toUpperCase' does not exist on type 'string | number'.
+}
+```
+
+the solution is [narrow](#narrowing) the type
 
 ## type check
 
-- 通过一个值的shape来判断这个值的类型
+- through value's **shape** to determine the type of the value
 
 ```ts
 class VirtualPoint {
@@ -165,14 +174,14 @@ logPoint(virtualPoint); // logs "13, 56",
 logPoint(color);   // error
 ```
 
-1. 在上面的例子中`point`并没有声明为`Point`类型，typescript类型检查时对比point的**shape**和Point的**shape**，如果相同则认为是Point类型
-2. ts匹配的是对象字段的子集, `point3`, `rect`中有x, y字段, `color`中没有, 所以color不是Point类型
-3. 类型检查对于`class实例`同样有效
+1. in above example, `point` is not declared as `Point` type, ts check the **shape** of `point` and `Point`, if they are same, then `point` is `Point` type
+2. ts match the subset of the object fields, `point3`, `rect` have `x`, `y` fields, `color` doesn't, so `color` is not `Point` type
+3. type check also works for `class instance`
 
 ## type inference
 
-- 对于没有显式[type annotation](#type-annotation)的变量, ts会自动推断出类型
-- 当被推断的值由多个表达式组成时, ts会推断出一个Best Common type(最佳通用类型), 通常会推断出一个[联合类型](#union-types)
+- for no explicit [type annotation](#type-annotation) variable, ts will infer the type
+- when a type inference is made from several expressions, ts will infer a Best Common Type, usually a [union type](#union-types)
 
 ```ts
 let x = [0, 1, null];  // x: (number | null)[]
@@ -180,7 +189,8 @@ let x = [0, 1, null];  // x: (number | null)[]
 
 contextual typing
 
-- 如果window.onmousedown函数之前有过定义, 再次赋值时, ts会推断参数类型
+- `window.onmousedown` is already declared
+- when assign a function to it, ts will infer the type of the function, even you don't annotate it
 
 ```ts
 window.onmousedown = function(mouseEvent) {
@@ -194,8 +204,8 @@ window.onmousedown = function(mouseEvent) {
 > like type annotation, removed by compiler
 
 - use `as` keyword
-- 有时候对于有些值, coder自己知道类型, 而ts无法推断出来, 这时候可以使用类型断言
-- 使用类型断言后可以调用断言类型的方法
+- for some value, coder know the type, but ts can't infer it, then use type assertion
+- when assert a type, you can use the method of the type
 
 ```ts
 const x = "hello" as number; // error
@@ -218,7 +228,7 @@ function fb(p: Point) {
 
 ## Narrowing
 
-- Narrowing: 根据[type check](#type-check), refine type more specific
+- Narrowing: according to [type check](#type-check), refine type more specific
 
 ```ts
 function padLeft(padding: number | string, input: string) {
@@ -226,7 +236,7 @@ function padLeft(padding: number | string, input: string) {
 }
 ```
 
-- 上面的例子中, padding是联合类型, 不能直接使用repeat方法
+- at above example, padding is a [union type](#union-types), can't use `repeat()` method directly
 
 ```ts
 function padLeft(padding: number | string, input: string) {
@@ -237,7 +247,7 @@ function padLeft(padding: number | string, input: string) {
 }
 ```
 
-- if语句中, ts会根据type check的结果, refine `padding` 为string类型
+- in if statement, ts according to type check, refine `padding` to string type
 
 ## Keyof operator
 
@@ -248,8 +258,8 @@ type Point = { x: number; y: number };
 type P = keyof Point;  // P = "x" | "y"
 ```
 
-- 如果一个类型包含[index signature](typescript-interface.md#index-signatures), keyof 返回的是 `string` or `string | number`
-- 经常用于[mapped type](#mapped-types)
+- if a type contains [index signature](typescript-interface.md#index-signatures), keyof will return `string` or `string | number`
+- usually used in [mapped type](#mapped-types)
 
 ```ts
 type A = keyof { [n: number]: unknown };  // A = number
@@ -344,3 +354,7 @@ function fb(p: Point) {
 let p: Point3d = { x: 10, y: 20, z: 30 };
 console.log(fb(p));
 ```
+
+## Utility Types
+
+[Utility Types](typescript-utility-types.md)

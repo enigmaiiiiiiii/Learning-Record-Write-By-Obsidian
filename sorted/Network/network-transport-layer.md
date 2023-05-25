@@ -6,7 +6,7 @@
 - 主要有三个协议[TCP](network-tcp-protocol.md)，[UDP](udp.md)协议
 - 将从发送应用程序进程接收到的[network-message](network-message.md)转换成为运输层的[network-group](network-group.md), 该分组称为运输层报文段
 - 不同主机上的**进程**之间提供了逻辑通信
-- 多路分解：将运输层报文段中的数据交付到正确的[套接字](套接字.md)的工作
+- 多路分解：将运输层报文段中的数据交付到正确的[computer-network-socket](computer-network-socket.md)的工作
 - 多路复用：在源主机从从不同套接字中**收集**数据块，并为每个数据块装上首部信息从而生成报文段, 然后将报文段传递到网络层，所有这些工作称为多路复用
   - 套接字有唯一标识符
   - 每个报文段有特殊字段来指示该报文段索要交付的套接字

@@ -1,4 +1,4 @@
-# 套接字
+# Computer Network - Socket
 
 - 运输层的编程对象
 - 应用程序和运输层协议之间的接口

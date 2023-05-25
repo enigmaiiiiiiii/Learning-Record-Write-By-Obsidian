@@ -8,17 +8,17 @@
 
 ## Feature
 
-- 这些属性在[block box](css-box-model-sorted.md#block-box)中可以被完全体现
-- 而部分作用于[inline box](css-box-model-sorted.md)
+- Those properties in [block box](css-box-model-sorted.md#block-box) are repected
+- but partially repected in [inline block](css-box-model-sorted.md#inline-block)
 
 ## Content
 
 width, height
 
-- 不能取负值
-- 取值类型
-  - 大小: 直接指定大小, 如`width: 100px;`
-  - 百分比: 按[containing block](css-containing-block.md)百分比设置大小
+- cannot be negative
+- value type
+  - united number: specify the size directly, like `width: 100px;`
+  - percentage: 按[containing block](css-containing-block.md)百分比设置大小
 
 max-width, max-height, min-width, min-height
 
@@ -27,6 +27,7 @@ max-width, max-height, min-width, min-height
   - max-content:
   - min-content:
   - `<percentage>`:
+
 
 ## padding
 

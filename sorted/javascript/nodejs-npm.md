@@ -1,62 +1,53 @@
 # npm
 
-- [npm is used to](#npm-is-used-to)
-- [配置npm](#配置npm)
-- [npm init](#npm-init)
-- [npm-install](#npm-install)
-- [npm run](#npm-run)
-- [npm package](#npm-package)
-- [npm exec](#npm-exec)
-- [npm show latest package version](#npm-show-latest-package-version)
+* [npm is used to](#npm-is-used-to)
+* [config npm](#config-npm)
+* [npm init](#npm-init)
+* [npm-install](#npm-install)
+* [npm run](#npm-run)
+* [npm package](#npm-package)
+* [npm exec](#npm-exec)
+* [npm show latest package version](#npm-show-latest-package-version)
 
 ## npm is used to
 
-- 调整应用程序代码包
-- 下载立即使用的独立工具
-- 使用npx运行包而不下载
-- 将代码限制为特定开发人员
-- 与任何npm用户共享代码。
-- 创建组织来协调包维护、编码和开发人员。
-- 通过组织来组建虚拟团队。
-- 管理多个版本的代码和代码依赖关系。
-- 更新底层代码时，可以轻松更新应用程序。
-- 发现解决同一难题的多种方法。
-- 寻找正在处理类似问题和项目的其他开发人员。
 
 ## config npm
 
-- 命令行参数设置
-- 环境变量`npm_config_<key>`
-- 用户配置文件`$HOME/.npmrc`
-- 全局配置文件`./etc/npmrc`
-- 项目配置文件`/path/to/project/.npmrc`
-- 默认配置保存在`lib/utils/defs.js`中，是不能更改的
+- use `npm config` to config npm
+- environment varable: `npm_config_<key>`
+- use config file located in `$HOME/.npmrc`
+- global config file located in `./etc/npmrc`
+- project config file located in `/path/to/project/.npmrc`
+- **default config** saved at `lib/utils/defs.js`. It is **unchangable**
 
-`.npmrc`文件
+`.npmrc`
 
-- `key=value`格式组成的文件
-- 环境变量用`${VARIABLE_NAME}`表示
+- a file make up of series `key=value` format expression
+- `${VARIABLE_NAME}` repersent environment variable
 
 ## npm init
 
-> 同npm create
+> equilavent to `npm create`
 
-- 语法: `npm init <initializer>`
-  - `initializer`: 是npm package, 创建或更新package
-  - 如果`initializer`被忽略, 则通过命令行询问的方式生成[package.json](nodejs-package-json.md)
+- syntax: `npm init <initializer>`
+  - `initializer`: a npm package, package
+  - if `initializer`is omitted
+    - if current directory has a `package.json` file, then use it
+    - if current directory not has a `package.json` file, then use `npm init` to create a new `package.json` file
 
-`npm init` 转换为对应 `npm exec`
+`npm init` to `npm exec`
 
 - `npm init foo` $\rightarrow$ `npm exec create-foo`
 - `npm init @usr/foo` $\rightarrow$ `npm exec @usr/create-foo`
 
-创建一个React项目
+create a React project
 
 ```bash
 npm init react-app ./my-react-app
 ```
 
-生成新的workspace(带有package.json的空项目)
+generate new workspace(a directory with package.json)
 
 ```bash
 npm init -w packages/a
@@ -68,23 +59,24 @@ options
 
 ## npm-install
 
-- 安装一个包及其依赖包
-- install命令安装依赖包的依据的顺序
+- install a package and its dependencies
+- the order of command `npm install` to install dependencies
   - npm-shrinkwrap.json
   - package-lock.json
   - yarn.lock
 
-选项:
+options:
 
 `-D --save-dev`:
 
-- 将包添加到`devDependencies`中
-- 开发工具的依赖, 如语法检查
+- add package to `devDependencies`
+
+> dev tools dependencies, like syntax check
 
 `--no-save`:
 
 - prevent saving to `dependencies`
-- 不会添加到`package.json`
+- `package.json`
 
 `--legacy-peer-deps`
 
@@ -98,7 +90,7 @@ options
 
 ## npm package
 
-[npm包](nodejs-npm-package.md)
+[npm package](nodejs-npm-package.md)
 
 ## npm exec
 
@@ -106,4 +98,18 @@ options
 
 ```bash
 npm show [package-name] version
+```
+
+## npm update
+
+- default will not update [semver](semantic-versioning.md) value in you `package.json`
+
+update package while update semver value in [`package.json`](nodejs-package-json.md)
+
+- `--save`
+
+```bash
+npm update --save typescript
+```
+
 ```

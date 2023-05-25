@@ -101,10 +101,11 @@ function firstElement<Type>(arr: Type[]): Type {
 ```
 
 - through `<Type>` declaration, you can relate return type and parameter type
-- 这样声明的泛型函数可以接受任意类型的参数
-- 调用时不需要指定泛型函数的参数类型, 会自动推断
+- generic function declared like that can accept any type of parameter
+- no need to specify the type of the generic function when calling it
+- the type will be inferred automatically
 
-**限制**泛型函数的参数类型 Constraints Argument Types
+**constraints** type argument's type
 
 ```ts
 finction longest<Type extends {length: number}>(a: Type, b: Type) {
@@ -115,7 +116,8 @@ finction longest<Type extends {length: number}>(a: Type, b: Type) {
     }
 }
 ```
-- **类型参数**限制为: 包含`.length`属性, 并且属性类型为`number`
+
+- **type argument** is constrained to must have a `.length` property of type `number`
 
 ## Callable Signatures
 
@@ -175,3 +177,35 @@ function fail(msg: string): never {
 ```
 
 Function
+
+## Rest Paramter
+
+## Rest Argument
+
+provide a iterable object as multiple arguments
+
+- typescript does not assume that arrays are immutable
+
+```ts
+function atan2(x: number, y: number): number {
+  if (x === 0 && y === 0) {
+    return NaN;
+  }
+  return Math.atan2(x, y);
+}
+const args = [3, 4];
+atan2(...args);  // error raised
+// A spread argument must either have a tuple type or be passed to a rest paramter
+```
+
+this error says two things, if you want to pass spread argument to a function
+
+- function declaration like `function f(...args: type[])`
+- if function declare like `function f(x, y, z)` then the type of `args` must be a [tuple](typescript-object-types.md#tuple)
+
+solution is assert the type of `args`
+
+```ts
+const args = [3, 4] as const;
+```
+

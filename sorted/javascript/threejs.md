@@ -106,6 +106,25 @@
   - [ CatmullRomCurve3 ](threejs-reference-catmullromcurve3.md)
   - ...
 
+## Addons
+
+- Animations
+  - CCDIKSolver
+  - MMDAnimationHelper
+  - MMDPhysics
+- Controls
+  - ArcballControls
+  - DragControls
+  - OrbitControls
+  - PointerLockControls
+  - ...
+- Loaders
+  - 3DMLoader
+  - DRCOLoader
+  - FontLoader
+  - [GLTFLoader](threejs-addon-gltfloader.md)
+  - ...
+
 ## solutions
 
 [Making Voxel](threejs-making-voxel.md)

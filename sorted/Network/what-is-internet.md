@@ -10,7 +10,7 @@
 
 [RFC](network-rfc.md)
 
-[套接字](套接字.md)
+[computer-network-socket](computer-network-socket.md)
 
 [网络协议](network-protocol.md)
 

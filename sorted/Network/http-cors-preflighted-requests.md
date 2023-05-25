@@ -1,12 +1,14 @@
-# 预检请求
+# Cross-Origin Resource Sharing (CORS) Preflighted Requests
 
-- 用于检查服务器是否支持CORS
+## What It is
 
-## 发送预检请求
+- use to check if server support CORS
 
-- 首部方法为`OPTIONS`
-- 由浏览器自动生成预检请求
-- 发送检查服务器是否支持CORS的http请求, 一般包括以下几个头部字段
+## Send Preflighted Request
+
+- header method is [`OPTIONS`](http-request-method.md#options)
+- browser automatically send preflighted request
+- send a http request to check if server support CORS, generally include following headers
   - Origin
   - Access-Control-Request-Method
   - Access-Control-Request-Headers
@@ -23,11 +25,11 @@ xhr.setRequestHeader('Content-Type', 'application/xml');
 xhr.onreadystatechange = handler;
 xhr.send('<person><name>Arun</name></person>');
 ```
-客户端与服务器交互过程
+interact process of client and server
 
-- 首次交互为预检请求/响应
+- first interaction is preflighted request/response
 
-1. 客户端发送包含预检请求http报文
+1. client send preflighted request
     - 包含OPTIONS请求行
     - 包含Origin: http://foo.example头部字段
     - 包含Access-Control-Request-*头部字段
@@ -39,16 +41,16 @@ xhr.send('<person><name>Arun</name></person>');
     - 会携带Allow-Control-Allow-Origin头部字段
     - 携带Vary: Accpet-Encoding, Origin头部字段
 
-## 不会触发预检请求的情况, 满足以下所有条件
+## condition that will not trigger preflighted request
 
-- 请求方法是`GET`, `HEAD`, `POST`之一
+- request method is one `GET`, `HEAD`, `POST`之一
 - 包含自动设置的头部字段
   - Accept
   - Accept-Language
   - Content-Language
   - Content-Type
     - 只限于`application/x-www-form-urlencoded`, `multipart/form-data`, `text/plain`
-- 任意[XMLHttpRequest](javascript-xmlhttprequest.md)对象没有注册任何事件监听器
+- 任意[XMLHttpRequest](javascript-bom-xmlhttprequest.md)对象没有注册任何事件监听器
 - 没有使用任何[ReadableStream]对象
 
 ## 如果服务器允许, 会响应这个预检请求

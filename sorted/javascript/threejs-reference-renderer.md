@@ -22,7 +22,7 @@
 
 [WebGLArrayRenderer](threejs-webglarrayrenderer.md)
 
-## Render Target
+## Render A Target
 
 > a [render target](threejs-reference-rendertarget.md) is a texture you can render to
 

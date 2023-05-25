@@ -1,5 +1,8 @@
 # Threejs Loading 3d Model
 
+* [Recommend File Format](#recommend-file-format)
+* [loader](#loader)
+
 ## Recommend File Format
 
 - glTF: GL Transmission Format

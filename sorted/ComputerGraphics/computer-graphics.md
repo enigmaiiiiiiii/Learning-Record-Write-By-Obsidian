@@ -1,7 +1,7 @@
 # Computer Graphics
 
-[fundamentals](computer-graphics-fundamentals.md)
+[Fundamentals](computer-graphics-fundamentals.md)
 
 [Matrices](computer-graphics-matrices.md)
 
-[rotate](computer-graphics-rotate.md)
+[Rotate](computer-graphics-rotate.md)

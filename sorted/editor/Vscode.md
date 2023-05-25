@@ -6,34 +6,43 @@
 
 [keybindings](vscode-keybindings.md)
 
-## 同时启动多个项目配置方式
+## Compound Launch Configurations
 
-[同时启动多个项目](vscode-compound-launch-configurations.md)
+[use to start multiple project](vscode-compound-launch-configurations.md)
 
 ## launch.json
 
 [launch.json](vscode-launch-json.md)
 
-## vscode 中的任务
+## task in vscode
 
-[vscode 中的任务](vscode-tasks.md)
+[vscode task](vscode-tasks.md)
 
-## launch.json和task.json配置中的预定义vscode变量
+## vscode built-in variables
 
-[variable替换](vscode-variable-substitution.md)
+[variable substituition](vscode-variable-substitution.md)
 
-## vscode远程登录
+## vscode remote login
 
 crtl+shift+p -> Remote-SSH: Connect to Host
 
-如虚拟机地址为192.168.231.16， 用户名为tmp，密码为123456
+if server address 192.168.231.16， user name: `tmp`，password: 123456
 
-输入: ssh tmp@192.168.231.16 -A
+prompt: ssh tmp@192.168.231.16 -A
 
 ## config proxy
 
 ```json
 {
-    "http.proxy": "http://proxy.server.com:port
+    "http.proxy": "http://proxy.server.com:port"
 }
 ```
+
+## practical cli command
+
+open in new window
+
+```bash
+code -n path
+```
+

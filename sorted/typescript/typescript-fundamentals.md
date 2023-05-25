@@ -12,6 +12,10 @@
 
 [type in typescript](typescript-type.md)
 
+## Object Types
+
+[Object Types](typescript-object-types.md)
+
 ## interface
 
 [Interface](typescript-interface.md)

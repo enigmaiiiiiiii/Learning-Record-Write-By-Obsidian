@@ -1,8 +1,19 @@
 # AJAX
 
+## What is this
+
 - Asynchronous JavaScript and XML
-- 使用了XMLHttpRequest对象构建
-- 在不刷新页面的情况下, 在后台与服务器交换数据
+- mainly build with [XMLHttpRequest](javascript-bom-xmlhttprequest.md) object
+- use number of existing technologies together, including
+  - HTML or XHTML
+  - CSS
+  - JavaScript
+  - DOM
+  - XML
+  - XSLT
+  - XMLHttpRequest Object
+  - JSON
+- web application are able to make quick, incremental updates to the user interface without reloading the entire browser page
 
 1. 发送请求
 

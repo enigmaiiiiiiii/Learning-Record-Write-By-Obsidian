@@ -84,7 +84,7 @@ document.querySelector("#maze");
 
 ## XMLHttpRequest
 
-[XMLHttpRequest](javascript-xmlhttprequest.md)
+[XMLHttpRequest](javascript-bom-xmlhttprequest.md)
 
 - allow page to update without reloading the page
 - plenty use for AJAX programming

@@ -38,7 +38,7 @@ parameter
 
 return
 
-- return function fn
+- return function `fn`
 
 ## Usage
 

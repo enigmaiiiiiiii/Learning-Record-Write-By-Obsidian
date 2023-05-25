@@ -1,9 +1,10 @@
 # browserify
 
-- 浏览器没有`require`方法， 但是Node.js有，使用browserify, 可以使用require代码来组织JavsScript代码
-- 使用方法
+- browser doesn't have `require` method, but Node.js has, using browserify, can use require code to organize JavaScript code
 
-一个main.js文件
+## how to use
+
+a main.js file
 
 ```javascript
 var unique = require('uniq');
@@ -11,14 +12,14 @@ var data = [1, 2, 3, 4, 4, 5];
 console.log(unique(data));
 ```
 
-用browserify命令以递归的方式将通过require引入模块的文件main.js生成一个文件bundle.js
-browserify命令解析[AST](abstract-syntax-tree.md)，遍历整个项目的依赖关系图
+- use browserify command to generate a `bundle.js` file which contains all the code in main.js and all the code in the modules that main.js requires
+- browserify command parse the [AST](abstract-syntax-tree.md)，traverse the dependency graph of the project
 
 ```shell
 browserify main.js -o bundle.js
 ```
 
-在html中通过`<script>`标签引入bundle.js
+- in html, use `<script>` tag to import bundle.js
 
 ```html
 <script src="bundle.js"></script>

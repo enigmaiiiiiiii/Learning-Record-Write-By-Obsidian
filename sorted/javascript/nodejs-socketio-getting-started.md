@@ -1,13 +1,12 @@
-# NodeJS SocketIO Getting Started
+# SocketIO - Getting Started
 
-- [init server](#init-server)
-- [client connect server and send message](#client-connect-server-and-send-message)
-- [Server Send Message](#server-send-message)
-- [Receive Message](#receive-message)
-- [Join Room](#join-room)
-- [Send Message To Specific Channel](#send-message-to-specific-channel)
-- [Disconnection](#disconnection)
-
+* [init server](#init-server)
+* [client connect server and send message](#client-connect-server-and-send-message)
+* [Server Send Message](#server-send-message)
+* [Receive Message](#receive-message)
+* [Join Room](#join-room)
+* [Send Message To Specific Channel](#send-message-to-specific-channel)
+* [Disconnection](#disconnection)
 
 ## init server
 
@@ -49,7 +48,7 @@ socket.emit("event-name", "hello", "world", {x: 1, y: 2});
 
 ## Server Send Message
 
-braodcast message
+broadcast message
 
 - send message to all other sockets except sender
 
@@ -68,7 +67,7 @@ io.on('connection', (socket) => {
   socket.on('event-name', (data) => {
     console.log(data);
   });
-}
+})
 ```
 
 - server side **have many different sockets**
