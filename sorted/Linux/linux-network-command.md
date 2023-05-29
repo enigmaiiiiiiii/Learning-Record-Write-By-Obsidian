@@ -1,6 +1,6 @@
-# 网络命令
+# Linux - Network Command
 
-* [查看网络状态](#查看网络状态)
+* [network status](#network-status)
 * [telnet](#telnet)
 * [scp](#scp)
 * [ftp](#ftp)
@@ -11,11 +11,17 @@
 
 ## network status
 
-- [[netstat]]
+[netstat](linux-netstat.md)
 
-## telnet
+## remote connection
 
 [telnet](telnet.md)
+
+## firewall manager
+
+[firewalld](linux-firewalld.md)
+
+[ufw](linux-ufw.md)
 
 ## scp
 
@@ -25,30 +31,30 @@
 scp file/path [user@]host:[remote/filename]
 ```
 
-- path/of/file: 本地文件路径
-- user: 远程主机的用户名
-- host: 远程主机的ip地址
-- remote/filename: 远程主机的文件路径
+- path/of/file: local file path
+- user: remote host user name
+- host: remote host ip address or domain name
+- remote/filename: remote file path
 
 options
 
-- r: 递归复制目录
+- r: recursive copy
 
 ## ftp
 
-`-n`:  不使用自动登录
+`-n`:  no auto login
 
-连接ftp服务器
+connect to ftp server
 
 - `ftp [hostname] | [ip-address]`
 - `ftp 192.168.1.1`
 
-下载文件
+download file
 
-- `get [远程路径]`: 单个文件
-- `mget [远程目录]`: 目录下的所有文件
+- `get [remote/file/path]`: single file
+- `mget [remote/directory/path]`: all files in directory
 
-上传文件
+upload file
 
 - put
 - mput
@@ -59,4 +65,4 @@ options
 
 ## tcpdump
 
-- 数据包截获工具
+- data [packet capture]() tool

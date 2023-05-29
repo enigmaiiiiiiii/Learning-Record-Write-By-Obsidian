@@ -20,3 +20,6 @@ parameter
   - `skipVariantsResolver`
   - `skipSx`
 
+## CssBaseline
+
+- fix inconsistent across browser and device

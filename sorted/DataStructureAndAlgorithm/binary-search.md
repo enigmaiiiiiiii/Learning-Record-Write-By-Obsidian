@@ -1,10 +1,12 @@
 # Binary search
 
-- 适用于有序数组
-  > 不一定是严格有序, 比如对于[[快速选择]]问题, 基点左侧大于基点右侧，也可用二分查找的思想寻找目标值
-- 临界点的设置灵活，有待总结  
+- suitable for sorted array
 
-## code 结构
+> not necessary to be strictly sorted, for example, [[quick select]] problem, the left of pivot is greater than the right of pivot, we can also use binary search to find the target value
+
+- critical point is flexible, need to be summarized
+
+## code
 
 ```c++
 class Solution {
@@ -25,17 +27,17 @@ class Solution {
 };
 ```
 
-## 处理中点
-  
+## deal with mid point
+
 - `mid = (left + right) / 2;`
 - `mid = (left + right + 1) / 2;`
 
-## 边界
+## edge
 
-- 判定条件
+- judge condition
   - `nums[mid] > target;`
   - `nums[mid] >= target;`
-- 改变区间 
+- changing range
   - `left = mid;`, `right = mid;`
   - `left = mid + 1`, `right = left - 1`
 

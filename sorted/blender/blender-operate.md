@@ -36,3 +36,12 @@
 ## Glossary
 
 - subvision
+
+## extrude
+
+## vertical split
+
+## Select Edge Loop
+
+- alt + left click
+

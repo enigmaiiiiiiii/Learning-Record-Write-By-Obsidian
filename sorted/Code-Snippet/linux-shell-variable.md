@@ -1,33 +1,34 @@
-# Linux变量
+# Linux Shell - Variable
 
-## 变量类型
+## Variable type
 
-- 局部变量: 定义在程序或命令中
-- 环境变量:
-- shell变量
+- [local variable](#local-variable)
+- [environment variable](#environment-variable)
+- [shell variable](#shell-variable)
 
-## 局部变量
+## local variable
 
-定义变量
+define variable
 
 ```shell
 name = 123
 ```
 
-使用变量, 使用$
+`$` to get variable value
 
 ```shell
 echo $name
 ```
 
-通过`read`从标准输入中读取变量
+use `read` to get input from user
 
 
 ```sh
 read -p "what is your name" name
 echo "hello $name"
 ```
-使用命令参数占位符$1, $2, $3, ...
+
+use input parameter placeholder `$1`, `$2`, `$3`, ... to get input value
 
 ```sh
 name=$1
@@ -45,19 +46,21 @@ echo "You are in $whereami"
 
 - `pwd` can be replaced by `$(pwd)`
 
-## 预定义变量
+## environment variable
 
-> 读取变量时需要再变量明前添加一个"$"
+## shell variable
 
-- UID 当前账户的ID
-- USER当前账户的账户名称
-- HOME 当前账户根目录
-- LANG当前环境使用的语言
-- PATH命令搜索目录
-- PWD返回当前工作目录
-- RANDOM 返回随机整数0~32767
-- HISTSIZE 当前终端的最大历史命令条目
-- `$0` 返回当前命令的名称( `$1`,   ``$2`第一个参数和第二个参数)
-- `$?` 最后一次执行命令返回状态，0为成功，非0为失败
-- `$$` 当前进程的进程号
-- `$!` 后台运行的最后一个进程的进程号
+## Predefined variable
+
+- `UID`: current user id
+- `USER`: current user name
+- `HOME`: current user home directory
+- `PATH`: command search path
+- `LANG`: current language
+- `PWD`: current working directory
+- `RANDOM`: return random number, range from 0 to 32767
+- `HISTSIZE`: max number of command history
+- `$0`: return current command name, while `$1`, `$2`: first and second parameter
+- `$?`: the last command return status, 0 for success, non-0 for fail
+- `$$`: current process id
+- `$!`: last process id running in background

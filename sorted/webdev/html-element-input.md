@@ -8,33 +8,37 @@ value属性
 
 - value属性指定初始值, 如`<input value="init">`
 
-## input type
+## type attribute
 
-- input标签的工作方式依赖于标签的type属性
-- 默认文本类型
-- 可用取值: 
-  - [ ] button
-  - [ ] checkbox 
-  - [ ] color
-  - [ ] date
-  - [ ] datetime-local
-  - [ ] email
-  - [ ] file
-  - [ ] hidden
-  - [ ] image
-  - [ ] month
-  - [ ] number
-  - [ ] password
-  - [ ] radio
-  - [ ] range
-  - [ ] reset
-  - [ ] search
-  - [ ] submit
-  - [ ] tel
-  - [ ] text
-  - [ ] time
-  - [ ] url  
-  - [ ] week
+```html
+<input type="text" name="username" value="init">
+```
+
+- work mode of `<input>` tag depends on `type` attribute
+- default value is `text`
+- avaible values:
+  - button
+  - checkbox
+  - color
+  - date
+  - datetime-local
+  - email
+  - file
+  - hidden
+  - image
+  - month
+  - number
+  - password
+  - radio
+  - range
+  - reset
+  - search
+  - submit
+  - tel
+  - text
+  - time
+  - url
+  - week
 
 ## attribute
 

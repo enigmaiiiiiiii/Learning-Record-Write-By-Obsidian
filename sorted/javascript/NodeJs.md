@@ -64,7 +64,7 @@
 
 [REPL](nodejs-repl.md)
 
-[.env File](nodejs_env_file.md)
+[.env File](nodejs_dotenv_file.md)
 
 ## Get Stucked
 

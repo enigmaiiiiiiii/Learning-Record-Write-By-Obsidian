@@ -1,18 +1,19 @@
-# 容器网络
+# Container Networking
 
-- 容器有一个带有IP地址，网关，路由表，DNS服务器和其它网络细节的网络接口
+## What is this
 
-## 发布端口
+- contain has a network interface with an IP address, a gateway, a routing table, DNS servers, and other networking details
 
-- 当使用`docker run`, `docker create`运行一个容器时, 没有发布任何端口
-- 使用`-p`选项可以发布端口, 会创建一个防火墙规则, 将docker端口映射到宿主机端口
+## publish port
 
-`-p 8080:80`: 将容器的TCP 80端口映射到宿主机的8080端口
-`-p 192.168.1.100:8080:80`: 将容器的TCP 80端口映射到192.168.1.100的8080端口
-`-p 8080:80/udp`: 将容器的udp 80端口映射到宿主机的8080端口
-`-p 80880:80/tcp -p 8080:80/udp`: 将容器的TCP 80端口映射到宿主机的8080端口, 将容器的udp 80端口映射到宿主机的80880端口
+- when use `docker run` or `docker create` to run a container, no port is published
+- use `-p` to publish a port, it will create a firewall rule to map docker port to host port
+  - `-p 8080:80`: let host port 8080 map to container TCP port 80
+  - `-p 192.168.1.100:8080:80`: let container TCP port 80 map to host `192.168.1.100` port 8080
+  - `-p 8080:80/udp`: let container udp port 80 map to host port 8080
+  - `-p 80880:80/tcp -p 8080:80/upd`: let container TCP port 80 map to host port 8080; container udp port 80 map to host port 8080
 
-## IP地址和主机名
+## IP address and host name
 
-- 容器启动时只能连接一个网络
-- 使用`--network`可以使运行中的容器连接多个网络
+- when container start, it will only connect to one network
+- use `--network` to connect to multiple networks

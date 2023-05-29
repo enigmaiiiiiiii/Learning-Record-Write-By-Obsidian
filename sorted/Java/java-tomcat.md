@@ -4,7 +4,7 @@
 
 [On Linux](tomcat-install-on-linux.md)
 
-## 简介
+## description
 
 Enviromment Variables
 
@@ -13,7 +13,7 @@ Enviromment Variables
 
 > web app deployed under the `$CATALINA_HOME/webapps` directory
 
-## 术语
+## Glossary
 
 **Document root**: the directory where the web app is deployed, like JSP, HTML, Java classes, and images
 

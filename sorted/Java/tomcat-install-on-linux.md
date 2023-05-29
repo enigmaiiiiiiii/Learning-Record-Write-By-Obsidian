@@ -8,25 +8,24 @@
 - [chown]
 - [alternatives]
 - [etc/profile](../linux/linux-system-environment.md)
-- [用户和分组]
 
 ## rocky linux
 
-下载tar.gz包到一个临时文件夹或存放下载文件的文件夹, 比如/tmp
+download a `tar.gz`package to a temporary directory, like `/tmp`
 
 ```bash
 cd /tmp
 curl -O https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.27/bin/apache-tomcat-10.0.27.tar.gz
 ```
 
-解压到[/opt/tomcat](linux-system-directory.md)目录
+uncompress to `/opt/tomcat`
 
 ```bash
 cd /opt/tomcat
 sudo tar xzvf path/to/apache-tomcat-10.0.27.tar.gz
 ```
 
-## 设置环境变量
+## Set Environment Variables
 
 [alternatives](linux-alternatives.md)查看当前java命令所在目录, 用于设置JAVA_HOME
 
@@ -55,24 +54,23 @@ export CATALINA_HOME="/opt/tomcat"
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64"
 ```
 
-## 创建用户
+## Create User
 
+**web server usually does not run as a privileged user**
 
-**网络服务器通常不以特权(sudo/root)用户运行**
-
-创建用户`tomcat`
+create user: `tomcat`
 
 ```bash
 useradd -r -d /opt/tomcat/ -s /bin/false -c "Apach Tomcat User" tomcat
 ```
 
-设置权限
+set access permission
 
 ```bash
 chown -R tomcat: /opt/tomcat
 ```
 
-## 设置Web Management Accounts
+## Set Web Management Accounts
 
 此账号用于管理tomcat, 通过`http://localhost:8080/manager/html`访问
 
@@ -113,7 +111,7 @@ firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --reload
 ```
 
-## run as service
+## Run As Service
 
 ```sh
 vim /etc/systemd/system/tomcat.service

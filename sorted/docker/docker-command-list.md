@@ -1,0 +1,31 @@
+# Command
+
+## help
+
+- `docker --help`
+- `docker [command] --help`
+
+## run
+
+[Command-run](docker-command-run.md)
+
+## ps
+
+- `docker ps`: show the running [container](docker-glossary.md#container)
+
+## stop
+
+- `docker stop <container>`: stop the container
+
+## rm
+
+- remove [container](docker-glossary.md#container)
+
+## pull
+
+- download [image](docker-glossary.md#image) from image repository
+
+## logs
+
+- `docker logs[options] <container>`: check the log of the container
+

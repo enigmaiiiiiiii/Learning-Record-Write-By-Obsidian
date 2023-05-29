@@ -1,6 +1,7 @@
-# IPv4数据报
+# IPv4 data message
 
 > 每一行为一个长度, 即32位为一个长度
+
 <table align="center">
 	<tr align ="center">
 		<td>4位<br>版本号</td>
@@ -65,4 +66,3 @@
   - 时间戳
   - 松散源路由选择
   - 严格源路由选择
-  

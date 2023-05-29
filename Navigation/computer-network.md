@@ -18,6 +18,8 @@
 
 [URI](/sorted/network/computer-network-uri.md)
 
+[https](computer-network-https.md)
+
 [RPC](/sorted/network/network-rpc.md)
 
 [SSL](/sorted/network/network-ssl.md)

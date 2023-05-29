@@ -15,9 +15,9 @@
 [groupadd](#groupadd)
 [groups](#groups)
 
-## 查看登录的用户
+## check login user
 
-- 用来查询远程登录的用户
+- use to check remote login user
 - `who [option] [user]`
   - `-a`
   - `-b`
@@ -26,19 +26,19 @@
   - `-l`
   - `-p`
 
-## createuser
+## Create User
 
-[创建用户](linux-create-user.md)
+[Create User](linux-create-user.md)
 
-## 切换用户
+## Switch User
 
-[ ] todo
+`su [option] [username]`
 
 ## usermod
 
-- 修改用户
+- modify user
 
-语法: `usermod [-c/d/e/g/G/l/s/u/L/U] username`
+syntax: `usermod [-c/d/e/g/G/l/s/u/L/U] username`
 
 options
 
@@ -48,7 +48,7 @@ options
 - `-d`: change home directory
 - `-e`: change expiration date
 
-将用户添加到分组
+add user to group
 
 ```bash
 usermod -a -G groupname username
@@ -56,9 +56,9 @@ usermod -a -G groupname username
 
 ## userdel
 
-- 删除用户
+- delete user
 
-语法: `userdel [-r] username`
+synatx: `userdel [-r] username`
 
 options
 

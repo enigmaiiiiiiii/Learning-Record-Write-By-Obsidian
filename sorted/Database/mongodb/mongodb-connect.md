@@ -23,21 +23,15 @@ mongodb://user:pass@sample.host:27017/?maxPoolSize=20&ssl=true
 
 standalone connection string
 
-```sh
-"mongodb://mongodb0.example.com:27017"
-```
+`"mongodb://mongodb0.example.com:27017"`
 
 shared cluster connection string
 
-```sh
-"mongodb://mongos0.example.com:27017,mongos1.example.com:27017,mongos2.example.com:27017"
-```
+`"mongodb://mongos0.example.com:27017,mongos1.example.com:27017,mongos2.example.com:27017"`
 
 Atlas Deployment connection string
 
-```sh
-"mongodb+srv://cluster0.example.mongodb.net myFirstDatabase"
-```
+`"mongodb+srv://cluster0.example.mongodb.net myFirstDatabase"`
 
 ## connect to local mongodb
 
@@ -71,3 +65,6 @@ mongosh "mongodb+srv://cluster0.kefgspk.mongodb.net/myFirstDatabase" --apiVersio
 ## connect using TLS
 
 - what is [ TLS ](network-tls.md)
+
+## debug connect
+

@@ -1,6 +1,6 @@
-# SQLite语句
+# SQLite Statement
 
-## 创建表
+## Create Table
 
 ```sql
 create Table table_name(
@@ -10,7 +10,7 @@ create Table table_name(
 )
 ```
 
-## 插入内容
+## Insert content
 
 ```sql
 INSERT INTO TABLE_NAME [(col1, col2, ...,colN)]

@@ -1,28 +1,54 @@
 # Python Virtual Environment
 
+* [Virtual Env](#virtual-env)
+* [manage package](#manage-package)
+* [requirements.txt](#requirementstxt)
+* [how venvs work](#how-venvs-work)
+
 ## Virtual Env
 
-创建虚拟环境， 指定虚拟环境目录为env_path
+create virtual environment, and specify the virtual environment directory as `env_path`
 
 ```shell
 python -m venv env_path
 ```
+
+it's general to create virtual environment in current working directory
+
+```shell
+python -m venv .venv
+```
+
 activate virtual environment
 
 - windows
-  - cmd: `env_path/Scripts/activate.bat`
-  - powershell: `env_path/Scripts/Activate.ps1`
+  - **cmd**: `env_path/Scripts/activate.bat`
+  - **PowerShell**: `env_path/Scripts/Activate.ps1`
 - unix or MacOs
   - bash/zsh: `source env_path/bin/activate`
   - fish: `source env_path/bin/activate.fish`
   - csh/tcsh: `source env_path/bin/activate.csh`
   - PowerShell: `env_path/bin/Activate.ps1`
 
+check current activated virtual environment
+
+- linux
+
+```shell
+echo $VIRTUAL_ENV
+```
+
+- windows
+
+```shell
+$env:VIRTUAL_ENV
+```
+
 ## manage package
 
 Install Package
 
-- 版本号通过名称后加`==版本号`来指定版本
+- version number can be specified by `==version_number` after package name
 
 ```shell
 python -m pip install numpy==1.1.0
@@ -34,6 +60,20 @@ Remove Package
 
 ```shell
 python uninstall package1 package2
+```
+
+## requirements.txt
+
+create environment from `requirements.txt`
+
+```shell
+pip install -r requirements.txt
+```
+
+write current environment to `requirements.txt`
+
+```shell
+pip freeze > requirements.txt
 ```
 
 ## how venvs work

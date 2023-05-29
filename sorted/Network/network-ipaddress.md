@@ -1,61 +1,42 @@
-# IP地址
+# IP Address
 
-- 一个IP地址与一个[接口]相关联
+- an ip address is associated with an **interface**
 
-> 一个接口一个IP，而不是该接口的主机或路由器相关联
+> a host or router can have multiple interfaces, each with a different IP address
 
-- 在全球因特网中的每台主机和路由器上的每个接口，都必须有一个全球唯一的IP地址
-- 每个IPv4地址长度为32位，因此共$2^{32}$个 
-- 互联网ip，公网ip，广域网ip应该是一种东西
+- each interface of each host and router in the global internet must have a globally unique IP address
+- every IPv4 address is 32 bits, so there are $2^{32}$ of them
+- ~~internet ip, public ip, wide area network ip may be the same thing?~~
 
-## 子网(IPv4)
+## IPv4 Subnet
 
-- 互联的若干个主机接口与一个路由器接口形成一个子网
-- 子网划分
-<table>
-    <tr>
-        <td>类别</td>
-        <td>起始位</td>
-        <td>开始</td>
-        <td>结束</td>
-        <td>点分十进制掩码</td>
-    </tr>
-    <tr>
-        <td>A</td>
-        <td>0</td>
-        <td>0.0.0.0</td>
-        <td>127.0.0.0</td>
-        <td>255.0.0.0</td>
-    </tr>
-    <tr>
-        <td>B</td>
-        <td>10</td>
-        <td>128.0.0.0</td>
-        <td>191.255.0.0</td>
-        <td>255.255.0.0</td>
-    </tr>
-    <tr>
-        <td>C</td>
-        <td>110</td>
-        <td>192.0.0.0</td>
-        <td>223.255.255.0</td>
-        <td>255.255.255.0</td>
-    </tr>
-</table>
-- 子网地址223.1.1.0/24:
-  - /24称为子网掩码, 表示最左侧24bit定义了子网地址 
-  - 223.1.1.1(主机1), 223.1.1.2(主机2), 223.1.1.3(主机3), 223.1.1.4(路由器接口)组成
-  - 任何其他联到223.1.1.0/24的主机都要求地址具有223.1.1.xxx的形式
-  
-## 因特网地址分配策略
+- multiple host interfaces connected to a router interface form a subnet
+- Subnet type
 
-- 私有网络ip地址块
-  - A类子网10.0.0.0 ~ 10.255.255.255
-  - B类子网172.16.0.0 ~ 172.31.255.255
-  - C类子网192.168.0.0 ~ 182.168.255.255
-- 公网ip是全球唯一的
+> different with [ipv4 address type](#ipv4-address-type), which is about the address itself
 
-## 特殊IP地址
+| type | start bits | start     | end           | decimal mask  |
+| ---- | ---------- | --------- | ------------- | ------------- |
+| A    | 0          | 0.0.0.0   | 127.0.0.0     | 255.0.0.0     |
+| B    | 10         | 128.0.0.0 | 191.255.0.0   | 255.255.0.0   |
+| C    | 110        | 192.0.0.0 | 223.255.255.0 | 255.255.255.0 |
 
-- 家庭网络中，各主机ip是路由器分配的
-- 路由器的地址是[因特网服务提供商](因特网服务提供商.md)ISP通过[DHCP](dhcp.md)分配的广域网ip地址
+## subnet mask
+
+for 223.1.1.0/24:
+
+- /24 is called subnet mask, which means the leftmost 24 bits define the subnet address
+- any other host connected to `223.1.1.0/24` must have an address of the form `223.1.1.xxx`
+
+## ipv4 address type
+
+- private ip address block
+  - A: 10.0.0.0 ~ 10.255.255.255
+  - B: 172.16.0.0 ~ 172.31.255.255
+  - C: 192.168.0.0 ~ 182.168.255.255
+- public ip is global unique
+
+## Special IP Address
+
+- in home network, each host ip is assigned by router
+- router's ip is assigned by [ISP](internet-service-provider) through [DHCP](dhcp.md)

@@ -1,27 +1,29 @@
 # form
 
+## What is for
+
 - interactive controls containing submitting information
-- 用于收集用户输入
+- use to collect user input
 
-## 表单相关标签
+## form related elements
 
-- form标签包含的标签
+- tag that used inside form
 - form-associated elements
-  - [ ] [button]
+  - [button]
   - fieldset
-  - [x] [input](html-element-input.md)
+  - [input](html-element-input.md)
   - object
   - output
   - select
   - textarea
   - img
 
-## action属性
+## action property
 
-- action的值表示: form data处理程序的[URI]()
-- 可被`<button>, <input type="submit">, <input type="image">`元素上的formaction属性覆盖
+- value of action is the program [uri](computer-network-uri.md) that will handle the submitted form data
+- can be overridden by `formaction` attribute on `<button>, <input type="submit">, <input type="image">` elements
 
-## method属性
+## method property
 
 - 提交表单的[HTTP method](http-request-message.md)
 - 有限取值: 1.post 2.get 3.dialog

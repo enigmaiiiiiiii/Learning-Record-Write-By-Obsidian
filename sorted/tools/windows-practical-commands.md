@@ -4,6 +4,14 @@
 * [winget](#winget)
 * [Get-Help Document](#get-help-document)
 * [md](#md)
+* [Check Port](#check-port)
+* [winget](#winget)
+* [Get-Help Document](#get-help-document)
+* [md](#md)
+* [show file list](#show-file-list)
+* [Directory Tree](#directory-tree)
+* [Print Environment Variable](#print-environment-variable)
+* [command location](#command-location)
 * [dir](#dir)
 * [Directory Tree](#directory-tree)
 * [print env variable](#print-env-variable)
@@ -11,13 +19,13 @@
 
 ## Check Port
 
-查看所有端口
+check all port
 
 ```bash
 netstat -ano
 ```
 
-查看指定端口
+check specific port
 
 ```bash
 netstat -ano | findstr "8080"
@@ -27,28 +35,39 @@ netstat -ano | findstr "8080"
 
 ## Get-Help Document
 
-- Get-Help cmdlet 获得某个cmdlet的帮助文档
-- Get-Help About_&lt;topic-name&gt;
+- `Get-Help cmdlet`: get help document of `cmdlet`
 
-## md
+## make directory
 
-- make dir
+```sh
+md
+```
 
-## dir
+## show file list
 
-- 显示目录中文件列表
+- ls
+- dir
 
 ## Directory Tree
 
-- 显示目录树
-- `tree /f` 显示文件
+display directory tree
+
+```sh
+tree
+```
+
+display directory tree with file name
+
+```sh
+tree /f
+```
 
 ## Print Environment Variable
 
 ```shell
 $env:VARIABLE_NAME
 ```
-## command location
+## Command Location
 
 ```sh
 where.exe <command>

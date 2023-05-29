@@ -1,32 +1,34 @@
-# 概念
+# Git Glossary
 
 ## index
 
-- 保存下一次要commit的**信息**，比如修改, 删除, 新增文件
+- save information about what will go into your next commit, like modificatoin, delete, new file
 
-## Git机制
+## Git Mechanism
 
-- 保存文件快照，而非差异比较
-- 一般只添加数据，几乎不会导致不可恢复的操作
+- save file snapshot, not diff
+- generally only add data, so almost no **irreversible operation**
 
-## 工作区: Working Directory
+## Working Directory
 
 - 对项目的某个版本独立提取出来的内容
 - 从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改。
 
-## 暂存区: Staging Area
+## Staging Area
 
 - 一个文件，保存了下次将要提交的文件列表信息，一般在 Git 仓库目录中
 - 按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”
 
-## Git仓库目录: .git directory(Repository)
+## Git Directory
+
+`.git directory(Repository)`
 
 - Git 用来保存项目的元数据和对象数据库的地方
 - 这是 Git 中最重要的部分，从其它计算机克隆仓库时，复制的就是这里的数据
 
-## Stage file过程
+## Stage file process
 
-- 计算校验和
+- calculate checksum
 - 保存版本信息到git repository
 - 将校验和添加的暂存区
 

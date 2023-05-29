@@ -1,14 +1,14 @@
-# 命令
+# Linux - Command List
 
-[定位](#定位)
-[工具](#工具)
-[hot-key](#hot-key)
-[文件管理](#文件管理)
-[系统管理](#系统管理)
-[网络](#网络)
-[辅助命令](#辅助命令)
+* [locate](#locate)
+* [tools](#tools)
+* [hot-key](#hot-key)
+* [file management](#file-management)
+* [系统管理](#系统管理)
+* [网络](#网络)
+* [不知道如何分类](#不知道如何分类)
 
-## 定位
+## locate
 
 `which command`:定位一个命令
 `whereis command`: 定位一个命令的binary, source, 手册文件的位置
@@ -27,7 +27,7 @@ apt-file search filename
 
 [定位](linux-locate.md)
 
-## 工具
+## tools
 
 - `date` 显示日期
 - `cal` 显示日历
@@ -42,7 +42,7 @@ apt-file search filename
 - `ctrl + a`: 移动到行首
 - `ctrl + u`: 删除全部输入
 
-## 文件管理
+## file management
 
 - `ls`
 - `cat`
@@ -73,7 +73,7 @@ apt-file search filename
 - `chmod` change mode 控制用户对文件的权限的命令
 - `su` switch user切换用户
 
-## 网络
+## network
 
 - `arp`:查看和修改ARP高速缓存, 主机内ARP table中存储着其他主机的MAC地址
 - `nestat`显示网络状态

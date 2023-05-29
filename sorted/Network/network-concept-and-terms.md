@@ -1,9 +1,9 @@
-# 术语概念
+# Glossary
 
-[包](network-package.md)
+[packet](computer-network-packet.md)
 
-[分组](network-分组.md)
+[group](network-group.md)
 
-[因特网](what-is-internet.md)
+[Internet](what-is-internet.md)
 
-[网络协议](network-protocol.md)
+[computer network protocol](network-protocol.md)

@@ -1,4 +1,12 @@
-# 安装
+# Docker - Installation
+
+> ~~maybe meaningless~~
+
+## Ubuntu
+
+
+
+## CentOS
 
 [official install docuementation](https://docs.docker.com/engine/install/)
 
@@ -16,13 +24,13 @@ sudo yum remove docker \
 ```bash
 # yum-utils
 sudo yum install -y yum-utils
-# 配置仓库地址
+# config repo address
 sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-使用aliyun地址
+use aliyun mirror
 ```bash
 sudo yum-config-manager \
     --add-repo \
@@ -33,23 +41,23 @@ sudo yum-config-manager \
 sudo yum install [--allowerasing] docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-- `--allowerasing`: 有时需要避免问题
+- `--allowerasing`: sometimes need to avoid problem
 
-## 启动
+## start
 
 ```bash
 sudo systemctl start docker
 ```
 
-运行测试
+run test
 
 ```bash
 sudo docker run hello-world
 ```
 
-## 设置镜像下载地址
+## set mirror download address
 
-在/etc/docker/daemon.json添加
+add following content to `/etc/docker/daemon.json`
 
 ```json
 {
@@ -59,15 +67,16 @@ sudo docker run hello-world
 }
 ```
 
-重启daemon, 重启docker使配置生效
+restart daemon, restart docker let the config take effect
 
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
-检查是否修改成功
 
-- 如果启用了rootless模式, 需要使用sudo, 来查看default[上下文](docker-terms.md#docker-context)的配置
+check if modify success
+
+- if rootless mode is enabled, need to use sudo to check default [context](docker-terms.md#docker-context) config
 
 ```bash
 docker info

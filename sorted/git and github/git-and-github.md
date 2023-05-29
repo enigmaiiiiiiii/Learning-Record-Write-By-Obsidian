@@ -2,7 +2,7 @@
 
 ## I
 
-[git术语](git-concept.md)
+[Git Glossary](git-concept.md)
 
 [Git Installation](git-installation.md)
 
@@ -12,7 +12,7 @@
 
 [Branch](git-branch.md)
 
-[git远程](git-remote.md)
+[Git remote](git-remote.md)
 
 [Git Command List](git-command-list.md)
 

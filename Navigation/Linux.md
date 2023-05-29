@@ -1,6 +1,6 @@
 # Linux
 
-## Linux Basic
+## Linux Fundamental
 
 [Directory Structure](linux-system-directory.md)
 
@@ -20,6 +20,8 @@
 
 [Practical Command](linux-practical-command.md)
 
+[Linux Tricks](linux-tricks.md)
+
 [App Install](linux-software-install.md)
 
 [Download](linux-download-command.md)
@@ -38,6 +40,8 @@
 
 [Process](linux-process-command.md)
 
+[Command List](linux-command-list.md)
+
 ## Linux Shell
 
 [Shell](linux-shell.md)
@@ -48,19 +52,19 @@
 
 [Shell Programming](linux-shell-programming.md)
 
-## Linux系统编程
+## Linux System Programming
 
-[打开操作手册的命令: 包括命令和API](linux-programmer-s-manual.md)
+[help manual](linux-programmer-s-manual.md)
 
-[LinuxIO](linux-io.md)
+[Linux IO](linux-io.md)
 
-[Linux文件](linux-file-api.md)
+[Linux File](linux-file-api.md)
 
-[信号](linux-signal.md)
+[Signal](linux-signal.md)
 
-[进程](linux-process.md)
+[Process](linux-process.md)
 
-[Linux线程](linux-thread.md)
+[Thread](linux-thread.md)
 
 [network progrogramming](linux-network-programming.md)
 

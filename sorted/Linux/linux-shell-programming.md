@@ -6,7 +6,7 @@
 
 [Variable](linux-shell-variable.md)
 
-[运算符](linux-shell-operator.md)
+[Operator](linux-shell-operator.md)
 
 ## execute
 
@@ -14,17 +14,17 @@
 bash script.sh
 ```
 
-## shell脚本片段
+## useful shell script
 
-1. 从FTP服务器下载文件
+1. download file from ftp server
 
 ```sh
 HOST = "192.168.0.104"      # Server's hostname
 USER = "lapowner"           # Server login username
 PASSWORD = "1234asdf@Z"     # Server login password
 
-SOURCE = $1  # $1 脚本的第一个参数
-ALL_FILES="${@:2}"  # ${@:2} 除第一个参数以外的参数
+SOURCE = $1  # $1 first parameter of input
+ALL_FILES="${@:2}"  # ${@:2} all parameter except first
 
 # Begin input to FTP
 ftp -inv $HOST <<EOF
@@ -35,8 +35,10 @@ bye
 EOF  # End input to FTP
 ```
 
+use it
+
 ```sh
-./script.sh file1  # 下载file1
-./script.sh *.c file1 # 下载file1和*.c
+./script.sh file1  # down file1
+./script.sh *.c file1 # down file1 and *.c
 ```
 

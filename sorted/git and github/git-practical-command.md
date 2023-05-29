@@ -1,16 +1,15 @@
 # Practical Command of Git
 
-- [Check Commit Log](#check-commit-log)
-- [撤销已提交commit](#撤销已提交commit)
-- [将文件移出暂存区](#将文件移出暂存区)
-- [丢掉本地所有改动](#丢掉本地所有改动)
-- [查看缓存区文件](#查看缓存区文件)
-- [设置HEAD到指定状态](#设置head到指定状态)
-- [提交后发现漏掉了文件](#提交后发现漏掉了文件)
-- [取消修改文件](#取消修改文件)
-- [暂存当前修改, 使我能去并查看其它commit, 而不需要commit当前修改](#暂存当前修改-使我能去并查看其它commit-而不需要commit当前修改)
-- [查看所有分支](#查看所有分支)
-- [Resovle Conflict](#resovle-conflict)
+* [Check Commit Log](#check-commit-log)
+* [Undo commit](#undo-commit)
+* [remove file from stage](#remove-file-from-stage)
+* [discard all local changes](#discard-all-local-changes)
+* [check staged files](#check-staged-files)
+* [set HEAD to specified status](#set-head-to-specified-status)
+* [found forgotten files after commit](#found-forgotten-files-after-commit)
+* [temporarily save current modification](#temporarily-save-current-modification)
+* [check all branches](#check-all-branches)
+* [Resovle Conflict](#resovle-conflict)
 
 ## Check Commit Log
 
@@ -32,7 +31,7 @@ Date:   Mon May 30 09:12:14 2022 +0800
 
 commit id: d590a26b3b988f24842d433d4b64708ff545d399
 
-## 撤销已提交commit
+## Undo commit
 
 ```bash
 git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
@@ -42,48 +41,44 @@ git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 - `--mixed`: 撤销git commit, 撤销git add, 保留改动代码
 - `--hard`: 撤销git commit, 撤销git add, 撤销改动代码
 
-## 将文件移出暂存区
+## remove file from stage
 
 ```bash
 git rm --cached [<file>...]
-git rm --cached -r [<dir>...] # 递归删除
+git rm --cached -r [<dir>...] # recursive remove
 ```
 
-## 丢掉本地所有改动
+## discard all local changes
 
 ```shell
 git reset --hard # 丢弃跟踪的文件的所有本地改动, 撤销跟踪的文件
 git clean -fxd # 删除未跟踪的文件
 ```
-## 查看缓存区文件
+## check staged files
 
 ```bash
 git ls-files
 ```
 
-## 设置HEAD到指定状态
+## set HEAD to specified status
 
 ```bash
 git reset --hard <commitid>
 ```
-## 提交后发现漏掉了文件
+
+## found forgotten files after commit
 
 ```bash
 git commit -m "commit with partial files"
 git add <forgotten_file>
 git commit --amend
 ```
-## 取消修改文件
 
-- 危险命令，会丢失未提交的本地修改
+## temporarily save current modification
 
-```bash
-git checkout -- <file>
-```
+- And go check other commits without committing current modification
 
-## 暂存当前修改, 使我能去并查看其它commit, 而不需要commit当前修改
-
-暂存修改
+temporarily store modification
 
 ```sh
 git stash
@@ -101,7 +96,7 @@ git stash --include-untracked
 git stash pop
 ```
 
-## 查看所有分支
+## check all branches
 
 - `git clone` 的 repository 使用`git branch` 查看分支时只显示本地分支
 

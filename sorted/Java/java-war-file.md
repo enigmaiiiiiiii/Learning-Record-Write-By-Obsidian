@@ -1,16 +1,29 @@
 # War File
 
+* [What is War File](#what-is-war-file)
+* [web.xml](#webxml)
+* [deploy on tomcat](#deploy-on-tomcat)
+
+## What is War File
+
 - WAR: **Web Application** Resource
-- collection of [Jar files](java-jar-file.md), [JavaServer Pages(JSP)](), [Java Servlets](), [Java Classes](), XML, tag libraries, static web pages
+- collection of:
+  - [Jar files](java-jar-file.md)
+  - [JavaServer Pages(JSP)]()
+  - [Java Servlets]()
+  - [Java Classes]()
+  - XML
+  - tag libraries
+  - static web pages
 
 ## web.xml
 
 ./WEB-INF/web.xml:
 
 - web application deployment descriptor
-- 定义了web应用程序解构
+- defines the structure of web application
 
-web.xml文件大致内容
+file web.xml looks like
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

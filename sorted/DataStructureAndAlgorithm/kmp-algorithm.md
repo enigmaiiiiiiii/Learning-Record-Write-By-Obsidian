@@ -1,30 +1,30 @@
-# KMP算法(模式匹配算法)
+# KMP Algorithm(pattern matching algorithm)
 
-> 以三位发明者名字的首字母
+> named by creator's name: Knuth-Morris-Pratt
 
-- 用模式字符串生成前缀表(next数组)
-  - **初始化**后缀下标i，前缀下标j
-  - 考虑前后缀**不同**的情况`while (j > -1 && s[i] != s[j + 1]) {j = next[j]}`
-  - 考虑前后缀**相同**的情况`if (s[i] == s[j + 1]) {j++}`
-  - 给next元素赋值`next[i] = j;`
+- use pattern string to generate prefix table(next array)
+  - init suffix index `i`, prefix index `j`
+  - considering the different of prefix and suffix, `while (j > -1 && s[i] != s[j + 1]) {j = next[j]}`
+  - considering the same of prefix and suffix, `if (s[i] == s[j + 1]) {j++}`
+  - assign the value of [`next`](#prefix-table-next-array) element `next[i] = j;`
 - 使用前缀表匹配
   - 文本串`s[i]`, 模式串`t[j]`
   - 遍历文本串`for (int i = 0;i < s.size(); i++)`
   - 文本串与模式串不匹配: `while (j >= 0 && s[i] != t[j]) j = next[j];`
   - 文本串与字符串匹配:`if (s[i] == t[j]) j++;`
-- 主要应用于字符串匹配
-- KMP不会回溯原始字符串，所以速度较快
+- mostly apply to string matching
+- KMP won't backtrace the original string, so it's faster than brute force algorithm
 
-#### 关于前缀表next数组
+## prefix table next array
 
 - next数组
   - size等于模式串的长度
   - 元素: 分别得到所有包含首字符的子串,前缀与后缀最长相同长度
   - 前后缀不同j回溯
   - 前后缀相同`j++`
-  - j有两个含义
-    - next元素
-    - 返回位置的下标
+  - j have two meanings
+    - next element
+    - index of return position
 
   ```c++
   void getNext(int* next, const string& s) {

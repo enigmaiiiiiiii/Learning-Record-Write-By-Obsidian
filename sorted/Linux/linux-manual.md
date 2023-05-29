@@ -1,6 +1,6 @@
-# table
+# Linux - Manual
 
-## 标准环境变量
+## Standard Environment Variable
 
 <table>
     <tr>
@@ -53,7 +53,7 @@
     </tr>
 </table>
 
-## 信号说明
+## Signal
 
 <table>
     <tr>

@@ -1,7 +1,7 @@
-# linux 系统目录结构
+# linux System Directory
 
-- 根目录:"/" `cd /` , 进入root目录
-- 用户文件夹: "~", 进入用户目录
+- root directory:"/" `cd /` , enter root directory
+- user directory: "~", enter user directory
 
 ## 根目录
 
@@ -29,7 +29,7 @@
 - **cd ~** 进入home
 - 用户的主目录，在 linux 中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的，如上图中的 alice、bob 和 eve。
 
-**<font color = "darkgreen">/lib</font>**  
+**<font color = "darkgreen">/lib</font>**
 
 - lib 是 library(库) 的缩写这个目录里存放着系统最基本的动态连接共享库，其作用类似于 windows 里的 dll 文件。几乎所有的应用程序都需要用到这些共享库。
 
@@ -37,24 +37,24 @@
 
 - u盘，光驱等。
 
-**<font color = "darkgreen">/mnt</font>**  
+**<font color = "darkgreen">/mnt</font>**
 
 -  挂载别的文件系统
 
-**<font color = "darkgreen">/opt</font>**  
+**<font color = "darkgreen">/opt</font>**
 
 - 额外软件目录，如浏览器，数据库
 
-**<font color = "darkgreen">/proc</font>**  
+**<font color = "darkgreen">/proc</font>**
 
 - proc 是 processes(进程) 的缩写，/proc 是一种伪文件系统（也即虚拟文件系统），存储的是当前内核运行状态的一系列特殊文件，这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。  
 - 这个目录的内容不在硬盘上而是在内存里，我们也可以直接修改里面的某些文件，比如可以通过下面的命令来屏蔽主机的ping命令，使别人无法ping你的机器：
 
-**<font color = "darkgreen">/root</font>**  
+**<font color = "darkgreen">/root</font>**
 
 - 该目录为系统管理员，也称作超级权限者的用户主目录。
 
-**<font color = "darkgreen">/sbin</font>**  
+**<font color = "darkgreen">/sbin</font>**
 
 - s 就是 super user 的意思，是 superuser binaries (超级用户的二进制文件) 的缩写，这里存放的是系统管理员使用的系统管理程序。
 

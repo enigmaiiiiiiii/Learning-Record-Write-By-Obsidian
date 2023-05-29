@@ -1,35 +1,37 @@
 # Rootless mode
 
+## what is this
+
 [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/#exposing-privileged-ports)
 
-- 允许非root用户运行docker守护进程和容器
-- 减少守护进程和容器运行时的潜在漏洞
-- rootless模式下不会携带[SETUID](/sorted/linux/linux-file-id.md)使用可执行文件
-- 使用vscode的docker插件时需要使用rootless模式
+- allow non-root users to run the Docker daemon and containers
+- reduce potential vulnerabilities in the daemon and container runtime
+- under rootless mode will not carry [SETUID](/sorted/linux/linux-file-id.md) executable file
+- need to use rootless mode when using docker plugin in vscode
 
-## 使用rootless模式的准备工作
+## Prerequisites for rootless mode
 
 ```bash
 sudo dnf install -y fuse-overlayfs
 sudo dnf install -y iptables
 ```
 
-## 使用限制
+## Restrict
 
-- storage driver支持
+- storage driver support
   - overlay2
   - fuse-overlayfs
   - btrfs
-- Cgroup只有在cgroup v2和systemd下支持
-- 不支持的特性
+- Cgroup only supports on cgroup v2 and systemd
+- unsupported features
   - AppArmor
   - Checkpoint
   - Overlay network
   - Exposing SCTP ports
-- 需要使用ping命令时
-  - 需要向/etc/syscl.conf添加`net.ipv4.ping_group_range=0 2147483647`
+- when using ping command
+  - need to add `net.ipv4.ping_group_range=0 2147483647` to `/etc/syscl.conf`
   - `sudo sysctl --system`
-- 想要开放特权端口(<1024), 需要设置变量CAP_NET_BIND_SERVICE, 并restart daemon
+- when want to open privileged port(<1024), need to set variable CAP_NET_BIND_SERVICE, and restart daemon
 
 ```bash
 sudo setcap cap_net_bind_service=ep $(which rootlesskit)
@@ -39,18 +41,21 @@ systemctl --user restart docker
 - docker inspect 中的地址在命名空间中，主机无法访问到
 - ...
 
-## 开始安装
+## start install
 
-> 如果系统范围的Docker daemon已经运行，需要先停止它
-> ```bash
-> sudo systemctl disable --now docker.service docker.socket
-> ```
+if system wide Docker daemon is running, need to stop it first
+
+```bash
+sudo systemctl disable --now docker.service docker.socket
+```
+
+install
 
 ```bash
 dockerd-rootless-setuptool.sh install
 ```
 
-- 出现`ERROR`输入下面命令
+- when `ERROR` occurs, run following command
 
 ```bash
 sudo sh -eux <<EOF
@@ -58,7 +63,7 @@ modprobe ip_tables
 EOF
 ```
 
-## 使用
+## Usage
 
 ```bash
 systemctl --user start docker
@@ -71,11 +76,11 @@ sudo loginctl enable-linger $(whoami)
 
 daemon config
 
-- 在`~/.config/docker/`目录下配置
+- config in directory `~/.config/docker/`
 
-## 配置rootless模式的registry mirror
+## config registry mirror in rootless mode
 
-在`~/.config/docker/daemon.json`中添加, 没有daemon.json则创建
+add to `~/.config/docker/daemon.json`, if not exist, create it
 
 ```json
 {
@@ -88,6 +93,6 @@ daemon config
 1. `systemctl --user daemon-reload`
 2. `systemctl --user restart docker`
 
-## rootless模式下的数据文件
+## data file under rootless mode
 
 `~/.local/share/docker`

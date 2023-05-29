@@ -1,14 +1,14 @@
-# Shell编程运算符
+# Shell Programming - Operator
 
-## 算数运算符
+## Math Operator
 
 `+, - , *, /, %, =, ==, !=`
 
-## 关系运算符
+## relation operator
 
 - `-eq`
 
-## 逻辑运算符
+## logic operator
 
-## 字符串运算符
+## string operator
 

@@ -1,16 +1,15 @@
 # File Manage
 
-- [File Manage](#file-manage)
-  - [文件权限命令](#文件权限命令)
-  - [file](#file)
-  - [chown](#chown)
-  - [ln](#ln)
+* [File Permission Command](#file-permission-command)
+* [file](#file)
+* [chown](#chown)
+* [ln](#ln)
 
-## 文件权限命令
+## File Permission Command
 
--   `chgrp`: 改变所属群组
--   [chown](linux-command-chown.md): 改变所属用户
--   [chmod](linux-command-chmod.md): 改变文件的属性，可读，可写，SUID 等
+- `chgrp`: change group ownership
+- [chown](linux-command-chown.md): change file owner
+- [chmod](linux-command-chmod.md): change file access permissions, like read, write, SUID, etc. 
 
 ## file
 
@@ -21,14 +20,11 @@ file *
 ```
 determine the type of all file in current directory
 
-查看当前目录下所有文件的类型
-
-
 ## chown
 
 `chown [OPTION] ... [OWNER][:[GROUP]] FILE ...`
 
-修改文件的所有者为owner，所属群组为group
+modify file owner to `[OWNER]`，owner group to `[GROUP]`
 
 ```bash
 chown username:groupname file
@@ -36,7 +32,7 @@ chown username:groupname file
 
 options
 
-- `-R`: 递归处理，将指定目录下的所有文件及子目录一并处理
+- `-R`: recursive, process all files and subdirectories in the specified directory together
 
 ## ln
 
