@@ -1,7 +1,7 @@
 # DNS
 
 - 为什么使用DNS
-  1. [路由器](路由器.md)处理定长的IP地址 [IP协议](ip协议.md)
+  1. [路由器](路由器.md)处理定长的IP地址 [IP协议](computer-network-ip-protocol.md)
   2. 用户更擅长记住主机名称 [Http_URL](http-url.md)
 - 所以DNS(Domain Name System, 域名系统)是一种域名到IP地址转换的目录服务
   1. 一个由分层的DNS服务器实现的分布式数据库

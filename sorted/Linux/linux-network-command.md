@@ -23,6 +23,12 @@
 
 [ufw](linux-ufw.md)
 
+## Network Interface
+
+[ifconfig]
+
+[ip](linux-command-ip.md)
+
 ## scp
 
 - OpenSSH secure file copy

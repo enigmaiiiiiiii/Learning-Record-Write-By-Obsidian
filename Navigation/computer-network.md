@@ -1,67 +1,32 @@
 # Computer Network
 
-## I
+## General
 
-[Concept](network-concept-and-terms.md)
+[glossary](computer-network-general-glossary.md)
 
-[TCP&IP System](tcp-ip-protocol-system.md)
+[data encapesulation process](computer-network-encapsulation.md)
 
-[Core of network](network-core.md)
+## TCI/IP Protocol System
 
-## application layer
+[TCP/IP System](tcp-ip-protocol-system.md)
 
-[description](network-application-layer.md)
+## Computer Network Layer From Top To Bottom
 
-[http](network-http.md)
+[application layer](computer-network-application-layer.md)
 
-[URL](computer-network-url.md)
+> object between application and transport layer
 
-[URI](/sorted/network/computer-network-uri.md)
+- [socket](computer-network-socket.md)
+- [port](network-port.md)
 
-[https](computer-network-https.md)
+[transport layer](computer-network-transport-layer.md)
 
-[RPC](/sorted/network/network-rpc.md)
+[network layer](computer-network-network-layer.md)
 
-[SSL](/sorted/network/network-ssl.md)
+[data link layer](computer-network-data-link-layer.md)
 
-[Web media](network-web-media.md)
+> object between network and physical layer
 
-[Browser](/sorted/network/network-browser.md)
+- [network interface](computer-network-network-interface.md)
 
-## transport layer
-
-[description](/sorted/network/network-transport-layer.md)
-
-[TCP](tcp.md)
-
-[UDP](udp.md)
-
-[可靠传输工作原理](可靠传输工作原理.md)
-
-## 网络层
-
-[网络层](网络层.md)
-
-[IP协议](ip协议.md)
-
-[IP地址](network-ipaddress.md)
-
-[IPv4数据报](ipv4数据报.md)
-
-[存储转发传输](存储转发传输.md)
-
-[数据平面](数据平面.md)
-
-[控制平面](控制平面.md)
-
-## 数据链路层
-
-[数据链路层](数据链路层.md)
-
-[ARP协议](arp协议.md)
-
-[有线局域网](有线局域网.md)
-
-## 物理层
-
-[物理层](物理层.md)
+[physical layer](computer-network-physical-layer.md)

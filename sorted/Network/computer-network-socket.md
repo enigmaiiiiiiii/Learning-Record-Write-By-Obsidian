@@ -1,6 +1,7 @@
 # Computer Network - Socket
 
-- 运输层的编程对象
-- 应用程序和运输层协议之间的接口
-- 应用程序和网络之间的应用程序**编程**接口
-- 发送进程为[network-group](network-group.md)附上目的地址，目的地址由目的主机的IP地址和目的地套接字的端口号组成
+- the programming object of transport layer
+- the interface between application and transport layer protocol
+- the application programming interface between application and network
+- the sending process attaches the destination address to the [packet](computer-network-packet.md)
+- the destination address is composed of the [IP address]() of the destination [host] and the [port] number of the destination socket

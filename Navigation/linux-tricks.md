@@ -1,5 +1,8 @@
 # Linux - Tricks
 
+* [grep](#grep)
+* [get last command output](#get-last-command-output)
+* [let command output as another command's parameter](#let-command-output-as-another-commands-parameter)
 ## grep
 
 - use for searching and filtering text based on patterns
@@ -32,5 +35,17 @@ remove related package
 
 ```sh
 sudo apt remove $(dpkg-query --show --showformat='${Package}\n' | grep -i 'package-name')
+```
+
+## jump back to previous directory
+
+```sh
+cd -
+```
+
+back to two more previous directory
+
+```sh
+cd ~2
 ```
 

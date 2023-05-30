@@ -1,4 +1,4 @@
-# IPv4 data message
+# IPv4 Datagram
 
 > 每一行为一个长度, 即32位为一个长度
 
@@ -36,7 +36,7 @@
 </table>
 
 - 4位版本号（version）指定IP协议的版本。对IPv4来说，其值是4。其他IPv4协议的扩展版本（如SIP协议和PIP协议），则具有不同的版本号（它们的头部结构也和图2-1不同）。
-- 4位首部长度（header length）标识该IP头部有多少个32 bit字（4字节）,一般是[运输层报文段](运输层报文段.md)开始的位置。因为4位最大能表示15，所以IP头部最长是60字节。
+- 4位首部长度（header length）标识该IP头部有多少个32 bit字（4字节）,一般是[computer-network-transport-layer-datagram](computer-network-transport-layer-datagram.md)开始的位置。因为4位最大能表示15，所以IP头部最长是60字节。
 - 8位服务类型（Type Of Service，TOS）
   - 包括一个3位的优先权字段（现在已经被忽略）
   - 4位的TOS字段

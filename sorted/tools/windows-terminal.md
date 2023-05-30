@@ -2,7 +2,7 @@
 
 ## PowerLine
 
-[Windows Terminal Powerline设置教程](https://docs.microsoft.com/zh-cn/windows/terminal/tutorials/powerline-setup)
+[Windows Terminal Powerline Tutorial](https://docs.microsoft.com/zh-cn/windows/terminal/tutorials/powerline-setup)
 
 > Import-Module posh-git
 

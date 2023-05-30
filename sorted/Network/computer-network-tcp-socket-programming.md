@@ -1,13 +1,7 @@
-# TCP套接字编程
-
-[UDP套接字编程](udp套接字编程.md)
-
-[socket](socket.md)
-
-[computer-network-socket](computer-network-socket.md)
+# Computer Network - TCP Socket Programming
 
 ```mermaid
-flowchart LR 
+flowchart LR
 A["创建套接字, port = x:<br>serverSocket = <br>socket()"]
 Atmp[ ]
 B["等待入连接请求<br>connectionSocket=<br>serverSocket.accept()"]
@@ -38,14 +32,14 @@ end
 TCPClient.py
 
 ```python
-from socket import *  
-  
+from socket import *
+
 serverName = 'servername'  
-serverPort = 12000  
+serverPort = 12000
 
 clientSocket = socket(AF_INET, SOCK_STREAM)  
 
-# 创建套接字
+# Create Socket
 
 clientSocket.connect((serverName, serverPort))  
 

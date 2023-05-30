@@ -1,34 +1,42 @@
-# TCP协议(TCP Protocol)
+# TCP Protocol
 
-[TCP（传输控制协议）_百度百科 ](https://baike.baidu.com/item/tcp/33012?fromtitle=tcp%e5%8d%8f%e8%ae%ae&fromid=8988699&fr=aladdin)
+## What is TCP
 
-## 特性
+- TCP: Transmission Control Protocol
+- A Transport Layer Protocol
 
-- 传输控制协议
-- [Network_Transport_Layer](network-transport-layer.md)协议
-- 在不可靠的端到端的网络层([IP协议](ip协议.md)之上实现**可靠数据传输**
-- 每一条TCP只能由两个端点
-- `TCP连接::={$socket_1, socket_2} = {(IP_1:port_1), (IP_2:port_2)}`
-- TCP把数据看成一个无结构的、有序的字节流
-- 提供[全双工通信](全双工通信.md)
+## Features
 
+- Ordered data transfer
+- Retransmission of lost packets
+- Error-free data transfer
+- Flow Control
+- congestion control
 
-## 报文格式
+## TCP Segment
 
-[TCP报文头部结构](tcp-message-header-sturture.md)
+[TCP segment structure](tcp-message-header-sturture.md)
 
-[TCP报文段封装过程](tcp报文段封装过程.md)
+## State Transform
 
-[TCP状态转移](tcp状态转移.md)
+[TCP state tranform](tcp-status.md)
 
-## 原理
+## Reliable Transmission
 
-[可靠传输工作原理](可靠传输工作原理.md)
+[reliable transmission](computer-network-reliable-transmission.md)
 
-## 应用
+## Flow Control
 
-[拥塞控制](拥塞控制.md)
+[flow control](computer-network-tcp-flow-control.md)
 
-[半关闭状态](半关闭状态.md)
+## Congestion Control
 
-[TCP套接字编程](tcp套接字编程.md)
+[congestion control](computer-network-tcp-congestion-control.md)
+
+## half close
+
+[half close](computer-network-tcp-half-close.md)
+
+## TCP Socket Programming
+
+[TCP Socket Programming](computer-network-tcp-socket-programming.md)

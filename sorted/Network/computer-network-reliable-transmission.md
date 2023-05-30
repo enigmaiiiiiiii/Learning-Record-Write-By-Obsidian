@@ -1,10 +1,16 @@
-# 可靠传输工作原理
+# Computer Network - Reliable Transmission
 
-## 建立连接(三次握手)
+## Three-way Handshake
 
 - 发送端发送一个带[SYN](tcp-message-header-sturture.md#syn)标志的数据包
 - 接收端收到后回传一个带有[SYN|ACK]标志的[数据包]，表示确认
 - 发送端再回传一个[ACK]标志的数据包，代表"握手"结束
+
+tranlate above note to english
+
+- sender send a data packet with [SYN](tcp-message-header-sturture.md) flag
+- receiver receive the packet and send a data packet with [SYN|ACK] flag
+- sender receive the packet and send a data packet with [ACK] flag, represent the end of "handshake"
 
 ## 断开连接(四次挥手)
 

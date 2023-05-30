@@ -1,6 +1,6 @@
 # 什么是因特网
 
-[端系统](端系统.md)
+[computer-network-end-system](computer-network-end-system.md)
 
 [network-group](network-group.md)
 

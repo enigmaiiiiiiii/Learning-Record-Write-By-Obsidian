@@ -18,7 +18,7 @@
 
 ## Linux Command
 
-[Practical Command](linux-practical-command.md)
+[Practical Command](linux-practical-commands.md)
 
 [Linux Tricks](linux-tricks.md)
 
