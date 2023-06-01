@@ -1,37 +1,43 @@
 # Computer Network - TCP segment structure
 
-<table>
-  <tr align="center">
-    <td colspan = "16">16bits Source port</td>
-    <td colspan = "16">16bits Destination port</td>
-  </tr>
-  <tr align="center">
-    <td colspan = "32">32bits sequence number</td>
-  </tr>
-  <tr align="center">
-    <td colspan = "32">32bits Acknowledgment number</td>
-  </tr>
-  <tr align="center">
-    <td colspan = "4">4bits<br>data offset</td>
-    <td colspan = "4">6bits reserved</td>
-    <td>C<br>W<br>R</td>
-    <td>E<br>C<br>E</td>
-    <td>U<br>R<br>G</td>
-    <td>A<br>C<br>K</td>
-    <td>P<br>S<br>H</td>
-    <td>R<br>S<br>T</td>
-    <td>S<br>Y<br>N</td>
-    <td>F<br>I<br>N</td>
-    <td colspan= "16">16 window size</td>
-  </tr>
-  <tr align="center">
-    <td colspan = "16">16bits Checksum</td>
-    <td colspan = "16">16bits Urgent pointer</td>
-  </tr>
-  <tr align="center">
-    <td colspan = "32">options，up to 40byte</td>
-  </tr>
-</table>
+- [TCP segment structure](#tcp-segment-structure)
+- [Sequence Number](#sequence-number)
+- [Acknowledgement Number](#acknowledgement-number)
+- [Data Offset](#data-offset)
+- [Reserved](#reserved)
+- [Flags](#flags)
+- [Window Size](#window-size)
+- [checksum](#checksum)
+- [urgent pointer](#urgent-pointer)
+- [Options](#options)
+
+## Take A Look
+
+```sh
+0x0000:  4500 0034 0014 0000 2e06 c005 4e8e d16e  E..4........N..n
+0x0010:  ac1e 0090 6c86 01bb 8e0a b73e 1095 9779  ....l......>...y
+0x0020:  8010 001c d202 0000 0101 080a 3803 7b55  ............8.{U
+0x0030:  4801 8100
+```
+
+## TCP segment structure
+
+```sh
+| 0                            15                             31|
+-----------------------------------------------------------------
+|          source port          |       destination port        |
+-----------------------------------------------------------------
+|                        sequence number                        |
+-----------------------------------------------------------------
+|                     acknowledgment number                     |
+-----------------------------------------------------------------
+|  HL   | rsvd  |C|E|U|A|P|R|S|F|        window size            |
+-----------------------------------------------------------------
+|         TCP checksum          |       urgent pointer          |
+-----------------------------------------------------------------
+|                    options (if data offset > 5)               |
+-----------------------------------------------------------------
+```
 
 - [options here](#options)
 
@@ -51,11 +57,7 @@
 
 ## Reserved
 
-
-
 ## Flags
-
-> 8bits
 
 8 Flags
 
@@ -71,6 +73,7 @@
   - Synchronization
 - FIN: last packet from sender
 
+
 ## Window Size
 
 > 16bits
@@ -83,7 +86,6 @@
 > 16bits
 
 - used for error-checking
-
 
 ## urgent pointer
 

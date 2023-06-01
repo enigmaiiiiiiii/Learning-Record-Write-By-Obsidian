@@ -53,7 +53,7 @@
 
 ## 文件权限掩码
 
--   [umask](umask.md)
+-   [linux-system-function-umask](linux-system-function-umask.md)
 
 
 ## 文件种类概念

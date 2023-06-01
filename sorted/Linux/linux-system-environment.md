@@ -1,5 +1,9 @@
 # Shell Environment
 
+* [set environment variable](#set-environment-variable)
+* [environment variable related file](#environment-variable-related-file)
+* [show all variable](#show-all-variable)
+
 ## set environment variable
 
 export set `name` to `foo`

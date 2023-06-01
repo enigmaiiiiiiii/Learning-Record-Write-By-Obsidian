@@ -11,6 +11,14 @@
 * [check all branches](#check-all-branches)
 * [Resovle Conflict](#resovle-conflict)
 
+## 
+
+## print merges commit log
+
+```bash
+git log --merges
+```
+
 ## Check Commit Log
 
 ```bash
@@ -105,3 +113,4 @@ git branch -a
 ```
 
 ## Resovle Conflict
+

@@ -61,7 +61,7 @@ git restore hello.c
 - `git merge -s <strategy>`: 通过-s选项指定合并策略, strategy取值:
   - ort: 默认策略, ort是合并算法的缩写
   - ours: 冲突时，保留当前分支的更改
-  - ~~~theirs: 冲突时，保留合并分支的更改~~~
+  - ~~theirs: 冲突时，保留合并分支的更改~~
 
 ## git revert
 

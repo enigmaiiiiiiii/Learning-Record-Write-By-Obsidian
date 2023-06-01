@@ -38,7 +38,7 @@ int openat(int dirfd, const char *pathname, int flags, mode_t mode);
     - O_NONBLOCK 以非阻塞方式打开文件
 - `mode`: 设置[文件权限](linux-file-type-and-mode.md), 只有创建新文件`O_CREAT`或`O_TMPFILE`时才需要
   - 当flag设置为O_CREAT 或 O_TMPFILE时，需要设置的参数
-  -  文件的最终权限= mode & ~[[umask]]
+  -  文件的最终权限= mode & ~[[linux-system-function-umask]]
     >  According to POSIX, the effect when other bits are set in mode is unspecified.  On Linux, the following bits are also honored in mode:
     -  S_ISUID  0004000 set-user-ID bit
     -  S_ISGID  0002000 set-group-ID bit (see inode(7)).

@@ -1,8 +1,8 @@
-# Git与 Github
+# Git And Github
 
 ## I
 
-[Git Glossary](git-concept.md)
+[Git Glossary](git-glossary.md)
 
 [Git Installation](git-installation.md)
 

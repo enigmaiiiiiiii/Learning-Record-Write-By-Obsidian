@@ -18,8 +18,6 @@
 
 [create nextjs app](nextjs-create-nextjs-app.md)
 
-
-
 ## Foundation
 
 [File System Routing](nextjs-file-system-routing.md)
@@ -30,11 +28,13 @@
 
 [nextjs config](nextjs-config.md)
 
-[API](nextjs-api.md)
+[nextjs API](nextjs-api.md)
 
 [support typescript](nextjs-typescript.md)
 
-## Further
+[nextjs hydration error](nextjs-hydration-error.md)
+
+## Advanced
 
 [Route API](nextjs-routes-api.md)
 
@@ -45,11 +45,6 @@
 [Core Concepts](nextjs-core-concepts.md)
 
 ## Directive
-
-`"use client"`
-
-- 在`app` directory 的 client component, add `"use client"` directive at the top of the file
-- components marked with `"use client"`, they can use [useState]() or [useEffect]() hooks
 
 ## Rendering
 

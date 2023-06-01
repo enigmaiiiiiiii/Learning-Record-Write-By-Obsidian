@@ -8,14 +8,13 @@
 * [gaim](#gaim)
 * [tcpdump](#tcpdump)
 
-
 ## network status
 
 [netstat](linux-netstat.md)
 
 ## remote connection
 
-[telnet](telnet.md)
+[telnet](linux-telnet.md)
 
 ## firewall manager
 
@@ -72,3 +71,7 @@ upload file
 ## tcpdump
 
 - data [packet capture]() tool
+
+## iptables
+
+[iptables](linux-iptables.md)

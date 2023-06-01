@@ -3,9 +3,9 @@
 - root directory:"/" `cd /` , enter root directory
 - user directory: "~", enter user directory
 
-## 根目录
+## Root Directory
 
-![linux1](linux目录结构.png)
+![linux1](/image/linux-directory-structure.png)
 
 **<font color = "darkgreen">/bin</font>**
 

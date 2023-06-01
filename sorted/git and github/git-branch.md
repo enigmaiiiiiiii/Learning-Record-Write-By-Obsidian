@@ -1,58 +1,43 @@
 # Branch
 
-- [Branch](#branch)
-  - [Git Commit](#git-commit)
-  - [新建Branch](#新建branch)
-  - [切换Branch](#切换branch)
-  - [合并branch](#合并branch)
-    - [解决冲突](#解决冲突)
-  - [删除分支](#删除分支)
-  - [管理分支](#管理分支)
-  - [Branch workflow](#branch-workflow)
-  - [HEAD指针](#head指针)
+* [Git Commit](#git-commit)
+* [Create New Branch](#create-new-branch)
+* [Switch Branch](#switch-branch)
+* [merge branch](#merge-branch)
+* [Resolved Conflict](#resolved-conflict)
+* [delete branch](#delete-branch)
+* [manage branch](#manage-branch)
+* [Branch workflow](#branch-workflow)
+* [HEAD Pointer](#head-pointer)
 
-## Git Commit
-
-- commit时保存[暂存区]的[文件快照]的指针
-
-假设有一个含有三个文件的目录, 将所有文件加入stage area, 并commit, 当使用git commit时
-
-- Git检查(checksums)每一个子目录并保存为一个tree Object到Git repository;
-- 创建一个新的commit Object, 和一个指向root project tree的指针;
-- 此时，git repository中包含5个对象:
-  - 三个blob(文件内容)
-  - 一个树结构: 包含目录内的文件，并说明那些文件是blob
-  - 一个commit: 包含commit元数据和指向root tree的指针
-
-继续commit:
-
-- commit包含一个指向前一个commit的指针
-
-## 新建Branch
+## Create New Branch
 
 ```bash
 git branch <branch_name>
 ```
 
-`git branch`发生了什么
+what happen when `git branch`
 
-- 创建了一个新的指针代表当前commit
+- create a new pointer to current commit
 
 > new branch $\rightarrow$ current commit
 
-## 切换Branch
+## Switch Branch
 
-- `git switch <branch>`: 切换到指定的branch
-  - 使用**git switch**切换前，如果工作目录或暂存区有**未提交修改**，则**不允许切换**
-- `git checkout <branch>` 
-  - 如果工作目录或暂存区有未提交修改，**也可以切换**
-  - 这条命令做了两件事
-    - 将HEAD指向指定的branch
-    - 将文件状态恢复到指定的branch
+`git switch <branch>`
 
-> git log 并不显示所有branch
+- **switching is not allowed**, if there are **uncommitted changes** in the working directory or staging area
 
-## 合并branch
+`git checkout <branch>`
+
+- **checkout can perform a switch**, even if working directory or staging area have uncommitted changes, 
+- this command does two things
+  - move `HEAD` to the specified `branch`
+  - restore the file status to the specified branch
+
+> git log will not show all branch
+
+## Merge Branch
 
 merge基本用法 如: 合并到master
 
@@ -67,11 +52,11 @@ merge基本用法 如: 合并到master
 
 
 
-## 删除分支
+## delete branch
 
 - `git branch -d <branch>`
 
-## 管理分支
+## manage branch
 
 - `git branch`: 显示所有分支名称
 - `git branch -a`: 显示所有分支名称, 包括远程分支
@@ -94,17 +79,17 @@ merge基本用法 如: 合并到master
 
 ## Branch workflow
 
-Long-running Branches - 工作方式
+Long-running Branches - Work Flow
 
-- 大多数开发者采用的方式: master是稳定的分支, 同时另一个并行分支命名为develop或next
+- the way is applied by most developers: master is stable branch, and another parallel branch is named develop or next
 
-Topic Branch - 工作方式
+Topic Branch - Work Flow
 
 - is a short-lived branch
 - VCS before to create a branch is expensive
 - in Git, it's common to create, work on, merge, and delete branches several times a day
 - keep changes for minutes, days, or months, and merge when ready
 
-## HEAD指针
+## HEAD Pointer
 
-[Head指针](git-reference-head.md)
+[Head Pointer](git-reference-head.md)

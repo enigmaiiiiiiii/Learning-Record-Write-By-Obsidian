@@ -25,21 +25,37 @@
 - Foreign Address: Address and port of remote end of the socket
 - stat: [state of the socket](tcp-status.md)
 
-## Practical Command
+## Practical Usage
 
-`netstat -tulpn`
+1. display all listening ports with corresponding process and PID
 
-- display all listening ports with corresponding process and PID
+```sh
+sudo netstat -tulpn
+```
 
-`netstat -tulpn | grep :80`
+2. dipslay all connections to a port 80 with the process and PID
 
-- dipslay all connections to a port 80
+```sh
+sudo netstat -tulpn | grep :80
+```
 
-`netstat -tunlp`
+- **sudo** is required for process and PID display
+- the output like this
 
-- display all open ports with their process and PID
+```sh
+tcp        0      0 0.0.0.0:27017           0.0.0.0:*               LISTEN      3270/rootlesskit
+tcp6       0      0 :::27017                :::*                    LISTEN      3270/rootlesskit
+```
 
-`netstat -an | grep <ip_address>:<port>`
+3. display all open ports with their process and PID
 
-- display all connections for specific ip address and port
+```sh
+sudo netstat -tunlp
+```
+
+4. display all connections for specific ip address and port
+
+```sh
+netstat -an | grep <ip_address>:<port>
+```
 

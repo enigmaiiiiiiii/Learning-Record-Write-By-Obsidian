@@ -6,3 +6,9 @@
   - datagram
   - segment
 - basic structure: header + data
+
+## packet type sort by layer
+
+## packet type sort by function
+
+- 

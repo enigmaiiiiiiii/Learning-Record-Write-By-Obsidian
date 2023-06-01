@@ -11,3 +11,7 @@
 ## procotol
 
 [computer network protocol](network-protocol.md)
+
+## traffic
+
+- the flow of data packets

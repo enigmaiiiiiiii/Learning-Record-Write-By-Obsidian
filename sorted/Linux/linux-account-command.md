@@ -1,19 +1,14 @@
-# 账号管理
+# Linux - Account Management
 
-用户
-
-[查看登录的用户](#查看登录的用户)
-[createuser](#createuser)
-[切换用户](#切换用户)
-[usermod](#usermod)
-[userdel](#userdel)
-[logout](#logout)
-[login](#login)
-
-分组
-
-[groupadd](#groupadd)
-[groups](#groups)
+* [check login user](#check-login-user)
+* [Create User](#create-user)
+* [Switch User](#switch-user)
+* [usermod](#usermod)
+* [userdel](#userdel)
+* [logout](#logout)
+* [login](#login)
+* [groupadd](#groupadd)
+* [groups](#groups)
 
 ## check login user
 

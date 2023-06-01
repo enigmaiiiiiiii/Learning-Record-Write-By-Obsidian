@@ -1,20 +1,5 @@
 # Linux
 
-## Linux Fundamental
-
-[Directory Structure](linux-system-directory.md)
-
-[Built Software](linux-built-in-software.md)
-
-[user and group](linux-user-and-group.md)
-
-[File About Account Manange](linux-account-manage-related-file.md)
-
-[File Permission](linux-file-permission.md)
-
-[File Discriptor](linux-file-descriptor.md)
-
-[System Process](linux-system-process.md)
 
 ## Linux Command
 
@@ -41,6 +26,24 @@
 [Process](linux-process-command.md)
 
 [Command List](linux-command-list.md)
+
+## Core
+
+[Systemd](linux-systemd.md)
+
+[Service](linux-service.md)
+
+[Directory Structure](linux-system-directory.md)
+
+[user and group](linux-user-and-group.md)
+
+[File About Account Manange](linux-account-manage-related-file.md)
+
+[File Permission](linux-file-permission.md)
+
+[File Discriptor](linux-file-descriptor.md)
+
+[System Process](linux-system-process.md)
 
 ## Linux Shell
 

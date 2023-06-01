@@ -8,15 +8,15 @@
 
 - [Design Pattern of Singleton](design-pattern-singleton.md)
 - in many languages, we [need a class](#use-class-to-implement-singleton)
-- in javascript, we can achieve this by [use regular object](#use-regular-object)
+- in javascript, we can achieve this by [use regular object](#implement-with-regular-object)
 
-## use scenarios
+## Use Scenarios
 
 - database connections
 - logging
 - configuration
 
-## implement with regular object
+## Implement With Regular Object
 
 `counter.js`
 
@@ -30,9 +30,12 @@ const counter = {
     return --count;
   }
 }
+
 Object.freeze(counter);
 export { counter };
 ```
+
+- [`Object.freeze`](javascript-global-object.md) is used to prevent the object from being modified
 
 ## implement with class
 

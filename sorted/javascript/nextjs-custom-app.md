@@ -1,4 +1,4 @@
-# Custom APP
+# NextJS - Custom APP
 
 ## override the default App component
 
@@ -10,12 +10,12 @@ export default function MyApp({ Component, pageProps }) {
 }
 ```
 
-- component: 代表当前页面, 也就是说Component随页面变化
-- pageProps: 将要加载的页面的数据, 或者页面需要的数据会**预加载**到pageProps中
+- `Component`; represent current page, which means Component changes as the page changes
+- `pageProps`: data that will be **preloaded** for the page
   - **preloaded** by data fetching methods
 
-## custom app 可以用来做什么
+## What For Custom App
 
-- 在页面变化时保持页面布局
+- when page changes, preserve layout
 - inject additional data into pages
 - Add global CSS

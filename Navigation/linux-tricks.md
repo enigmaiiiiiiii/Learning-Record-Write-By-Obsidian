@@ -37,6 +37,12 @@ remove related package
 sudo apt remove $(dpkg-query --show --showformat='${Package}\n' | grep -i 'package-name')
 ```
 
+remove all trusted sources in [firewalld](linux-firewalld.md)
+
+```sh
+sudo firewall-cmd --remove-source=$(sudo firewall-cmd --list-sources) --permanent
+```
+
 ## jump back to previous directory
 
 ```sh

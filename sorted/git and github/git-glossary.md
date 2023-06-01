@@ -1,5 +1,19 @@
 # Git Glossary
 
+* [index](#index)
+* [Git Mechanism](#git-mechanism)
+* [Working Directory](#working-directory)
+* [Staging Area](#staging-area)
+* [Git Directory](#git-directory)
+* [Stage file process](#stage-file-process)
+* [Untracked files](#untracked-files)
+* [remote repository](#remote-repository)
+* [Status](#status)
+* [working tree](#working-tree)
+* [Work Flow](#work-flow)
+* [Checksum](#checksum)
+* [HEAD](#head)
+
 ## index
 
 - save information about what will go into your next commit, like modificatoin, delete, new file
@@ -36,27 +50,27 @@
 
 - Git之前的提交中没有的文件
 
-## 远程仓库
+## remote repository
 
-[远程仓库](git-remote.md)
+[remote](git-remote.md)
 
-## 状态
+## Status
 
 - 已提交: committed 数据已经安全的保存在本地数据库中
 - 已修改: modified 修改了文件, 还没保存到数据中
 - 已暂存: staged 对一个已修改的文件的当前版本做了标记，使之包含在下次提交的快照中
 
-## 工作树(working tree)
+## working tree
 
 - 工作树是项目的一个版本的单个检出。这些文件从Git目录中的压缩数据库中取出，放在磁盘上供您使用或修改。
 
-## 工作流程
+## Work Flow
 
 1. 修改文件
 2. 更改选择性的加入暂存区, git add
 3. 提交更新 git commit
 
-## 校验和
+## Checksum
 
 - 校验和机制成为SHA-1
 - 是由40个16进制字符(`[0-9a-f]{40}`)组成的字符串

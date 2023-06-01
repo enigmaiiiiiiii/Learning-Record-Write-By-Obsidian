@@ -1,11 +1,10 @@
 # bash built-in command
 
-- [bash built-in command](#bash-built-in-command)
-  - [source](#source)
-  - [bash](#bash)
-  - [difference between source and bash](#difference-between-source-and-bash)
-  - [cd](#cd)
-  - [set](#set)
+* [source](#source)
+* [bash](#bash)
+* [difference between source and bash](#difference-between-source-and-bash)
+* [cd](#cd)
+* [set](#set)
 
 ## source
 

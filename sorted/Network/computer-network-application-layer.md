@@ -22,3 +22,5 @@
 [Web media](network-web-media.md)
 
 [Browser](/sorted/network/network-browser.md)
+
+[Proxy](computer-network-proxy.md)

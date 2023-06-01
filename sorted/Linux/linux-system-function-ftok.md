@@ -1,4 +1,4 @@
-# fotk()
+# Linux System Function - ftok
 
 ```c
 #include <sys/ipc.h>

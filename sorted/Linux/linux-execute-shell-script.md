@@ -1,11 +1,13 @@
 # Execute Shell Script
 
-- [Execute Shell Script](#execute-shell-script)
-  - [conclusion](#conclusion)
-  - [./script.sh](#scriptsh)
-  - [bash script.sh](#bash-scriptsh)
-  - [source script.sh](#source-scriptsh)
-  - [. ./script.sh](#-scriptsh)
+* [Script Like This](#script-like-this)
+* [conclusion](#conclusion)
+* [./script.sh](#scriptsh)
+* [bash script.sh](#bash-scriptsh)
+* [source script.sh](#source-scriptsh)
+* [. ./script.sh](#-scriptsh)
+
+## Script Like This
 
 give a `script.sh` as example
 
