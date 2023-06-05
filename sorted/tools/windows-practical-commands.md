@@ -3,19 +3,11 @@
 * [Check Port](#check-port)
 * [winget](#winget)
 * [Get-Help Document](#get-help-document)
-* [md](#md)
-* [Check Port](#check-port)
-* [winget](#winget)
-* [Get-Help Document](#get-help-document)
-* [md](#md)
+* [make directory](#make-directory)
 * [show file list](#show-file-list)
 * [Directory Tree](#directory-tree)
 * [Print Environment Variable](#print-environment-variable)
-* [command location](#command-location)
-* [dir](#dir)
-* [Directory Tree](#directory-tree)
-* [print env variable](#print-env-variable)
-* [command location](#command-location)
+* [Command Location](#command-location)
 
 ## Check Port
 
@@ -72,3 +64,5 @@ $env:VARIABLE_NAME
 ```sh
 where.exe <command>
 ```
+
+## 

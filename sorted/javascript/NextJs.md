@@ -28,6 +28,8 @@
 
 [nextjs config](nextjs-config.md)
 
+[Environment Variable](nextjs-environment-variable.md)
+
 [nextjs API](nextjs-api.md)
 
 [support typescript](nextjs-typescript.md)

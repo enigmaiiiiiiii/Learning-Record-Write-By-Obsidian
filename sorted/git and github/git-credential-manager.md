@@ -1,11 +1,13 @@
-# git凭据管理程序
+# Git - Credential Manager
 
-- Git Credential Manager, 简称GCM
-- 用于避免每次输入密码
-  - 通过HTTPS访问远程仓库时, git要求提供用户名和密码
-  - git凭据管理程序可以保存用户名和密码，以便下次访问
+## What It is
 
-## 安装
+- Git Credential Manager, GCM
+- use to avoid input password every time
+  - through HTTPS, git requires username and password
+  - git credential manager can save username and password for next time access
+
+## Installation
 
 windows
 

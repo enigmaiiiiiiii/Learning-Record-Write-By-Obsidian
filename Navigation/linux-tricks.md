@@ -3,6 +3,30 @@
 * [grep](#grep)
 * [get last command output](#get-last-command-output)
 * [let command output as another command's parameter](#let-command-output-as-another-commands-parameter)
+
+## awk
+
+- pattern scanning and processing language
+
+```sh
+```
+
+## head
+
+- use for display first nth lines of a file or standard input
+
+for command
+
+```sh
+dnf list installed | head -n 5
+```
+
+for file
+
+```sh
+head -n 5 /etc/passwd
+```
+
 ## grep
 
 - use for searching and filtering text based on patterns

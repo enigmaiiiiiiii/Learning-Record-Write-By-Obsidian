@@ -4,6 +4,6 @@
 
 [异常类](csharp-exception-type.md)
 
-[异常处理](csharp-exception-dealwithcatch.md)
+[Handle Exception](csharp-handle-exception.md)
 
-[抛出异常](csharp-exception-throw.md)
+[Throw Exception](csharp-exception-throw.md)

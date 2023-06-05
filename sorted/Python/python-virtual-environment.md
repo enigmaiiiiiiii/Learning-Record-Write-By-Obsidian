@@ -7,16 +7,16 @@
 
 ## Virtual Env
 
-create virtual environment, and specify the virtual environment directory as `env_path`
-
-```shell
-python -m venv env_path
-```
-
 it's general to create virtual environment in current working directory
 
 ```shell
 python -m venv .venv
+```
+
+create virtual environment, and specify the virtual environment directory as `env_path`
+
+```shell
+python -m venv env_path
 ```
 
 activate virtual environment
@@ -44,7 +44,13 @@ echo $VIRTUAL_ENV
 $env:VIRTUAL_ENV
 ```
 
-## manage package
+## Manage Package
+
+Installed Packge List
+
+```sh
+python -m pip list
+```
 
 Install Package
 
@@ -58,8 +64,8 @@ Remove Package
 
 - uninstall package1 package2
 
-```shell
-python uninstall package1 package2
+```sh
+python -m pip uninstall package1 package2
 ```
 
 ## requirements.txt

@@ -12,6 +12,6 @@
 
 ## dnf
 
-- 下一代yum
+- next upcoming yum
 
 [dnf](linux-dnf.md)

@@ -1,13 +1,13 @@
 # Git Installation
 
-## 安装Git后要做的第一件事
+## first thing to do after install GIT
 
-- 设置user.name和user.email, 作为每次[commit], git都会使用的信息
+- set `user.name` and `user.email`, which will be used by git for every commit
 
-```shell
+```sh
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-- 通过`--global`选项， 为git一次配置
-- 不加`--global`选项, 为特定仓库指定name和email
+- with `--global` option, configure git once
+- without `--global` option, configure name and email for specific repository

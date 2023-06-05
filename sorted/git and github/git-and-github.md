@@ -12,6 +12,8 @@
 
 [Branch](git-branch.md)
 
+[SSH Key](git-ssh.md)
+
 [Git remote](git-remote.md)
 
 [Git Command List](git-command-list.md)
@@ -28,9 +30,9 @@
 
 [Practical Use](git-practical-command.md)
 
-[.gitignore文件](git-ignore.md)
+[.gitignore](git-ignore.md)
 
-[Github搜索技巧](github-search-skills.md)
+[Github Search Skills](github-search-skills.md)
 
 [Detached head](git-detached-head.md)
 

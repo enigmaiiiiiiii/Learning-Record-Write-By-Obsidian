@@ -1,23 +1,25 @@
-# SSH
+# Git - SSH
 
-## 生成SSH Public key
+## Generate SSH Public key
 
 1. Open Git Bash
 2. Enter `ssh-keygen -t ed25519 -C "your_email@example.com"`
 
-> 第二步, 用邮箱作为**标注**创建一个新的SSH key
+> in step 2, use your email address as a label to generate SSH key
 
-- 基于算法ed25519, 生成 public/private 钥匙对
-- `-t`: 指定钥匙类型(算法类型)
-- `-C`: 提供一个个comment
+- base on ed25519 [algorithm](), generate public/private key pair
+- `-t`: specify key type(algorithm type)
+- `-C`: provide a comment
 
-3. 系统提示`Enter a file in which to save the key(/c/Users/you/.ssh/id_algorithm): [Press Enter]`  
+3. system prompt `Enter a file in which to save the key(/c/Users/you/.ssh/id_algorithm): [Press Enter]`
 
-- 设置key文件存放位置, 按Enter表示接受默认
+- set where to store the key file, enter to accept default
 
-4. 提示输入安全短语(passphrase)
+4. prompt to enter passphrase
 
-修改passphrase
+---
+
+modified passphrase
 
 `ssh-keygen -p -f ~/.ssh/id_ed25519`
 
@@ -26,7 +28,7 @@ file list create in `~/.ssh` by above steps
 - id_ed25519
 - id_ed25519.pub
 
-## 检查已存在的SSH keys
+## Check Exist SSH keys
 
 1. Open Git Bash
 2. Enter `ls -al ~/.ssh`
@@ -40,3 +42,10 @@ file list create in `~/.ssh` by above steps
 - 用于保存私钥的程序, 用于私钥的公钥认证
 - 通常在X-session或登陆会话开始时启动
 - 所有其他程序或窗口作为ssh-agent的客户端启动
+
+## Algorithm
+
+- RSA
+- ECDSA
+- Ed25519
+

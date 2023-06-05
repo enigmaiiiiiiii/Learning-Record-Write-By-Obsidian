@@ -1,6 +1,21 @@
-# 编译
+# CSharp - Compile And Execute
 
-- C\#编译器将一系列.cs扩展名的源代码文件编译成[程序集](csharp-programset.md)
-- 对于控制台程序和windows应用程序包含一个Main方法入口
-- 构建生成的程序集将保存在`/bin/debug`子目录下
+## What Happens When Compile
 
+- `C#` compiler compiles a series of source code files with `.cs` extension into [program set](csharp-programset.md)
+- for console program and windows application contains a Main method entry
+- the built program set will be saved in `/bin/debug` subdirectory
+
+
+## Hello World
+
+```cs
+using System;
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+```

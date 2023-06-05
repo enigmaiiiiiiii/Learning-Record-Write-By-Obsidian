@@ -1,32 +1,31 @@
-# Git远程
+# Git - Remote
 
-[生成SSH Key](git-ssh.md)
-
-## 设置远程仓库
+## set remote repository url
 
 ```bash
 git remote add origin <REMOTE_URL>
 ```
-- origin: 远程仓库的别名
-- REMOTE_URL: 远程仓库的URL
 
-## 推送到远程
+- `origin`: remote repository **alias**
+- `REMOTE_URL`: remote repository URL
 
-- git push -u origin master: 将master分支推送到远程仓库
-  - master: 本地分支
-  - origin: 远程仓库的别名
+## push to remote repository
 
-## 拉取远程仓库
+- git push -u origin `master`: push master branch to remote repository
+  - `master`: local branch that want to push
+  - `origin`: remote repository **alias**
 
-- git pull origin master: 将远程仓库的master分支拉取到本地
-  - master: 远程分支
-  - origin: **远程仓库的别名**, 不是本地分支
+## pull from remote repository
 
-## 访问权限
+- git pull origin master: pull remote repository's master branch to local
+  - master: remote branch
+  - origin: **remote repository alias**, not local branch
 
-[凭据管理程序](git-credential-manager.md)
+## Access Control
 
-[GitHub个人令牌(Personal Access Token)](github-personal-access-token.md)
+[Credential Manager](git-credential-manager.md)
+
+[GitHub Personal Access Token)](github-personal-access-token.md)
 
 ## Contribute to Project
 
@@ -34,4 +33,4 @@ git remote add origin <REMOTE_URL>
 
 [Public Project](git-forked-public-project.md)
 
-[创建Pull Request](github-create-pull-request.md)
+[Create Pull Request](github-create-pull-request.md)

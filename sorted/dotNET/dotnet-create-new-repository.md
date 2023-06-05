@@ -1,26 +1,27 @@
-# 创建一个新项目
+# dotNET - Create New Repository
 
-创建一个`.net6.0`框架下的console项目
+## Create Console Project
 
+create a console project under `.net6.0` framework
 
 ```shell
 dotnet new console -n microsoft.botsay -f net6.0
 ```
 
-- -f: 设置框架(net6.0, net7.0, ...)
-- -n: 项目名称
+- -f: set frame work(net6.0, net7.0, ...)
+- -n: set project name
 
 ***
 
-得到文件目录:
+files generated:
 
-- obj(文件目录)
+- obj
 - microsoft.botsay.csproj
 - Program.cs
 
-## 项目设置文件
+## Project Settings File
 
-microsoft.botsay.csproj项目设置文件, 格式为:
+`microsoft.botsay.csproj` is project setting file
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

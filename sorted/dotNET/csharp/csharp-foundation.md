@@ -1,12 +1,14 @@
-# c\#基础
+# CSharp - Foundation
 
-[预处理](csharp-preprocess.md)
+[preprocess](csharp-preprocess.md)
 
-[关键字](csharp-keyword.md)
+[primitive type](csharp-primitive-type.md)
 
-[注释](csharp-annotation.md)
+[keyword](csharp-keyword.md)
 
-[变量](csharp-variable.md)
+[Comment](csharp-comment.md)
+
+[Variable](csharp-variable.md)
 
 [值类型和引用类型](csharp-value-reference.md)
 

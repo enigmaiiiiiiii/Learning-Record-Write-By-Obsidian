@@ -1,4 +1,4 @@
-# 预处理指令
+# CSharp - preprocess
 
 ## \#define和\#undef
 

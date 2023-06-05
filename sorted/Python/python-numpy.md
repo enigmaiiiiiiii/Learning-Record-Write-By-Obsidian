@@ -1,3 +1,3 @@
-# numpy
+# Python - Numpy
 
-- python的科学计算包
+- python scientific computing library

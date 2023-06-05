@@ -1,12 +1,15 @@
-# 哈希表
+# Data Structure And Algorithm - Hash Table
+
+## What It Is
 
 - 哈希音译自英语hash，hash表示散列
 - 使用哈希函数将键映射到存储桶
   - 插入新键:哈希函数决定该键分配到哪个桶
   - 搜索键：使用哈希函数映射到对应的桶，并只在对应的桶中进行搜索
-  
-## 哈希函数
-- $hashFunction(key)$, 
+
+## Hash Function
+
+- $hashFunction(key)$
 - 返回值是哈希地址
 - 哈希函数的选取
   - 直接定址：

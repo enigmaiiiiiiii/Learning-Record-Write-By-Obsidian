@@ -1,14 +1,31 @@
-when i use this command `node script.js` to run a nodejs script, i got this error:
+for example a docker file content is as below
 
-```sh
-Cannot use import statement outside a module
+```
+# syntax=docker/dockerfile:1
+
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
 ```
 
-how to fix it without modify package.json file
+please explain the meaning of this docker file?
 
 ## commit message
 
-1. acknowledge []v. 承认，确认
-2. receipt []n. 收据，收条
-3. mandatory []adj. 强制的，命令的
-4. elicit []v. 引出，探出
+1. plaintext []n. 纯文本
+2. ciphertext []n. 密文
+3. cryptographic []adj. 密码的
+4. decrypted []adj. 解密的
+5. asymmetric []adj. 非对称的
+6. symmetric []adj. 对称的
+7. recipient []n. 收件人
+8. tampered []adj. 篡改的
+9. encrypt []v. 加密
+10. offending []adj. 冒犯的

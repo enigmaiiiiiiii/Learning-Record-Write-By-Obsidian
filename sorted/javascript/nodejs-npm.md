@@ -8,6 +8,7 @@
 * [npm package](#npm-package)
 * [npm exec](#npm-exec)
 * [npm show latest package version](#npm-show-latest-package-version)
+* [npm update](#npm-update)
 
 ## npm is used to
 
@@ -106,10 +107,8 @@ npm show [package-name] version
 
 update package while update semver value in [`package.json`](nodejs-package-json.md)
 
-- `--save`
+- use `--save` option
 
-```bash
+```sh
 npm update --save typescript
-```
-
 ```

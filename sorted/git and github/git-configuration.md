@@ -1,35 +1,38 @@
-# 配置git
+# GIT - Configuration
 
-- 通过git config命令: 获取和设置配置变量
+## git config
 
-查看所有设置
+- throught `git config` command: get and set configuration variables
+
+check current config
 
 ```shell
 git config --list --show-origin
 ```
 
-## 变量配置在3个地方
+## config variables are stored in 3 places
 
-> 内层会覆盖外层配置
+> internal will override external config
 
-配置单个存储库(.git directory, 所在目录)
+config for single git repository(where `.git` exists)
 
-- `.git/config`文件
-- `git config --local`设置
-- 最内层配置
+- edit file `.git/config` to config
+- use `git config --local`
+- this is the most internal config
 
-用户全局配置文件
+global config file for current user
 
-- `~/.gitconfig`文件
-- 通过`git config --global`设置
+- edit file `~/.gitconfig` to config
+- or use `git config --global`
 
-包含系统上的每个用户及其所有存储库的值;
+for all users on this computer
 
 - `[path]/etc/gitconfig`
-- `git config --system`进行设置, 需要管理员或超级用户权限才能对其进行更改。
-- 最外层配置
+- edit file `/etc/gitconfig` to config
+- or use `git config --system`, need admin or super user permission to change it
+- this the most external config
 
-## .config文件格式
+## what .config file looks like
 
 ```
 [core]
@@ -51,13 +54,13 @@ git config --list --show-origin
 
 ## config proxy
 
-使用命令
+with `git` command line interface
 
 ```bash
 git config --global/local/system http.proxy http://proxy.server.com:port
 ```
 
-修改config文件, 添加:
+modify config file, add following content:
 
 ```
 [http]

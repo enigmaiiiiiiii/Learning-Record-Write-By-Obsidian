@@ -1,6 +1,5 @@
 # Linux
 
-
 ## Linux Command
 
 [Practical Command](linux-practical-commands.md)

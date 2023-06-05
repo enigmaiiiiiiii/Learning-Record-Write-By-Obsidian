@@ -58,9 +58,8 @@ module.exports = {
 
 - when request `/api/hello`, the response header will be
 
-```
+```sh
 HTTP/1.1 200 OK
 x-custom-header: my custom header value
 x-another-custom-header: my other custom header value
 ...
-```

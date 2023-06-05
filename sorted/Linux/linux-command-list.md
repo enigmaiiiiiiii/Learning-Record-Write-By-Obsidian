@@ -63,7 +63,7 @@ apt-file search filename
 - `head` 显示文件开头部分
 - `file *`: 查看当前目录下所有文件的类型
 
-## 系统管理
+## System Management
 
 - ps -aux 查看进程
 - `shutdown`
@@ -73,12 +73,12 @@ apt-file search filename
 - `chmod` change mode 控制用户对文件的权限的命令
 - `su` switch user切换用户
 
-## network
+## Network
 
 - `arp`:查看和修改ARP高速缓存, 主机内ARP table中存储着其他主机的MAC地址
 - `nestat`显示网络状态
 
-## 不知道如何分类
+## Dont Know How To Classify For Now
 
 - [grep](linux-command-grep.md)
-- [bash](linux-command-bash.md) 
+- [bash](linux-command-bash.md)
