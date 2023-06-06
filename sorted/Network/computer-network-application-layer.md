@@ -6,7 +6,7 @@
 
 ## Glossary Belong To Application Layer
 
-[http](network-http.md)
+[http](computer-network-http.md)
 
 [http web server](computer-network-http-web-server.md)
 
@@ -14,14 +14,20 @@
 
 [URI](/sorted/network/computer-network-uri.md)
 
-[https](computer-network-https.md)
+[HTTPS](computer-network-https.md)
 
 [RPC](/sorted/network/network-rpc.md)
 
-[SSL](/sorted/network/network-ssl.md)
+[SSL](computer-network-ssl-tls.md)
 
-[Web media](network-web-media.md)
+[Domain Name](computer-network-domain-name.md)
+
+[Client]
+
+[Web Media](network-web-media.md)
 
 [Browser](/sorted/network/network-browser.md)
 
 [Proxy](computer-network-proxy.md)
+
+[DNS](computer-network-dns.md)

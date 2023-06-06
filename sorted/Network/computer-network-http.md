@@ -1,10 +1,10 @@
-# HTTP
+# Computer Network - HTTP
 
 ## What is this
 
 - HyperText Transfer Protocol
 - define how web clients request web pages from web servers and how servers transfer web pages to clients
-- use [TCP](network-tcp-protocol.md) as transport protocol
+- use [TCP](computer-network-tcp.md) as transport protocol
 
 ## Glossary
 
@@ -13,7 +13,6 @@
 [Cookie](http-cookie.md)
 
 [Session](http-session.md)
-
 
 ## Connection
 

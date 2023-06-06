@@ -2,22 +2,36 @@
 
 ## What Is This
 
-- a text file that contains all the commands a user could call on the command line to assemble an image
+- a text file to **assemble an image**
+- contains all the commands a user could call on the command line 
 - automaticaly build image by reading Dockerfile
+
+## Take A look
+
+```sh
+# syntax=docker/dockerfile:1
+
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
+```
+
+- FROM
+- RUN
+- COPY
+- CMD
+- WORKDIR
 
 ## Instructions
 
-- Syntax: `INSTRUCTION arguments`
-  - INSTRUCTION: FROM, RUN, CMD, LABEL, EXPOSE, ENV, ADD, COPY, ENTRYPOINT, VOLUME, USER, WORKDIR, ARG, ONBUILD, STOPSIGNAL, HEALTHCHECK, SHELL
-  - arguments
-
-those instructions can use [environment variable](#environment-variable)
-
-- ADD:
-- COPY:
-- ENV:
-- EXPOSE:
-- FROM:
+[instructions](dockerfile-instructions.md)
 
 ## Comment
 
@@ -41,7 +55,7 @@ WORKDIR ${Foo}
 
 > because docker will treat the parser directives as comments once it has processed a [builder instruction](#instructions), a blank line, or a comment
 
-- 一种特殊的注释
+- a special comment
 
 > escape是一个可识别的指令, 用来定义转义符, 以escape指令为例
 

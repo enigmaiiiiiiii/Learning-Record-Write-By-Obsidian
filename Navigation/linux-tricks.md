@@ -1,8 +1,11 @@
 # Linux - Tricks
 
+* [awk](#awk)
+* [head](#head)
 * [grep](#grep)
 * [get last command output](#get-last-command-output)
 * [let command output as another command's parameter](#let-command-output-as-another-commands-parameter)
+* [jump back to previous directory](#jump-back-to-previous-directory)
 
 ## awk
 

@@ -2,30 +2,24 @@
 
 ## Three-way Handshake
 
-- 发送端发送一个带[SYN](tcp-message-header-sturture.md#syn)标志的数据包
-- 接收端收到后回传一个带有[SYN|ACK]标志的[数据包]，表示确认
-- 发送端再回传一个[ACK]标志的数据包，代表"握手"结束
+- `TCP SYN` from Client to Server
+- `TCP SYN/ACK` From Server to Client
+- `TCP ACK` from server to Server
 
-tranlate above note to english
+## Four-way Handwave
 
-- sender send a data packet with [SYN](tcp-message-header-sturture.md) flag
-- receiver receive the packet and send a data packet with [SYN|ACK] flag
-- sender receive the packet and send a data packet with [ACK] flag, represent the end of "handshake"
-
-## 断开连接(四次挥手)
-
-假设A发送断开请求
+Start With A send disconnect request
 
 ```mermaid
 sequenceDiagram
 A ->> B: FIN:1
 B ->> A: ACK
-Note right of B: 返送确认收到报文
+Note right of B: send receiving confirm packet
 B ->> A: FIN:1
 A ->> B: ACK
 ```
 
-## 正常情况
+## Normal Case
 
 - 每发送完一个[network-group](network-group.md)就停止发送，等待对方确认，在收到确认后再发送下一个
   - A发送完一个分组后，暂时保留已发送分组的副本

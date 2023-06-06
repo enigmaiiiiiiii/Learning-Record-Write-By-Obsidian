@@ -15,3 +15,12 @@
 
 - key is randomly generated
 - password created by human
+
+## Symmetric Key
+
+- use the same key to encrypt and decrypt data
+
+## Asymmetric Key
+
+[Asymmetric Key](computer-network-asymmetric-key.md)
+

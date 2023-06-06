@@ -8,6 +8,10 @@
 * [gaim](#gaim)
 * [tcpdump](#tcpdump)
 
+## openssl
+
+[OpenSSL](linux-openssl.md)
+
 ## network status
 
 [netstat](linux-netstat.md)
@@ -30,7 +34,7 @@
 
 ## scp
 
-- OpenSSH secure file copy
+- [OpenSSH](linux-openssh.md) secure file copy
 
 ```bash
 scp file/path [user@]host:[remote/filename]
@@ -47,24 +51,11 @@ options
 
 ## ftp
 
-`-n`:  no auto login
+[ftp](linux-ftp.md)
 
-connect to ftp server
+[sftp](linux-sftp.md)
 
-- `ftp [hostname] | [ip-address]`
-- `ftp 192.168.1.1`
-
-download file
-
-- `get [remote/file/path]`: single file
-- `mget [remote/directory/path]`: all files in directory
-
-upload file
-
-- put
-- mput
-
-## lftp
+[vsftpd](linux-vsftpd.md)
 
 ## gaim
 

@@ -4,7 +4,7 @@
 
 - Is an intermediary server
 - forwarding client requests to servers
-- returning server responsees back to clients
+- returning server responses to clients
 
 ## Operate Principle
 

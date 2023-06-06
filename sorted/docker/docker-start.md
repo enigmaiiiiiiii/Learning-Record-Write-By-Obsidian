@@ -4,7 +4,6 @@
 
 ```sh
 docker search <name>
-``
 ```
 
 ## Start A Container

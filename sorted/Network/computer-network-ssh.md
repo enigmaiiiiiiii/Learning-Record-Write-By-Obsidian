@@ -2,34 +2,21 @@
 
 ## What It Is
 
-- Is A Protocol
 - Abbreviation of Secure Shell
+- Is A Protocol
 - They Are SSH Application
-  - [OpenSSH]()
+  - [OpenSSH](linux-openssh.md)
   - [PuTTY]()
+
+## VS SSL
+
+[ssl](computer-network-ssl.md)
+
+- more emphasis on **authentication**
 
 ## How It Works
 
-- ...
-
-## Key Pair
-
-- consists of
-  - [public key](#public-key)
-  - [private key](#private-key)
-- **anyone** with public key can encrypt a message
-- **only those who** know the corresponding private key can decrypt the message
-- generated with crptographic algorithms
-
-## Public Key
-
-- kind of [cryptographic key](computer-network-cryptographic-key.md)
-- free to distribute
-
-## Private Key
-
-- kind of [cryptographic key](computer-network-cryptographic-key.md)
-- must be kept secret
+- use key pairs to encrypt and decrypt data
 
 ## Components Of Implement SSH
 

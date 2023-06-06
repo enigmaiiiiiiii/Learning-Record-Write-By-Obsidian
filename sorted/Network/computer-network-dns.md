@@ -1,17 +1,20 @@
 # DNS
 
-- 为什么使用DNS
-  1. [路由器](路由器.md)处理定长的IP地址 [IP协议](computer-network-ip-protocol.md)
-  2. 用户更擅长记住主机名称 [Http_URL](http-url.md)
-- 所以DNS(Domain Name System, 域名系统)是一种域名到IP地址转换的目录服务
-  1. 一个由分层的DNS服务器实现的分布式数据库
-  2. 一个使得主机能够查询分布式数据库的[Network_Application_Layer](network-application-layer.md)协议
-- 其他重要服务
-  - 主机别名
-  - 邮件服务器别名
-  - 负载分配
+## What Is DNS
 
-## DNS查询和应答报文
+- Is a Service that translate [domain name](computer-network-domain-name.md) to [IP address](computer-network-ip-address.md)
+- like a phonebook
+- provides services
+  - host aliasing
+  - mail server aliasing
+  - load distribution
+
+## Why DNS
+
+1. [routers](computer-network-router.md) deal with fixed-length [IP addresses](computer-network-ip-address.md)
+2. users are better at remembering [domain names](computer-network-domain-name.md)
+
+## DNS Query and Response Message
 
 <table align="center">
 	<tr align ="center">
@@ -41,6 +44,7 @@
 </table>
 
 - 16位标志字段
+
 <table align="center">
     <tr align="center">
         <td>QR</td>
@@ -63,4 +67,3 @@
         <td>4位</td>
     </tr>
 </table>
-  

@@ -8,7 +8,6 @@
 * [Docker CLI](#docker-cli)
 * [Docker Context](#docker-context)
 * [docker daemon](#docker-daemon)
-* [docker volume](#docker-volume)
 
 ## image
 
@@ -38,33 +37,53 @@ docker ps -a
 
 ## tag
 
-- use tag to represent different version of the same image
+use tag to represent different version of the same image
+
+- mark image `0e5574283393` with `version1.0` tag
 
 ```bash
 docker tag 0e5574283393 fedora/httpd:version1.0
 ```
 
-- mark image `0e5574283393` with `version1.0` tag
+- pull image with tag
+- format of image with tag: `<image>:<tag>`
+
+```bash
+docker pull fedora/httpd:version1.0
+```
+
 
 ## registry
 
-- 用来存放和传递内容的系统，包含了**镜像**和**标有不同标签的不同版本**
-- `docker pull ubuntu`: simply write of `docker pull docker.io/library/ubuntu`
-- `docker pull myregistrydomain:5000/foo/bar`: docker search image foo/bar from host `myregistrydomain` port `5000`
+- is a [host](computer-network-host.md) [service](computer-network-service.md)
+- contains [repositories]() of images
+- default registry is [Docker Hub](https://hub.docker.com/)
+
+---
+
+`docker pull ubuntu`
+
+- simply write of `docker pull docker.io/library/ubuntu`
+
+`docker pull myregistrydomain:5000/foo/bar`
+
+- docker search image foo/bar from host `myregistrydomain` port `5000`
 
 ## repository
 
-- 容纳多个镜像的仓库
+- a collection of docker [images](#image) 
+- the images are with the same name and different tags
 
 ## Docker CLI
 
-- Docker Command Line
+- Docker Command Line Interface
 
 ## Docker Context
 
-- 通过上下文可以使单个Docker CLI管理多个Docker 节点, swarm 集群, 多个 Kubernetes集群
-- 一个Docker CLI 可以有多个上下文
-- 通过`docker context use <context-name>`命令切换上下文
+- through context one Docker CLI can manage multiple Docker nodes, swarm clusters, multiple Kubernetes clusters
+- one Docker CLI can have multiple contexts
+- use `docker context use <context-name>` to switch context
+
 
 context list
 

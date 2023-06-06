@@ -1,4 +1,6 @@
-# dnf
+# Linux - dnf
+
+## What It Is
 
 - next upcoming yum
 
@@ -6,7 +8,7 @@
 dnf [options] [command] [package ...]
 ```
 
-## options
+## Options
 
 `-y`: Automatically answer yes for all qquestions(自动确认)
 

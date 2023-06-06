@@ -25,11 +25,11 @@ my vim config at time 2021.6.24
 ```bash
 call plug#begin('~/.vim/plugged')
 
-Plug 'preservim/nerdtree'  // nerdtree插件(方便查看文件列表)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}  // 补全功能
-Plug 'prabirshrestha/vim-lsp'  // 也是代码补全
-Plug 'mattn/vim-lsp-settings'  // 
-Plug 'vim-airline/vim-airline'  // 美化
+Plug 'preservim/nerdtree'  // nerdtree(file tree)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  // code intelligence
+Plug 'prabirshrestha/vim-lsp'  // also code intelligence
+Plug 'mattn/vim-lsp-settings'  //
+Plug 'vim-airline/vim-airline'  // beautify
 
 call plug#end()
 
@@ -39,11 +39,11 @@ set number
 set relativenumber
 ```
 
-打开任意vim编辑器
+open any vim editor
 
 > $ vim
 
-**:Command** 执行插件相关操作
+**:Command** run command
 
 <table>
     <tr>
@@ -70,17 +70,18 @@ set relativenumber
         <td>:PlugStatus</td>
         <td>check the status of plugins</td>
     </tr>
-</table>  
+</table>
 
-## 退出和保存
+## Exit And Save
 
-`:q!` 退出文件但不保存
-`:wq` 退出并保存
-`:w*` 保存当前修改但不退出文件  
-`:w file` 保存当前文件到file（另存为）
-`:r file` 读取file内容并加到当前光标bb后
+
+`:q!` quit without save
+`:wq` quit and save
+`:w*` save current file without quit
+`:w file` save current file to file
+`:r file` read file content and add to current cursor
 `:! command` shell command
-`:saveas file` 另存为file
+`:saveas file` save as file
 
-`ZZ`: 保存退出
-`ZQ`: 不保存退出
+`ZZ`: save and quit
+`ZQ`: quit without save

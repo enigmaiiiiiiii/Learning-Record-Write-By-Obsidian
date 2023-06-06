@@ -1,5 +1,11 @@
-# 用户和分组
+# Linux - User And Group
 
-## 用户
+## User
 
-## 分组
+## Group
+
+## PAM
+
+- linux pluggable authentication modules
+- A suite of libraryies
+- allows a administrator to configure methods to authenticate

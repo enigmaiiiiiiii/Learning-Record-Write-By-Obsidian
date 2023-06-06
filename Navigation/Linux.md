@@ -16,7 +16,7 @@
 
 [Compress and File Backup](linux-file-back-command.md)
 
-[System Command](linux-system-command.md)
+[System](linux-system-command.md)
 
 [Internel Bash](linux-bash-builtin-command.md)
 
@@ -28,21 +28,27 @@
 
 ## Core
 
+[Directory Structure](linux-system-directory.md)
+
+[User And Group](linux-user-and-group.md)
+
 [Systemd](linux-systemd.md)
 
 [Service](linux-service.md)
 
-[Directory Structure](linux-system-directory.md)
-
-[user and group](linux-user-and-group.md)
-
-[File About Account Manange](linux-account-manage-related-file.md)
+[File Related Account Manange](linux-account-manage-related-file.md)
 
 [File Permission](linux-file-permission.md)
 
 [File Discriptor](linux-file-descriptor.md)
 
 [System Process](linux-system-process.md)
+
+[Network](linux-network.md)
+
+## Blog
+
+[Root Jail](linux-root-jail.md)
 
 ## Linux Shell
 
@@ -71,5 +77,3 @@
 [network progrogramming](linux-network-programming.md)
 
 [system log](linux-system-log.md)
-
-[OpenSSL](linux-openssl.md)

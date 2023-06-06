@@ -3,8 +3,9 @@
 ## What It Is
 
 - maps an arbitrarily large data to a fixed size data
-- used to avoid comparison and transmission of bulky data
-- usually use hash function to map data
+- commonly used to verify the **integrity** or **identity** of the data
+- without comparison and transmission of actual content
+- usually use [hash function]() to map data
 
 ## Algorithm
 

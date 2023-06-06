@@ -29,3 +29,16 @@
 
 - `docker logs[options] <container>`: check the log of the container
 
+## commit
+
+description
+
+- create a new [image](docker-glossary.md#image) from a [container's](docker-glossary.md#glossary) changes
+
+syntax
+
+`docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]`
+
+## inspect
+
+

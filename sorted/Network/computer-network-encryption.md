@@ -4,9 +4,12 @@
 - used to protect protect data confidentiality
 - only be decrypeted with appropriate **decryption key**
 
-- two types of
-  - symmetric: same key used for both encryption and decryption
-  - asymmetric: different keys used for encryption and decryption
+two types of encryption
+
+- symmetric: same key used for both encryption and decryption
+- asymmetric: different keys used for encryption and decryption
+
+
 
 ## encryption algorithms
 

@@ -6,7 +6,7 @@
 * [docker compose command](#docker-compose-command)
 * [docker-compose.yml](#docker-composeyml)
 
-## What is this
+## What Is This
 
 - tool of defining and running **multi-container** Docker applications
 - configuration for containers
@@ -38,7 +38,6 @@
 3. Single host Deployments
 
 ## command docker compose
-
 
 
 ## docker-compose.yml

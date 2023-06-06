@@ -1,4 +1,4 @@
-# 文件目录
+# Linux - File related to account management
 
 ## etc/passwd
 

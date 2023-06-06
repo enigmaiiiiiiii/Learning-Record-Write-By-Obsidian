@@ -1,5 +1,6 @@
 # Linux - Practical Command
 
+* [list installed package](#list-installed-package)
 * [remove related package](#remove-related-package)
 * [switch between suspend process and command line](#switch-between-suspend-process-and-command-line)
 
