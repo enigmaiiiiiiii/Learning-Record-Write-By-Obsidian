@@ -16,15 +16,22 @@
 
 [Practical Command](docker-practical-command.md)
 
-[Command List](docker-command-list.md)
+[Command Line Interface](docker-command-line-interface.md)
 
-[Docker file](docker-dockerfile.md)
+[Dockerfile](docker-dockerfile.md)
+
+[`.dockerignore` file](docker-dockerignore.md)
 
 [docker compose](docker-compose.md)
 
-[docker volume](docker-volume.md)
+[Bind Mounts](docker-bind-mounts.md)
+
+[Docker Volume](docker-volume.md)
+
+[Multi-stage build](docker-multi-stage-builds.md)
 
 ## II
+
 
 [Container Networking](docker-container-networking.md)
 

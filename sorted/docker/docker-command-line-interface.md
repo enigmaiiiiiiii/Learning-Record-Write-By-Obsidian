@@ -1,4 +1,15 @@
-# Command
+# Docker - Command Line Interface
+
+* [help](#help)
+* [run](#run)
+* [ps](#ps)
+* [stop](#stop)
+* [rm](#rm)
+* [pull](#pull)
+* [logs](#logs)
+* [commit](#commit)
+* [inspect](#inspect)
+* [build](#build)
 
 ## help
 
@@ -41,4 +52,7 @@ syntax
 
 ## inspect
 
+## build
+
+- build a docker image from a [Dockerfile](dockerfile.md)
 

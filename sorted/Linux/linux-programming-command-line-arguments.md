@@ -1,11 +1,11 @@
-# 命令行参数
+# Linux - Process Command Line Arguments
 
-## 1. 选项参数
+## 1. options arguments
 
 - POSIX命令行参数语法约定，遵循这些约定的命令行参数可用getopt()来收集
   - 以`-`开始的字符
 
-## 2. 解析命令行参数的函数
+## 2. parse command line arguments
 
 ```c++
 #include <unistd.h>

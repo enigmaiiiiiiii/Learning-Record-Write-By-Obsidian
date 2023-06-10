@@ -24,8 +24,11 @@ def hello_world():
 4. run the app
 
 ```sh
-flask -app app run
+flask --app app run
 ```
+
+- `app`: the name of the module
+- `run`: [`run`](flask-command-line-interface.md#run) start a **development** server 
 
 ## Externally Visible Server
 
@@ -34,5 +37,4 @@ If want access debugging from remote machine
 ```sh
 flask run --host=0.0.0.0
 ```
-
 

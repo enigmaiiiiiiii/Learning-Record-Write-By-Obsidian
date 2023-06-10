@@ -1,5 +1,19 @@
 # Dockerfile - Instructions
 
+* [What It Is](#what-it-is)
+* [Syntax](#syntax)
+* [From](#from)
+* [ARG](#arg)
+* [RUN](#run)
+* [CMD](#cmd)
+* [COPY](#copy)
+* [USER](#user)
+* [Instructions Summary](#instructions-summary)
+
+## What It Is
+
+- dockerfile runs instructions in order
+
 ## Syntax
 
 `INSTRUCTION arguments`
@@ -11,17 +25,35 @@
 
 description
 
-- initialize a new build stage
+- initialize a new [**build stage**](docker-dockerfile.md#build-stage)
 - set a base image for subsequent instructions
 - a valid Dockerfile must start with a `FROM` instruction
 - can appear multiple times within a single Dockerfile in order
 
+Syntax
+
 `FROM [--platform=<platform>] <image> [AS <name>]`
+
+- image
+
+Options
+
+- `--platform`: specify the platform
+  - default is ...
 
 ## ARG
 
+description
+
+- define a variable can passed to [docker build](docker-command-line-interface.md#build)
+
+Syntax
+
+- `ARG <name>[=<default value>]`
 
 ## RUN
+
+[detail of RUN](dockerfile-instructions-run.md)
 
 description
 
@@ -33,13 +65,12 @@ Syntax
 `RUN <command>`
 `RUN ["executable", "param1", "param2"]`
 
-
 ## CMD
 
 description
 
 - use to provide *defaults* for an **executing container**
-- only be one `CMD` instruction in a Dockerfile
+- there **can only be one** `CMD` instruction in a Dockerfile
 - if not, the last `CMD` instruction will take effect
 
 syntax
@@ -47,9 +78,52 @@ syntax
 - `CMD ["executable","param1","param2"]`
 - `CMD command param1 param2`
 
+## COPY
+
+description
+
+- copy files or directories
+- to the filesystem of the [**container**](docker-glossary.md#container)
+
+syntax
+
+- `COPY [--chown=<user>:<group>] <src>... <dest>`
+- `COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]`
+  - for path with whitespace
+
+> `--chown, --chmod` only supproted on linux
+
+- `<src>`: may contain wildcards
+
+```dockerfile
+COPY hom* /mydir/
+COPY hom?.txt /mydir/
+```
+
+options
+
+- `--from=<name>`:
+  - set the source locatoin to a previous [build stage](docker-dockerfile.md#build-stage)
+  - instead of use build context send by user
+
+## USER
+
+description
+
+- set user name and optionally user group
+
+## WORKDIR
+
+- set working directory for any
+  - [`RUN`](dockerfile-instructions-run.md)
+  - [`CMD`](#cmd)
+  - `ENTRYPOINT`
+  - `COPY`
+  - `ADD`
+
 ## Instructions Summary
 
-- FROM
+- [FROM](#from)
 - RUN
 - CMD
 - LABEL
@@ -60,7 +134,7 @@ syntax
 - ENTRYPOINT
 - VOLUME
 - USER
-- WORKDIR
+- [WORKDIR](#workdir)
 - ARG
 - ONBUILD
 - STOPSIGNAL

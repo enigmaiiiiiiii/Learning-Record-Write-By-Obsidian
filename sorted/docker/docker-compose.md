@@ -8,15 +8,19 @@
 
 ## What Is This
 
-- tool of defining and running **multi-container** Docker applications
-- configuration for containers
-- managing the whole lifecycle of your application
-  - start, stop, rebuild
+- Tool of defining and running **multi-container** Docker applications
+- Configuration for containers
+- Managing the whole lifecycle of your application
+  - Start, Stop, Rebuild
 
 **two essential things**
 
 - [`docker-compose.yml`](#docker-composeyml) file
 - [`docker-compose`](#command-docker-compose) command
+
+VS [dockerfile](docker-dockerfile.md)
+
+- who build a image
 
 ## Feature
 

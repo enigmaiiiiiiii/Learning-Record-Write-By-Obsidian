@@ -1,12 +1,20 @@
 # Computer Network - SSL/TLS
 
+* [What It Is](#what-it-is)
+* [Feature](#feature)
+* [Entity in SSL/TLS](#entity-in-ssltls)
+* [Steps For Client To Trust A Server](#steps-for-client-to-trust-a-server)
+* [Trust Of Chain](#trust-of-chain)
+* [VS SSH](#vs-ssh)
+* [Question](#question)
+
 ## What It Is
 
 - **Used to ensure client talking to the correct server**
 - A cryptographic protocol
 - Abbeviation of Secure [Socket](computer-network-socket.md) Layer
 - Which [Https](computer-network-https.md) is based on
-- More popularly protocol is [TLS](computer-network-tls.md)
+- More popularly protocol is TLS(Transport Layer Security)
 
 ## Feature
 
@@ -50,7 +58,8 @@ Session Key
 
 4. Key Exchange
 
-- generate [Session Key](#session-key) for transfer data
+- generate [Session Key](#session-key) by server's public key
+- used to encrypt and decrypt data between client and server
 
 5. Secure Data Transfer
 

@@ -2,6 +2,7 @@
 
 ## What Is DNS
 
+- DNS: Domain Name System
 - Is a Service that translate [domain name](computer-network-domain-name.md) to [IP address](computer-network-ip-address.md)
 - like a phonebook
 - provides services

@@ -1,9 +1,11 @@
-# 跨域资源共享机制
+# Http - CORS
 
-- 允许Web应用服务器进行跨源访问控制
-- 浏览器要求使用**XMLHttpRequest**对象发起的跨域(port)HTTP请求，必须得到服务器的许可
-- 服务器标记除了自己的以外的其它origin(域, 协议， 端口)
+## What It Is
 
-## 预检请求
+- allow web application servers to control cross-origin requests
 
-[预检请求](/sorted/network/http-cors-preflighted-requests.md)
+> there are something related to [XMLHttpRequest](javascript-bom-xmlhttprequest.md)
+
+## Preflighted Requests
+
+[Preflight Request](/sorted/network/http-cors-preflighted-requests.md)

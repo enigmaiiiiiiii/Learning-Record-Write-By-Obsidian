@@ -1,4 +1,18 @@
-# Daemon Process
+# Linux - Daemon Process
+
+## What Is This
+
+- background process
+- no User Interface
+- System services
+- Controlled by Init System
+- Run at high level of privilege to system resources
+- They Are Daemon Process
+  - sshd
+  - httpd
+  - mysqld
+
+> [systemd](linux-systemd.md) is not a daemon
 
 ## Daemon Programming Rules
 
@@ -29,9 +43,3 @@ translate above note to english
 
 ## 惯例
 
-- 守护进程使用锁文件, 通常在/var/run 目录中，守护进程需要超级用户权限才能在此目录下创建文件
-- 若守护进程支持配置选项，配置文件通常存放在/etc 目录中
-- 守护进程可由命令行启动，通常他们是由系统初始化脚本之一启动
-- 若守护进程有一个配置文件，那么当守护进程启动时会读该文件，当配置文件被更改后需要重启守护进程。守护进程通过捕捉 SIGHUB 信号，重读配置文件。
-
-> 因为守护进程不与终端相结合，所以守护进程没有理由接收到 SIGHUP 信号, 于是，守护进程可以安全重复使用 SIGHUP

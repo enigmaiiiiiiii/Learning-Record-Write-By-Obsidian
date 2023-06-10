@@ -1,4 +1,4 @@
-# 创建用户
+# Create User
 
 ## useradd
 
@@ -35,8 +35,7 @@ options
 
 [修改密码时发生了什么](linux-how-to-change-password.md)
 
-## 一般流程
-
+## Normal Process
 
 ```shell
 useradd username

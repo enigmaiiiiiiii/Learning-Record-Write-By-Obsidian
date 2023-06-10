@@ -1,9 +1,27 @@
 # Docker - Start To Use
 
+* [search image](#search-image)
+* [Start A Container](#start-a-container)
+* [download image](#download-image)
+* [check images](#check-images)
+* [check running container](#check-running-container)
+
 ## search image
 
 ```sh
 docker search <name>
+```
+
+## Download image
+
+```sh
+docker pull <name>
+```
+
+## Query images
+
+```sh
+docker images
 ```
 
 ## Start A Container
@@ -12,20 +30,26 @@ docker search <name>
 - need to set up name, port, volume, network, etc
 - check [docker run](docker-command-run.md)
 
-## download image
+simple start
 
 ```sh
-docker pull <name>
+docker run <image>
 ```
 
-## check images
-
-```sh
-docker images
-```
-
-## check running container
+## Query running containers
 
 ```sh
 docker ps
+```
+
+## stop container
+
+```sh
+docker stop <container>
+```
+
+## remove container
+
+```sh
+docerk rm <container>
 ```

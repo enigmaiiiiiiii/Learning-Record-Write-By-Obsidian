@@ -1,49 +1,87 @@
-# Dockerfile
+# Docker - Dockerfile
+
+* [What Is This](#what-is-this)
+* [Take A look](#take-a-look)
+* [Instructions](#instructions)
+* [Comment](#comment)
+* [Environment Variable](#environment-variable)
+* [Parser directives](#parser-directives)
+* [Build Stage](#build-stage)
 
 ## What Is This
 
-- a text file to **assemble an image**
-- contains all the commands a user could call on the command line 
+- a file named `Dockerfile`
+- A text file to **assemble an [image](docker-glossary.md#image)**
+- build your project into an image
+- usually located in the root of your project directory
+- contains all the commands a user could call on the command line
 - automaticaly build image by reading Dockerfile
 
-## Take A look
+## Build A hello-world Image
 
-```sh
-# syntax=docker/dockerfile:1
+assume workdir has those files:
+- `scirpt.py`
+- `Dockerfile`
 
-FROM python:3.8-slim-buster
+script.py
 
-WORKDIR /app
-
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-
-COPY . .
-
-CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
+```python
+print("hello world")
 ```
 
-- FROM
-- RUN
-- COPY
-- CMD
-- WORKDIR
+Docker
+
+```dockerfile
+# syntax=docker/dockerfile:1
+
+FROM python:3
+
+COPY . /app
+WORKDIR /app
+CMD ["python", "script.py"]
+```
+
+build in command line
+
+```sh
+docker build -t python-hello-image
+```
+
+once build complete, run the image
+
+```sh
+docker run python-hello-image
+```
 
 ## Instructions
 
-[instructions](dockerfile-instructions.md)
+[Instructions](dockerfile-instructions.md)
 
 ## Comment
 
 - `#` start a comment
 
-## environment variable
+## Environment Variable
 
 `ENV`: set environment variable
 
 ```dockerfile
 ENV Foo=/bar
 WORKDIR ${Foo}
+```
+
+Use Environment Variable `${Foo}` Or `$Foo`
+
+- Support standard bash modifiers
+  - `${variable:-word}`: If variable is unset or null, the `word` will be the result
+  - `${variable:=word}`: If variable is set then word will be the result, otherwise **empty string**
+
+```dockerfile
+FROM busybox
+ENV FOO=/bar
+WORKDIR ${FOO}  # WORKDIR /bar
+ADD . $FOO      # ADD . /bar
+COPY \$FOO /quux # COPY $FOO /quux
 ```
 
 ## Parser directives
@@ -57,9 +95,16 @@ WORKDIR ${Foo}
 
 - a special comment
 
-> escape是一个可识别的指令, 用来定义转义符, 以escape指令为例
+> `escape` is a recongnized directive, used to define the escape character, take the escape directive as an example
 
 ```dockerfile
 # escape=` (backtick)
 ```
 
+## Build Stage
+
+- Is a procedure that generate something
+- which can later be taken and used
+- [`FROM` instruction](dockerfile-instructions.md#from) represents the beginning of a new stage
+
+[Multi-stage builds](dockter-multi-stage-builds.md)

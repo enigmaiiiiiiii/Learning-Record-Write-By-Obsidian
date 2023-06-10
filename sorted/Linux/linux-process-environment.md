@@ -1,6 +1,6 @@
 # Linux - Process Environment
 
-[Command Line Arguments](linux-programming-command-line-arguments.md)
+[[命令行参数]]
 
 [[环境变量]]
 

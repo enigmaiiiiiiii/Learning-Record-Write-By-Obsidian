@@ -1,4 +1,4 @@
-# 文件ID
+# Linux - File Id
 
 - UID: 用户ID
 - GID: 组ID

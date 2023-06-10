@@ -12,7 +12,7 @@
 
 [Account Management](linux-account-command.md)
 
-[File Management](linux-file-manage.md)
+[File Management](linux-file-management.md)
 
 [Compress and File Backup](linux-file-back-command.md)
 
@@ -34,7 +34,7 @@
 
 [Systemd](linux-systemd.md)
 
-[Service](linux-service.md)
+[Services](linux-services.md)
 
 [File Related Account Manange](linux-account-manage-related-file.md)
 
@@ -48,7 +48,9 @@
 
 ## Blog
 
-[Root Jail](linux-root-jail.md)
+[Root Jail](linux-change-root-jail.md)
+
+[Key-based Login Only](linux-key-based-login-only.md)
 
 ## Linux Shell
 

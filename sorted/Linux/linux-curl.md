@@ -1,5 +1,11 @@
 # Linux - Curl
 
+## Send GET request
+
+```sh
+curl []
+```
+
 ## download file
 
 - if use `curl` with no options, it will do a GET request and display the result to Screen

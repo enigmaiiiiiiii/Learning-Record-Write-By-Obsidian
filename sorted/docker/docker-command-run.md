@@ -1,5 +1,9 @@
 # Docker Command - run
 
+## What It Is
+
+- create a [container instance]() from image
+
 ## Syntax
 
 ```bash
@@ -30,3 +34,5 @@ docker run -d -p 80:5000 training/webapp python app.py
 
 > almost all configuration in image can be override
 > so `run` command has more options than other command
+
+`--mount`

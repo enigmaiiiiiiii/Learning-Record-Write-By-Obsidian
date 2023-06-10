@@ -32,7 +32,7 @@ file list create in `~/.ssh` by above steps
 
 1. Open Git Bash
 2. Enter `ls -al ~/.ssh`
-3. 如果已存在public SSH key, 则可能的文件为:
+3. if `public SSH key` already exist, file name may be:
     - id_rsa.pub
     - id_ecdsa.pub
     - id_ed25519.pub

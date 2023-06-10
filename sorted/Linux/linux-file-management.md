@@ -1,4 +1,4 @@
-# File Manage
+# Linux - File Management
 
 * [File Permission Command](#file-permission-command)
 * [file](#file)
@@ -10,6 +10,12 @@
 - `chgrp`: change group ownership
 - [chown](linux-command-chown.md): change file owner
 - [chmod](linux-command-chmod.md): change file access permissions, like read, write, SUID, etc. 
+
+## Check File With Details
+
+```sh
+ls -al
+```
 
 ## file
 
@@ -38,14 +44,17 @@ options
 
 - make links between files
 
-default create hard link
-
-- hard link: 目标必须存在
-- Symbolic link: 可以指向任意文本
-
 SYNOPSIS
 
 `ln [OPTION]... [-T] TARGET LINK_NAME`
+
+2 link types
+
+- hard link: default link type, target must exist
+- Symbolic link: set with `--symbolic`, can be point to arbitrary text
+
+Options
+
 
 create file1 link to file2
 

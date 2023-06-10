@@ -25,6 +25,7 @@ GTS Root R1
 ## Intermediate Certificate Authority
 
 - Issued by Root CA
+- to reduce the risk of compromise
 
 ## Server Certificate
 

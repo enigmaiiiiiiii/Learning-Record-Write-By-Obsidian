@@ -1,15 +1,17 @@
-# Linux进程
+# Linux Process
 
-- 进程是程序的实例
-- 进程上下文：text，data, 虚地址空间， 堆空间， 共享存储， 用户栈
-- 进程的状态: 阻塞状态,  就绪状态, 运行状态
-  
-[[进程环境]]
+## What Is This
 
-[[进程通信]]
+- process is an instance of program
+- process context: text, data, virtual address space, heap, shared memory, user stack
+- process state: blocked, ready, running
 
-[进程控制](linux-process-control.md)
+[Process Environment]( linux-process-environment.md )
 
-[进程关系](linux-process-relation.md)
+[Process Communication]( linux-process-communication.md)
 
-[编写守护进程](linux-daemon-process.md)
+[Process Control](linux-process-control.md)
+
+[Process Relationship](linux-process-relation.md)
+
+[Daemon](linux-daemon.md)

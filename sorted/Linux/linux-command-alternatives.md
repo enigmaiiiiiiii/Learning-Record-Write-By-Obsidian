@@ -1,5 +1,9 @@
 # alternatives
 
+* [what for](#what-for)
+* [conclusion](#conclusion)
+* [Usage](#usage)
+
 ## what for
 
 假设有两个版本的java, java8(java-1.8.0-openjdk)和java17(java-17-openjdk), 通过alternatives可以设置默认的java版本
@@ -46,13 +50,13 @@ file /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64/jre/bin/java
 alternatives --config java
 ```
 
-## 结论
+## conclusion
 
 - java命令 $\rightarrow$ /usr/bin/java $\rightarrow$ /etc/alternatives/java $\rightarrow$ /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64/jre/bin/java
 - **alternatives/java**介于**java命令**和**实际执行的java文件之间**
 - `alternatives`命令可以设置默认的java版本
 
-## 使用
+## Usage
 
 ```bash
 man alternatives

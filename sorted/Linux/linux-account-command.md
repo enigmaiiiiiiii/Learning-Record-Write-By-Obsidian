@@ -1,10 +1,11 @@
 # Linux - Account Management
 
 * [check login user](#check-login-user)
+* [Query list](#query-list)
 * [Create User](#create-user)
 * [Switch User](#switch-user)
-* [usermod](#usermod)
-* [userdel](#userdel)
+* [modify user](#modify-user)
+* [delete user](#delete-user)
 * [logout](#logout)
 * [login](#login)
 * [groupadd](#groupadd)
@@ -21,19 +22,44 @@
   - `-l`
   - `-p`
 
+## Query list
+
+```sh
+cat /etc/passwd
+```
+
+format of this file
+
+- `username:password:UID:GID:comment:home directory:shell`
+
 ## Create User
 
 [Create User](linux-create-user.md)
+
+## Set User's Password
+
+```sh
+passwd [username]
+```
+
+output looks like:
+
+```
+Changing password for user foo.
+New password:
+Retype new password:
+passwd: all authentication tokens updated successfully.
+```
 
 ## Switch User
 
 `su [option] [username]`
 
-## usermod
+## modify user
 
-- modify user
+Syntax
 
-syntax: `usermod [-c/d/e/g/G/l/s/u/L/U] username`
+`usermod [options] username`
 
 options
 
@@ -43,21 +69,21 @@ options
 - `-d`: change home directory
 - `-e`: change expiration date
 
-add user to group
+add exist user to group
 
 ```bash
 usermod -a -G groupname username
 ```
 
-## userdel
+## delete user
 
-- delete user
+Syntax
 
-synatx: `userdel [-r] username`
+`userdel [options] username`
 
 options
 
-- `-r`: 表示连同home中的用户文件加一起删除
+- `-r`: Files in user's home directory will be removed
 
 ## logout
 
@@ -67,17 +93,12 @@ options
 
 ## login
 
-## groupadd
+## Create Group
 
-- create a new [group](linux-group.md)
+Syntax
 
 `groupadd [options] group`
 
-新建分组, 命名为temp
-
-```bash
-groupadd temp
-```
 
 options
 
@@ -87,24 +108,36 @@ options
   - GID is between `SYS_GID_MIN` ~ `SYS_GID_MAX`
   - instead of `GID_MIN` ~ `GID_MAX`
 
-group相关的文件
+create new group, named `temp`
 
-`/etc/group`: Group account information
+```sh
+groupadd temp
+```
 
-- 文件内容格式: `group_name:password:GID:user_list`
+## Query Existing Group
+
+use `cat /etc/group` to query existing group
+
+- file content format: `group_name:password:GID:user_list`
 
 `/etc/gshadow`: Group account information
+
 `/etc/login.defs`: Login defaults
 
-## groups
+## Query User's Group
+
+Syntax
 
 `groups [OPTION] ... [USERNAME] ...`
 
-- print the groups a user is in
-- 查看用户所属的组
+query user `nginx`'s group
+
+```sh
+groups nginx
+```
 
 output looks like:
 
-```
-username: group1 group2 group3
+```sh
+nginx: group1 group2 group3
 ```

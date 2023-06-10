@@ -1,32 +1,62 @@
-# chmod
+# Linux - chmod
 
-- 改变[文件权限](linux-file-permission.md)
+## What It Is
 
-## 数字修改权限
+- change [file permission](linux-file-permission.md)
 
-`chmod [-R] nnn`:  nnn表示八进制数字
+## Numeric Modification
 
-- r:4(100), w:2(010), x:1(001), rw: 6(110), rwx: 7(111)
+`chmod [-R] ugo`
 
-> 括号中对应的二进制数
+options
 
-比如: 文件权限变为所有人可读可写可执行
+- `-R`: recursive
+
+permissions mapping
+
+| character                   | octal | bin |
+| --------------------------- | ----- | --- |
+| r(read)                     | 4     | 100 |
+| w(write)                    | 2     | 010 |
+| x(execute)                  | 1     | 001 |
+| rx(read & execute)          | 5     | 101 |
+| rw(read & write)            | 6     | 110 |
+| rwx(read & write & execute) | 7     | 111 |
+
+example
+
+- set read, write, execute permission for all user
 
 ```bash
 chmod 777 file
 ```
 
-- 字符类型改变档案权限
+- set read, write, execute permission for user
+- read, execute permission for group and other
 
-  <table>
-    <tr>
-        <td>chmod</td>
-        <td>u(user)<br>g(group)<br>o(other)<br>a(all)<br></td>
-        <td>+(加入）<br>-(除去)<br>=(设定)<td>
-        <td>r<br>w<br>x<br>s<br>t<td>
-        <td>file</td>
-    </tr>
-  </table>
+```sh
+chmod 755 file
+```
+
+## Character Modification
+
+<table>
+  <tr>
+      <td>chmod</td>
+      <td>u(user)<br>g(group)<br>o(other)<br>a(all)<br></td>
+      <td>+<br>-<br>=<td>
+      <td>r<br>w<br>x<br>s<br>t<td>
+      <td>file</td>
+  </tr>
+</table>
+
+for example:
+
+```sh
+chmod g+w file
+```
+
+- set group write permission
 
 ## 符号修改权限
 
@@ -37,4 +67,4 @@ rwx: read, write, execute
 chmod g+rwx file
 ```
 
-组用户添加rwx权限
+组用户添加 rwx 权限

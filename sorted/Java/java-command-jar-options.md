@@ -1,12 +1,14 @@
-# 参数
+# Java - Jar Options
 
-## 主要操作模式
+## main operating mode
 
 > 使用jar时必须指定的参数, 通常是第一个参数
+> whene use jar must specify this option, usually the first option
+
 
 `-c` or `--create`
 
-- 创建档案
+- create a new archive
 
 `-i=FILE` or `--generate-index=FILE`
 

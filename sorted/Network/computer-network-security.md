@@ -6,17 +6,16 @@
 
 [Cryptographic Algorithms](computer-network-cryptographic-algorithms.md)
 
-[encryption](computer-network-encryption.md)
+[Encryption](computer-network-encryption.md)
 
 ## Protocols
 
-[SSL](computer-network-ssl.md)
+[SSL](computer-network-ssl-tls.md)
 
 [SSH](computer-network-ssh.md)
 
 ## Application Scenarios
 
 [fingerprint](computer-network-fingerprint.md)
-
 
 [digital signature](computer-network-digital-signature.md)

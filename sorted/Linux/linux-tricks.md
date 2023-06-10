@@ -82,3 +82,6 @@ back to two more previous directory
 cd ~2
 ```
 
+## Run Command In Background
+
+- add `&` after command, it will run in background, you can continue use bash
