@@ -17,6 +17,11 @@
 - contains all the commands a user could call on the command line
 - automaticaly build image by reading Dockerfile
 
+## Feature
+
+- docker will cache the image load by `FROM` instruction
+- if any instruction change, the cache will be invalid
+
 ## Build A hello-world Image
 
 assume workdir has those files:

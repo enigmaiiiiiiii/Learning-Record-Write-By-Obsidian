@@ -1,10 +1,13 @@
-how to inspect to a docker container's file system
+how to analysis a process futex wait problem in linux
+
+what is the concept of user space in linux?
+
+A futex is identified by a piece of memory which can be shared  between  processes or  threads.
+In these different processes, the futex need not have identical addresses.
+In its bare form, a futex has semaphore semantics;
+it is a counter  that can be incremented and decremented atomically;
+processes can wait for the value to become positive.
 
 ## commit message
 
-1. certifies []v. 证明
-2. cipher []n. 密码, 密文
-3. issues []n. 问题; []v. 发行, 发布
-4. confine []v. 限制, 禁闭
-5. arbitrary []adj. 任意的, 武断的
-6. Revocation []n. 撤销, 废除
+1. disposition []n. 处置，处理，布置，安排

@@ -1,4 +1,4 @@
-# 流程控制
+# Java - Flow Contorl
 
 ## if...else...
 
@@ -10,7 +10,7 @@
   - 只能判断相等
   - 条件只能是整数类型(byte, short, char, int)或string
 
-## 跳出循环
+## Jump Out of Loop
 
 - break: 退出循环
 - continue: 跳过当前层本次循环

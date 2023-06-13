@@ -55,7 +55,7 @@ run test
 sudo docker run hello-world
 ```
 
-## set mirror download address
+## Set Mirror Download Registry Mirrors
 
 add following content to `/etc/docker/daemon.json`
 

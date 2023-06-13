@@ -1,12 +1,8 @@
-# 生成信号
+# Linux - Sending A Signal
 
 - 终端控制字符
 - shell命令异步的向进程发送信号
-- 系统调用产生: kill, raise, abort
-- 软件产生： alarm
-- 硬件产生： 分发访问内存，除0 ...
 - `kill -l` 可以查看信号种类
--  `man 7 signal`查看信号的详细信息
 
 ## 1. raise()函数
 

@@ -1,6 +1,6 @@
-# 处理类型
+# C++ - Handle Type
 
-[[typedef关键字]]
+[[c++-keyword-typedef]]
 
 [using](c++-using.md)
 

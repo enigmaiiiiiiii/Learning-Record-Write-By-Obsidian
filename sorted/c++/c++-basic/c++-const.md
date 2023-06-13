@@ -1,17 +1,23 @@
-# const限定符
+# C++ - const
 
-## const对象
+## const Object
 
 - *const*对象一旦创建后就不能再改变，所以const对象**必须初始化**
 - 初始值可以是任意复杂的表达式
 - *extern*关键字可在一个文件中定义*const*对象，而在其他多个文件中声明并使用
 - 函数不能使用const限定符
 
-## [常量表达式]
+## const expression
 
-## [const引用](c++-const-reference.md)
+[const expression](c++-const-expression.md)
 
-## [指针和const](c++-const-and-pointer.md)
+## Const reference
+
+[const reference](c++-const-reference.md)
+
+## Pointer And Const
+
+[pointer and const](c++-const-and-pointer.md)
 
 ## 顶层const和底层const
 
@@ -27,6 +33,6 @@
   - 指针和引用类型的const，可以通过修改指向的对象或引用对象的值被改变
   - ```const int &a = i;``` 中的const是一个底层const
   
-## 关键字  
+## keywords
 
 [[关键字mutable]]

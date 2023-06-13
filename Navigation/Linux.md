@@ -42,7 +42,7 @@
 
 [File Discriptor](linux-file-descriptor.md)
 
-[System Process](linux-system-process.md)
+[System Process](linux-process.md)
 
 [Network](linux-network.md)
 
@@ -72,7 +72,7 @@
 
 [Signal](linux-signal.md)
 
-[Process](linux-process.md)
+[Process](linux-programming-process.md)
 
 [Thread](linux-thread.md)
 

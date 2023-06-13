@@ -1,12 +1,11 @@
 # Linux - Process Command
-
 ## Query Process
 
-[ps](Linux-ps.md)
+[ps](linux-ps.md)
 
 ## Stop Process
 
-[kill](Linux-kill.md)
+[kill](linux-kill.md)
 
 ## pstree
 

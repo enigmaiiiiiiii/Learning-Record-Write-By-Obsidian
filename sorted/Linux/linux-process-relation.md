@@ -1,6 +1,6 @@
-# 进程关系
+# Linux - Process Relationship
 
-## 进程组
+## Process Group
 
 ```c++
 #include <sys/types.h>

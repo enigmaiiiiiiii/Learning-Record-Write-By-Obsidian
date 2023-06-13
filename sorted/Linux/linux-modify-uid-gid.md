@@ -1,4 +1,4 @@
-# set uid 和 gid
+# Linux - Modify uid/gid
 
 ```c
 #include <unistd.h>

@@ -1,15 +1,16 @@
-# 互斥变量
-  
-- 初始化后，变量处于未锁状态
-- 一般由主线程初始化
-  
+# Linux - Mutex
+
+- after init, the variable is at unlocked state
+- usually init by main thread
+
 ```c++
-#include <pthread.h>  
+#include <pthread.h>
+
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 int pthread_mutex_init(pthread_mutex_t *restrict mutex,
                        const pthread_mutexatttr_t *restrict attr);
                        // attr指定mutex的属性
-int pthread_mutex_destroy(pthread_mutex_t *mutex);  // 销毁                       
+int pthread_mutex_destroy(pthread_mutex_t *mutex);  // 销毁
 ```
 [[restrict关键字]]
 
@@ -17,17 +18,17 @@ int pthread_mutex_destroy(pthread_mutex_t *mutex);  // 销毁
 - 参数
   - mutex
   - attr： 互斥量属性，取值
-    - PTHREAD_MUTEX_NORMAL : 基本类型 
+    - PTHREAD_MUTEX_NORMAL : 基本类型
     - PTHREAD_MUTEX_RECURSIVE : 递归类型，多次加锁，相同次数解锁
     - PTHREAD_MUTEX_ERRORCHECK : 互斥量提供错误检查并报告错误
     - PTHREAD_MUTEX_DEFAULT : 默认类型
-  
+
 ## 加锁和解锁
 
 ```c++
 #include <pthread.h>
-int pthread_mutex_lock(pthread_mutex_t *mutex);  // 加锁, 调用线程占有
-int pthread_mutex_trylock(pthread_mutex_t *mutex);  // 
+int pthread_mutex_lock(pthread_mutex_t *mutex);  // add lock
+int pthread_mutex_trylock(pthread_mutex_t *mutex);  //
 int pthread_mutex_unlock(pthread_mutex_t *mutex);
 ```
 

@@ -22,6 +22,6 @@
   
 ## 内容连接
 
-[C语言程序在内存中的分布](linux-process-c程序的存储空间布局.md)
+[C语言程序在内存中的分布](linux-c-program-memory-layout.md)
 
 [javascript中的原始值和引用值](javascript-variable-copy-and-reference.md)

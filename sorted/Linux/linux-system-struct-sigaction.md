@@ -1,4 +1,4 @@
-# sigaction结构体  
+# Linux - sigaction struct
 
 ```c
 struct sigaction {
@@ -19,9 +19,10 @@ struct sigaction {
   - info: [[siginfo_t]]指针，包含信号的更多信息
   - ucontext : 该字段指向的结构包含内核保存在用户空间堆栈上的信号上下文信息, 详见[[sigreturn()]], [[getcontext()]]
 - `sa_mask`：[[sigset_t类型]]
-  - 设置信号处理**程序执行期间**应该被阻塞的信号掩码 
-  - 即设置[[信号句柄]]中要阻塞的信号
+  - 设置信号处理**程序执行期间**应该被阻塞的信号掩码
+  - 即设置[[linux-signal-handler]]中要阻塞的信号
 - `sa_flags`: 指导内核对信号交付时锁采取的动作进行进一步控制, 取0时默认屏蔽正在处理的信号
+
 <table>
     <tr>
         <td>SA_RESTART</td>

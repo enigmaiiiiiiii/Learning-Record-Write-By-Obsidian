@@ -1,26 +1,26 @@
 # c++基础
 
-[[内置类型]]
+[[c++-built-in-type]]
 
-[[处理类型]]
+[[c++-handle-type]]
 
-[[变量]]
+[[c++-variable]]
 
-[[左值引用]]
+[[c++-left-value-reference]]
   
 [指针](c++-指针.md)
 
-[[指针和引用]]
+[[c++-pointer-vs-reference]]
 
 [[左值和右值]]
 
-[[自定义数据结构]]
+[[c++-custom-data-structure]]
 
 [const限定符](c++-const.md)
 
 [const表达式](sorted/c++/c++-constexpr.md)
 
-[初始化](c++初始化.md)
+[初始化](c++-initialize.md)
 
 [关键字](c++-keyword.md)
 

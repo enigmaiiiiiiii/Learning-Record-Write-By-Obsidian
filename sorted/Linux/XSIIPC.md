@@ -2,7 +2,7 @@
 
 - InterProcess Communication, 简称IPC
 - 子进程通过fork()可以继承父进程的IPC资源
-- XSI IPC资源类型: [[消息队列]]，[[SystemV信号量]]，[共享内存](linux-shared-memory-segment.md)
+- XSI IPC资源类型: [[消息队列]]，[[linux-systemv-semaphore]]，[共享内存](linux-shared-memory-segment.md)
 
 ## 相似特征
 

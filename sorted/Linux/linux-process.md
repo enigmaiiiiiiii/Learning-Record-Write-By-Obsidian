@@ -1,17 +1,39 @@
-# Linux Process
+# Linux - Process
 
 ## What Is This
 
 - process is an instance of program
 - process context: text, data, virtual address space, heap, shared memory, user stack
-- process state: blocked, ready, running
 
-[Process Environment]( linux-process-environment.md )
+## Process State
 
-[Process Communication]( linux-process-communication.md)
+- Running
+- Waiting
+- uninterruptible Sleep
+- Stopped
+- Zombie
+- Dead
+- Paging
 
-[Process Control](linux-process-control.md)
+## Kernel Space
 
-[Process Relationship](linux-process-relation.md)
+- where the code and data of the [kernel]() is stored and execute under
+- What processes run in kernel space?
+  - operating system kernel
+  - device drivers
+
+## User Space
+
+- where normal user processed run
+- the key difference between kernel space
+  - access level
+    - kernel space has full access to the underlying hardware
+    - user space has limited access to the underlying hardware
+
+## futex
+
+[futex](linux-futex.md)
+
+## Daemon
 
 [Daemon](linux-daemon.md)

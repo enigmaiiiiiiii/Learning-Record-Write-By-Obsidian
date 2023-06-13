@@ -1,4 +1,4 @@
-# signal()
+# Linux - System Api signal
 
 - 接收到信号`signum`时调用`handler`指向的函数
 - 相当于定义了一个在进程执行过程中，接收到指定信号的动作
@@ -22,19 +22,19 @@ sighandler_t signal(int signum, sighandler_t handler);
   - handler取值
     - SIG_IGN: 忽略该信号
     - SIG_DFL: 采用默认动作
-    - [[信号句柄]]
+    - [[linux-signal-handler]]
   - 头文件中handler取值的定义  
-  
+
   ```c
   #define SIG_ERR (void (*)())-1
   #define SIG_DFL (void (*)())0
   #define SIG_IGN (void (*)())1
   ```
-    
+
 - 函数原型
 
 ```c
 #include <signal.h>
 void (*signal(int signo, void (*func)(int)))(int);
-// 函数名(*signal(int signo, void (*func)(int)))
+// "(*signal(int signo, void (*func)(int)))", this is function name
 ```

@@ -16,7 +16,7 @@
   ```
 
 
-## 使用[typedef, using](处理类型.md)可以使成员函数指针可读性更高
+## 使用[typedef, using](c++-handle-type.md)可以使成员函数指针可读性更高
 
 ```c++
 using Action = char (Screen::*)(Screen::pos, Screen::pos);

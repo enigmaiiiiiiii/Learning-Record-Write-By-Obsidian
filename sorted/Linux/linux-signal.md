@@ -1,27 +1,54 @@
-# 信号
+# Linux - Signal
 
-- 相关动作
-  - 忽略此信号 
-  - 捕捉信号: 调用一个用户函数
-  - 执行系统默认动作
-- 信号分类  
-  - 程序错误类信号
-  - 终止类信号
-  - 时钟类信号
-  - 异步io类信号
-  - 作业控制类信号
-  - 操作错误类信号
-  - 其他
-- linux中信号概览页面：signal(7)  
-- linux中信号控制函数: signal(2)
+## Signal
 
-[[Linux手册#信号说明]]
+- a notification to a [process](linux-process.md)
+- can be sent by [kernel]() or process
 
-[[生成信号]]
+## Standard Signal
 
-[[信号动作]]
+[standard signal](linux-standard-signal.md)
 
-[[信号mask]]
+## How To Send Signal
 
-[[不可靠信号]]
+use linux command
 
+- [kill](linux-kill.md)
+
+use linux system api
+
+[sending signal](linux-sending-signal.md)
+
+## Signal Action
+
+[signal action](linux-set-signal-action.md)
+
+## Signal Mask
+
+[signal mask](linux-signal-mask.md)
+
+## Unreliable Signal
+
+[unreliable signal](linux-unreliable-signal.md)
+
+## Action When Receive A Signal
+
+- ignore signal
+- catch signal: call a user function
+- execute system default action
+
+## Job Control
+
+## IIII
+
+overview of signals
+
+```sh
+man 7 signal
+```
+
+`signal()`
+
+```sh
+man 2 signal
+```

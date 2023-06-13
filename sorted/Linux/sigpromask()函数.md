@@ -1,4 +1,4 @@
-# set signal mask
+# Linux - sigpromask()
 
 ```c
 #include <signal.h>

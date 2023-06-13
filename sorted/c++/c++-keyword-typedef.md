@@ -1,11 +1,14 @@
-# typedef关键字
+# C++ - typedef
 
-- 定义类型别名
+## What It Is
 
-  ```c++
-  typedef double wages;
-  typedef wages base,*p;  // base是double的别名,p是double*的别名
-  ```
+define type alias
+
+```c++
+typedef double wages;
+typedef wages base,*p;  // base是double的别名,p是double*的别名
+// base is alias of  double, p is alias of double*
+```
 
 - 复合类型或常量的类型别名
 
@@ -18,13 +21,13 @@
   C--指向常量的指针,底层指针-->E[cstr的类型是const char*]
   ```
 
-  [[c++_const#指针和const]]
+- [pointer and const](c++-const.md#pointer-and-const)
 
-  ```c++
-  typedef char *pstring;  // pstring是char*的别名
-  const pstring cstr = 0;  // cstr是指向char的const指针 
-  const pstring *ps;  // ps是一个指针，他的对象是指向char的常量指针
-  ```
+```c++
+typedef char *pstring;  // pstring是char*的别名
+const pstring cstr = 0;  // cstr是指向char的const指针 
+const pstring *ps;  // ps是一个指针，他的对象是指向char的常量指针
+```
 
 - `typedef int arrT[10];`: arrT是一个包含10个整型的数组
 

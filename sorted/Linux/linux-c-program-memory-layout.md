@@ -1,4 +1,4 @@
-# C程序的存储空间布局
+# Linux - C language program memory layout
 
 ## C程序的组成
 

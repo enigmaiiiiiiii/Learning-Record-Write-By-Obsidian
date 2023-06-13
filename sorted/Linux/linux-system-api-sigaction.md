@@ -1,4 +1,4 @@
-#  sigaction()
+#  Linux - sigaction()
 
 ```c
 #include <signal.h>
@@ -14,5 +14,7 @@ int sigaction(int signum, const struct sigaction *act,
   - `signum`: 可以是任意有效信号，除了SIGKILL和SIGSTOP
   - `act`: sigaction结构体指针，信号signum的新操作
   - `oldact`: 如果前一个动作不为NULL， 则将前一个动作保存在oldact中
-  
-## [[sigaction结构体]]
+
+## sigaction struct
+
+[sigaction struct](linux-system-struct-sigaction.md)

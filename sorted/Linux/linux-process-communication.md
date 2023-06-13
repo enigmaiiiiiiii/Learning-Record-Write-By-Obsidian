@@ -6,7 +6,7 @@
   
 - [[XSIIPC]]  
   - [[消息队列]]
-  - [[SystemV信号量]]
+  - [[linux-systemv-semaphore]]
   - [共享存储](linux-shared-memory-segment.md)
 
 [POSIX信号量](linux-semaphore.md)

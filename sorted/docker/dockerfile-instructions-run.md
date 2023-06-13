@@ -9,6 +9,11 @@
 - this is exec form
 - parse as JSON array, so `\` in path must be escaped as `\\`
 
+print "hello world" in console
+
+```dockerfile
+RUN echo "hello world"
+```
 
 ## RUN --mount
 
@@ -26,7 +31,4 @@ the first field is type, there a 4 values
 - `type=cache`:
 - `type=secret`
 - `type=ssh`
-
-
-
 

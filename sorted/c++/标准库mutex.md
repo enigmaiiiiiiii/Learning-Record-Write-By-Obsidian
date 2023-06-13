@@ -1,6 +1,6 @@
 # 标准库mutex
 
-[[互斥变量]]
+[[linux-mutex]]
 
 [mutex](c++-mutex.md)
 

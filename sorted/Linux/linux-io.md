@@ -8,7 +8,7 @@
 
 [读写流](linux-stream-read-and-write.md)
 
-[[格式化输出]]
+[[linux-format-print]]
 
 ## 文件io
 

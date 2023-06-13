@@ -8,6 +8,8 @@
   - [state](javascript-design-pattern-state.md)
   - [bridge]
 
+VS [state](javascript-design-pattern-state.md)
+
 ## When To Use Strategy Pattern
 
 - when there are multiple algorithms for a specific task
@@ -21,9 +23,9 @@
 
 ## Context
 
-1. hold a fields reference to the [strategy object](#concrete-strategy)
-2. a method to set the strategy
-3. a method to use the strategy
+1. Hold a fields reference to the [strategy object](#concrete-strategy)
+2. A method to set the strategy
+3. A method to use the strategy
 
 ```ts
 class Context {
@@ -42,7 +44,7 @@ class Context {
 
 ## Strategy Interface
 
-- declare the method to execute the algorithm
+- declare the method of execute the algorithm
 
 ```ts
 interface Strategy {
@@ -56,9 +58,8 @@ interface Strategy {
 
 ## Code
 
-context
-
 ```ts
+// context
 class Context {
   private strategy: Strategy;
   constructor() {
@@ -71,21 +72,12 @@ class Context {
     return this.strategy.execute(a, b);
   }
 }
-```
 
-strategy interface
-
-```ts
+// strategy interface
 interface Strategy {
   execute(a: number, b: number): number;
 }
-```
-
-concrete strategy
-
-- `Add.ts, Subtract.ts, Multiply.ts`
-
-```ts
+// concrete strategy
 class Add implements Strategy {
   execute(a: number, b: number): number {
     return a + b;
@@ -108,12 +100,13 @@ class Mul implements Strategy {
 `index.ts`
 
 ```ts
-const context = new Context();
 const readline = require('readline');
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 })
+
+const context = new Context();
 
 function InputStrategy() {
   rl.question(

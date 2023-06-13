@@ -82,7 +82,7 @@ syntax
 
 description
 
-- copy files or directories
+- copy files or directories from context
 - to the filesystem of the [**container**](docker-glossary.md#container)
 
 syntax
@@ -93,7 +93,13 @@ syntax
 
 > `--chown, --chmod` only supproted on linux
 
-- `<src>`: may contain wildcards
+- `<src>`
+  - without `--from` option, it's path to **host machine**
+  - with `--from=<name>` option, it's path to previous [build stage]()
+    - `<name>` is create by `FROM ... AS <name>`
+- `<dest>`: path to container filesystem
+
+`<src>` may contain wildcards
 
 ```dockerfile
 COPY hom* /mydir/
