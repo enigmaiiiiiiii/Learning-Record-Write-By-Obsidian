@@ -4,28 +4,11 @@
 * [tools](#tools)
 * [hot-key](#hot-key)
 * [file management](#file-management)
-* [系统管理](#系统管理)
-* [网络](#网络)
-* [不知道如何分类](#不知道如何分类)
+* [System Management](#system-management)
+* [Network](#network)
+* [Dont Know How To Classify For Now](#dont-know-how-to-classify-for-now)
 
 ## locate
-
-`which command`:定位一个命令
-`whereis command`: 定位一个命令的binary, source, 手册文件的位置
-
-定位apt中package
-
-```shell
-apt search [regex]
-```
-
-定位apt中指定文件
-
-```shell
-apt-file search filename
-```
-
-[定位](linux-locate.md)
 
 ## tools
 
@@ -77,8 +60,3 @@ apt-file search filename
 
 - `arp`:查看和修改ARP高速缓存, 主机内ARP table中存储着其他主机的MAC地址
 - `nestat`显示网络状态
-
-## Dont Know How To Classify For Now
-
-- [grep](linux-command-grep.md)
-- [bash](linux-command-bash.md)

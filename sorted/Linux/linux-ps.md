@@ -58,6 +58,8 @@ output field
 - `wait_on_page_bit`: Process is waiting for a [page lock]
 - `schedule`: Process is waiting for a CPU
 
+`TTY` possible values
+
 ## Practical Use
 
 `ps -aux`

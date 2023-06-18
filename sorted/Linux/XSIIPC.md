@@ -1,4 +1,4 @@
-# XSI IPC 
+# XSI IPC
 
 - InterProcess Communication, 简称IPC
 - 子进程通过fork()可以继承父进程的IPC资源

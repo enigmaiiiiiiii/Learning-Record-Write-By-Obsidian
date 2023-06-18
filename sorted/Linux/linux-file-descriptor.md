@@ -1,47 +1,54 @@
-# 文件描述符
+# Linux - File Descriptor
 
-- 是一个非负整数
-- 伴随着进程产生
-- 由进程创建
-- 不同进程的相同文件的文件描述符不一定相等
-- 打开文件时创建, 文件运行时才有文件描述符
-- 一个文件描述符对应一个**打开**的文件
-- [进程](进程.md)是通过文件描述符来访问文件的
-- 是UNIX类操作系统特有的概念
+# What It Is
 
-***
+- Is a non-negative integer
+- Is created with process
+- Is created by process
+- Different process's file descriptor **may not equal for same file**
+- A file descriptor is corresponding to a **opened** file
+- [Process](linux-process.md) access file by file descriptor
+- every process create three standard file descriptors
+  - STDIN_FILENO(standard input, like keyboard)
+  - STDOUT_FILENO(standard output, like screen)
+  - STDERR_FILENO
 
-> 例： 用vim打开一个文件`vim test`, `ls -l /proc/test文件的PID/fd`输出如下内容
+## Take A Look
 
-```bash
+eg: use vim open a file `vim test`, `ls -l /proc/test file's PID/fd` output as below
+
+```sh
 lrwx------ 1 user user 0 Sep  9 10:48 0 -> /dev/tty1
 lrwx------ 1 user user 0 Sep  9 10:48 1 -> /dev/tty1
 lrwx------ 1 user user 0 Sep  9 10:48 2 -> /dev/tty1
 lrwx------ 1 user user 0 Sep  9 10:48 4 -> /home/user/code/.test.swn
 ```
 
-  除系统自动创建的文件描述符外，还有一个编号为4的文件，vim程序会将所有修改都写入该文件
+except system auto create file descriptor, there is a file descriptor 4, vim will write all modify to this file
 
-## 进程表
+## Process Table
 
-- 每一个进程有一个进程表, 包含**一组文件描述符**
-- 每一项包括文件描述符标志和指向一个文件表项的指针
-- 文件表项包括：
-  - 文件状态标志
-  - 当前文件偏移量
-  - 指向该文件v节点表项的指针
-- v-node包含了
-  - 文件类型和对此文件进行各种操作函数的指针
-  - 大多数还包含了该文件的i节点
-- i-node
-  - i节点包含了文件所有者，文件长度，磁盘位置等信息
-- 由文件描述符组成的数组， 通常记为`fd`
-- 每当进程打开一个文件时，为文件指定数组中的一个元素
-- 每个进程创建三个标准文件描述符
-  - STDIN_FILENO(标准输入，如键盘)
-  - STDOUT_FILENO(标准输出，如显示器)
-  - STDERR_FILENO
-- 默认size上限1024
+
+every process has a process table, which contains a set of file descriptors
+
+- key-value pairs is file descriptor flag and a pointer to a file table item
+- default size limit is 1024
+- file table item has those members
+  - file status flag
+  - current file offset
+  - pointer to a [i-node] table item
+
+v-node
+
+- file type and pointer to function that operate this file
+- most of them also contains a pointer to file's i-node
+
+i-node
+
+- contains file owner, file length, disk location and so on
+
+
+
 
 ## 文件描述符命令
 

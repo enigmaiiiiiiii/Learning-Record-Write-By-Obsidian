@@ -1,10 +1,15 @@
-# GIT - Configuration
+# Git - Configuration
+
+* [git config](#git-config)
+* [config variables are stored in 3 places](#config-variables-are-stored-in-3-places)
+* [what .config file looks like](#what-config-file-looks-like)
+* [config proxy](#config-proxy)
 
 ## git config
 
 - throught `git config` command: get and set configuration variables
 
-check current config
+Query Current Config
 
 ```shell
 git config --list --show-origin
@@ -14,18 +19,18 @@ git config --list --show-origin
 
 > internal will override external config
 
-config for single git repository(where `.git` exists)
+**locol**: config for single git repository(where `.git` exists)
 
 - edit file `.git/config` to config
 - use `git config --local`
 - this is the most internal config
 
-global config file for current user
+**global**: config file for current user
 
 - edit file `~/.gitconfig` to config
 - or use `git config --global`
 
-for all users on this computer
+**System**: for all users on this computer
 
 - `[path]/etc/gitconfig`
 - edit file `/etc/gitconfig` to config
@@ -79,3 +84,8 @@ unset proxy
 git config --local --unset http.proxy
 ```
 
+## Query All Local config
+
+```bash
+git config --local --list
+```

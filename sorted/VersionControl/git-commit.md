@@ -1,5 +1,12 @@
 # commit
 
+## How to commit
+
+commit with message
+
+```bash
+git commit -m "commit message"
+```
 
 ## What Happen When Git Commit
 

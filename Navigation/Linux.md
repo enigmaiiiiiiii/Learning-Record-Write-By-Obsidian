@@ -30,6 +30,8 @@
 
 [Directory Structure](linux-system-directory.md)
 
+[Bash](linux-bash.md)
+
 [User And Group](linux-user-and-group.md)
 
 [Systemd](linux-systemd.md)
@@ -42,7 +44,7 @@
 
 [File Discriptor](linux-file-descriptor.md)
 
-[System Process](linux-process.md)
+[Process](linux-process.md)
 
 [Network](linux-network.md)
 
@@ -66,6 +68,8 @@
 
 [help manual](linux-programmer-s-manual.md)
 
+[System Call](linux-system-call.md)
+
 [Linux IO](linux-io.md)
 
 [Linux File](linux-file-api.md)
@@ -79,3 +83,7 @@
 [network progrogramming](linux-network-programming.md)
 
 [system log](linux-system-log.md)
+
+## Blog
+
+[Dotfiles Version Control](linux-dotfiles-version-control.md)

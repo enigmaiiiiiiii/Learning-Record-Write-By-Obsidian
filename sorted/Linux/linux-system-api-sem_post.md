@@ -1,4 +1,4 @@
-# 信号量解锁
+# Linux - System API sem_post()
 
 ```c
 #include <semaphore.h>

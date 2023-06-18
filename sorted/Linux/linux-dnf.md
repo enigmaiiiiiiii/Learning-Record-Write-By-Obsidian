@@ -10,7 +10,7 @@ dnf [options] [command] [package ...]
 
 ## Options
 
-`-y`: Automatically answer yes for all qquestions(自动确认)
+`-y`: Automatically answer yes for all qquestions
 
 ## list installed package
 
@@ -22,4 +22,10 @@ only list name of installed package
 
 ```sh
 dnf list installed | awk '{print $1}'
+```
+
+## Search Package
+
+```sh
+dnf search <package>
 ```

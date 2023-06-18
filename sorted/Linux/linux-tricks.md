@@ -9,10 +9,8 @@
 
 ## awk
 
-- pattern scanning and processing language
+[awk](linux-awk.md)
 
-```sh
-```
 
 ## head
 
@@ -33,6 +31,14 @@ head -n 5 /etc/passwd
 ## grep
 
 - use for searching and filtering text based on patterns
+
+`grep [-a/c/i/n/v] 'string' filename`
+
+- `-a`:
+- `-c`:
+- `-i`: ignore case
+- `-n`:
+- `-v`: reverse match
 
 ## get last command output
 

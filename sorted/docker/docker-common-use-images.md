@@ -1,4 +1,4 @@
-# Important Images
+# DOcker - Common Use Images
 
 ## mysql
 
@@ -15,7 +15,7 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 - `-d`: 后台运行
 - `mysql:tag`: 镜像名称
 
-使用docker 中的 mysql 的 shell
+use docker 中的 mysql 的 shell
 
 - some-mysql: 容器名称
 

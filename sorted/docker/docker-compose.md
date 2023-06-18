@@ -16,7 +16,7 @@
 **two essential things**
 
 - [`docker-compose.yml`](#docker-composeyml) file
-- [`docker-compose`](#command-docker-compose) command
+- [`docker-compose`](#docker-compose-command) command
 
 VS [dockerfile](docker-dockerfile.md)
 
@@ -41,8 +41,9 @@ VS [dockerfile](docker-dockerfile.md)
 2. Automated testing environment
 3. Single host Deployments
 
-## command docker compose
+## docker compose command
 
+[docker compose command](docker-compose-command.md)
 
 ## docker-compose.yml
 

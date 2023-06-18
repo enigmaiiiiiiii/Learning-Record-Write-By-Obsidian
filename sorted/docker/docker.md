@@ -37,6 +37,6 @@
 
 [Rootless mode](docker-rootless.md): necessary config to use docker plugin in vscode
 
-## some important images
+## important images
 
 [important image](docker-important-images.md)

@@ -1,8 +1,8 @@
-# NAT
+# Computer Network - NAT
 
 ## What Is This
 
-- NAT: [Network Address](computer-network-ip-address.md) Translation
+- NAT: [Network Address Translation](computer-network-ip-address.md)
 - NAT allows multiple devices on a [local network]() to share a **single public [IP address](network-ipaddress.md)**
 - From external looking, NAT router is a single device with single IP address
 - Modify net address in IP packet, when transit across [router]() or [firewall]()

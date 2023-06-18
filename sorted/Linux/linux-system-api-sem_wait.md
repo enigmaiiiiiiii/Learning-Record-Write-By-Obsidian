@@ -1,4 +1,4 @@
-# 信号量上锁
+# Linux - System API sem_wait()
 
 ```c
 #include <semaphore.h>

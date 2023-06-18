@@ -8,6 +8,8 @@
 
 [Operator](linux-shell-operator.md)
 
+[Condition](linux-shell-condition.md)
+
 ## execute
 
 ```sh

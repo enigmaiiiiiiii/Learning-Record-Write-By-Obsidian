@@ -1,9 +1,10 @@
 # Linux - File Management
 
 * [File Permission Command](#file-permission-command)
-* [file](#file)
+* [Check File With Details](#check-file-with-details)
+* [Query File Type](#query-file-type)
 * [chown](#chown)
-* [ln](#ln)
+* [File Link](#file-link)
 
 ## File Permission Command
 
@@ -17,7 +18,7 @@
 ls -al
 ```
 
-## file
+## Query File Type
 
 - determine file type
 
@@ -26,7 +27,7 @@ file *
 ```
 determine the type of all file in current directory
 
-## chown
+## Change File Owner
 
 `chown [OPTION] ... [OWNER][:[GROUP]] FILE ...`
 
@@ -40,24 +41,30 @@ options
 
 - `-R`: recursive, process all files and subdirectories in the specified directory together
 
-## ln
+## File Link
 
-- make links between files
+[ln](linux-ln.md)
 
-SYNOPSIS
+## Search File
 
-`ln [OPTION]... [-T] TARGET LINK_NAME`
+[locate](linux-locate.md)
 
-2 link types
+## Which
 
-- hard link: default link type, target must exist
-- Symbolic link: set with `--symbolic`, can be point to arbitrary text
+`which [options] [--] programname ...`
 
-Options
+- locate a command
 
+## whereis
 
-create file1 link to file2
+- locate a command's binary, source, manual file
 
-```bash
-ln -s file2 file1
+```shell
+whereis [options] [-BMS directory ... -f] name
 ```
+
+- `-b`:  只找binary的文档
+- `-m`:  只找在说明文件路径下的文件
+- `-s`: 只找source 来源文件
+- `-u`: 没有说明档的文件
+

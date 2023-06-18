@@ -1,14 +1,14 @@
 # Linux - Process Communication
 
-[管道](linux-process-pipe().md)
-  
+[Pipe](linux-process-pipe().md)
+
 [FIFO](linux-special-file-fifo.md)
-  
-- [[XSIIPC]]  
+
+- [[XSIIPC]]
   - [[消息队列]]
   - [[linux-systemv-semaphore]]
   - [共享存储](linux-shared-memory-segment.md)
 
-[POSIX信号量](linux-semaphore.md)
+[POSIX Semaphore](linux-semaphore.md)
 
 [[UNIX域套接字]]

@@ -30,7 +30,7 @@
     - kernel space has full access to the underlying hardware
     - user space has limited access to the underlying hardware
 
-## futex
+## Asynchronous
 
 [futex](linux-futex.md)
 
