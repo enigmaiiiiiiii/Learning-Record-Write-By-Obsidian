@@ -1,8 +1,17 @@
 # Linux - Command ln
 
+* [What It Is](#what-it-is)
+* [About What Target Should Input](#about-what-target-should-input)
+* [hard link](#hard-link)
+* [Symbolic Link](#symbolic-link)
+* [Options](#options)
+
 ## What It Is
 
 - make links between files
+- 2 types different links
+  - [hard link](#hard-link)
+  - [symbolic link](#symbolic-link)
 
 SYNOPSIS
 
@@ -34,13 +43,16 @@ lrwxrwxrwx 1 username group 7 2019-01-01 00:00 $HOME/.vimrc -> .vimrc
   - path relative to LINK_NAME
   - or absolute path
 
-## 2 link types
+## hard link
 
-- Hard Link: default link type
-  - Target must exist
-- Symbolic Link: set with `--symbolic`
-  - each argument not to be exist
+- default link type
+- Target must exist
+
+## Symbolic Link
+
+- set with `--symbolic`
+- each argument not to be exist
 
 ## Options
 
-- ...
+- `-s`: create [symbolic link](#symbolic-link)

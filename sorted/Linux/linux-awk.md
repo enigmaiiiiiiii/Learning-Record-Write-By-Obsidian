@@ -31,6 +31,12 @@ awk with script
 awk 'BEGIN { for(i=1; i<=10; i++) print "The square root of", i, "is", i*i }'
 ```
 
+print first 10 lines
+
+```sh
+awk 'NR <= 10' /etc/passwd
+```
+
 ## syntax
 
 - `awk [options] 'program-text' file`
@@ -53,6 +59,10 @@ In above example coresponding fields are
 - `$1`: PID
 - `$2`: TTY
 - `$NF`: CMD
+
+## Reference a line
+
+- `NR`: current line number
 
 ## options
 

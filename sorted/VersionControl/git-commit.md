@@ -25,9 +25,9 @@ git commit -m "commit message"
 
 - commit包含一个指向前一个commit的指针
 
-## use relative reference to represent a commit
+## Relative Reference Represent A Commit
 
-Combine relative reference symbol with branch name can represent a commit
+using relative **reference symbol** with **branch name** can represent a commit
 
 - relative reference symbol: `^` and `~`
   - `^`: parent commit
@@ -45,3 +45,12 @@ git branch -f main HEAD^  # force move main branch to parent commit
 - properly to answer question: what changes have I not yet applied to my master branch from this branch?
 - Double Dot: `git log <commit1>..<commit2>`: 显示commit2和commit1分开后的所有commit2分支上的记录, **不包括commit2**
 - Triple Dot: `git log <commit1>...<commit2>`: 显示commit1和commit2之间的提交记录
+
+## Amend Commit
+
+`git commit --amend`: modify the last commit message
+
+- this command will use core.editor in [git config](git-configuration.md) to open a editor to modify the commit message
+- default editor is vim
+- can be changed by `git config --global core.editor <editor name>`
+- or edit in ~/.gitconfig file

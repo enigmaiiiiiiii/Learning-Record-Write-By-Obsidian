@@ -14,13 +14,13 @@
 
 ## git restore
 
-- 恢复工作区的指定文件
+- restore the specified files in working directory
 
-example
+For example
 
 - switch master
 - reverts the makefile to two versions back
-- delete hello.c by mistake
+- accidentally delete hello.c
 - gets it back from [index]()
 
 ```bash
@@ -95,5 +95,7 @@ options
 ## git add
 
 ## git rebase
+
+`git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] [<upstream> [<branch>]]`
 
 

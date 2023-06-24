@@ -65,4 +65,4 @@ $env:VARIABLE_NAME
 where.exe <command>
 ```
 
-## 
+##

@@ -7,10 +7,23 @@
 * [let command output as another command's parameter](#let-command-output-as-another-commands-parameter)
 * [jump back to previous directory](#jump-back-to-previous-directory)
 
+## pipe
+
+- use `|` to redirect output to another process
+- can not use with file directly
+- those command usually follow after "|"
+  - [`grep`]()
+  - [`awk`]()
+  - [`sed`]()
+  - [`sort`]()
+  - [`uniq`]()
+  - [`wc`]()
+  - [`head`]()
+  - [`tail`]()
+
 ## awk
 
 [awk](linux-awk.md)
-
 
 ## head
 
@@ -39,6 +52,14 @@ head -n 5 /etc/passwd
 - `-i`: ignore case
 - `-n`:
 - `-v`: reverse match
+
+## alias
+
+- define shortcut for command
+
+```sh
+alias ..='cd ..'  # type .. go back to parent directory
+```
 
 ## get last command output
 

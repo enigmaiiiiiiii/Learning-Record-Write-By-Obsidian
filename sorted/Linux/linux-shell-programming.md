@@ -1,14 +1,26 @@
 # shell
 
-## basic
-
-[Echo](linux-shell-echo.md)
+## Foundamental
 
 [Variable](linux-shell-variable.md)
 
-[Operator](linux-shell-operator.md)
+[Array](linux-shell-array.md)
 
-[Condition](linux-shell-condition.md)
+[Operator](linux-shell-operators.md)
+
+[Expression](linux-shell-expressions.md)
+
+[Read Input](linux-shell-read.md)
+
+[Echo](linux-shell-echo.md)
+
+[Loop](linux-shell-flow-control.md)
+
+[Function](linux-shell-function.md)
+
+[Shebang](linux-shell-script-shebang.md)
+
+[tput](linux-shell-tput.md)
 
 ## execute
 
@@ -16,31 +28,7 @@
 bash script.sh
 ```
 
-## useful shell script
+## Shell Script Snippets
 
-1. download file from ftp server
-
-```sh
-HOST = "192.168.0.104"      # Server's hostname
-USER = "lapowner"           # Server login username
-PASSWORD = "1234asdf@Z"     # Server login password
-
-SOURCE = $1  # $1 first parameter of input
-ALL_FILES="${@:2}"  # ${@:2} all parameter except first
-
-# Begin input to FTP
-ftp -inv $HOST <<EOF
-user $USER $PASSWORD
-cd $SOURCE
-mget $ALL_FILES
-bye
-EOF  # End input to FTP
-```
-
-use it
-
-```sh
-./script.sh file1  # down file1
-./script.sh *.c file1 # down file1 and *.c
-```
+[download file from ftp server](/sorted/Code-Snippet/shell/download-file-from-ftp-server.md)
 

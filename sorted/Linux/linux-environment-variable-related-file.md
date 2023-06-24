@@ -14,13 +14,14 @@
 4. `/etc/profile.d/*.sh`
 5. `/etc/.bashrc`
 
+
 ## /etc/environment
 
 - define the environment variable (temporarily i call it environment variable)
 - **not read by shell**
 - it is **not recommend** to modify `/etc/environment` to set environment
 
-```
+```sh
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 ```
 
@@ -83,7 +84,6 @@ export text="hello"
 ## /etc/profile.d directory
 
 - script in `/etc/profile.d` will be [executed](linux-bash-builtin-command.md#source) by `/etc/profile`
-- 设置自己的系统范围的环境变量，建议将配置放在/etc/profile.d中的shell脚本中
 
 which variable should be set in `/etc/profile.d`?
 

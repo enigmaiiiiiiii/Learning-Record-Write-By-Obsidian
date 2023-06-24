@@ -1,6 +1,8 @@
-# bash
+# Linux - Bash
 
 ## What It Is
+
+- is an sh-compatible command language **interpreter**
 
 ## Bash Command
 
@@ -21,3 +23,5 @@ options
 ```sh
 echo "\$0: $0; BASH_SOURCE[0]: ${BASH_SOURCE[0]}"
 ```
+
+## VS zsh or fish

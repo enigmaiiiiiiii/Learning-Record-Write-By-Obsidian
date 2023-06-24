@@ -31,6 +31,6 @@ value:other_value
 
 ## show all variable
 
-```bash
+```sh
 env
 ```

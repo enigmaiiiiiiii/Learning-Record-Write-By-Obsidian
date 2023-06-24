@@ -1,4 +1,4 @@
-# 多路转接
+# Linux - IO poll
 
 [select](linux-io-api-select().md)
 

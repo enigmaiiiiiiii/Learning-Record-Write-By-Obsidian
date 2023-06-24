@@ -57,7 +57,20 @@ git config --list --show-origin
 	proxy = 127.0.0.1:8100
 ```
 
-## config proxy
+## Query All config
+
+query local config
+
+```bash
+git config --local --list
+```
+
+query global config
+
+```sh
+git config --global --list
+```
+## Config Proxy
 
 with `git` command line interface
 
@@ -84,8 +97,6 @@ unset proxy
 git config --local --unset http.proxy
 ```
 
-## Query All Local config
+## Config Editor
 
-```bash
-git config --local --list
-```
+

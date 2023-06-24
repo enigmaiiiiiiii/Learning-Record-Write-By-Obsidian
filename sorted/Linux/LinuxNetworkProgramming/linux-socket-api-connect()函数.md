@@ -22,4 +22,4 @@ int connect(int sockfd, const struct sockaddr *serv_addr, socklen_t addrlen);
 
 - 如果socket处于非阻塞模式, 那么连接不能马上建立时，会返回-1 
 - errno设置为EINPROGERSS
-- 应用程序使用[poll或select](io多路转接.md)来判断文件描述符何时可写，可写时,连接完成
+- 应用程序使用[poll或select](linux-io-poll.md)来判断文件描述符何时可写，可写时,连接完成

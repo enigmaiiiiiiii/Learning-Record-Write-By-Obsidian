@@ -4,6 +4,8 @@
 
 `+, - , *, /, %, =, ==, !=`
 
+- `%`: remainder, eg. 10 % 3 is 1
+
 ## relation operator
 
 - `-eq`

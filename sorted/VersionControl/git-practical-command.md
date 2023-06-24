@@ -11,8 +11,6 @@
 * [check all branches](#check-all-branches)
 * [Resovle Conflict](#resovle-conflict)
 
-## 
-
 ## print merges commit log
 
 ```bash
@@ -68,7 +66,7 @@ git clean -fxd # 删除未跟踪的文件
 git ls-files
 ```
 
-## set HEAD to specified status
+## Set HEAD to specified status
 
 ```bash
 git reset --hard <commitid>
@@ -92,13 +90,13 @@ temporarily store modification
 git stash
 ```
 
-暂存修改和新增的文件
+save modification and new files temporarily
 
 ```sh
 git stash --include-untracked
 ```
 
-恢复修改并删除暂存记录
+restore modification and delete stash record
 
 ```sh
 git stash pop

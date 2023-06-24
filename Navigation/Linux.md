@@ -4,7 +4,11 @@
 
 [Practical Command](linux-practical-commands.md)
 
-[Linux Tricks](linux-tricks.md)
+[Tricks](linux-trick-commands.md)
+
+[wildcard](linux-wildcard.md)
+
+[Output Redirection](linux-output-redirection.md)
 
 [App Install](linux-software-install.md)
 
@@ -28,6 +32,8 @@
 
 ## Core
 
+[Terminal](linux-terminal.md)
+
 [Directory Structure](linux-system-directory.md)
 
 [Bash](linux-bash.md)
@@ -48,13 +54,7 @@
 
 [Network](linux-network.md)
 
-## Blog
-
-[Root Jail](linux-change-root-jail.md)
-
-[Key-based Login Only](linux-key-based-login-only.md)
-
-## Linux Shell
+## Shell Programming
 
 [Shell](linux-shell.md)
 
@@ -63,6 +63,12 @@
 [environment variable](linux-system-environment.md)
 
 [Shell Programming](linux-shell-programming.md)
+
+## Blog
+
+[Root Jail](linux-change-root-jail.md)
+
+[Key-based Login Only](linux-key-based-login-only.md)
 
 ## Linux System Programming
 
@@ -80,9 +86,9 @@
 
 [Thread](linux-thread.md)
 
-[network progrogramming](linux-network-programming.md)
+[Network Programming](linux-network-programming.md)
 
-[system log](linux-system-log.md)
+[System Log](linux-system-log.md)
 
 ## Blog
 

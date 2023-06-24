@@ -1,3 +1,3 @@
 # Git - HEAD pointer
 
-- HEAD pointer point to last commit of current branch
+- HEAD pointer point to last commit of **current** branch

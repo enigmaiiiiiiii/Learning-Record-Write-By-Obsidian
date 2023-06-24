@@ -34,9 +34,10 @@ vs /usr/bin
 
 ## /usr
 
-- abbeviations of unix system resources
-- Stores user's programs and data
-- like `Program Files` in windows
+- Abbeviations of unix system resources
+- Stores programs and data for all users
+
+> Like `Program Files` in windows
 
 /usr/local
 
@@ -47,6 +48,10 @@ vs /usr/bin
 ## /dev
 
 - device driver
+
+`/dev/null`
+
+- a special file that discards all data written to it
 
 ## /etc
 

@@ -14,7 +14,9 @@
 
 [SSH Key](git-ssh.md)
 
-[Git remote](git-remote.md)
+[Git Remote](git-remote.md)
+
+[Git Rebase](git-rebase.md)
 
 [Git Command List](git-command-list.md)
 

@@ -1,14 +1,22 @@
 # Linux Shell - Variable
 
+* [Variable type](#variable-type)
+* [Local Variable Assignment](#local-variable-assignment)
+* [Command Line Argument](#command-line-argument)
+* [Assign Value To Variable From Command](#assign-value-to-variable-from-command)
+* [environment variable](#environment-variable)
+* [shell variable](#shell-variable)
+* [Predefined variable](#predefined-variable)
+
 ## Variable type
 
 - [local variable](#local-variable)
 - [environment variable](#environment-variable)
 - [shell variable](#shell-variable)
 
-## local variable
+## Local Variable Assignment
 
-define variable
+assign `123` to `name`
 
 ```shell
 name = 123
@@ -20,15 +28,18 @@ name = 123
 echo $name
 ```
 
-use `read` to get input from user
-
+use [`read`]() to get input from user
 
 ```sh
 read -p "what is your name" name
 echo "hello $name"
 ```
 
-use input parameter placeholder `$1`, `$2`, `$3`, ... to get input value
+## Command Line Argument
+
+parameter `$1`, `$2`, `$3`, represent the Command Line Parameter
+
+- greeting.sh
 
 ```sh
 name=$1
@@ -37,7 +48,16 @@ echo "Good Morning $name!!"
 echo "You are looking good today $content!!"
 ```
 
-get local value from other command
+```sh
+./greeting.sh "John" "How are you"
+```
+
+- `$1`: "John"
+- `$2`: "How are you"
+
+## Assign Value To Variable From Command
+
+use "``" to get value from command
 
 ```sh
 whereami=`pwd`

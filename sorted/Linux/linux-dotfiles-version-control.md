@@ -24,6 +24,7 @@ Create [Symbolic link](linux-file-management.md#file-link) of dotfile
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ```
 
+## Package Installation
 
-## Package
+## Auto Sync
 

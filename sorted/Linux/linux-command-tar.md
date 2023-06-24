@@ -1,43 +1,43 @@
-# tar
+# Linux - tar
 
-## 示例
+## Practical Use
 
-将文件file1和目录dir2**压缩**为package.tar, 列出详细信息
+compress `file1` and `dir2` to `package.tar`, list details
 
 ```bash
 tar -cvf package.tar file1 dir2
 ```
 
-**提取**package.tar中的文件, 并输出到/tmp目录
+extract file in `package.tar` to /tmp
 
 ```bash
 tar -xvf package.tar -C /tmp
 ```
 
-**解压**并提取package.tar.gz中的文件, 并输出到/tmp目录
+**depress** and **extract** file in `package.tar.gz` to /tmp
 
-```bash
+```sh
 tar -zxvf package.tar.gz -C /tmp
 ```
 
-列出package.tar.gz或package.tar中的文件
+list files in `package.tar.gz` and `package.tar`
 
-```bash
+```sh
 tar -tf package.tar.gz
 tar -tf package.tar
 ```
 
-## 选项
+## Options
 
 - `tar -A [OPTIONS] ARCHIVE ARCHIVE`
-- `tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`: 用文件`[file...]`创建为档案ARCHIVE
+- `tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`: create `[file...]` as a new archive named `ARCHIVE`
 - `tar -d [-f ARCHIVE] [OPTIONS] [FILE...]`
-- `tar -t [-f ARCHIVE] [OPTIONS] [MEMBER...]`: 列出档案ARCHIVE中的内容
+- `tar -t [-f ARCHIVE] [OPTIONS] [MEMBER...]`: list files in `ARCHIVE`
 - `tar -r [-f ARCHIVE] [OPTIONS] [FILE...]`
 - `tar -u [-f ARCHIVE] [OPTIONS] [FILE...]`
 - `tar -x [-f ARCHIVE] [OPTIONS] [MEMBER...]`
-- `-v` or `--verbose`: 列出详细信息
-- `-z` or `--compress`: 使用gzip指令处理备份文件
+- `-v` or `--verbose`: output verbose information
+- `-z` or `--compress`: use gzip to compress
 - `-C` or `--directory=DIR`
-  - 之后的任何操作更改对"DIR"目录生效
-  - 顺序敏感，即影响接下来的所有option
+  - the following options affect the directory `DIR`
+  - order sensitive, affect all following options

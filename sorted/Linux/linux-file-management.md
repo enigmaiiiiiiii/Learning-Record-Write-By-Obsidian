@@ -3,8 +3,11 @@
 * [File Permission Command](#file-permission-command)
 * [Check File With Details](#check-file-with-details)
 * [Query File Type](#query-file-type)
-* [chown](#chown)
+* [Change File Owner](#change-file-owner)
 * [File Link](#file-link)
+* [Search File](#search-file)
+* [Which](#which)
+* [whereis](#whereis)
 
 ## File Permission Command
 
@@ -49,6 +52,8 @@ options
 
 [locate](linux-locate.md)
 
+[find](linux-find.md)
+
 ## Which
 
 `which [options] [--] programname ...`
@@ -63,8 +68,24 @@ options
 whereis [options] [-BMS directory ... -f] name
 ```
 
-- `-b`:  只找binary的文档
-- `-m`:  只找在说明文件路径下的文件
-- `-s`: 只找source 来源文件
-- `-u`: 没有说明档的文件
+- `-b`: only find binary file
+- `-m`: only find [manual file]()
+- `-s`: only find source file
+- `-u`
+
+## Handle Path
+
+dirname
+
+```sh
+$ dirname ~/Desktop/abc.txt
+/home/username/Desktop
+```
+
+basename
+
+```sh
+$ basename ~/Desktop/abc.txt
+abc.txt
+```
 

@@ -1,6 +1,6 @@
-# echo
+# Linux - echo
 
-- `echo ${variable}`用来显示变量信息
+- `echo ${variable}`: print the value of variable
 
 ```bash
 #!/bin/bash

@@ -1,8 +1,8 @@
 # regex
 
-* [match single character](#match-single-character)
-* [number of occurrences](#number-of-occurrences)
-* [predefined characters](#predefined-characters)
+* [Match single character](#match-single-character)
+* [Number of occurrences](#number-of-occurrences)
+* [Predefined characters](#predefined-characters)
 * [Group](#group)
 
 ## match single character

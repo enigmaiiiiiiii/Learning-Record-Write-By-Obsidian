@@ -1,8 +1,8 @@
-# 输入输出
+# Linux - IO
 
 ## stream
 
-[LinuxIO流](linux-io-stream.md)
+[IO Stream](linux-io-stream.md)
 
 [打开流](linux-stream-open-api.md)
 
@@ -16,7 +16,7 @@
 
 ## 同步io
 
-[[IO多路转接]]
+[[linux-io-poll]]
 
 ## 存储映射io
 
