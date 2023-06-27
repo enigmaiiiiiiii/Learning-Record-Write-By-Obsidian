@@ -1,5 +1,10 @@
 # Linux - kill
 
+* [Description](#description)
+* [Syntax](#syntax)
+* [killall](#killall)
+* [Practical Use](#practical-use)
+
 ## Description
 
 - [Send a signal](linux-signal.md#how-to-send-signal) to process
@@ -30,3 +35,8 @@
 - will send a [`SIGTERM`](linux-standard-signal.md) signal to the process
 - which give process a chance to clean up before exit
 - `-TERM(15)`: gracefully stop a process
+
+`kill -0 %PID`
+
+- check if a process exists
+

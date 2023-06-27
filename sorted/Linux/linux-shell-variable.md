@@ -80,6 +80,8 @@ echo "You are in $whereami"
 - `PWD`: current working directory
 - `RANDOM`: return random number, range from 0 to 32767
 - `HISTSIZE`: max number of command history
+
+
 - `$0`: return current command name, while `$1`, `$2`: first and second parameter
 - `$?`: the last command return status, 0 for success, non-0 for fail
 - `$$`: current process id

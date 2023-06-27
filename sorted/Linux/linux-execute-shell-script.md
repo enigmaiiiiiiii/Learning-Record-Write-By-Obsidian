@@ -1,7 +1,7 @@
 # Execute Shell Script
 
 * [Script Like This](#script-like-this)
-* [conclusion](#conclusion)
+* [Conclusion](#conclusion)
 * [./script.sh](#scriptsh)
 * [bash script.sh](#bash-scriptsh)
 * [source script.sh](#source-scriptsh)
@@ -16,10 +16,17 @@ var="hello script"
 export var
 ```
 
-## conclusion
+## Conclusion
 
-- `./script.sh` and `bash script.sh` execute the script in a new shell, so the variable in the script is not exported as a shell variable
-- `source script.sh` and `. ./script.sh` execute the script like type command in current shell, so the variable in the script is exported as a shell variable
+`./script.sh` and `bash script.sh`
+
+- execute the script in a new [shell](linux-shell.md)
+- so the variable in the script is not exported as a shell variable
+
+`source script.sh` and `. ./script.sh`
+
+- execute the script like type command in current shell
+- so the variable in the script is exported as a shell variable
 
 ## ./script.sh
 

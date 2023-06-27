@@ -8,6 +8,7 @@
 * [Search File](#search-file)
 * [Which](#which)
 * [whereis](#whereis)
+* [Handle Path](#handle-path)
 
 ## File Permission Command
 
@@ -46,7 +47,13 @@ options
 
 ## File Link
 
-[ln](linux-ln.md)
+Create link
+
+- [ln](linux-ln.md)
+
+Get Link target
+
+- `readlink [options] file`
 
 ## Search File
 
@@ -75,17 +82,4 @@ whereis [options] [-BMS directory ... -f] name
 
 ## Handle Path
 
-dirname
-
-```sh
-$ dirname ~/Desktop/abc.txt
-/home/username/Desktop
-```
-
-basename
-
-```sh
-$ basename ~/Desktop/abc.txt
-abc.txt
-```
-
+[handle path](linux-command-handle-path.md)

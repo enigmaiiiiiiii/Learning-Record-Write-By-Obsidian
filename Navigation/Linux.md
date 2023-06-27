@@ -10,7 +10,7 @@
 
 [Output Redirection](linux-output-redirection.md)
 
-[App Install](linux-software-install.md)
+[Install Application](linux-software-install.md)
 
 [Download](linux-download-command.md)
 
@@ -44,6 +44,8 @@
 
 [Services](linux-services.md)
 
+[File properties](linux-file-properties.md)
+
 [File Related Account Manange](linux-account-manage-related-file.md)
 
 [File Permission](linux-file-permission.md)
@@ -58,7 +60,7 @@
 
 [Shell](linux-shell.md)
 
-[execute shell script](linux-execute-shell-script.md)
+[Execute A Shell Script](linux-execute-shell-script.md)
 
 [environment variable](linux-system-environment.md)
 

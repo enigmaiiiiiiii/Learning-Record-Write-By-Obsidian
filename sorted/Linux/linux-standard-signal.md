@@ -1,6 +1,5 @@
 # Linux - Standard Signal
 
-
 > use `man 7 signal` to check standard signal
 
 ## Some Common Signals

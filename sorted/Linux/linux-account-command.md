@@ -141,3 +141,17 @@ output looks like:
 ```sh
 nginx: group1 group2 group3
 ```
+
+## sudo
+
+allow user to execute a command as the **superuser** or **another user**
+
+sudo -v
+
+-
+
+sudo -n
+
+- avoid prompting for a password
+- if password is required for the command, sudo display an error
+- used to test if current user has sudo privilege

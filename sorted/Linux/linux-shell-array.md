@@ -3,11 +3,21 @@
 ## Declare An Array
 
 ```sh
-array_name=(value1 value2 value3)
+fruits=(apple banana "Fruit Basket" orange)
 ```
 
 ## Access Array Element
 
 ```sh
-${array_name[index]}
+${fruits[2]}
+```
+
+- access to the third element
+
+## Traverse Array
+
+```sh
+for fruit in ${fruits[@]}; do
+  echo "I like $fruit"
+done
 ```

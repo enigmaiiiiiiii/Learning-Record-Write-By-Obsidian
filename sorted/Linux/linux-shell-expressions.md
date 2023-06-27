@@ -27,7 +27,7 @@ sum=`expr 1 + 2`
 
 - double brackets `[ ]` for condition expression
 
-> space between `[` and `]` is required. eg. `[ $num1 -eq $num2 ]`
+> space `' '` between `[` and `]` is required. eg. `[ $num1 -eq $num2 ]`
 
 - usualy use with [`if` statement or loops](linux-shell-flow-control.md)
 
@@ -37,19 +37,31 @@ if [ $num1 -eq $num2 ]; then
 fi
 ```
 
+File Examines Options
+
+- `[ -e file ]` - True if file exists
+- `[ -z string ]` - True if the length of string is zero
+- `[ -n file ]`
+- `[ -a file ]` - True if file exists
+- `[ -b file ]` - True if file exists and is a [block special]() file
+- `[ -c file ]` - True if file exists and is a [character special]() file
+- `[ -d file ]`
+- `[ -h file ]` - True if file exists and is a symbolic link
+
+string compares operators
+
+- `[ string1 = string2 ]`: true if strings are equal
+- `[ string1 < string2 ]`: lexically less than
+
+arithmetic operators
+
+- `-eq`: compare two **integers** whether equal
+
 ## Extend Conditional Expressions
 
 - `[[ ]]` for extended condition expression
 - `if [[ [options] expression ]]; then ... fi`
 
 options
-
-- `[[ -e file ]]` - True if file exists
-- `[[ -z string ]]` - True if the length of string is zero
-- `[[ -n file ]]`
-- `[[ -a file ]]` - True if file exists
-- `[[ -b file ]]` - True if file exists and is a [block special]() file
-- `[[ -c file ]]` - True if file exists and is a [character special]() file
-- `[[ -d file ]]`
 
 

@@ -1,14 +1,6 @@
-is there difference between "env python script.sh" and "python script.sh"
+in my local repository, i commit a change which ahead of remote repository, then i pull from remote repository to apply some 
 
-i didn't get the difference,
-, they both search in $PATH
-, both use the first match.
-
-Where is the difference?
 
 ## commit message
 
-1. emulate []v. 模仿
-2. latter []adj. 后面的
-3. forked []v. 分叉
-4. portable []adj. 便携的, 可移植的
+1. canonicalize []v. 使合法化

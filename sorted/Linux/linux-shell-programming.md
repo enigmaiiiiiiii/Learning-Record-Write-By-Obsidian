@@ -14,13 +14,17 @@
 
 [Echo](linux-shell-echo.md)
 
-[Loop](linux-shell-flow-control.md)
+[Flow Control](linux-shell-flow-control.md)
 
 [Function](linux-shell-function.md)
 
 [Shebang](linux-shell-script-shebang.md)
 
-[tput](linux-shell-tput.md)
+## Advanced
+
+[custom output position and color](linux-shell-tput.md)
+
+[exit ahead of time](linux-shell-exit.md)
 
 ## execute
 

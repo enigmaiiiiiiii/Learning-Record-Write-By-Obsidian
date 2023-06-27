@@ -1,5 +1,31 @@
 # Git - Rebase
 
+* [Squash last n commits](#squash-last-n-commits)
+* [Removed A Range Of Commit](#removed-a-range-of-commit)
+* [Rebase A Branch](#rebase-a-branch)
+* [Interactive Mode](#interactive-mode)
+* [resolve conflict](#resolve-conflict)
+
+## Rebase to First Commit
+
+```sh
+git rebase -i --root
+```
+
+use relative reference symbol to represent first commit, will cause error
+
+- for example, `HEAD~n` point to the first commit
+
+```sh
+$ git rebase -i HEAD~n
+fatal: Invalid Upstream 'HEAD~n'
+```
+
+## Squash last n commits
+
+```sh
+git rebase -i HEAD~n
+```
 
 ## Removed A Range Of Commit
 
@@ -46,7 +72,13 @@ D---E---F---G  master
 
 ## Interactive Mode
 
-An editor will be fired up with all commit in your current branch
+enter interactive mode
+
+```sh
+git rebase -i <commit>
+```
+
+en editor will be fired up with all commit in your current branch
 
 the file looks like
 
@@ -87,4 +119,12 @@ abort rebase
 
 ```sh
 git rebase --abort
+```
+
+## Push rebased branch to remote
+
+`-f` is required, because rebase cause remote branch fast-forward to local branch
+
+```sh
+git push -f origin <branch>
 ```

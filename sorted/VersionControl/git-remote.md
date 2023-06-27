@@ -1,5 +1,11 @@
 # Git - Remote
 
+* [set remote repository url](#set-remote-repository-url)
+* [push to remote repository](#push-to-remote-repository)
+* [pull from remote repository](#pull-from-remote-repository)
+* [Access Control](#access-control)
+* [Contribute to Project](#contribute-to-project)
+
 ## set remote repository url
 
 ```bash
@@ -11,15 +17,18 @@ git remote add origin <REMOTE_URL>
 
 ## push to remote repository
 
-- git push -u origin `master`: push master branch to remote repository
-  - `master`: local branch that want to push
-  - `origin`: remote repository **alias**
+`git push -u origin master`: push master branch to remote repository
+
+- `-u`: set default remote repository and branch
+- `master`: local branch that want to push
+- `origin`: remote repository **alias**
 
 ## pull from remote repository
 
-- git pull origin master: pull remote repository's master branch to local
-  - master: remote branch
-  - origin: **remote repository alias**, not local branch
+`git pull origin master`: pull remote repository's master branch to local
+
+- master: remote branch
+- origin: **remote repository alias**, not local branch
 
 ## Access Control
 

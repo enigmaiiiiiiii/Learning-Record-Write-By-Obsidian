@@ -1,11 +1,14 @@
 # Linux - Tricks
 
+* [pipe](#pipe)
 * [awk](#awk)
 * [head](#head)
 * [grep](#grep)
+* [alias](#alias)
 * [get last command output](#get-last-command-output)
 * [let command output as another command's parameter](#let-command-output-as-another-commands-parameter)
 * [jump back to previous directory](#jump-back-to-previous-directory)
+* [Run Command In Background](#run-command-in-background)
 
 ## pipe
 
@@ -109,6 +112,6 @@ back to two more previous directory
 cd ~2
 ```
 
-## Run Command In Background
+## Running Command In Background
 
 - add `&` after command, it will run in background, you can continue use bash

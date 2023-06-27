@@ -53,15 +53,11 @@ i-node
 
 - contains file owner, file length, disk location and so on
 
+## Command To Operate File Descriptor
 
 
-
-## 文件描述符命令
-
-创建文件描述符
-
-- `exec num<file` 创建仅可用于输入的文件描述符
-- `exec num>file` 创建仅可用于输出的文件描述符
-- `&文件描述符`调用文件描述符
-- `exec 文件描述符<&-` 关闭文件描述符
-- `exec 文件描述符>&-` 关闭文件描述符
+- `exec num<file` create a file descriptor that only can be used for input
+- `exec num>file` create a file descriptor that only can be used for output
+- `&file_descriptor`
+- `exec file_descriptor<&-`
+- `exec file_descriptor>&-`
