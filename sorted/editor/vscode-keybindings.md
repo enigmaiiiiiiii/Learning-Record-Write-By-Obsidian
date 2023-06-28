@@ -3,6 +3,7 @@
 keybindings.json
 
 ```json
+// keep key bindings in this file to overwrite the default value
 [
     {
         "key": "ctrl+w",
@@ -49,12 +50,12 @@ keybindings.json
     },
     {
         "key": "ctrl+j",
-        "command": "workbench.action.quickOpenNavigateNext",
+        "command": "workbench.action.quickOpenSelectNext",
         "when": "inQuickOpen"
     },
     {
         "key": "ctrl+k",
-        "command": "workbench.action.quickOpenNavigatePrevious",
+        "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
     {
@@ -99,11 +100,6 @@ keybindings.json
     },
     {
         "key": "tab",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "tab",
         "command": "workbench.action.quickOpenNavigateNext",
         "when": "inQuickOpen"
     },
@@ -121,6 +117,13 @@ keybindings.json
         "key": "ctrl+l",
         "when": "sideBarFocus",
         "command": "workbench.action.focusActiveEditorGroup"
-    }
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+
+    },
+
 ]
 ```
