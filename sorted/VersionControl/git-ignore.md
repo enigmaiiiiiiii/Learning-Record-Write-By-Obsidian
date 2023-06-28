@@ -1,16 +1,9 @@
-# .gitingnore文件
+# Git - File .gitignore
 
-- 用于从git库排除文件
+- use to ignore file or directory
 
-```
-/bin  # bin目录
-bin/  # bin目录下的文件，不包括bin目录
-.gitignore  # 忽略本身
-\!important！.txt  # 排除important！.txt文件
-```
-
-- 排除以前提交过的而文件
-
-```shell
-git rm -r --cached .obsidian
+```sh
+/bin  # exclude directory bin
+bin/  # file under directory bin, not exclude directory bin
+\!important！.txt  # exclude file important！.txt
 ```

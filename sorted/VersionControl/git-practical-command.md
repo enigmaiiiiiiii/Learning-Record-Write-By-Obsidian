@@ -43,9 +43,9 @@ commit id: d590a26b3b988f24842d433d4b64708ff545d399
 git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 ```
 
-- `--soft`: 撤销git commit, 不撤销git add, 保留改动代码
-- `--mixed`: 撤销git commit, 撤销git add, 保留改动代码
-- `--hard`: 撤销git commit, 撤销git add, 撤销改动代码
+- `--soft`: undo git commit, not undo `git add`, keep modification
+- `--mixed`: undo git commit, undo `git add`, keep modification
+- `--hard`: undo git commit, undo `git add`, discard modification
 
 ## remove file from stage
 
