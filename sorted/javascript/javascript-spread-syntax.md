@@ -1,4 +1,4 @@
-# Spread Syntax
+# JavaScript - Spread Syntax
 
 ## feature
 

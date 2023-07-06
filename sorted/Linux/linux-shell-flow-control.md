@@ -1,6 +1,8 @@
 # Linux Shell Programming - Flow Control
 
+* [What Can Be Statement](#what-can-be-statement)
 * [if statement](#if-statement)
+* [case statement](#case-statement)
 * [loop statement](#loop-statement)
 * [while read loop](#while-read-loop)
 
@@ -29,11 +31,12 @@ else
 fi
 ```
 
-# case statement
+## case statement
 
 ```sh
 case word in
-  [pattern [| pattern]...) command-list ;;]...
+  [patternA [| patternB]]...) command-list ;;
+  [patternC [| patternD]]...) command-list ;;
 esac
 ```
 

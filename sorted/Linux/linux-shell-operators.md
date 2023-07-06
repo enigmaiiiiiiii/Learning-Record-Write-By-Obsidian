@@ -21,5 +21,14 @@ command1 || command2
 - if first command failed, execute second command
 - if first command success, do not execute second command
 
+VS `|`
+
+- "|" is used to connect the **output** of one command to the **input** of another.
+
+```sh
+ls -l | grep "txt"
+```
+
+
 ## string operator
 

@@ -41,6 +41,7 @@ File Examines Options
 
 - `[ -e file ]` - True if file exists
 - `[ -z string ]` - True if the length of string is zero
+- `[ -f file ]` - True if file exists and is a regular file
 - `[ -n file ]`
 - `[ -a file ]` - True if file exists
 - `[ -b file ]` - True if file exists and is a [block special]() file

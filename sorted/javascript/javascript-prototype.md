@@ -8,8 +8,8 @@
 
 ## here are 3 concepts of prototype
 
-- internal prototype, also refer to as `[[prototype]]`
-- property named "prototype"
+- [internal prototype](javascript-three-prototype-concepts.md#internal-prototype), also refer to as `[[prototype]]`
+- property named ["prototype"](javascript-three-prototype-concepts.md#prototype-property)
 - __proto__ property
 
 [confusion of 3 concept](javascript-three-prototype-concepts.md)
@@ -31,7 +31,7 @@ when **read** to an **object property** or call a **object method**
 
 - the property search chain in object, current object's `[[prototype]]` is the first search scope
 - prototype chain top layer is point to [Object.prototype](javascript-object.md)
-- there are many common functions in Object.prototype, such as toString(), valueOf()
+- there are many common functions in `Object.prototype`, such as toString(), valueOf()
 
 ## Prototype Related Method
 

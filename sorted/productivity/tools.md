@@ -1,11 +1,11 @@
 # tools
 
-[common](tools-common.md)
-
-[linux](tools-linux.md)
+[For UNIX](tools-unix.md)
 
 [windows](tools-windows.md)
 
-[website](tools-website.md)
+[Common](tools-common.md)
+
+[Useful website](tools-website.md)
 
 [powerline fonts](powerline-fonts.md)

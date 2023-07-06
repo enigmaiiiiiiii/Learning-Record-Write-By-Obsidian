@@ -24,12 +24,35 @@ ls -al
 
 ## Query File Type
 
-- determine file type
+with command `file`
+
+- determine the type of all file in current directory
 
 ```bash
 file *
 ```
-determine the type of all file in current directory
+
+- output [mime type](computer-network-mime-type.md)
+
+```sh
+$ file --mime-type test.js
+test.js: text/plain
+```
+
+- handle symbolic link with `-L` option
+
+```sh
+$ file --mime-type -L link_symbol
+```
+
+- `-b, --brief` do not prepend filenames to output lines
+
+> useful in shell scripts
+
+```sh
+$ file --mime-type -b index.html
+text/html
+```
 
 ## Change File Owner
 

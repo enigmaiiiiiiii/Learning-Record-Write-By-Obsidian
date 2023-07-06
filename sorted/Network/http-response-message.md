@@ -1,10 +1,10 @@
 # Response Message
 
-- [Example response](#example-response)
-- [状态行](#状态行)
-- [6个首部行](#6个首部行)
-- [空行`<CR><LF>`](#空行crlf)
-- [entity body](#entity-body)
+* [Example response](#example-response)
+* [Status Line](#status-line)
+* [6 Header Lines](#6-header-lines)
+* [Empty Line `<CR><LF>`](#empty-line-crlf)
+* [entity body](#entity-body)
 
 ## Example response
 
@@ -20,18 +20,22 @@ Content-Type: text/html
 entity body
 ```
 
-- 以上报文内容包含一个状态行，6个首部行, 空行，和内容部分
-- Content-Type取值在[MIME](network-mime.md)中限制
+- message in above example include
+  - One Status Line
+  - 6 Header Lines
+  - One empty Line
+  - Entity body
+- Content-Type is restricted in [MIME](computer-network-mime-type.md)
 
-## 状态行
+## Status Line
 
-格式: `<HttpVersion> <xxx> <status>`
+Format: `<HttpVersion> <xxx> <status>`
 
-- HttpVersion: http版本
-- xxx: 状态码
-- status: 原因短语 典型状态
+- HttpVersion: http version
+- xxx: status code
+- status: status code description
 
-`<xxx> <status>`定义, 参考[RFC1945-page26](https://tools.ietf.org/html/rfc1945#page-26)
+official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools.ietf.org/html/rfc1945#page-26)
 
 - 200 0K：请求成功，信息在返回的响应报文中
 - 201 Created: 请求成功
@@ -54,7 +58,7 @@ entity body
 
 - 101 Switching Protocols: 服务器将遵从客户的请求转换到另外一种协议
 
-状态码分类
+status code category
 
 <table>
 <tr>
@@ -84,7 +88,7 @@ entity body
 </tr>
 </table>
 
-## 6个首部行
+## 6 Header Lines
 
 - Connection
 - Date
@@ -93,12 +97,12 @@ entity body
 - Content-Length
 - Content-Type: 报文主体对象类型，比如Context-Type: text/html
 
-## 空行`<CR><LF>`
+## Empty Line `<CR><LF>`
 
-- `<CR>`: 回车, 对应ASCII码为13
-- `<LF>`: 换行, 对应ASCII码为10
+- `<CR>`: Carriage Return, ASCII code is 13
+- `<LF>`: Line Feed, ASCII code is 10
 
 ## entity body
 
-- 包含请求内容
+- load the response content
 

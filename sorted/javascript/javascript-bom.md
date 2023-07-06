@@ -12,7 +12,6 @@
 
 - BOM: Browser Object Model
 
-
 ## location
 
 - location: 浏览器连接到的对象位置

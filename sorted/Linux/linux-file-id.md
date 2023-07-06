@@ -1,11 +1,15 @@
 # Linux - File Id
 
-- UID: 用户ID
-- GID: 组ID
-- SUID: 可以理解为一个属性，只能用于二进制文件, 二进制文件在执行过程中拥有文件拥有者权限
-- EUID: 执行程序时的ID，若文件有SetUID属性，则EUID可能不等于UID
+- UID: User ID
+- GID: Group ID
+- SUID: can be understood as an attribute, can only be used for binary files, binary files have the owner's permissions during execution
+- EUID: the ID when executing the program, if the file has the SetUID attribute, the EUID may not be equal to the UID
 - Setuid是指对文件执行[Chmod](linux-command-chmod.md) +s命令
-- 理解EUID概念可以参考[用户更改密码的过程](linux-how-to-change-password.md)
-- 每个文件至少有两个ID，使用者`ID-UID`和群组`ID-GID`
+- understand the concept of EUID can refer to [the process of changing password](linux-how-to-change-password.md)
+- every file has at least two IDs, user `ID-UID` and group `ID-GID`
+
+file permission looks like:
+
 - `-rwxr-xr-x`
 - `-rwsr-sr-x`
+

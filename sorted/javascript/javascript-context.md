@@ -1,21 +1,27 @@
-# 上下文
+# JavaScript - Context
 
-- 变量和函数的上下文决定了他们可以访问那些数据
-- **全局上下文**是最外层上下文
-- ECMAScript的全局上下文与宿主环境有关，
-- 在上下文读取标识符时，为了确定表示符表示什么，
-  - 会沿[作用域链](javascript-scope-chain.md)从前向后(从内往外)搜索
-  - 找到则停止搜索
+* [What It Is](#what-it-is)
+* [Variable Object Associated With Context](#variable-object-associated-with-context)
+* [Function Context](#function-context)
 
-## 上下文关联的变量对象
+## What It Is
 
-- 每个上下文都关联一个**变量对象**, 而上下文中定义的函数和变量都存在于这个对象上
+- The context of variables and functions determines what data they can access
+- The global context is the outermost context
+- The global context of ECMAScript is related to the host environment
+- when reading identifiers in the context, in order to determine what the identifier represents,
+  - search along the [scope chain](javascript-scope-chain.md) from front to back (from inside to outside)
+  - stop searching when found
 
-> 如: 在浏览器中全局上下文关联的变量对象是[window对象]
-> 通过var定义的全局变量和函数都会成为window对象的属性和方法
+## Variable Object Associated With Context
 
-## 函数上下文
+- every context is associated with a **variable object**
+- all functions and variables defined in the context exist on this object
 
-- 函数上下文关联的变量对象为活动对象
-- 活动对象最初只有一个: [arguments](javascript-function-arguments.md#arguments对象)
-- 函数调用时，会将函数上下文推到一个上下文栈上，执行完后弹出
+> for example: in browser, the global context is associated with the [window object](javascript-bom-window.md)
+> variables defined by var and functions will become properties and methods of the window object
+
+## Function Context
+
+- function context associated with an active object
+- there are only one active object at the beginning: [arguments](javascript-function-arguments.md#arguments-object)

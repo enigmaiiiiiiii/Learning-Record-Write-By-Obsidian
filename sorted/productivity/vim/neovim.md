@@ -7,6 +7,11 @@ Unix       ~/.config/nvim/init.vim        (or init.lua)
 Windows    ~/AppData/Local/nvim/init.vim  (or init.lua)
 ```
 
+## Config
+
+- Edit `~/.config/nvim/init.lua`
+- To check config effect, `:source %` to reload config
+
 ## packer
 
 > Plugin manager in neovim

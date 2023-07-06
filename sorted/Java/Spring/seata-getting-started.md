@@ -1,6 +1,6 @@
-# 开始使用
+# Start Use
 
-## 启动
+## Start Up
 
 - windows
 
@@ -14,7 +14,7 @@ seata-server.bat -p 8091 -h 127.0.0.1 -m file
 
 ```
 
-## 创建undo_log表
+## create undo_log table
 
 ```sql
 create tabel `undo_log` {

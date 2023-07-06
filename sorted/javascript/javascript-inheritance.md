@@ -13,7 +13,7 @@
 
 > or the essence of inheritance in javascript
 
-subclass's [`prototype`](javascript-three-prototype-concepts.md#prototype-property) point to super class's `prototype`
+subclass's [`prototype property`](javascript-three-prototype-concepts.md#prototype-property) point to super class's `prototype`
 
 ```js
 function Foo(name) {

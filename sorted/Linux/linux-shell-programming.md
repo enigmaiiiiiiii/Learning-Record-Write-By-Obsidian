@@ -26,11 +26,9 @@
 
 [exit ahead of time](linux-shell-exit.md)
 
-## execute
+## Get Stuck
 
-```sh
-bash script.sh
-```
+[Get Stuck](linux-shell-programming-get-stuck.md)
 
 ## Shell Script Snippets
 

@@ -16,7 +16,7 @@ here are 3 concepts of prototype
 
 ## Internal Prototype
 
-- every JavaScript object has a special **prototype** built-in property
+- Every JavaScript object has a special **prototype** built-in property
 - `Object.getPrototypeOf(obj)` to get the internal prototype of obj
 
 ## Prototype Property
@@ -43,7 +43,7 @@ console.log(Object.getPrototypeOf(Box) === Box.prototype);  // false
 console.log(Object.getPrototypeOf(Box) === Function.prototype);  // true
 ```
 
-## __proto__ Property
+## "__proto__" Property
 
 - __proto__ property is a non-standard property
 - for access to internel prototype of an object

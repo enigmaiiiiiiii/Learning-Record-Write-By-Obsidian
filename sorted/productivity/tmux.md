@@ -59,8 +59,19 @@ set -g @plugin '...'
 
 uninstalling plugin
 
-1. remove plugin from `~/.tmux.conf`
-2. press `<prefix> alt + u` to uninstall plugin
+`~/.tmux/plugins/tpm/bin/clean_plugins`
+
+## plugin
+
+tmux-powerline
+
+- generate default config file
+
+```sh
+~/.tmux/plugins/tmux-powerline/generate_rc.sh
+```
+
+- follow the output tips to do next steps
 
 ## Cheat Sheet
 

@@ -1,4 +1,7 @@
-# new Operator
+# JavaScript - new Operator
+
+* [What's for](#whats-for)
+* [Use On A Function](#use-on-a-function)
 
 ## What's for
 
@@ -12,7 +15,7 @@
 what will do when call a function with `new` operator
 
 1. create a empty, plain javascript object, called `newInstance`
-2. `newInstance`'s [`[[prototype]]`](javascript-three-prototype-concepts.md) points to function's [prototype](javascript-three-prototype-concepts.md#prototype-property)
+2. `newInstance`'s [internal prototype](javascript-three-prototype-concepts.md#internal-prototype) points to function's [prototype](javascript-three-prototype-concepts.md#prototype-property)
 
 > the meaning of **connect**: `obj.prototype.prototype = super.prototype`
 

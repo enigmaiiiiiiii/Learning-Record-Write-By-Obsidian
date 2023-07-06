@@ -6,6 +6,10 @@
 * [Replace Command](#replace-command)
 * [Multiple File Operate](#multiple-file-operate)
 
+## Config
+
+- `:options`: options instruction
+
 ## copy to system clipboard
 
 - `"+y`: copy to system clipboard
@@ -36,7 +40,6 @@
 
 ## Replace Command
 
-
 > `:g/{pattern}/{cmd}` apply the command `{cmd}` to all lines matching the `pattern`
 
 -   :g/\<fred\>/ 
@@ -50,7 +53,7 @@ File Explorer
 - `:Ex` : open a explorer
 - `:Sex` :
 - `:ls`:
-- :cd .. :
-- :pwd
-- :args :
-- :lcd %:p:h:
+- `:cd ..` :
+- `:pwd`
+- `:args` :
+- `:lcd %:p:h`:

@@ -1,5 +1,10 @@
 # Tmux - Format
 
+* [What It Is](#what-it-is)
+* [Set Option With Format](#set-option-with-format)
+* [Format Variable](#format-variable)
+* [Format Variable Alias](#format-variable-alias)
+
 ## What It Is
 
 - Format is enclosed with `#{...}`

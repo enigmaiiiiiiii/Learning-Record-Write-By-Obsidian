@@ -48,6 +48,16 @@ why use `#! /usr/bin/env python` is more portable than `#! /bin/python`?
 - it is beacuse shebang followed by a **path** to indicate the interpreter
 - **NOT A COMMAND**
 
+`#! /usr/bin/env bash` is more portable than `#! /bin/bash`
+
+```sh
+#! /usr/bin/env bash
+x=10
+y=20
+z=$((x+y)) # or z=`expr $x + $y`
+echo $z
+```
+
 ## Other Interpreters Example
 
 you can use python interpreter to run `script.sh` write in python syntax

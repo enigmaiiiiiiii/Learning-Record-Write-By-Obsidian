@@ -58,3 +58,9 @@ use `[]` to match single character
 
 `(abc){3}`: match string `abcabcabc`
 
+## Multiple Patterns
+
+`|` use to match multiple patterns
+
+`a|b`: match `a` or `b`
+
