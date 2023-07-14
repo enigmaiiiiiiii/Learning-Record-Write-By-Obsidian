@@ -32,8 +32,6 @@
 
 ## Core
 
-[Terminal](linux-terminal.md)
-
 [Directory Structure](linux-system-directory.md)
 
 [Bash](linux-bash.md)

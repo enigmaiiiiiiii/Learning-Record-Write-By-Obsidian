@@ -18,6 +18,8 @@
 
 [Git Rebase](git-rebase.md)
 
+[Git Status](git-status.md)
+
 [Git Command List](git-command-list.md)
 
 ## Github

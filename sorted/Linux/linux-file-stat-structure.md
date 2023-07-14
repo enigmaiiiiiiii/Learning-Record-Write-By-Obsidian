@@ -1,7 +1,7 @@
-# stat结构体
-                 
-```c           
-struct stat{   
+# struct stat
+
+```c
+struct stat {
 
     dev_t     st_dev;         /* ID of device containing file */
     ino_t     st_ino;         /* Inode number */

@@ -18,6 +18,12 @@
   - do not following best practices
   - styling issues
 
+VS [Prettier]
+
+- eslint is more configurable, prettier is more opinionated
+- eslint can report issues, pertier is more about formatting
+- eslint is specific to Javascript, prettier support more languages
+
 ## Glossary
 
 `rules`

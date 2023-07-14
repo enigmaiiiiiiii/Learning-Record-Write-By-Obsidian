@@ -30,8 +30,7 @@
 
 ## Staging Area
 
-- 一个文件，保存了下次将要提交的文件列表信息，一般在 Git 仓库目录中
-- 按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”
+- a file that stores information about what **will go into your next commit**
 
 ## Git Directory
 

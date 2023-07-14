@@ -25,10 +25,9 @@
 
 ```bash
 docker run ubuntu
-```
-```bash
 docker ps
 ```
+
 - show nothing
 
 ```bash
@@ -105,3 +104,12 @@ $ENV:DOCKER_CONTEXT=<context-name>   # windows
 ```
 
 ## docker daemon
+
+## docker engine
+
+main 3 components
+
+- Server: a long-running daemon process dockerd.
+- APIs: Use programs to talk to Docker daemon.
+- [CLI](docker-command-line-interface.md)
+

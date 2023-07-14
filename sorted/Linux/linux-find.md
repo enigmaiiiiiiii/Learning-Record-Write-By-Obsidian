@@ -34,7 +34,9 @@ starting point
 
 - ~~maybe a **path** of a directory or file?~~
 - `.`: is default path, represents current directory
+  - recursively list all files in current directory
 - `*`: represents all files in current directory
+  - omit hidden files
 
 [expression](#expression), include:
 

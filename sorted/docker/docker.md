@@ -14,7 +14,7 @@
 
 [Start To Use](docker-start.md)
 
-[Practical Command](docker-practical-command.md)
+[Cheat Sheet](docker-cheat-sheet.md)
 
 [Command Line Interface](docker-command-line-interface.md)
 
@@ -32,7 +32,6 @@
 
 ## II
 
-
 [Container Networking](docker-container-networking.md)
 
 [Rootless mode](docker-rootless.md): necessary config to use docker plugin in vscode
@@ -40,3 +39,4 @@
 ## important images
 
 [important image](docker-important-images.md)
+

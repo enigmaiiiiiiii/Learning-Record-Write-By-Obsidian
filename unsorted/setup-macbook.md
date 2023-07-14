@@ -25,3 +25,7 @@ brew install lf
 
 ## fzf - fuzzy search
 
+## fish
+
+## alacritty
+

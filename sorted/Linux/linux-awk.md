@@ -1,6 +1,6 @@
 # Linux - awk
 
-## What For
+## What Is For
 
 - line-oriented text **language**
 - it is useful when dealing with **structured text files**, like csv

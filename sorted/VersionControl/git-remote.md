@@ -30,6 +30,12 @@ git remote add origin <REMOTE_URL>
 - master: remote branch
 - origin: **remote repository alias**, not local branch
 
+## delete remote branch
+
+`git push origin --delete <branch_name>`: delete remote branch
+
+> `branch_name` must not be default branch
+
 ## Access Control
 
 [Credential Manager](git-credential-manager.md)

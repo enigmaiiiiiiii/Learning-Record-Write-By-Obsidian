@@ -14,7 +14,6 @@
 4. `/etc/profile.d/*.sh`
 5. `/etc/.bashrc`
 
-
 ## /etc/environment
 
 - define the environment variable (temporarily i call it environment variable)

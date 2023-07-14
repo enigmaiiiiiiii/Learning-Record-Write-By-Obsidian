@@ -12,6 +12,10 @@ Windows    ~/AppData/Local/nvim/init.vim  (or init.lua)
 - Edit `~/.config/nvim/init.lua`
 - To check config effect, `:source %` to reload config
 
+## Plugins
+
+[Plugins](neovim-plugins.md)
+
 ## packer
 
 > Plugin manager in neovim

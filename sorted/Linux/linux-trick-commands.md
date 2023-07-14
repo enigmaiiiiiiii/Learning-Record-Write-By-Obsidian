@@ -24,6 +24,10 @@
   - [`head`]()
   - [`tail`]()
 
+## sed
+
+[sed](linux-sed.md)
+
 ## awk
 
 [awk](linux-awk.md)

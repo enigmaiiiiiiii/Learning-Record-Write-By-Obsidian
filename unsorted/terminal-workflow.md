@@ -8,7 +8,7 @@
 
 ## Fish
 
-## Ranger
+## lf
 
 ## Neovim
 

@@ -1,4 +1,4 @@
-# Shell Environment
+# Linux - Shell Environment
 
 * [set environment variable](#set-environment-variable)
 * [environment variable related file](#environment-variable-related-file)

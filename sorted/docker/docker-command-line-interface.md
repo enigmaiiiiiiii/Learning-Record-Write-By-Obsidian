@@ -11,8 +11,9 @@
 * [inspect](#inspect)
 * [build](#build)
 
-## help
+## What is Docker CLI's role in Docker
 
+## help
 - `docker --help`
 - `docker [command] --help`
 
@@ -55,4 +56,11 @@ syntax
 ## build
 
 - build a docker image from a [Dockerfile](dockerfile.md)
+
+## exec
+
+- runs a new command in a running container.
+
+
+
 

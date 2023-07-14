@@ -58,13 +58,14 @@ chmod g+w file
 
 - set group write permission
 
-## 符号修改权限
+## Symbolic Modification
 
-ugoa: user, group, other, all
-rwx: read, write, execute
+- `ugoa`: user, group, other, all
+- `rwx`: read, write, execute
+
+add rwx permission for group user
 
 ```bash
 chmod g+rwx file
 ```
 
-组用户添加 rwx 权限

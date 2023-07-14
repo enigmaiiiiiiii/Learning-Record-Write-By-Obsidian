@@ -10,17 +10,17 @@
 
 [[linux-format-print]]
 
-## 文件io
+## File IO
 
-[文件读写](linux-file-api-read-write.md)
+[File IO](linux-file-api-read-write.md)
 
 ## 同步io
 
-[[linux-io-poll]]
+[io poll]( linux-io-poll.md )
 
-## 存储映射io
+## memory map io
 
-[存储映射](linux-io-api-mmap.md)
+[memory map](linux-io-api-mmap.md)
 
 ## 阻塞
 

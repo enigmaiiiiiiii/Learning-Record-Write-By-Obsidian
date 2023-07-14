@@ -1,4 +1,4 @@
-# 文件类型
+# Linux - File Mode 
 <table>
 <tr align="center">
 <td>st_mode</td>

@@ -2,9 +2,17 @@
 
 > ~~maybe meaningless~~
 
+## MacOS
+
+`brew install --cask docker` 
+
+- install the [docker CLI](docker-command-line-interface.md) and [docker engine](docker-glossary.md#docker-engine)
+
+`brew install docker`
+
+- only install the [docker CLI](docker-command-line-interface.md)
+
 ## Ubuntu
-
-
 
 ## CentOS
 
@@ -31,6 +39,7 @@ sudo yum-config-manager \
 ```
 
 use aliyun mirror
+
 ```bash
 sudo yum-config-manager \
     --add-repo \
@@ -43,7 +52,7 @@ sudo yum install [--allowerasing] docker-ce docker-ce-cli containerd.io docker-c
 
 - `--allowerasing`: sometimes need to avoid problem
 
-## start
+## Check Installatoin By Running Hello World
 
 ```bash
 sudo systemctl start docker
@@ -52,7 +61,8 @@ sudo systemctl start docker
 run test
 
 ```bash
-sudo docker run hello-world
+docker pull hello-world
+docker run hello-world
 ```
 
 ## Set Mirror Download Registry Mirrors
@@ -61,9 +71,7 @@ add following content to `/etc/docker/daemon.json`
 
 ```json
 {
-  "registry-mirrors": [
-    "https://registry.docker-cn.com"
-   ]
+  "registry-mirrors": ["https://registry.docker-cn.com"]
 }
 ```
 
@@ -76,7 +84,7 @@ sudo systemctl restart docker
 
 check if modify success
 
-- if rootless mode is enabled, need to use sudo to check default [context](docker-terms.md#docker-context) config
+- if rootless mode is enabled, need to use sudo to check default [context](docker-glossary.md#docker-context) config
 
 ```bash
 docker info

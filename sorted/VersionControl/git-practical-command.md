@@ -72,11 +72,14 @@ git ls-files
 git reset --hard <commitid>
 ```
 
-## found forgotten files after commit
+## changes forgotten to add to the last commit
+
+- `git commit --amend` after some changes have been made
+
+for example forget to add a file to the last commit
 
 ```bash
-git commit -m "commit with partial files"
-git add <forgotten_file>
+git commit -m "commit with partial files" git add <forgotten_file>
 git commit --amend
 ```
 
@@ -111,4 +114,16 @@ git branch -a
 ```
 
 ## Resovle Conflict
+
+## A way to make the lastest commit as the initial commit
+
+```sh
+git checkout --orphan new_main
+git add -A
+git commit -m "initial commit message what you want"
+git branch -D main
+git branch -m main
+git push -f origin main
+```
+
 

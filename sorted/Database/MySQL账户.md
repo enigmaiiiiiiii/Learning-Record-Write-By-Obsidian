@@ -1,4 +1,4 @@
-# MySQL账户
+# MySQL - Account
 
 
 ```mysql
@@ -11,19 +11,19 @@ CREATE USER [IF NOT EXISTS]
     [COMMENT '_comment_string_' | ATTRIBUTE '_json_object_']
 ```
 
-## 账户名称
+## Account Name
 
-- 语法为`'user_name'@'host_name'`
+- Syntax: `'user_name'@'host_name'`
 
-## auth_option语法
+## auth_option Syntax
 
-将明文'auth_string'作为密码
+let literal 'auth_string' be used as password
 
 ```mysql
 CREATE USER IDENTIFIED BY 'auth_string'
 ```
 
-随机生成密码
+random generated password
 
 ```mysql
 CREATE USER IDENTIFIED BY RANDOM PASSWORD

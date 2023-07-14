@@ -19,10 +19,11 @@ SYNOPSIS
 `ln [OPTION]... [-T] TARGET LINK_NAME`
 
 - `LINK_NAME` should not already exist
+- if `LINK_NAME` is a directory, create link inside it with the same name as file being linked
 
-## About What Target Should Input
+## What Should be Target Argument
 
-for example target `.vimrc` is a file in `~/dotfiles`
+for example target file is `~/dotfiles/.vimrc`
 
 ```sh
 cd ~/dotfiles
@@ -36,7 +37,7 @@ lrwxrwxrwx 1 username group 7 2019-01-01 00:00 $HOME/.vimrc -> .vimrc
 ```
 
 - it instructs that `.vimrc` is a symbolic link to `.vimrc`
-- not the file `~/dotfiles/.vimrc` what i expect
+- not the file `~/dotfiles/.vimrc` what I expect
 
 **conclusion**
 

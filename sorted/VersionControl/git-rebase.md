@@ -12,7 +12,7 @@
 git rebase -i --root
 ```
 
-use relative reference symbol to represent first commit, will cause error
+> use relative reference symbol to represent first commit, will cause error
 
 - for example, `HEAD~n` point to the first commit
 

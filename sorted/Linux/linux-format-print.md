@@ -18,12 +18,11 @@ int vsprintf(char *str, const char *format, va_list ap);
 int vsnprintf(char *str, size_t size, const char *format, va_list ap);
 ```
 
+- the difference between the first five functions and the last five functions is the form of the variable parameters
+  - the formal parameter is `...`
+  - the formal parameter type is the [va_list](linux-va-list.md) structure, which is suitable for function calls with variable parameters
 
-- 前5个函数和后五个函数的区别在于可变参数的形式
-  - 形参是`...`
-  - 形参类型是[va_list](linux-va-list.md)结构体, 适合有可变参数的函数调用
-
-## 格式化输入
+## Format Input
 
 ```c
 #include <stdio.h>

@@ -46,7 +46,7 @@ File Examines Options
 - `[ -a file ]` - True if file exists
 - `[ -b file ]` - True if file exists and is a [block special]() file
 - `[ -c file ]` - True if file exists and is a [character special]() file
-- `[ -d file ]`
+- `[ -d file ]` - True if file exists and is a directory
 - `[ -h file ]` - True if file exists and is a symbolic link
 
 string compares operators

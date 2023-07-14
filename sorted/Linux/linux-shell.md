@@ -5,6 +5,17 @@
 - shell is **program** that takes commands from keyboard and gives them to operating system to perform
 - equivalent to early phase UI, equivalent to GUI now
 
+## They Are Shell
+
+- bash
+- zsh
+- fish
+
+## Set Login Shell
+
+1. `chsh -s /bin/bash`
+2. `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
+
 ## Shell Variable
 
 - variable set at shell startup

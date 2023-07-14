@@ -1,4 +1,4 @@
-# Branch
+# Git - Branch
 
 * [Git Commit](#git-commit)
 * [Create New Branch](#create-new-branch)
@@ -10,7 +10,7 @@
 * [Branch workflow](#branch-workflow)
 * [HEAD Pointer](#head-pointer)
 
-## Create New Branch
+## Create New Branch From Current Commit
 
 ```bash
 git branch <branch_name>
@@ -21,6 +21,7 @@ what happen when `git branch`
 - create a new pointer to current commit
 
 > new branch $\rightarrow$ current commit
+
 
 ## Switch Branch
 
@@ -53,30 +54,37 @@ merget basic usage, like: merge to master
 
 - ...
 
-## delete branch
+## Delete Branch
 
 - `git branch -d <branch>`
 
-## manage branch
+## Manage Branch
 
-- `git branch`: 显示所有分支名称
-- `git branch -a`: 显示所有分支名称, 包括远程分支
-
-***
-
-- `git branch -v`: 显示分支名称和最后一次提交信息
-- `git branch --merged <branch>`: 查看**branch**合并过的分支, 省略branch默认为当前分支
-- `git branch --no-merged <branch>`: 查看branch未合并过的分支, 省略branch默认为当前分支
+- `git branch`: display all local branch names
+- `git branch -a`: display all branch names, including remote branch
 
 ***
 
-- `git branch -d <branch>`: 删除分支
-- `git branch --move <branch> <new-branch-name>`: 改变分支名称
+- `git branch -v`: display all local branch names and last commit message
+- `git branch --merged <branch_name>`: check `branch_name` merged branch, if `branch_name` is omitted, it will check current branch
+- `git branch --no-merged <branch_name>`: check `branch_name` not merged branch, if `branch_name` is omitted, it will check current branch 
 
-改变本地分支名称后，删除远程旧分支:
+***
 
-- `git push --set-upstream origin <newbranch>`: 让其他人看到改变后的分支
-- `git push origin --delete <branch>`: 删除远程旧分支
+- `git branch -d <branch_name>`: delete branch `branch_name`
+- `git branch --move <branch_name> <new-branch-name>`: rename branch `branch_name` to `new-branch-name`
+
+after change local branch name, delete remote old branch
+
+- `git push --set-upstream origin <newbranch>`: let others see the new branch
+- `git push origin --delete <branch>`: delete remote branch
+
+## Create a new orphan branch, 
+
+`git checkout --orphan <new-branch>`
+
+- The first commit made on this new branch will have no parents 
+- it will be the root of a new history totally disconnected from all the other branches and commits.
 
 ## Branch workflow
 
