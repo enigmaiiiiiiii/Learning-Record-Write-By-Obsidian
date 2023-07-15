@@ -1,6 +1,6 @@
 # MySQL
 
-[文档下载, 包括guide, Example Databases](https://dev.mysql.com/doc/index-other.html)
+[Official guide, Example Databases](https://dev.mysql.com/doc/index-other.html)
 
 ## I
 

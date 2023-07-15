@@ -1,4 +1,4 @@
-# 堆排序
+# Sort Algorithm - Heap Sort
 
 [堆](data-structure-heap.md)
 

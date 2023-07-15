@@ -1,9 +1,10 @@
-# regex
+# Regex
 
-* [Match single character](#match-single-character)
-* [Number of occurrences](#number-of-occurrences)
-* [Predefined characters](#predefined-characters)
+* [match single character](#match-single-character)
+* [number of occurrences](#number-of-occurrences)
+* [predefined characters](#predefined-characters)
 * [Group](#group)
+* [Multiple Patterns](#multiple-patterns)
 
 ## match single character
 

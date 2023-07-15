@@ -1,5 +1,11 @@
 # commit
 
+* [How to commit](#how-to-commit)
+* [What Happen When Git Commit](#what-happen-when-git-commit)
+* [Relative Reference Represent A Commit](#relative-reference-represent-a-commit)
+* [check commit range](#check-commit-range)
+* [Amend Commit](#amend-commit)
+
 ## How to commit
 
 commit with message
@@ -54,3 +60,4 @@ git branch -f main HEAD^  # force move main branch to parent commit
 - default editor is vim
 - can be changed by `git config --global core.editor <editor name>`
 - or edit in ~/.gitconfig file
+

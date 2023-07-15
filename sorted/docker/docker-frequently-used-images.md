@@ -4,20 +4,20 @@
 
 [mysql](https://hub.docker.com/-/mysql)
 
-启动一个mysql容器
+Start A mysql Container
 
 ```bash
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 
-- `--name some-mysql`: 容器名称
-- `-e MYSQL_ROOT_PASSWORD=my-secret-pw`: 设置环境变量MYSQL_ROOT_PASSWORD, 用于设置root用户的密码
-- `-d`: 后台运行
-- `mysql:tag`: 镜像名称
+- `--name some-mysql`: name container as `some-mysql`
+- `-e MYSQL_ROOT_PASSWORD=my-secret-pw`: set environment variable `MYSQL_ROOT_PASSWORD`, use to set password for user `root`
+- `-d`: running in background
+- `mysql:tag`: image name and tag
 
-use docker 中的 mysql 的 shell
+execute shell in mysql conainter
 
-- some-mysql: 容器名称
+- some-mysql: container name
 
 ```bash
 docker exec -it some-mysql bash

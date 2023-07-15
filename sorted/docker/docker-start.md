@@ -69,3 +69,11 @@ docker stop <container>
 ```sh
 docerk rm <container_id>
 ```
+
+## Start An Exited Container
+
+```sh
+docker start <container_id>
+```
+
+

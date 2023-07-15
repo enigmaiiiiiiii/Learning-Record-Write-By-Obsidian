@@ -13,6 +13,10 @@
 * [Work Flow](#work-flow)
 * [Checksum](#checksum)
 * [HEAD](#head)
+* [Upstream](#upstream)
+* [fast-forward](#fast-forward)
+* [detach head](#detach-head)
+* [tag](#tag)
 
 ## index
 
@@ -25,8 +29,7 @@
 
 ## Working Directory
 
-- 对项目的某个版本独立提取出来的内容
-- 从 Git 仓库的压缩数据库中提取出来的文件，放在磁盘上供你使用或修改。
+- files that you extract from the compressed database in the Git directory and place on disk for you to use or modify
 
 ## Staging Area
 
@@ -36,18 +39,17 @@
 
 `.git directory(Repository)`
 
-- Git 用来保存项目的元数据和对象数据库的地方
-- 这是 Git 中最重要的部分，从其它计算机克隆仓库时，复制的就是这里的数据
+- Where Git stores the metadata and object database for your project
+- this is the most important part of Git, and when you clone a repository from another computer, you copy the data here
 
 ## Stage file process
 
 - calculate checksum
-- 保存版本信息到git repository
-- 将校验和添加的暂存区
+- ...
 
 ## Untracked files
 
-- Git之前的提交中没有的文件
+- files that does not exist in previous commit
 
 ## remote repository
 
@@ -61,7 +63,7 @@
 
 ## working tree
 
-- 工作树是项目的一个版本的单个检出。这些文件从Git目录中的压缩数据库中取出，放在磁盘上供您使用或修改。
+- a single version of project checkout
 
 ## Work Flow
 
@@ -69,8 +71,10 @@
 
 ## Checksum
 
-- 是由40个16进制字符(`[0-9a-f]{40}`)组成的字符串
-- 所有内容在存储之前都要进行校验和
+[What is checksum](checksum.md)
+
+- Consist of 40 hexadecimal characters(`[0-9a-f]{40}`)
+- All Content must be checksumed before stored
 
 ## HEAD
 
@@ -79,3 +83,14 @@
 ## Upstream
 
 - The default [remote repository](git-remote.md) of current branch
+
+## fast-forward
+
+- happens when merge a branch
+- no new merge commit
+
+## detach head
+
+## tag
+
+- named commit

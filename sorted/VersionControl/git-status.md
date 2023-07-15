@@ -1,5 +1,11 @@
 # git - status
 
+* [basic file status](#basic-file-status)
+* [check file status in specific directory](#check-file-status-in-specific-directory)
+* [check which file ignored by .gitignore](#check-which-file-ignored-by-.gitignore)
+* [check all staged files](#check-all-staged-files)
+* [options](#options)
+
 ## basic file status
 
 changes to be committed:

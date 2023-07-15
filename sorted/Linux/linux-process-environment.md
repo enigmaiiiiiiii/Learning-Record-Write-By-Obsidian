@@ -4,6 +4,6 @@
 
 [[环境变量]]
 
-[C程序的存储空间布局](linux-c-program-memory-layout.md)
+[C Program memory layout](linux-c-program-memory-layout.md)
 
-[内存空间](linux-process-memory-api.md)
+[Access to linux memory](linux-process-memory-api.md)

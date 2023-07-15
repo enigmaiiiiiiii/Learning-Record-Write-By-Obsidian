@@ -1,10 +1,10 @@
-# 回溯算法
+# Algorithm - Backtracking
 
 [[leetcode51N皇后]]
 
 - 与[[深度优先搜索]]联系紧密
 
-## 算法分析
+## Summerize
 
 - 返回条件
 - 比如二叉树的遍历

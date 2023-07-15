@@ -61,6 +61,17 @@ syntax
 
 - runs a new command in a running container.
 
+```sh
+docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+```
 
+- `CONTAINER`: container name or id
+- `COMMAND`: command to run in the container
 
+run mongo shell in a mongo container
+
+```sh
+docker run -d -p 27017:27017 --name=mongoContainer mongo:latest
+docker exec -it mongoContainer mongosh
+```
 

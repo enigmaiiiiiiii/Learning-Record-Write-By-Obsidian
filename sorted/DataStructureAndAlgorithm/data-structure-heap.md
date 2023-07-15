@@ -1,6 +1,8 @@
-# 堆
+# Data Structure - Heap
 
-- 可以看作一种完全树
+## What It Is
+
+- can be look as a [complete tree]()
 - 大顶堆: 每个节点的值都**大于或等于**其左右子节点
 - 小顶堆: 每个节点的值都**小于或等于**其左右子节点
 

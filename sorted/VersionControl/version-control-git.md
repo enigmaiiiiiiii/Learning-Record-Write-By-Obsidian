@@ -8,6 +8,8 @@
 
 [Git Configuration](git-configuration.md)
 
+[Add](git-add.md)
+
 [Commit](git-commit.md)
 
 [Branch](git-branch.md)
@@ -20,6 +22,8 @@
 
 [Git Status](git-status.md)
 
+[.gitignore](git-ignore.md)
+
 [Git Command List](git-command-list.md)
 
 ## Github
@@ -30,11 +34,11 @@
 
 [Pull Request Workflow](github-pull-request-workflow.md)
 
-## III
+## Blog
 
-[Practical Use](git-practical-command.md)
+[Practical Command](git-practical-command.md)
 
-[.gitignore](git-ignore.md)
+[Git Best Practice For Collaboration](git-best-practice-for-collaboration.md)
 
 [Github Search Skills](github-search-skills.md)
 

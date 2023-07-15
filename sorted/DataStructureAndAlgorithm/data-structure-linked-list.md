@@ -1,4 +1,6 @@
-## 链表
+# Data Structure - Linked List
+
+## What Is Line List
 
 - 链表在内存中不是连续分布的, 地址取决于操作系统
 - 链表的表头是唯一确定的

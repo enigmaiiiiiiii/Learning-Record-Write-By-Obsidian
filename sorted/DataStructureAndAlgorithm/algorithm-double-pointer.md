@@ -1,4 +1,4 @@
-# 双指针
+# Algorithm - Double Pointers
 
 - 用于**有序**数组双元素遍历
 - 一个指针遍历,一个指针操作

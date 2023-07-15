@@ -4,16 +4,12 @@
 
 <table>
     <tr>
-       <td>变量名</td>
-       <td>描述</td>
+       <td>Variable Name</td>
+       <td>Description</td>
     </tr>
     <tr>
        <td>HOME</td>
-       <td>用户主目录或初始默认目录</td>
-    </tr>
-    <tr>
-       <td>LANG</td>
-       <td>描述</td>
+       <td>Path of Current User Directory</td>
     </tr>
     <tr>
        <td>LC_COLLATE</td>

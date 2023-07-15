@@ -19,3 +19,7 @@
 ## fish
 
 [fish](fish.md)
+
+## peco
+
+- alternative to [grep](linux-trick-commands.md#grep)

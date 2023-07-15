@@ -2,6 +2,8 @@
 
 [Types](lua-types.md)
 
+[Operator](lua-operator.md)
+
 [Function](lua-function.md)
 
 [Built-in Functions](lua-built-in-functions.md)

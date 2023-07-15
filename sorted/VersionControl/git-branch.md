@@ -1,12 +1,12 @@
 # Git - Branch
 
-* [Git Commit](#git-commit)
-* [Create New Branch](#create-new-branch)
+* [Create New Branch From Current Commit](#create-new-branch-from-current-commit)
 * [Switch Branch](#switch-branch)
-* [merge branch](#merge-branch)
+* [Merge Branch](#merge-branch)
 * [Resolved Conflict](#resolved-conflict)
-* [delete branch](#delete-branch)
-* [manage branch](#manage-branch)
+* [Delete Branch](#delete-branch)
+* [Manage Branch](#manage-branch)
+* [Create a new orphan branch, ](#create-a-new-orphan-branch,-)
 * [Branch workflow](#branch-workflow)
 * [HEAD Pointer](#head-pointer)
 
@@ -77,7 +77,7 @@ merget basic usage, like: merge to master
 after change local branch name, delete remote old branch
 
 - `git push --set-upstream origin <newbranch>`: let others see the new branch
-- `git push origin --delete <branch>`: delete remote branch
+- `git push origin --delete <branch>`: delete remote old branch
 
 ## Create a new orphan branch, 
 

@@ -8,7 +8,7 @@
 
 There are 4 types of option
 
-1. [server option](#server-option)
+1. [server option]()
 
 - a set of global server options
 - do not apply to any particular [session, window or pane](tmux-object.md)

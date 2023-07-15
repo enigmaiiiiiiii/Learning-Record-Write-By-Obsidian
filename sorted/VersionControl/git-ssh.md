@@ -3,7 +3,7 @@
 ## Generate SSH Public key
 
 1. Open Git Bash
-2. Enter `ssh-keygen -t ed25519 -C "your_email@example.com"`
+2. Enter `ssh-keygen -t ed25519 -C "anonymous@example.com"`
 
 > in step 2, use your email address as a label to generate SSH key
 

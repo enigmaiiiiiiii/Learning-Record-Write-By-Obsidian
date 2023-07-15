@@ -10,6 +10,7 @@
 
 [Packages](lua-packages.md)
 
+[Regex](lua-regex.md)
 
 ## pcall
 

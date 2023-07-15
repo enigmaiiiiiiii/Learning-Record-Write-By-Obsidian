@@ -5,7 +5,6 @@
 - plugin manager
 
 ## github/copilot.vim
-
 ## basic
 
 nvim-lua/popup.nvim -- An implementation of the Popup API from vim in Neovim
