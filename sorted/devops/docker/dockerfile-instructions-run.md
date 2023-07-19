@@ -1,6 +1,11 @@
 # Dockerfile - Instructions RUN
 
-## RUN
+## What Dockerfile RUN Instruction Do
+
+- Install dependencies
+- ~~optimize image size~~
+
+## Basic
 
 `RUN <command>`
 
@@ -28,7 +33,17 @@ Syntax
 the first field is type, there a 4 values
 
 - `type=bind`: default
-- `type=cache`:
+- `type=cache`: mount a temporary directory to cache directories for compilers and package managers
 - `type=secret`
 - `type=ssh`
+
+different type value has different available options
+
+`type=bind` options
+
+- target: mount path 
+
+`type=cache` options
+
+
 

@@ -12,27 +12,35 @@
 
 [Commit](git-commit.md)
 
+[.gitignore](git-ignore.md)
+
 [Branch](git-branch.md)
 
-[SSH Key](git-ssh.md)
+[Remote](git-remote.md)
 
-[Git Remote](git-remote.md)
+[Git Pull](git-pull.md)
+
+[Git Push](git-push.md)
+
+[Git Fetch](git-fetch.md)
 
 [Git Rebase](git-rebase.md)
 
 [Git Status](git-status.md)
 
-[.gitignore](git-ignore.md)
+[Git Revert]()
+
+[Git Tag](git-tag.md)
 
 [Git Command List](git-command-list.md)
 
 ## Github
 
-[GitHub Issues](github-issues.md)
+[Github Issues](github-issues.md)
+
+[Github Actions](github-actions.md)
 
 [Pull Request](github-pull-request.md)
-
-[Pull Request Workflow](github-pull-request-workflow.md)
 
 ## Blog
 

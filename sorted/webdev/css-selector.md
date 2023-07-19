@@ -1,7 +1,7 @@
 # CSS Selector
 
 * [Element Selector](#element-selector)
-* [id Selector "#"](#id-selector-)
+* [id Selector "\#"](#id-selector-"\#")
 * [class selector](#class-selector)
 * [Descendant Selector](#descendant-selector)
 * [children selector](#children-selector)
@@ -9,11 +9,10 @@
 * [attribute selector](#attribute-selector)
 * [adjacent sibling combinator](#adjacent-sibling-combinator)
 * [pseudo-class selector](#pseudo-class-selector)
-* [pseudo-element selector](#pseudo-element-selector)
+* [pseudo element selector](#pseudo-element-selector)
 * [General Sibling Combinator](#general-sibling-combinator)
 * [Exclude A Selector](#exclude-a-selector)
 * [Pure Css Selector](#pure-css-selector)
-
 
 ## Element Selector
 
@@ -65,7 +64,6 @@ div p {
 }
 ```
 
-
 ## children selector
 
 use `>` to select children
@@ -79,7 +77,6 @@ div > p {
 }
 ```
 
-
 ## group selector
 
 select multiple elements, separate selectors by `,`
@@ -89,17 +86,16 @@ select multiple elements, separate selectors by `,`
 ```css
 h3,
 p {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 ```
-
 
 ## attribute selector
 
 ```css
-input[type="submit"] {
-    width: 100px;
+input[type='submit'] {
+  width: 100px;
 }
 ```
 
@@ -107,25 +103,29 @@ input[type="submit"] {
 
 ## adjacent sibling combinator
 
+the second element is immediately preceded by the first, the second element will be selected
+
 ```css
 img + p {
-    font-weight: bold;
+  font-weight: bold;
 }
 ```
 
--   第二个元素在第一个元素之后, 第二个元素将被选中
+- for above example `<p>` after `<img>` will be selected
 
-**猫头鹰选择器**: 选择第一个元素之后的所有同级元素
+**owl selector**: select all sibling element after first element
 
 ```css
 body * + * {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 ```
 
 ## pseudo-class selector
 
-> [pseudo-class list](css-pesudo-class.md)
+- use to capture special state of element
+
+> [pseudo-class list](css-pseudo-class.md)
 
 - start with `:`, select special state of element
 
@@ -145,11 +145,22 @@ example
 
 ```css
 li:nth-child(-n + 3) {
-    color: red;
+  color: red;
 }
 ```
 
 - select first three li element at same parent element
+
+pseudo-class can be used with CSS class
+
+```html
+<style>
+  a.red:visited {
+    color: #ff0000;
+  }
+</style>
+<a class="red" href="####">CSS</a>
+```
 
 ## pseudo element selector
 
@@ -165,15 +176,14 @@ li:nth-child(-n + 3) {
 <p class="exciting-text">Contributing to MDN is easy and fun.</p>
 ```
 
-
 ```css
 .exciting-text::after {
-  content: " <- EXCITING!";
+  content: ' <- EXCITING!';
   color: green;
 }
 
 .boring-text::after {
-  content: " <- BORING";
+  content: ' <- BORING';
   color: red;
 }
 ```
@@ -184,7 +194,7 @@ li:nth-child(-n + 3) {
 
 ```css
 p ~ span {
-    color: red;
+  color: red;
 }
 ```
 
@@ -194,7 +204,6 @@ select p element except with class fancy
 
 ```css
 p:not(.fancy) {
-
 }
 ```
 

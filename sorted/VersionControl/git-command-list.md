@@ -1,4 +1,4 @@
-# Git Command
+# Git - Command List
 
 - [git restore](#git-restore)
 - [git status](#git-status)
@@ -62,40 +62,46 @@ git restore hello.c
 
 ## git revert
 
-- `git revert <commit>`: 撤销指定的commit所做的修改, 生成一个新的commit
+- `git revert <commit_id>`: undo the changes made by the specified `commit_id`, and create a new commit
+
+```sh
+
+```
 
 ## git reset
 
 [reset](git-command-reset.md)
 ## git clean
 
-- 删除未被追踪的文件
+- remove untracked files from the working tree
 
 ## git checkout
 
 - `git checkout <branch>`
-- `git checkout -b <new-branch>`: 同`git branch <new-branch>`
-- `git checkout -detach [<branch>]`: 开始在commit or branch之上工作,
-  - 保留工作树中的本地更改
-  - 当前工作树的状态: 提交记录(commit record) + 本地修改(local modifications)
-- `git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] --pathspec-from-file=<file> [--pathspec-fil-nul]`: overwrite files match the pathspec, 通过指定文件路径覆盖指定的文件
+- `git checkout -b <new-branch>`: same as `git branch <new-branch>`
+- `git checkout -detach [<branch>]`
+  - store local modifications in the working tree
+  - current working tree status: commit record + local modifications
+- `git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] --pathspec-from-file=<file> [--pathspec-fil-nul]`: overwrite files by match the pathspec
   - `<tree-ish>`: most often a commit
-  - 用`<tree-ish>`的`<file>`文件覆盖工作树的`<file>`文件
+  - use `<file>` of `<tree-ish>` to overwrite `<file>` in working tree
 - `git checkout (-p|--patch) [<tree-ish>] [--] [<pathspec>...]`
-  - 通过[交互式模式](git-interactively-mode.md)完成文件覆盖操作
+  - through [interactive mode]() to finish the file overwrite operation
 
 options
 
-- `-f`: 切换分支时，即使index或working tree 与HEAD不同, 即使其中有untracked file, 用来丢弃本地更改和untracked file or directory的方式
+- `-f`: force to switch branch, even if there are untracked files or local modifications
 
 ## git cherry-pick
 
-- `git cherry-pick <commit>`: 应用指定的commit的修改到[HEAD](git-concept.md#head)
+- `git cherry-pick <commit_id>`: apply the changes of specified `commit_id` to [`HEAD`](git-glossary.md#head)
 
 ## git add
 
 ## git rebase
 
 `git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] [<upstream> [<branch>]]`
+
+## git fetch
 
 

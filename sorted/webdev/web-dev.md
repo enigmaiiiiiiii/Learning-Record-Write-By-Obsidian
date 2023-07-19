@@ -46,8 +46,6 @@
 
 [design pattern]()
 
-[rendering patterns](web-dev-rendering-patterns.md)
-
 [Performance patterns]()
 
 ## Security
@@ -57,6 +55,8 @@
 [Security measures](web-dev-security-measures.md)
 
 [LDAP](web-dev-ldap.md)
+
+## DevOps
 
 ## Specific Business
 

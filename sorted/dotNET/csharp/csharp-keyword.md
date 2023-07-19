@@ -21,10 +21,22 @@
 
 ## params
 
-- 声明可变参数
-- 参数类型必须是一维数组
-- params后不允许有任何其他参数
-- 只允许有一个params
+- declare a variable parameter
+- the type of the parameter must be a single-dimensional array
+- no other parameter is allowed after params
+- only one `params` is allowed
+
+```cs
+public void UseParams(params int[] list)
+{
+    for (int i = 0; i < list.Length; i++)
+    {
+        Console.Write(list[i] + " ");
+    }
+    Console.WriteLine();
+}
+```
+
 
 ## base
 

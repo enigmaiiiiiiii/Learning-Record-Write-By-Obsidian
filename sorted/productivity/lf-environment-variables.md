@@ -1,5 +1,24 @@
 # LF - Environment Variables
 
+* [environment variables](#environment-variables)
+* [f](#f)
+* [fs](#fs)
+* [fx](#fx)
+* [id](#id)
+* [PWD](#pwd)
+* [OLDPWD](#oldpwd)
+* [LF_LEVEL](#lf_level)
+* [OPENER](#opener)
+* [EDITOR](#editor)
+* [VISUAL](#visual)
+* [PAGER](#pager)
+* [SHELL](#shell)
+* [lf](#lf)
+* [lf_{option}](#lf_{option})
+* [lf_user_{option}](#lf_user_{option})
+* [lf_width/lf_height](#lf_width/lf_height)
+* [lf_count](#lf_count)
+
 ## environment variables
 
 - exported for [shell commands](lf-shell-commands.md)

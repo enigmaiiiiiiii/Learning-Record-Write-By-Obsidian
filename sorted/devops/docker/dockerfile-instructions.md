@@ -8,6 +8,7 @@
 * [CMD](#cmd)
 * [COPY](#copy)
 * [USER](#user)
+* [WORKDIR](#workdir)
 * [Instructions Summary](#instructions-summary)
 
 ## What It Is
@@ -25,12 +26,20 @@
 
 description
 
-- initialize a new [**build stage**](docker-dockerfile.md#build-stage)
-- set a base image for subsequent instructions
-- a valid Dockerfile must start with a `FROM` instruction
-- can appear multiple times within a single Dockerfile in order
+- Initialize a new [**build stage**](docker-dockerfile.md#build-stage)
+- Set a base image for subsequent instructions
+- A valid Dockerfile **must start** with a `FROM` instruction
+- Can appear multiple times within a single Dockerfile in order
 
-Syntax
+Basic Syntax
+
+- `FROM <image> [AS <name>]`
+  - image maybe just from docker hub
+  - `AS <name>`: 
+    - the `name` represents the `image`
+    - the name can be used in subsequent `FROM` and `COPY --from=<name|index>` instructions
+
+Complete Syntax
 
 `FROM [--platform=<platform>] <image> [AS <name>]`
 
@@ -120,12 +129,13 @@ description
 
 ## WORKDIR
 
-- set working directory for any
-  - [`RUN`](dockerfile-instructions-run.md)
-  - [`CMD`](#cmd)
-  - `ENTRYPOINT`
-  - `COPY`
-  - `ADD`
+set working directory for any
+
+- [`RUN`](dockerfile-instructions-run.md)
+- [`CMD`](#cmd)
+- `ENTRYPOINT`
+- `COPY`
+- `ADD`
 
 ## Instructions Summary
 

@@ -14,6 +14,7 @@
 ## What is Docker CLI's role in Docker
 
 ## help
+
 - `docker --help`
 - `docker [command] --help`
 
@@ -55,7 +56,7 @@ syntax
 
 ## build
 
-- build a docker image from a [Dockerfile](dockerfile.md)
+- build a docker image from a [Dockerfile](docker-dockerfile.md)
 
 ## exec
 
@@ -73,5 +74,13 @@ run mongo shell in a mongo container
 ```sh
 docker run -d -p 27017:27017 --name=mongoContainer mongo:latest
 docker exec -it mongoContainer mongosh
+```
+
+## cp
+
+- copy file between container and local file system
+
+```sh
+docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 ```
 

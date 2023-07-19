@@ -1,8 +1,8 @@
-# workflow的cmake
+# cmake of c++ webserver workflow
 
-## 构建
+## Build
 
-- 设置项目头文件搜索目录变量 
+- set project header file search path variable
 
 ```cmake
 add_custom_command(  

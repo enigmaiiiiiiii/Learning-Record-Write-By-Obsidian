@@ -1,15 +1,15 @@
 # Practical Command of Git
 
-* [Check Commit Log](#check-commit-log)
-* [Undo commit](#undo-commit)
-* [remove file from stage](#remove-file-from-stage)
-* [discard all local changes](#discard-all-local-changes)
-* [check staged files](#check-staged-files)
-* [set HEAD to specified status](#set-head-to-specified-status)
-* [found forgotten files after commit](#found-forgotten-files-after-commit)
-* [temporarily save current modification](#temporarily-save-current-modification)
-* [check all branches](#check-all-branches)
-* [Resovle Conflict](#resovle-conflict)
+- [Check Commit Log](#check-commit-log)
+- [Undo commit](#undo-commit)
+- [remove file from stage](#remove-file-from-stage)
+- [discard all local changes](#discard-all-local-changes)
+- [check staged files](#check-staged-files)
+- [set HEAD to specified status](#set-head-to-specified-status)
+- [found forgotten files after commit](#found-forgotten-files-after-commit)
+- [temporarily save current modification](#temporarily-save-current-modification)
+- [check all branches](#check-all-branches)
+- [Resovle Conflict](#resovle-conflict)
 
 ## print merges commit log
 
@@ -43,9 +43,11 @@ commit id: d590a26b3b988f24842d433d4b64708ff545d399
 git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 ```
 
-- `--soft`: undo git commit, not undo `git add`, keep modification
-- `--mixed`: undo git commit, undo `git add`, keep modification
-- `--hard`: undo git commit, undo `git add`, discard modification
+| option  | undo commit | undo `git add` | discard modification | is default options |
+| ------- | ----------- | -------------- | -------------------- | ------------------ |
+| --soft  | yes         | no             | no                   | no                 |
+| --mixed | yes         | yes            | no                   | yes                |
+| --hard  | yes         | yes            | yes                  | no                 |
 
 ## remove file from stage
 
@@ -60,6 +62,7 @@ git rm --cached -r [<dir>...] # recursive remove
 git reset --hard # 丢弃跟踪的文件的所有本地改动, 撤销跟踪的文件
 git clean -fxd # 删除未跟踪的文件
 ```
+
 ## check staged files
 
 ```bash
@@ -125,5 +128,3 @@ git branch -D main
 git branch -m main
 git push -f origin main
 ```
-
-

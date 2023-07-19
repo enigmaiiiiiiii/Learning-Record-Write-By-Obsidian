@@ -8,7 +8,7 @@
 ## Feature
 
 - pull request has no effect on local repository
-- pull request **以 branch 为单位**
+- [branch](git-branch.md) is pull request basic unit
 
 ## Pull Request Workflow
 
@@ -83,3 +83,4 @@ git push -u origin main
 
 [my pull request on a github example repository](https://github.com/octocat/spoon-knife/pull/29038)
 [another pull request on a github example repository](https://github.com/octocat/spoon-knife/pull/29039)
+

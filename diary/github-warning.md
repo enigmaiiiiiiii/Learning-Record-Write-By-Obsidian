@@ -1,5 +1,7 @@
 # WARNING: REMOTE IDENTIFIATION HAS CHANGED!
 
+## The Error Message
+
 when clone repository from github, this warning occured
 
 ```
@@ -17,4 +19,7 @@ Host key for github.com has changed and you have requested strict checking.
 Host key verification failed.
 ```
 
-caused by https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/
+## Caused By
+
+- caused by https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/
+

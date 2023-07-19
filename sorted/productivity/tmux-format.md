@@ -1,9 +1,9 @@
 # Tmux - Format
 
-* [What It Is](#what-it-is)
-* [Set Option With Format](#set-option-with-format)
-* [Format Variable](#format-variable)
-* [Format Variable Alias](#format-variable-alias)
+- [What It Is](#what-it-is)
+- [Set Option With Format](#set-option-with-format)
+- [Format Variable](#format-variable)
+- [Format Variable Alias](#format-variable-alias)
 
 ## What It Is
 
@@ -40,6 +40,7 @@ set -g status-left "#{session_name} #{window_index} #{window_name}"
 | client_last_session | Name of the client's last session     |
 | client_name         | Name of client                        |
 | client_pid          | PID of client process                 |
+| ...                 | ...                                   |
 
 ## Format Variable Alias
 
@@ -55,4 +56,3 @@ Set format with alias
 ```sh
 set -g status-left "#I"
 ```
-

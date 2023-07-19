@@ -20,11 +20,11 @@
 
 VS [dockerfile](docker-dockerfile.md)
 
-- who build a image
+- dockerfile used to build a single image
 
 ## Feature
 
-- multiple isolated environments on a single host
+- Multiple isolated environments on a single host
 - Compose caches the configuration used to create a container
 
 > restart a service that has not changed, Compose re-uses the existing containers
@@ -33,7 +33,7 @@ VS [dockerfile](docker-dockerfile.md)
 
 1. define your app's environment with a [`Dockerfile`](docker-dockerfile.md)
 2. define the services that make up your app in [`docker-compose.yml`](#docker-composeyml) so they can be run together in an isolated environment
-3. run [`docker compose up`](#command-docker-compose) and Compose starts and runs your entire app
+3. run [`docker compose up`](#docker-compose-command) and Compose starts and runs your entire app
 
 ## Use Case
 

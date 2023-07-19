@@ -4,6 +4,8 @@
 * [push to remote repository](#push-to-remote-repository)
 * [pull from remote repository](#pull-from-remote-repository)
 * [delete remote branch](#delete-remote-branch)
+* [Contribute To Remote Branch](#contribute-to-remote-branch)
+* [connection between local Branches](#connection-between-local-branches)
 * [Access Control](#access-control)
 * [Contribute to Project](#contribute-to-project)
 
@@ -16,13 +18,23 @@ git remote add origin <REMOTE_URL>
 - `origin`: remote repository **alias**
 - `REMOTE_URL`: remote repository URL
 
+this command will add following to `.git/config` file
+
+```
+[remote "origin"]
+    url = <REMOTE_URL>
+    fetch = +refs/heads/*:refs/remotes/origin/*
+```
+
+- the value of `fetch` is a [refspec](git-refspec.md)
+
 ## push to remote repository
 
 `git push -u origin master`: push master branch to remote repository
 
 - `-u`: set default remote repository and branch
-- `master`: local branch that want to push
 - `origin`: remote repository **alias**
+- `master`: local branch that want to push
 
 ## pull from remote repository
 
@@ -39,9 +51,25 @@ git remote add origin <REMOTE_URL>
 
 ## Contribute To Remote Branch
 
-`git checkout -b <local_branch_name> origin/<remote_branch_name>`
+option1:
 
-`git switch -c <local_branch_name>`
+- `git checkout -b <local_branch_name> origin/<remote_branch_name>`
+
+option2:
+
+- `git switch -c <local_branch_name>`
+
+## connection between local Branches
+
+Tracking Branch
+
+- **definition**: local branch automatically created direct relationship to the remote branch
+- when clone a repository, it generally automatically creates a `master` branch that tracks `origin/master`
+- set a local branch to track a remote branch
+  - `git checkout -b <local_branch_name> origin/<remote_branch_name>`
+    - this can create a local branch name **different** with remote branch name 
+  - `git checkout --track origin/<remote_branch_name>` short hand for above command, create a **same name** local branch 
+  - `git checkout branch_name` if `branch_name` matches a remote branch name, it will automatically set up tracking relationship 
 
 ## Access Control
 
