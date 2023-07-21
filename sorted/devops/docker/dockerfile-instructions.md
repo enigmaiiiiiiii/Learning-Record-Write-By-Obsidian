@@ -9,7 +9,10 @@
 * [COPY](#copy)
 * [USER](#user)
 * [WORKDIR](#workdir)
+* [ENTRYPOINT](#entrypoint)
+* [VOLUME](#volume)
 * [Instructions Summary](#instructions-summary)
+* [ENTRYPOINT vs CMD](#entrypoint-vs-cmd)
 
 ## What It Is
 
@@ -17,10 +20,10 @@
 
 ## Syntax
 
-`INSTRUCTION arguments`
+`<INSTRUCTION> <arguments>`
 
-- `INSTRUCTION`
-- `arguments`
+- `<INSTRUCTION>`: FROM, RUN, CMD, COPY, ADD, ENTRYPOINT, ENV, ARG, VOLUME, EXPOSE, WORKDIR, USER, HEALTHCHECK, SHELL
+- `arguments`: like /bin/bash, 4e5da3d5293e
 
 ## From
 
@@ -47,8 +50,10 @@ Complete Syntax
 
 Options
 
-- `--platform`: specify the platform
+- `--platform=value`: specify the platform
+  - `value`: For example, `linux/amd64`, `linux/arm64`, `windows/amd64`
   - default is ...
+  - `--platform=$BUILDPLATFORM`: the platform is the platform of machine 
 
 ## ARG
 
@@ -104,7 +109,7 @@ syntax
 
 - `<src>`
   - without `--from` option, it's path to **host machine**
-  - with `--from=<name>` option, it's path to previous [build stage]()
+  - with `--from=<name>` option, it's path to previous [build stage](docker-dockerfile.md#build-stage)
     - `<name>` is create by `FROM ... AS <name>`
 - `<dest>`: path to container filesystem
 
@@ -133,22 +138,33 @@ set working directory for any
 
 - [`RUN`](dockerfile-instructions-run.md)
 - [`CMD`](#cmd)
-- `ENTRYPOINT`
+- [`ENTRYPOINT`](#entrypoint)
 - `COPY`
 - `ADD`
+
+## ENTRYPOINT
+
+- set the primary command to execute when a container is run
+- default is `/bin/sh -c` in container
+- according to this, you can access to a container's file system
+
+[vs cmd](#entrypoint-vs-cmd)
+
+## VOLUME
+
 
 ## Instructions Summary
 
 - [FROM](#from)
-- RUN
-- CMD
+- [RUN](#run)
+- [CMD](#cmd)
 - LABEL
 - EXPOSE,
 - ENV
 - ADD
 - COPY
 - ENTRYPOINT
-- VOLUME
+- [VOLUME](#volume)
 - USER
 - [WORKDIR](#workdir)
 - ARG
@@ -164,3 +180,36 @@ those instructions can use [environment variable](#environment-variable)
 - ENV
 - EXPOSE
 - FROM
+
+## ENTRYPOINT vs CMD
+
+**Summarize**
+
+- [`ENTRYPOINT`](#entrypoint) is the command to execute when container is run
+  - For you can execute command in container, ENTRYPOINT **default value** is `/bin/sh -c`
+- `CMD` is the default argument to the `ENTRYPOINT`
+
+A image built by following Dockerfile 
+
+```dockerfile
+FROM ubuntu
+ENTRYPOINT ["echo", "hello entrypoint!"]
+CMD ["here is the cmd"]
+```
+
+build the image with `docker build -t image_demo .`
+
+and run with `docker run image_demo`
+
+```sh
+hello entrypoint! here is the cmd
+```
+
+when run with `docker run image_demo "here is the argument"`
+
+```sh
+hello entrypoint! here is the argument
+```
+
+
+

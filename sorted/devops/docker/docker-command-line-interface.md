@@ -76,11 +76,14 @@ docker run -d -p 27017:27017 --name=mongoContainer mongo:latest
 docker exec -it mongoContainer mongosh
 ```
 
-## cp
+## docker cp
 
 - copy file between container and local file system
 
 ```sh
 docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 ```
+
+## docker history
+
 

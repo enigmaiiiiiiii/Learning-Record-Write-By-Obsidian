@@ -113,3 +113,7 @@ main 3 components
 - APIs: Use programs to talk to Docker daemon.
 - [CLI](docker-command-line-interface.md)
 
+## image layer
+
+[Image layer](docker-dockerfile.md#image-layer)
+

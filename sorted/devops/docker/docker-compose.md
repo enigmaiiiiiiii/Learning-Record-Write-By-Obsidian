@@ -69,5 +69,3 @@ services:
     image: redis
 ```
 
-
-

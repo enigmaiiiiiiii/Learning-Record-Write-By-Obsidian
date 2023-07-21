@@ -1,14 +1,15 @@
 # Linux - Tricks
 
 * [pipe](#pipe)
+* [sed](#sed)
 * [awk](#awk)
 * [head](#head)
 * [grep](#grep)
 * [alias](#alias)
 * [get last command output](#get-last-command-output)
-* [let command output as another command's parameter](#let-command-output-as-another-commands-parameter)
+* [let command output as another command's parameter](#let-command-output-as-another-command's-parameter)
 * [jump back to previous directory](#jump-back-to-previous-directory)
-* [Run Command In Background](#run-command-in-background)
+* [Running Command In Background](#running-command-in-background)
 
 ## pipe
 

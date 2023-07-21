@@ -2,6 +2,12 @@
 
 > !this optimization can save precious minutes
 
+* [How Build Cache Work](#how-build-cache-work)
+* [Order Layers](#order-layers)
+* [Keep Layers Small](#keep-layers-small)
+* [Use Appropriate Base Image](#use-appropriate-base-image)
+* [Use Multi-Stage Build](#use-multi-stage-build)
+
 ## How Build Cache Work
 
 - if a [layer](docker-dockerfile.md#image-layer) changes, all other layers come after it will be affected
@@ -52,7 +58,7 @@ RUN \
 apt-get update && apt-get install -y git
 ```
 
-- when this layer needs to be rebuild, it will the cache in `/var/cache/apt` instead of downloading from internet
+- when this layer needs to be rebuild, it will the use `apt` cache in `/var/cache/apt`
 
 ## Use Appropriate Base Image
 
@@ -61,3 +67,5 @@ apt-get update && apt-get install -y git
   - flask-mongo: `python:3.7-alpine`
 
 ## Use Multi-Stage Build
+
+

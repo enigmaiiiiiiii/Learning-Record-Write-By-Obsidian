@@ -1,5 +1,10 @@
 # Docker Command - run
 
+* [What It Is](#what-it-is)
+* [Syntax](#syntax)
+* [Take A look](#take-a-look)
+* [options](#options)
+
 ## What It Is
 
 - create a [container instance]() from image
@@ -15,7 +20,6 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 - `[COMMAND]`: command to run after container run
 
 ## Take A look
-
 
 ```bash
 docker run -d -p 80:5000 training/webapp python app.py
@@ -35,4 +39,29 @@ docker run -d -p 80:5000 training/webapp python app.py
 > almost all configuration in image can be override
 > so `run` command has more options than other command
 
+`-it`
+
+- `-i`: interactive
+- `-t`: allocate a [pseudo-TTY](linux-tty.md)
+
+`--volume`
+
+```sh
+docker run -v /host/path:/container/path
+```
+
+- this command will mount directory `/host/path` to container's directory `/container/path`
+
+
 `--mount`
+
+`--entrypoint`
+
+- set the container [entrypoint](dockerfile-instructions.md#entrypoint)
+
+`--rm`
+
+- remove container after exit
+
+`--name`
+

@@ -1,14 +1,14 @@
-# docker
+# Docker
 
-## what is docker
+## What is docker
 
 - program runing environment without the extra interface of the operating system
 - container is a running process
 - container is a lightweight virtual environment
 
-## I
+## Fundamental
 
-[Glossary](docker-glossary.md)
+[Terms](docker-glossary.md)
 
 [Install docker](docker-install.md)
 

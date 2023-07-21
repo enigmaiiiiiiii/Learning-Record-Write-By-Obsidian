@@ -529,8 +529,8 @@ other command:
         lf -remote "send $id set promptfmt \"$fmt\""
     }}
 
-If you want to print escape sequences, you may redirect 'printf' output to
-'/dev/tty'. The following xterm specific escape sequence sets the terminal title
+If you want to print escape sequences, you may redirect `printf` output to
+`/dev/tty`. The following xterm specific escape sequence sets the terminal title
 to the working directory:
 
     cmd on-cd &{{

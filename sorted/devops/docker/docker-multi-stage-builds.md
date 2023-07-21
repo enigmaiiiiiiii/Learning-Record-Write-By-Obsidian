@@ -1,5 +1,10 @@
 # Docker - Multi-stage builds
 
+* [What Problem It Solve](#what-problem-it-solve)
+* [With Multi-stage builds](#with-multi-stage-builds)
+* [Name build stage](#name-build-stage)
+* [build stop at a specific stage](#build-stop-at-a-specific-stage)
+
 ## What Problem It Solve
 
 In the past, it is common to have dockerfile
@@ -26,7 +31,6 @@ WORKDIR /root/
 COPY app ./
 CMD ["./app"]
 ```
-
 the script to build the image with those two dockerfile
 
 ```bash

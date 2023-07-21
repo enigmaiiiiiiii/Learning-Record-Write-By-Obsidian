@@ -7,9 +7,10 @@
 
 ## They Are Shell
 
-- bash
-- zsh
-- fish
+- `/bin/sh`: Unix Original Shell
+- `/bin/bash`: A Super Set of `sh`
+- `/bin/zsh`
+- `/bin/fish`
 
 ## Set Login Shell
 

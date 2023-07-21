@@ -2,6 +2,7 @@
 
 * [What Is This](#what-is-this)
 * [Feature](#feature)
+* [Image Layer](#image-layer)
 * [Build A hello-world Image](#build-a-hello-world-image)
 * [Dockerfile Basic Flow](#dockerfile-basic-flow)
 * [Instructions](#instructions)
@@ -9,6 +10,8 @@
 * [Environment Variable](#environment-variable)
 * [Parser directives](#parser-directives)
 * [Build Stage](#build-stage)
+* [Optimizing Build With Cache](#optimizing-build-with-cache)
+* [Instruction ENTRYPOINT vs CMD](#instruction-entrypoint-vs-cmd)
 
 ## What Is This
 
@@ -26,7 +29,7 @@
 
 ## Image Layer
 
-- each instruction in Dockerfile create a layer
+- Each instruction in Dockerfile create a layer
 - Image layer can be thought as stack
 
 ## Build A hello-world Image
@@ -136,9 +139,13 @@ COPY \$FOO /quux # COPY $FOO /quux
 - Which can later be taken and used
 - [`FROM` instruction](dockerfile-instructions.md#from) represents the beginning of a new stage
 
-[Multi-stage builds](dockter-multi-stage-builds.md)
+[Multi-stage builds](docker-multi-stage-builds.md)
 
 ## Optimizing Build With Cache
 
 [Optimizing Builds](docker-optimizing-builds-with-cache.md)
+
+## Instruction ENTRYPOINT vs CMD
+
+[ENTRYPOINT vs CMD](dockerfile-instructions.md#entrypoint-vs-cmd)
 
