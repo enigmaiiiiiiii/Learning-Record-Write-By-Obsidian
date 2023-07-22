@@ -70,13 +70,13 @@ python -m pip uninstall package1 package2
 
 ## requirements.txt
 
-create environment from `requirements.txt`
+Create Environment from `requirements.txt`
 
 ```shell
 pip install -r requirements.txt
 ```
 
-write current environment to `requirements.txt`
+Write Current Environment to `requirements.txt`
 
 ```shell
 pip freeze > requirements.txt

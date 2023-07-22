@@ -10,7 +10,7 @@
 
 ## How Build Cache Work
 
-- if a [layer](docker-dockerfile.md#image-layer) changes, all other layers come after it will be affected
+- if a [layer](docker-image.md#image-layer) changes, all other layers come after it will be affected
 
 ## Order Layers
 

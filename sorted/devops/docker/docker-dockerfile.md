@@ -2,7 +2,6 @@
 
 * [What Is This](#what-is-this)
 * [Feature](#feature)
-* [Image Layer](#image-layer)
 * [Build A hello-world Image](#build-a-hello-world-image)
 * [Dockerfile Basic Flow](#dockerfile-basic-flow)
 * [Instructions](#instructions)
@@ -26,11 +25,6 @@
 
 - docker will [cache] the image load by [`FROM` instruction](dockerfile-instructions.md#from)
 - ~~~if any instruction change, the cache will be invalid~~~
-
-## Image Layer
-
-- Each instruction in Dockerfile create a layer
-- Image layer can be thought as stack
 
 ## Build A hello-world Image
 
@@ -148,4 +142,8 @@ COPY \$FOO /quux # COPY $FOO /quux
 ## Instruction ENTRYPOINT vs CMD
 
 [ENTRYPOINT vs CMD](dockerfile-instructions.md#entrypoint-vs-cmd)
+
+## Best Practice
+
+[Dockerfile Best Practice](dockerfile-best-practice.md)
 

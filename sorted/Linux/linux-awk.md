@@ -35,18 +35,19 @@ search with pattern
 df | awk '/dev/ {print $1}'
 ```
 
+with condition expression
+
+```sh
+docker ps -a | awk '$2 == "hello-world" {print $1}'
+# print the container id whose image is hello-world
+```
+
 awk with script
 
 ```sh
 awk 'BEGIN { for(i=1; i<=10; i++) print "The square root of", i, "is", i*i }'
 ```
 
-- with condition expression
-
-```sh
-docker ps -a | awk '$2 == "hello-world" {print $1}'
-# print the container id whose image is hello-world
-```
 
 print first 10 lines
 

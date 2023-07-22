@@ -1,6 +1,6 @@
 # Flask - Quick Start
 
-## hello world
+## Hello Flask
 
 1. create project and activate a [virtual environment](python-virtual-environment.md)
 2. install flask

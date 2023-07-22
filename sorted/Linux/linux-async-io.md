@@ -1,9 +1,10 @@
-# 异步io
+# Linux - Async IO
+
 > 异步的含义：一旦请求加入队列，就立即返回, 无论读写操作是否完成
 - 异步io操作在io期间不导致发出请求的进程被阻塞
 - 异步io函数aio_read(), aio_wirte(), aio_error(), aio_return(), aio_suspend(), aio_cancel(), lio_listio(), aio_fsync()
 
-## 结构体aiocb(异步控制模块)
+## struct aiocb(异步控制模块)
 
 - 异步io类操作关键参数
 
@@ -26,8 +27,8 @@ struct aiocb {
 };
 ```
 
-- 同步io相同成员：
-  - aio_fildes: 被操作的[[Linux_File_Descriptor]] 
+- member of struct aiocb
+  - aio_fildes: [file descriptor](linux-file-descriptor.md) that performs on
   - aio_offset: 文件偏移量
   - aio_buf: 缓冲地址
   - aio_nbytes : [缓冲大小](linux-io-stream.md)

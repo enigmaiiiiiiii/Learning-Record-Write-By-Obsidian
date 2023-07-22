@@ -1,14 +1,15 @@
 # Docker - Start To Use
 
-* [search image](#search-image)
+* [Search image](#search-image)
 * [Download image](#download-image)
 * [Query images](#query-images)
 * [remove A image](#remove-a-image)
-* [Start A Container](#start-a-container)
+* [Container Simple Start](#container-simple-start)
 * [Query running containers](#query-running-containers)
 * [Query containers in all status](#query-containers-in-all-status)
 * [Stop container](#stop-container)
 * [remove container](#remove-container)
+* [Start An Exited Container](#start-an-exited-container)
 
 ## Search image
 
@@ -17,7 +18,6 @@ docker search <name>
 ```
 
 ## Download image
-
 ```sh
 docker pull <name>
 ```
@@ -34,10 +34,9 @@ docker images
 docker rmi <image>
 ```
 
-## Container Simple Start
+## Create Container From Image
 
 A Simple Start
-
 ```sh
 docker run <image_id>
 ```
@@ -78,4 +77,9 @@ docerk rm <container_id>
 docker start <container_id>
 ```
 
+## Remove All Exited Containers
+
+```sh
+docker container prune
+```
 

@@ -25,7 +25,7 @@
 - `<INSTRUCTION>`: FROM, RUN, CMD, COPY, ADD, ENTRYPOINT, ENV, ARG, VOLUME, EXPOSE, WORKDIR, USER, HEALTHCHECK, SHELL
 - `arguments`: like /bin/bash, 4e5da3d5293e
 
-## From
+## FROM
 
 description
 
@@ -152,6 +152,13 @@ set working directory for any
 
 ## VOLUME
 
+## EXPORT
+
+- expose port to host machine
+
+## ENV
+
+- set environment variable
 
 ## Instructions Summary
 
@@ -173,7 +180,7 @@ set working directory for any
 - HEALTHCHECK
 - SHELL
 
-those instructions can use [environment variable](#environment-variable)
+those instructions can use [environment variable]()
 
 - ADD
 - COPY

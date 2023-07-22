@@ -9,14 +9,13 @@
 
 ## Create Image
 
-1. [dockerfile](docker-dockerfile.md)
-2. [docker build](docker-command-line-interface.md#build)
+- step 1: [dockerfile](docker-dockerfile.md)
+- step 2: [docker build](docker-command-line-interface.md#build)
 
 ## Feature
 
 - Image is build based on other images
 - base image is shared between containers
-
 
 ## Major Difference Between Container
 
@@ -93,7 +92,8 @@ IMAGE          CREATED          CREATED BY                                      
 
 ## Image Layer
 
-- image layer is contains a image
+- Image layer can be thought as stack
+- ~~image layer contains a image~~
 - check out layers of each image build in previous [section](#illustration-of-image-history)
 
 ```sh
@@ -173,4 +173,69 @@ a53f69f87a12   my_container_3                5B (virtual 11.8MB)      Up 3 minut
 ## Thin Writable Layer
 
 - Often called the container layer
+
+## Illustration Of Image Id
+
+**Conclusion**
+
+- image id is based on the content of the image
+
+Example To Demonstrate This Conclusion
+
+Here is a simple docker image build by two file `app.py` and `dockerfile`
+
+- app.py
+
+```py
+print("hello docker")
+```
+
+- dockerfile
+
+```dockerfile
+# syntax=docker/dockerfile:1
+
+From python:3
+WORKDIR /src
+COPY . /src
+CMD ["python", "app.py"]
+```
+
+build this image
+
+```sh
+$ docker build -t python-hello-world:1.0 .
+$ docker images 
+REPOSITORY                  TAG       IMAGE ID       CREATED         SIZE
+python-hello-world          1.0       400edb90f8ad   5 seconds ago   1.01GB
+```
+
+build again with another name
+
+```sh
+$ docker build -t python-hello-world:2.0 .
+$ docker images
+REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE
+python-hello-world          2.0       400edb90f8ad   2 minutes ago    1.01GB
+```
+
+- still get the same image id
+
+modify `app.py`
+
+```py
+print("hello docker")
+```
+
+build again
+
+```sh
+$ docker build -t python-hello-world:3.0 .
+$ docker images
+REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE
+python-hello-world          3.0       0abdc619420e   2 minutes ago    1.01GB
+```
+
+
+
 

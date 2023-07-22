@@ -23,4 +23,5 @@
 
 ## What Is Terminal
 
-- a program open a window let you interact with shell
+- A program open a window let you interact with shell
+

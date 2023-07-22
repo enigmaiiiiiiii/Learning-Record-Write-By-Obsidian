@@ -115,5 +115,5 @@ main 3 components
 
 ## image layer
 
-[Image layer](docker-dockerfile.md#image-layer)
+[Image layer](docker-image.md#image-layer)
 

@@ -10,7 +10,7 @@
 
 ## Variable type
 
-- [local variable](#local-variable)
+- [local variable](#local-variable-assignment)
 - [environment variable](#environment-variable)
 - [shell variable](#shell-variable)
 
@@ -81,8 +81,10 @@ echo "You are in $whereami"
 - `RANDOM`: return random number, range from 0 to 32767
 - `HISTSIZE`: max number of command history
 
+***
 
 - `$0`: return current command name, while `$1`, `$2`: first and second parameter
 - `$?`: the last command return status, 0 for success, non-0 for fail
 - `$$`: current process id
 - `$!`: last process id running in background
+- `$@`: all parameters

@@ -1,10 +1,12 @@
 # MongoDB Connect Each Other
 
-- [connection string](#connection-string)
-- [connect to local mongodb](#connect-to-local-mongodb)
-- [connect to mongodb that requires authentication](#connect-to-mongodb-that-requires-authentication)
-- [connect to mongo atlas](#connect-to-mongo-atlas)
-- [connect using TLS](#connect-using-tls)
+* [connection uri](#connection-uri)
+* [connect to local mongodb](#connect-to-local-mongodb)
+* [connect to mongodb that requires authentication](#connect-to-mongodb-that-requires-authentication)
+* [connect to mongo atlas](#connect-to-mongo-atlas)
+* [connect with vscode](#connect-with-vscode)
+* [connect using TLS](#connect-using-tls)
+* [debug connect](#debug-connect)
 
 ## connection uri
 

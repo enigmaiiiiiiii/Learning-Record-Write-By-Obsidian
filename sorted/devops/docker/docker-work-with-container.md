@@ -1,5 +1,11 @@
 # Docker - Container
 
+## Restart A Exited Container
+
+```sh
+docker start -a <container>
+```
+
 ## Access To Container's File System
 
 ```sh

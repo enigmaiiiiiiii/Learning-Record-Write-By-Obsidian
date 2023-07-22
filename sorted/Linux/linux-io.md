@@ -4,9 +4,9 @@
 
 [IO Stream](linux-io-stream.md)
 
-[打开流](linux-stream-open-api.md)
+[Open](linux-stream-open-api.md)
 
-[读写流](linux-stream-read-and-write.md)
+[Read/Write](linux-stream-read-and-write.md)
 
 [[linux-format-print]]
 
@@ -14,7 +14,7 @@
 
 [File IO](linux-file-api-read-write.md)
 
-## 同步io
+## Sync IO
 
 [io poll]( linux-io-poll.md )
 
@@ -22,11 +22,11 @@
 
 [memory map](linux-io-api-mmap.md)
 
-## 阻塞
+## Block
 
-[阻塞](linux-block.md)
+[Block](linux-block.md)
 
-## 异步io
+## Async io
   
 [[异步io]]
 
