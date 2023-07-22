@@ -3,8 +3,9 @@
 ## What is this
 
 - contain has a network interface with an IP address, a gateway, a routing table, DNS servers, and other networking details
+- for `8000:5000`, It represents the **host** port `8000` map to **container** port `5000`
 
-## publish port
+## Publish Port
 
 - when use `docker run` or `docker create` to run a container, no port is published
 - use `-p` to publish a port, it will create a firewall rule to map docker port to host port

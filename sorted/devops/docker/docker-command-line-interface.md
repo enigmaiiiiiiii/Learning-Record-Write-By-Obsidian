@@ -55,11 +55,13 @@ syntax
 ## inspect
 
 
-## build
+## docker build
+
+[docker build](docker-build.md)
 
 - build a docker image from a [Dockerfile](docker-dockerfile.md)
 
-## exec
+## docker exec
 
 - runs a new command in a running container.
 
@@ -86,5 +88,7 @@ docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 ```
 
 ## docker history
+
+## docker volume
 
 

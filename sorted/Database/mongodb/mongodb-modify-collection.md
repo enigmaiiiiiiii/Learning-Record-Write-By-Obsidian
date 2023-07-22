@@ -2,6 +2,12 @@
 
 ## Insert Document
 
+```js
+db.collection.insertOne(
+  {title: "The Room", year: 2003}
+)
+```
+
 ## Update Document
 
 add a new field

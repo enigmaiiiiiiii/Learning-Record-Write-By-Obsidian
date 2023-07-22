@@ -1,4 +1,4 @@
-# Glossary
+# MongoDB - Glossary
 
 - [document](#document)
 - [collection](#collection)

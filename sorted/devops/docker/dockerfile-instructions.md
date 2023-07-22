@@ -1,8 +1,9 @@
 # Dockerfile - Instructions
 
+
 * [What It Is](#what-it-is)
 * [Syntax](#syntax)
-* [From](#from)
+* [FROM](#from)
 * [ARG](#arg)
 * [RUN](#run)
 * [CMD](#cmd)
@@ -11,6 +12,8 @@
 * [WORKDIR](#workdir)
 * [ENTRYPOINT](#entrypoint)
 * [VOLUME](#volume)
+* [EXPORT](#export)
+* [ENV](#env)
 * [Instructions Summary](#instructions-summary)
 * [ENTRYPOINT vs CMD](#entrypoint-vs-cmd)
 
@@ -124,7 +127,7 @@ options
 
 - `--from=<name>`:
   - set the source locatoin to a previous [build stage](docker-dockerfile.md#build-stage)
-  - instead of use build context send by user
+  - instead of use [build context]() send by user
 
 ## USER
 
@@ -152,21 +155,25 @@ set working directory for any
 
 ## VOLUME
 
-## EXPORT
+## EXPOSE
 
-- expose port to host machine
+```dockerfile
+EXPOSE <port> [<port>/<protocol>...]
+```
+
+- set container listening on which port
 
 ## ENV
 
 - set environment variable
 
-## Instructions Summary
+## Instructions Summarize
 
 - [FROM](#from)
 - [RUN](#run)
 - [CMD](#cmd)
 - LABEL
-- EXPOSE,
+- [EXPOSE](#expose)
 - ENV
 - ADD
 - COPY

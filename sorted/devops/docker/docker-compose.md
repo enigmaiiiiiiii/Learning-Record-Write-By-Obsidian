@@ -8,10 +8,10 @@
 
 ## What Is This
 
-- Tool of defining and running **multi-container** Docker applications
-- Configuration for containers
 - Managing the whole lifecycle of your application
   - Start, Stop, Rebuild
+- Configuration for containers
+- Tool of defining and running **multi-container** Docker applications
 
 **two essential things**
 

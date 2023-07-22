@@ -2,7 +2,7 @@
 
 * [Description](#description)
 * [Output](#output)
-* [Practical Command](#practical-command)
+* [Practical Usage](#practical-usage)
 
 ## Description
 

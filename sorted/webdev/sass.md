@@ -3,7 +3,7 @@
 ## Introduction
 
 - extension for CSS
-- 提供了rules, variables, mixins, inheritance
+- provide rules, variables, mixins, inheritance
 
 ## Install Sass
 
