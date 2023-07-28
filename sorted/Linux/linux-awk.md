@@ -48,7 +48,6 @@ awk with script
 awk 'BEGIN { for(i=1; i<=10; i++) print "The square root of", i, "is", i*i }'
 ```
 
-
 print first 10 lines
 
 ```sh

@@ -6,14 +6,15 @@
 
 ## Bash Command
 
-[bash command](linux-command-bash.md)
+Command to run [shell script](linux-execute-shell-script.md#conclusion)
+
+Syntax
 
 `bash [options] [command_string | filename]`
 
 options
 
 `-c`
-
 
 ## BASH_SOURCE\[0\] VS $0
 

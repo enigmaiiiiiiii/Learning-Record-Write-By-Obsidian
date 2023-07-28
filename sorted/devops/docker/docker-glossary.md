@@ -34,6 +34,10 @@ docker ps
 docker ps -a
 ```
 
+## Host Machine
+
+- the machine that docker is installed on
+
 ## tag
 
 use tag to represent different version of the same image

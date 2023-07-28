@@ -1,9 +1,9 @@
 # yaml
 
-- 最常用作配置文件
-- 后缀为`.yml`
+- mostly used as configuration files
+- suffix with`.yml` or `.yaml`
 
-## 映射
+## Mapping
 
 ```yml
 key:
@@ -11,7 +11,7 @@ key:
   subkey2: value2
 ```
 
-## 数组
+## Array
 
 ```yml
 Store:
@@ -21,10 +21,9 @@ Store:
   Cheesemonger:
     - 'blue cheese'
     - 'feta'
-
 ```
 
-对应的json
+convert to json
 
 ```json
 {
@@ -41,7 +40,7 @@ Store:
 }
 ```
 
-**对象**数组
+**Object** Array
 
 ```yml
 store:
@@ -57,7 +56,7 @@ store:
       price: 2
 ```
 
-对应json
+Convert To Json
 
 ```json
 {
@@ -86,8 +85,7 @@ store:
 }
 ```
 
-## 语法示例
-
+## Syntax Instance
 
 ```yml
 name: Martin D'vloper
@@ -108,7 +106,8 @@ education:
   3 A-Levels
   BSc in the Internet of Things
 ```
-对应的json格式
+
+convert to json
 
 ```json
 {
@@ -129,5 +128,4 @@ education:
     },
     "education": "4 GCSEs\n3 A-Levels\nBSc in the Internet of Things"
 }
-
 ```

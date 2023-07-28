@@ -10,7 +10,7 @@
 
 when `#! /bin/bash` at the top of a shell script
 
-- the script will be executed by [**bash**](linux_bash.md) interpreter
+- the script will be executed by [**bash**](linux-bash.md) interpreter
 
 ```sh
 #! /bin/sh

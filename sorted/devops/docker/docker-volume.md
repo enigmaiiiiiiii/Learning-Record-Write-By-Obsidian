@@ -1,4 +1,4 @@
-## docker volume
+# docker volume
 
 * [docker volume](#docker-volume)
 * [What Is This](#what-is-this)
@@ -8,11 +8,10 @@
 * [Volume With Compose](#volume-with-compose)
 
 ## What Is This
-
-- Is a directory or filesystem that **outside the container**
-- A Way to **persistent data**
-- generated and used by a [container](docker-container)
-- **managed by docker** completely
+- Is a directory in filesystem that **outside the container**
+- But **managed by docker** completely
+- Use to **persistent data**
+- generated and used by [container](docker-container)
 
 ## Feature
 
@@ -23,6 +22,9 @@
 - can be shared between multiple containers
 - Volume's driver allow to be managed on remote host
 - Volume can be pre-populated
+
+## VS Bind Mount
+
 
 ## Create Volume
 
@@ -41,6 +43,21 @@ docker run -d \
 --name test
 -v <volume-name>:/<container-path> \
 nginx:latest
+```
+
+- with `--mount`
+
+```sh
+docker run -d \
+--name devtest \
+--mount source=<volume-name>,target=/<container-path> \
+nginx:latest
+```
+
+## Volume In Dockerfile
+
+```dockerfile
+
 ```
 
 ## Volume With Compose
@@ -74,4 +91,5 @@ volumes:
   - the name of volume
   - set name at runtime with `name: ${VOLUME_NAME}`, and set `VOLUME_NAME=my_volume` in [`.env`](nodejs-dotenv-file.md) file
 
+## Volume CLI
 

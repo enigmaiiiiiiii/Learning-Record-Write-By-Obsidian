@@ -1,12 +1,8 @@
 # Docker - Dockerfile Best Practice
 
-## EXPOSE
-
-- export port from container to host
-
-## ENV
-
-- 
+* [RUN Command In One Line](#run-command-in-one-line)
+* [EXPOSE](#expose)
+* [ENV](#env)
 
 ## RUN Command In One Line
 
@@ -43,3 +39,11 @@ RUN apt-get update && apt-get install -y \
     package-baz \
     package-foo
 ```
+
+## EXPOSE
+
+- export port from container to host
+
+## ENV
+
+- 

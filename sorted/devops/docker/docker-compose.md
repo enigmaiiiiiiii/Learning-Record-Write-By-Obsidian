@@ -1,10 +1,12 @@
 # Docker - Compose
 
-* [What is this](#what-is-this)
-* [3 Steps of Using Cmpose](#3-steps-of-using-cmpose)
+* [What Is This](#what-is-this)
 * [Feature](#feature)
+* [3 Steps of Using Cmpose](#3-steps-of-using-cmpose)
+* [Use Case](#use-case)
 * [docker compose command](#docker-compose-command)
-* [docker-compose.yml](#docker-composeyml)
+* [docker compose file](#docker-compose-file)
+* [Compose Service](#compose-service)
 
 ## What Is This
 
@@ -15,8 +17,8 @@
 
 **two essential things**
 
-- [`docker-compose.yml`](#docker-composeyml) file
-- [`docker-compose`](#docker-compose-command) command
+- [docker compose file](#docker-compose-file)
+- [`docker compose` command](docker-compose-command.md)
 
 VS [dockerfile](docker-dockerfile.md)
 
@@ -32,7 +34,7 @@ VS [dockerfile](docker-dockerfile.md)
 ## 3 Steps of Using Cmpose
 
 1. define your app's environment with a [`Dockerfile`](docker-dockerfile.md)
-2. define the services that make up your app in [`docker-compose.yml`](#docker-composeyml) so they can be run together in an isolated environment
+2. define the services that make up your app in [`docker-compose.yml`](#docker-compose-file) so they can be run together in an isolated environment
 3. run [`docker compose up`](#docker-compose-command) and Compose starts and runs your entire app
 
 ## Use Case
@@ -45,27 +47,21 @@ VS [dockerfile](docker-dockerfile.md)
 
 [docker compose command](docker-compose-command.md)
 
-## docker-compose.yml
+## docker compose file
 
-feature
+[docker compose file](docker-compose-file.md)
 
-- write in application root directory
+## Compose Service
 
-> [yml](yaml.md) file format
+## Compose V2
 
-take a look
+- From July 2023
+  - Compose V1 stop update
+  - Compose V2 will be the current version of Compose
+- `docker-compose` vs `docker compose`
+  - `docker compose` is recommended
+  - `docker-compose` is legacy
 
-```yml
-services:
-  web:
-    build:
-    ports:
-      - "5000:5000"
-    volumes:
-      - .:/code
-    depends_on:
-      - redis
-  redis:
-    image: redis
-```
+## Legacy Version
+
 

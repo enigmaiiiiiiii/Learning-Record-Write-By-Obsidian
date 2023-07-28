@@ -4,12 +4,13 @@
 * [Download image](#download-image)
 * [Query images](#query-images)
 * [remove A image](#remove-a-image)
-* [Container Simple Start](#container-simple-start)
+* [Create Container From Image](#create-container-from-image)
 * [Query running containers](#query-running-containers)
 * [Query containers in all status](#query-containers-in-all-status)
 * [Stop container](#stop-container)
 * [remove container](#remove-container)
 * [Start An Exited Container](#start-an-exited-container)
+* [Remove All Exited Containers](#remove-all-exited-containers)
 
 ## Search image
 
@@ -37,6 +38,7 @@ docker rmi <image>
 ## Create Container From Image
 
 A Simple Start
+
 ```sh
 docker run <image_id>
 ```

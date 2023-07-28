@@ -9,7 +9,6 @@
 * [logs](#logs)
 * [commit](#commit)
 * [inspect](#inspect)
-* [build](#build)
 
 ## What is Docker CLI's role in Docker
 
@@ -33,6 +32,10 @@
 ## rm
 
 - remove [container](docker-glossary.md#container)
+
+## exec
+
+- execute a command in running container
 
 ## pull
 

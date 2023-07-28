@@ -1,5 +1,9 @@
 # Dockerfile - Instructions RUN
 
+* [What Dockerfile RUN Instruction Do](#what-dockerfile-run-instruction-do)
+* [Basic](#basic)
+* [RUN --mount](#run---mount)
+
 ## What Dockerfile RUN Instruction Do
 
 - Install dependencies
@@ -22,18 +26,21 @@ RUN echo "hello world"
 
 ## RUN --mount
 
-create filesystem mounts that **build** can access
+Create filesystem mounts that **build** can access
 
 Syntax
 
-```sh
---mount=[type=<TYPE>][,option=<value>[,options]...]
+```dockerfile
+RUN --mount=[type=<TYPE>][,option=<value>[,options]...]
 ```
+
+- field format is `key=value`
+- seperate by `,`. no space, `key1=value1,key2=value2`
 
 the first field is type, there a 4 values
 
 - `type=bind`: default
-- `type=cache`: mount a temporary directory to cache directories for compilers and package managers
+- `type=cache`: set [cache mounts](docker-cache-mounts.md)
 - `type=secret`
 - `type=ssh`
 
@@ -44,6 +51,5 @@ different type value has different available options
 - target: mount path 
 
 `type=cache` options
-
 
 

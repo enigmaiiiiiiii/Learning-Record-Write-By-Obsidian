@@ -7,7 +7,7 @@
 
 ## What It Is
 
-- create a [container instance]() from image
+- create a [container instance](docker-glossary.md#container) from **Image**
 
 ## Syntax
 
@@ -39,12 +39,23 @@ docker run -d -p 80:5000 training/webapp python app.py
 > almost all configuration in image can be override
 > so `run` command has more options than other command
 
-`-it`
+options list
+
+- [`-d`]()
+- [`-it`](#-it)
+- [`--volume`](#--volume)
+- [`--mount`](#--mount)
+- [`--entrypoint`](#--entrypoint)
+- [`--rm`](#--rm)
+- [`--name`](#--name)
+
+
+## -it
 
 - `-i`: interactive
 - `-t`: allocate a [pseudo-TTY](linux-tty.md)
 
-`--volume`
+## --volume
 
 ```sh
 docker run -v /host/path:/container/path
@@ -53,15 +64,37 @@ docker run -v /host/path:/container/path
 - this command will mount directory `/host/path` to container's directory `/container/path`
 
 
-`--mount`
+## --mount
 
-`--entrypoint`
+`--mount` with fields like this
+
+- multiple `key=value` separated by comma `,`
+
+> `--mount` has more fields than [-v](docker-volume.md)
+
+```sh
+docker run -d -it \
+--mount type=bind,\
+        source=path/to/source,\
+        target=path/to/target,\
+        readonly
+```
+
+- `type`: available value
+  - `bind`: [bind mount](docker-bind-mounts.md)
+  - `volume`: [mount a volume](docker-volume.md), default value
+  - `tmpfs`:
+- `source`: **absolute** path in host machine, `source` can be replaced by `src`
+- `target`: **absolute** path in container, `target` can be replaced by `dst`, `destination`
+
+## --entrypoint
 
 - set the container [entrypoint](dockerfile-instructions.md#entrypoint)
 
-`--rm`
+## --rm
 
 - remove container after exit
 
-`--name`
+## --name
+
 

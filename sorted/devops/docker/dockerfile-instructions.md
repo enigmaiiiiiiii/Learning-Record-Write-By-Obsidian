@@ -1,6 +1,5 @@
 # Dockerfile - Instructions
 
-
 * [What It Is](#what-it-is)
 * [Syntax](#syntax)
 * [FROM](#from)
@@ -12,9 +11,9 @@
 * [WORKDIR](#workdir)
 * [ENTRYPOINT](#entrypoint)
 * [VOLUME](#volume)
-* [EXPORT](#export)
+* [EXPOSE](#expose)
 * [ENV](#env)
-* [Instructions Summary](#instructions-summary)
+* [Instructions Summarize](#instructions-summarize)
 * [ENTRYPOINT vs CMD](#entrypoint-vs-cmd)
 
 ## What It Is
@@ -154,6 +153,24 @@ set working directory for any
 [vs cmd](#entrypoint-vs-cmd)
 
 ## VOLUME
+
+- mount a [volume](docker-volume.md)
+- can not use to [mount a host directory](docker-bind-mounts.md)
+
+```dockerfile
+VOLUME ["/data"]
+VOLUME /var/log
+```
+
+- `/data`, `/var/log` is on container file system
+
+Changing the volume from within the Dockerfile
+
+- if volume has been declared, **the changes made by Dockerfile** will be discarded
+
+This instruction does not support specifying a `host-dir` parameter
+
+- the volume is managed by docker
 
 ## EXPOSE
 

@@ -4,7 +4,7 @@
 
 [Python Command]()
 
-[Python Interpreter](python-interperter.md)
+[Python Interpreter]()
 
 [Virtual Environment](python-virtual-environment.md)
 
@@ -15,6 +15,8 @@
 [Module](python-module.md)
 
 [Package](python-package.md)
+
+[Syntax](python-syntax.md)
 
 ## Python Programming
 
