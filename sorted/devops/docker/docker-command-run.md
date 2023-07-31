@@ -45,15 +45,24 @@ options list
 - [`-it`](#-it)
 - [`--volume`](#--volume)
 - [`--mount`](#--mount)
+- [`-p`](#-p)
 - [`--entrypoint`](#--entrypoint)
 - [`--rm`](#--rm)
 - [`--name`](#--name)
-
 
 ## -it
 
 - `-i`: interactive
 - `-t`: allocate a [pseudo-TTY](linux-tty.md)
+
+## -p
+
+- Publish a container's port to the host
+- `-p <host_port>:<container_port>`
+
+```sh
+docker run -d -p 80:5000 nginx
+```
 
 ## --volume
 

@@ -15,6 +15,9 @@ check all port
 
 ```bash
 netstat -ano
+netstat -bano | more
+netstat -bano | grep LISTENING
+netstat -bano | findstr "LISTENING"
 ```
 
 check specific port

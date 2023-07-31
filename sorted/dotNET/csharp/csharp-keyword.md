@@ -4,20 +4,19 @@
 
 ## using
 
-- 定义一个范围，在此范围的末尾将释放对象。
-- 为命名空间创建别名，或导入在其他命名空间中定义的类型
-
 ## new
 
-用作声明修饰符
+declared modifier
 
-- 显示隐藏从基类继承的成员
+- display a member that is hidden by a similar named member in a base class
 
 ## out
 
-参数修饰符
+parameter modifier
 
-- 传递引用参数，传递之前不必初始化，返回之前必须赋一个值
+- pass a reference parameter to a method
+  - the arugment need not be initialized before calling the method
+  - but must assign a value before returning
 
 ## params
 

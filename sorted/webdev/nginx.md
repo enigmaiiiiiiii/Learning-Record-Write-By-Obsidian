@@ -1,13 +1,22 @@
 # Nginx
 
-## Beginner
+## Simple Start
+
+Start Nginx is Simple
+
+```sh
+/usr/bin/nginx
+```
+
+## Basic
 
 [Configuration](nginx-configuration.md)
 
 [Command Line](nginx-command-line.md)
 
-[Log](nginx-log.md)
+[directives list](nginx-directives-list.md)
 
+[Log](nginx-log.md)
 
 ## Nginx Plus
 

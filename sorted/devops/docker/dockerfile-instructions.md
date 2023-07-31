@@ -61,7 +61,7 @@ Options
 
 description
 
-- define a variable can passed to [docker build](docker-command-line-interface.md#build)
+- define a variable can passed to [docker build](docker-command-line-interface.md#docker-build)
 
 Syntax
 
@@ -178,7 +178,7 @@ This instruction does not support specifying a `host-dir` parameter
 EXPOSE <port> [<port>/<protocol>...]
 ```
 
-- set container listening on which port
+- Set listening on which port in container system
 
 ## ENV
 

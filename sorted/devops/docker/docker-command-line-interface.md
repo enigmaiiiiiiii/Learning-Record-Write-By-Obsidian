@@ -1,14 +1,21 @@
 # Docker - Command Line Interface
 
+* [What is Docker CLI's role in Docker](#what-is-docker-cli's-role-in-docker)
 * [help](#help)
 * [run](#run)
 * [ps](#ps)
 * [stop](#stop)
 * [rm](#rm)
+* [exec](#exec)
 * [pull](#pull)
 * [logs](#logs)
 * [commit](#commit)
 * [inspect](#inspect)
+* [docker build](#docker-build)
+* [docker exec](#docker-exec)
+* [docker cp](#docker-cp)
+* [docker history](#docker-history)
+* [docker volume](#docker-volume)
 
 ## What is Docker CLI's role in Docker
 

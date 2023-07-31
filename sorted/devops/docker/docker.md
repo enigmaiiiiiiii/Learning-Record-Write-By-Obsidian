@@ -32,7 +32,7 @@
 
 [`.dockerignore` file](docker-dockerignore.md)
 
-[docker log]()
+[docker debug](docker-debug.md)
 
 [build from github](docker-build-from-github.md)
 

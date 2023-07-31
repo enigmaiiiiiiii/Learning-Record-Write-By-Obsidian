@@ -16,7 +16,21 @@ Nginx will read configuration file from this 3 places:
 
 ## Configuration File Structure
 
-top-level directive
+configuration file is made up of **directives**
+
+```
+server {
+    listen 80;
+    location / {
+        root /data/www;
+        index index.html index.htm;
+    }
+}
+```
+
+- `server`, `location`, `root`, `index` are all directives 
+
+top-level directives
 
 - `events`
 - `http`: 
@@ -56,7 +70,7 @@ server {
     listen 80;
     root /data/up1;
     location / {
-        proxy_pass http://localhost:8080
+        proxy_pass http://localhost:8080;
     }
 
     location ~ \.(git|jpg|png)$ {

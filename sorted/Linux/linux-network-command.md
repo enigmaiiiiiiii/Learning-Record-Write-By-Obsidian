@@ -16,7 +16,9 @@
 
 ## network status
 
-[netstat](linux-netstat.md)
+[lsof](linux-lsof.md)
+
+[netstat](linux-netstat.md): for both windows and linux
 
 ## remote connection
 

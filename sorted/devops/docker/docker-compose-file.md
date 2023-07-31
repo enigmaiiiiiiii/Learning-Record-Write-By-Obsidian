@@ -2,6 +2,8 @@
 
 * [What It Is](#what-it-is)
 * [Take A Look](#take-a-look)
+* [Mapping Host Ports](#mapping-host-ports)
+* [Expose Internal Ports](#expose-internal-ports)
 * [Volumes](#volumes)
 
 ## What It Is
@@ -9,7 +11,7 @@
 - A File defining 
   - [services](docker-compose-services.md)
   - [networks](docker-network.md)
-  - [volumes](docker-volumes.md)
+  - [volumes](docker-volume.md)
   - version(Optional)
   - configs
   - secrets
@@ -17,7 +19,6 @@
 - Default name is `docker-compose.yml`, sometimes named `compose.yml`
 
 ## Take A Look
-
 ```yml
 services:
   web:
@@ -66,6 +67,8 @@ expose:
 
 ## Volumes
 
+Use to define [volumes](docker-volume.md) and [bind mounts](docker-bind-mounts.md) 
+
 An Example Compose File
 
 ```yml
@@ -96,9 +99,8 @@ volumes:
 
 this example shows
 
-1. defined a [bind mount](docker-bind-mounts.md) for single service
-2. a named volume `mydata` used by `web` service
-3. a named volume `dbdata` used by `db` service, using old string format
+1. `web` service defined [a volume](docker-volume.md) named `mydate` and a [bind mount](docker-bind-mounts.md)
+2. `db` service defined [a volume](docker-volume.md) named `dbdata` and a [bind mount](docker-bind-mounts.md), use old string format
 
 Short Syntax
 

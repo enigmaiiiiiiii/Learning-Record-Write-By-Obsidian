@@ -14,7 +14,7 @@ nginx [options] [args]
   - reload
   - reopen
 
-`-g directives`
+`-g directives`: set global [directives](nginx-directives-list.md)
 
 `-?, -h`
 

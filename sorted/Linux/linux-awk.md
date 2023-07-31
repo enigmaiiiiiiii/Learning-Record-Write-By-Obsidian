@@ -14,6 +14,9 @@
 - it is useful when dealing with **structured text files**, like csv
 - *fields* represents the columns name
 - *lines* represents the rows
+- quote is matters
+  - single quote `'` awk program
+  - double quote `"` string
 
 ## practical use
 
@@ -40,6 +43,14 @@ with condition expression
 ```sh
 docker ps -a | awk '$2 == "hello-world" {print $1}'
 # print the container id whose image is hello-world
+```
+
+match regex with condition expression
+
+- use `~` and `!~` to match regex
+
+```sh
+docker ps -a | awk '$2 ~ /hello/ {print $1}'
 ```
 
 awk with script

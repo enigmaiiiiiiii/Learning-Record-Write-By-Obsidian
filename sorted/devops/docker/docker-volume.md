@@ -56,9 +56,7 @@ nginx:latest
 
 ## Volume In Dockerfile
 
-```dockerfile
-
-```
+[VOLUME Instruction](dockerfile-instructions.md#volume)
 
 ## Volume With Compose
 
