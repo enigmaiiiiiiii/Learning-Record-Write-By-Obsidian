@@ -19,7 +19,8 @@ Connection: keep-alive
 
 ## Host
 
-- 请求资源所在的服务器
+- specify the domain name of the server which client want to connect
+- this is essential when a single web server hosts multiple websites
 
 ## Connection
 
@@ -56,9 +57,9 @@ upgrade: HTTP/2.0, HTTPS, WebSocket
 
 ## User-agent
 
-- 发送请求的浏览器类型
+- Browser type of request sender
 
 ## Accept-language
 
-- 客户想要得到的语言
+- Language that client want to get
 

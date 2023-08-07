@@ -1,4 +1,4 @@
-# NodeJs模块管理系统
+# NodeJs Module System
 
 - [What is this](#what-is-this)
 - [Core mudules 核心模块](#core-mudules-核心模块)
@@ -19,12 +19,12 @@
   - [CommonJS Modules](javascript-module-commonjs.md)
 - Nodejs默认使用CommonJS模块加载模式
 
-> CommonJS是一种模块规范, 最初用于Nodejs
+> CommonJS is a module specification, initially designed for Node.js
 
-## Core mudules 核心模块
+## Core modules
 
 - `require('node: http');`
-- `require('http')`: 省略`node:`也能找到核心模块
+- `require('http')`: omit `node:`, the core module also can be found
 
 [Built In Object](nodejs-built-in-libraries.md)
 
@@ -42,13 +42,13 @@
 
 [module](nodejs-module-object.md)
 
-## 导出模块
+## Export module
 
-[导出模块](nodejs-module-exports.md)
+[Export Module](nodejs-module-exports.md)
 
-## 导入模块
+## Import Module
 
-[导入模块](nodejs-module-imports.md)
+[Import Module](nodejs-module-imports.md)
 
 ## How Node Determine Module System
 
@@ -86,6 +86,7 @@ console.log('in a, b.done = %j', b.done);
 exports.done = true;
 console.log('a.done');
 ```
+
 b.js
 
 ```javascript
@@ -105,9 +106,9 @@ const b = require('./b.js);
 console.log('in main, a.done = %j, b.done = %j', a.done, b.done);
 ```
 
-## Folders as module 文件夹当做模块
+## Folders as module
 
-- 在文件夹根目录添加`package.json`
+- add package.json to the folder root
 
 `somefolder/package.json`内容
 
@@ -118,16 +119,17 @@ console.log('in main, a.done = %j, b.done = %j', a.done, b.done);
 }
 ```
 
-- 当使用`require('./somefolder')`时, 时会尝试加载`./somefolder/lib/some-library.js`
-  - 如果没有`package.json`,会尝试加载
-    - `./somefolder/index.js`
-    - `./somefolder/index.node`
+when `require('./somefolder')`, it will try to load `./somefolder/lib/some-library.js` 
+
+- if there is no `package.json`, it will try to load:
+  - `./somefolder/index.js`
+  - `./somefolder/index.node`
 
 ## deep into module system
 
-require, exports, module变量在文件中并没有定义
+variable `require`, `exports`, `module` does not have definition in file
 
-- node 编译`.js`文件有一个包装文件的过程
+- node compile `.js` file with a wrapping process
 
 ```javascript
 (function (exports, require, moduel, __filename, __dirname)) {

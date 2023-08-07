@@ -15,7 +15,7 @@
 
 ## `ResultSet`: 
 
-- 查询结果对象
+- Object of query result 
 
 getter方法
 

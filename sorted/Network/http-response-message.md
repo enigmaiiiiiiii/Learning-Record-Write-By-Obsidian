@@ -1,10 +1,10 @@
-# Response Message
+# Http - Response Message
 
-* [Example response](#example-response)
-* [Status Line](#status-line)
-* [6 Header Lines](#6-header-lines)
-* [Empty Line `<CR><LF>`](#empty-line-crlf)
-* [entity body](#entity-body)
+- [Example response](#example-response)
+- [Status Line](#status-line)
+- [6 Header Lines](#6-header-lines)
+- [Empty Line `<CR><LF>`](#empty-line-crlf)
+- [entity body](#entity-body)
 
 ## Example response
 
@@ -60,33 +60,13 @@ official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools
 
 status code category
 
-<table>
-<tr>
-<td>1xx</td>
-<td>信息性状态码</td>
-<td>Not used, but reserved for future use</td>
-</tr>
-<tr>
-<td>2xx</td>
-<td>成功状态码</td>
-<td>The action was successfully received, understood, and accepted</td>
-</tr>
-<tr>
-<td>3xx</td>
-<td>重定向状态码</td>
-<td>further action must be taken in order to complete the request</td>
-</tr>
-<tr>
-<td>4xx</td>
-<td>客户端错误</td>
-<td>服务器无法处理请求</td>
-</tr>
-<tr>
-<td>5xx</td>
-<td>服务器错误</td>
-<td>服务器处理请求出错</td>
-</tr>
-</table>
+| category | description       | meaning                                                        |
+| :------: | :---------------- | :------------------------------------------------------------- |
+|   1xx    | status code       | Not used, but reserved for future use                          |
+|   2xx    | success code      | The action was successfully received, understood, and accepted |
+|   3xx    | redirect code     | further action must be taken in order to complete the request  |
+|   4xx    | client error code | server can't handle the request                                |
+|   5xx    | server error code | server raised error when handle the request                    |
 
 ## 6 Header Lines
 
@@ -105,4 +85,3 @@ status code category
 ## entity body
 
 - load the response content
-

@@ -1,15 +1,16 @@
-# 导入模块
+# Import Module
 
-## 从`node_modules`文件夹导入模块
+## Import Module From `node_modules` Folder
 
-- 传给`require("module_name")`的参数不是以`./`, `../`, `/`, nodejs则开始从`./node_modules`加载
-  - 可以指定特定文件`module_name/path/to/file`
-- `/home/ry/projects/foo.js`调用`require("bar.js")`时NodeJs的搜索顺序
+- Argument passed to `require("module_name")` is not begin with `./`, `../`, `/`, then NodeJs will start to load from `./node_modules`
+  - specify a particular file by `module_name/path/to/file`
+- Searching order when file `/home/ry/projects/foo.js` call `require("bar.js")`
   - `/home/ry/projects/node_modules/bar.js`
   - `/home/ry/node_modules/bar.js`
   - `/home/node_modules/bar.js`
   - `/node_modules/bar.js`
 
-## 从全局变量路径导入模块
+## Import Module From Global Variable Path
 
-- NodeJs在哪里都找不到指定模块时, 从NODE_PATH中搜索模块
+- when NodeJS can't find the module in any of the other locations, it will search from path in `NODE_PATH` environment variable
+

@@ -8,10 +8,14 @@
 - Different process's file descriptor **may not equal for same file**
 - A file descriptor is corresponding to a **opened** file
 - [Process](linux-process.md) access file by file descriptor
-- **Every** process create three standard file descriptors
-  - STDIN_FILENO(standard input, like keyboard)
-  - STDOUT_FILENO(standard output, like screen)
-  - STDERR_FILENO
+
+## 3 Standard File Descriptors
+
+**Every** process create three standard file descriptors
+
+- `STDIN_FILENO`(standard input, like keyboard), `/proc/<pid>/fd/0`
+- `STDOUT_FILENO`(standard output, like screen), `/proc/<pid>/fd/1`
+- `STDERR_FILENO`(standard error, like screen), `/proc/<pid>/fd/2`
 
 ## Take A Look
 
@@ -32,6 +36,11 @@ except system auto create file descriptor, there is a file descriptor 4, vim wil
 - `1` is STDOUT_FILENO
 - `2` is STDERR_FILENO
 - `4` is ...
+
+## Three standard file descriptors
+
+- `STDIN_FILENO` is standard input, like keyboard
+-
 
 ## Process Table
 

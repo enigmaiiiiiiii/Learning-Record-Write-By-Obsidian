@@ -1,7 +1,8 @@
 # Nginx - Configuration
 
 * [Configuration File](#configuration-file)
-* [How To Edit Configuration File](#how-to-edit-configuration-file)
+* [Configuration File Structure](#configuration-file-structure)
+* [How To Write Configuration File](#how-to-write-configuration-file)
 * [Setting Up Simple Proxy Server](#setting-up-simple-proxy-server)
 
 ## Configuration File
@@ -10,36 +11,37 @@ Nginx will read configuration file from this 3 places:
 
 > usually use only one of them
 
-- `/usr/local/nginx/conf/nginx.conf`
 - `/etc/nginx/nginx.conf`
-- `/usr/local/etc/nginx/nginx.conf`
+- ~~`/usr/local/nginx/conf/nginx.conf`~~
+- ~~`/usr/local/etc/nginx/nginx.conf`~~
 
 ## Configuration File Structure
 
 configuration file is made up of **directives**
 
 ```
-server {
-    listen 80;
-    location / {
-        root /data/www;
-        index index.html index.htm;
+http {
+    server {
+        listen 80;
+        server_name example.com;
+        location / {
+            root /data/www
+        }
     }
 }
 ```
 
-- `server`, `location`, `root`, `index` are all directives 
+- `server`, `location`, `root`, `index` are directives 
+- `server` block is the basic unit of configuration file
 
-top-level directives
+Top-Level directives
 
 - `events`
 - `http`: 
 - `mail`
 - `stream`
-- `server`: 
-- ...
 
-## How To Edit Configuration File
+## How To Write Configuration File
 
 ```conf
 http {
@@ -65,25 +67,42 @@ the file `/data/www/some/example.html` will be served
 
 For nginx config like This
 
-```conf
-server {
-    listen 80;
-    root /data/up1;
-    location / {
-        proxy_pass http://localhost:8080;
-    }
+```sh
+http {
+    server {
+        listen 80;
 
-    location ~ \.(git|jpg|png)$ {
-        root /data/iamges;
+        root /data/up1;
+
+        location / {
+            proxy_pass http://localhost:8080;
+        }
+
+        location /images {
+            root /data;
+        }
+
+        location ~ \.(git|jpg|png)$ {
+            root /data/images;
+        }
+
     }
 }
 ```
 
-- this will be a simple server listening on port 80
-- forward the request to `http://localhost:8080`
-- all requset will from `/data/up1 ` directory
-- request ending with `.git`, `.jpg`, `.png` will be mapped to `/data/images` directory
-  - `\.(git|jpg|png)` is a regular expression matching uri ending with `.git`, `.jpg`, `.png`
-  - regular expressoin should be preceded with `~`
+the config file above means:
 
+1. this will be a simple server listening on port 80
+2. request uri without [path](computer-network-uri.md) `http:/www.example.com/` will be forward to `http://localhost:8080`
+3. other request with [path](computer-network-uri.md) will be served from `/data/up1` directory
+4. request to `www.example.com/image/foo.jpg` will be served from `/data/images/foo.jpg`
+
+- If `/images` root write like this `root /data/images;`
+- This request will be served from `/data/images/images/foo.jpg`
+- generally, the served path is `/root` + `request/uri/path`
+
+5. request ending with `.git`, `.jpg`, `.png` will be mapped to `/data/images` directory
+
+- regular expressoin should be preceded with `~` or `~*`, `~*` means case insensitive
+- `\.(git|jpg|png)` is a regular expression matching uri ending with `.git`, `.jpg`, `.png`
 

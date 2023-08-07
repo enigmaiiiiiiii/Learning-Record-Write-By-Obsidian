@@ -8,3 +8,4 @@
 - ctrl + o & ctrl + i
 - vscode
 - bind `:` to `workbench.action.showCommands`
+

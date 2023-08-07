@@ -1,23 +1,28 @@
-# stream
+# Linux - Stream
 
-## 标准流
+## Standard Stream
 
-- 文件指针stdin, stdout, stderr 
+- file pointer `stdin`, `stdout`, `stderr` 
 
-> 对应文件描述符STDIN_FILENO,STDOUT_FILENO, STDERR_FILENO
+> corresponding to [file descriptors](linux-file-descriptor.md) are STDIN_FILENO, STDOUT_FILENO, STDERR_FILENO
 
-- 标准IO函数fopen()返回一个指向FILE对象的指针，该对象通常是一个结构, 结构包括缓冲区长度，缓冲区的字符，错误标志等
+- standard IO function return a pointer point [FILE]() Object, this object is a struct, include buffer length, buffer content, error flag, etc.
 
-## 缓冲类型
+tranlate 
 
-[[write()函数和printf()输出顺序]]
+## Buffer Type
 
-- 完全缓冲 : 缓冲区被填满时, 才将内容发送，并刷新缓冲区, 通常出现在文件输入中 
-- 行缓冲 : 出现换行符刷新缓冲区，如键盘输入，printf函数
-- 无缓冲 : 输入后直接输出，如write()函数
-- printf()行缓冲
-- write()无缓冲
-- 标准错误stderr无缓冲
+[A Simple Demonstrate](output-order-of-function-write()-and-printf().md)
+
+- full buffer : buffer is full, then send content and flush buffer, usually in file input
+- line buffer : flush buffer when newline appears, like keyboard input, printf function
+- no buffer : output directly after input, like `write()` function
+
+Some Buffer Type Of Common Stream
+
+- printf() is line buffer
+- write() is no buffer
+- std error is no buffer
 
 ## 设置缓冲
 

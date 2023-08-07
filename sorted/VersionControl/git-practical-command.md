@@ -1,15 +1,17 @@
 # Practical Command of Git
 
-- [Check Commit Log](#check-commit-log)
-- [Undo commit](#undo-commit)
-- [remove file from stage](#remove-file-from-stage)
-- [discard all local changes](#discard-all-local-changes)
-- [check staged files](#check-staged-files)
-- [set HEAD to specified status](#set-head-to-specified-status)
-- [found forgotten files after commit](#found-forgotten-files-after-commit)
-- [temporarily save current modification](#temporarily-save-current-modification)
-- [check all branches](#check-all-branches)
-- [Resovle Conflict](#resovle-conflict)
+* [print merges commit log](#print-merges-commit-log)
+* [Check Commit Log](#check-commit-log)
+* [Undo commit](#undo-commit)
+* [remove file from stage](#remove-file-from-stage)
+* [discard all local changes](#discard-all-local-changes)
+* [check staged files](#check-staged-files)
+* [Set HEAD to specified status](#set-head-to-specified-status)
+* [changes forgotten to add to the last commit](#changes-forgotten-to-add-to-the-last-commit)
+* [temporarily save current modification](#temporarily-save-current-modification)
+* [check all branches](#check-all-branches)
+* [Resovle Conflict](#resovle-conflict)
+* [A way to make the lastest commit as the initial commit](#a-way-to-make-the-lastest-commit-as-the-initial-commit)
 
 ## print merges commit log
 
@@ -58,9 +60,9 @@ git rm --cached -r [<dir>...] # recursive remove
 
 ## discard all local changes
 
-```shell
-git reset --hard # 丢弃跟踪的文件的所有本地改动, 撤销跟踪的文件
-git clean -fxd # 删除未跟踪的文件
+```sh
+git reset --hard # discard all local changes and untracked files
+git clean -fxd # delete untracked files
 ```
 
 ## check staged files

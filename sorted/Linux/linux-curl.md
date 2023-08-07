@@ -3,7 +3,7 @@
 ## Send GET request
 
 ```sh
-curl []
+curl [url]
 ```
 
 ## download file
@@ -32,7 +32,7 @@ description of this problem
 
 - after download a file, its size is 0
 - this is happenned when url being redirect
-- whose response is [status code 302](/sorted/network/http-response-message.md#状态行)
+- whose response is [status code 302](http-response-message.md#status-line)
 - the return content is not the file you want
 
 solution

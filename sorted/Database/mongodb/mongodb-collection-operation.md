@@ -20,4 +20,11 @@ db.demoCollection.insertOne({ x: 1 })
 db.collection.updateMany({}, {$rename: {"oldField": "newField"}})
 ```
 
+## show collections
+
+```sh
+show collections
+```
+
+
 

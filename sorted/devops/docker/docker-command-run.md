@@ -4,6 +4,13 @@
 * [Syntax](#syntax)
 * [Take A look](#take-a-look)
 * [options](#options)
+* [-it](#-it)
+* [-p](#-p)
+* [--volume](#--volume)
+* [--mount](#--mount)
+* [--entrypoint](#--entrypoint)
+* [--rm](#--rm)
+* [--name](#--name)
 
 ## What It Is
 

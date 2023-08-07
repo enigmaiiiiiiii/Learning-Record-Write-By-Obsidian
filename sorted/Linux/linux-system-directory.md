@@ -53,15 +53,27 @@ vs /usr/bin
 
 - a special file that discards all data written to it
 
+`dev/stdin`, `dev/stdout`, `dev/stderr`
+
+- special file link to [`/proc/self/fd/0`, `/proc/self/fd/1`, `/proc/self/fd/2`](linux-file-descriptor.md#3-standard-file-descriptors)
+
 ## /etc
 
 - system related **configuration** files
 - no binary here
-- for example
-  - `etc/passwd`: store user's information
-  - `etc/shadow`: store user's password
-  - `etc/profile`: [set environment variable](linux-system-environment.md)
 - it is recommended to backup this directory
+
+Useful files in this directory
+
+- `/etc/passwd`: store user's information
+- `/etc/shadow`: store user's password
+- `/etc/profile`: [set environment variable](linux-system-environment.md)
+- `/etc/hosts`: map hostname to locally ip addresses on without external [DNS](computer-network-dns.md)
+
+```
+127.0.0.1    localhost example.com 
+::1 localhost ip6-localhost ip6-loopback
+```
 
 ## /home
 
@@ -90,8 +102,14 @@ vs /usr/bin
 
 ## /proc
 
-- proc is abbreviation of process
+> `proc` is abbreviation of process
+
+- `/proc` is a pseudo-filesystem
 - content in this directory is not in **hard disk** but in **memory**
+
+`/proc/self`
+
+- a symbolic link to the process directory of the current process
 
 ## /root
 

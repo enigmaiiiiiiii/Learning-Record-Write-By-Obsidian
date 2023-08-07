@@ -31,6 +31,7 @@ WORKDIR /root/
 COPY app ./
 CMD ["./app"]
 ```
+
 the script to build the image with those two dockerfile
 
 ```bash
@@ -49,7 +50,7 @@ rm ./app
 break down the scripts
 
 - 1. builds the first image
-- 2. Creates a container form it to copy the artifact out
+- 2. Creates a container from it to copy the artifact out
 - 3. Builds the second image
 
 The Problems are

@@ -12,21 +12,23 @@
 
 [URL](computer-network-url.md)
 
-[URI](/sorted/network/computer-network-uri.md)
+[URI](computer-network-uri.md)
 
 [HTTPS](computer-network-https.md)
 
-[RPC](/sorted/network/network-rpc.md)
+[RPC](network-rpc.md)
 
 [SSL](computer-network-ssl-tls.md)
 
 [Domain Name](computer-network-domain-name.md)
 
+[Virtual Host](computer-network-virtual-host.md)
+
 [Client]
 
 [Web Media](network-web-media.md)
 
-[Browser](/sorted/network/network-browser.md)
+[Browser](network-browser.md)
 
 [Proxy](computer-network-proxy.md)
 

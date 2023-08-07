@@ -37,3 +37,11 @@ brew cleanup <package>
 ```sh
 brew info <package>
 ```
+
+## Generate Brewfile
+
+```sh
+brew bundle dump
+brew bundle dump --file=~/.dotfiles/Brewfile
+```
+

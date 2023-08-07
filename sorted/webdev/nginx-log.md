@@ -1,5 +1,15 @@
 # Nginx - Log
 
+## default log file
+
+- access.log: `/var/log/nginx/access.log`
+- error.log: `/var/log/nginx/error.log`
+
+## enable access log
+
+```
+```
+
 ## Set up Access Log
 
 ```c

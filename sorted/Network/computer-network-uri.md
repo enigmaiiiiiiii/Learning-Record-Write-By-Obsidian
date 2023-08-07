@@ -6,11 +6,19 @@
 
 ## Syntax
 
-`[scheme:]scheme-specific-part[#fragment]`
+`[scheme]://[authority][path][?query][#fragment]`
 
-- scheme: semantically meaningful protocol name, like `http`, `ftp`
-- scheme-specific-part: 协议中的具体内容，如http://www.baidu.com/someDepartment/picture.gif
-- fragment: 资源的片段，用于指定资源的一部分，如#fragment
+for example
+
+```
+https://www.example.com/products/laptops?brand=dell&price=1000#section-1`
+```
+
+- `https` is the scheme
+- `www.example.com` is the authority
+- `/products/laptops` is the path
+- `brand=dell&price=1000` is the query
+- `section-1` is the fragment
 
 ## Encoded URI
 

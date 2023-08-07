@@ -12,9 +12,11 @@ Start Nginx is Simple
 
 [Configuration](nginx-configuration.md)
 
+[Manage Server Block](nginx-server-block-management.md)
+
 [Command Line](nginx-command-line.md)
 
-[directives list](nginx-directives-list.md)
+[Directives list](nginx-directives-list.md)
 
 [Log](nginx-log.md)
 

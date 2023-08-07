@@ -1,5 +1,12 @@
 # Linux - Output Redirection
 
+* [Redirect Output](#redirect-output)
+* [Redirect Error](#redirect-error)
+* [Redirect But Append](#redirect-but-append)
+* [Redirect To Another Process](#redirect-to-another-process)
+* [Redirect to nowhere](#redirect-to-nowhere)
+* [Redirect to stdout and stderr](#redirect-to-stdout-and-stderr)
+
 ## Redirect Output
 
 - `> target`: redirect output to a target
@@ -61,5 +68,13 @@ tar: Exiting with failure status due to previous errors
 $ tar cvf temp.tar ls.txt ps.txt noexist.txt 2> /dev/null
 ls.txt
 ps.txt
+```
+
+## Redirect to stdout and stderr
+
+link file that wanted to redirect to [`/dev/stdout` and `/dev/stderr`](linux-system-directory.md#/dev)
+
+```sh
+$ ln -s /dev/stdout logfile
 ```
 

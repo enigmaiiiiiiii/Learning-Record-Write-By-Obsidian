@@ -19,13 +19,13 @@ lukas-reineke/indent-blankline.nvim
 
 ## cmp
 
-hrsh7th/nvim-cmp
-hrsh7th/cmp-buffer
-hrsh7th/cmp-path
-hrsh7th/cmp-cmdline
-saadparwaiz1/cmp_luasnip -- snippet completions
-hrsh7th/cmp-nvim-lsp
-hrsh7th/cmp-nvim-lua
+- hrsh7th/nvim-cmp
+- hrsh7th/cmp-buffer
+- hrsh7th/cmp-path
+- hrsh7th/cmp-cmdline
+- saadparwaiz1/cmp_luasnip -- snippet completions
+- hrsh7th/cmp-nvim-lsp
+- hrsh7th/cmp-nvim-lua
 
 L3MON4D3/LuaSnip
 
@@ -43,6 +43,10 @@ neovim/nvim-lspconfig
 williamboman/mason.nvim -- simple to use language server installer
 williamboman/mason-lspconfig.nvim -- simple to use language server installer
 jose-elias-alvarez/null-ls.nvim -- LSP diagnostics and code actions
+
+- go inside hove window: 
+  - <C-W><C-W> 
+  - or presee `gh` twice, for `gh` is bind to `vim.lsp.buf.hover`
 
 ## treesitter
 

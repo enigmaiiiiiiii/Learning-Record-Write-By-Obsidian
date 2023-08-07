@@ -1,5 +1,4 @@
-# 条件变量
-
+# Linux - Conditional Variable
 
 ```c++
 #include <pthread.h>
@@ -11,7 +10,7 @@ int pthread_cond_destroy(pthread_cond_t *cond);
 
 ```
 
-## 等待函数
+## waiting function
 
 ```c++
 int pthread_cond_wait(pthread_cond_t *restruct cond, 

@@ -1,8 +1,8 @@
 # ctypes
 
-- Python外部函数库
+- Python external function library
 
-## 载入动态链接库
+## Load Dynamic Link Library
 
 - ctypes导出cdll对象, 在windows系统中可导出windll和oledll
 - 通过操作cdll对象可载入动态链接库  

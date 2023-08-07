@@ -1,12 +1,12 @@
 # NextJs
 
-- [Features](#features)
-- [create NextJs app](#create-nextjs-app)
-- [I](#i)
-- [II](#ii)
-- [Directive](#directive)
-- [Rendering](#rendering)
-- [fast refresh](#fast-refresh)
+* [Features](#features)
+* [create NextJs app](#create-nextjs-app)
+* [Foundation](#foundation)
+* [Advanced](#advanced)
+* [Directive](#directive)
+* [Rendering](#rendering)
+* [Learn From Bug](#learn-from-bug)
 
 ## Features
 

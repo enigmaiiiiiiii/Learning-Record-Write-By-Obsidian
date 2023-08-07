@@ -44,6 +44,12 @@ echo $VIRTUAL_ENV
 $env:VIRTUAL_ENV
 ```
 
+## deactivate virtual environment
+
+```sh
+deactivate
+```
+
 ## Manage Package
 
 Installed Packge List

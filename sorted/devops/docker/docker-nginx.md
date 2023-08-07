@@ -1,5 +1,13 @@
 # Docker - Nginx
 
+* [Run Nginx Container](#run-nginx-container)
+* [New Nginx Image](#new-nginx-image)
+* [Manage Content and Configuration](#manage-content-and-configuration)
+* [Bind On Host File System](#bind-on-host-file-system)
+* [Copy To Container](#copy-to-container)
+* [Config With Docker Volume](#config-with-docker-volume)
+* [Nginx Plus](#nginx-plus)
+
 ## Run Nginx Container
 
 ```sh
@@ -46,7 +54,7 @@ Serveral Ways to Manage Content and Configuration:
 
 1. [Files maintained on docker host](#bind-on-host-file-system)
 2. [Copy Config File to container](#copy-to-container)
-3. [Files are maintained in the container(docker volume?)](#docker-volume)
+3. [Files are maintained in the container(docker volume?)](#config-with-docker-volume)
 
 ## Bind On Host File System
 
@@ -59,7 +67,7 @@ For Directory Structure
 ```
 .
 ├── conf
-│   └── nginx.conf
+│   └── nginx.conf
 ├── static
 │   └── index.html
 └── dockerfile
@@ -99,7 +107,7 @@ $ docker run --name hello-nginx -p 80:80 -d hello-nginx:1.0
 
 access use `localhost:80/index.html`
 
-## Docker Volume
+## Config With Docker Volume
 
 ```dockerfile
 FROM nginx
@@ -110,6 +118,18 @@ VOLUME /etc/nginx
 ```
 
 - [VOLUME instruction](dockerfile-instructions.md#volume)
+
+## Log
+
+- nginx docker images redirect log to stdout and stderr
+
+look into the nginx container's log directory
+
+```sh
+$ ls -l /var/log/nginx
+lrwxrwxrwx 1 root root 11 Jul  4 04:07 access.log -> /dev/stdout
+lrwxrwxrwx 1 root root 11 Jul  4 04:07 error.log -> /dev/stderr
+```
 
 ## Nginx Plus
 

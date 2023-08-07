@@ -2,7 +2,6 @@
 
 ## About Network Layer
 
-
 ## Glossary Of Network Layer
 
 [IP Protocol](computer-network-ip-protocol.md)

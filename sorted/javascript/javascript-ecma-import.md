@@ -5,7 +5,7 @@
 * [namespace import](#namespace-import)
 * [import multiple module](#import-multiple-module)
 * [import multiple module with alias](#import-multiple-module-with-alias)
-* [语法](#语法)
+* [Syntax](#syntax)
 
 ## whats this
 
@@ -13,10 +13,13 @@
 import default_name from 'module_path'
 ```
 
-- 用于导入另一个 module 导出(export)的绑定
-- module_path: 模块标识, 可以是绝对路径或相对路径，必须是纯字符串
-  - 相对路径名引用必须以`/, ./, ../`开始
-- 必须出现在顶部
+- use to import that are exported by another module
+- `module_path`: module identifier
+  - must be a string literal
+  - can be absolute or relative path
+  - relative path name must start with `/, ./, ../`
+- must be at the top level
+- when `module_path` is a directory, the `index.js` file in that directory is imported
 
 ## Default Import
 
@@ -24,20 +27,20 @@ import default_name from 'module_path'
 import myDefault from '/modules/my-module.js';
 ```
 
-- 导入`/modules/my-module.js`的[default export](javascript-module-export.md#default-export)
-- myDefault可以是*whatever you like*
+- import `/modules/my-module.js`的[default export](javascript-module-export.md#default-export)
+- myDefault can be *whatever you like*
 
 ```js
 import myDefault, * as MyModule from 'modules/my-module.js'
 ```
 
-- MyModule.default和myDefault指向同一个导出绑定
+- `MyModule.default` and `myDefault` reference to the same export
 
 ## namespace import
 
 - import a module namespace object
 - a module namespace object is an object describes all exports from a module
-- 可以有效避免命名冲突
+- can be used to avoid naming conflicts
 
 ```js
 import * as MyModule from '/modules/my-module.js'
@@ -71,9 +74,10 @@ import defaultExport, * as name from "module-name";
 import "module-name";
 ```
 
-- defaultExport: 默认接口引用名
-- module-name: 要导入的模块, 通常是目标模块的.js文件的路径名
-  - 可以不包括.js后缀
-  - 相对路径名引用必须以`/, ./, ../`开始
-- export: 被导入模块导出的接口名称
-- name: 导入模块对象的别名
+- `defaultExport`: module [default export]()
+- `module-name`: the module to import, usually a path to a .js file
+  - `.js` suffix is optional
+  - relative path name must start with `/, ./, ../`
+- `export1`, `export2`: name same of export by module
+- name: alias name of import module
+

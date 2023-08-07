@@ -18,7 +18,6 @@ check listening ports
 lsof -i -P | grep -i "listen"
 ```
 
-
 ## Options
 
 `-i address`: list internet and x.25 (HP-UX) network files
@@ -31,4 +30,9 @@ lsof -i -P | grep -i "listen"
 
 `-n`: inhibit the conversion of network numbers to host name
 
-`-P`: inhibits the conversion of **port numbers** to **port names** for network files
+`-p` 
+
+- list the files for the process
+
+`-P`: inhibit the conversion of port numbers to port names for network files
+

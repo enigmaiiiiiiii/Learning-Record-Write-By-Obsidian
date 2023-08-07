@@ -1,5 +1,10 @@
 # Docker - docker compose
 
+* [docker compose up](#docker-compose-up)
+* [docker compose build](#docker-compose-build)
+* [docker compose logs](#docker-compose-logs)
+* [docker compose restart](#docker-compose-restart)
+
 ## docker compose up
 
 description
@@ -27,11 +32,16 @@ docker compose up --detach
 options
 
 - `--build`: build images before starting containers
+- ...
 
 ## docker compose build
 
 - Use to rebuild image if change a service's [Dockerfile](docker-dockerfile.md) or [build context](docker-dockerfile.md)
 
 ## docker compose logs
+
+## docker compose restart
+
+
 
 

@@ -2,21 +2,27 @@
 
 ## Basic
 
-[Python Command]()
+[Glossary](python-glossary.md)
 
-[Python Interpreter]()
+[Hello Python](python-hello-python.md)
 
 [Virtual Environment](python-virtual-environment.md)
 
+[Import System](python-import-system.md)
+
 [pip](python-pip.md)
 
-[conda](python-conda.md)
+[Conda](python-conda.md)
 
-[Module](python-module.md)
+[Statement](python-statement.md)
 
-[Package](python-package.md)
+[iteration](python-iteration.md)
 
 [Syntax](python-syntax.md)
+
+[Class](python-class.md)
+
+[unittest](python-unittest.md)
 
 ## Python Programming
 
@@ -31,7 +37,6 @@
 [ctypes]
 
 ## Web Development Framework
-
 
 [flask](python-flask.md)
 

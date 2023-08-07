@@ -53,6 +53,20 @@ VS [dockerfile](docker-dockerfile.md)
 
 ## Compose Service
 
+```yaml
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+```
+
+- `backend` is a service name
+
+## docker compose network
+
+[docker compose network](docker-compose-network.md)
+
 ## Compose V2
 
 - From July 2023

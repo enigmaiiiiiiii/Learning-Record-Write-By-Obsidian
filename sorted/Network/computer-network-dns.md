@@ -15,6 +15,10 @@
 1. [routers](computer-network-router.md) deal with fixed-length [IP addresses](computer-network-ip-address.md)
 2. users are better at remembering [domain names](computer-network-domain-name.md)
 
+## What Happened When Typing A Domain Name In Browser
+
+
+
 ## DNS Query and Response Message
 
 <table align="center">
@@ -44,27 +48,8 @@
 	</tr>
 </table>
 
-- 16位标志字段
+- 16 bits
 
-<table align="center">
-    <tr align="center">
-        <td>QR</td>
-        <td>opcode</td>
-        <td>AA</td>
-        <td>TC</td>
-        <td>RD</td>
-        <td>RA</td>
-        <td>zero</td>
-        <td>rcode</td>
-    </tr>
-    <tr align = "center">
-        <td>1位</td>
-        <td>4位</td>
-        <td>1位</td>
-        <td>1位</td>
-        <td>1位</td>
-        <td>1位</td>
-        <td>3位</td>
-        <td>4位</td>
-    </tr>
-</table>
+| QR    | opcode | AA    | TC   | RD   | RA   | zero  | rcode |
+| ----- | ------ | ----- | ---- | ---- | ---- | ----- | ----- |
+| 1 bit | 4 bits | 1 bit | 1bit | 1bit | 1bit | 3bits | 4bits |
