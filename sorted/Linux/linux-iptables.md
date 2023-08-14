@@ -9,7 +9,6 @@
 * [Options](#options)
 * [Command break down](#command-break-down)
 * [multicast traffic](#multicast-traffic)
-* [options](#options-1)
 * [Examples](#examples)
 
 ## What Is This
@@ -66,15 +65,6 @@ Routing decision                                             |
                             XXXXXXXXXXXXXXXXXX
 ```
 
-## Options
-
-edit rules
-
-- rules can be edited by
-  - `-A`: appending rule to a [chain](#chains)
-  - `-I`: inserting rule at a specific position on the [chain](#chains)
-  - `-R`: replacing an existing rule
-  - `-D`: deleting a rule
 
 ## Command break down
 
@@ -127,9 +117,15 @@ num   pkts bytes target     prot opt in     out     source               destina
 - request from 10.0.0.85 to port 17500 will be accepted
 - request from other sources to port 17500 will be rejected
 
-## multicast traffic
+## Options
 
-## options
+edit rules
+
+- rules can be edited by
+  - `-A`: appending rule to a [chain](#chains)
+  - `-I`: inserting rule at a specific position on the [chain](#chains)
+  - `-R`: replacing an existing rule
+  - `-D`: deleting a rule
 
 - `-s`: source specification
   - `! -s`: source specification negation
@@ -140,10 +136,8 @@ num   pkts bytes target     prot opt in     out     source               destina
 1. showing current rules with line numbers
 
 ```sh
-
-```sh
 iptables -nvL --line-numbers
-```
+````
 
 - output looks like
 
@@ -161,3 +155,6 @@ Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
 adding rules
 
 save rules
+
+## multicast traffic
+

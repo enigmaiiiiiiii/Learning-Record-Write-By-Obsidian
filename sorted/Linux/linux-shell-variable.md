@@ -72,14 +72,14 @@ echo "You are in $whereami"
 
 ## Predefined variable
 
-- `UID`: current user id
-- `USER`: current user name
-- `HOME`: current user home directory
-- `PATH`: command search path
-- `LANG`: current language
-- `PWD`: current working directory
-- `RANDOM`: return random number, range from 0 to 32767
-- `HISTSIZE`: max number of command history
+- `$UID`: current user id
+- `$USER`: current user name
+- `$HOME`: current user home directory
+- `$PATH`: command search path
+- `$LANG`: current language
+- `$PWD`: current working directory
+- `$RANDOM`: return random number, range from 0 to 32767
+- `$HISTSIZE`: max number of command history
 
 ***
 
@@ -88,3 +88,5 @@ echo "You are in $whereami"
 - `$$`: current process id
 - `$!`: last process id running in background
 - `$@`: all parameters
+
+

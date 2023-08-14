@@ -25,12 +25,13 @@
 
 ## method property
 
-- 提交表单的[HTTP method](http-request-message.md)
-- 有限取值: 1.post 2.get 3.dialog
+- specific [http method](http-request-method.md) to submit form data
+- available value: 1.post 2.get 3.dialog
 
-get方法
+get method
 
-- 表单数据会附加在action属性的URL后, 用?隔开, 如`/url?key1=value1&key2=value2`
+- form data is appended to the action attribute URL with a '?' as a separator
+- the corresponding name/value pairs are concatenated after the '?', for example `/url?key1=value1&key2=value2`
 
 ## enctype属性
 
@@ -39,13 +40,13 @@ get方法
 method="post" enctype="multipart/form-data">
   First name: <input type="text" name="fname"><br>
   Last name: <input type="text" name="lname"><br>
-  <input type="submit" value="提交">
+  <input type="submit" value="submit">
 </form>
 ```
 
-- enctype属性规定将表单数据发送到服务器之前如何对其进行编码
+- enctype property specifies how the form-data should be encoded when submitting it to the server
 
-取值
+Available Value
 
 <table>
   <tr>

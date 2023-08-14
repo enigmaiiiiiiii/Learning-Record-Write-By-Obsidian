@@ -22,7 +22,7 @@ here are 3 concepts of prototype
 ## Prototype Property
 
 - named "prototype"
-- **only exists on constructor function**
+- **only exists on [constructor function](javascript-constructor.md)**
 
 ```js
 function Box() {

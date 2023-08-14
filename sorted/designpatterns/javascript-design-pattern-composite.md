@@ -1,9 +1,5 @@
 # Javascript Design Pattern - Composite
 
-introduce me the composite design pattern
-
-Composite design patterns is used under which secenarios
-
 ## Feature
 
 - kind of structural pattern
@@ -20,12 +16,12 @@ Composite design patterns is used under which secenarios
 
 ## Component
 
-- common **interface** or **abstract class** for all component
-- define the behavior that both [leaf](#leaf) and [composite](#composite) should implement
+- Common **interface** or **abstract class** for **[Leaf](#leaf) and [Composite](#composite)**
+- define the behavior that **BOTH [leaf](#leaf) AND [composite](#composite)** should implement
 
 ## Leaf
 
-- object in Composite design pattern represent a individual object
+- Object in composite design pattern represent a individual object
 - do not have any child
 
 ## Composite
@@ -35,6 +31,11 @@ Composite design patterns is used under which secenarios
   - usually contains a **traverse** and **recursive** operation
 
 ## Code
+
+significant difference between composite and leaf
+
+- ① : collection of child
+- ② : method to aggregate the net price of all child
 
 ```ts
 // component
@@ -51,7 +52,7 @@ interface Equipment {
 class CompositeEquipment implements Equipment {
   private name: string;
   private netPrice: number;
-  private equipment: Equipment[];
+  private equipment: Equipment[]; // ①
 
   constructor(name: string) {
     this.name = name;
@@ -65,6 +66,7 @@ class CompositeEquipment implements Equipment {
   setName(name: string): void {
     this.name = name;
   }
+  // ②
   getNetPrice(): number {
     let total = this.netPrice;
     for (const equipment of this.equipment) {
@@ -137,4 +139,71 @@ ch.setNetPrice(39.99);
 ch.add(fd1);
 ch.add(fd2);
 console.log(`${ch.getName()}: netPrice=${ch.getNetPrice()}`);
+```
+
+## Code II
+
+```ts
+abstract class FileSystemComponent {
+    protected name: string;
+ 
+    constructor(name: string) {
+        this.name = name;
+    }
+ 
+    abstract print(): void;
+}
+
+class File extends FileSystemComponent {
+    constructor(name: string) {
+        super(name);
+    }
+ 
+    print(): void {
+        console.log(`File: ${this.name}`);
+    }
+}
+
+class Folder extends FileSystemComponent {
+    private components: FileSystemComponent[] = [];
+  
+    constructor(name: string) {
+        super(name);
+    }
+ 
+    add(component: FileSystemComponent): void {
+        this.components.push(component);
+    }
+ 
+    print(): void {
+        console.log(`Folder: ${this.name}`);
+        this.components.forEach((component) => {
+            component.print();
+        });
+    }
+}
+
+let folder = new Folder('folder');
+let file1 = new File('File1');
+let file2 = new File('File2');
+
+folder.add(file1);
+folder.add(file2);
+
+let subfolder = new Folder('subfolder');
+let file3 = new File('File3');
+
+subfolder.add(file3);
+folder.add(subfolder);
+folder.print();
+```
+
+result
+
+```sh
+Folder: folder
+File: File1
+File: File2
+Folder: subfolder
+File: File3
 ```

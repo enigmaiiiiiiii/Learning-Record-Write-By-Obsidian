@@ -1,23 +1,29 @@
 # IoC Container
 
-## IoC: Inversion of Control(控制反转)
+## IoC: Inversion of Control
 
-- 将对象的管理权交给Spring
-- 对象由Spring创建, 如controller, 实体类, 
-- 组件定义为: 由Spring管理的对象
+- give object control right to Spring
+- object created by Spring, like [controller], [entity class]
+- Definition of Component: an object that is managed by Spring
 
-[Spring组件](spring-component.md)
+[Spring Component](spring-component.md)
 
-## DI: dependency injection(依赖注入)
+## DI: Dependency Injection
 
-- 为对象中的属性赋值
-- `@Autowired`: 完成自动注入
+> [DI explaination](design-pattern-dependency-injection.md)
 
-[Spring自动装配](spring-autowired.md)
+related annotations
 
-## configuration metadata(配置化的元数据)
+- [`@Autowired`](spring-autowired.md) annotate on [consumer](design-pattern-dependency-injection.md#consumer) class property
+- [`@Qualifier`]()
+- [`@Value`]
+- [`@Resource`]
+- [`@Component`]
+- [`@Service`, `@Repository`, `@Controller`]
 
-```xml
+## Configuration Metadata
+
+```html
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

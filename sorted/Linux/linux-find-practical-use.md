@@ -1,5 +1,12 @@
 # Linux Command find - Practical Use
 
+* [Find Single File In Root Directory](#find-single-file-in-root-directory)
+* [Find File Content](#find-file-content)
+* [Find file by type](#find-file-by-type)
+* [Find file by modified time](#find-file-by-modified-time)
+* [Find file And delete](#find-file-and-delete)
+* [Find bad symbolic link](#find-bad-symbolic-link)
+
 ## Find Single File In Root Directory
 
 ```sh

@@ -1,8 +1,8 @@
 # Javascript Design Patterns - State
 
-* [What It Is](#what-it-is)
+* [Feature](#feature)
 * [What Problem To Solve](#what-problem-to-solve)
-* [Components For State Pattern](#components-for-state-pattern)
+* [Class Consist of State Pattern](#class-consist-of-state-pattern)
 * [Context](#context)
 * [state interface](#state-interface)
 * [concrete states](#concrete-states)
@@ -65,7 +65,7 @@ interface State {
 
 state interface
 
-```js
+```ts
 abstract class State {
   abstract pullUp(wrapper?: Chain): void;
   abstract pullDown(wrapper?: Chain): void;

@@ -1,22 +1,11 @@
-#  触发条件
+#  Trigger Condition
 
-- 两种触发模式: 边界出发(ET)和电平触发(LT), 默认边界出发
+## Two Trigger Modes
 
-***
+- Edge Triggered, default trigger mode
+- Level Triggered
 
-假设发生以下场景:
-  1. 表示管道读取端的文件描述符（rfd）注册在 epoll 实例上。
-  2. 管道写入器在管道的写入端写入 2 kB 的数据。
-  3. 调用 epoll_wait() 将返回 rfd 作为准备好的文件描述符。
-  4. 管道阅读器从 rfd 读取 1 kB 的数据。
-  5. 完成对 epoll_wait() 的调用。
-  
-- 对于ET, 步骤2 write done 会产生一个事件, 并在步骤3被使用，由于步骤4不会消耗整个缓冲区的数据, 所以[epoll_wait()](linux-io-api-epoll-wait().md)在步骤5可能会无限期阻塞
-- 对于LT, 下次调用epoll_wait()时，仍返回同一文件描述符，仍可完成数据传输
-
-***
-
-## ET模式(边界触发) 
+## Edge Triggered
 
 - epoll_wait()检测到有事件发生时，应用程序必须立即处理该事件
 - 仅在文件描述符发生更改时才传递事件
@@ -25,8 +14,26 @@
   - 只有在read()和write()返回 [EAGAIN](errno.md) 后继续等待
 - 降低epoll事件的触发次数
 
-## LT模式(电平触发)
+## Level Triggered
 
 - epoll_wait()检测到发生变化时，通知应用程序，应用程序可以不立即处理，下次epoll_wait()时，再次通知应用程序，直到文件描述符被处理
-- 相当于高效的[poll()](linux-io-api-poll().md)，可以在任何使用poll()的地方使用epoll()的LT触发
+- equivalent to efficient [poll()](linux-io-api-poll().md), can be used anywhere poll() is used
 
+## Illustration
+
+assume the following scenario
+
+1. 表示管道读取端的文件描述符（rfd）注册在 epoll 实例上。
+2. 管道写入器在管道的写入端写入 2 kB 的数据。
+3. 调用 epoll_wait() 将返回 rfd 作为准备好的文件描述符。
+4. 管道阅读器从 rfd 读取 1 kB 的数据。
+5. 完成对 epoll_wait() 的调用。
+
+
+For ET 
+
+- In step 2, a event is generated when write done, and used in step 3. Because step 4 does not consume all the data in the buffer, [epoll_wait()](linux-io-api-epoll-wait().md) may block indefinitely in step 5
+
+For LT
+
+- 下次调用epoll_wait()时，仍返回同一文件描述符，仍可完成数据传输

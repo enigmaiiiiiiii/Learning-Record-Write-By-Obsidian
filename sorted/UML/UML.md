@@ -2,11 +2,11 @@
 
 * [What it is](#what-it-is)
 * [Represent A Class](#represent-a-class)
-* [Clear Triangle Arrow(Inheritance)](#clear-triangle-arrowinheritance)
-* [Line: Association](#line-association)
-* [Clear Diamond (Aggregation)](#clear-diamond-aggregation)
-* [Black Diamond (Composition)](#black-diamond-composition)
-* [Multiplicity.](#multiplicity)
+* [󰔷 Clear Triangle Arrow(Inheritance)](#󰔷-clear-triangle-arrow(inheritance))
+* [󰁔 Line: Association](#󰁔-line:-association)
+* [󱀝 Clear Diamond (Aggregation)](#󱀝-clear-diamond-(aggregation))
+* [󰣏 Black Diamond (Composition)](#󰣏-black-diamond-(composition))
+* [Multiplicity.](#multiplicity.)
 * [cheat sheet](#cheat-sheet)
 
 ## What it is
@@ -44,7 +44,7 @@
 +isActive
 ```
 
-## Clear Triangle Arrow(Inheritance)
+## 󰔷 Clear Triangle Arrow(Inheritance)
 
 continous line with Triangle Arrow: **Extends Class**
 
@@ -56,13 +56,13 @@ dot line with Triangle Arrow: **Implements Interface**
 - subclass implements an interface.
 - subclass points to the interface.
 
-## Line: Association
+## 󰁔 Line: Association
 
 line with `>` arrow
 
 - represents an association between classes.
 - The line could have text that described the association.
-- if A $\rightarrow$ B, then A has an instance of B
+- if A 󰁔 B, then A has an instance of B
 - not **visa versa**
 
 ```js
@@ -89,10 +89,10 @@ class B {
 }
 ```
 
-## Clear Diamond (Aggregation)
+## 󱀝 Clear Diamond (Aggregation)
 
-- Represents a "has a" relationship.
-- If diamond at A end, then A has an instance of B
+- Represents the "has a" relationship.
+- If diamond 󱀝 at A end, then A has an instance of B
 - And A cannot create without B
 
 ```ts
@@ -105,7 +105,7 @@ class A {
 class B {}
 ```
 
-## Black Diamond (Composition)
+## 󰣏 Black Diamond (Composition)
 
 - If diamond at A side, then typically B will **new** in A's constructor
 - B can't exist without A

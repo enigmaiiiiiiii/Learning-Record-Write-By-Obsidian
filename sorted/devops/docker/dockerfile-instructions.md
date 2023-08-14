@@ -218,6 +218,7 @@ those instructions can use [environment variable]()
 
 - [`ENTRYPOINT`](#entrypoint) is the command to execute when container is run
   - For you can execute command in container, ENTRYPOINT **default value** is `/bin/sh -c`
+  - You can pass argument start a container
 - `CMD` is the default argument to the `ENTRYPOINT`
 
 A image built by following Dockerfile 

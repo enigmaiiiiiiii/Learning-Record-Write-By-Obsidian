@@ -8,7 +8,7 @@
 
 ## What It Is
 
-- dump the traffic on a network
+- dump the [traffic] on a network
 
 ## How to use
 
@@ -72,7 +72,7 @@ sudo tcpdump -i eth0 -nn tcp and not port 22
 
 ## filter by flag
 
-if [flag](/sorted/network/computer-network-tcp-segment-structure.md#flags) looks like this
+if [flag](computer-network-tcp-segment-structure.md#flags) looks like this
 
 - this flags bits are contained in the octet 13
 

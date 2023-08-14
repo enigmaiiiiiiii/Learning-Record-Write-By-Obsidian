@@ -1,4 +1,5 @@
-# Linux - File Mode 
+# Linux - File Mode
+
 <table>
 <tr align="center">
 <td>st_mode</td>

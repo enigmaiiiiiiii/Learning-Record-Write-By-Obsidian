@@ -6,7 +6,7 @@
 
 [Tricks](linux-trick-commands.md)
 
-[wildcard](linux-wildcard.md)
+[Handle Stream](linux-handle-stream.md)
 
 [Output Redirection](linux-output-redirection.md)
 
@@ -56,6 +56,8 @@
 
 [Network](linux-network.md)
 
+[Distribution](linux-distribution.md)
+
 ## Shell Programming
 
 [Shell](linux-shell.md)
@@ -71,6 +73,8 @@
 [Root Jail](linux-change-root-jail.md)
 
 [Key-based Login Only](linux-key-based-login-only.md)
+
+[Dotfiles Version Control](linux-dotfiles-version-control.md)
 
 ## Linux System Programming
 
@@ -92,6 +96,3 @@
 
 [System Log](linux-system-log.md)
 
-## Blog
-
-[Dotfiles Version Control](linux-dotfiles-version-control.md)

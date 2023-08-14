@@ -39,10 +39,12 @@ nvim-telescope/telescope-media-files.nvim
 
 ## lsp
 
+```lua
 neovim/nvim-lspconfig
-williamboman/mason.nvim -- simple to use language server installer
+williamboman/mason.nvim -- language server manager for lsp
 williamboman/mason-lspconfig.nvim -- simple to use language server installer
 jose-elias-alvarez/null-ls.nvim -- LSP diagnostics and code actions
+```
 
 - go inside hove window: 
   - <C-W><C-W> 

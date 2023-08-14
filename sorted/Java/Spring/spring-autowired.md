@@ -1,4 +1,4 @@
-# 自动装配
+# Spring - Autowired
 
 - [Introduction](#introduction)
 - [take a look](#take-a-look)
@@ -7,18 +7,21 @@
 
 ## Introduction
 
-- 属性自动装配: 使用`@Autowired`注解
-- 方法参数自动装配: 不需要注解
+- property auto wiring: use `@Autowired` annotation
+- method's parameter auto wiring: no annotation needed
 
-由spring框架调用的方法: 构造方法，配置类中的`@Bean`注解方法
+method called by spring framework
 
-构造对象时, spring调用的构造方法
+- constructor 
+- `@Bean` annotated method in configuration class
 
-- 无参构造方法
-- 仅有一个构造方法时
-- 有多个有参数的构造方法时, 调用的是有`@Autowired`注解的构造方法
+When construct object, Which Constructor will be called by spring framework?
 
-## take a look
+- parameterless constructor
+- only one constructor
+- when there are multiple constructors with parameters, the constructor with `@Autowired` annotation will be called
+
+## Take A Look
 
 use [`@autowired`] to wire a bean to a property
 

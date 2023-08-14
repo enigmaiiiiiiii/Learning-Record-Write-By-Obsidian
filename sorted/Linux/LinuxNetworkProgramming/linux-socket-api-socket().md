@@ -1,4 +1,4 @@
-# socket函数
+# Linux API - socket()
 
 
 ```c++
@@ -7,9 +7,9 @@
 int socket(int domain, int type, int protocol);
 ```
 
--  用于创建socket
-- 成功返回[[socket]][[Linux_File_Descriptor]],  失败返回-1
-  
+- Used to create socket
+- success return [file discriptor]() of [socket](), fail return -1
+
 ## 参数
 
 - domain：使用的底层[协议族](地址族类参数取值.md)(ipv4,ipv6)

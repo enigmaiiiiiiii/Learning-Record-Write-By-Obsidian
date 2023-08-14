@@ -1,5 +1,12 @@
 # Mac OS - Brew
 
+* [Install Brew](#install-brew)
+* [Terminology](#terminology)
+* [Install package](#install-package)
+* [clean](#clean)
+* [Query Package Info](#query-package-info)
+* [Generate Brewfile](#generate-brewfile)
+
 ## Install Brew
 
 ```sh

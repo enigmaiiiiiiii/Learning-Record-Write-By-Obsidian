@@ -58,3 +58,29 @@ stream {
 - Used to define which server should be matched when a request is received
 - Essentailly is to match the [`Host` header](http-request-header.md#Host) in the request
 
+## upstream
+
+- use to define a group of servers
+- commonly used for defining [server cluster] for [load balancing]()
+
+```conf
+http {
+    upstream backend_hosts {
+        server backend1.example.com weight=5;
+        server backend2.example.com:8080;
+    }
+
+    server {
+        listen 80; 
+        server_name www.domain.com;
+        location / {
+            proxy_pass http://backend_hosts;
+        }
+    }
+}
+```
+
+- `www.domain.com` will be forwarded to one of the servers defined in `backend_hosts`
+
+
+

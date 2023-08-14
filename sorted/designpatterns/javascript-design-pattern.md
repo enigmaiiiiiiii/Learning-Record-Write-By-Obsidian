@@ -11,11 +11,11 @@ there are some common concepts in design patterns
 
 [Factory](javascript-design-pattern-factory-method.md)
 
+[Abstract Factory](javascript-design-pattern-abstract-factory.md)
+
 [Singleton](javascript-design-pattern-singleton.md)
 
 [Builder](javascript-design-pattern-builder.md)
-
-[Abstract Factory](javascript-design-pattern-abstract-factory.md)
 
 [Prototype](javascript-design-pattern-prototype.md)
 
@@ -35,7 +35,6 @@ there are some common concepts in design patterns
 
 [Proxy](javascript-design-pattern-proxy.md)
 
-
 ## Behavioral Patterns
 
 [Chain of Responsibility](javascript-design-pattern-chain-of-responsibility.md)
@@ -48,7 +47,7 @@ there are some common concepts in design patterns
 
 [Memento](javascript-design-pattern-memento.md)
 
-[observer](javascript-design-pattern-observer.md)
+[Observer](javascript-design-pattern-observer.md)
 
 [State](javascript-design-pattern-state.md)
 
@@ -59,3 +58,8 @@ there are some common concepts in design patterns
 [Visitor](javascript-design-pattern-visitor.md)
 
 [Interpreter](javascript-design-pattern-interpreter.md)
+
+## Framework Patterns
+
+[dependency injection](javascript-design-pattern-dependency-injection.md)
+

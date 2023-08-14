@@ -48,6 +48,7 @@ File Examines Options
 - `[ -c file ]` - True if file exists and is a [character special]() file
 - `[ -d file ]` - True if file exists and is a directory
 - `[ -h file ]` - True if file exists and is a symbolic link
+- `[ -x file ]` - True if file exists and is executable
 
 string compares operators
 

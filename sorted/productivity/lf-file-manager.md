@@ -1,25 +1,24 @@
 # LF
 
-- [What It Is](#what-it-is)
-- [Quick Reference](#quick-reference)
-- [Configuration](#configuration)
-- [Commands](#commands)
-- [Command Line Commands](#command-line-commands)
-- [Options](#options)
-- [Environment Variables](#environment-variables)
-- [Special Commands](#special-commands)
-- [Prefixes](#prefixes)
-- [Syntax](#syntax)
-- [Key Mappings](#key-mappings)
-- [Push Mappings](#push-mappings)
-- [Shell Commands](#shell-commands)
-- [Piping Shell Commands](#piping-shell-commands)
-- [Waiting Shell Commands](#waiting-shell-commands)
-- [Asynchronous Shell Commands](#asynchronous-shell-commands)
-- [Remote Commands](#remote-commands)
-- [File Operations](#file-operations)
-- [Searching Files](#searching-files)
-- [Opening Files](#opening-files)
+* [What It Is](#what-it-is)
+* [Quick Reference](#quick-reference)
+* [Configuration](#configuration)
+* [Commands](#commands)
+* [Command Line Commands](#command-line-commands)
+* [Options](#options)
+* [Environment Variables](#environment-variables)
+* [Special Commands](#special-commands)
+* [lf Config Syntax](#lf-config-syntax)
+* [Key Mappings](#key-mappings)
+* [Push Mappings](#push-mappings)
+* [Shell Commands](#shell-commands)
+* [Piping Shell Commands](#piping-shell-commands)
+* [Waiting Shell Commands](#waiting-shell-commands)
+* [Asynchronous Shell Commands](#asynchronous-shell-commands)
+* [Remote Commands](#remote-commands)
+* [File Operations](#file-operations)
+* [Searching Files](#searching-files)
+* [Opening Files](#opening-files)
 
 ## What It Is
 
@@ -154,19 +153,9 @@ History file `~/.local/share/lf/history`
 
 [Special Commands](lf-special-shell-commands.md)
 
-## Prefixes
+## lf Config Syntax
 
-|     |                |                                      |
-| --- | -------------- | ------------------------------------ |
-| :   | read (default) | builtin/custom command               |
-| $   | shell          | shell command                        |
-| %   | shell-pipe     | shell command running with the ui    |
-| !   | shell-wait     | shell command waiting for key press  |
-| &   | shell-async    | shell command running asynchronously |
-
-## Syntax
-
-[Syntax](lf-syntax.md)
+[Config Syntax](lf-syntax.md)
 
 ## Key Mappings
 

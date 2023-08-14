@@ -42,6 +42,13 @@ options
 
 ## docker compose restart
 
+## docker compose pull
+
+- Pulls images for services defined in a [docker-compose.yml](docker-compose-file.md) or [docker-compose.yaml](docker-compose-file.md) file, but does not start the containers
+
+## docker compose ps
+
+- List containers
 
 
 

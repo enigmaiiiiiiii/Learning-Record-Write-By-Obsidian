@@ -1,12 +1,12 @@
-# getter
+# JavaScript - Object Getter
 
-## Why getter
+## Why Getter
 
 - Calculating a value dynamically
 - Data validation
-- Encapsulation(封装)
+- Encapsulation
 
-## get 语法
+## get keyword
 
 ```js
 const obj = {
@@ -18,13 +18,15 @@ const obj = {
 console.log(obj.latest);  // test
 ```
 
-## 使用 delete 删除 getter
+## delete getter
+
+with operator `delete` to delete getter
 
 ```js
 delete obj.latest;
 ```
 
-## defineProperty定义getter
+## Define Getter With Object.defineProperty()
 
 ```js
 var obj = {a: 0}

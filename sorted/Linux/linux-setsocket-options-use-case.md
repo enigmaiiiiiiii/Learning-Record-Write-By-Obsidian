@@ -1,6 +1,8 @@
-# 使用场景
+# Socket Option - Use Case
 
-1. 复用socket
+## Reuse Socker
+
+1. Reuse socket
 
 > 如果在已经处于 ESTABLISHED状态下的socket(一般由端口号和标志符区分）调用close(socket)（一般不会立即关闭, 会经历[TIME_WAIT](tcp状态转移.md)的过程）后想继续重用该socket：
 
@@ -9,6 +11,8 @@ int reuse = 1;
 setsockopt(s, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(int));
 ```
 
+## 
+
 2. 如果要已经处于连接状态的soket在调用close(socket)后强制关闭，不经历TIME_WAIT的过程：
 
 ```c
@@ -16,15 +20,19 @@ int reuse=0;
 setsockopt(s,SOL_SOCKET ,SO_REUSEADDR,(const char*)& reuse,sizeof(int));
 ```
 
+## Set Send/Recv Timeout
+
 3. 在send(),recv()过程中有时由于网络状况等原因，发收不能预期进行,而设置收发时限：
 
 ```c
 int nNetTimeout=1000; // 1秒
-// 发送时限
+// send timeout
 setsockopt(socket，SOL_S0CKET, SO_SNDTIMEO，(char *)&nNetTimeout,sizeof(int));
-// 接收时限
+// receive timeout
 setsockopt(socket，SOL_S0CKET, SO_RCVTIMEO，(char *)&nNetTimeout,sizeof(int));
 ```
+
+## Set Socket Buffer
 
 4. 设置socket缓冲区
 
@@ -39,12 +47,16 @@ int nSendBuf=32*1024; // 设置为32K
 setsockopt(s,SOL_SOCKET,SO_SNDBUF,(const char*)&nSendBuf,sizeof(int));
 ```
 
+## Set Socket No Buffer
+
 5. 如果在发送数据时，希望不经历由系统缓冲区到socket缓冲区的拷贝而影响程序的性能
 
 ```c
 int nZero=0;
 setsockopt(socket，SOL_SOCKET,SO_SNDBUF，(char *)&nZero,sizeof(int));
 ```
+
+## 
 
 6. 同上在recv()完成上述功能(默认情况是将socket缓冲区的内容拷贝到系统缓冲区：
 

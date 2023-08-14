@@ -1,33 +1,63 @@
 # Design Pattern
 
-Creational Patterns
+## Common Concepts
 
-- [Factory](/sorted/designpatterns/design-patterns-factory.md)
-- [Singleton](/sorted/designpatterns/design-patterns-singleton.md)
-- [Builder](/sorted/designpatterns/design-patterns-builder.md)
-- [Abstract Factory](/sorted/designpatterns/design-patterns-abstract-factory.md)]
-- [Prototype](/sorted/designpatterns/design-patterns-prototype.md)
+there are some common concepts in design patterns
 
-Structural Patterns
+- client: the object that use the pattern
+- ... ## Creational Patterns
 
-- [Adapter](/sorted/designpatterns/design-patterns-adapter.md)
-- [Bridge](/sorted/designpatterns/design-patterns-bridge.md)
-- [Composite]
-- [Decorator]
-- [Facade]
-- [Flyweight]
-- [Proxy]
+[Factory](javascript-design-pattern-factory-method.md), [Factory java](/sorted/designpatterns/design-patterns-factory.md)
 
-Behavioral Patterns
+[Abstract Factory](javascript-design-pattern-abstract-factory.md)
 
-- [Chain of Responsibility](/sorted/designpatterns/design-patterns-chain-of-responsibility.md)
-- [Command](/sorted/designpatterns/design-patterns-command.md)
-- [Interpreter](/sorted/designpatterns/design-patterns=interpreter.md)
-- [Iterator](/sorted/designpatterns/design-patterns-iterator.md)
-- [Mediator](/sorted/designpatterns/design-patterns-mediator.md)
-- [Memento](/sorted/designpatterns/design-patterns-memento.md)
-- [observer]()
-- [State]()
-- [Strategy]()
-- [Template Method]()
-- [Visitor]()
+[Singleton](javascript-design-pattern-singleton.md), [Singleton java](/sorted/designpatterns/design-patterns-singleton.md)
+
+[Builder](javascript-design-pattern-builder.md)
+
+[Prototype](javascript-design-pattern-prototype.md)
+
+## Structural Patterns
+
+[Adapter](javascript-design-pattern-adapter.md)
+
+[Bridge](javascript-design-pattern-bridge.md)
+
+[Composite](javascript-design-pattern-composite.md)
+
+[Decorator](javascript-design-pattern-decorator.md)
+
+[Facade](javascript-design-pattern-facade.md)
+
+[Flyweight](javascript-design-pattern-flyweight.md)
+
+[Proxy](javascript-design-pattern-proxy.md)
+
+## Behavioral Patterns
+
+[Chain of Responsibility](javascript-design-pattern-chain-of-responsibility.md)
+
+[Command](javascript-design-pattern-command.md)
+
+[Iterator](javascript-design-pattern-iterator.md)
+
+[Mediator](javascript-design-pattern-mediator.md)
+
+[Memento](javascript-design-pattern-memento.md)
+
+[Observer](javascript-design-pattern-observer.md)
+
+[State](javascript-design-pattern-state.md)
+
+[Strategy](javascript-design-pattern-strategy.md)
+
+[Template Method](javascript-design-pattern-template-method.md)
+
+[Visitor](javascript-design-pattern-visitor.md)
+
+[Interpreter](javascript-design-pattern-interpreter.md)
+
+## Framework Patterns
+
+[dependency injection](design-pattern-dependency-injection.md)
+

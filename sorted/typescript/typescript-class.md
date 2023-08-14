@@ -1,18 +1,19 @@
-# class
+# Typescript - Class
 
-- [constructor](#constructor)
-- [method](#method)
-- [getters/setters](#getterssetters)
-- [readonly](#readonly)
-- [index signature](#index-signature)
-- [inheritance](#inheritance)
-- [Member Visibility](#member-visibility)
-- [Generic Classes](#generic-classes)
-- [about `this` in javascript](#about-this-in-javascript)
-- [a function that loses its "this" context](#a-function-that-loses-its-this-context)
-- [this as parameter type annotation](#this-as-parameter-type-annotation)
-- [Class Expressions](#class-expressions)
-- [Abstract Classes And Members](#abstract-classes-and-members)
+* [Constructor](#constructor)
+* [method](#method)
+* [getters/setters](#getters/setters)
+* [readonly](#readonly)
+* [index signature](#index-signature)
+* [inheritance](#inheritance)
+* [Member Visibility](#member-visibility)
+* [Generic Classes](#generic-classes)
+* [about `this` in javascript](#about-`this`-in-javascript)
+* [arrow function](#arrow-function)
+* [this as method parameter](#this-as-method-parameter)
+* [this as parameter type annotation](#this-as-parameter-type-annotation)
+* [Class Expressions](#class-expressions)
+* [Abstract Classes And Members](#abstract-classes-and-members)
 
 ## Constructor
 
@@ -28,6 +29,18 @@ class GoodGreeter {
 ```
 
 ## method
+
+```ts
+class Greeter {
+    name: string;
+    constructor(name: string) {
+        this.name = name;
+    }
+    sayHello() {
+        return "hello" + this.name;
+    }
+}
+```
 
 ## getters/setters
 
@@ -48,7 +61,7 @@ console.log(c.length); // 10
 
 > only `get` no `set`, property is auto readonly
 
-可以设置多种类型的getter/setter
+~~getter/setter can be [overload](typescript-function.md)~~
 
 ```ts
 class Thing() {
@@ -63,7 +76,7 @@ class Thing() {
 ```
 ## readonly
 
-- 不能在constructor之外修改
+- can't not be changed outside the constructor
 
 ```ts
 class Greeter {
@@ -133,9 +146,9 @@ Inheriting built-in types
 
 ## Member Visibility
 
-- public: default, can be accessed from anywhere
-- protected: only be accessed inside **class self** or **sub class**
-- private: only be accessed inside **class self**
+- `public`: default, can be accessed from anywhere
+- `protected`: only be accessed inside **class self** or **sub class**
+- `private`: only be accessed inside **class self**
 
 > access control only limit to **syntax check**, that is to say, JavaScript code can still access any member
 

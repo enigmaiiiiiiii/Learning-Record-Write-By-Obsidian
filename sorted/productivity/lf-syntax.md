@@ -5,6 +5,7 @@
 * [cmap](#cmap)
 * [cmd](#cmd)
 * [no prefix](#no-prefix)
+* [Prefixes](#prefixes)
 * [map to multiline command](#map-to-multiline-command)
 * [Unbind Keys](#unbind-keys)
 * [Unbind Command](#unbind-command)
@@ -63,7 +64,7 @@ cmd usage $du -h -d1 | less
 
 ## no prefix
 
-If there is no [prefix](#prefixes) then ':' is assumed:
+If there is no [prefix](#prefixes) then ':' is assumed
 
 ```sh
 map zt set info time
@@ -75,6 +76,16 @@ especially useful for 'map' and 'cmd' commands:
 ```sh
 map st :set sortby time; set info time
 ```
+
+## Prefixes
+
+|     |                |                                      |
+| --- | -------------- | ------------------------------------ |
+| :   | read (default) | builtin/custom command               |
+| $   | shell          | shell command                        |
+| %   | shell-pipe     | shell command running with the ui    |
+| !   | shell-wait     | shell command waiting for key press  |
+| &   | shell-async    | shell command running asynchronously |
 
 ## map to multiline command
 

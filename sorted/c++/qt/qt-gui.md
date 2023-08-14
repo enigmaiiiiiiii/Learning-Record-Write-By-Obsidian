@@ -1,16 +1,16 @@
 # GUI
 
-[主窗口框架QMainWindow](qt-gui-mainwindow-frame.md)
+[QMainWindow](qt-gui-mainwindow-frame.md)
 
 [QWidget](qt-gui-qwidget.md)
 
-[.ui文件](qt-gui-uifile.md)
+[.ui file](qt-gui-uifile.md)
 
-[拖放操作](qt-gui-draganddrop.md)
+[Drag And Drop](qt-gui-draganddrop.md)
 
-[富文本](qt-gui-rich-text.md)
+[Rich Text](qt-gui-rich-text.md)
 
-[快捷键](qt-shortcut.md)
+[Shortcut](qt-shortcut.md)
 
 [WindowFlags](qt-windowflags.md)
 

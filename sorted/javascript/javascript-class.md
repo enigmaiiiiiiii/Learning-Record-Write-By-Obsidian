@@ -2,21 +2,19 @@
 
 > essentially is a special [function](javascript-function.md)
 
-- [定义一个class](#定义一个class)
-- [构造方法](#构造方法)
-- [method](#method)
-- [静态方法](#静态方法)
-- [Field(Property)](#fieldproperty)
-- [继承](#继承)
-- [抽象基类](#抽象基类)
-- [可以继承ECMA内置类型](#可以继承ecma内置类型)
-- [局部Class](#局部class)
-- [javascript中的class](#javascript中的class)
-- [new和class有什么关系](#new和class有什么关系)
+* [Define a class](#define-a-class)
+* [Contructor](#contructor)
+* [Method](#method)
+* [Static Method](#static-method)
+* [Field(Property)](#field(property))
+* [Inheritance](#inheritance)
+* [Abstract class](#abstract-class)
+* [ECMA built-in type can be inherited](#ecma-built-in-type-can-be-inherited)
+* [Local Class](#local-class)
 
-## define a class
+## Define a class
 
-直接添加在class内部(class{}之间)的属性会添加在prototype上
+property added directly to class will be added to [prototype](javascript-three-prototype-concepts.md#prototype-property)
 
 ```js
 class Rectangle {
@@ -106,8 +104,9 @@ class Point {
 
 ## Abstract class
 
-- ECMAScript没有提供抽象基类的语法
-- 可以**目标抽象类**的构造函数使用new.target来判断该类是否可以被创建
+> ECMAScript DOES NOT provide abstract class syntax
+
+- You can use `new.target` in target abstract class to determine whether the class can be created
 
 ```js
 class Vehicle {

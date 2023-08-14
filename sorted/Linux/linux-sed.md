@@ -12,8 +12,8 @@ sed 's/old/new/' file # modify file
 ```
 
 - generally speaking
-  - when a command output is looks like this
-  - The wanted input is look like that
+  - when a command output is looks like something
+  - The wanted input is look like another thing
   - use `sed` to transform the output to wanted input
 
 ## Syntax

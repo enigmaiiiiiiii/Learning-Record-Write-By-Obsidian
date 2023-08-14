@@ -1,65 +1,11 @@
 # Linux - Tricks
 
-* [pipe](#pipe)
-* [sed](#sed)
-* [awk](#awk)
-* [head](#head)
-* [grep](#grep)
 * [alias](#alias)
 * [get last command output](#get-last-command-output)
 * [let command output as another command's parameter](#let-command-output-as-another-command's-parameter)
 * [jump back to previous directory](#jump-back-to-previous-directory)
 * [Running Command In Background](#running-command-in-background)
 
-## pipe
-
-- use `|` to redirect output to another process
-- can not use with file directly
-- those command usually follow after "|"
-  - [`grep`]()
-  - [`awk`]()
-  - [`sed`]()
-  - [`sort`]()
-  - [`uniq`]()
-  - [`wc`]()
-  - [`head`]()
-  - [`tail`]()
-
-## sed
-
-[sed](linux-sed.md)
-
-## awk
-
-[awk](linux-awk.md)
-
-## head
-
-- use for display first nth lines of a file or standard input
-
-for command
-
-```sh
-dnf list installed | head -n 5
-```
-
-for file
-
-```sh
-head -n 5 /etc/passwd
-```
-
-## grep
-
-- use for searching and filtering text based on patterns
-
-`grep [-a/c/i/n/v] 'string' filename`
-
-- `-a`:
-- `-c`:
-- `-i`: ignore case
-- `-n`:
-- `-v`: reverse match
 
 ## alias
 

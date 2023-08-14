@@ -2,7 +2,7 @@
 
 ## Feature
 
-- kind of structural pattern
+- A structural pattern
 - different with other patterns it not about decouple things
   - it concerned with **memeory optimization**
   - reduce memory usage and improve performance

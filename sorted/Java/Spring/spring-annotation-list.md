@@ -1,4 +1,4 @@
-# 注解列表
+# Spring - Annotation List
 
 - [`@Value("${key}")`](#valuekey)
 - [`@ControllerAdvice`](#controlleradvice)
@@ -55,16 +55,16 @@ public @interface RequestMapping {
     - `{arg_name}`: arg_name对应**方法参数名**
     - 可以使用`{arg_name: regex}`匹配正则表达式(regex), 多个正则表达式不能有交集
   - 优先匹配不包含占位符的资源名
-- method: 表示允许的[请求方式](../../network/http-request-message.md#请求行), 默认不限制请求方式
+- method: represents the [request method](http-request-method.md) to be mapped to the controller method, default unrestricted
   - `@RequestMapping(value="/list", method=RequestMethod.GET)`: 表示只允许GET请求
 
-## `@ResponseBody` 
+## `@ResponseBody`
 
-- 注解方法返回字符串内容作为响应体内容
+- method annotated with `@ResponseBody` will not be resolved to a view but will be written directly to the [HTTP response body](http-response-message.md#entity-body)
 
 ## `@RequestBody`
 
-- 注解方法参数, 表示参数来自解析格式为json的请求体
+- annotate method parameter, indicates that the parameter comes from the [request body](http-request-message.md#request-body) with json format
 
 ## `@RestController`
 

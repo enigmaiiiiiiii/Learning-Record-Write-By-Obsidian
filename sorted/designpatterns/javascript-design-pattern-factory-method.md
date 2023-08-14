@@ -23,7 +23,7 @@ factory method
 
 - always receive one or more parameters
 
-## code
+## Code
 
 ```ts
 // product interface
@@ -53,7 +53,7 @@ class SUV implements Car {
 }
 
 // base factory
-class carFactory {
+class CarFactory {
   createCar(type: string): Car {
     if (type === 'Sedan') {
       return new Sedan();
@@ -67,7 +67,7 @@ class carFactory {
 }
 
 // client
-const factory = new carFactory();
+const factory = new CarFactory();
 
 const mySedan = factory.createCar('Sedan');
 mySedan.start();

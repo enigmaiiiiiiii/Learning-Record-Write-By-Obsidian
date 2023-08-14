@@ -1,6 +1,6 @@
-# 马尔可夫过程
+# Markov Decision Process 
 
-当前状态的下一状态只和当前状态有关系, 和过去状态没有关系
+current state's next state only related to current state, not related to past state
 
 $P(s_{t+1}|s_{t},s_{t-1},...)=P(s_{t+1}|s_{t})$
 

@@ -1,4 +1,4 @@
-# Maven依赖
+# Maven - Subelement of "Dependency" Element 
 
 ## groupId, artifactId, version
 
@@ -6,11 +6,11 @@
 
 `<scope>compile</scope>`: default scope, 类路径可用, 会传播到其它依赖
 
-- 可通过import导入
+- Can be import by `import`
 
-`<scope>provided</scope>`: 运行时依赖
+`<scope>provided</scope>`: runtime dependency
 
-- web application 部署在container中, container本身提供依赖和相关lib
+- web application deploy to container, container provide dependency and related lib
 
 ```xml
 <dependency>
@@ -21,9 +21,9 @@
 </dependency>
 ```
 
-`<scope>runtime</scope>`: 运行时依赖, 不会出现在编译后的class文件中
+`<scope>runtime</scope>`: runtime dependency, won't appear in compiled class file
 
-- 在完成项目代码时并不需要的依赖
+- Does not need to be available during compile time
 
 ```xml
 <dependency>

@@ -1,6 +1,6 @@
 # Javascript Design Patterns - Adapter
 
-* [what it is](#what-it-is)
+* [Feature](#feature)
 * [What problem to Solve](#what-problem-to-solve)
 * [structure of adapter pattern](#structure-of-adapter-pattern)
 * [Target](#target)

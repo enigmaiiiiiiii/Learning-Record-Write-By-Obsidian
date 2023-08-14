@@ -21,7 +21,7 @@ Connection: keep-alive
 
 - first line of request message, including
   - [request method](http-request-method.md)
-  - [URI](network-uri.md)
+  - [URI](computer-network-uri.md)
   - request version
 
 request method, including GET, POST, HEAD, PUT, DELETE
@@ -32,7 +32,6 @@ request method, including GET, POST, HEAD, PUT, DELETE
 
 [request-header](http-request-header.md)
 
-
 ## empty line
 
 represent `<CR><LF>`
@@ -41,4 +40,7 @@ represent `<CR><LF>`
 - `<LF>`
 
 ## request body
+
+- when request method is GET, request body is empty
+- when request method is POST, request body is the [form](html-element-form.md) provided by user
 

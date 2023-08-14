@@ -3,11 +3,11 @@
 ## Feature
 
 - kind of creational pattern
-- create **object family**
+- Use to Create **object family**
 
-## VS Factory Method
+## VS Factory Design Pattern
 
-- Factory Method: focus on creating single type product
+- Factory Design Pattern: focus on creating single type product
 
 ## Structure of Abstract Factory Pattern
 

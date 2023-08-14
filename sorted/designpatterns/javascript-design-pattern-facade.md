@@ -2,7 +2,7 @@
 
 ## Feature
 
-- Kind of structural pattern
+- A Structural Pattern
 - IN SUMMARY, provide simplified interface to a complex subsystem
 
 > subsystem may have many class

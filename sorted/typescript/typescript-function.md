@@ -32,7 +32,7 @@ more about function type [Compatibility](typescript-type.md#type-compatibility)
 
 ## Optional Parameters
 
-`function f(param_name?: type)`表示可选参数
+`function f(param_name?: type)` means `param_name` is optional
 
 ```ts
 function f(x?: number) {
@@ -53,9 +53,10 @@ function greet(name: string = "world") {
 ## Function Overload
 
 > here is a overload signature
-> ```ts
-> function greet(name: string): string;
-> ```
+
+```ts
+function greet(name: string): string;
+```
 
 - by write several overload signatures, **followed** by the **function implementation**
 - a function can have multiple overload signatures, but only one implementation

@@ -1,4 +1,4 @@
-# get start
+# Typescript - get start
 
 * [Install](#install)
 * [CLI Tools](#cli-tools)
@@ -6,51 +6,40 @@
 * [run single .ts file](#run-single-ts-file)
 * [index.d.ts](#indexdts)
 
-## Install
+## Install Typescript Compiler
 
 **Install** typescript globally:
 
 ```bash
 npm install -g typescript
-npm install -g ts-node
 ```
 
 **Install** typescript in my project:
 
 ```bash
 npm install -D typescript
-npm install -D ts-node
 ```
 
-## CLI Tools
+## Command Line Tools tsc
+
+- Use to **compile ts to js**, not execute it
+- Installed with typescript
+
+For Globally Installed Typescript
+
+```sh
+tsc hello.ts
+```
+
+For Locally Installed Typescript
+
+```sh
+npx tsc hello.ts
+```
+
+## Third Party Tools
 
 [ts-node](typescript-ts-node.md)
-
-## compile single .ts file to js:
-
-`tsc`: compile ts to js
-
-```bash
-tsc script.ts
-```
-
-## run single .ts file
-
-use `ts-node`: compile and run
-
-> **excute** a script as `node` + `tsc`
-
-```s
-ts-node script.ts
-```
-
-run single script in project with package.json
-
-- use `--skipProject` to skip loading `tsconfig.json`
-
-```s
-ts-node --skipProject script.ts
-```
 
 ## index.d.ts
 

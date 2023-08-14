@@ -60,3 +60,17 @@ class Student(Person):
 
 `__eq__()`
 
+`__dict__`
+
+- store an **object**'s(writable) attributes
+- which means the following code first output is `{}`
+
+```py
+class Foo:
+    name = "foo"
+f = Foo()
+print(f.__dict__) # {}
+print(f.__class__.__dict__) # {'__module__': '__main__', 'name': 'foo', ...}
+```
+
+

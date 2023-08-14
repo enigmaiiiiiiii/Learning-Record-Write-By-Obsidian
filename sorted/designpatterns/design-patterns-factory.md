@@ -2,8 +2,6 @@
 
 ## Feature
 
-
-
 ## Interface
 
 Creator.java
@@ -28,9 +26,11 @@ public interface Product {
 }
 ```
 
-## Implementation
+## Example
 
-ConcreteCreator.java
+Factory
+
+- `ConcreteCreator.java`
 
 ```java
 public class ConcreteCreator implements Creator {
@@ -42,7 +42,9 @@ public class ConcreteCreator implements Creator {
 }
 ```
 
-ConcreteProduct.java
+Product
+
+- `ConcreteProduct.java`
 
 ```java
 public class ConcreteProduct implements Product {
@@ -59,7 +61,7 @@ public class ConcreteProduct implements Product {
 }
 ```
 
-## Use Case
+application code
 
 ```java
 public class FactoryMethodDemo {

@@ -1,5 +1,11 @@
 # Linux - Curl
 
+* [Send GET request](#send-get-request)
+* [download file](#download-file)
+* [handle url redirect](#handle-url-redirect)
+* [download file with authentication](#download-file-with-authentication)
+* [Get Stuck](#get-stuck)
+
 ## Send GET request
 
 ```sh
@@ -70,3 +76,8 @@ curl -L [url]
 ```bash
 curl -u username:password https://someurl
 ```
+
+## Getting Stuck
+
+[Getting Stuck](linux-curl-getting-stuck.md)
+

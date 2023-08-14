@@ -1,4 +1,4 @@
-# Constructor function
+# JavaScript - Constructor function
 
 ## What is this
 

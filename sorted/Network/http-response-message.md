@@ -37,24 +37,25 @@ Format: `<HttpVersion> <xxx> <status>`
 
 official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools.ietf.org/html/rfc1945#page-26)
 
-- 200 0K：请求成功，信息在返回的响应报文中
-- 201 Created: 请求成功
-- 202 Accepted: 请求成功
+- 200 0K：request success and response data is included in the response message
+- 201 Created: request success, and a new resource has been created
+- 202 Accepted: request accepted for processing, but the processing has not been completed
 - 204 No Content
 - 301 Moved Permanently：请求的对象已经被永久转移了，新的URL定义在响应报 文的Location:首部行中。客户软件将自动获取新的URL。
 - 302 Moved Temporarily：请求的对象已经被临时转移了
 - 304 Not Modified：请求的对象未被修改，服务器返回此状态码时，不会返回响应报文的内容
 - 400 Bad Request: 一个通用差错代码，指示该请求不能被服务器理解
 - 401 Unauthorized: 未授权
-- 403 Forbidden: 请求被服务器拒绝
-- 404 Not Found: 请求的文档不在服务器上
+- 403 Forbidden: request is refused by server
+- 404 Not Found: request resource is not found
 - 500 Internal Server Error
 - 501 Not Implemented: 服务器不支持请求的功能，无法完成请求。
-- 502 Bad Gateway: 服务器作为网关或代理，从上游服务器收到了无效的响应。
+- 502 Bad Gateway: server as gateway or proxy, receive invalid response from upstream server
 - 503 Service Unavailable: 服务器目前无法使用（由于超载或停机维护）。
 - 505 HTTP Version Not Supported: 服务器不支持请求的HTTP版本。
 
 > 服务器响应为302时，有些浏览器会发送空的请求
+> when server response status 302, some browser will send empty request
 
 - 101 Switching Protocols: 服务器将遵从客户的请求转换到另外一种协议
 
@@ -85,3 +86,4 @@ status code category
 ## entity body
 
 - load the response content
+

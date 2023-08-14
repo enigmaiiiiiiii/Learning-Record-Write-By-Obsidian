@@ -2,7 +2,7 @@
 
 ## What It Is
 
-- kind of behavioral pattern
+- A Behavioral Pattern
 
 ## What problem to solve
 
@@ -20,7 +20,6 @@
 
 - defining the basic steps of an algorithm in a place
 - and allowing the individual steps have their own implementation in subclass
-
 
 ## Structure of Template Method Pattern
 
