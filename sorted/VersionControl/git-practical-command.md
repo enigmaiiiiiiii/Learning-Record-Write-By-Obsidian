@@ -13,6 +13,18 @@
 * [Resovle Conflict](#resovle-conflict)
 * [A way to make the lastest commit as the initial commit](#a-way-to-make-the-lastest-commit-as-the-initial-commit)
 
+## Output Git Log In Stdout
+
+```sh
+git --no-pager log
+```
+
+> `git log | cat` also works, but not colorful
+
+## Track A file Changes History
+
+
+
 ## print merges commit log
 
 ```bash
@@ -112,11 +124,12 @@ git stash pop
 
 ## check all branches
 
-- `git clone` 的 repository 使用`git branch` 查看分支时只显示本地分支
 
 ```bash
 git branch -a
 ```
+
+> repository download use `git clone` will only show current branches
 
 ## Resovle Conflict
 

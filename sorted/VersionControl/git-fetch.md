@@ -14,7 +14,6 @@ git fetch [<options>] [<repository> [<refspec>]]
 
 refspec: `+<src>:<dst>`
 
-
 ## Options
 
 - `--all`: fetch all remote branches

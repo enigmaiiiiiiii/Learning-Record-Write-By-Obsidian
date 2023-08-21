@@ -44,6 +44,8 @@ class Greeter {
 
 ## getters/setters
 
+[why getter/setter](object-oriented.md#why-gettersetter)
+
 ```ts
 class C {
     _length = 0;
@@ -74,6 +76,7 @@ class Thing() {
     }
 }
 ```
+
 ## readonly
 
 - can't not be changed outside the constructor

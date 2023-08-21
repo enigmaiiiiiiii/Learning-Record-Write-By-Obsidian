@@ -14,13 +14,15 @@
 
 [Conda](python-conda.md)
 
-[Statement](python-statement.md)
+[Fundamental](python-fundamental.md)
 
 [iteration](python-iteration.md)
 
-[Syntax](python-syntax.md)
-
 [Class](python-class.md)
+
+[Type hint](python-type-hint.md)
+
+[Handle exception](python-handle-exception.md)
 
 [unittest](python-unittest.md)
 

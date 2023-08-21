@@ -48,6 +48,10 @@
 
 [Git Best Practice For Collaboration](git-best-practice-for-collaboration.md)
 
+[Merge VS Rebase](git-merge-vs-rebase.md)
+
+[Read Commit Tree](git-read-commit-tree.md)
+
 [Github Search Skills](github-search-skills.md)
 
 [Detached head](git-detached-head.md)

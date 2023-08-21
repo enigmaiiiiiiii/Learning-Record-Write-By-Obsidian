@@ -1,10 +1,11 @@
 # file related to environment variable
 
-* [/etc/environment](#etcenvironment)
-* [~/.profile](#profile)
-* [/etc/profile](#etcprofile)
-* [/etc/profile.d](#etcprofiled)
-* [/etc/.bashrc](#etcbashrc)
+* [Environment Variable Load Order](#environment-variable-load-order)
+* [/etc/environment](#/etc/environment)
+* [~/.profile](#~/.profile)
+* [/etc/profile](#/etc/profile)
+* [/etc/profile.d directory](#/etc/profile.d-directory)
+* [/etc/.bashrc](#/etc/.bashrc)
 
 ## Environment Variable Load Order
 
@@ -80,6 +81,11 @@ export text="hello"
 > `-f`: check if file exist
 > `-x`: check if file is executable
 
+this can explain why `fish` can not be set as login shell in some linux distribution
+
+- because fish will not execute `/etc/profile` and `/etc/profile.d`
+- `/etc/profile` is interpreted as a bash script
+
 ## /etc/profile.d directory
 
 - script in `/etc/profile.d` will be [executed](linux-bash-builtin-command.md#source) by `/etc/profile`
@@ -90,8 +96,8 @@ which variable should be set in `/etc/profile.d`?
 
 ## /etc/.bashrc
 
-- `/etc/.bashrc`对交互和非交互shell都执行
+- `/etc/.bashrc` executed on whatever interactive or non-interactive shell
 - In Ubuntu `/etc/profile` call `/etc/bashrc` directly
+- corresponding to `~/.zshrc` in zsh
 
-if [zsh](https://https://github.com/ohmyzsh/ohmyzsh/wiki/installing-zsh) installed, there is a file `~/.zshrc`
 

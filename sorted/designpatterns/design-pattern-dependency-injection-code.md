@@ -2,6 +2,9 @@
 
 ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳
 
+* [What Is The Problem](#what-is-the-problem)
+* [Solve The Problem with Dependency Injection](#solve-the-problem-with-dependency-injection)
+
 ## What Is The Problem
 
 Concrete Service
@@ -58,7 +61,7 @@ interface MessageService {
 }
 ```
 
-[concrete service]()
+### concrete service
 
 - EmailService
 
@@ -80,7 +83,7 @@ class SMSService implements MessageService {
 }
 ```
 
-[Consumer Interface]
+### Consumer Interface
 
 ```ts
 interface Consumer {
@@ -104,7 +107,7 @@ class MyDIApplication implements Consumer {
 }
 ```
 
-[Injector Class]
+### Injector Class
 
 ```ts
 class MessageServiceInjector {
@@ -118,14 +121,26 @@ class MessageServiceInjector {
     return new MyDIApplication(this.service)
   }
 }
+
 class EmailServiceInjector extends MessageServiceInjector {
   getConsumer() {
     return new MyDIApplication(new EmailService())
   }
 }
+
 class SMSServiceInjector extends MessageServiceInjector {
   getConsumer() {
     return new MyDIApplication(new SMSService())
   }
 }
 ```
+
+### Client Code
+
+```ts
+let injector = new EmailServiceInjector()
+let consumer = injector.getConsumer()
+consumer.processMessages('Hi John', 'name@example.com')
+```
+
+

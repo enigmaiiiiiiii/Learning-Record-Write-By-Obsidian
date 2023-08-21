@@ -70,7 +70,8 @@ git restore hello.c
 
 ## git reset
 
-[reset](git-command-reset.md)
+[reset](git-reset.md)
+
 ## git clean
 
 - remove untracked files from the working tree

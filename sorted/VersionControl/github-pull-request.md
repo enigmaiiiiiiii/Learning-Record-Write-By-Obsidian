@@ -16,7 +16,7 @@
 
 - a new branch with new commits
 
-> 也就是说: 刚刚合并到主干的分支不能创建Pull Request
+> that is to say the branch **which just merged to main** can not create pull request
 
 2. Create Pull Request
 

@@ -1,8 +1,8 @@
 # HTML
 
-## HTML元素
+## HTML Element
 
-- 从开始标签到结束标签中间的所有代码
+- content from the start tag to the end tag
 
 [Element Sort](html-element-sort.md)
 
@@ -10,7 +10,7 @@
 
 [Element List](html-element-list.md)
 
-## 内容分类(Content categories)
+## Content Categories
 
 - 每個 HTML 元素都要遵从該元素可擁有何種內容規則
 - 几種常用的內容模型（content model）。

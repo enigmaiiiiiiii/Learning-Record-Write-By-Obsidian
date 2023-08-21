@@ -2,9 +2,9 @@
 
 ## What Is Definition of Dependency Injection
 
-- Is a design pattern that mostly used in [**inversion of control**]() framework 
+- Is a design pattern that mostly used in [**inversion of control**]() framework
 
-## Feature
+## Features
 
 There are 3 commonly used ways to implement dependency injection
 
@@ -41,31 +41,57 @@ which ways to use depends on the situation
 
 ## Service Interface
 
-- declare a method that 
+- declare a method that
   - implemented by [concrete service](#concrete-service) for actual task
   - Used by [consumer](#consumer)
 
 ## Concrete Service
 
 - Implement Method Performing the actual task
+- Same task can be performed by different service, for example
+
+Assume a requirement of data service
+
+1. Data service may be provide by different database
+2. And consumer just want the json data
+3. So actual task is get data from database and convert it to json
+4. those concrete services should implement convert their data to json
 
 ## Consumer
 
-- consist of Consumer class
+- Consist of Consumer class
   - declare a variable of type [service interface](#service-interface)
-  - constructor or method for [injector](#injector) to inject the service
-  - method to call 
-- does not know which concrete service it will use
+  - inject point for [injector](#injector) to inject the service, this is what talking about in [features](#features)
+    - constructor
+    - or method
+  - method to call
+- Use the service
+- **does not** know which concrete service it will use
+
+```ts
+class Consumer {
+  private service: ServiceInterface;
+
+  constructor(service: ServiceInterface) {
+    this.service = service;
+  }
+
+  public doSomething(): json {
+    return this.service.doSomething();
+  }
+}
+```
 
 ## Injector
 
 > may be a class or a method
 
-- create concrete service instance
-- resolve and configure dependencies
-- inject concrete service instance into [consumer](#consumer)
+1. create concrete service instance
+2. resolve and configure service's dependencies)
+3. inject concrete service instance into [consumer](#consumer)
+
+> some framework can complete this work, like spring
 
 ## Code
 
 - ...
-

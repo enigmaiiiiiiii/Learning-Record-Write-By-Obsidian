@@ -18,6 +18,11 @@
 * [detach head](#detach-head)
 * [tag](#tag)
 
+## hunk
+
+- a piece of diff
+- a group of consecutive changed lines
+
 ## index
 
 - save information about what will go into your next commit, like modificatoin, delete, new file

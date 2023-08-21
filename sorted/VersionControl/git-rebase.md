@@ -4,7 +4,12 @@
 * [Removed A Range Of Commit](#removed-a-range-of-commit)
 * [Rebase A Branch](#rebase-a-branch)
 * [Interactive Mode](#interactive-mode)
-* [resolve conflict](#resolve-conflict)
+
+## Feature
+
+- **Cause rebased branch commit history being modified**
+- never used on public branch
+- not recommend to rebase if branch is already pushed to remote
 
 ## Rebase to First Commit
 
@@ -72,13 +77,19 @@ D---E---F---G  master
 
 ## Interactive Mode
 
+Interactive rebase allows to ______ commit
+
+- squash
+- drop
+- pick
+
 enter interactive mode
 
 ```sh
 git rebase -i <commit>
 ```
 
-en editor will be fired up with all commit in your current branch
+An editor will be fired up with all commit in your current branch
 
 the file looks like
 
@@ -107,9 +118,9 @@ drop 2e3d4b3 commit message
 pick 3e3d4b3 commit message
 ```
 
-## resolve conflict
+## Continue Rebase
 
-after resolve conflict in file, use `git add <file>` to add the file to stage area, continue with
+after [resolve conflict] in file, use `git add <file>` to add the file to stage area, continue with
 
 ```sh
 git rebase --continue
@@ -121,6 +132,7 @@ abort rebase
 git rebase --abort
 ```
 
+
 ## Push rebased branch to remote
 
 `-f` is required, because rebase cause remote branch fast-forward to local branch
@@ -128,3 +140,5 @@ git rebase --abort
 ```sh
 git push -f origin <branch>
 ```
+
+## How to Undo Rebase
