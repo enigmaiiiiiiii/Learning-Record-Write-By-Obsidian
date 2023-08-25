@@ -1,4 +1,4 @@
-# encryption
+# Computer Network - Encryption
 
 - transform plaintext data into ciphertext
 - used to protect protect data confidentiality

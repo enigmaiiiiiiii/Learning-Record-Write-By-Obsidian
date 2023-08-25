@@ -1,6 +1,6 @@
 # DOM WebSocket
 
-> 浏览器提供的WebSocket API
+> WebSocket API provided by browser
 
 - WebSocket Object
   - instance properties

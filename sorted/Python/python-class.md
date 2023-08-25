@@ -44,6 +44,8 @@ print(p.age)
 
 ## Accessibility Control
 
+private method or field is prefixed with `__`
+
 ```py
 class Person:
 
@@ -79,6 +81,8 @@ class Student(Person):
 `__str__()`: string representation
 
 `__eq__()`
+
+## Magic Field
 
 `__dict__`
 

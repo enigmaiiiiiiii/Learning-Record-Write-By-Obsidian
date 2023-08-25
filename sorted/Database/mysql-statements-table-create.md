@@ -1,22 +1,22 @@
-# 创建表
+# MySQL - Create Table Statements
 
 ```sql
 CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tbl_name (create_definition...) [table_options] [partition_options]
 ```
-- create_definition包括列名称和列定义, 多个列用`,`隔开: `col_name column_definition` 
-  - col_name
-  - column_definition一次包括
-    - 数据类型
-    - 取值属性
-- 指定列的取值属性
-  - `NOT NULL`: 不允许为空 
-  - `DEFAULT val`: 默认值
-  - `AUTO_INCREMENT`: 自增
-  - `UNIQUE`: 唯一
-  - `PRIMARY KEY`: 主键
-  - `COMMENT`: 注释
 
-比如: 创建card表，表头为cost, description, packName, 数据类型分别是int, varchar(200), varchar(50)
+- `create_definition`:
+  - col_name
+  - `column_definition` include
+    - data type
+    - attributes of value, available attributes are
+      - `NOT NULL`: 
+      - `DEFAULT val`: 
+      - `AUTO_INCREMENT`: 
+      - `UNIQUE`: 
+      - `PRIMARY KEY`: 
+      - `COMMENT`: 
+
+for example: create table `card`, with columns `cost`, `description`, `packName`, data type are `int`, `varchar(200)`, `varchar(50)`
 
 ```sql
 CREATE TABLE card(
@@ -25,16 +25,18 @@ CREATE TABLE card(
     packName varchar(50)
 ) comment = "card table";
 ```
-## 约束语句
 
-[约束](mysql-statements-constraint.md)
+## Constraint
 
-## index | key 语句
+[Constraint](mysql-statements-constraint.md)
 
-[关于索引的更多内容](mysql-index.md)
+## index | key statement
 
-- key是index的同义词
-- 指定索引
+[detail about index](mysql-index.md)
+
+- key and index are synonyms
+
+specify index
 
 ```sql
 create table tbl_name(

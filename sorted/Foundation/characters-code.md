@@ -1,28 +1,29 @@
-# 字符编码
+# Characters Code
 
 ## ASCII
 
-- 由8个比特位组成英文字符，数字，一些符号的编码方式
-- 回车符CR: 二进制00001101, 十六进制d, 字符串: \r
-- 换行符LF: 二进制00001001, 十六进制a, 字符串: \n
+- 8 bits to represent English characters, numbers, some symbols
+- Carriage CR: Binary `00001101`, Hex `0x0d`, String `\r`
+- line feed: Binary `00001001`, Hex `0x0a`, String `\n`
 
 ## Unicode
 
-- 为了表示所有自然语言中字符 的一种编码方式
-- 前缀 `\u` 或 `u+`
-- u+000a: 换行符
-- u+000d: 回车符
+- To represent an encoding of characters in all natural languages
+- prefix `\u` or `u+`
+- u+000a: line feed
+- u+000d: carriage return
 
 ## UTF
 
-- UTF是Unicode的传输编码
-- UTF-8/16/32: 为了解决Unicode会使可以用一个字节确定的字符变为两个字节
-  - 英文字母为1个字节
-  - 汉字为3个字节
-  - 生僻字符会到4-6个字节
-  > 大量英文字符，UTF-8更省空间
-- 计算机[内存]中使用Unicode, 保存到硬盘时，为了节省空间会使用UTF-8
+- UTF is a transmission encoding of [Unicode](#unicode)
+- UTF-8/16/32: to solve the problem that Unicode will make a character that can be determined by one byte to two bytes
+  - english character: 1 byte
+  - chinese character: 3 bytes
+  - unfimiliar character will be 4-6 bytes
+- computer use Unicode in [memory], but use UTF-8 in [hard disk] to save space
 
-[字符转换](character-convert.md)
+> Large number of English characters, UTF-8 saves space
 
-[编码方式的文件读写](file-encode-convert.md)
+[Convert](character-convert.md)
+
+[file read/write about encode](file-encode-convert.md)

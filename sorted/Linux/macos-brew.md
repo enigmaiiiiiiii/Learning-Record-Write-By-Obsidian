@@ -27,6 +27,18 @@ Tab
 
 - a single version of a formula
 
+## Query Installed Package
+
+```sh
+brew list
+```
+
+## Search Package
+
+```sh
+brew search <package>
+```
+
 ## Install package
 
 ```sh

@@ -5,7 +5,9 @@
 there are some common concepts in design patterns
 
 - client: the object that use the pattern
-- ... ## Creational Patterns
+- ... 
+
+## Creational Patterns
 
 [Factory](javascript-design-pattern-factory-method.md), [Factory java](/sorted/designpatterns/design-patterns-factory.md)
 

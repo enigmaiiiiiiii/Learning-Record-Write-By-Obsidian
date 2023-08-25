@@ -3,7 +3,7 @@
 - [feature](#feature)
 - [Practical Use](#practical-use)
 - [File IO](#file-io)
-- [字节流](#字节流)
+- [Byte Stream](#字节流)
 - [Reader/Writer](#readerwriter)
 - [Why Buffer IO faster than unbuffered IO](#why-buffer-io-faster-than-unbuffered-io)
 - [IO Class Hierarchy](#io-class-hierarchy)
@@ -22,24 +22,24 @@
 
 interact with file in java
 
-[File类](java-file-class.md)
+[File Class](java-file-class.md)
 
 File Byte IO Stream
 
 [FileInputStream/FileOutputStream](java-fileiostream.md)
 
-## 字节流
+## Byte Stream
 
-基类
+Base Class
 
 - [InputStream/OutPutStream](java-iostream.md)
 
-低级流
+Low Level Stream
 
 - [FileInputStream/FileOutputStream](java-fileiostream.md)
 - [ByteArrayInputStream/ByteArrayOutputStream](java-bytearrayiostream.md)
 
-高级流
+High Level Stream
 
 - [Buffer Stream](java-bufferediostream.md): [通过缓冲减少IO次数]的流
 - [Object Stream](java-objectiostream.md): 将对象序列化与反序列化的流

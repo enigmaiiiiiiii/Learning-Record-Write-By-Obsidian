@@ -2,7 +2,6 @@
 
 - [Introduction](#introduction)
 - [BSON type contrast](#bson-type-contrast)
-- [type detail](#type-detail)
 
 ## Introduction
 
@@ -18,7 +17,7 @@
 | String                  | 2      | utf8     |                         |
 | Object                  | 3      |          | Deprecated in BSON spec |
 | Array                   | 4      |          | Deprecated in BSON spec |
-| Binary                  | 5      | binary   |                         |
+| Binary data             | 5      | binary   |                         |
 | Undefined               | 6      |          | Deprecated in BSON spec |
 | ObjectId                | 7      | oid      |                         |
 | Boolean                 | 8      | bool     |                         |
@@ -47,6 +46,39 @@
 
 > why roughly?
 > **temporal resolution** of timestamp is **second**, so ObjectId **created within the same second** do not have a guaranteed ordering
+
+## Binary data
+
+- represent the value is a [byte array]
+- binary data has subtype that indicates how to interpret the binary data
+
+| Subtype | Description                 |
+| ------- | --------------------------- |
+| 0x00    | Generic binary subtype      |
+| 0x01    | Function                    |
+| 0x02    | Obsolete binary subtype     |
+| 0x03    | UUID (old)                  |
+| 0x04    | UUID (RFC 4122)             |
+| 0x05    | MD5                         |
+| 0x06    | Encrypted BSON value        |
+| 0x07    | Compressed time series      |
+| 0x80    | User defined binary subtype |
+
+in following document
+
+- `id` is a binary data
+- its subtype is UUID
+
+```json
+{
+  "id": {
+    "$binary": {
+      "base64": "FhEJwvFyRCSgC54D4bIN9g==",
+      "subType": "04"
+    }
+  }
+}
+```
 
 ## Timestamps
 

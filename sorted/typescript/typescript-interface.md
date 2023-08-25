@@ -68,7 +68,7 @@ interface NumberDictionary {
 }
 ```
 
-index Signature 允许的类型
+available type of index signature
 
 - `string`
 - `number`

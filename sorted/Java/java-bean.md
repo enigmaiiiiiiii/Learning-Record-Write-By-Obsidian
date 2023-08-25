@@ -1,9 +1,10 @@
 # Java BEAN
 
-## Java BEAN定义规范
+## Java BEAN Conventions
 
-1. 属性私有化
-2. 为属性提供get/set方法
-3. 定义无参构造器(不定义不影响序列化)
-4. 实现序列化接口
+1. private field
+2. getter/setter
+3. no-arg constructor
+4. implement [Serializable interface]()
+
 

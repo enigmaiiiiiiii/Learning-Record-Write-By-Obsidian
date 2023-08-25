@@ -1,81 +1,37 @@
 # Linux - Curl
 
-* [Send GET request](#send-get-request)
-* [download file](#download-file)
-* [handle url redirect](#handle-url-redirect)
-* [download file with authentication](#download-file-with-authentication)
-* [Get Stuck](#get-stuck)
+* [What Curl Can Do](#what-curl-can-do)
+* [Options](#options)
+* [Practical Use](#practical-use)
+* [Getting Stuck](#getting-stuck)
 
-## Send GET request
+## What Curl Can Do
 
-```sh
-curl [url]
-```
+## Options
 
-## download file
+`-X, --request <method>`
 
-- if use `curl` with no options, it will do a GET request and display the result to Screen
+- Specifies a custom [request method](http-request-method.md)
 
-syntax:
+`-d, --data <data>`
 
-`curl [options] [url]`
+`-H, --header <header>`
 
-the file name will be the remote file name
+- Extra [header](http-request-header.md) to include in the request when sending HTTP to a server
 
-```bash
-curl -O [url]
-```
+`-L, --location`
 
-specify the file name
+- Follow redirects
+- curl will modify the request method from `POST` to `GET` when the response is 301, 302, 303
+- for other 3xx code, curl re-send the request using same method
 
-```bash
-curl -o [filename] [url]
-```
+`-o, --output <file>`
 
-## handle url redirect
+`-I, --head`
 
-description of this problem
+## Practical Use
 
-- after download a file, its size is 0
-- this is happenned when url being redirect
-- whose response is [status code 302](http-response-message.md#status-line)
-- the return content is not the file you want
-
-solution
-
-- use `-I` option first, to check the response header
-- or use `-v` option, to check the verbose information
-
-```bash
-curl -I [url]
-```
-
-probably output like this
-
-```
-HTTP/2 302
-server: GitHub.com
-date: Thu, 08 Dec 2022 09:43:52 GMT
-content-type: text/html; charset=utf-8
-vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
-location: https://someurl
-```
-
-that is to say, url is redirect to `https://someurl`
-
-- use `-L` option, track the redirect url, and download the file
-
-```bash
-curl -L [url]
-```
-
-## download file with authentication
-
-- use option `-u` to specify username and password
-
-```bash
-curl -u username:password https://someurl
-```
+[Curl Practical Use](linux-curl-practical-use.md)
 
 ## Getting Stuck
 

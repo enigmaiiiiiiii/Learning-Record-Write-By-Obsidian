@@ -1,4 +1,4 @@
-# 命令行客户端
+# MySQL - Command Line Client
 
 ```bash
 mysql db_name

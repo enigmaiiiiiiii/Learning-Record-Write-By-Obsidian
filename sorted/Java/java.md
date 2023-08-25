@@ -2,19 +2,19 @@
 
 ## I
 
-[安装](java-environment-install.md)
+[Installation](java-environment-install.md)
 
-[术语概念](java-terms.md)
+[Terms](java-terms.md)
 
-[Java命令行工具](java-tools.md)
+[Java Command Line Tools](java-tools.md)
 
-[语法基础](/sorted/java/java-foundation.md)
+[Syntax foundation](java-foundation.md)
 
-[面向对象](/sorted/java/java-object-oriented.md)
+[Object Orient](java-object-oriented.md)
 
-[字符串](java-string.md)
+[String](java-string.md)
 
-[泛型](java-generics.md)
+[Generics](java-generics.md)
 
 [Annotation](java-annotation.md)
 
@@ -24,7 +24,7 @@
 
 [Map](java-map.md)
 
-[异常](java-exception.md)
+[Exception](java-exception.md)
 
 [I/O](java-io.md)
 
@@ -32,20 +32,19 @@
 
 [Net](java-network-programming.md)
 
-[多线程](../sorted/java/java-thread.md)
+[多线程](java-thread.md)
 
-[反射](java-reflect.md)
+[Reflect](java-reflect.md)
 
-[类加载器](java-classloader.md)
+[Class Loader](java-classloader.md)
 
 [JDBC](java-jdbc.md)
 
-[Time](/sorted/java/java-time.md)
+[Time](java-time.md)
 
-[Util](/sorted/java/java-util.md)
+[Util](java-util.md)
 
-[Nio](/sorted/java/java-nio.md)
-
+[Nio](java-nio.md)
 
 ## III
 
@@ -55,13 +54,13 @@
 
 [JVM](java-jvm.md)
 
-[字节码](java-byte-code.md)
+[Byte Code](java-byte-code.md)
 
-[类型转换](java-conversion.md)
+[Type Conversion](java-conversion.md)
 
 ## IIII
 
-[Maven](java-maven.md): 项目构建工具
+[Maven](java-maven.md): Project Management Tool
 
 [Servlet](javax-servlet.md)
 

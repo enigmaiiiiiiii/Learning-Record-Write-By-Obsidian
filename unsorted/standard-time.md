@@ -1,5 +1,0 @@
-# standard time
-
-## GMT
-
-## UTC

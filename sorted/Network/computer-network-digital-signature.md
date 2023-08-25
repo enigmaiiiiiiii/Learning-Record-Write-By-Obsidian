@@ -1,8 +1,8 @@
-# digital signature
+# Computer Network - Digital Signature
 
 - for verify the **authenticity** and **integrity** of a message
 
-## digital signature algorithms
+## Digital Signature Algorithms
 
 - RSA
 - ed25519

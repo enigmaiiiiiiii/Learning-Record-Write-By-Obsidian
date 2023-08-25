@@ -1,7 +1,7 @@
 # MySQL - Account
 
 
-```mysql
+```sql
 CREATE USER [IF NOT EXISTS] 
     _user_ [_auth_option_] [, _user_ [_auth_option_]] ...
     DEFAULT ROLE _role_ [, _role_ ] ... 

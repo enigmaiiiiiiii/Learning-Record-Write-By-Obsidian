@@ -1,8 +1,10 @@
 # WebSocket
 
+## What It Is
+
 - WebSocket is a [web standard](#websocket-supply-by-dom) technology
 - makes it possible to open a **two-way interactive** communication session between the user's **browser** and a **server**
-- [很多libraries](#websocket-libraries-list)为使用websocket技术的提供了方便的接口
+- many [libraries](#websocket-libraries-list) provide convenient interfaces for using websocket technology
 
 ## princilple
 

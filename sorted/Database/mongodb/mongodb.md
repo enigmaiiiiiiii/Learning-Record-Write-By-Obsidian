@@ -37,9 +37,11 @@ on windows
 
 [Collection Query](mongodb-query-collection.md)
 
-[Perform Text Search](mongodb-text-search.md)
-
 [Collection Modify](mongodb-modify-collection.md)
+
+[Documents Operation](mongodb-documents-operations.md)
+
+[Perform Text Search](mongodb-text-search.md)
 
 [Aggregation Operations](mongodb-aggregation-operations.md)
 

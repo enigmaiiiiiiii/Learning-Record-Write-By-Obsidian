@@ -1,6 +1,6 @@
-# 语法基础
+# Syntax Basic
 
-[基本类型](java-basic-type.md)
+[Basic Type](java-primitive-types.md)
 
 [引用类型](java-reference-type.md)
 

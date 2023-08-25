@@ -21,13 +21,13 @@ String jwt = Jwts.builder()
     .compact();
 ```
 
-- `setHeaderParam(String name, Object value)`: 设置[header](../network/http-token.md#jwt)部分
-- `setClaims(Map<String, Object> claims)`: 设置payload
-  - 一般为要传输的数据
-- `setExpiration(Date exp)`: 设置过期时间
-- `signWith(SignaltureAlgorithm alg, String base64EncodeSecreKey)`: 设置签名算法和密钥
+- `setHeaderParam(String name, Object value)`: set [header part](web-dev-token-jwt.md#header) of jwt
+- `setClaims(Map<String, Object> claims)`: set [payload](web-dev-token-jwt.md#payload) of jwt
+  - generally, the data to be transmitted
+- `setExpiration(Date exp)`: set expiration time of jwt
+- `signWith(SignaltureAlgorithm alg, String base64EncodeSecreKey)`: set signature algorithm and secret key
 
-## 解析jwt
+## Decode jwt
 
 ```java
 Claims claims = Jwts.parser()

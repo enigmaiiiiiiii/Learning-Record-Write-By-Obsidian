@@ -1,26 +1,26 @@
-# 数据类型
+# Data Type
 
-## 数值
+## Number
 
-整数
+integer
 
-- TINYINT: 1字节，-128~127
-- SMALLINT: 2字节，-32768~32767
-- MEDIUMINT: 3字节，-8388608~8388607 
+- TINYINT: 1 byte，-128~127
+- SMALLINT: 2 byte，-32768~32767
+- MEDIUMINT: 3 byte，-8388608~8388607 
 - INT: 4字节
-- BIGINT(m): 等效Java基本类型[long](java-primitray-type.md)
-  - m表示显示长度
-  - zerofill: 用0填充
+- BIGINT(m): equilavant Java primitive type [long](java-primitray-type.md)
+  - m: length of    
+  - zerofill: whether fill with 0
 - FLOAT
 - DOUBLE(m, d): 
-  - m: 总长度
-  - d: 小数长度
+  - m: total length
+  - d: decimal length
 - DECIMAL
 
-## 字符串类型
+## String Type
 
 - CHAR(m)
-  - 固定长度
+  - Fixed length, m is the length
 - VARCHAR(m)
   - 可变长度, m参数表示最大可用长度
   - m取值0 ~ 65535
@@ -31,8 +31,8 @@
   - 节省空间
 - BLOB
 - TEXT
-  - 长度固定为65535字符
-  - 不能成为[索引]的一部分
+  - fixed length is 65535 characters
+  - can not be part of [index](mysql-index.md)
 - MEDIUMBLOB
 - MEDIUMTEXT
 - LONGBLOB
@@ -40,11 +40,11 @@
 - TINYBLOB
 - TINYTEXT
 
-## NULL值
+## NULL value
 
-- 意思是no data
-- 参与比较运算, 得到null
-- 用`is null` 或 `is not null`测试是否为null值
+- means no data
+- compare operations on null value will get null value
+- use `is null` or `is not null` to test null value
 
 > `null + 1 is null`
 
@@ -61,17 +61,17 @@ select 1 = null, 1 <> null, 1 < null, 1 > null
 +-----------+---------------+
 ```
 
-## 日期和时间
+## Date and Time
 
-- DATE: 年月日, 格式yyyy-mm-dd
-- TIME: 时分秒, 格式hh:mm:ss
+- DATE: year, month, date, format: yyyy-mm-dd
+- TIME: hour, minute, second, format: hh:mm:ss
 - YEAR: 
 - DATETIME: data + time
-- TIMESTAMP: 距1970.1.1的毫秒数, 默认当前系统时间
-  - 默认值: `CURRENT_TIMESTAMP()`, 
-  - 默认自动更新: 表示更新为当前条目其他列发生改变时的时间, Extra值为`on update current_timestamp()` 
+- TIMESTAMP: milliseconds from 1970-01-01 00:00:00
+  - default value: `CURRENT_TIMESTAMP()`, 
+  - default auto update: indicate that the column will be updated to the current timestamp when any other column of the row is changed. [Extra value] is `on update current_timestamp()`
 
-timestamp打开自动更新后
+Open auto upate for `timestamp` 
 
 ```sql
 alter table tbl_name change 
@@ -80,7 +80,8 @@ alter table tbl_name change
     current_timestamp 
     on update current_timestamp;
 ```
-关闭自动更新
+
+close auto update for `timestamp`
 
 ```sql
 alter table tbl_name change
@@ -91,7 +92,7 @@ alter table tbl_name change
 
 ## enum
 
-- 插入的值必须是enum中的值
+- insert value must be one of the enum values
 
 ```sql
 create table tbl_name(
@@ -100,10 +101,7 @@ create table tbl_name(
 insert into tbl_name(col_name) values('val1');
 ```
 
-
-## set
-
-- col取值类型为set, 其取值可以是set的子集
+## set - column value type is type, its value can be a subset of the set
 
 ```sql
 create table tbl_name(
@@ -114,7 +112,7 @@ insert into tbl_name values('a, b');
 
 ## json
 
-- 插入json格式化文本
+- insert json format text
 
 ```sql
 create table tbl_name(
@@ -123,7 +121,7 @@ create table tbl_name(
 insert into tbl_name values('{"a": 1}');
 ```
 
-## 举例说明
+## Example
 
 ### INT
 
@@ -151,7 +149,7 @@ output
 create table tbl(num double(5, 3));
 insert into tbl values(23.234);
 insert into tbl values(23.234567);
-insert into tbl values(234.34);  // 超出范围
+insert into tbl values(234.34);  // out of bound
 select * from tbl2;
 ```
 output
@@ -165,6 +163,17 @@ output
 +--------+
 ```
 
-## 
+## MySQL Type Map to Java Type
 
+| MySQL Type             | Java Type     |
+| ---------------------- | ------------- |
+| tinyint, smallint, int | Integer       |
+| bigint                 | long          |
+| char/varchar/text      | String        |
+| datetime               | LocalDateTime |
+| decimal                | BigDecimal    |
+
+## MySQL Type Map to Typescript Type
+
+## MySQL Type Map to Python Type
 

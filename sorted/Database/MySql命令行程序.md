@@ -1,4 +1,4 @@
-# MySql命令行程序
+# MySql Command Line Tool
 
 - MySql都会自带一个命令行程序
 - 命令输入在mysql>之后

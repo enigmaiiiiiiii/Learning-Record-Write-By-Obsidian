@@ -64,4 +64,10 @@
 
 ## blogs
 
+[handle time](web-dev-handle-time.md)
+
+[data id](web-dev-data-id.md)
+
 [$nbsp and white space](web-dev-nbsp-and-white-space.md)
+
+

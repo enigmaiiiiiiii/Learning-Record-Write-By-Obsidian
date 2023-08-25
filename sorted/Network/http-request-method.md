@@ -15,9 +15,12 @@
 - often used to submit form, upload files
 - send data in [request body](http-request-message.md#request-body)
 - data length is not limited
-- **Not considered idempotence**: cause it may change server state
+- **Not considered idempotence**: cause it may **change server** state
 
 ## PUT
+
+- Commonly Used to **update** existing resource
+- **Considered idempotence** like [GET](#get)
 
 ## DELETE
 
