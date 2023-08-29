@@ -1,8 +1,50 @@
-# WARNING: REMOTE IDENTIFIATION HAS CHANGED!
+# Git - Get Stuck
 
-## The Error Message
+## kex_exchange_identification
 
-when clone repository from github, this warning occured
+error message:
+
+```
+kex_exchange_identification: Connection closed by remote host
+Connection closed by 20.205.243.166 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+solution
+
+- add this to `~/.ssh/config`
+
+```
+Host github.com
+    Hostname ssh.github.com
+    Port 443
+    User git
+```
+
+## Error when git clone
+
+key error infomation:
+
+- `error: invalid path 'csr/public/pokemon/type:-null.jpg'`
+
+condition
+
+- happenned in windows
+
+solution:
+
+```sh
+git config --global core.ignorecase false
+```
+
+## WARNING: REMOTE IDENTIFIATION HAS CHANGED!
+
+The Error Message
+
+- when clone repository from github, this warning occured
 
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -19,7 +61,7 @@ Host key for github.com has changed and you have requested strict checking.
 Host key verification failed.
 ```
 
-## Caused By
+Caused By
 
 - caused by https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/
 

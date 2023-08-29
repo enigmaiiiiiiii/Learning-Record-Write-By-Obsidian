@@ -1,20 +1,25 @@
-# Resources
+# Spring Boot Workflow - Resources
 
-- 存放资源文件, 如sql语句映射文件(mapper.xml), 配置文件等
-- 配置SpringBoot: `application.yml`
-- 配置MyBatis SQL语句映射: `resource/mapper/FooMapper.xml`
+## What Is Resources Directory For
 
-resource
-|  application.yml
-|__mapper
-     FooMapper.xml
+store resource file
+
+- sql statement mapper file, like `FooMapper.xml`
+- SpringBoot Config File: `application.yml`
+
+Resources directory structure looks like:
+
+```
+resources
+├── application.yml
+└── mapper
+    └── FooMapper.xml
+```
 
 
-## sql映射文件
+## Take A Look At SQL Mapper File
 
-\<mapper>
-
-- namespace: 指定映射文件对应的Mapper接口
+`<mapper>` element
 
 ```xml
 <mapper namespace="packageof.interface.EntityMapper">
@@ -27,7 +32,11 @@ resource
 </mapper>
 ```
 
-**查询列表, 通常对结果进行排序**
+- attribute `namespace`: specify the [mapper interface]() of the mapper file
+
+Write SQL Statement In `<select>` Element
+
+- For example select list, usually sort the result
 
 ```xml
 <select id="list" resultMap="ListResultMap">
@@ -37,6 +46,8 @@ resource
         entity_tbl
     ORDER BY
         col_name DESC
-
 </select>
 ```
+
+- `id`: specify the [method name] of the mapper interface
+- `resultMap`: specify the [result map]() of the mapper file

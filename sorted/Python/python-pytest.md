@@ -1,10 +1,10 @@
 # Python - pytest
 
 * [Automically Find Test](#automically-find-test)
+* [What Will Be Test](#what-will-be-test)
 * [Test Files](#test-files)
-* [What Will Be Test](#test-items)
-* [Define Test Fixture](#define-test-fixtures)
-* [Use Test Fixture](#use-test-fixture)
+* [Test Items](#test-items)
+* [Fixtures Mechanism](#fixtures-mechanism)
 * [Take A Look](#take-a-look)
 
 ## Automically Find Test
@@ -24,41 +24,25 @@
 
 ## Test Items
 
-- functions or methods prefixed with `test`
-- function prefixed with `test` inside classes prefixed with `Test`
+[pytest test items](pytest-test-items.md)
 
-## Define Test Fixtures
+## Fixtures Mechanism
 
-[test fixture concept](python-unittest.md#test-fixture)
+> [test fixture concept](python-unittest.md#test-fixture)
 
-- `@pytest.fixture` decorator to tell pytest this is a fixture
+[Fixtures Mechanism](pytest-fixture.md)
 
-```py
-import pytest
+## Request Object
 
-@pytest.fixture
-def my_fixture():
-    return 42
-```
+- a object give access to the requesting test context
 
-## Use Test Fixture
+`property`
 
-- test fixture are accessed by [test items](#test-items) through arguments
-- [test items](#test-items) let the name of parameters same as the name of fixture function to determine which fixture to use
-- test fixture function will be **automatically called** by pytest framework when used by test items
+- node
+  - node.name: current test function or method
+- module
+  - python [module](python-module.md) object where the test function, class or method was collected
 
-```py
-import pytest
-@pytest.fixture
-def one():
-    return 1
-
-def test_addition(one):
-    assert one + 1 == 2
-
-```
-
-- `one` in `test_addition` will be replaced by the **return value** of `one` fixture function
 
 ## Take A Look
 

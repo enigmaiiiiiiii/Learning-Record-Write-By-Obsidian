@@ -7,7 +7,7 @@
 
 ## Feature
 
-- resolution independent(分辨率)
+- resolution independent
 
 ## Create SVG
 

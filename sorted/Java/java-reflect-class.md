@@ -1,17 +1,17 @@
 # java.lang.Class
 
-- [Introduction](#introduction)
-- [Get Class Instance](#get-class-instance)
-- [通过Class创建对象](#通过class创建对象)
-- [Method](#method)
-- [Get Class from Inner Class](#get-class-from-inner-class)
+* [Introduction](#introduction)
+* [Get Class Instance](#get-class-instance)
+* [Create Object from `Class`](#create-object-from-`class`)
+* [Method](#method)
+* [Get Class from Inner Class](#get-class-from-inner-class)
 
 ## Introduction
 
-- Class类的对象表示某个类的属性
-- 相同元素类型的数组共享一个Class对象
+- class of `FooClass` is `FooClass.class`
+- array of same element type share one Class object
 
-虚拟机为每个类型管理一个Class对象
+JVM manages one Class object for each type
 
 ```java
 System.out.println(e.getClass() == Employee.class); // true
@@ -59,7 +59,7 @@ public class Demo {
 - 通过基本类型的包装类型，如`Class c = Double.TYPE;`
 
 
-## 通过Class创建对象
+## Create Object from `Class`
 
 `newInstance()`
 
@@ -130,7 +130,7 @@ public class Outer {
 }
 ```
 
-- 返回`Class<?>[]`, 元素为Inner Class 实例
+- return `Class<?>[]`, 元素为Inner Class 实例
 
 `foo.getDeclaredClasses()`
 

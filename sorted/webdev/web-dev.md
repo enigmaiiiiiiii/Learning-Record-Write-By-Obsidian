@@ -64,6 +64,8 @@
 
 ## blogs
 
+[data object](web-dev-data-object.md)
+
 [handle time](web-dev-handle-time.md)
 
 [data id](web-dev-data-id.md)

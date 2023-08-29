@@ -56,24 +56,11 @@
 
 [Detached head](git-detached-head.md)
 
-## IV
+[Get Stuck](git-get-stuck.md)
+
+## Git Internals
 
 [Git Internals](git-internals.md)
 
-## Problems
+## 
 
-1. error when git clone
-
-key error infomation:
-
-- `error: invalid path 'csr/public/pokemon/type:-null.jpg'`
-
-condition
-
-- happenned in windows
-
-solution:
-
-```sh
-git config --global core.ignorecase false
-```

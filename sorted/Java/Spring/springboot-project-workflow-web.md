@@ -1,17 +1,18 @@
-# web
+# SpringBoot Workflow - web Directory
 
-- 定义响应状态和内容
-- 包含的类
-  - ServiceCode.java: 枚举类
-  - JsonResult.java: 用来定义响应结果对象
+- define response status and content
+- include classes
+  - `ServiceCode.java`: [Enum type](java-enum-type.md) to define status code
+  - `JsonResult.java`: use to wrap response data
 
-## JsonResult类
+## JsonResult Class
 
-- 属性 
- - state: 状态码
- - message: 响应信息
- - data: 响应数据
- 
+property
+
+- `state`: [status code](http-response-message.md#status-line)
+- `message`: [reponse message](http-response-message.md#status-line)
+- `data`: reponse data
+
 ```java
 public class JsonResult<T> implements Serializable {
 

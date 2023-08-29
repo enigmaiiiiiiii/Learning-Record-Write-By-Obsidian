@@ -1,32 +1,36 @@
-# Service
+# Spring Workflow - Service Layer
 
-- [Business logic](../../projectlogic/projectlogic.md) layer
+## What Service Layer Do
 
+- [Business logic]() layer
+
+```
 service
-│   IDemoService.java
-│
+├───IDemoService.java
 └───impl
-        DemoServiceImpl.java
+    └───DemoServiceImpl.java
+```
 
-- 作用
-  - **定义**和**实现**业务逻辑接口
-  - 使用数据库接口完成业务处理
-  - 处理VO, DTO对象, 完成**数据对象**到**实体对象**的转换
-- 处理业务的逻辑[接口](../java-interface.md)
-  - IDemoService.java: 业务逻辑接口
-  - 命名格式: I+业务名+Service, 如IDemoService
-- 实现业务逻辑类
-  - `@Service`注解的类
-  - 实现接口
-  - 命名格式: 业务名 + ServiceImpl 
-  - 抛出[异常](springboot-project-workflow-exception.md)
+- Functions
+  - implement business logic interface
+  - call [repository layer](springboot-project-workflow-mapper.md) interface to access database to implement business logic
+  - handle VO, DTO object, convert **data object** to **entity object**
+- handle business logic interface
+  - `IDemoService.java`: File of business logic interface
+  - name convention: I + business name + Service, like `IDemoService`
+- implement business logic class
+  - class with annotation `@Service`
+  - Implement above business logic interface
+  - name convention: business name + ServiceImpl, like `DemoServiceImpl`
+  - throw [exception](springboot-project-workflow-exception.md)
 
-## service接口
+## Service Interface
 
-IDemoService.java
+`IDemoService`.java
 
-- 处理数据库事务, 添加注解`@Transaction`
-- 刚开始可以在接口声明上添加`@Transactional`注解, 之后再根据需要添加
+When handle transaction
+
+- use annotation `@Transaction`
 
 ```java
 public interface IDemoService {
@@ -36,9 +40,9 @@ public interface IDemoService {
 }
 ```
 
-## 实现类
+## Service Implementation
 
-- 在子目录impl中存放业务逻辑接口实现类
+- in subdirectory `impl`, store implementation of business logic interface
 - 添加`@Service`注解, 使其成为Spring容器管理的组件
 - 实现类的编写细节
   - 执行delete, update之前, 需要先执行select, 确保数据存在, 不存在时抛出异常

@@ -1,10 +1,13 @@
 # Python - Class
 
-- [Define a class](#define-a-class)
-- [Instiantiate a class](#instiantiate-a-class)
-- [Accessibility Control](#accessibility-control)
-- [Inheritance](#inheritance)
-- [Magic Method](#magic-method)
+* [Define a class](#define-a-class)
+* [Method](#method)
+* [Instiantiate a class](#instiantiate-a-class)
+* [Accessibility Control](#accessibility-control)
+* [Inheritance](#inheritance)
+* [Magic Method](#magic-method)
+* [Magic Field](#magic-field)
+* [Parameter cls](#parameter-cls)
 
 ## Define a class
 
@@ -96,3 +99,11 @@ f = Foo()
 print(f.__dict__) # {}
 print(f.__class__.__dict__) # {'__module__': '__main__', 'name': 'foo', ...}
 ```
+
+## Parameter self and cls
+
+*no mandatory, just a convention*
+
+- `self` for instance method
+- `cls` for class method
+

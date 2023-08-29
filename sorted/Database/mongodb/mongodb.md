@@ -1,19 +1,10 @@
 # MongoDB
 
-## installation
-
-on windows
-
-- service configuration
-  - Run the service as Network Service user
-    - windows use account that is **built-in** windows
-  - Run the service as a local or domain user
-    - for local user: specify a period(.) for domain and set account password
-    - for domain user: set account domain and account password
-
-## Glossary
+## Foundation
 
 [mongodb Glossary](mongodb-glossary.md)
+
+[document](mongodb-document.md)
 
 ## Use MongoDB
 
@@ -21,7 +12,7 @@ on windows
 
 [Practical Operation](mongodb-practical-operation.md)
 
-[Data Type](mongobd-data-type.md)
+[Data Type](mongodb-data-type.md)
 
 [Mongo Shell](mongodb-shell.md)
 

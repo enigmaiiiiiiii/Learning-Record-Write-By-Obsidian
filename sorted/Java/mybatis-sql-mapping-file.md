@@ -1,8 +1,19 @@
-# SQL映射文件
+# MyBatis - SQL Mapper File
 
-- 一个映射文件对应一个接口
+* [What It Is](#what-it-is)
+* [`<mapper>`](#`<mapper>`)
+* [<select>](#<select>)
+* [<insert>](#<insert>)
+* [<delete>](#<delete>)
+* [<update>](#<update>)
+* [<sql> and <include>](#<sql>-and-<include>)
+* [<resultMap> and <result>](#<resultmap>-and-<result>)
 
-## \<mapper>
+## What It Is
+
+- One mapper file for [one interface]
+
+## `<mapper>`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -21,23 +32,23 @@
 - namespace: Mapper接口的全限定名, 接口名在全局唯一的条件下有效
 - id: 与Mapper接口组成方法的完全限定名, 方法名在全局唯一的条件下有效
 
-## \<select>
+## <select>
 
 属性
 
 - resultType: 返回值类型
 - resultMap: 指定返回类型映射关系
 
-## \<insert>
+## <insert>
 
 属性
 
 - useGeneratedKeys="true": 是否使用自动生成的主键
 - keyProperty="id": 返回值的自动生成主键, 赋值给映射方法参数的id属性
 
-## \<delete>
+## <delete>
 
-## \<update>
+## <update>
 
 属性
 
@@ -49,11 +60,11 @@
 - useGeneratedKeys="true": 是否使用自动生成的主键
 - keyProperty="id": 返回值的自动生成主键, 赋值给映射方法参数的id属性
 
-技巧
+trick
 
 - 搭配`<if>`使用忽略参数对象中的空值
 
-## \<sql> and \<include>
+## <sql> and <include>
 
 - `<sql>`: 用于抽取重复的sql片段
 - `<include>`: 用于引用sql片段
@@ -64,7 +75,7 @@
 </sql>
 <include refid="userColumns">
 ```
-## \<resultMap>和\<result>
+## <resultMap> and <result>
 
 - `<resultMap>`: 建立**java类的属性**和**数据库表的字段**的映射关系
   - `<result />`: 建立pojo类中columnName和数据库中column_name名映射
@@ -81,7 +92,7 @@
         <result column="colmumn_name" property="propName">
         <collection 
             property="propName" 
-            ofType="elementType"  <!-- 集合元素类型 -->
+            ofType="elementType"  <!-- type of set element -->
             > 
             <constructor>
                 <arg column="column_name"></arg>
@@ -91,21 +102,22 @@
 </mapper>
 ```
 
-`<resultMap>`
+`<resultMap id="classId" type="package.path.className">`
 
-- id: 映射关系的名称
-- type: 被映射的类的全限定名
+- `id`: 
+- `type`: full qualified name class name of class being mapped
 
-`<result>`
+`<result column="column_name" property="propName">`
 
-- column: 数据库中的列名
-- property: 类中的属性名
+- `column`: column name in database
+- `property`: property name in class
 
-`<id>`
+`<id column="id" property="id">`
 
-- 用于标识主键
-- column: 数据库中的列名
-- property: 类中的属性名
+> use to identify primary key
+
+- `column`: column name in database
+- `property`: property name in class
 
 `<collection>`
 
