@@ -6,7 +6,7 @@
 - [connect to server](#connect-to-server)
 - [Fetch data](#fetch-data)
 
-## Handle Effect firing twice
+## Handle Effect Firing Twice
 
 - cause react intentionally run effect twice in dev mode
 - 所以需要考虑如何避免 [effect firing twice](react-create-app.md#development-mod)

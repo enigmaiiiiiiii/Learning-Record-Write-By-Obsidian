@@ -13,7 +13,7 @@
 
 ## NODE_ENV In Next.js
 
-- allowed values for `NODE_ENV` are `development`, `test`, and `production`
+- allowed values for `NODE_ENV`: `development`, `test`, and `production`
 - `next dev` set `NODE_ENV` to `development`
 - `next build` set `NODE_ENV` to `production`
 - `next start` set `NODE_ENV` to `production`

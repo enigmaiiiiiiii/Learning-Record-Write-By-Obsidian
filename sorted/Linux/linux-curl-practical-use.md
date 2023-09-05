@@ -1,12 +1,24 @@
 # Linux - Practical Use Of Curl
 
+* [Send GET request](#send-get-request)
+* [download file](#download-file)
+* [handle url redirect](#handle-url-redirect)
+* [download file with authentication](#download-file-with-authentication)
+* [Include Header](#include-header)
+
 ## Send GET request
 
 ```sh
-curl [url]
+curl www.example.com
 ```
 
-## download file
+send reqeust with query string
+
+```sh
+curl www.example.com?foo=bar
+```
+
+## Download file
 
 - if use `curl` with no options, it will do a GET request and display the result to Screen
 

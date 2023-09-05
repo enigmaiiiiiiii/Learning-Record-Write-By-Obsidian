@@ -1,4 +1,4 @@
-# 静态成员
+# C++ Class - Static Members
 
 > 希望一个成员与类关联，而非类的每个对象
 

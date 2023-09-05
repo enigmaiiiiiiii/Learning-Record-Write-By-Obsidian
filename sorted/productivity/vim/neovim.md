@@ -17,4 +17,16 @@ Windows    ~/AppData/Local/nvim/init.vim  (or init.lua)
 
 ## Custom Functions
 
-[](neovim-generate-toc-for-markdown.md)
+[Custom function](neovim-generate-toc-for-markdown.md)
+
+## Diff Mode
+
+1. run command `nvim -d file1 file2` in shell
+2. in neovim, run command `:diffs <filename>`
+
+key mapping:
+
+- `dp`: put changes from current window to another window
+- `do`: get changes from another window to current window
+
+

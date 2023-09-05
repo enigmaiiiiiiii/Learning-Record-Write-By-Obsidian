@@ -1,10 +1,10 @@
-# file system routing
+# NextJs - File System Routing
 
-- [what can be routes](#what-can-be-routes)
-- [router object](#router-object)
-- [link pages](#link-pages)
+* [what can be routes](#what-can-be-routes)
+* [router object](#router-object)
+* [link pages](#link-pages)
 
-## what can be routes
+## What Can Be Routes
 
 [Routes](nextjs-routes.md)
 
@@ -15,13 +15,13 @@
 ## link pages
 
 - similar to a single-page application
-- React component `<Link>` 来完成`client-side`的页面跳转
+- React component `<Link>` is used to finish the client-side page jump
 
 ```js
 function Home() {
   return (
     <div>
-      <Link href="/about">
+      <Link href='/about'>
         <a>About Page</a>
       </Link>
     </div>
@@ -39,10 +39,10 @@ function Posts({ posts }) {
     <ul>
       {posts.map((post) => (
         <li key={post.id}>
-          <Link href="/posts/[id]" as={`/posts/${post.id}`}>
+          <Link href='/posts/[id]' as={`/posts/${post.id}`}>
             <a>{post.title}</a>
-              </Link>
-            </li>
+          </Link>
+        </li>
       ))}
     </ul>
   )
@@ -51,7 +51,7 @@ function Posts({ posts }) {
 
 Use URL Object
 
-- link Object
+- This is A link Object
 
 ```js
 {
@@ -60,19 +60,24 @@ Use URL Object
 }
 ```
 
+- Use Link Object In Component `<Link .../>`
+
 ```js
 function Posts({ posts }) {
   return (
     <ul>
       {posts.map((post) => (
         <li key={post.id}>
-          <Link href={{
-            pathname: '/posts/[slug]',
-            query: [slug: post.slug]
-          }} as={`/posts/${post.id}`}>
-            <a>{post.title}</a>
-              </Link>
-            </li>
+          <Link
+            href={{
+              pathname: '/posts/[slug]',
+              query: [slug: post.slug]
+            }}
+            as={`/posts/${post.id}`}
+          >
+          <a>{post.title}</a>
+          </Link>
+        </li>
       ))}
     </ul>
   )

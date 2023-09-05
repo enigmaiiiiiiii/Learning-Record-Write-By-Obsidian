@@ -31,18 +31,18 @@
 
 description
 
-- Initialize a new [**build stage**](docker-dockerfile.md#build-stage)
+- Initialize a new [**build stage**](docker-dockerfile.md#what-is-build-stage)
 - Set a base image for subsequent instructions
 - A valid Dockerfile **must start** with a `FROM` instruction
 - Can appear multiple times within a single Dockerfile in order
 
-Basic Syntax
+Basic Syntax `FROM <image> [AS <name>]`
 
-- `FROM <image> [AS <name>]`
-  - image maybe just from docker hub
-  - `AS <name>`: 
-    - the `name` represents the `image`
-    - the name can be used in subsequent `FROM` and `COPY --from=<name|index>` instructions
+- image maybe just from docker hub
+- `AS <name>`: 
+  - the `name` represents the `image`
+  - the `name` can be used in subsequent `FROM` and `COPY --from=<name|index>` instructions
+  - also can be used as argument of [docker build --target option](docker-build.md)
 
 Complete Syntax
 

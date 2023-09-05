@@ -13,11 +13,11 @@
 
 - for page with [dynamic routes](nextjs-routes.md#dynamic-route)
 - generate pages with **dynamic routes** at **build time**
-- 需要在build time生成的用动态路径表示[页面](nextjs-terminology.md#pages)
+- generate static [pages](nextjs-terminology.md#pages) represent by [dynamic routes](nextjs-dynamic-route.md) at build time
 
 ## feature
 
-- must be used with `getStaticProps`
+- must be used with [`getStaticProps`](nextjs-datafetching-getstaticprops.md)
 - cannot use with `getServerSideProps`
 - cannot exort getStaticpaths from non-page file(e.g. components folder)
 

@@ -69,7 +69,7 @@ function MyComponent() {
 
 demonstrate by a example
 
-- 用这样一个例子来说明: 一个按钮控制视频的播放和暂停
+- illustrate by an example: a button control video play and pause
 
 ```js
 import { useState, useRef, useEffect } from 'react';

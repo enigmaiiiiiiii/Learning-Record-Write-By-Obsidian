@@ -1,12 +1,15 @@
 # Docker - Compose
 
 * [What Is This](#what-is-this)
+* [What's For](#what's-for)
 * [Feature](#feature)
 * [3 Steps of Using Cmpose](#3-steps-of-using-cmpose)
-* [Use Case](#use-case)
 * [docker compose command](#docker-compose-command)
 * [docker compose file](#docker-compose-file)
 * [Compose Service](#compose-service)
+* [docker compose network](#docker-compose-network)
+* [Compose V2](#compose-v2)
+* [Legacy Version](#legacy-version)
 
 ## What Is This
 
@@ -24,6 +27,12 @@ VS [dockerfile](docker-dockerfile.md)
 
 - dockerfile used to build a single image
 
+## What's For
+
+1. development environemnt
+2. Automated testing environment
+3. Single host Deployments
+
 ## Feature
 
 - Multiple isolated environments on a single host
@@ -37,11 +46,6 @@ VS [dockerfile](docker-dockerfile.md)
 2. define the services that make up your app in [`docker-compose.yml`](#docker-compose-file) so they can be run together in an isolated environment
 3. run [`docker compose up`](#docker-compose-command) and Compose starts and runs your entire app
 
-## Use Case
-
-1. development environemnt
-2. Automated testing environment
-3. Single host Deployments
 
 ## docker compose command
 

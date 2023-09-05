@@ -1,5 +1,9 @@
 # nextjs config file
 
+* [add Environment Variables](#add-environment-variables)
+* [basePath](#basepath)
+* [custom header](#custom-header)
+
 ## add Environment Variables
 
 ## basePath

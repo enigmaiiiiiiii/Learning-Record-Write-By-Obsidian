@@ -1,6 +1,8 @@
 # React Render And Commit
 
-* [Step1: Trigger A Render](#step1-trigger-a-render)
+* [Step1: Trigger A Render](#step1:-trigger-a-render)
+* [Step2: Renders your component](#step2:-renders-your-component)
+* [Step3: Commit](#step3:-commit)
 
 ## Step1: Trigger A Render
 
@@ -34,7 +36,9 @@ export default function Image() {
 
 ## Step2: Renders your component
 
+- ...
 
 ## Step3: Commit
 
 - use [`appendChild()` DOM API](javascript-dom-element.md) put all the DOM nodes in Screen
+

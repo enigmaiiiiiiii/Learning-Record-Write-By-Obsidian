@@ -1,30 +1,26 @@
-# Features
+# NextJS - Features
 
 > Next.js is a framework for building server-rendered React applications
 
-- [pre-rendering](#pre-rendering)
-- [Allow Using Node.js Modules In React Components](#allow-using-nodejs-modules-in-react-components)
-- [SEO(搜索引擎优化)](#seo搜索引擎优化)
-- [Fast Refresh](#fast-refresh)
+* [pre-rendering](#pre-rendering)
+* [**Allow Using Node.js Modules** In React Components](#**allow-using-node.js-modules**-in-react-components)
+* [Another Data Fetching Function](#another-data-fetching-function)
+* [SEO(Search Engine Optimization)](#seo(search-engine-optimization))
+* [Fast Refresh](#fast-refresh)
 
 ## pre-rendering
 
-- NestJS pre-rendering a page, **instead** of rendering a page all by **client side javascript**
-
-> 而不是全部通过客户端javascript来渲染一个页面
-
-- can result in better performance and [SEO]
+- NextJS pre-rendering a page, **instead** of rendering a page all by **client side javascript**
+- Can result in better performance and [SEO]
 - Each HTML is associated with minimal JavaScript code
-- Initial Load some HTML, before Hydration
+- Initial Load some HTML, before [Hydration](react-glossary.md#hydration)
 
-> hydration: process of **load JS** makes the page interactive that loaded by browser
+2 forms **pre-rendering**
 
-two forms **pre-rendering**
+- [Server-side Rendering(SSR)](nextjs-rendering.md#server-side-rendering)
+- [Client-side Rendering(CSR)](nextjs-rendering.md#client-side-rendering)
 
-- [Server-side Rendering(SSR)](nextjs-server-side-rendering.md)
-- [Client-side Rendering(CSR)](nextjs-client-side-rendering.md)
-
-one form of **static generation**
+1 form of **static generation**
 
 - [Static Site Generation(SSG)](nextjs-static-generation.md)
 
@@ -44,7 +40,7 @@ one form of **static generation**
 
 [getInitialProps()](nextjs-datafetching-getinitialprops.md)
 
-## SEO(搜索引擎优化)
+## SEO(Search Engine Optimization)
 
 - search engine optimization
 
@@ -66,3 +62,8 @@ export default welcome;
 ```
 
 2. Anonymous arrow function like `export default () => <div>Hi</div>` is not supported
+
+## Pre-loading
+
+
+

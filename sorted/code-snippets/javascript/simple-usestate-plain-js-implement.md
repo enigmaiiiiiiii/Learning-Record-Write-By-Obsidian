@@ -1,6 +1,6 @@
 # simple-usestate-plain-js-implement
 
-## code
+## Code
 
 ```js
 let state;
@@ -24,6 +24,7 @@ function render() {
       setCount(count + 1)
     }, 1000);
   }
+  // assume that here is the part of react rendering
   console.log(`render a component with state: ${count}`);
 }
 

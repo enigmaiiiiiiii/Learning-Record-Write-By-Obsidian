@@ -1,8 +1,10 @@
 # Function getServerSideProps
 
-- [Introduction](#introduction)
-- [features](#features)
-- [when to use](#when-to-use)
+* [Introduction](#introduction)
+* [context parameter](#context-parameter)
+* [return object](#return-object)
+* [features](#features)
+* [when to use](#when-to-use)
 
 ## Introduction
 
@@ -14,7 +16,7 @@ export async function getServerSideProps(context) {
 }
 ```
 
-## context parameter
+## Context Parameter
 
 `context` parameter have the following keys:
 
@@ -28,8 +30,7 @@ export async function getServerSideProps(context) {
 - `preview`: preview mode
 - `resolveUrl`: Original URL string
 
-
-## return object
+## Return Object
 
 return an object with any **one of** the following keys:
 
@@ -43,19 +44,20 @@ return an object with any **one of** the following keys:
 
 `redirect`
 
-- 
+- ...
 
-## features
+## Features
 
 - fetch data **on each request**
 
-> fetch data **at build time** for [getStaticProps](nextjs-datafetching-getstaticpaths.md)
+> Versus: fetch data **at build time** for [getStaticProps](nextjs-datafetching-getstaticpaths.md)
 
 - Time to first byte(TTFB) will be slower than [getStaticProps](nextjs-datafetching-getstaticprops.md)
-  - 因为它会在每次请求发生时使 server 生成计算结果
-  - 并且不能被CDN缓存
+  - Because it will make the server generate the calculation result every time a request occurs
+  - And cannot be cached by [CDN](cdn.md)
 - only can be exported from a [page](nextjs-terminology.md#pages)
 
-## when to use
+## When To Use
 
-- page data must be fetch at request time(比如: 请求头的authorization or geo-location)
+- page data must be fetch at request time(etc. [request header](http-request-header.md) authorization or geo-location)
+

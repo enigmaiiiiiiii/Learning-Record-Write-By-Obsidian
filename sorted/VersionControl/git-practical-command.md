@@ -9,7 +9,7 @@
 * [Set HEAD to specified status](#set-head-to-specified-status)
 * [changes forgotten to add to the last commit](#changes-forgotten-to-add-to-the-last-commit)
 * [temporarily save current modification](#temporarily-save-current-modification)
-* [check all branches](#check-all-branches)
+* [Check all branches](#check-all-branches)
 * [Resovle Conflict](#resovle-conflict)
 * [A way to make the lastest commit as the initial commit](#a-way-to-make-the-lastest-commit-as-the-initial-commit)
 

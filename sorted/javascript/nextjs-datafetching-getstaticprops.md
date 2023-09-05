@@ -1,16 +1,17 @@
 # Function getStaticProps()
 
-- [feature](#feature)
-- [take a look](#take-a-look)
-- [when does `getStaticProps()` run?](#when-does-getstaticprops-run)
-- [parameters](#parameters)
-- [return values](#return-values)
+* [Feature](#feature)
+* [take a look](#take-a-look)
+* [when does `getStaticProps()` run?](#when-does-`getstaticprops()`-run?)
+* [context parameters](#context-parameters)
+* [Return Object](#return-object)
+* [Where to use](#where-to-use)
 
-## feature
+## Feature
 
-- 页面的静态数据
-- run during `next build`
-- when page generated, props data for component is already there
+- Use to generate static content of a page
+- Run during `next build`
+- When page generated, props data for component is already there
 
 contrast with `useEffect()`
 
@@ -27,7 +28,7 @@ export default function Welcome(props) {
 }
 ```
 
-## take a look
+## Take A Look
 
 static Generation with external data
 
@@ -44,12 +45,12 @@ export default function Welcome(props) {
 }
 ```
 
-- `props` will be passed to the page component, 对于上面代码, `props` 会被传递给 `<Welcome/>` 组件
-- parameter [context](#parameters) introduction
+- `props` will be passed to the page component. for the code above, props will be passed to `<Welcome/>` component
+- parameter [context](#context-parameters) introduction
 
-## when does `getStaticProps()` run?
+## When Does `getStaticProps()` run?
 
-- **always** run on **server-side**, **never** run on **client-side**
+- **always** run on [**server-side**](nextjs-rendering.md#server-side-rendering), **never** run on [**client-side**](nextjs-rendering.md#client-side-rendering)
 - always runs during `next build`
 - runs in the background when using [`fallback: true`](nextjs-datafetching-getstaticpaths.md)
 - is called before initial render when using `fallback: blocking`
@@ -62,7 +63,7 @@ dev and prod
 - In development `getStaticProps()` runs on **every request**
 - In production `getStaticProps()` runs at **build time**
 
-## context parameters
+## Context Parameters
 
 `context` Object with following keys:
 
@@ -83,7 +84,8 @@ return an object may containing following keys
   - use case: user-generated content removed by its author(but data may be still store in somewhere)
 - `redirect`:
 
-## Where to use
+## Where To Use
 
 - only can be exported from a [page](nextjs-terminology.md#pages)
 - needs to have all the data **before** the page is **render**
+

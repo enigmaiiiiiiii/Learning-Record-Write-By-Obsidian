@@ -12,7 +12,7 @@
 
 [Render and Commit](react-render-and-commit.md)
 
-[Render Element](react-render-element.md)
+[Rende Element](react-render-element.md)
 
 [Features](react-features.md)
 
@@ -36,7 +36,7 @@
 
 [useRef](react-hooks-useref.md)
 
-[useLayoutEffect](react-hooks-uselayouteffect.md)
+[useLayoutEffect]()
 
 ---
 
@@ -54,17 +54,17 @@ useful when optimize child component
 
 [React API](react-api.md)
 
-[lazy](react-api-lazy.md)
+[lazy]()
 
 [memo](react-api-memo.md): memoize a **component** props to avoid re-render
 
-[forward](react-api-forward.md): forward a **ref** to a child component
+[forward](react-api-forwardref.md): forward a **ref** to a child component
 
 ## III
 
-[NextJs](nextjs.md)
+[NextJs](nextjs)
 
-[React Native](react-native.md): use ReactJS to create Android And iOS application
+[React Native](): use ReactJS to create Android And iOS application
 
 [React Query](react-query.md): a [React Hooks]() library
 
@@ -81,6 +81,9 @@ tips of debug in vscode
 - start debug by click `debug` in `package.json`
 - add breakpoint after run
 
+## BLOG
+
 ## Bug
 
 [get stucked](react-learn-from-problem.md)
+

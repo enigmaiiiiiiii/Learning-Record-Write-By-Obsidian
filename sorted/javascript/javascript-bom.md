@@ -1,4 +1,4 @@
-# BOM
+# JavaScript - BOM
 
 * [Browser Object Model](#browser-object-model)
 * [location](#location)

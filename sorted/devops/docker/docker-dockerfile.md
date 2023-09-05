@@ -51,7 +51,7 @@ WORKDIR /app
 CMD ["python", "script.py"]
 ```
 
-build in command line
+[build](docker-build.md) in command line
 
 ```sh
 docker build -t python-hello-image .
@@ -79,55 +79,13 @@ CMD ["python", "script.py"]
 4. set workdir with [WORKDIR](dockerfile-instructions.md#workdir), like `cd`, this step is for executing command in workdir
 5. run command in container with [CMD](dockerfile-instructions.md#cmd)
 
-## Instructions
+## Syntax
 
 [Instructions](dockerfile-instructions.md)
 
-## Comment
+[dockerfile sytax](dockerfile-syntax.md)
 
-- `#` start a comment
-
-## Environment Variable
-
-`ENV`: set environment variable
-
-```dockerfile
-ENV Foo=/bar
-WORKDIR ${Foo}
-```
-
-Use Environment Variable `${Foo}` Or `$Foo`
-
-- Support standard bash modifiers
-  - `${variable:-word}`: If variable is unset or null, the `word` will be the result
-  - `${variable:=word}`: If variable is set then word will be the result, otherwise **empty string**
-
-```dockerfile
-FROM busybox
-ENV FOO=/bar
-WORKDIR ${FOO}  # WORKDIR /bar
-ADD . $FOO      # ADD . /bar
-COPY \$FOO /quux # COPY $FOO /quux
-```
-
-## Parser directives
-
-- syntax: `# directive=value`
-  - no space between `directive` and `value`
-  - cannot redefined
-- must be written in the first line of the file
-
-> because docker will treat the parser directives as comments once it has processed a [builder instruction](#instructions), a blank line, or a comment
-
-- a special comment
-
-> `escape` is a recongnized directive, used to define the escape character, take the escape directive as an example
-
-```dockerfile
-# escape=` (backtick)
-```
-
-## Build Stage
+## What Is Build Stage
 
 - Is a procedure that generate something
 - Which can later be taken and used

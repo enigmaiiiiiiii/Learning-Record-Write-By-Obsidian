@@ -1,11 +1,9 @@
 # NextJs
 
 * [Features](#features)
-* [create NextJs app](#create-nextjs-app)
 * [Foundation](#foundation)
 * [Advanced](#advanced)
 * [Directive](#directive)
-* [Rendering](#rendering)
 * [Learn From Bug](#learn-from-bug)
 
 ## Features
@@ -14,11 +12,13 @@
 
 [Terminology](nextjs-terminology.md)
 
-## create NextJs app
+[Directory Instruction](nextjs-directories-instruction.md)
 
-[create nextjs app](nextjs-create-nextjs-app.md)
+[Create Nextjs App](nextjs-create-nextjs-app.md)
 
 ## Foundation
+
+[Rendering](nextjs-rendering.md)
 
 [File System Routing](nextjs-file-system-routing.md)
 
@@ -30,7 +30,7 @@
 
 [Environment Variable](nextjs-environment-variable.md)
 
-[nextjs API](nextjs-api.md)
+[Nextjs API](nextjs-api.md)
 
 [support typescript](nextjs-typescript.md)
 
@@ -45,12 +45,6 @@
 [Custom Server](nextjs-custom-server.md)
 
 [Core Concepts](nextjs-core-concepts.md)
-
-## Directive
-
-## Rendering
-
-[Rendering](nextjs-rendering.md)
 
 ## Learn From Bug
 

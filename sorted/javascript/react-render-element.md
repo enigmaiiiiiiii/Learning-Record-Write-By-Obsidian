@@ -1,4 +1,4 @@
-# render an element
+# React - Render An Element
 
 - element is cheap to create
 
@@ -18,3 +18,4 @@ render() {
 ```
 
 - if `count` is [true](javascript-foundation-primitive.md#boolean), the element right after `&&` will be rendered
+

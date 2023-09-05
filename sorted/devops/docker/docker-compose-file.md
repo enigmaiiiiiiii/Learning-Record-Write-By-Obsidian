@@ -10,7 +10,7 @@
 
 - A File defining 
   - [services]()
-  - [networks](docker-network.md)
+  - [networks](docker-networking.md)
   - [volumes](docker-volume.md)
   - version(Optional)
   - configs
@@ -19,6 +19,7 @@
 - Default name is `docker-compose.yml`, sometimes named `compose.yml`
 
 ## Take A Look
+
 ```yml
 services:
   web:
@@ -119,3 +120,30 @@ Long Syntax
   - `bind`
   - `volume`
   - `tmpfs`
+
+## Define build process within compose file 
+
+with `build` subsection you can define [build process](docker-build.md) in compose file
+
+- here is a not normative example
+
+```yml
+services:
+  frontend:
+    image: awesome/webapp
+    build: ./webapp
+
+  backend:
+    image: awesome/database
+    build:
+      context: backend
+      dockerfile: ../backend.Dockerfile
+
+  custom:
+    build: ~/custom
+```
+
+- `awesome/webapp`: build image from `./webapp` directory, lack of `./webapp/Dockerfile` will throw error
+- `awesome/database`: build process will search `backend.Dockerfile` file from parent directory of compose file
+- `custom`
+

@@ -26,3 +26,7 @@ function ChatRoom({ roomId, selectedServerUrl}) {
   const serverUrl = selectedServerUrl || settings.serverUrl;
 }
 ```
+
+## hydration
+
+- process of **load JS** makes the page interactive that loaded by browser

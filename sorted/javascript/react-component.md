@@ -12,7 +12,7 @@
 - [handling events](#handling-events)
 - [effect](#effect)
 
-## they are components
+## They Are Components
 
 - component is a [javascript function](javascript-function.md)
 
@@ -38,16 +38,16 @@ class Welcom extends React.Component {
 }
 ```
 
-## this is not a component
+## This Is Not A Component
 
-`<h1> hello </h1>` is **Jsx literal**(jsx 字面值)
+`<h1> hello </h1>` is **Jsx literal**
 
 ```jsx
 const element = <h1>Hello, world!</h1>;
 export default element; // this is not a component
 ```
 
-## curly braces
+## Curly Braces
 
 > window to javascript expression
 
@@ -93,7 +93,7 @@ function TodoList() {
 
 - a data can be changed
 
-## use a component
+## Use A Component
 
 - lowercase tag name: html tag, `<section>, <div>`
 - to separate with html tag, react component demand start with capital, like `<Welcome />`
@@ -246,4 +246,7 @@ return (
 )
 ```
 
-## effect
+## React Server Component(RSC)
+
+
+

@@ -1,26 +1,26 @@
-# routes
+# NextJS - Routes
 
-- [index routes](#index-routes)
-- [nested routes](#nested-routes)
-- [dynamic route](#dynamic-route)
-- [routes 优先级](#routes-优先级)
+* [index routes](#index-routes)
+* [nested routes](#nested-routes)
+* [dynamic route](#dynamic-route)
+* [routes priority](#routes-priority)
 
-## index routes
+## Index Routes
 
 - `pages/index.js` $\rightarrow$ `/`
 - `pages/blog/about.js` $\rightarrow$ `/blog`
 
-## nested routes
+## Nested Routes
 
 - `pages/blog/first-post.js` $\rightarrow$ `/blog/first-post`
 - `pages/dashboard/settings/username.js` $\rightarrow$ `/dashboard/settings/username`
 
-## dynamic route
+## Dynamic Route
 
 [dynamic route](nextjs-dynamic-route.md)
 
-## routes 优先级
+## Routes Priority
 
-优先级从高到低: `page/name`, `page/[id]`, `page/[...all]`
+priority from high to low: `page/name`, `page/[id]`, `page/[...all]`
 
 - `pages/blog/create` $\rightarrow$ `pages/blog/[slug].js` $\rightarrow$ `/blog/[...all]`

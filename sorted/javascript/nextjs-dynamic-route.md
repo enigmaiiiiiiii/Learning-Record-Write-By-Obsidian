@@ -1,8 +1,8 @@
 # NextJs Dynamic Route
 
-- [Introduction](#introduction)
-- [get routes params](#get-routes-params)
-- [multiple dynamic routes](#multiple-dynamic-routes)
+* [Introduction](#introduction)
+* [get routes params](#get-routes-params)
+* [multiple dynamic routes](#multiple-dynamic-routes)
 
 ## Introduction
 
