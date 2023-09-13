@@ -7,6 +7,14 @@
 
 ## docker compose up
 
+syntax
+
+```sh
+docker compose up [options] [SERVICE...]
+```
+
+- [`service` is compose service](docker-compose.md#compose-service)
+
 description
 
 - builds, create, starts, and attaches to containers for a service

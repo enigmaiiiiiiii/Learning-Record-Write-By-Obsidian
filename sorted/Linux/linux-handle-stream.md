@@ -38,9 +38,6 @@
 
 [cut](linux-cut.md)
 
-
-
-
 ## head
 
 - use for display first nth lines of a file or standard input
@@ -72,3 +69,8 @@ head -n 5 /etc/passwd
 ## wildcard
 
 [wildcard](linux-wildcard.md)
+
+## envsubst
+
+[envsubst](linux-envsubst.md)
+

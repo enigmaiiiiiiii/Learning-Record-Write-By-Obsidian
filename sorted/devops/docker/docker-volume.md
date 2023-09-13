@@ -66,7 +66,7 @@ services:
     image: nginx:latest
     volumes:
       - <volume-name>:<path-to-mount>
-volumes:  # define volume
+  volumes:  # define volume
     <volume-name>:
 ```
 

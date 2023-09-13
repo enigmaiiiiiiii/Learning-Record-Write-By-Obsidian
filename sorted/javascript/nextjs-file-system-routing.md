@@ -6,7 +6,11 @@
 
 ## What Can Be Routes
 
-[Routes](nextjs-routes.md)
+[Pages Routes](nextjs-pages-router.md)
+
+[App Routes](nextjs-app-router.md)
+
+[Dynamic route](nextjs-dynamic-route.md)
 
 ## router object
 

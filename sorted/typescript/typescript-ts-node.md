@@ -1,11 +1,13 @@
-# ts-node
+# Typescript - Tools ts-node
 
 ## What It Is
+
+- third party tools for compiling and running typescript file
 
 ## Feature
 
 - ts-node **automatically** finds and loads tsconfig.json
-- enable to directly run typescript code without precompiling 
+- enable to directly run typescript code without precompiling
 - search behavior same as `tsc`
 
 ## Configuration
@@ -15,7 +17,8 @@ in `tsconfig.json`
 - specify config options in "ts-node" property
 
 ```json
-{ "ts-node": {
+{
+  "ts-node": {
     "transpileOnly": true,
 
     "files": true,
@@ -53,3 +56,4 @@ run single script in project with package.json
 ```s
 ts-node --skipProject script.ts
 ```
+

@@ -5,11 +5,11 @@
 
 ## I
 
-[Vue组件和实例](vue-app.md)
+[Vue Component And Instance](vue-app.md)
 
-[Vue单文件组件: .Vue文件](vue-single-file-component.md)
+[Vue Single File Component: `.vue` File](vue-single-file-component.md)
 
-[Vue插件](vue-plugin.md)
+[Vue Plugin](vue-plugin.md)
 
 [模板语法](vue-template-syntax.md)
 

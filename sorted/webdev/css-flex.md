@@ -1,45 +1,45 @@
-# flex
+# CSS - Flex
 
-- [introduction](#introduction)
-- [Main Axis](#main-axis)
-- [Cross Axis](#cross-axis)
-- [flex Container](#flex-container)
-- [flex Property](#flex-property)
-- [flex-grow](#flex-grow)
-- [create gap](#create-gap)
-- [rest space](#rest-space)
+* [what is this](#what-is-this)
+* [Main Axis](#main-axis)
+* [Cross Axis](#cross-axis)
+* [flex Container](#flex-container)
+* [flex Property](#flex-property)
+* [flex-grow](#flex-grow)
+* [create gap](#create-gap)
+* [rest space](#rest-space)
 
 ## what is this
 
 - element set `display: flex` performance for outside like [**block box**](css-box-model-sorted.md#block-box)
-- 一种将元素布局在单一维度的布局方式
-- main axis: 元素分布维度
-- cross axis: 元素分布维度的垂直方向
-- **flex container**: 属性设置为 display: flex 的元素称为 flex container
-- **flex item**: flex container 的所有子元素称为 flex item
+- a kind of layout that arranges elements in a single dimension
+- main axis: dimension that flex items are arranged in
+- cross axis: dimension perpendicular to main axis
+- **flex container**: element whose style attribute set to `display: flex`
+- **flex item**: all elements in flex container called flex item
 
 ## Main Axis
 
-- main axis: 主轴, 默认是水平方向
+- main axis: default is horizontal
 
-`flex-direction: value;`定义主轴, value取值
+`flex-direction: <value>;` set main axis direction, available value:
 
-- row: 水平方向
-- row-reverse: 水平方向, 反向
-- column: 垂直方向
-- column-reverse: 垂直方向, 反向
+- `row`: horizontal distribution
+- `row-reverse`: horizontal direction, reverse
+- `column`: vertical distribution
+- `column-reverse`: vertical direction, reverse 
 
 ## Cross Axis
 
-- cross axis: 交叉轴, 默认是垂直方向
+- cross axis: default is vertical
 
 ## flex Container
 
 property
 
-- `flex-direction: row;`: 设置 main axis 方向, 默认是 row
-- `flex-wrap: wrap;`: 内容太多会换行显示
-- `flex-flow: row wrap;`: 等于同时设置 flex-direction, flex-wrap
+- `flex-direction: row;`: set [main axis](#main-axis) direction, default value is `row`
+- `flex-wrap: wrap;`: when content is too much, wrap to next line
+- `flex-flow: row wrap;`: equivalent to set `flex-direction` and `flex-wrap` at same time
 - `align-items: center`:
 
 ## flex Property
@@ -55,9 +55,9 @@ property
 - 2. `flex-shrink`: when flex item is too big, how much should it shrink
   - default: 1
 - 3. `flex-basis`: initial main size of a flex item
-  - basis value(基准值) grow or shrink
+  - basis value grow or shrink
   - default: auto
-  - flex: 0 0 300px 相当于创建了一个inflixible item
+  - `flex: 0 0 300px` equilavent to create an inflixible item
 
 may be specified using 1, 2, 3 values
 
@@ -80,12 +80,12 @@ article:nth-of-type(3) {
 }
 ```
 
-- flex item 最小尺寸 200px, 剩余空间按比例分配
+- flex item's minimum size is 200px, remaining space distribution by proportion
 
 
 ## flex-grow
 
-[剩余空间](#)分配比例
+set proportion of [remaining space](#remaining-space) distribution
 
 ```css
 #one { flex-grow: 1 }
@@ -93,12 +93,19 @@ article:nth-of-type(3) {
 #thr { flex-grow: 3 }
 ```
 
-- if without wrap, 元素one, two, three分别占据 1/6, 2/6, 3/6
+- if without wrap, elements `one`, `two`, `three` occupy 1/6, 2/6, 3/6 respectively
 
-## create gap
+## Create Gap
 
 - margin
 - negative margin on flex container
 
-## rest space
+```css
+#container {
+    display: flex;
+    margin: 10px;
+}
+```
+
+## remaining space
 

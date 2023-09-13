@@ -46,13 +46,11 @@
 
 [Tasks And Microtasks](javascript-tasks-and-microtasks.md)
 
-[JSON](/sorted/javascript/javascript-json.md)
+[JSON](javascript-json.md)
 
 [Proxy](javascript-proxy.md)
 
 [Reflect](javascript-reflect.md)
-
-[File](javascript-file.md)
 
 [Built-In Object List](javascript-built-in-object.md)
 
@@ -60,15 +58,15 @@
 
 [Browser Object Model](javascript-bom.md)
 
-[Docuement Object Model](../sorted/javascript/javascript-dom.md)
+[Docuement Object Model](javascript-dom.md)
 
-[Web API](../sorted/javascript/javascript-server-api.md)
+[Web API](javascript-server-api.md)
 
 [Canvas]
 
 [WebGL](webgl.md)
 
-[AJAX](/sorted/javascript/javascript-ajax.md)
+[AJAX](javascript-ajax.md)
 
 ## IV
 
@@ -78,9 +76,9 @@
 
 [Vue.js](vue.md)
 
-[Bootstrap](/sorted/javascript/bootstrap.md)
+[Bootstrap](bootstrap.md)
 
-[three.js](/sorted/javascript/threejs.md)
+[three.js](threejs.md)
 
 ## V: tool chain
 

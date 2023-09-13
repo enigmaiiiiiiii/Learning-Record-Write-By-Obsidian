@@ -5,19 +5,20 @@
 * [dynamic route](#dynamic-route)
 * [routes priority](#routes-priority)
 
+## When Pages Router Take Effect
+
+- files in [`pages` directory]() auto available as routes
+
 ## Index Routes
 
-- `pages/index.js` $\rightarrow$ `/`
-- `pages/blog/about.js` $\rightarrow$ `/blog`
+- `pages/index.js` -> `/`
+- `pages/blog/about.js` -> `/blog`
 
 ## Nested Routes
 
 - `pages/blog/first-post.js` $\rightarrow$ `/blog/first-post`
 - `pages/dashboard/settings/username.js` $\rightarrow$ `/dashboard/settings/username`
 
-## Dynamic Route
-
-[dynamic route](nextjs-dynamic-route.md)
 
 ## Routes Priority
 

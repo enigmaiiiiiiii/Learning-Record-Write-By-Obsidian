@@ -1,4 +1,4 @@
-# Features
+# Typescript - Features
 
 - [key of typescript: type](#key-of-typescript-type)
 - [interface](#interface)
@@ -21,7 +21,10 @@
 [Interface](typescript-interface.md)
 
 - interface and type aliases both can implement inheritance
-- interface 和 [type aliases](typescript-type.md#type-aliases) 的关键区别: **type alias can't re-open to add properties**
+
+significately difference between interface and [type alias](typescript-type-statement.md#name-type-alias)
+
+- type alias can't re-open to [add properties]()
 
 ## function
 

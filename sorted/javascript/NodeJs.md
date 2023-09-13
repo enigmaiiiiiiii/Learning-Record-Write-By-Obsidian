@@ -58,6 +58,8 @@
 
 [Debug NodeJs](nodejs-debug.md)
 
+[Test NodeJs](nodejs-test.md)
+
 [Event](nodejs-event.md)
 
 [Worker Pool](nodejs-worker-pool.md)
@@ -65,7 +67,6 @@
 [REPL](nodejs-repl.md)
 
 [Environment](nodejs-environment-variable.md)
-
 
 ## Get Stucked
 

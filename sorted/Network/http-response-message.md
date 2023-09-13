@@ -1,10 +1,10 @@
 # Http - Response Message
 
-- [Example response](#example-response)
-- [Status Line](#status-line)
-- [6 Header Lines](#6-header-lines)
-- [Empty Line `<CR><LF>`](#empty-line-crlf)
-- [entity body](#entity-body)
+* [Example response](#example-response)
+* [Status Line](#status-line)
+* [Header Lines ](#header-lines-)
+* [Empty Line `<CR><LF>`](#empty-line-`<cr><lf>`)
+* [entity body](#entity-body)
 
 ## Example response
 
@@ -44,8 +44,8 @@ official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools
 - 301 Moved Permanently：请求的对象已经被永久转移了，新的URL定义在响应报 文的Location:首部行中。客户软件将自动获取新的URL。
 - 302 Moved Temporarily：请求的对象已经被临时转移了
 - 304 Not Modified：请求的对象未被修改，服务器返回此状态码时，不会返回响应报文的内容
-- 400 Bad Request: 一个通用差错代码，指示该请求不能被服务器理解
-- 401 Unauthorized: 未授权
+- 400 Bad Request: General error code, indicate that the request is invalid
+- 401 Unauthorized: request need authentication
 - 403 Forbidden: request is refused by server
 - 404 Not Found: request resource is not found
 - 500 Internal Server Error
@@ -69,21 +69,23 @@ status code category
 |   4xx    | client error code | server can't handle the request                                |
 |   5xx    | server error code | server raised error when handle the request                    |
 
-## 6 Header Lines
+## Header Lines 
 
-- Connection
-- Date
-- Server
-- Last-Modified
-- Content-Length
-- Content-Type: 报文主体对象类型，比如Context-Type: text/html
+6 Common Header Lines
+
+- `Connection`
+- `Date`
+- `Server`
+- `Last-Modified`
+- `Content-Length`
+- `Content-Type`: response body content type，for example `Context-Type: text/html`
 
 ## Empty Line `<CR><LF>`
 
 - `<CR>`: Carriage Return, ASCII code is 13
 - `<LF>`: Line Feed, ASCII code is 10
 
-## entity body
+## Entity Body
 
 - load the response content
 

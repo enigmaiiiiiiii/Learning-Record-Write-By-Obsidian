@@ -1,6 +1,6 @@
 # Semantic Versioning
 
-* [Introduction](#introduction)
+* [What It Is](#what-it-is)
 * [Version Format](#version-format)
 * [Semantic Versioning Rules](#semantic-versioning-rules)
 

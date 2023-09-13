@@ -1,6 +1,5 @@
-# npm
+# NPM - Node Package Manager
 
-* [npm is used to](#npm-is-used-to)
 * [config npm](#config-npm)
 * [npm init](#npm-init)
 * [npm-install](#npm-install)
@@ -10,10 +9,7 @@
 * [npm show latest package version](#npm-show-latest-package-version)
 * [npm update](#npm-update)
 
-## npm is used to
-
-
-## config npm
+## Config NPM
 
 - use `npm config` to config npm
 - environment varable: `npm_config_<key>`
@@ -112,3 +108,13 @@ update package while update semver value in [`package.json`](nodejs-package-json
 ```sh
 npm update --save typescript
 ```
+
+update all
+
+```sh
+npm update
+```
+
+## npm audit
+
+

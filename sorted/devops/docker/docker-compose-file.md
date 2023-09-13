@@ -90,18 +90,21 @@ services:
   db:
     image: postgres:latest
     volumes:
-      - "/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock"
-      - "dbdata:/var/lib/postgresql/data"
+      - "/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock" # bind mount
+      - "dbdata:/var/lib/postgresql/data" # bind volume
 
 volumes:
   mydata:
   dbdata:
 ```
 
-this example shows
+This Example Shows
 
 1. `web` service defined [a volume](docker-volume.md) named `mydate` and a [bind mount](docker-bind-mounts.md)
-2. `db` service defined [a volume](docker-volume.md) named `dbdata` and a [bind mount](docker-bind-mounts.md), use old string format
+2. **use old string format** to config `db` service:
+
+- [a volume](docker-volume.md) named `dbdata` 
+- A [bind mount](docker-bind-mounts.md)
 
 Short Syntax
 
@@ -109,6 +112,11 @@ Short Syntax
   - `SOURCE`: host path or volume name
   - `TARGET`: container path
   - `MODE`: `ro` for read-only, `rw`(default) for read-write
+
+```yml
+volumes:
+  - ./source/path:./target/path:ro
+```
 
 Long Syntax
 
@@ -146,4 +154,25 @@ services:
 - `awesome/webapp`: build image from `./webapp` directory, lack of `./webapp/Dockerfile` will throw error
 - `awesome/database`: build process will search `backend.Dockerfile` file from parent directory of compose file
 - `custom`
+
+## depends_on
+
+```yml
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+      - redis
+  redis:
+    image: redis
+  db:
+    image: postgres
+```
+
+behviors caused by `depends_on`
+
+- start order: `docker compose up` will start `db` and `redis` before `web`
+- stop order: `docker compose stop` will stop `web` before `db` and `redis`
+
 

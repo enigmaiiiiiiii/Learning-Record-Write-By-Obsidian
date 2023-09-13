@@ -17,6 +17,7 @@
   - Start, Stop, Rebuild
 - Configuration for containers
 - Tool of defining and running **multi-container** Docker applications
+- Every container is a service of the compose
 
 **two essential things**
 
@@ -70,6 +71,15 @@ services:
 ## docker compose network
 
 [docker compose network](docker-compose-network.md)
+
+## Multiple Compose Files
+
+[docker compose multiple files](docker-multiple-compose-files.md)
+
+## Compose For Production
+
+[Compose For Production](docker-compose-for-production.md)
+
 
 ## Compose V2
 

@@ -20,16 +20,6 @@
 
 [CDN](cdn.md)
 
-## tools
-
-[StackBlitz](stackblitz.md): website IDE
-
-[browser dev tools](browser-dev-tools.md)
-
-[Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature
-
-[mobile friendly test](https://search.google.com/test/mobile-friendly): a website that tells you whether your website is mobile friendly
-
 ## beautify
 
 [font awesome](font-awesome.md)
@@ -47,6 +37,14 @@
 [design pattern]()
 
 [Performance patterns]()
+
+## API Design
+
+[Rest]()
+
+[GraphQL]
+
+[gRPC]
 
 ## Security
 
@@ -70,6 +68,16 @@
 
 [data id](web-dev-data-id.md)
 
+[how to log](web-dev-how-to-log.md)
+
 [$nbsp and white space](web-dev-nbsp-and-white-space.md)
 
+## tools
 
+[StackBlitz](stackblitz.md): website IDE
+
+[browser dev tools](browser-dev-tools.md)
+
+[Can I Use](https://caniuse.com/): a website that tells you which browsers support a particular feature
+
+[mobile friendly test](https://search.google.com/test/mobile-friendly): a website that tells you whether your website is mobile friendly

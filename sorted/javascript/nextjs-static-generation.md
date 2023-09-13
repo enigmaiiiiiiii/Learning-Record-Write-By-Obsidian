@@ -22,7 +22,7 @@ export async function getStaticProps(context) {
 }
 ```
 
-page [**path**](nextjs-routes.md#dynamic-route) depend on external data: use [`getStaticPaths`](nextjs-datafetching-getstaticpaths.md)
+page [**path**](nextjs-dynamic-route.md) depend on external data: use [`getStaticPaths`](nextjs-datafetching-getstaticpaths.md)
 
 - `getStaticPaths()` is required in static generate dynamic routes page
 

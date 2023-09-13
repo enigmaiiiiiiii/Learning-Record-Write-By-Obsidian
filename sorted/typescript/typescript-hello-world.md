@@ -1,10 +1,9 @@
-# Typescript - get start
+# Typescript - Hello TypeScript
 
-* [Install](#install)
-* [CLI Tools](#cli-tools)
-* [compile single .ts file to js:](#compile-single-ts-file-to-js)
-* [run single .ts file](#run-single-ts-file)
-* [index.d.ts](#indexdts)
+* [Install Typescript Compiler](#install-typescript-compiler)
+* [Command Line Tools tsc](#command-line-tools-tsc)
+* [Third Party Tools](#third-party-tools)
+* [index.d.ts](#index.d.ts)
 
 ## Install Typescript Compiler
 

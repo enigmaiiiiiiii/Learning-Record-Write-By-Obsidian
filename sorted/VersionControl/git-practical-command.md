@@ -65,9 +65,19 @@ git reset [--soft | --mixed [-N] | --hard |--merge | --keep] [-q] <commitid>
 
 ## remove file from stage
 
-```bash
+```sh
 git rm --cached [<file>...]
 git rm --cached -r [<dir>...] # recursive remove
+```
+
+remove files that new add to `.gitignore` from stage that already add by previous commit 
+
+1. remove a file from stage
+2. then git add back again
+
+```sh
+git rm --cached -r . # remove all files from stage 
+git add . # add all files to stage
 ```
 
 ## discard all local changes

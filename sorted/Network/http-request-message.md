@@ -32,7 +32,7 @@ request method, including GET, POST, HEAD, PUT, DELETE
 
 [request-header](http-request-header.md)
 
-## empty line
+## Empty Line
 
 represent `<CR><LF>`
 

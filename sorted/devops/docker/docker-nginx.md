@@ -17,8 +17,8 @@ docker run --name hello-nginx -p 80:80 -d nginx
 docker ps
 
 ```sh
-CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS         PORTS                            NAMES
-394410b3945d   nginx                       "/docker-entrypoint.…"   6 seconds ago   Up 6 seconds   0.0.0.0:80->80/tcp               hello-docker
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                            NAMES
+394410b3945d   nginx     "/docker-entrypoint.…"   6 seconds ago   Up 6 seconds   0.0.0.0:80->80/tcp               hello-docker
 ```
 
 ## New Nginx Image

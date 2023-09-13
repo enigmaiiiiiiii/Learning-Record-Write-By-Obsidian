@@ -16,3 +16,4 @@ function ActiveLink({ children, href }) {
 ## router.push
 
 - useful when [next/link](nextjs-api.md#nextlink) is not enough
+

@@ -20,7 +20,7 @@
 })()
 ```
 
-detail of findOne() method
+detail of `findOne()` method
 
 - return a [Promise](javascript-promise.md)
 - so we can use `then()` method to get the result

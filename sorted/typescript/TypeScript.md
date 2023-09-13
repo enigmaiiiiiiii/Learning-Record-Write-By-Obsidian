@@ -1,10 +1,10 @@
-# typescript
+# TypeScript
 
 [TypeScript documentation](https://www.typescriptlang.org/)
 
 [TypeScript Cheat Sheets](typescript-cheat-sheets.md)
 
-[Start With Compile](typescript-get-started.md)
+[Compile TypeScript](typescript-hello-world.md)
 
 [Introduction](typescript-introduction.md)
 

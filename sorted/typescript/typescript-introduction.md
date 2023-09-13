@@ -18,4 +18,6 @@
 
 ## what typescript does
 
-- 提供类型检查的同时, 提供了[更严格的检查等级](typescript-config-file.md), 等级越高typescript检查的越多
+- provide type checking
+- provide [more strict checking level](typescript-config-file.md), the higher the level, the more typescript will check
+

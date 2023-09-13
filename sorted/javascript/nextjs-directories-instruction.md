@@ -2,36 +2,7 @@
 
 ## Top Level Directories
 
-```
-.
-├── app
-├── pages
-├── public
-└── src
-```
-
-**`public` directory**
-
-- files in `public` directory are served as static assets
-- can be referenced by base URL `/`
-
-for example `public/me.png` can be referenced as `/me.png`
-
-```js
-import image from 'next/image'
-
-export function Avatr() {
-    return <Image src="/me.png" alt="me" width="64" height="64" />
-}
-```
-
-**`src` directory**
-
-- common pattern of react placing application code 
-
-**`app` directory**
-
-- routing
+[Top Level Directories](nextjs-top-level-directories.md)
 
 ## Top Level Files
 

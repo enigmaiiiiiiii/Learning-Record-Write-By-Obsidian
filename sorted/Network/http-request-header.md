@@ -28,7 +28,6 @@ Connection: keep-alive
 
 `Connection: Keep-Alive`: represent client wish to keep connection open, default in HTTP/1.1
 
-
 - if `Connection: Keep-Alive`, then add `Keep-Alive` header
 - `Keep-Alive: timeout=5, max=1000`
   - timeout: spare time of connection keep

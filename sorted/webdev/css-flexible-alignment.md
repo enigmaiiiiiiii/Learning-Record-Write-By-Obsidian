@@ -22,22 +22,21 @@ default value for all [items](css-flex.md#what-is-this) inside a grid or flex co
 
 ## justify-content
 
-- 定义 flex container 的内容和空间沿**main axis**上的分布方式
-- 定义 grid container 的内容和空间沿[**inline direction**](css-grid-foundation.md#feature)上的分布方式
+- define [`flex container`](css-flex.md#flex-container) content and space distribution along **main axis**
+- define [`grid container`]() content and space distribution along [**inline direction**](css-grid-foundation.md#feature)
 
 value
 
-- `justify-content: flex-start;`: 默认值, 左对齐
-- `justify-content: space-between;`: 两端对齐, 间距相等
-
+- `justify-content: flex-start;`: align at left, default value
+- `justify-content: space-between;`: first item is flush with main-start edge, last item is flush with with the main-end edge
 
 ## align-content
 
-- 描述 **将所有子元素视为一个整体** 在 **可用空间** 的分布方式
-- 在flex box中, 描述 **主轴** 分布
-- 在grid容器中的**分布**方式, when use area is **smaller** than the grid container
+- describe the distribution of **all child elements as a whole** in the available space
+- in flex box, describe the **main axis** distribution
+- in grid container, describe the **distribution** when used area is **smaller** than the grid container
 
-> align-content属性在grid容器中生效, 需要网格容器的尺寸大于所有内容的尺寸
+> if want attribute `align-content` take effect in grid container, requires grid container size is **larger than all content size**
 
 [code](css-align.md)
 
@@ -51,7 +50,7 @@ shorthand for
 ## align-self
 
 - for **grid or flex** layout
-- 用于**单个元素**的对齐
+- use to align **single item**
 - override `align-items` value
 - in flex box, aligns the item on the **cross axis**
 
@@ -86,16 +85,16 @@ value
 
 ## align-items
 
-> 定义 直接子元素, not container self, not **其它元素** either
+> influence direct children elements, not container self, not **other elements** either
 
 - define the default [align-self](#align-self) for all items of the box
-- 描述了**子元素**的分布方式
-- 在**flex容器**中, 控制**Cross Axis**方向上子元素的分布方式
-- 在**grid容器**中, 控制子元素在网格中的分布方式
+- describe the distribution of **child elements**
+- in **flex container**, control the distribution of child elements in [**cross axis**](css-flex.md#cross-axis)
+- in **grid container**, control the distribution of child element in grid
 
 [code](css-align.md)
 
-取值
+available values
 
 - `align-items: stretch;`
 - `align-items: start;`
@@ -107,7 +106,7 @@ value
 - `align-items: flex-start`:
 - `align-items: flex-end`
 
-___
+---
 
 - `align-items:normal`: depends on the layout
   - in absolutly-positioned elements, it is `start`

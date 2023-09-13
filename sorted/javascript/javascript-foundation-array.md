@@ -17,18 +17,19 @@
 
 - delete last element in array, return deleted element
 
-`map(callbackfn[, thisArg])`
+`map(callbackFn[, thisArg])`
 
 > thisArg is optional
 
-- call `callbackfn` function for each element in array
+- call `callbackFn` function for each element in array
 - return value: **a new array**
-- `callbackfn` pass three parameter automaticlly: `element, index, array`
+- `callbackFn` take three parameter automaticlly: `element, index, array`
 - type of callbackfn: `(element, index, array) => {}`
   - `element`: current element
   - `index`: element index
   - `array`: array its self
-- thisArg: callbackfn中的this值
+- return value of `callbackFn` will be added to new array
+- `thisArg`: argument value of `this` in `callbackFn` 
 
 `forEach(callbackFn)`
 

@@ -8,10 +8,9 @@
 
 [Connect to Server](mongodb-nodejs-connect.md)
 
-
 ## Query data
 
-[mongodb node driver query data](mongodb-nodejs-query-data.md)
+[Mongodb Node Driver Query Data](mongodb-nodejs-query-data.md)
 
 [Perform Text Search](mongodb-nodejs-text-search.md)
 

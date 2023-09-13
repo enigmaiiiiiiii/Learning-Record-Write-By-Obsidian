@@ -11,7 +11,7 @@
 
 ## what's for
 
-- for page with [dynamic routes](nextjs-routes.md#dynamic-route)
+- for page with [dynamic routes](nextjs-dynamic-route.md)
 - generate pages with **dynamic routes** at **build time**
 - generate static [pages](nextjs-terminology.md#pages) represent by [dynamic routes](nextjs-dynamic-route.md) at build time
 
@@ -37,15 +37,15 @@ export async function getStaticPaths() {
 }
 ```
 
-- called from a page use [Dynamic routes](nextjs-routes.md#dynamic-route)
+- called from a page use [Dynamic routes](nextjs-dynamic-route.md)
 
 ## return value
 
 ### paths
 
-`paths` is an array of objects, elements represent a 具体的路径参数值
+`paths` is an array of objects
 
-`paths`中每个元素代表一个路径, 路径表示的页面会被**pre-rendered**
+every element in `paths` array represent a path, the page represent by path will be **pre-rendered**
 
 properties of `paths` element:
 

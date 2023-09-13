@@ -1,11 +1,12 @@
 # type statement
 
-- [Introduction](#introduction)
-- [Name Type Alias](#name-type-alias)
-- [Use To Extend Type](#use-to-extend-type)
-- [Use With Generics](#use-with-generics)
-- [Conditional Types](#conditional-types)
-- [Mapped Types](#mapped-types)
+* [Introduction](#introduction)
+* [Name Type Alias](#name-type-alias)
+* [Extend type](#extend-type)
+* [Intersection Type](#intersection-type)
+* [Use With Generics](#use-with-generics)
+* [Conditional Types](#conditional-types)
+* [Mapped Types](#mapped-types)
 
 ## Introduction
 

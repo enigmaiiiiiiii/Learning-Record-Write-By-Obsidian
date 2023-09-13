@@ -3,7 +3,6 @@
 * [Features](#features)
 * [Foundation](#foundation)
 * [Advanced](#advanced)
-* [Directive](#directive)
 * [Learn From Bug](#learn-from-bug)
 
 ## Features

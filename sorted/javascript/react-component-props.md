@@ -1,9 +1,11 @@
 # Component Props
 
-- [props is a buit-in react object](#props-is-a-buit-in-react-object)
-- [As component Attribute](#as-component-attribute)
-- [Passing JSX as children](#passing-jsx-as-children)
-- [props are unchangeable](#props-are-unchangeable)
+* [Feature](#feature)
+* [props is a buit-in Object in react component](#props-is-a-buit-in-object-in-react-component)
+* [As component Attribute](#as-component-attribute)
+* [Passing JSX as children](#passing-jsx-as-children)
+* [Define props for Component](#define-props-for-component)
+* [Set props for Component](#set-props-for-component)
 
 ## Feature
 
@@ -47,9 +49,9 @@ export default function paramedWelcome() {
 }
 ```
 
-`<Welcome name="Sara" age="18">` 等价于 `{Welcome({name: "Sara", age: "18")} `
+`<Welcome name="Sara" age="18">` equilavent to `{Welcome({name: "Sara", age: "18")} `
 
-使用 props 传播语法, 将父组件参数传递给子组件, 可以简化代码
+use props spread syntax, pass parent component's props to child component, can simplify code
 
 ```jsx
 funciton Welcome(props) {

@@ -121,7 +121,7 @@ any
 
 ## Union Types
 
-[in c++, there is union type too](c++-union-type.md)
+[in c++, there is union type too](c++-union.md)
 
 ```ts
 function printId(id: number | string) {
@@ -271,9 +271,9 @@ type M = keyof { [n: string]: unknown };  // M = string | number
 ## Mapped Types
 
 - build on [index signature](typescript-interface.md#index-signatures)
-- 通过另一个type来生成一个新的type, to avoid repeat
+- generate a new type from another type, to avoid repeat
 
-比如结合[keyof operator](#keyof-operator)来生成一个新类型, 可以用少量的代码来**修改一个类型的所有属性值的类型**
+For example, combine with [keyof operator](#keyof-operator) to generate a new type, can use a little code to **modify the type of all properties of a type**
 
 ```ts
 type OnlyBoolsAndHorses = {
@@ -284,9 +284,9 @@ type OptionsFlags<Type> = {
 }
 ```
 
-map属性中的**属性修饰符** `readonly`和`?` 可以被修改
+property modifiers `readonly` and `?` can be modified in mapping property
 
-- 使用`+`和`-`前缀来添加或者删除属性, 无前缀表示`+`
+- with `+` and `-` prefix to add or remove property, no prefix means `+`
 
 ```ts
 type Createmutable<Type> = {
@@ -302,7 +302,9 @@ type UnlockedAccount = CreateMutable<LockedAccount>;
 
 ## Type Compatibility
 
-ts中的类型兼容性是基于结构, **仅基于成员来关联类型**, 而**不是基于命名**
+In Typescript, type Compatibility is based on structure
+
+- **only based on members**, not **based on names**
 
 ```ts
 interface Pet {
@@ -315,27 +317,26 @@ let pet: Pet;
 pet = new Dog(); // OK
 ```
 
-对象类型
+Object Type
 
-> 属性少的兼容属性多的, 属性少的可以当做超类
-> 声明为超类的对象的值可以是派生类
+> less-properties type is compatible with more-properties type, less-properties type can be used as a super class
+> declared as super class, can be assigned with derived class
 
-
-- 检查类型时, 只检查**是否包含目标类型成员**
+- When type checking, only check **whether contains target members**
 
 `let pet: Pet = dog;`
 
 - in this code, target type is `Pet`, source type is `Dog`
 
-函数参数兼容
+Function parameters compatibility
 
-- 就参数数量而言
-  - 参数多的兼容参数少的, 参数多的可以当做超类
-  - 与参数名称无关, 只看参数类型
-- 参数类型兼容
-  - 超类形参兼容派生类实参
-  - 函数体中只能访问超类的属性和方法
-  - 使用[type assertion](#type-assertion)可以访问派生类的属性和方法
+- in term of parameter number
+  - more-parameters function compatible with less-parameters function, more-parameters function can be used as a super type
+  - unrelated to **parameter name**, only check **parameter type**
+- in term of parameter type
+  - super type parameter compatible with derived type argument
+  - in function body, only can access super type's properties and methods
+  - with [type assertion](#type-assertion) can access derived class's properties and methods
 
 ```ts
 interface Point {

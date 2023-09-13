@@ -1,28 +1,28 @@
 # CSS Grid Foundation
 
-- [feature](#feature)
-- [声明网格容器](#声明网格容器)
-- [set columns and rows](#set-columns-and-rows)
-- [repeat()](#repeat)
-- [fr unit](#fr-unit)
-- [minmax()](#minmax)
-- [跨轨道(行, 列)元素](#跨轨道行-列元素)
-- [网格间距](#网格间距)
+* [feature](#feature)
+* [declare grid container](#declare-grid-container)
+* [set columns and rows](#set-columns-and-rows)
+* [repeat()](#repeat())
+* [fr unit](#fr-unit)
+* [minmax()](#minmax())
+* [cross row or column elements](#cross-row-or-column-elements)
+* [Grid Gap](#grid-gap)
 
-## feature
+## Feature
 
-- 网格中的元素可以重叠
-- inline direction: left to right(main direction)
-- block direction: downward(cross direction)
+- elements in grid can overlap
+- **inline direction**: left to right(main direction)
+- **block direction**: downward(cross direction)
 
-## 声明网格容器
+## declare grid container
 
 - `display: grid;`
 
 ## set columns and rows
 
-- `grid-template-columns`: 定义网格的列数, 以及每列的宽度
-- `grid-template-rows`: 定义网格的行数, 以及每行的高度
+- `grid-template-columns`: define grid number of columns and width of each column
+- `grid-template-rows`: define grid number of rows and height of each row
 
 ```css
 .wrapper {
@@ -31,25 +31,26 @@
 }
 ```
 
-- .wrapper是一个网格容器, 有3列, 每列宽度100px
+- `.wrapper` is a grid container with 3 columns, each column width is 100px
 
 ## repeat()
 
-- 当网格有很多列时, 可以使用repeat()函数, 简化code
+when there are many columns, use repeat() to simplify code
+
 - `repeat(3, 100px)` equal to `100px 100px 100px`
 
 ## fr unit
 
-- fr是一种单位和属性 [flex-grow](css-flex.md#flex-grow) 有类似的效果
-- 根据可用空间分配比例
-- a flexible size
-- 可以和绝对单位(px)混合使用
+- fr is a unit, has the similar effect with [flex-grow](css-flex.md#flex-grow)
+- According to available space distribute space by proportion
+- A flexible size
+- Can be mixed used with absolute unit(px)
 
 ## minmax()
 
 `minmax(min, max)`
 
-- 当网格尺寸是自动设置的, minmax()可以设置最小宽度和最大宽度
+- when grid size is auto, minmax() can set min width and max width
 
 ```css
 .wrapper {
@@ -63,10 +64,10 @@
 
 ## cross row or column elements
 
-- `grid-column-start`: 起始列
-- `grid-column-end`: 结束列
-- `grid-row-start`: 起始行
-- `grid-row-end`: 结束行
+- `grid-column-start`: start column
+- `grid-column-end`: end column
+- `grid-row-start`: start row
+- `grid-row-end`: end row
 
 ```css
 .box1 {
@@ -77,7 +78,8 @@
 }
 ```
 
-## 网格间距
+## Grid Gap
 
-- `grid-column-gap`: 列间距
-- `grid-row-gap`: 行间距
+- `grid-column-gap`: column gap
+- `grid-row-gap`: row gap
+

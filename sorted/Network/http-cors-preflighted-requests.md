@@ -1,4 +1,4 @@
-# Cross-Origin Resource Sharing (CORS) Preflighted Requests
+# Http - Cross-Origin Resource Sharing (CORS) Preflighted Requests
 
 ## What It is
 
@@ -13,33 +13,42 @@
   - Access-Control-Request-Method
   - Access-Control-Request-Headers
 
-需要执行预检请求的代码
+code that will trigger preflighted request
 
-- 因为Content-Type头部字段为`application/xml`, 所以会发送预检请求
 
 ```js
 const xhr = new XMLHttpRequest();
 xhr.open('POST', 'https://bar.other/resources/post-here/');
 xhr.setRequestHeader('X-PINGOTHER', 'pingpong');
-xhr.setRequestHeader('Content-Type', 'application/xml');
+xhr.setRequestHeader('Content-Type', 'application/xml');  // cause preflighted request
 xhr.onreadystatechange = handler;
 xhr.send('<person><name>Arun</name></person>');
 ```
+
+- Cause `Content-Type` header is `application/xml`, so browser will send preflighted request
+
 interact process of client and server
 
 - first interaction is preflighted request/response
 
 1. client send preflighted request
-    - 包含OPTIONS请求行
-    - 包含Origin: http://foo.example头部字段
-    - 包含Access-Control-Request-*头部字段
-2. 服务端响应http预检报文
-    - 包含Access-Control-Allow-*头部字段
-3. POST请求
-    - 不会携带Access-Control-Request-*头部字段
-4. 服务端请求
-    - 会携带Allow-Control-Allow-Origin头部字段
-    - 携带Vary: Accpet-Encoding, Origin头部字段
+
+- contains `OPTIONS` [request line](http-request-message.md#request-line)
+- contains `Origin: http://foo.example` [header field](http-request-header.md)
+- contains `Access-Control-Request-*` [header field](http-request-header.md)
+
+2. server side response http preflighted request
+
+- include `Access-Control-Allow-*: http://foo.example` [header field](http-response-message.md#header-lines)
+
+3. POST Request
+
+- won't carry `Access-Control-Request-*` [header field](http-request-header.md)
+
+4. Server side request
+
+- Carry `Allow-Control-Allow-Origin` [header field](http-request-header.md)
+- Carry `Vary: Accept-Encoding, Origin` [header field](http-request-header.md) 
 
 ## condition that will not trigger preflighted request
 

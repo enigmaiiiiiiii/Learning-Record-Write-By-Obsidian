@@ -1,8 +1,8 @@
-# 判断机器字节序 
+# Check Machine Byte Order
 
-[[c++_union]] [[字节序]]
+[c++_union]()
 
-> 字节序 union Linux高性能服务器编程
+[byte order]()
 
 ```c++
 #include <cstdio>  

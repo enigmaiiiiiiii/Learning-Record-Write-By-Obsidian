@@ -1,7 +1,6 @@
-# package of 配置类
+# SpringBoot Workflow - Package Of Configuration Class
 
-- 配置类的package
-- 类上均添加`@Configuration`, 表示为配置类
+- add `@Configuration` at class level, to indicate that this is a configuration class
 - 定义的类
   - MybatisConfiguration.java
     - 添加`@MapperScan(val)`注解, 将val指定的包下的所有接口都作为Mapper接口
@@ -22,7 +21,7 @@ public class MybatisConfiguration {
 
 ## WebMvcConfiguration.java
 
-- 响应[跨域请求](http-cors.md)
+- response [Cross-Origin resource sharing](http-cors.md)
 - override addCorsMappings方法
 
 ```java

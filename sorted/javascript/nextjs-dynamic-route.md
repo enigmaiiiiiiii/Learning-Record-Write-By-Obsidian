@@ -1,12 +1,12 @@
-# NextJs Dynamic Route
+# NextJs - Dynamic Route
 
-* [Introduction](#introduction)
+* [Take A Look](#take-a-look)
 * [get routes params](#get-routes-params)
 * [multiple dynamic routes](#multiple-dynamic-routes)
 
-## Introduction
+## Take A Look
 
-> 使用`[]`语法
+> `[]` Syntax
 
 `pages/blog/[id].js`
 
@@ -22,7 +22,7 @@
 
 ***
 
-there is a react component in `./components/[id].js`
+there is a react component with path `./components/[id].js`
 
 ```js
 export function getStaticPaths() {
@@ -51,7 +51,7 @@ export default function Home() {
 }
 ```
 
-## get routes params
+## Get Routes Params
 
 - **use object `router.query`**
 
@@ -92,10 +92,10 @@ for file `pages/post/[...slug].js`
 
 ```js
 // router.query
-{pid: ['a', 'b', 'c']
+{pid: ['a', 'b', 'c']}
 ```
 
-## multiple dynamic routes
+## Multiple Dynamic Routes
 
 page file: `pages/post/[pid]/[comment].js`
 
@@ -108,7 +108,5 @@ page file: `pages/post/[pid]/[comment].js`
   comment: 'a-comment'
 }
 ```
-
-
 
 

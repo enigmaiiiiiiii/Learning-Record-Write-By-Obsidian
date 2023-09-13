@@ -1,12 +1,12 @@
-# 布局
+# CSS - Layout
 
 ## Position
 
-[定位](css-positioning.md)
+[](css-positioning.md)
 
 ## Float
 
-[CSS浮动](css-float.md)
+[CSS Float](css-float.md)
 
 ## Flexbox Layout
 
@@ -22,6 +22,7 @@
 
 ## direction
 
-- 设置元素在文档流中的方向, 默认是`ltr`
+set element direction in document flow, default is `ltr`
+
 - `direction: ltr`
 - `direction: rtl`
