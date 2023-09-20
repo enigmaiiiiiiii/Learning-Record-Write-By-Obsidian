@@ -1,8 +1,9 @@
-# React Glossary
+# React - Glossary
 
-- [Reactive value](#reactive-value)
+* [Reactive Values](#reactive-values)
+* [hydration](#hydration)
 
-## Reactive value
+## Reactive Values
 
 1. [useState value](react-hooks-usestate.md)
 
@@ -10,7 +11,7 @@
 const [count, setCount] = useState(0);
 ```
 
-2. component [prop](react-component-props.md)
+2. component [props](react-component-props.md)
 
 ```js
 function MyComponent(props) {
@@ -27,6 +28,9 @@ function ChatRoom({ roomId, selectedServerUrl}) {
 }
 ```
 
+> [reference variables](react-hooks-useref.md) are not reactive values
+
 ## hydration
 
 - process of **load JS** makes the page interactive that loaded by browser
+

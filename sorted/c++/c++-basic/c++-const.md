@@ -2,10 +2,10 @@
 
 ## const Object
 
-- *const*对象一旦创建后就不能再改变，所以const对象**必须初始化**
-- 初始值可以是任意复杂的表达式
-- *extern*关键字可在一个文件中定义*const*对象，而在其他多个文件中声明并使用
-- 函数不能使用const限定符
+- `const` object can not be modified after created, so `const` object **must be initialized**
+- initial value can be any complex expression
+- with `extern` keyword, `const` object can be defined in one file and declared in other files
+- `const` identifier can not be used on function
 
 ## const expression
 
@@ -35,4 +35,6 @@
   
 ## keywords
 
-[[关键字mutable]]
+[mutable](c++-keyword-mutable.md)
+
+

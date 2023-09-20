@@ -34,7 +34,7 @@ layer relationship
 > wide: 350 + 25 + 25 + 5 + 5
 > high: 150 + 25 + 25 + 5 + 5
 
-- content area, padding, border组成盒子模型可见区域
+- content area, padding, border make up the visible area of the box model
 
 > background works on content and padding
 
@@ -46,7 +46,7 @@ layer relationship
 
 [Block Box And Inline Box](css-box-model-sorted.md)
 
-## display property
+## Display Property
 
 [display property](css-display.md)
 

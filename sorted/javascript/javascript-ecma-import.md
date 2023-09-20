@@ -1,13 +1,13 @@
-# ECMAScript Module Import
+# ECMAScript - Import Module
 
-* [whats this](#whats-this)
+* [what is this](#what-is-this)
 * [Default Import](#default-import)
 * [namespace import](#namespace-import)
 * [import multiple module](#import-multiple-module)
 * [import multiple module with alias](#import-multiple-module-with-alias)
 * [Syntax](#syntax)
 
-## whats this
+## What Is This
 
 ```js
 import default_name from 'module_path'
@@ -27,7 +27,7 @@ import default_name from 'module_path'
 import myDefault from '/modules/my-module.js';
 ```
 
-- import `/modules/my-module.js`的[default export](javascript-module-export.md#default-export)
+- import [default export](javascript-ecma-export.md#default-export) from `/modules/my-module.js`
 - myDefault can be *whatever you like*
 
 ```js
@@ -36,7 +36,7 @@ import myDefault, * as MyModule from 'modules/my-module.js'
 
 - `MyModule.default` and `myDefault` reference to the same export
 
-## namespace import
+## Namespace import
 
 - import a module namespace object
 - a module namespace object is an object describes all exports from a module
@@ -48,9 +48,8 @@ import * as MyModule from '/modules/my-module.js'
 myModule.doThings()
 ```
 
-- myModule代表一个命名空间对象
-- 没有通配符直接引入的形式，如`import * from "module-name"`
-
+- `myModule` represents a namespace object
+- no wildcard import directly pattern, such as `import * from "module-name"` is not allowed
 
 ## import multiple module
 

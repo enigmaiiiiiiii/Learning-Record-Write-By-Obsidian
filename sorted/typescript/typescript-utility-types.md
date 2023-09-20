@@ -1,5 +1,24 @@
 # Typescript - Utility Types
 
+* [Awaited](#awaited)
+* [Partial](#partial)
+* [Required](#required)
+* [Readonly](#readonly)
+* [Record](#record)
+* [Pick<Type, Keys>](#pick<type,-keys>)
+* [Omit](#omit)
+* [Exclude](#exclude)
+* [`Extract<Type, Union>`](#`extract<type,-union>`)
+* [NonNullable](#nonnullable)
+* [Parameters](#parameters)
+* [ConstructorParameters](#constructorparameters)
+* [ReturnType](#returntype)
+* [InstanceType](#instancetype)
+* [ThisParameterType](#thisparametertype)
+* [OmitThisParameter](#omitthisparameter)
+* [ThisType](#thistype)
+* [Intrinsic String Manipulation Types](#intrinsic-string-manipulation-types)
+
 ## Awaited
 
 ## Partial
@@ -211,3 +230,4 @@ function numberToString(n: ThisParameterType<typeof toHex>) {
 - `Lowercase<StringType>`
 - `Capitalize<StringType>`
 - `Uncapitailize<StringType>`
+

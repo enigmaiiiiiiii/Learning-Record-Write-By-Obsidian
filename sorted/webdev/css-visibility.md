@@ -1,4 +1,4 @@
-# CSS Property Visibility
+# CSS - Property Visibility
 
 ## what is this
 
@@ -11,10 +11,10 @@
 }
 ```
 
-## values
+## Available Values
 
 - visible
-- hidden: element is invisible, but **still affects layout** as normal
+- hidden: element is invisible, but **still affects layout** as normal, compare to [`display: none`](css-display.md)
 - collapse: has different effects for different elements
   - element space will be occupied like `display: none`, for `<table>` rows, columns, column groups, and row groups
   - element space will be occupied, for flex items

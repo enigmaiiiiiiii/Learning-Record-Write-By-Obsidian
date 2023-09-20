@@ -2,6 +2,8 @@
 
 ## hover
 
+- mouse on
+
 ## focus
 
 - represent the element taht has focus

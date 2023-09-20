@@ -1,6 +1,17 @@
 # CSS Alignment
 
-## summary
+* [Summary](#summary)
+* [justify-content](#justify-content)
+* [align-content](#align-content)
+* [place-content](#place-content)
+* [align-self](#align-self)
+* [justify-self](#justify-self)
+* [place-self](#place-self)
+* [justify-items](#justify-items)
+* [align-items](#align-items)
+* [place-items](#place-items)
+
+## Summary
 
 treat all children as a single unit
 
@@ -11,7 +22,7 @@ treat all children as a single unit
 align single item in its area
 
 1. [align-self](#align-self)
-2. [justify-self](#justify-self)
+2. [justify-self](#justify-self): **INGORE** in flexbox and table cell layout
 3. [place-self](#place-self)
 
 default value for all [items](css-flex.md#what-is-this) inside a grid or flex container

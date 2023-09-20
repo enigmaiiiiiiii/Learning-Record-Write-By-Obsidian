@@ -19,29 +19,60 @@
 
 ## Default Parameters
 
+default parameters value can be
+
+- primitive
+- object
+- function return value
+
+default primitve parameters
+
 ```javascript
 function multiply(a, b = 1) {
 }
 ```
 
-- default parameters value can be
-  - primitive
-  - object
-  - function return value
+default **object parameters**
 
-object destructuring to assign default properties to object parameter types
+```js
+function foo(obj = {x: 1, y: 2}) {
+    return obj.x + obj.y
+}
+```
+
+object **destructuring** to assign default properties to object parameter types
 
 - array/object destructuring
 
 ```js
-function filledArray([x = 1, y = 2] = []) {
+function fooA([x = 1, y = 2]) {
     return x + y;
 }
-function filledObject({x = 1, y = 2} = {}) {
+function fooB({x = 1, y = 2}) {
     return x + y;
 }
+
+console.log(fooA([]))  // 3
+console.log(fooB({}))  // 3
+```
+
+- **HAVE PROBLEMS** when call without argument
+
+```js
+console.log(fooA())  // NaN
+console.log(fooB())  // TypeError: Cannot read property 'x' of undefined
+```
+
+**To Call function without argument, mix destructuring default parameters with object default parameters**
+
+```js
+function fooC({x = 1, y = 2} = {}) {
+    return x + y;
+}
+console.log(fooC())  // 3
 ```
 
 ## Rest Parameters
 
 [Rest Parameters](javascript-function-rest-parameters.md)
+

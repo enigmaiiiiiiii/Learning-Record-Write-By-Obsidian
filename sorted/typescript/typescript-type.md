@@ -9,9 +9,10 @@
 * [type inference](#type-inference)
 * [type assertion](#type-assertion)
 * [Narrowing](#narrowing)
-* [Keyof operator](#keyof-operator)
+* [Keyof Operator](#keyof-operator)
 * [Mapped Types](#mapped-types)
 * [Type Compatibility](#type-compatibility)
+* [Utility Types](#utility-types)
 
 ## What Is Type Annotation
 
@@ -249,13 +250,15 @@ function padLeft(padding: number | string, input: string) {
 
 - in if statement, ts according to type check, refine `padding` to string type
 
-## Keyof operator
+## Keyof Operator
 
 - takes an **object type** and produces a string or numeric literal union of its keys
 
 ```ts
 type Point = { x: number; y: number };
 type P = keyof Point;  // P = "x" | "y"
+let foo: P = "x";
+let foo2: P = 123;  // error 
 ```
 
 - if a type contains [index signature](typescript-interface.md#index-signatures), keyof will return `string` or `string | number`
@@ -359,3 +362,4 @@ console.log(fb(p));
 ## Utility Types
 
 [Utility Types](typescript-utility-types.md)
+

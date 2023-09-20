@@ -26,13 +26,13 @@
 
 [Layout](css-layout.md)
 
-[Background](css-background-and-border.md)
+[Background](css-background.md)
 
 [Font](css-font.md)
 
 [Color](css-color.md)
 
-[box shadow](css-box-shadow.md)
+[Box Shadow](css-box-shadow.md)
 
 [Outline](css-outline.md)
 
@@ -52,9 +52,9 @@
 
 [module file](css-module-file.md)
 
-[模块化CSS](css-modularization.md)
+[CSS Modularization](css-modularization.md)
 
-[`@`规则(at-rules)](css-at-rules.md)
+[`@` rules(at-rules)](css-at-rules.md)
 
 [SASS](sass.md)
 

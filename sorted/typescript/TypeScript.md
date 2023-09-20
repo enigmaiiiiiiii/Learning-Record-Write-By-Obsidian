@@ -10,16 +10,16 @@
 
 [Fundamentals](typescript-fundamentals.md)
 
-[Basic](typescript-fundation.md)
-
 [Class](typescript-class.md)
 
 [Module System](typescript-module.md)
 
 [TSConfig File](typescript-config-file.md)
 
+[Enum](typescript-enum.md)
+
 [code snippets explaination](typescript-code-snippets-explaination.md)
 
-[JSDoc Support](typescript-jsdoc-support.md)
+[JSDoc Support]()
 
 [compatible problem](typescript-compatible-problem.md)

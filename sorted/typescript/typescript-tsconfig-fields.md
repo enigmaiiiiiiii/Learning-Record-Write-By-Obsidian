@@ -1,8 +1,13 @@
-# tsconfig Fields List
+# Typescript - tsconfig Fields List
 
 * [strictNullChecks](#strictnullchecks)
 * [noImplicitAny](#noimplicitany)
-* [downlevelIteration](#downlevel-iteration)
+* [downlevelIteration](#downleveliteration)
+* [strict](#strict)
+
+## baseUrl
+
+## paths
 
 ## strictNullChecks
 
@@ -88,4 +93,15 @@ try {
 }
 ```
 
+## strict
+
+```json
+{
+    "compilerOptions": {
+        "strict": true
+    }
+}
+```
+
+- `true`: all on
 

@@ -31,7 +31,7 @@ export function SameWelcome({name}) {
 }
 ```
 
-## As component Attribute
+## As Component Attribute
 
 - `props` is name of function argument
 -  Object's **property** is the component's **attribute**
@@ -68,7 +68,7 @@ export default function paramedWelcome(props) {
 
 - `<Welcome {...props}>` is the spread syntax
 
-## Passing JSX as children
+## Passing JSX As Children
 
 for to use component as a wrapper like: `<parent><child /></parent>`
 
@@ -96,7 +96,7 @@ export default function Profile() {
 }
 ```
 
-## Define props for Component
+## Define Props For Component
 
 for react component `Avatar.js`
 

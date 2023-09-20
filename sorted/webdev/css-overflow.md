@@ -5,11 +5,11 @@
 
 ## What's for
 
-- 当内容太多导致大于box的尺寸时, CSS为了不让内容丢失, 会发生overflow
+- When content is too large cause it larger than box size, In order to prevent content loss, CSS will cause overflow
 
-> 会让内容看起来一团乱
+> but will make content look messy
 
-overflow属性可以避免让内容看起来乱
+overflow property can prevent content look messy
 
 ```css
 .box {
@@ -24,20 +24,19 @@ overflow属性可以避免让内容看起来乱
 
 - `overflow: visible;`
   - Content is not Clipped
-  - may be rendered outside the content box
-  - 不会创建新的[BFC](css-block-formatting-context.md)
-- `overflow: hidden;`: 内容将被剪裁以适应填充框, 并隐藏 Scroll Bar
+  - May be rendered outside the content box
+  - Won't create new [BFC](css-block-formatting-context.md)
+- `overflow: hidden;`: content will be clipped to fit the padding box, and hide scroll bar
   - `overflow-x: hidden;`
   - `overflow-y: hidden;`
-- `overflow: scroll`: 为overflow内容添加滚动轴
+- `overflow: scroll`: add scroll bar for overflow content
 - `overflow: clip`
-  - 类似hidden
-  - 禁止滚动，它的box模型不是一个可以滚动的容器
-  - 不会创建新的[BFC](css-block-formatting-context.md)
-  - ~~可以通过display: flow-root创建新的flow-root~~
+  - Similar to hidden
+  - Forbid scroll, its box model is not a scrollable container
+  - Won't create new [BFC](css-block-formatting-context.md)
 - `overflow: auto`
-  - 如果内容包含在padding box中，看起来和`overflow: visible`一样
-  - establishes a new [BFC](css-block-formatting-context.md)
-  - on desktop browser, **provide scroll bar** if content overflows 
+  - If content is not larger than padding box, it looks like `overflow: visible`
+  - Establishes a new [BFC](css-block-formatting-context.md)
+  - On desktop browser, **provide scroll bar** if content overflows 
 - `overflow: overlay`
   - add scrollbar for overflow content

@@ -2,7 +2,7 @@
 
 ## What Is Package In Lua
 
-- represent package by [table](lua-table.md)
+- lua package represented by [table](lua-table.md)
 
 ## Define A Package
 
@@ -18,3 +18,4 @@ return cmp
 ## Require Function
 
 [Require function](lua-require-function.md)
+

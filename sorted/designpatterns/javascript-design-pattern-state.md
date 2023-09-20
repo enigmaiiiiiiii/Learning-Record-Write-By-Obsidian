@@ -27,7 +27,7 @@
 
 ## Context
 
-1. hold a fields reference to the [state object](#concrete-state)
+1. hold a fields reference to the [state object](#concrete-states)
 2. one or more methods that change the state
 
 ```js

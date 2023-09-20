@@ -1,36 +1,39 @@
-# 定位
+# CSS - Positioning
 
-- [position ](#position-property)
-- [position: static](#position-static)
-- [position: relative](#position-relative)
-- [position: absolute](#position-absolute)
-- [position: fixed](#position-fixed)
-- [position: sticky](#position-sticky)
-- [positioned element](#positioned-element)
-- [Positioning Contexts](#positioning-contexts)
-- [align](#align)
+* [what it is](#what-it-is)
+* [position: static](#position:-static)
+* [position: relative](#position:-relative)
+* [position: absolute](#position:-absolute)
+* [position: fixed](#position:-fixed)
+* [position: sticky](#position:-sticky)
+* [positioned element](#positioned-element)
+* [Positioning Contexts](#positioning-contexts)
+* [Property align](#property-align)
 
 ## what it is
 
-> 允许从Normal Flow中取出元素, 并使他们具有不同的行为, 如放在另一个元素上，或保持在浏览器同一位置
+- Allows to take elements out of Normal Flow and make them have different behaviors, for example, put on another element, or keep in the same position in the browser
 
 ## position: static
 
-- **default** position value
-- 仅仅意味着将元素放入它在Normal Flow中的**常规**位置
+- **Default** position value
+- Only indicates that the element is positioned in normal position of [**normal flow**]
 - `top, right, bottom, left` has no effect
+
+> `inset` is shorthand for `top, right, bottom, left`, `inset: 10px 30% 20px 0;`
 
 ## position: relative
 
-- 允许通过属性**top, right, bottom, left**来修改元素在文档中的位置
-- `top, right, bottom, left` 可以理解为**力的来源**方向
+- Allows to modify the position of the element in the document with property `top, right, bottom, left`
+- `top, right, bottom, left` can be understood as the direction of **force**
 
 ## position: absolute
 
-- 允许通过属性**top, right, bottom, left**来修改元素在**文档**中的位置
-- 定位相对于最近的**positioned ancestor**或[containing block](css-containing-block.md)
+- Allows to modify the position of the element in the document with property `top, right, bottom, left`
+- positioned relative to the closest [positioned](#positioned-element) ancestor or [containing block]css-containing-block.md)
 - removed from [normal document flow](css-normal-flow.md)
-- 大多数时候height或width设置为auto以适应其内容, 或用来填充可用空间
+
+> in most cases, height or width set to `auto` to fit its content, or fill available space
 
 ## position: fixed
 
@@ -48,9 +51,10 @@
 
 a hybrid between `relative` and `fixed`
 
-- act like **relative** position until scroll to a certain threshold
-- then act like **fixed** positioned
-- but the space it takes up is still calculated as if it were **relative** positioned
+- Act like **relative** position until scroll to a certain threshold
+- Then act like **fixed** positioned
+- But the space it takes up is still calculated as if it were **relative** positioned
+- **MUST** specify one of `top`, `right`, `bottom`, `left` property to make sticky work
 
 ```css
 .box {
@@ -77,17 +81,20 @@ stick to the nearest **scrolling ancestor**
 
 [sticky and overflow](css-sticky-and-overflow.md)
 
-必须指定top, right, bottom, left中的一个, 从而使sticky正常工作
-
 ## positioned element
 
-- position value is relative, absolute, fixed, sticky
+property `position` value is:
+
+- [relative](#position-relative)
+- [absolute](#position-absolute)
+- [fixed](#position-fixed)
+- [sticky](#position:-sticky)
 
 ## Positioning Contexts
 
-## align
+## Property align
 
-vertical-align: 纵向对齐
+`vertical-align` property available values
 
 - baseline
 - top
@@ -95,3 +102,4 @@ vertical-align: 纵向对齐
 - bottom
 - sub
 - text-top
+

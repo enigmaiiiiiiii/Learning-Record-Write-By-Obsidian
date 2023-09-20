@@ -1,7 +1,7 @@
-# 常量表达式
+# C++ - Const Expression
 
-- 定义：是指**值不会改变**，并且**编译过程**就能得到计算结果的表达式
-- 字面值是常量表达式
-- constexpr声明
-  - 声明为constexpr的变量一定是一个常量，必须用常量表达式初始化
-  - 是c++11的新规
+- definition: an expression whose **value cannot change** and that can be **evaluated at compile time**
+- literal value is a const expression
+- `constexpr` declaration
+  - variable declared as `constexpr` must be a constant and initialized by a constant expression
+

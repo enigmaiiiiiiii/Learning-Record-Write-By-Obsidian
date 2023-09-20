@@ -1,23 +1,23 @@
-# NodeJs Module System
+# NodeJs - Module System
 
-- [What is this](#what-is-this)
-- [Core mudules 核心模块](#core-mudules-核心模块)
-- [module file 模块文件](#module-file-模块文件)
-- [`module` object](#module-object)
-- [导出模块](#导出模块)
-- [导入模块](#导入模块)
-- [How Node Determine Module System](#how-node-determine-module-system)
-- [处理Circle(循环依赖)](#处理circle循环依赖)
-- [Folders as module 文件夹当做模块](#folders-as-module-文件夹当做模块)
-- [deep into module system](#deep-into-module-system)
+* [What is this](#what-is-this)
+* [Core modules](#core-modules)
+* [Module file](#module-file)
+* [`module` object](#`module`-object)
+* [Export module](#export-module)
+* [Import Module](#import-module)
+* [How Node Determine Module System](#how-node-determine-module-system)
+* [Handle Circle Dependency](#handle-circle-dependency)
+* [Folders as module](#folders-as-module)
+* [deep into module system](#deep-into-module-system)
 
 ## What is this
 
-- NodeJs中一个文件就是一个模块
-- Node.js包括两个模块系统
-  - [ECMAScript modules](javascript-module-es6.md)
-  - [CommonJS Modules](javascript-module-commonjs.md)
-- Nodejs默认使用CommonJS模块加载模式
+- In NodeJs, a file is a module
+- NodeJs include two module system
+  - [ECMAScript modules](javascript-ecma-module.md)
+  - [CommonJS Modules](javascript-commonjs-module.md)
+- NodeJs use CommonJS module loading pattern by default
 
 > CommonJS is a module specification, initially designed for Node.js
 
@@ -28,15 +28,15 @@
 
 [Built In Object](nodejs-built-in-libraries.md)
 
-## module file 模块文件
+## Module file
 
-- 找不到文件名时, Node.js尝试添加扩展名
-  - 先尝试`.js`, `.json`, 最后`.node`
-- `.json`被解析为JSON文本文件
-- `.node`文件解析为编译过的插件模块
-- 以`/`开始的路径名为绝对路径
-- 以`./`开始的路径名为相对路径, `./`表示当前目录
-- 文件不是用`/`, `./`, `../`表示的, 则模块必须是核心模块或`node_modules`中的文件夹
+- When file name can't be found, NodeJs try to add extension
+  - first `.js`, then `.json`, last `.node`
+- `.json` will be parsed as JSON text file
+- `.node` file will be parsed as compiled addon module
+- path start with `/` will be treated as absolute path
+- path start with `./` will be treated as relative path, `./` means current directory
+- if file not start with `/`, `./`, `../`, the module must be core module or in `node_modules` folder
 
 ## `module` object
 
@@ -52,29 +52,26 @@
 
 ## How Node Determine Module System
 
-被认为ES modules的情况
+cases considered as ES modules
 
-- `.mjs`扩展名文件
-- `.js`扩展名文件最近的父级[package.json](nodejs-package-json.md)的type字段为`"type": "module"`
-- 将命令字符串当做module, 使用`node --input-type=module -eval "..."`
+- file with `.mjs` extension
+- file with `.js` extension, and the nearest parent [`package.json`](nodejs-package-json.md) `type` field is `"type": "module"`
+- take stdin text as module, use `node --input-type=module -eval "..."`
 
 ```sh
 node --input-type=module --eval "import {sep} from 'node:path'; console.log(sep);"
 ```
 
-被认为CommonJS模块的情况
+cases considered as CommonJS modules
 
-- `.cjs`扩展名文件
-- `.js`扩展名文件最近的父级[package.json](nodejs-package-json.md)的type字段为`"type": "commonjs"`
-- `.js`扩展名文件最近的父级`package.json`的没有type字段
+- `.cjs` extension file
+- `.js` extension file, and the nearest parent [`package.json`](nodejs-package-json.md) `type` field is `"type": "commonjs"`
+- `.js` extension file and it's nearest parent `package.json` does not have `type` field
+  - package author better to include `type` field, even all source files are CommonJS
+- file extension is not `.mjs`, `cjs`, `json`, `.node`, `.js`
+  - It will be treated as CommonJS, when those files is called by `require`, not the entry point of program
 
-> package作者应该包含type字段, 即使所有源文件都是CommonJS)
-
-- 文件扩展名不是`.mjs`, `cjs`, `json`, `.node`, `.js`
-
-> 这些文件被require时, 被识别为CommonJS, 而不是在程序的入口点(entry point)
-
-## 处理Circle(循环依赖)
+## Handle Circle Dependency
 
 a.js
 
@@ -97,6 +94,7 @@ console.log('in b, a.done = %j', a.done);
 exports.done = true;
 console.log('b done');
 ```
+
 main.js
 
 ```javascript

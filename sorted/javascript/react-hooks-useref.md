@@ -1,11 +1,11 @@
-# Hooks UseRef
+# React Hooks - UseRef
 
 * [reference a component DOM](#reference-a-component-dom)
 * [reference a value](#reference-a-value)
 * [feature](#feature)
 * [Contrast To UseState](#contrast-to-usestate)
 
-## reference a component DOM
+## Reference A Component DOM
 
 ```js
 import { useRef } from 'react'
@@ -36,8 +36,9 @@ function myComponent() {
 
 - `useRef` return an Object `tmpRef`
 - with single property `current`, reference to the [DOM Element](javascript-dom-element.md)
+- `initialValue` is required in `useRef(initialValue)`, can be `null`
 
-## reference a value
+## Reference A Value
 
 - reference a value whose changing won't cause re-render
 

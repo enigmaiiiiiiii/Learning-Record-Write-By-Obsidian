@@ -1,4 +1,4 @@
-# Rest Parameters
+# JavaScript - Rest Parameters
 
 - similar syntax to [spread syntax](javascript-spread-syntax.md)
 
@@ -7,7 +7,7 @@
 - `...args` allows a function to accept an **indefinite number of arguments** as `args` **array**
 - A function can only one rest parameter in a function
 - rest parameter must be the last parameter in a function
-- will cause all the rest arguments that have not been given a separate name to be placed within a [array](javascript-array.md)
+- will cause all the rest arguments that have not been given a separate name to be placed within a [array](javascript-foundation-array.md)
 
 ```js
 function sum(...theArgs) {

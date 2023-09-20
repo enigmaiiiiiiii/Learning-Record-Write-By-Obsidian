@@ -1,4 +1,4 @@
-# Primitive
+# JavaScript - Primitive
 
 * [number](#number)
 * [bigint](#bigint)
@@ -18,8 +18,8 @@ let myAge = 17;
 let myAge = 2.456;
 ```
 
-- `Number(value)`, 将value转换成number, 无法转换, 返回NaN
-- `new Number(value)`, 将value包装成可操作的数值对象, 很少用
+- `Number(value)`, convert type of `value` to `number`, if unable to convert, return `NaN`
+- `new Number(value)`: wrap `value` into a number object, rarely used 
 
 ```javascript
 new Number(value);

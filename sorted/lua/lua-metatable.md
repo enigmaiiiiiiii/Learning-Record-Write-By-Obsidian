@@ -1,5 +1,11 @@
 # Lua - Metatable
 
+* [What It Is](#what-it-is)
+* [setmetatable](#setmetatable)
+* [metamethod](#metamethod)
+* [arithmetic metamethods](#arithmetic-metamethods)
+* [__index metamethod](#__index-metamethod)
+
 ## What It Is
 
 - With Metatable, you can change the behavior of a table, include

@@ -24,14 +24,36 @@
 ## package.path
 
 ```lua
-print(package.path)
+$ print(package.path)
+
+/opt/homebrew/share/lua/5.4/?.lua;
+/opt/homebrew/share/lua/5.4/?/init.lua;
+/opt/homebrew/lib/lua/5.4/?.lua;
+/opt/homebrew/lib/lua/5.4/?/init.lua;
+./?.lua;
+./?/init.lua
 ```
 
-- package.path is a string initialized by the environment variable [`LUA_PATH`](#lua_path)
+- `package.path` is a string initialized by the environment variable [`LUA_PATH`](#lua_path)
 
-## Search On Path
+**NOTICE**:
 
-If A search path: `?;?.lua;c:\windows\?;/usr/local/lua/?/?.lua`
+- `. ` is **not the relative path of the script who call `require` function**
+- `.` in relative path `./?.lua` or `./?/init.lua` represent the directory of the entry script of program, that is where the `lua` command is executed
+
+For example, if execute command `lua script.lua` at the root of following directory structure, for `require('add')` in `/mod/init.lua` will cause module not found error
+
+.
+├── mod
+│   ├── add.lua
+│   └── init.lua
+└── script.lua
+
+
+## Search Paths
+
+
+If a search path: `?;?.lua;c:\windows\?;/usr/local/lua/?/?.lua`
 
 `require "foo"` will try to open the following files:
 
@@ -39,6 +61,12 @@ If A search path: `?;?.lua;c:\windows\?;/usr/local/lua/?/?.lua`
 - `foo.lua`
 - `c:\windows\foo`
 - `/usr/local/lua/foo.lua`
+
+Check Search Paths With
+
+```lua
+print(package.path)
+```
 
 ## Who determine the search path
 

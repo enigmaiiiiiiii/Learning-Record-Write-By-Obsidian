@@ -1,4 +1,4 @@
-# Function
+# TypeScript - Function
 
 * [function type expressions](#function-type-expressions)
 * [Optional Parameters](#optional-parameters)
@@ -42,12 +42,23 @@ f(); // ok
 f(1); // ok
 ```
 
-## default parameters
+## Default parameters
+
+default value for primitive type
 
 ```ts
 function greet(name: string = "world") {
   console.log(`Hello, ${name}!`);
 }
+```
+
+default value for object type
+
+```ts
+function foo({x, y = 5}) {
+  return x + y + z;
+}
+foo(); // 18
 ```
 
 ## Function Overload

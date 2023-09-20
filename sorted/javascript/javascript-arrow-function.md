@@ -1,4 +1,4 @@
-# Arrow Function
+# JavaScript - Arrow Function
 
 ## Syntax
 

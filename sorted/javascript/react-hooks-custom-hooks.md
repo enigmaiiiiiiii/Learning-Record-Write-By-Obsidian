@@ -1,9 +1,9 @@
 # React Custom Hooks
 
-## name conventions
+## Name Conventions
 
 1. react component must start with a capital letter
-2. hooks must start with use followed by a capital letter
+2. hooks must start with `use` followed by a capital letter
 
 ## Simple Example
 

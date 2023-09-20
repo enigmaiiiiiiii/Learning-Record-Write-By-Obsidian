@@ -46,6 +46,8 @@ class Greeter {
 
 [why getter/setter](object-oriented.md#why-gettersetter)
 
+> it is fine to expose public fields if **no additional logic** during the get/set operation
+
 ```ts
 class C {
     _length = 0;
@@ -65,10 +67,12 @@ console.log(c.length); // 10
 
 ~~getter/setter can be [overload](typescript-function.md)~~
 
+- size typescript 4.3, it is possible to have accessors with different types for getting and setting 
+
 ```ts
 class Thing() {
     _size = 0;
-    get size() {
+    get size(): number {
         return this._size;
     }
     set size(value: string | number | boolean) {
@@ -76,6 +80,8 @@ class Thing() {
     }
 }
 ```
+
+- in this example, getter return type is `number`, setter parameter type is `string | number | boolean`
 
 ## readonly
 

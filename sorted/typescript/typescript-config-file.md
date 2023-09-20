@@ -1,6 +1,8 @@
 # TSConfig
 
-- TSConfig File可以命名为
+## What It Is
+
+- TSConfig File can be named
   - **tsconfig.json**
   - or **jsconfig.js**
 - TSConfig file in a directory indicate that the directory is the root of a TypeScript or JavaScript project.
@@ -11,19 +13,44 @@ Init a TSConfig file
 tsc --init
 ```
 
-## strict mode
+## A Config File Can Be Used On Most Project
 
 ```json
 {
-    "compilerOptions": {
-        "strict": true
-    }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "target": "es6",
+    "noImplicitAny": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "esm": true
+  }
 }
 ```
-
-- true: all on
-- noImplicitAny:
-- strictNullChecks: 是否处理null和undefined
 
 ## fields in tsconfig.json
 

@@ -2,8 +2,8 @@
 
 ## Introduction
 
-- a way to control animation speed when CSS property changed
-- 当CSS属性改变时，提供一种渐变的动画效果, 而不是立即改变
+- A way to control animation speed when CSS property changed
+- When css property changed, provide a gradual animation effect instead of changing immediately
 
 ## transition properties
 
@@ -14,17 +14,17 @@ shorthand properties: `transition: property duration timing-function delay;`
 - `transition-property: prop1, prop2;`
   - transition effect applied to properties `prop1` and `prop2`
 - `transition-property: all;`
-  - transition effect 应用于所有属性发生变化时
+  - transition effect apply on **all properties changing**
 - `transition-property: none;`
   - no transition effect
 
 `transition-duration`: duration of the transition effect
 
-`transition-timing-function`: 控制动画在不同时间点的速度
+`transition-timing-function`: control animation speed at different points in time
 
-- 通过bezier曲线的控制点来控制动画速度
-- `transition-timing-function: linear;`: 动画从头到尾速度相同
-- `transition-timing-function: ease;`: 动画开始时比较慢，然后加速，最后变慢
+- control animation speed by [bezier curve](math-bezier-curve.md) control points
+- `transition-timing-function: linear;`: animation speed is constant during the animation
+- `transition-timing-function: ease;`: slow at the beginning, then speed up, then slow down
 
 `transition-delay`: delay before the transition effect
 

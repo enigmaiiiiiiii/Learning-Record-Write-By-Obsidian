@@ -2,7 +2,7 @@
 
 ## I
 
-[JavaScript In Browser](javascript-using.md)
+[JavaScript In Browser](javascript-in-browser.md)
 
 [Glossary](javascript-terms.md)
 
@@ -26,7 +26,7 @@
 
 [Async](javascript-async.md)
 
-[ECMAScript Regex](ecmascript-regex.md)
+[ECMAScript Regex](javascript-regex.md)
 
 [JSDoc](javascript-jsdoc.md)
 

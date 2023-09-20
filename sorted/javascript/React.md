@@ -12,7 +12,7 @@
 
 [Render and Commit](react-render-and-commit.md)
 
-[Rende Element](react-render-element.md)
+[Render Element](react-render-element.md)
 
 [Features](react-features.md)
 

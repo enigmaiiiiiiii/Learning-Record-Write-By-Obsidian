@@ -1,4 +1,4 @@
-# JavaScript Regex
+# JavaScript - Regex
 
 - [Create A Regex](#create-a-regex)
 - [Escape Character](#escape-character)
@@ -19,7 +19,7 @@ new RegExp("ab+c", 'i')
 var re = /ab+c/;
 ```
 
-- 正则表达式不需要修改时，使用这种方式可以获得更好的性能
+- when regex doesn't need to be changed dynamically, use this way to get better performance
 
 2. use constructor
 

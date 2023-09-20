@@ -1,4 +1,9 @@
-# Javascript - Module
+# JavaScript - Module
+
+* [Two Module Systems](#two-module-systems)
+* [index.js File](#index.js-file)
+* [Import Module From Html Page](#import-module-from-html-page)
+* [.mjs file](#.mjs-file)
 
 ## Two Module Systems
 
@@ -6,7 +11,7 @@
 
 [CommonJS](javascript-commonjs-module.md)
 
-[Relate](javascript-module-of-es-and-commonjs.md)
+> [Contrast](javascript-module-of-es-and-commonjs.md)
 
 ## index.js File
 
@@ -32,6 +37,16 @@ set tag `<script type=moduel>`
 ```html
 <script type="module" src="path/to/myModule.js"></script>
 ```
+
+## Module file
+
+- When file name can't be found, NodeJs try to add extension
+  - first `.js`, then `.json`, last `.node`
+- `.json` will be parsed as JSON text file
+- `.node` file will be parsed as compiled addon module
+- path start with `/` will be treated as absolute path
+- path start with `./` will be treated as relative path, `./` means current directory
+- if file not start with `/`, `./`, `../`, the module must be core module or in `node_modules` folder
 
 ## .mjs file
 

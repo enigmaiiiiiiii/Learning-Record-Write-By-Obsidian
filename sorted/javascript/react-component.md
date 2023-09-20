@@ -1,16 +1,19 @@
 # Components
 
-- [they are components](#they-are-components)
-- [this is not a component](#this-is-not-a-component)
-- [Props](#props)
-- [State](#state)
-- [use a component](#use-a-component)
-- [Component Compose of other Component](#component-compose-of-other-component)
-- [keep component pure](#keep-component-pure)
-- [class properties](#class-properties)
-- [lifecycle](#lifecycle)
-- [handling events](#handling-events)
-- [effect](#effect)
+* [They Are Components](#they-are-components)
+* [This Is Not A Component](#this-is-not-a-component)
+* [Curly Braces](#curly-braces)
+* [Props](#props)
+* [State](#state)
+* [Use A Component](#use-a-component)
+* [Component Compose of other Component](#component-compose-of-other-component)
+* [render](#render)
+* [inline style](#inline-style)
+* [keep component pure](#keep-component-pure)
+* [class properties](#class-properties)
+* [lifecycle](#lifecycle)
+* [handling events](#handling-events)
+* [React Server Component(RSC)](#react-server-component(rsc))
 
 ## They Are Components
 
@@ -247,6 +250,10 @@ return (
 ```
 
 ## React Server Component(RSC)
+
+## React Error Boundaries
+
+[React Error Boundary](react-error-boundary.md)
 
 
 

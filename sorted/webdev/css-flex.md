@@ -6,8 +6,8 @@
 * [flex Container](#flex-container)
 * [flex Property](#flex-property)
 * [flex-grow](#flex-grow)
-* [create gap](#create-gap)
-* [rest space](#rest-space)
+* [Create Gap](#create-gap)
+* [remaining space](#remaining-space)
 
 ## what is this
 

@@ -18,8 +18,6 @@
 
 [Function Expression](javascript-function-expression.md)
 
-[Anonymous function](javascript-anonymous-function.md)
-
 [Arrow Function](javascript-arrow-function.md)
 
 [Closures](javascript-closures.md)
