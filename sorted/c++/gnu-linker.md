@@ -1,35 +1,39 @@
 # GNU linker
 
-```bash
+## What It Is
+
+ld is a command to
+
+- combine several [object files](c-object-file.md) and libraries
+- resolve references
+- and produce an output file
+  - a final linked image
+    - [executable](executable-file.md)
+    - [dylibrary](c-library-file.md#dynamic-library)
+    - [bundle]() ?
+  - or another object file
+
+## Take A look
+
+ld can be invoked in [gcc](gcc.md) command
+
+```sh
 gcc -Wl,--start-group foo.o bar.o -Wl,--end-group
 ```
-  
-- 如果gnu linker是通过编译器驱动程序如[[GCC]]间接调用, 那么连接器命令行选项都应以-Wl为前缀
 
-```bash
+- if gnu linker is invoked indirectly by compiler command such as GCC, then any linker command-line options that are specified should either be prefixed by `-Wl,` 
+
+```sh
 ld -o <output> /lib/crt0.o hello.o -lc
-``` 
+```
 
-- 这段命令表示连接`/lib/crt0.o`和`hello.o` 和一个来自标准搜索目录的library库文件`libc.a`, 生成一个名为`output`的文件
-  > `-lc`表示library库文件`libc.a`
-- ld命令可在命令行中任何位置指定
-- 将在引用文件选项参数`-l`或`-T`出现的位置读取文件，
-- 重复使用非文件选项不会产生任何影响
-- 非选项参数是目标文件(.o)或(archives)
-- 通常使用至少一个目标文件调用链接器，但可以使用 -l、-R 和脚本命令语言指定其他形式的二进制输入文件。 
-- 如果根本没有指定二进制输入文件，则链接器不会产生任何输出，并发出消息 No input files。
-- 对于单个字符的选项，
-  - 选项参数紧跟在选项字符后且 *没有空格*
-  - 或者作为 *单独参数* 出现在选项之后
-- 多个字符选项名称前可以有一个或两个破折号  
-  - `o`开头的选项只能有两个破折号
-  - `-omagic`表示输出文件名为magic
-  - 多个字符的选项参数用`=`隔开或空格隔开
+- What this command do 
+  - link `/lib/crt0.o` and `hello.o` and a library file `libc.a` from standard search directories
+  - generate a file named `output`
 
-## 参数
+> `-lc` indicate library file `libc.a`
 
-- `--start-group archives --end-group`
-  - 重复搜索指定的档案，直到没有新的未定义引用被创建。
-  - `archives`: 档案文件(archive), 明确的文件名或`-l`参数
-  > 通常，存档仅按照在命令行中指定的顺序搜索一次。 如果需要该存档中的符号来解析稍后出现在命令行上的存档中的对象所引用的未定义符号，则链接器将无法解析该引用。 通过对档案进行分组，它们将被重复搜索，直到解析所有可能的引用。
+## options
+
+
 

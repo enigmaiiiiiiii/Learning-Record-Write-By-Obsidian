@@ -1,5 +1,10 @@
 # Lua - Object-Oriented Programming
 
+* [What Is Object In Lua](#what-is-object-in-lua)
+* [Define Object](#define-object)
+* [Declare a Method](#declare-a-method)
+* [Call a method](#call-a-method)
+
 ## What Is Object In Lua
 
 - a [table](lua-fundamental.md)
@@ -36,7 +41,7 @@ a1 = Account;
 a1.withdraw(a1, 100)
 ```
 
-## Call a method
+## Calling A Method
 
 Call it with `.`
 

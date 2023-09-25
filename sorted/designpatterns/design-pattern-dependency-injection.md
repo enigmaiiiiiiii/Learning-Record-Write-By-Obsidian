@@ -2,7 +2,7 @@
 
 ## What Is Definition of Dependency Injection
 
-- Is a design pattern that mostly used in [**inversion of control**]() framework
+- Is a design pattern that mostly used in [**inversion of control**]() **framework**
 
 ## Features
 
@@ -14,9 +14,8 @@ There are 3 commonly used ways to implement dependency injection
 
 Advantages
 
-- Decouple
-- Testability
-- Extensibility
+- Decouple, Testability, Extensibility
+- Provide a way to break down different component
 
 2 major ways to implement dependency injecttion
 

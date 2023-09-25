@@ -1,12 +1,18 @@
 # GCC
 
-- 全称GNU Compiler Collection
-- 能编译多种语言
-- 支持多种硬件平台
-- mingw是Minimalist GNU for Windows
-- gcc/g++分别是c/c++的编译器
+## What It Is
 
-## gcc/g++编译过程
+- gcc mean GNU Compiler Collection
+- gcc/g++ respectly is GNU C/C++ Compiler
+
+> mingw: Minimalist GNU for **Windows**
+
+## Feature
+
+- multi-language support
+- multi-platform support
+
+## Compilation process of gcc/g++
 
 ```mermaid
 graph TD
@@ -15,14 +21,21 @@ B --> C["step3 由汇编变为目标代码(机器代码)生成.o的文件(汇编
 C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
 ```
 
-- 源文件 $\longrightarrow$ 预处理 $\longrightarrow$ 编译汇编$\longrightarrow$ 链接
-- .cpp $\longrightarrow$ .i $\longrightarrow$ .s(汇编) $\longrightarrow$.o([目标文件](c-objectfile.md))$\longrightarrow$  可执行文件
-- 链接
-  - 处理静态库、动态库阶段, 连接成可执行程序
-  - GNU中[ld](gnu-linker.md)命令设置连接选项
-  - 连接库文件格式
-    - 静态链接库: .a(UNIX)/.lib (windows) 
-    - 动态链接库: .so(UNIX)/.dll(windows)
+compile process
+
+- source file ⮕  preprocess ⮕  compile $\longrightarrow$ link ⮕  executable file
+
+corresponding file suffix
+
+- .cpp ⮕ .i ⮕ .s(assemble) ⮕ .o([object file](c-objectfile.md)) ⮕  binary file
+
+what is link
+
+- handling static and dynamic libraries, and link them to create an executable program.
+- In the GNU environment, the [ld command](gnu-linker.md) is used to set linking options.
+- The formats for linking library files are as follows:
+  - Static Linking Library: .a (UNIX) / .lib (Windows)
+  - Dynamic Linking Library: .so (UNIX) / .dll (Windows)
 
 ## Options
 

@@ -1,13 +1,29 @@
-# LaTex数学
+# LaTex - Math
+
+* [Symbol](#symbol)
+* [Space](#space)
+* [Overbrace](#overbrace)
+* [Aligned](#aligned)
+* [Brace](#brace)
+* [Matrix](#matrix)
+* [Sqrt](#sqrt)
+* [Triangle Function](#triangle-function)
 
 ## Symbol
 
 - `^`: upper index
-- `&`: 数学环境下跳列符
+- `&`: column jump in math
 - `_`: foot label
 - `$`: math environment delimiter
 
-## overbrace
+## Space
+
+- `\;`: 4/18 quad
+- `\:`: 3/18 quad
+- `\,`: 2/18 quad
+- `\hspace{5mm}`: horizontal space
+
+## Overbrace
 
 $f(x)=a_nx^n+a_{n-1}$
 
@@ -18,19 +34,19 @@ z = \overbrace{
   }^\text{complex number}\tag{1}
 $$
 
-## aligned
+## Aligned
 
 $$
 \begin{aligned}
-B'&=-\partial \times E,\\         %加&指定对齐位置
+B'&=-\partial \times E,\\         % use & to specify the alignment position
 E'&=\partial \times B - 4\pi j,
 \end{aligned}
 $$
 
-## brace
+## Brace
 
 $$
-f(x)=\left\{          % 表示大括号
+f(x)=\left\{          % represent curly brackets
 \begin{aligned}
 x & = & \cos(t) \\
 y & = & \sin(t) \\
@@ -42,7 +58,7 @@ $$
 $$
 \begin{aligned}
  \left.\begin{aligned}
-        B'&=-\partial \times E,\\         %加&指定对齐位置
+        B'&=-\partial \times E,\\         % use & to specify the alignment position
         E'&=\partial \times B - 4\pi j,
        \end{aligned}
  \right\}
@@ -50,7 +66,7 @@ $$
 \end{aligned}
 $$
 
-## matrix
+## Matrix
 
 parentheses matrix
 
@@ -61,7 +77,7 @@ c & d
 \end{pmatrix}
 $$
 
-- `[2mm]`: 行间距
+- `[2mm]`: line space
 
 brackets
 
@@ -75,11 +91,19 @@ $$
 inline matrix
 
 - inline matrix here $\begin{pmatrix} a & b \\[1mm] c & d \end{pmatrix}$
-- or
-  $
-  \begin{bmatrix}
-  a & b \\[1mm]
-  c & d
-  \end{bmatrix}
-  $
+- anther one $\begin{bmatrix} a & b \\[1mm] c & d \end{bmatrix}$
+
+## Sqrt
+
+$$
+C = \sqrt{a^2+b^2}
+$$
+
+## Trigonometry Functions
+
+relation shape between a, b in lab color and h in lch color
+
+$$
+h^\degree = \arctan(\frac{b}{a})
+$$
 

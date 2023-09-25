@@ -1,5 +1,8 @@
 .obsidian
 .vscode
-unsorted/chat-text.md
+.venv
+
+*.DS_Store
 prompt.md
+
 

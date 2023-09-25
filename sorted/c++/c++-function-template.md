@@ -1,4 +1,5 @@
-# 函数模板
+# C++ - Function Template
+
 - `template <typename T> int compare(const T &v1, const T &v2) {}`
 - 调用模板函数时，编译器通过实参类型推断T的类型
 - 类型参数前使用关键字classname或typename

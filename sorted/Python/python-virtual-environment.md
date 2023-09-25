@@ -9,9 +9,12 @@
 
 it's general to create virtual environment in current working directory
 
-```shell
+```sh
 python -m venv .venv
+# or
+python3 -m venv .venv
 ```
+
 
 create virtual environment, and specify the virtual environment directory as `env_path`
 
@@ -52,7 +55,7 @@ deactivate
 
 ## Manage Package
 
-Installed Packge List
+Query Installed Packge List
 
 ```sh
 python -m pip list

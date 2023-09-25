@@ -1,45 +1,66 @@
 # linux System Directory
 
-* [/bin](#bin)
-* [/usr](#usr)
-* [/boot(not really understand)](#bootnot-really-understand)
-* [/dev](#dev)
-* [/etc](#etc)
-* [/home](#home)
-* [/lib](#lib)
-* [/media](#media)
-* [/mnt](#mnt)
-* [/opt](#opt)
-* [/proc](#proc)
-* [/root](#root)
-* [/sbin](#sbin)
-* [/sys](#sys)
-* [/tmp](#tmp)
-* [/usr/bin](#usrbin)
-* [/usr/sbin](#usrsbin)
-* [/usr/src](#usrsrc)
-* [/var](#var)
-* [some other directory may have](#some-other-directory-may-have)
+
+* [/bin](#/bin)
+* [/usr](#/usr)
+* [/usr/bin](#/usr/bin)
+* [/usr/sbin](#/usr/sbin)
+* [/usr/local/bin](#/usr/local/bin)
+* [/usr/src](#/usr/src)
+* [/boot(not really understand)](#/boot(not-really-understand))
+* [/dev](#/dev)
+* [/etc](#/etc)
+* [/home](#/home)
+* [/lib](#/lib)
+* [/media](#/media)
+* [/mnt](#/mnt)
+* [/opt](#/opt)
+* [/proc](#/proc)
+* [/root](#/root)
+* [/sbin](#/sbin)
+* [/sys](#/sys)
+* [/tmp](#/tmp)
+* [/var](#/var)
+* [Some other directory may have](#some-other-directory-may-have)
+* [Summary of Diverse bin directories](#summary-of-diverse-bin-directories)
 * [Summary](#summary)
 
 ## /bin
 
 - stands for [binary](executable-file.md)
-- basic system function for all user
+- system core function for all user
+- Do not change with **different linux distributions**
 - like `ls`, `cp`, `mv`, `mkdir`
 
-vs /usr/bin
+## /sbin
 
-- user's program
+- Stand For System [Binary](executable-file.md)
+- executable files used by system administrator or root user
+- and system [daemons](linux-daemon.md) or [services]()
+- like `fdisk`, `ifconfig`, `shutdown`
 
 ## /usr
 
-- Abbeviations of unix system resources
+- Abbreviations of **Unix System Resources**, NOT **user**
 - Stores programs and data for all users
 
 > Like `Program Files` in windows
 
-/usr/local
+## /usr/bin
+
+- [distribution](linux-distribution.md)-management program
+
+## /usr/sbin
+
+- same relationship to /usr/bin as /sbin to /bin 
+
+## /usr/local/bin
+
+- program compiled locally from source code
+
+## /usr/src
+
+- kernel source code default directory
 
 ## /boot(not really understand)
 
@@ -113,37 +134,21 @@ Useful files in this directory
 
 ## /root
 
-- 该目录为系统管理员，也称作超级权限者的用户主目录。
-
-## /sbin
-
-- Stand For System [Binary](executable-file.md)
-- executable files used by system administrator or root user
-- and system [daemons](linux-daemon.md) or [services]()
-- like `fdisk`, `ifconfig`, `shutdown`
+- 
 
 ## /sys
 
-- 这是 linux2.6 内核的一个很大的变化。该目录下安装了 2.6 内核中新出现的一个文件系统 sysfs
-- sysfs 文件系统集成了下面 3 种文件系统的信息：针对进程信息的 proc 文件系统、针对设备的 devfs 文件系统以及针对伪终端的 devpts 文件系统
-- 该文件系统是内核设备树的一个直观反映
-- 当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中被创建
+- This is a significant change in the Linux 2.6 kernel. This directory contains the installation of the new file system called sysfs, which was introduced in the 2.6 kernel.
+- This `sysfs` file system integrates information from three different file systems
+  - `proc` file system: which provides information related to processes
+  - `devfs` file system, which deals with devices
+  - `devpts` file system, which handles pseudo-terminals
+- this File system serves as an intuitive reflection of the kernel's device tree
+- when a [kernel object]() is created, corresponding files and directories are also created in the kernel object subsystem
 
 ## /tmp
 
-- tmp 是 temporary(临时) 的缩写这个目录是用来存放一些临时文件的。
-
-## /usr/bin
-
-- 系统用户使用的应用程序。
-
-## /usr/sbin
-
-- 超级用户使用的比较高级的管理程序和系统守护程序。
-
-## /usr/src
-
-- 内核源代码默认的放置目录。
+- Abbreviation of temporary, so this directory is used to store temporary files
 
 ## /var
 
@@ -152,7 +157,7 @@ Useful files in this directory
   - `/var/log`: log files
   - `/var/run`: typically holds process id files and socket files
 
-## some other directory may have
+## Some other directory may have
 
 /run
 
@@ -161,9 +166,14 @@ Useful files in this directory
 - /selinux
 - /lost+found
 
-## Summary
+## Summary of Diverse bin directories
 
-- root directory:"/" `cd /` , enter root directory
-- user directory: "~", enter user directory
+`/bin`: program like `ls`, `cp`, `mv`, `mkdir`, `echo`
+`/usr/bin`: program like  
+`/usr/local/bin`: 
+`/sbin`
+`/usr/sbin`
+
+## Summary
 
 ![linux1](/image/linux-directory-structure.png)

@@ -1,10 +1,12 @@
-# 条件状态
+# C++ - IOStream Condition States
 
-## 状态
+## States
 
-- strm::iostate
-  - 对应流的当前状态
-  
+strm::iostate
+
+- corresponding to the current state of the stream 
+
+
 ### true 
 
 - strm::goobit

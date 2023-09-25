@@ -6,7 +6,7 @@
 * [Group](#group)
 * [Multiple Patterns](#multiple-patterns)
 
-## match single character
+## Match Single Character
 
 use `[]` to match single character
 

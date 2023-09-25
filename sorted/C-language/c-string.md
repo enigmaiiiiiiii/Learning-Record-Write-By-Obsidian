@@ -1,15 +1,24 @@
-# C语言字符串
+# C - String
 
-- 字符串是以空字符`\0`结尾的char类型数组
-- 所以在指定数组大小时, 要确保数组元素个数至少比字符串长度多1
-- `{'h','e', 'l', 'l', 'o'}`, 没有`\0`结尾, 表示一个字符数组
-- `{'h','e', 'l', 'l', 'o', '\0'}`, 表示一个字符字符串
+## What It Is
 
-## 初始化字符串
+- String is an array of char terminated by a null character [`\0`](c-character.md)
+- for this reason, when specifying the size of an array, you must ensure that the number of array elements is at least *1* more than the length of the string
 
-指针初始化
+this is an array of characters
 
-> 建议指针初始化时, 使用const限定符
+- `{'h','e', 'l', 'l', 'o'}`
+- because it is **not terminated by `\0`**
+
+this is a string
+
+- `{'h','e', 'l', 'l', 'o', '\0'}`
+
+## Initialize A String
+
+initialize with pointer
+
+> It is recommended to use the [const] qualifier when initializing pointers
 
 ```c++
 const char *p1 = "Klingon";
