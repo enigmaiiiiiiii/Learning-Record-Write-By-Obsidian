@@ -14,30 +14,34 @@
 
 ## Compilation process of gcc/g++
 
-```mermaid
-graph TD
-A["step1 预处理，生成 .i 的文件(预处理器)"] --> B["step2 将预处理后的文件转换成汇编语言，生成文件.s(编译器)"]
-B --> C["step3 由汇编变为目标代码(机器代码)生成.o的文件(汇编器)"]
-C --> D["step4 链接目标代码，生成可执行文件(连接器)"]
-```
-
 compile process
 
-- source file ⮕  preprocess ⮕  compile $\longrightarrow$ link ⮕  executable file
+- source file ⮕  preprocess ⮕  compile ⮕  [link](#what-is-link) ⮕  executable file
 
 corresponding file suffix
 
-- .cpp ⮕ .i ⮕ .s(assemble) ⮕ .o([object file](c-objectfile.md)) ⮕  binary file
+- .cpp ⮕ .i ⮕ .s(assemble) ⮕ .o([object file](c-object-file.md)) ⮕  binary file
 
-what is link
+## What Is Link
 
-- handling static and dynamic libraries, and link them to create an executable program.
+- link [static and dynamic libraries](c-library-file.md) to create an executable program.
 - In the GNU environment, the [ld command](gnu-linker.md) is used to set linking options.
 - The formats for linking library files are as follows:
-  - Static Linking Library: .a (UNIX) / .lib (Windows)
-  - Dynamic Linking Library: .so (UNIX) / .dll (Windows)
+  - Static Linking Library: `.a` (UNIX) / `.lib` (Windows)
+  - Dynamic Linking Library: `.so` (UNIX) / `.dll` (Windows)
 
-## Options
+## How To Link
+
+```sh
+gcc -L/usr/local/lib -lmylib main.cpp
+```
+
+- `-L`: add library search path
+- `-l`: link library
+
+## Practical Command
+
+## Options 
 
 `-o`
 
@@ -45,11 +49,20 @@ what is link
 - running **complete** compile process, generate file with postfix `.exe` or `.out`
 - this file called [executable file](executable-file.md)
 
+`-lfoo`, `-l libfoo.a`
+
+- 
+
+`-Ldir`
+
+- add directory dir to the list of directories to be searched for `-l`
+
+
 `-S`
 
 - `gcc -S sourcefile`
 - running first two steps, generate file with postfix `.s`
-- this file called [assembly file](c-assembly.md)
+- this file called [assembly file]()
 
 `-E`:
 
@@ -61,9 +74,14 @@ what is link
 `-c`
 
 - running first three steps, but not link, generate file with postfix `.obj` or `.o`
-- this file called [object file](c-objectfile.md)
+- this file called [object file](c-object-file.md)
 
-`gcc -c hello.c`
+```sh
+gcc -c hello.c
+```
+
+`-shared`
+
 
 ## related article
 

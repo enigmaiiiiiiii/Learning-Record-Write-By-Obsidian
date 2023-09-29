@@ -1,9 +1,8 @@
-# inode
+# Linux Programming - struct inode
 
-[stat结构体](linux-file-stat-structure.md)
+[stat structure](linux-file-stat-structure.md)
 
-
-## 文件信息inode
+## file infomation inode
 
 - 通过stat, ls等命令查看，得到的是一串数字
 - 一种ID，在linux中的用来存放文件的属性信息, 比如：
@@ -16,8 +15,7 @@
 - 目录inode: 记录相关属性
 - 文件inode
 
-
-## 打开文件的过程
+## the process of opening a file
 
 - 系统找到文件名对应的inode编号
 - 通过inode号码，获得inode信息

@@ -28,7 +28,7 @@
 
 [Process](linux-process-command.md)
 
-[Command List](linux-command-list.md)
+[Command Collection](linux-command-list.md)
 
 ## Core
 

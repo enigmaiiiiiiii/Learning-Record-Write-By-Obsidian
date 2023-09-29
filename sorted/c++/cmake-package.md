@@ -1,6 +1,6 @@
-# cmake-package
+# CMake - Package
 
-## find_package命令
+## Command find_package
 
 ```cmake
 find_package(<PackageName> [version] [EXACT] [QUIET] [MODULE]

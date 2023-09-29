@@ -1,4 +1,4 @@
-# 常用命令
+# CMake - Practical Command
 
 ## SET
 

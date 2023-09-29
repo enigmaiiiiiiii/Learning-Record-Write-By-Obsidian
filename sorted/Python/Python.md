@@ -44,6 +44,8 @@ third party
 
 [ctypes]
 
+[opencv](python-opencv.md)
+
 ## Web Development Framework
 
 [flask](python-flask.md)

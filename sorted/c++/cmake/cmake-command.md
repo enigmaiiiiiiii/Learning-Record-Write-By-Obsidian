@@ -1,41 +1,39 @@
-#  Command
+# CMake - Command
 
-#cmake
+> **instruction is case-insensitive**, but **variable is case-sensitive**. It is recommended to use uppercase instruction.
 
-> 指令是大小写无关的,参数和变量是大小写相关的。推荐全部使用大写指令。
+[CMake Practical Command](cmake-practical-command.md)
 
-[经常用到的命令(未分类的)](cmake-unsorted-common-command.md)
+[CMake Build Project](cmake-build-project.md)
 
-[cmake构建项目](cmake构建项目.md)
+[CMake Library](cmake-library.md)
 
-[cmake-library](cmake-library.md)
+[Add Directory](cmake-add-directory.md)
 
-[添加目录](cmake添加文件夹.md)
+[Import External Package](cmake-package.md)
 
-[引入外部依赖](cmake-package.md)
+[CMake Add Build Rules](cmake-add-build-rules.md)
 
-[添加构建规则](cmake添加构建规则.md)
-
-[cmake install](cmake-install.md)
+[CMake install](cmake-install.md)
 
 [macro](cmake-macro-and-function.md)
 
-## fragment
+## Some Command
 
-4. find_library
+4. `FIND_LIBRARY`
 
 ```cmake
 find_library (<VAR> Name [Path1 Path2 ...])
 ```
 
-Var: 存储变量
-Name: 要查找的库 
-Path: 除了默认位置外还要搜索的目录
+`VAR`: variable to store the result, 
+`Name`: name of library to find
+`Path`: addon search path except default path
 
-3. message命令
+3. MESSAGE
 
 ```cmake
-message([<model>] "message text")
+MESSAGE([<model>] "message text")
 ```
 
 ```cmake
@@ -56,15 +54,15 @@ message(TRACE "11. TRACE")
 message("=============================")
 ```
 
-2. set: 设置用户可以手动修改缓存条目，
+2. `SET`
 
-缓存变量会被保存在CMakeCache.txt中
+cached variable will be saved in `CMakeCache.txt`
 
 ```cmake
 set(<var> <value>... CACHE <type> <docstring> [FORCE])
 ```
 
-1. add_test(测试文件名称 参数1 参数2)
+`ADD_TEST(test_file param1 param2)`
 
 ```cmake
 add_test(NAME mytest

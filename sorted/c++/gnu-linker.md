@@ -1,4 +1,4 @@
-# GNU linker
+# GNU linker - ld command
 
 ## What It Is
 
@@ -27,7 +27,7 @@ gcc -Wl,--start-group foo.o bar.o -Wl,--end-group
 ld -o <output> /lib/crt0.o hello.o -lc
 ```
 
-- What this command do 
+- What this command do
   - link `/lib/crt0.o` and `hello.o` and a library file `libc.a` from standard search directories
   - generate a file named `output`
 

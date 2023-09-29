@@ -1,6 +1,6 @@
-# add_custom_command
+# CMAKE - add_custom_command
 
-## output
+## Syntax
 
 ```cmake
 add_custom_command(OUTPUT output1 [output2 ...]
@@ -19,25 +19,26 @@ add_custom_command(OUTPUT output1 [output2 ...]
                    [COMMAND_EXPAND_LISTS])
 ```
 
-- APPEND 
-- BYPRODUCTS
-- COMMAND
-- COMMENT
-- DEPENDS
-- COMMAND_EXPAND_LIST
-- IMPLICIT_DEPENDS
-- JOB_POOL
+- `APPEND` 
+- `BYPRODUCTS`
+- `COMMAND`
+- `COMMENT`
+- `DEPENDS`
+- `COMMAND_EXPAND_LIST`
+- `IMPLICIT_DEPENDS`
+- `JOB_POOL`
+
+## Take A Look
 
 ```cmake
 add_custom_command(
  OUTPUT out.c
- COMMAND someTool -i ${CMAKE_CURRENT_SOURCE_DIR}/in.txt
- -o out.c
+ COMMAND someTool -i ${CMAKE_CURRENT_SOURCE_DIR}/in.txt -o out.c
  DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/in.txt
  VERBATIM)
 ```
 
-添加自定义命令，执行sometool 生成out.c编译生成库文件, 当in.txt发生改变时，这条规则会重新执行
+add custom command: when `${CMAKE_CURRENT_SOURCE_DIR}/in.txt` changed, command `sometool -i ${CMAKE_CURRENT_SOURCE_DIR}/in.txt -o out.c` will be execute
 
 ## build events
 

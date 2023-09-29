@@ -2,41 +2,41 @@
 
 ## I
 
-[运行c++](c++-build.md)
+[execute c++](c++-compilation.md)
 
-[调试c++](c++-debug.md)
+[debug c++](c++-debug.md)
 
-[c++基础](c++-foundation.md.md)
+[library system](c++-library-system.md)
 
-[字符串，向量，数组](c++-string-vector-array.md)
+[foundation](c++-foundation.md.md)
 
-[运算符](../sorted/c++/运算符/c++-operator.md)
+[string, vector, array](c++-string-vector-array.md)
 
-[c++语句](../sorted/c++/语句/c++语句.mdh)
+[opeartor](c++-operator.md)
 
-[函数](c++-function.md)
+[Function](c++-function.md)
 
-[c++_类](c++-class.md)
+[c++ class](c++-class.md)
 
 ## II
 
-[容器](c++-container.md)
+[container](c++-container.md)
 
-[STL算法](c++-algorithm.md)
+[STL Algorithm](c++-algorithm.md)
 
 ## Ⅲ
 
-[重载运算符](c++-reload-operator.md)
+[reload operator](c++-reload-operator.md)
 
-[[动态内存]]
+[dynamic memory](c++-dynamic-memory.md)
 
-[构造，拷贝，析构](c++-construct-copy-destruct.md)
+[construct，copy，destruct](c++-construct-copy-destruct.md)
 
-[object](c++-object-qriented-programming.md)
+[object](c++-object-oriented-programming.md)
 
 [template](c++-template.md)
 
-[[c++_io类]]
+[c++-io-class](c++-io-class.md)
 
 [multithread](c++-multithread.md)
 

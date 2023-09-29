@@ -1,56 +1,61 @@
-#  CMake Example
+# CMake - Practical Use
 
-## 单文件
+* [Single File](#single-file)
+* [Bundle Directory](#bundle-directory)
+* [Multi-File and Multi-Directory](#multi-file-and-multi-directory)
+* [Add Compile Options](#add-compile-options)
+* [Multi Thread Project](#multi-thread-project)
+
+## Single File
 
 ```cmake
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
-PROJECT(demo1)  # 工程名称
+PROJECT(demo1)  # Project Name
 ADD_EXECUTABLE(demo1 demo/main.cpp)
 ADD_EXECUTABLE(demo1 demo/main.cpp demo/demo1.cpp)
 ```
 
-## 打包目录
+## Bundle Directory
 
 ```cmake
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
-PROJECT(demo)  # 工程名称
-AUX_SOURCE_DIRECTORY(. ProjectDirectory)  # demo文件夹完整路径,定义为变量ProjectDirectory
+PROJECT(demo)  # Project Name
+AUX_SOURCE_DIRECTORY(. ProjectDirectory)  # Path of this directory assigned to variable "ProjectDirectory"
 add_executable(demo ${ProjectDirectory})
 ```
 
-## 多文件多目录
+## Multi-File and Multi-Directory
 
-- 在可执行文件夹中搜索main()入口
-- 主程序CMakeList.txt
+`CMakeLists.txt` in project root directory
 
 ```cmake
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT(demo2)
-ADD_SUBDIRECTORY(mylib)  # cmake需要包含的子目录
-AUX_SOURCE_DIRECTORY(demo SrcVal)  # 打包文件夹demo用于ADD_EXCUTABLE,变量名为SrcVal
-ADD_EXECUTABLE(demo2 tutorial.cpp)  # 连接编译的文件,执行主程序
-TARGET_LINK_LIBRARIES(demo2 Mylib)  # 在项目demo2中引入Mylib链接库
+ADD_SUBDIRECTORY(mylib)  # subdirectory that cmake need to include
+AUX_SOURCE_DIRECTORY(demo SrcVal)  # bundle directory "demo" for "ADD_EXCUTABLE" command using, define this variable name "SrcVal"
+ADD_EXECUTABLE(demo2 tutorial.cpp)  # link source file, execute main program
+TARGET_LINK_LIBRARIES(demo2 Mylib)  # introduce "Mylib" library in "demo2" project
 ```
 
-- 子目录CMakeList.txt, 打包当前文件夹为Mylib静态链接库
+`CMakeLists.txt` in subdirectory, indicate that bundle current directory as static library `Mylib`
 
 ```cmake
 AUX_SOURCE_DIRECTORY(. DIR_LIB_SRCS)  # 所有原文件打包在DIR_LIB_SRCS变量中
 ADD_LIBRARY(Mylib STATIC ${DIR_LIB_SRCS})  # DIR_LIB_SRCS生成为名为Mylib的链接静态库
 ```
 
-## 添加编译选项
+## Add Compile Options
 
 ```cmake
 cmake_minimum_required(VERSION 3.16)  
 project(tmp)  
 # 通过修改预设变量: cmake_cxx_flags, 添加编译参数 
-set(CMAKE_CXX_FLAGS, "${CMAKE_CXX_FLAGS} 12345")   
+set(CMAKE_CXX_FLAGS, "${CMAKE_CXX_FLAGS} 12345")  # through modify predefined variable "cmake_cxx_flags" to add compile options
 add_executable(tmp main.cpp)  
 ```
 
-## 多线程项目 
+## Multi Thread Project
 
 ```cmake
 find_package(Threads REQUIRED) 

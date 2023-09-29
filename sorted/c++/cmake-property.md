@@ -1,4 +1,4 @@
-# cmake中的属性
+# CMake - Property
 
 ```cmake
 set_property(<GLOBAL                      |

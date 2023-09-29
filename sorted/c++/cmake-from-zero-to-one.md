@@ -1,6 +1,6 @@
-# CMake 0 to 1
+# CMake - 0 to 1
 
-对于main.cpp
+for `main.cpp`
 
 0. CMakeLists.txt
 
@@ -11,8 +11,6 @@ PROJECT(app)
 
 add_executable(app main.cpp) 
 ```
-
-用于构建可执行文件
 
 1. 生成构建系统
 
@@ -49,6 +47,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 ```
 
-CMAKE_BINARY_DIR: CMake[构建系统](cmake-concept.md#构建系统)目录
+`CMAKE_BINARY_DIR`: CMake[构建系统](cmake-glossary.md#构建系统)目录
 
 4. 

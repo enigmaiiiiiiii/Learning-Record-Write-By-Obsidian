@@ -1,4 +1,4 @@
-# 直接管理内存
+# C++ - Directly Manage Memory
 
 - 通过**new**分配内存, 赋值给**指针**
   - `int *p = new int;`,默认初始化,*p值未定义,p指向int类型

@@ -1,8 +1,8 @@
-# 完整项目用到的CMake命令
+# CMake - Learn CMake From Large Project
 
 ## sqlbrowser
 
-### 命令
+### Command
 
 ```cmake
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" "${CMAKE_MODULE_PATH}")

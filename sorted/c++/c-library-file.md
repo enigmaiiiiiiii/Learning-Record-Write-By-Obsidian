@@ -4,8 +4,8 @@
 
 What It Is
 
-- `.a` and `.lib` files
-- Can be considered a collection of [target files(.o)](c-object-file.md)
+- files with `.a` and `.lib`
+- Can be considered a **collection** of [object files(.o)](c-object-file.md)
 
 For example
 
@@ -21,7 +21,9 @@ Features
 - **Wastes space and resources**: because all related target files and associated function libraries are linked into a single executable file.
 - **Need recompiled**: If the static library is updated, all files using it **need to be recompiled**.
 
-## Dynamic Library
+## Shared Library
+
+> also called dynamic library
 
 What It Is
 

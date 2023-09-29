@@ -1,4 +1,4 @@
-# 算法函数的迭代器参数
+# C++ - algorithm function iterator parameters
 
 - 容器类型中返回迭代器的成员函数
 - 插入迭代器

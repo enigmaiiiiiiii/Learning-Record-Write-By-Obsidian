@@ -105,4 +105,18 @@ options
 
 ## git fetch
 
+## git rm
+
+`git rm [options] <pathspec>`
+
+pathspec
+
+- file to remove
+- only remove the paths that [known to git](git-glossary.md#staging-area)
+- globbing matches, e.g. `git rm 'd*'` will remove 'd', 'desert', ...
+
+options
+
+- `--cached`
+
 

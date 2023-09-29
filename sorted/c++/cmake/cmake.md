@@ -1,33 +1,40 @@
 # CMake 
 
-- 跨平台构建工具
-- Clion自动生成CMakeLists.txt
-- cmake中， windows系统变量区别于其他系统
+## What It Is
 
-[用CMake从0开始构建一个项目](cmake-from-zero-to-one.md)
+- designed as a generator for various dislects of [Makefile](makefile.md)
+- cross-platform build tool
+
+> in cmake, windows system environment variable is different from other system
+
+## Catalog
+
+[CMake From 0 To 1](cmake-from-zero-to-one.md)
+
+[cmake hello world](cmake-example.md)
 
 [CMake Error](cmake-errors.md)
 
-[CMake概念](cmake-concept.md)
+[CMake Concept](cmake-concept.md)
 
-[命令行工具: cmake](cmake-command-line-tools.md)
+[cmake cli tools](cmake-command-line-tools.md)
   
-[[CMake_Command]]
+[CMake Command](cmake-command.md)
 
-[[cmake预定义变量]]
+[cmake predefined variable.md](cmake-predefined-variables.md)
 
-[[cmake属性]]
+[cmake-property](cmake-property.md)
 
-[[cmake设置编译选项]]
+[cmake config build options](cmake-config-compile-options.md)
 
-[[cmake生成表达式]]
+[cmake generator expression](cmake-generator-expression.md)
 
-[Linux下的安装](cmake-install-on-linux.md)
+[Install CMake In Linux](cmake-install-on-linux.md)
 
-[用于快速学习的例子](cmake-example.md)
+[CMake In Large Project](cmake-learn-from-large-project.md)
 
-[完整项目用到的CMake命令](cmake-learn-from-large-project.md)
+## Article
 
-[文章: Modern CMake](cmake-article-1.md)
+[Modern CMake](cmake-article-1.md)
 
 

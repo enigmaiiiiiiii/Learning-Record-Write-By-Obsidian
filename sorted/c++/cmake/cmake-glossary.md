@@ -1,4 +1,4 @@
-# 概念
+# CMake - Glossary
 
 ## 构建系统
 
@@ -9,12 +9,12 @@
 - 构建输出工件(例如可执行文件和库)
 - 建议源文件外构建
 
-缓存
+cache
 
 - CMake会写一个CMakeCache.txt文件，将该目录标识为构建树
 - 存储持久信息，如构建系统配置选项。
 - 可手动修改
-? 首次执行cmake构建项目时创建
+- 首次执行cmake构建项目时创建
 
 构建系统
 
@@ -22,9 +22,9 @@
 
 ## TARGET
 
-TARGET通常由ADD_EXECUABLE(), ADD_LIBRARY()创建
+TARGET: mostly build from `ADD_EXECUABLE()`, `ADD_LIBRARY()`
 
-## 变量
+## Variable
 
 普通变量
 

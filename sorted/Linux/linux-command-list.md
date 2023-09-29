@@ -13,6 +13,8 @@
 
 [pkg-config](linux-pkg-config.md)
 
+[hexdump](linux-hexdump.md)
+
 ## hot-key
 
 - `ctrl + c`: terminate the current process
