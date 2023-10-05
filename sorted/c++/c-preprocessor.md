@@ -1,3 +1,4 @@
-# C语言预处理器
+# C language - Preprocessor
 
-[\#号运算符](c-operator-shrap.md)
+["#" operator](c-operator-shrap.md)
+

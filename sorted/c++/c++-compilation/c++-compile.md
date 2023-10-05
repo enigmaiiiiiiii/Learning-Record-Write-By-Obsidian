@@ -1,4 +1,4 @@
-# C++ - Compilation
+# C++ - Compile
 
 ## What Is Source File
 
@@ -11,7 +11,8 @@
 - Combining object code, system-standard startup code, and [library files](c-library-file.md) into a single file results in an [executable file](executable-file.md).
 - [GNU linker - command ld](gnu-linker.md)
 
-## common c++ compilers
+
+## Common C++ Compilers
 
 - [GCC](gcc.md)
 - MSVC

@@ -1,4 +1,6 @@
-# \#运算符
+# C Language - "#" operator
+
+## single "#" operator
 
 ```c
 #include <stdio.h>
@@ -14,14 +16,14 @@ int main(void)
 }
 ```
 
-输出:
+output:
 
 ```
 The square of y is 25.
 The square of 2 + 4 is 36.
 ```
 
-## \#\#运算符
+## double "##" operator
 
 ```c
 #define XNAME(n) x ## n
@@ -32,5 +34,5 @@ int main(void)
 }
 ```
 
-XNAME(4)$\rightarrow$ x4
+XNAME(4) ⮕  x4
 

@@ -1,6 +1,6 @@
 # Linux Command - Wildcard
 
-## What Is Wildcard
+## They Are Wildcard
 
 - `*`: match any string
 - `?`: match any single character

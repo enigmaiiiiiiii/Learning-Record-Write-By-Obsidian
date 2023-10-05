@@ -14,16 +14,18 @@ set_property(<GLOBAL                      |
              PROPERTY <name> [<value1> ...])
 ```
 
-第一个参数指定作用范围
+first argument specifies the scope of the property, available scopes as follow:
 
-- GLOBAL: 全局唯一
-- DIRECTORY `[<dir>]`: 不指定dir则为范围是当前文件 
+- GLOBAL: global unique
+- DIRECTORY `[<dir>]`: directory scope property, if `<dir>` is not specified, the current directory is used
 - TARGET:
-- SOURCE: 对同目录的target可见
-- INSTALL:
-- TEST:
-- CACHE:
+- SOURCE: can be accessed by targets in the same directory
+- INSTALL
+- TEST
+- CACHE
 
-- `OUTPUT_NAME` 输出文件名
-- `RUNTIME_OUTPUT_DIRECTORY` 构建目标文件过程中的输出目录
-  - 由[[cmake预定义变量]]CMAKE_RUNTIME_OUTPUT_DIRECTORY初始化
+???
+
+- `OUTPUT_NAME`
+- `RUNTIME_OUTPUT_DIRECTORY` 
+  - initialized by [cmake predefined variable]() `CMAKE_RUNTIME_OUTPUT_DIRECTORY`

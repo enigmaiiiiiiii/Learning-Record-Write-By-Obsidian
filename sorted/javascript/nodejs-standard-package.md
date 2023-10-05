@@ -1,4 +1,4 @@
-# Package
+# NodeJS - Standard Package
 
 ## CommonJS standard package should contain following files
 

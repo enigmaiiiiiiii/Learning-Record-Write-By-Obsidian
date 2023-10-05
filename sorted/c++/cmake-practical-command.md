@@ -1,20 +1,33 @@
 # CMake - Practical Command
 
+* [SET](#set)
+* [MESSAGE](#message)
+* [SUBDIRS](#subdirs)
+* [LINK_DIRECTORIES](#link_directories)
+* [ADD_DEFINITIONS](#add_definitions)
+* [ADD_DEPENDENCIES](#add_dependencies)
+* [EXEC_PROGRAM](#exec_program)
+* [INCLUDE](#include)
+* [FIND_](#find_)
+
 ## SET
+
+set **normal** variable
 
 ```cmake
 set(<variable> <value>... [PARENT_SCOPE])`设置一般变量, 
 ```
 
-- variable : 变量名称
-- value : 变量值
+- `variable`: variable name
+- `value`: variable value
+- type: limit to BOOL, FILEPATH, PATH, STRING, INTERNAL
+
+set **cache** variable
 
 ```cmake
 set(<variable> <value>... CACHE <type> <docstring> [FORCE])
 ```
 
-- 设置缓存变量
-- type: 限定为BOOL, FILEPATH, PATH, STRING, INTERNAL
 
 ```cmake
 set(ENV{<variable>} <value>... [PARENT_SCOPE])
@@ -26,11 +39,12 @@ set(ENV{<variable>} <value>... [PARENT_SCOPE])
 
 ## MESSAGE
 
-- `MESSAGE([SEND_ERROR | STATUS | FATAL_ERROR] “message to display” …)
-- 向终端输出用户定义的信息或变量的值
-- SEND_ERROR, 产生错误,生成过程被跳过
-- STATUS, 输出前缀为—的信息
-- FATAL_ERROR, 立即终止所有cmake过程
+`MESSAGE([SEND_ERROR | STATUS | FATAL_ERROR] “message to display” …)`
+
+- message level
+  - `SEND_ERROR`
+  - `STATUS`
+  - `FATAL_ERROR`
 
  ## SET_TARGET_PROPERTIES 
  

@@ -2,7 +2,7 @@
 
 ## What It Is
 
-- designed as a generator for various dislects of [Makefile](makefile.md)
+- designed as a generator for various dialects of [Makefile](makefile.md)
 - cross-platform build tool
 
 > in cmake, windows system environment variable is different from other system
@@ -11,29 +11,33 @@
 
 [CMake From 0 To 1](cmake-from-zero-to-one.md)
 
-[cmake hello world](cmake-example.md)
+[CMake Hello World](cmake-hello-world.md)
 
-[CMake Error](cmake-errors.md)
+[CMake Practical Use](cmake-example.md)
 
-[CMake Concept](cmake-concept.md)
+[Glossary](cmake-glossary.md)
 
-[cmake cli tools](cmake-command-line-tools.md)
-  
-[CMake Command](cmake-command.md)
+[Variable](cmake-variable.md)
 
-[cmake predefined variable.md](cmake-predefined-variables.md)
+[CLI Tools](cmake-command-line-tools.md)
 
-[cmake-property](cmake-property.md)
+[Command](cmake-command.md)
 
-[cmake config build options](cmake-config-compile-options.md)
+[Predefined variable](cmake-predefined-variables.md)
 
-[cmake generator expression](cmake-generator-expression.md)
+[Property](cmake-property.md)
 
-[Install CMake In Linux](cmake-install-on-linux.md)
+[Config build options](cmake-config-compile-options.md)
+
+[Generator expression](cmake-generator-expression.md)
+
+[Install CMake](cmake-install.md)
 
 [CMake In Large Project](cmake-learn-from-large-project.md)
 
 ## Article
+
+[CMake Error](cmake-errors.md)
 
 [Modern CMake](cmake-article-1.md)
 

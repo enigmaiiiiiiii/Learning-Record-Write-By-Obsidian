@@ -1,23 +1,22 @@
 # linux System Directory
 
-
 * [/bin](#/bin)
-* [/usr](#/usr)
+* [/sbin](#/sbin)
+* [/usr](#/usr): system program
 * [/usr/bin](#/usr/bin)
 * [/usr/sbin](#/usr/sbin)
 * [/usr/local/bin](#/usr/local/bin)
 * [/usr/src](#/usr/src)
 * [/boot(not really understand)](#/boot(not-really-understand))
-* [/dev](#/dev)
-* [/etc](#/etc)
+* [/etc](#/etc): config
+* [/opt](#/opt): add-on program
 * [/home](#/home)
 * [/lib](#/lib)
+* [/dev](#/dev)
 * [/media](#/media)
 * [/mnt](#/mnt)
-* [/opt](#/opt)
 * [/proc](#/proc)
 * [/root](#/root)
-* [/sbin](#/sbin)
 * [/sys](#/sys)
 * [/tmp](#/tmp)
 * [/var](#/var)
@@ -42,7 +41,7 @@
 ## /usr
 
 - Abbreviations of **Unix System Resources**, NOT **user**
-- Stores programs and data for all users
+- Stores **programs**, **library**, ~~data~~ for all users
 
 > Like `Program Files` in windows
 
@@ -66,18 +65,6 @@
 
 - ...
 
-## /dev
-
-- device driver
-
-`/dev/null`
-
-- a special file that discards all data written to it
-
-`dev/stdin`, `dev/stdout`, `dev/stderr`
-
-- special file link to [`/proc/self/fd/0`, `/proc/self/fd/1`, `/proc/self/fd/2`](linux-file-descriptor.md#3-standard-file-descriptors)
-
 ## /etc
 
 - system related **configuration** files
@@ -95,6 +82,10 @@ Useful files in this directory
 127.0.0.1    localhost example.com 
 ::1 localhost ip6-localhost ip6-loopback
 ```
+## /opt
+
+- for add-on software packages
+- for packages who are not part of [package management system](linux-software-install.md)
 
 ## /home
 
@@ -107,6 +98,18 @@ Useful files in this directory
 - lib is abbreviation of library
 - like .dll in windows
 
+## /dev
+
+- device driver
+
+`/dev/null`
+
+- a special file that discards all data written to it
+
+`dev/stdin`, `dev/stdout`, `dev/stderr`
+
+- special file link to [`/proc/self/fd/0`, `/proc/self/fd/1`, `/proc/self/fd/2`](linux-file-descriptor.md#3-standard-file-descriptors)
+
 ## /media
 
 - ...
@@ -115,11 +118,6 @@ Useful files in this directory
 
 - mount
 - ...
-
-## /opt
-
-- for add-on software packages
-- for packages who are not part of [package management system](linux-software-install.md)
 
 ## /proc
 

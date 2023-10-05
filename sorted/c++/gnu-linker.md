@@ -2,14 +2,14 @@
 
 ## What It Is
 
-ld is a command to
+`ld` is a command to
 
 - combine several [object files](c-object-file.md) and libraries
 - resolve references
 - and produce an output file
   - a final linked image
     - [executable](executable-file.md)
-    - [dylibrary](c-library-file.md#dynamic-library)
+    - [dylibrary](c-library-file.md#shared-library)
     - [bundle]() ?
   - or another object file
 

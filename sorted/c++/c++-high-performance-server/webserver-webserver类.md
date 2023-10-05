@@ -1,7 +1,6 @@
 # webserver
 
 - 创建客户端连接
-
 - `Initsocket_()`
   - 绑定服务器地址，创建监听socket
   - 设置socket复用

@@ -15,15 +15,30 @@
 
 ## Terminology
 
-formula
+### formula
 
-- Homebrew package definition build from upstream
+- Homebrew package definition build from upstream sources(from source code)
 
-cask
+### cask
 
 - Homebrew package definition that installs macOS native application
 
-Tab
+### keg
+
+- installation destination directory of a given [formula](#formula) **version**
+- e.g. `/usr/local/Cellar/git/2.23.0`
+
+### rack
+
+- directory containing one or more versioned [kegs](#keg)
+- e.g. `/usr/local/Cellar/git`
+
+### Cellar
+
+- directory containing one or more [racks](#rack)
+- e.g. `/usr/local/Cellar`
+
+### Tap
 
 - a single version of a formula
 

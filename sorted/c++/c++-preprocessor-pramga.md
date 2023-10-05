@@ -1,6 +1,6 @@
 # \#pramga
 
-- 定义编译器行为
+- define the behavior of compiler
 
 ## pramga pack
 

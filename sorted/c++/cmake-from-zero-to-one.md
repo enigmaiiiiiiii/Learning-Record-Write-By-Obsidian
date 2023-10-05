@@ -1,8 +1,8 @@
 # CMake - 0 to 1
 
-for `main.cpp`
+## CMakeLists.txt
 
-0. CMakeLists.txt
+for `main.cpp`
 
 ```c++
 CMAKE_MINIMUM_REQUIRED(VERSION 3.15)
@@ -12,41 +12,29 @@ PROJECT(app)
 add_executable(app main.cpp) 
 ```
 
-1. 生成构建系统
+## Generate Build System Directory
 
-```shell
+```sh
 cmake -S . -B build
 ```
 
-表示在用当前目录下的CMakeLists.txt生成构建系统，放在当前目录的build目录中
+- this command will use `CMakeLists.txt` in current directory to generate build system, and put it in `build` directory
 
-- 构建系统: 用于描述如何使用自动化构建工具从其源代码构建项目的可执行文件和库
+## Generate Executable File or Library File
 
-> 例如，一个构建系统可能是与命令行make工具一起使用的Makefile，或者集成开发环境(IDE)的项目文件。
-> 为了避免维护多个这样的构建系统，项目可以使用CMake语言编写的文件抽象地指定其构建系统。
-> 从这些文件中，CMake通过一个称为生成器的后端在本地为每个用户生成首选的构建系统。
-
-
-2. 生成可执行文件或库文件
-
-```shell
+```sh
 cmake --build <dir>
 ```
 
-dir: 构建系统所在目录
+- `dir`: build directory
 
-3. 设置可执行文件输出目录
+set executable file output directory
 
-```cmake
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
-```
-
-可执行文件输出在: `顶级CMakeList.txt所在目录/bin`
 
 ```cmake
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 ```
 
-`CMAKE_BINARY_DIR`: CMake[构建系统](cmake-glossary.md#构建系统)目录
+- this command will put executable file at `cmakelist_file_dir/bin`
+- `CMAKE_BINARY_DIR`: CMake [Build System](cmake-glossary.md#build-system) directory, for command `cmake -S . -B build`, `CMAKE_BINARY_DIR` is `build`
 
-4. 

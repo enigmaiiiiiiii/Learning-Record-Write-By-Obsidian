@@ -1,24 +1,15 @@
 # CMake - Glossary
 
-## 构建系统
+## Build System
 
-- cmake处理项目代码文件时，入口是项目根目录下的`CMakeLists.txt`
-- 添加子目录需要在子目录下包含一个`CMakeLists.txt`
-- 顶层目录
-- 存储构建系统文件
-- 构建输出工件(例如可执行文件和库)
-- 建议源文件外构建
+- They are build system: Makefiles, Ninja, Visual Studio 17 2022
 
-cache
+## Cache
 
-- CMake会写一个CMakeCache.txt文件，将该目录标识为构建树
-- 存储持久信息，如构建系统配置选项。
-- 可手动修改
-- 首次执行cmake构建项目时创建
-
-构建系统
-
-- Makefiles, Ninja, Visual Studio 17 2022
+- CMake will create a CMakeCache.txt file, marking that directory as a build tree
+- store persistent information, such as build system configuration options
+- can be modified manually
+- created when first time run `cmake` to build project
 
 ## TARGET
 
@@ -26,31 +17,40 @@ TARGET: mostly build from `ADD_EXECUABLE()`, `ADD_LIBRARY()`
 
 ## Variable
 
-普通变量
+common variable
 
-- 变量使用`${}`方式取值,但是在IF控制语句中是直接使用变量名
-- 类型必须是BOOLEAN, FILEPATH, PATH, STRING, INTERNAL中的一个
+- use `${}` to get variable value. But in [IF statement](#IF), use variable name directly
+- variable type must be one of **BOOLEAN, FILEPATH, PATH, STRING, INTERNAL**
 
-环境变量
+environment variable
 
-- 环境变量使用$ENV{}方式取值,使用`SET(ENV{VAR} VALUE)`赋值
+- use `$ENV{}` to get environment variable value
+- use `SET(ENV{VAR} VALUE)` to set environment variable value
 
-list变量相关命令
+## List
 
-- `list(LENGTH <list> <out-var>)`, 返回list长度到变量`out-var`
-- `list(GET <list> <element index> [<element index> ...] <out-var>)`按索引返回list中元素到变量`out-var`
-- `list(APPEND <list> [<element> ...])`
-- `list(INSERT <list> <element_index> <element> [<element> ...])
+Handle List Variable
 
-  
-## 指令
+`list(LENGTH <list> <out-var>)`
+
+- set list length to `out-var`
+
+`list(GET <list> <element index> [<element index> ...] <out-var>)`
+
+- set elements from the list to the variable `out-var` based on an index.
+
+`list(APPEND <list> [<element> ...])`
+
+`list(INSERT <list> <element_index> <element> [<element> ...])
+
+## Command
 
 - 参数使用括号括起,参数之间使用**空格**或**分号**分开。
 - 以ADD_EXECUTABLE指令为例：
-  - 空格: ADD_EXECUTABLE(hello main.c  func.c)
-  - 分号: ADD_EXECUTABLE(hello main.c; func.c)
-  
-## if 
+  - space: ADD_EXECUTABLE(hello main.c  func.c)
+  - semicolon: ADD_EXECUTABLE(hello main.c; func.c)
+
+## IF 
 
 ```cmake
 if (<contion>)
@@ -70,7 +70,7 @@ endif()
 - `if (TARGET target-name)`
 - `if (DEFINED <name>)` True if variable, cache variable or environment variable with given `<name>` if defined, the value of the variable does not matter, macro arguments are not varivable
   
-## option 
+## option
 
 ```cmake
 option (<option_variable> "help string describing option" [initial value])

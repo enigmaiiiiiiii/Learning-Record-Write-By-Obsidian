@@ -1,7 +1,7 @@
 # Linux - ln
 
 * [What It Is](#what-it-is)
-* [About What Target Should Input](#about-what-target-should-input)
+* [What Should be Target Argument](#what-should-be-target-argument)
 * [Hard Link](#hard-link)
 * [Symbolic Link](#symbolic-link)
 * [Options](#options)

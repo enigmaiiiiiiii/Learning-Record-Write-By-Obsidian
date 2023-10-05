@@ -2,7 +2,7 @@
 
 ## What Is For
 
-- modify the input read from 
+- modify the input read from
   - files
   - standard input
 

@@ -1,11 +1,12 @@
 # Python Virtual Environment
 
 * [Virtual Env](#virtual-env)
-* [manage package](#manage-package)
-* [requirements.txt](#requirementstxt)
+* [deactivate virtual environment](#deactivate-virtual-environment)
 * [how venvs work](#how-venvs-work)
 
 ## Virtual Env
+
+> similar concept in other language like [project with package.json](nodejs-package-json.md)
 
 it's general to create virtual environment in current working directory
 
@@ -14,7 +15,6 @@ python -m venv .venv
 # or
 python3 -m venv .venv
 ```
-
 
 create virtual environment, and specify the virtual environment directory as `env_path`
 
@@ -51,44 +51,6 @@ $env:VIRTUAL_ENV
 
 ```sh
 deactivate
-```
-
-## Manage Package
-
-Query Installed Packge List
-
-```sh
-python -m pip list
-```
-
-Install Package
-
-- version number can be specified by `==version_number` after package name
-
-```shell
-python -m pip install numpy==1.1.0
-```
-
-Remove Package
-
-- uninstall package1 package2
-
-```sh
-python -m pip uninstall package1 package2
-```
-
-## requirements.txt
-
-Create Environment from `requirements.txt`
-
-```shell
-pip install -r requirements.txt
-```
-
-Write Current Environment to `requirements.txt`
-
-```shell
-pip freeze > requirements.txt
 ```
 
 ## how venvs work

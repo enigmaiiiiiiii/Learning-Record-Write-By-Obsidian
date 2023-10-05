@@ -39,50 +39,9 @@ gcc -L/usr/local/lib -lmylib main.cpp
 - `-L`: add library search path
 - `-l`: link library
 
-## Practical Command
+## Practical Use
 
-## Options 
+## Options
 
-`-o`
+[GCC Options](gcc-options.md)
 
-- `gcc -o executable_file sourcefile`
-- running **complete** compile process, generate file with postfix `.exe` or `.out`
-- this file called [executable file](executable-file.md)
-
-`-lfoo`, `-l libfoo.a`
-
-- 
-
-`-Ldir`
-
-- add directory dir to the list of directories to be searched for `-l`
-
-
-`-S`
-
-- `gcc -S sourcefile`
-- running first two steps, generate file with postfix `.s`
-- this file called [assembly file]()
-
-`-E`:
-
-- `gcc -E hello.c > hello.txt`
-- only active the preprocess step
-
-`-v`
-
-`-c`
-
-- running first three steps, but not link, generate file with postfix `.obj` or `.o`
-- this file called [object file](c-object-file.md)
-
-```sh
-gcc -c hello.c
-```
-
-`-shared`
-
-
-## related article
-
-[gcc build shared lib](gcc-build-shared-libraries.md)

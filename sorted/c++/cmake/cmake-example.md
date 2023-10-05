@@ -59,10 +59,10 @@ add_executable(tmp main.cpp)
 
 ```cmake
 find_package(Threads REQUIRED) 
-# 寻找可用的thread包，设置CMAKE_THREAD_LIBS_INIT等相关变量
+# search available thread package, set variable "CMAKE_THREAD_LIBS_INIT" and so on
 add_executable(demo demo.cpp)
 
 target_link_libraries(demo ${CMAKE_THREAD_LIBS_INIT}) 
-# 设置项目需要连接的libraries
+# set libraries that program need to link
 ```
 

@@ -10,8 +10,10 @@ macro(<name> [<arg1> ...])
 endmacro()
 ```
 
-- 定义一个`macro`, 接受一系列参数`<arg1>, ...`, 以`macro()`还是，`endmacro()`结束, 调用之前不会运行
-- 调用macro
+- define a `macro`, receive series of parameters `<arg1>, ...`, begin with `macro()`，end with `endmacro()`, 
+- it wont be execute before it is called
+
+call a macro
 
 ```cmake
 foo()
@@ -19,7 +21,7 @@ Foo()
 cmake_language(CALL foo)
 ```
 
-- 参数传递
+- pass parameters
 
 ## function
 
