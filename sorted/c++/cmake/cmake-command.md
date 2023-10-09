@@ -1,47 +1,17 @@
 # CMake - Command
 
-> **instruction is case-insensitive**, but **variable is case-sensitive**. It is recommended to use uppercase instruction.
+> **instruction is case-insensitive**, but **variable is case-sensitive**
+> **lowercase** command is recommended
 
-[CMake Practical Command](cmake-practical-command.md)
+## message
 
-[CMake Build Project](cmake-build-project.md)
-
-[CMake Library](cmake-library.md)
-
-[Add Directory](cmake-add-directory.md)
-
-[Import External Package](cmake-package.md)
-
-[CMake Add Build Rules](cmake-add-build-rules.md)
-
-[CMake install](cmake-install.md)
-
-[macro](cmake-macro-and-function.md)
-
-## Some Command
-
-4. `FIND_LIBRARY`
-
-```cmake
-find_library (<VAR> Name [Path1 Path2 ...])
-```
-
-`VAR`: variable to store the result, 
-`Name`: name of library to find
-`Path`: addon search path except default path
-
-3. MESSAGE
-
-```cmake
-MESSAGE([<model>] "message text")
-```
+`MESSAGE([SEND_ERROR | STATUS | FATAL_ERROR] “message to display” …)`
 
 ```cmake
 cmake_minumun_required(version 3.0.0)
 
 message("============================")
-message("1. NONE")
-message(NOTICE "2. NOTICE")
+message("1. NONE") message(NOTICE "2. NOTICE")
 message(STATUS "3. STATUS")
 message(WARNING "4. WARNING")
 message(DEPRECATION "5. DEPRECATION")
@@ -54,20 +24,64 @@ message(TRACE "11. TRACE")
 message("=============================")
 ```
 
-2. `SET`
+## add_subdirectory
 
-cached variable will be saved in `CMakeCache.txt`
+`ADD_SUBDIRECTORY(src_dir [binary_dir] [EXCLUDE_FROM_ALL])`
+
+- add sub directory that stores source files to current project, 
+- `binary_dir` specify the directory in which to place the output files
+- `EXCLUDE_FROM_ALL` means：exclude this directory from the default compile process
+
+## include_directories
+
+`include_directories([AFTER | BEFORE] [SYSTEM] dir1 dir2 … )`
+
+- Add multiple specific [header file](c++-header-file.md) **search paths** to the project, 
+- path spliced by space, if path contains space, use double quotes to wrap it
+- default behavior is to append to the end of current header file search path. 
+- There are two ways to control the location of the search path:
+  - `CMAKE_INCLUDE_DIRECTORIES_BEFORE`: set this cmake variable to on, can put the added header file search path in front of the existing path
+  - with `AFTER` or `BEFORE` parameter, can also control whether to append or prepend
+
+## target_link_libraries
+
+`target_link_libraries(<target> ... <item> ...)`
+
+- `target`: [cmake target](cmake-glossary.md#target)
+- `item` can be
+  - a [library target](cmake-glossary.md#target)
+  - a full path to a library file
+  - a plain library name
+  - a link flag, such as
+
+## install
+
+[Install](cmake-command-install.md)
+
+## macro
 
 ```cmake
-set(<var> <value>... CACHE <type> <docstring> [FORCE])
+macro(<name> [<arg1> ...])
+ <commands>
+endmacro()
 ```
 
-`ADD_TEST(test_file param1 param2)`
+- define a `macro`, receive series of parameters `<arg1>, ...`, begin with `macro()`，end with `endmacro()`, 
+- it wont be execute before it is called
+
+call a macro
 
 ```cmake
-add_test(NAME mytest
-         COMMAND testDriver --config $<CONFIG>
-                            --exe $<TARGET_FILE:myexe>)
+foo()
+Foo()
+cmake_language(CALL foo)
 ```
 
+## function
+
+```cmake
+function(<name> [<arg1> ...])
+ <commands>
+endfunction()
+```
 

@@ -5,6 +5,7 @@
 * [awk](#awk)
 * [head](#head)
 * [grep](#grep)
+* [xargs](#xargs)
 * [wildcard](#wildcard)
 
 ## pipe
@@ -21,6 +22,10 @@
   - [`head`]()
   - [`tail`]()
   - [`cut`]()
+
+## redirect
+
+- use `<` to redirect input from file
 
 ## perl
 
@@ -66,11 +71,14 @@ head -n 5 /etc/passwd
 - `-n`:
 - `-v`: reverse match
 
-## wildcard
-
-[wildcard](linux-wildcard.md)
-
 ## envsubst
 
 [envsubst](linux-envsubst.md)
 
+## xargs
+
+[xargs](linux-xargs.md)
+
+## wildcard
+
+[wildcard](linux-wildcard.md)

@@ -2,7 +2,7 @@
 
 ## What It Is
 
-- belong to binary file
+- is a binary file
 - contains
   - [machine language]() code written by compiler
   - library function

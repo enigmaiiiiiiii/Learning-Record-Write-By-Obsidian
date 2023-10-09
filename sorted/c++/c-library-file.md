@@ -13,7 +13,7 @@
 
 - Can be considered a **collection** of [object files(.o)](c-object-file.md)
 
-> similar concept in other language like [nodejs package](nodejs-module-system.md), [python](python-package.md), [java]()
+> similar concept in other language like [nodejs package](nodejs-module-system.md), [python](python-package-system.md), [java]()
 
 *Static Library*
 

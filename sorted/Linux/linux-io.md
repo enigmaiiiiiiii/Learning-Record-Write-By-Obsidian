@@ -2,7 +2,7 @@
 
 ## stream
 
-[IO Stream](linux-io-stream.md)
+[Buffer](linux-programming-buffer.md)
 
 [Open](linux-stream-open-api.md)
 
@@ -28,11 +28,11 @@
 
 ## Async io
   
-[[异步io]]
+[async io](linux-async-io.md)
 
-## 非连续io
+## non-contiguous io
 
-[readv()和writev()](linux-io-api-readv-and-writev.md)
+[readv(), writev()](linux-io-api-readv-and-writev.md)
 
-## 内存空间
+## memory space
 

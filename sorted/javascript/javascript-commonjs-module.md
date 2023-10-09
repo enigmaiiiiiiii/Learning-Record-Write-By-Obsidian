@@ -1,5 +1,10 @@
 # CommonJS Module
 
+* [what is this](#what-is-this)
+* [always singleton](#always-singleton)
+* [exports Object](#exports-object)
+* [import](#import)
+
 ## what is this
 
 - use for organize code in server side
@@ -53,7 +58,15 @@ exports.func = function () {
 
 ## import
 
-import object from `cicrle.js`
+use `require()` to specify dependencies
+
+- basic syntax
+
+```js
+const moduleA = require('/module')
+```
+
+- import object from `cicrle.js`
 
 ```js
 const circle = require('./circle.js');
@@ -63,13 +76,7 @@ console.log(a);  // 50.26548245743669
 console.log(circle.r); // 4
 ```
 
-- use `require()` to specify dependencies
-
-```javascript
-var moduleA = require('/module')
-```
-
 - node.js `require()` parameter can be the following string
   - relative path
   - absolute path
-  - node_modules directory dependency identifier
+  - `node_modules` directory dependency identifier

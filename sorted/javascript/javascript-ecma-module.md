@@ -1,4 +1,4 @@
-# ECMAJavascript Module
+# ECMAScript - Module
 
 ## import
 

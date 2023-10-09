@@ -1,19 +1,44 @@
-# 预处理
+# C++ - Preprocess
 
-- 由c++继承自C语言而来
-- 预处理指令以#开头
-- 比如`#define macro-name replacement-text`，  
-这行代码出现在文件中时，所有宏都将会在程序编译之前被替换为replacement-text
+* [What It Is](#what-it-is)
+* [#include ](##include)
+* [\#define](#\#define)
+* [\#if](#\#if)
 
-[[c++手册#预处理指令]]
+## What It Is
 
-## \#include 
+- Inherited from language C
+- Preprocessor directives start with `#.`
 
-- 通常用来包含头文件
-- 也可以包含源文件，若包含了源文件,则在用c++项目构建工具时，不需要再包含一次,否则因定义重复而报错
-- `#include "func.h"`,func.h在同一个文件夹，直接引用
-- `#include "directory/func.h"`, 子目录directory中的func.h,向下引用
-- `#include "..func.h"`, func.h在上级目录, `..`返回上级目录后引用
+For example, `#define macro-name replacement-text`
+
+- when this line of code appears in a file
+- all `macros-name` will be replaced with `replacement-text` before the program is compiled.
+
+## #include
+
+- Typically used to include header files.
+- It can also include source files
+  - If a source file is included, you don't need to include it again when using C++ project build tools
+  - otherwise, it will result in errors due to duplicate definitions.
+
+`#include <func.h>`
+
+- search for system header files, search directory is determined by compiler and system
+- common search directory is `/usr/inlcude`, `usr/local/include`
+
+`#include "func.h"` 
+
+- search same directory as the file containing `#include "func.h"`
+- search directory specified by [`-I` option](gcc-options.md#-i-dir)
+
+`#include "directory/func.h"` 
+
+- search `func.h` from the subdirectory `directory`
+
+`#include "../func.h"` 
+
+- includes `func.h` from the parent directory. `..` is used to go up to the parent directory before referencing.
 
 ## \#define
 

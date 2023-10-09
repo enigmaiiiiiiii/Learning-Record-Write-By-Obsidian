@@ -40,6 +40,8 @@
 
 [User And Group](linux-user-and-group.md)
 
+[IO Stream](linux-io-stream.md)
+
 [Systemd](linux-systemd.md)
 
 [Services](linux-services.md)

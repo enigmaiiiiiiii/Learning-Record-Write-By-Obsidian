@@ -1,7 +1,6 @@
 # Linux - Tools pkg-config
 
 * [What It Is](#what-it-is)
-* [Install A Library With pkg-config Information](#install-a-library-with-pkg-config-information)
 * [options](#options)
 * [Environment Variable](#environment-variable)
 * [.pc file](#.pc-file)
@@ -18,8 +17,6 @@
   - Parameters for [linker], e.g
   - Package Version
   - ...
-
-## Install A Library With pkg-config Information
 
 ## options
 
@@ -55,7 +52,10 @@ $ pkg-config --variable pc_path pkg-config
 
 ## .pc file
 
+
 [`.pc` file](linux-pkg-config-pc-file.md)
+
+Install A Library With pkg-config Information
 
 ## Derived Variable
 

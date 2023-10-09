@@ -1,31 +1,22 @@
 # Modern CMake
 
-## 1. 变量和缓存
+## 1. variable and cache
 
 - 缓存: 只是一个文本文件CMakeCache.txt
 - 运行CMake时在构建目录中创建的
 
 > 这就是CMake如何记住你设置的任何东西, 所以你不必每次重新列出你的选项重新运行CMake。
 
-### 1.1 普通变量
+### 1.1 normal variable
 
 - 不包含空格的值，加引号和不加引号没有区别
 - 用`${}`展开变量时，总是应该用引号括起来`"${MY_PATH}"`
 
-局部变量
+local
 
 ```cmake
 set(MY_VARIABLE "value")
 ```
-
-列表变量
-
-```cmake
-set(MY_LIST "one" "two")
-set(MY_LIST "one;two")
-```
-
-- 第一种情况内部会变成`"one;two"`
 
 ### 1.2 缓存变量
 

@@ -1,12 +1,12 @@
 # ECMAScript Module Export
 
-* [feature](#feature)
+* [features](#features)
 * [default export](#default-export)
 * [named export](#named-export)
 * [re-export/aggregation export](#re-exportaggregation-export)
 * [Syntax](#syntax)
 
-## feature
+## Features
 
 - function, variable, class can be export
 - must at the top level
@@ -49,8 +49,9 @@ sperate `import`and `export`，
 
 - then `fooA`, `fooB` can be used in current module
 
-```javascript
+```js
 import {default as fooA, fooB} from 'bar.js';
+
 export {fooA, fooB};
 ```
 

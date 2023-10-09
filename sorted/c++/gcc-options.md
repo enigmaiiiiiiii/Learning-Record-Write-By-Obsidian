@@ -20,6 +20,7 @@
 
 ## -lfoo, -l libfoo.a
 
+- search for file `libfoo.a` or `libfoo.so` 
 - search for library name foo
 - search path is standard system directories and directories specified by `-L` option
 - second alternative only for POSIX compliance and is not recommended
@@ -41,7 +42,10 @@
 
 ## -I dir
 
-- Add the directory `dir` to the list of directories to be searched for [header files](c++-header-file.md) during preprocessing
+> Add the directory `dir` to the list of directories to be searched for [header files](c++-header-file.md) during preprocessing
+
+- Add the directory `dir` to [header files](c++-header-file.md) search path
+- header file not directly include by `dir` won't be searched 
 
 ## -S
 
@@ -68,4 +72,9 @@ gcc -c hello.c
 ## -shared
 
 - use to create a [shared library](c-library-file.md)
+
+## -std
+
+- determine the language standard
+- available value like, `c90`, `c99`, `c11`, `c17`, `gnu90`, `gnu99`, `c++11`, `c++20`, etc.
 

@@ -38,8 +38,6 @@ has two kinds of lines
 - variable lines: `key=value` 
 - keyword lines: `keyword: value`
 
-
-
 ## keyword lines
 
 syntax `keyword: value`

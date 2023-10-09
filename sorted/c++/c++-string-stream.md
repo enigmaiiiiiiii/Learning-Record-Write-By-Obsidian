@@ -1,3 +1,3 @@
-# string流
+# C++ - String Stream
 
-- istringstream读取string数据, ostringstream写入string
+- `istringstream` read `string` data, `ostringstream` write in string

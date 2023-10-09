@@ -1,5 +1,11 @@
 # Linux Shell Programming - read
 
+* [Where Can Read From](#where-can-read-from)
+* [Take A Look](#take-a-look)
+* [Default Variable REPLY](#default-variable-reply)
+* [Value Assigned To Multiple Variables](#value-assigned-to-multiple-variables)
+* [Syntax](#syntax)
+
 ## Where Can Read From
 
 read from standard input

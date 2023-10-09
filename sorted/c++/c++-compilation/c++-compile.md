@@ -11,9 +11,14 @@
 - Combining object code, system-standard startup code, and [library files](c-library-file.md) into a single file results in an [executable file](executable-file.md).
 - [GNU linker - command ld](gnu-linker.md)
 
-
 ## Common C++ Compilers
 
 - [GCC](gcc.md)
 - MSVC
 - clang
+
+## Build Tools
+
+- [Makefile](makefile.md)
+- [Ninja]()
+- Visual Studio

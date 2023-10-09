@@ -1,6 +1,7 @@
 # Linux - echo
 
 - `echo ${variable}`: print the value of variable
+- `echo` doesn't read standard input
 
 ```bash
 #!/bin/bash

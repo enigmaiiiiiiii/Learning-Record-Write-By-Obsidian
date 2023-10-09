@@ -3,6 +3,7 @@
 * [Two Module Systems](#two-module-systems)
 * [index.js File](#index.js-file)
 * [Import Module From Html Page](#import-module-from-html-page)
+* [Module file](#module-file)
 * [.mjs file](#.mjs-file)
 
 ## Two Module Systems

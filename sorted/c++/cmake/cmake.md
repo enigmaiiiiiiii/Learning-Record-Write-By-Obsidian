@@ -1,4 +1,4 @@
-# CMake 
+# CMake
 
 ## What It Is
 
@@ -7,37 +7,55 @@
 
 > in cmake, windows system environment variable is different from other system
 
-## Catalog
+## How To Use
 
-[CMake From 0 To 1](cmake-from-zero-to-one.md)
+[From 0 To 1](cmake-from-zero-to-one.md)
 
-[CMake Hello World](cmake-hello-world.md)
+[Hello World](cmake-hello-world.md)
 
-[CMake Practical Use](cmake-example.md)
+[Best Practice](cmake-best-practice.md)
+
+[Installing Files](cmake-installing-files.md)
+
+[Using Package](cmake-using-package.md)
+
+## Foundation
 
 [Glossary](cmake-glossary.md)
 
 [Variable](cmake-variable.md)
 
+[Block(Scope)](cmake-block.md)
+
 [CLI Tools](cmake-command-line-tools.md)
 
-[Command](cmake-command.md)
-
-[Predefined variable](cmake-predefined-variables.md)
+[Find Package](cmake-command-find-package.md)
 
 [Property](cmake-property.md)
+
+[Predefined Variable](cmake-predefined-variables.md)
+
+[FetchContent](cmake-fetch-content.md)
+
+[.cmake file]()
 
 [Config build options](cmake-config-compile-options.md)
 
 [Generator expression](cmake-generator-expression.md)
 
-[Install CMake](cmake-install.md)
+[dependency propagation](cmake-dependency-propagation.md)
+
+[Add Build Rules](cmake-add-build-rules.md)
+
+[Command List](cmake-command.md)
+
+## Template
 
 [CMake In Large Project](cmake-learn-from-large-project.md)
 
 ## Article
 
-[CMake Error](cmake-errors.md)
+[get stucked](cmake-get-stucked.md)
 
 [Modern CMake](cmake-article-1.md)
 

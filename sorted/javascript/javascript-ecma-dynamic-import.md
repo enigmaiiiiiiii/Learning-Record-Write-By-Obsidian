@@ -1,11 +1,11 @@
 # Dynamic Import
 
-- [Syntax](#syntax)
-- [Simple Import](#simple-import)
-- [when module have a function called `then()`](#when-module-have-a-function-called-then)
-- [import on user action](#import-on-user-action)
-- [import different modules based on environment](#import-different-modules-based-on-environment)
-- [when need to use](#when-need-to-use)
+* [Syntax](#syntax)
+* [Simple Import](#simple-import)
+* [curious case: when module have a function called `then()`](#curious-case:-when-module-have-a-function-called-`then()`)
+* [import on user action](#import-on-user-action)
+* [import different modules based on environment](#import-different-modules-based-on-environment)
+* [when need to use](#when-need-to-use)
 
 ## Syntax
 

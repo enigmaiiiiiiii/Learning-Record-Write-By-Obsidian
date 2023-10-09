@@ -129,7 +129,7 @@ variable `require`, `exports`, `module` does not have definition in file
 
 - node compile `.js` file with a wrapping process
 
-```javascript
+```js
 (function (exports, require, moduel, __filename, __dirname)) {
     var math = require('math');
     exports.area = function(radius) {

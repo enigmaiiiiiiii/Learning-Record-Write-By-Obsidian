@@ -1,4 +1,4 @@
 # C language - Preprocessor
 
-["#" operator](c-operator-shrap.md)
+["#" operator](c-operator-sharp.md)
 
