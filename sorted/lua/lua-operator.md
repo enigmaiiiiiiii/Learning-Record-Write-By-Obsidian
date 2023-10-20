@@ -1,5 +1,19 @@
 # Lua - Operator
 
+## Condition operator
+
+`==`: equal 
+
+`~=`: not equal
+
+`<`: less than
+
+`<=`: less than or equal to
+
+`>`: greater than
+
+`>=`: greater than or equal to
+
 ## Logical Operator
 
 and

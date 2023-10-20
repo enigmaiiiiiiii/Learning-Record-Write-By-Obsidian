@@ -4,9 +4,9 @@
 
 [Color Fundamental](color-fundamental.md)
 
-[Color Hue](color-hue.md)
-
 [Color Space](color-space.md)
 
-[Color Code](color-code.md)
+[Color Model](color-models.md)
+
+[Color Encode](color-code.md)
 

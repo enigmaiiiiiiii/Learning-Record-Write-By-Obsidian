@@ -8,8 +8,6 @@
 
 [Virtual Environment](python-virtual-environment.md)
 
-[Import System](python-import-system.md)
-
 [pip](python-pip.md)
 
 [Conda](python-conda.md)

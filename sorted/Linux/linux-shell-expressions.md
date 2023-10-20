@@ -29,26 +29,30 @@ sum=`expr 1 + 2`
 
 > space `' '` between `[` and `]` is required. eg. `[ $num1 -eq $num2 ]`
 
-- usualy use with [`if` statement or loops](linux-shell-flow-control.md)
+- usually use with [`if` statement or loops](linux-shell-flow-control.md)
 
 ```sh
 if [ $num1 -eq $num2 ]; then
   echo "equal"
+elif [ $num1 -gt $num2 ]; then
+  echo "greater"
+else
+  echo "less"
 fi
 ```
 
 File Examines Options
 
-- `[ -e file ]` - True if file exists
+- `[ -e file ]`   - True if file exists
 - `[ -z string ]` - True if the length of string is zero
-- `[ -f file ]` - True if file exists and is a regular file
-- `[ -n file ]`
-- `[ -a file ]` - True if file exists
-- `[ -b file ]` - True if file exists and is a [block special]() file
-- `[ -c file ]` - True if file exists and is a [character special]() file
-- `[ -d file ]` - True if file exists and is a directory
-- `[ -h file ]` - True if file exists and is a symbolic link
-- `[ -x file ]` - True if file exists and is executable
+- `[ -f file ]`   - True if file exists and is a regular file
+- `[ -n string ]` - True if the length of string is non-zero
+- `[ -a file ]`   - True if file exists
+- `[ -b file ]`   - True if file exists and is a [block special]() file
+- `[ -c file ]`   - True if file exists and is a [character special]() file
+- `[ -d file ]`   - True if file exists and is a directory
+- `[ -h file ]`   - True if file exists and is a symbolic link
+- `[ -x file ]`   - True if file exists and is executable
 
 string compares operators
 

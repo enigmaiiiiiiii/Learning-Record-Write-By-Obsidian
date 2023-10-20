@@ -1,45 +1,4 @@
-# Computer Graphics - Color Code
-
-* [RGB](#rgb)
-* [HEX](#hex)
-* [Ansi Escape Code](#ansi-escape-code)
-
-## RGB
-
-- `RGB(0, 0, 0)` black
-
-## HSL/HSV
-
-- `HSL(Hue, Saturation, Lightness/Value)`
-  - [hue]()
-  - [saturation]()
-  - [lightness]()
-
-hue
-
-saturation
-
-value
-
-## HEX
-
-- `#000000` black
-
-## LCH
-
-`lch(lightness, chroma, hue)`
-
-- lightness, 0% is black, 1 is white
-- chroma
-- [hue](color-hue.md)
-
-## LAB
-
-`lab(lightness, a, b)`
-
-- l is lightness 
-- a is value of green/lab
-- b is value of blue/yellow
+# Color Science - Code
 
 ## Ansi Escape Code
 
@@ -72,4 +31,3 @@ int main(void) {
 24-bits color
 
 - also called true color
-

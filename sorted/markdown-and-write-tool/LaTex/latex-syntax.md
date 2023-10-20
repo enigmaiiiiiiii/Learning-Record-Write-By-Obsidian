@@ -1,8 +1,8 @@
-# LaTex语法
+# LaTex - Syntax
 
-- `%`注释符
-- `\`LaTex命令
-- `{args}`LaTex命令参数
+- `%`: comment
+- `\`: latex command
+- `{args}`: arguments of latex command
 
 $$
 \documentclass{article}

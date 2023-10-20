@@ -3,6 +3,7 @@
 ## What is lsof used for
 
 - list open files
+- usually used to check network status
 
 ## Practical Use
 
@@ -18,9 +19,15 @@ check listening ports
 lsof -i -P | grep -i "listen"
 ```
 
+check which port occupied by specific process
+
+```sh
+lsof -i -P -n | grep pid
+```
+
 ## Options
 
-`-i address`: list internet and x.25 (HP-UX) network files
+`-i address`: list internet and x.25 (HP-UX) **network files**
 
 - if `address` is not specified, all internet files are listed
 - sample `address` value

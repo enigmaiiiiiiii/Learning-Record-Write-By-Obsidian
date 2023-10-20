@@ -153,3 +153,9 @@ git branch -D main
 git branch -m main
 git push -f origin main
 ```
+
+## copy files or directory from another commit
+
+```sh
+git checkout <commitid> <relative_path>
+```

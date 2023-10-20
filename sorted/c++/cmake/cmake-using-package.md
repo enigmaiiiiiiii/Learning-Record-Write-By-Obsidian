@@ -15,11 +15,15 @@
 
 > similar concept in program lanaguage [nodejs module](nodejs-module-system.md), [java import](), [python package](python-import.md)
 
-- when a package is found, extra commands and variable will be add to cmake
 
 ## The key Command
 
 - [command `find_package()`](cmake-command-find-package)
+
+## when a package is found
+
+- extra commands and variable will be add to cmake
+- check [.cmake file](#.cmake-file) for new available commands and variable
 
 ## This Command has 2 search modes
 
@@ -62,39 +66,10 @@ who provide config mode .cmake file
 
 ## How To Use Package
 
-Using `PkgConfig` package as example
-
-- [`pkg-config`](linux-pkg-config.md) is a tool for getting library build information
-- `PkgConfig` is a module as a part of CMake distribution
-
-When `PkgConfig` is found
-
-- command `pkg_check_modules()`, `pkg_check_module()`, `pkg_search_module()` will be add
-- variable `pkg_config_found`, `pkg_config_version_string`, `pkg_config_executable`, `pkg_config_argn` will be add
-
-```cmake
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(OPENCV REQUIRED opencv4)
-message("opencv linker flags: ${OPENCV_LDFLAGS})
-```
-
-- when pkg-config check modules, several variable will be set
-  - `OPENCV_LDFLAGS`: [linker flags](gcc-options.md#-lfoo,--l-libfoo.a)
-  - `OPENCV_FOUND`
-  - `OPENCV_LIBRARIES`: 
-  - `OPENCV_LINK_LIBRARIES`:
-  - `OPENCV_LIBRARY_DIRS`
-  - `OPENCV_INCLUDE_DIRS`
-- value of variable `OPENCV_LDFLAGS` is equal to `pkg-config --libs opencv4`
+[Using pkg-config](cmake-using-pkg-config.md)
 
 
-the output looks like:
-
-```
-opencv linker flags: -L/opt/homebrew/opt/opencv/lib;-lopencv_gapi;-lopencv_stitching;-lopencv_alphamat;-lopencv_aruco;-lopencv_bgsegm;-lopencv_bioinspired;-lopencv_ccalib;...
--- Configuring done (0.0s)
--- Generating done (0.0s)
-```
+## .cmake file
 
 ## Create Package
 

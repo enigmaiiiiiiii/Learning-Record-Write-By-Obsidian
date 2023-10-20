@@ -1,5 +1,7 @@
 # Python - Fundamental
 
+[Operator](python-operator.md)
+
 [Statement](python-statement.md)
 
 [Function](python-function.md)

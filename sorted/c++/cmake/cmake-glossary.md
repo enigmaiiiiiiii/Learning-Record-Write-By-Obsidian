@@ -43,6 +43,10 @@ A build tree directory looks like
 └── install_manifest.txt
 ```
 
+install_manifest.txt
+
+- include all the files installed by the entire project
+
 ## Generator
 
 

@@ -1,10 +1,8 @@
 # Property
 
 * [Basic](#basic)
-* [Object.defineProperty()](#objectdefineproperty)
+* [Own Property](#own-property)
 * [Property Descriptor](#property-descriptor)
-* [Data property](#data-property)
-* [Accessor properties](#accessor-properties)
 * [Object Method related to property](#object-method-related-to-property)
 
 ## Basic

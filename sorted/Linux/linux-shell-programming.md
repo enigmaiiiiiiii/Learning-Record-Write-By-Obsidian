@@ -1,4 +1,4 @@
-# shell
+# Linux - Shell Programming
 
 ## Foundamental
 
@@ -32,5 +32,5 @@
 
 ## Shell Script Snippets
 
-[download file from ftp server](/sorted/Code-Snippet/shell/download-file-from-ftp-server.md)
+[download file from ftp server](download-file-from-ftp-server.md)
 

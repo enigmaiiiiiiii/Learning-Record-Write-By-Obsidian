@@ -7,16 +7,8 @@
 
 ## Project Structure
 
-```
-
-```
 
 ## Install
-
-```sh
-make install
-```
-
 
 
 ## CMake Uninstall

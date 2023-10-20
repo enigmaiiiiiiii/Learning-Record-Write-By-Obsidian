@@ -11,7 +11,7 @@
 ## What Is For
 
 - line-oriented text **language**
-- it is useful when dealing with **structured text files**, like csv
+- it is useful when dealing with **structured text files**, like .csv
 - *fields* represents the columns name
 - *lines* represents the rows
 - quote is matters
@@ -65,6 +65,8 @@ print first 10 lines
 awk 'NR <= 10' /etc/passwd
 ```
 
+awk
+
 ## Syntax
 
 - `awk [options] 'program-text' file`
@@ -107,3 +109,4 @@ structure of program text
 I/O statements
 
 - `print`: print current record
+

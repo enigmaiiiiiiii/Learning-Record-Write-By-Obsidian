@@ -12,6 +12,7 @@
 
 - A carrier file containing function definitions and data interface declarations
 - Does not need to include the logic implementation code of the program itself, serving a descriptive role
+- header files are imported using [`#include`](c++-preprocess.md##include) preprocessor directive
 
 they are header file
 
@@ -36,6 +37,12 @@ if without header file
 
 - **header file does not participate in the compilation process**
 - c++ is compatible with the C language library, the suffix `.h` is usually for C language library
+
+## Search Path
+
+- default search path:
+  - `/usr/local/include`
+  - `/usr/include`
 
 ## Include Guards
 

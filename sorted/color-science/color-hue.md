@@ -1,10 +1,17 @@
-# Computer Graphics - Color hue
+# Color Science - hue
 
 ## What It Is
 
+hue
+
+![hue](HueScale.svg)
+
 - quality that allows us to categorize colors into distinct groups
 - typically says red, blue, green, yellow, etc is hues
-- can be represented by single number, corresponding to an angular position around a central
+- can be represented by single number, corresponding to an **angular** position around a central
+- As A Convention:  
+  - red is set to 0°
+  - 
 - a color without [tint or shade](color-glossary.md)
 
 ## Primary Hues

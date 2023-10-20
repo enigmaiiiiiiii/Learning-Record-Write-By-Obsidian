@@ -1,6 +1,6 @@
-# 泛型算法
+# C++ - Generic algorithm
 
-[理解标准库算法函数的方法](c++-algorithm-understand.md)
+[how to learn standard library algorithm function](c++-algorithm-understand.md)
 
 [[算法函数的迭代器参数]]
 

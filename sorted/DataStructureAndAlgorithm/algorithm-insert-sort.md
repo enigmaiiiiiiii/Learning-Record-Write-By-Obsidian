@@ -1,6 +1,6 @@
 # Algorithm - Insert Sort
 
-- 时间复杂度$O(n^2)$
+- time complexity $O(n^2)$
 
 ```c++
 void sort(std::vector<int> &nums) {  

@@ -1,5 +1,13 @@
 # CMake - Command
 
+* [message](#message)
+* [add_subdirectory](#add_subdirectory)
+* [include_directories](#include_directories)
+* [target_link_libraries](#target_link_libraries)
+* [install](#install)
+* [macro](#macro)
+* [function](#function)
+
 > **instruction is case-insensitive**, but **variable is case-sensitive**
 > **lowercase** command is recommended
 
@@ -52,7 +60,7 @@ message("=============================")
   - a [library target](cmake-glossary.md#target)
   - a full path to a library file
   - a plain library name
-  - a link flag, such as
+  - a link flag, such as `-lfoo`
 
 ## install
 

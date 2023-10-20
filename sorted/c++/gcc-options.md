@@ -28,6 +28,7 @@
 ## -Ldir
 
 - add directory dir to the list of directories to be searched for `-l`
+- default [search path](c-library-file.md#search-path) is here
 - `~` is not support
 
 ## -Wl,options

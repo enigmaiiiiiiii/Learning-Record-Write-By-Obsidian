@@ -7,7 +7,6 @@
 * [Inheritance](#inheritance)
 * [Magic Method](#magic-method)
 * [Magic Field](#magic-field)
-* [Parameter cls](#parameter-cls)
 
 ## Define a class
 
@@ -106,4 +105,29 @@ print(f.__class__.__dict__) # {'__module__': '__main__', 'name': 'foo', ...}
 
 - `self` for instance method
 - `cls` for class method
+
+## Property
+
+> [property in typescript](typescript-class.md#getters/setters)
+
+```py
+class Person:
+
+    def __init__(self, age):
+        self.age = _age
+
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age(self, age):
+        if age < 0:
+            raise ValueError("age cannot be negative")
+        self._age = age
+
+p = Person(90)
+print(p.age) # 90
+p.age = -1 # ValueError: age cannot be negative
+```
 

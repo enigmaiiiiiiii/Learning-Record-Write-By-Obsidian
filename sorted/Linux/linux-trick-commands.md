@@ -6,8 +6,7 @@
 * [jump back to previous directory](#jump-back-to-previous-directory)
 * [Running Command In Background](#running-command-in-background)
 
-
-## alias
+## Alias
 
 - define shortcut for command
 

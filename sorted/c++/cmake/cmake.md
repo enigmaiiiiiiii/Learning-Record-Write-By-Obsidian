@@ -13,11 +13,11 @@
 
 [Hello World](cmake-hello-world.md)
 
-[Best Practice](cmake-best-practice.md)
-
 [Installing Files](cmake-installing-files.md)
 
 [Using Package](cmake-using-package.md)
+
+[Best Practice](cmake-best-practice.md)
 
 ## Foundation
 

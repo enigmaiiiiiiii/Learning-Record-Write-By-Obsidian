@@ -1,4 +1,20 @@
-# Computer Graphics - Color Glossary
+# Color Science - Glossary
+
+* [Hue](#hue)
+* [Neutral color](#neutral-color)
+* [Visible Light](#visible-light)
+* [Spectral Color](#spectral-color)
+* [Tint](#tint)
+* [Shade](#shade)
+* [Tone](#tone)
+* [Color Depth](#color-depth)
+* [Saturation/Chroma](#saturation/chroma)
+* [Luminance](#luminance)
+* [Chromaticity](#chromaticity)
+
+## Hue
+
+[Color Hue](color-hue.md)
 
 ## Neutral color
 
@@ -18,7 +34,6 @@ classifications: wavelength from short to long
 - yellow
 - orange
 - red
-
 
 ## Tint
 
@@ -48,6 +63,19 @@ detail
 - 24 bits color depth: each pixel can represent 16777216 colors
 - `#47aef0` is a 24-bit color
 
-## Saturation
+## Saturation/Chroma
 
+![hsv](hue-saturation-value.png)
+
+## Luminance
+
+## Chromaticity
+
+- is an objective specification of the quality of a color
+- regradless of its [luminance](#luminance)
+
+## Luminous Efficacy
+
+- eye responds differently to different wavelengths of light
+- A 100-watt lightbulb
 

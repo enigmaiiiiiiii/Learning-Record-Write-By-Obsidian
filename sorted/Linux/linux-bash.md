@@ -16,7 +16,7 @@ options
 
 `-c`
 
-## BASH_SOURCE\[0\] VS $0
+## BASH_SOURCE[0\] VS $0
 
 - in most cases, they are the same
 

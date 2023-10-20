@@ -1,4 +1,4 @@
-# Execute Shell Script
+# Linux - Execute Shell Script
 
 * [Script Like This](#script-like-this)
 * [Conclusion](#conclusion)
@@ -40,7 +40,7 @@ echo $0
 
 `bash script.sh`
 
-- execute the script as `./script.sh` does
+- execute the script as [`./script.sh`](#scriptsh) does
 - Another difference with `./script.sh` that I know is effect on the value of `dirname $0`
   - `bash path/to/script.sh` the dirname is `path/to`
   - `./path/to/script.sh` the dirname is `./path/to`, with a `./` before
@@ -57,6 +57,7 @@ echo $0
 ```sh
 ./script.sh
 ```
+
 - permission denied
 
 give execute permission

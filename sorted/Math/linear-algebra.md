@@ -75,7 +75,7 @@ $AB = BA = I$
 
 where $I$ is [identity matrix](#identity-matrix)
 
-then A is called invertible, and B is called the inverse of A.
+then `A` is called invertible, and `B` is called the inverse of `A`.
 
 ---
 
@@ -87,3 +87,36 @@ Properties
 ## Row Equivalent
 
 - two matrices are **row equivalence** if one can be changed to the other by a sequence of elementary row operations
+
+## Matrix Multiplication
+
+- A is an $m \times n$ matrix
+- B is an $n \times p$ matrix
+
+$$
+A =
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots & a_{1n} \\
+    a_{21} & a_{22} & \ldots & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m2} & \ldots & a_{mn}
+\end{pmatrix}
+\hspace{3mm}
+B =
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots & a_{1n} \\
+    a_{21} & a_{22} & \ldots & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m2} & \ldots & a_{mn}
+\end{pmatrix}
+$$
+
+- $C = AB$, C is define to be a $m \times p$ matrix
+
+$$
+c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \ldots + a_{in}b_{nj} = \sum_{k=1}^n a_{ik}b_{kj}
+$$
+
+that is $c_{ij}$ is multiplying term-by-term the entries in the $i$th **row** of A with the $j$th **column** of B, and summing these $n$ products
+
+## Matrix Cross Product
