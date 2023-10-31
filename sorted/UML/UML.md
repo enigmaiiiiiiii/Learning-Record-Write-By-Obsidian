@@ -2,8 +2,10 @@
 
 * [What it is](#what-it-is)
 * [Represent A Class](#represent-a-class)
-* [󰔷 Clear Triangle Arrow(Inheritance)](#󰔷-clear-triangle-arrow(inheritance))
-* [󰁔 Line: Association](#󰁔-line:-association)
+* [———▷ Inheritance](#———▷-inheritance)
+* [---▷ Implementation](#---▷-implementation)
+* [󰁔 Arrow Line: Association](#󰁔-arrow-line:-association)
+* [line without arrow](#line-without-arrow)
 * [󱀝 Clear Diamond (Aggregation)](#󱀝-clear-diamond-(aggregation))
 * [󰣏 Black Diamond (Composition)](#󰣏-black-diamond-(composition))
 * [Multiplicity.](#multiplicity.)
@@ -44,19 +46,21 @@
 +isActive
 ```
 
-## 󰔷 Clear Triangle Arrow(Inheritance)
+## ———▷ Inheritance
 
-continous line with Triangle Arrow: **Extends Class**
+———▷: **Extends Class**
 
 - subclass inherits from the parent class.
 - subclass points to the parent class.
 
-dot line with Triangle Arrow: **Implements Interface**
+## ---▷ Implementation
+
+---▷ : **Implements Interface**
 
 - subclass implements an interface.
 - subclass points to the interface.
 
-## 󰁔 Line: Association
+## 󰁔 Arrow Solid Line: Association
 
 line with `>` arrow
 
@@ -76,7 +80,7 @@ class B {
 
 > for example: A line between User and Food could have the text "eats"
 
-line without arrow
+## line without arrow
 
 - represents the dependency exist in each other
 
@@ -88,6 +92,10 @@ class B {
   private a: A;
 }
 ```
+
+## dependency
+
+- --->
 
 ## 󱀝 Clear Diamond (Aggregation)
 
@@ -148,4 +156,4 @@ m..n specific number range
 
 ## cheat sheet
 
-![uml cheat sheet](../../image/umlcheatsheet.jpg)
+![uml cheat sheet](umlcheatsheet.jpg)

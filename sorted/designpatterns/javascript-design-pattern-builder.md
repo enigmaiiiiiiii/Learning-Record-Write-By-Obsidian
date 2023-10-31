@@ -18,6 +18,15 @@
 
 **Problem**: for build plenty kinds of houses
 
+```java
+class Pizza {
+    Pizza(int size) { /* ... */ }
+    Pizza(int size, boolean cheese) { /* ... */ }
+    Pizza(int size, boolean cheese, boolean pepperoni) { /* ... */ }
+    // ...
+}
+```
+
 - you can create plenty of subclasses for `House` class
 - or create a gaint constructor, like `House(windows, doors, rooms, hasGarage, hasSwimPool, hasStatues, hasGarden,...)`
   - in most cases most of the parameters are not used
@@ -58,7 +67,7 @@ further need component
 
 - hold a fields reference to the [product](#product)
 - implement the [builder](#builder) interface
-- with a method like `getProduct()` return the product
+- with a method like `getProduct()` return the [product](#product)
 
 ## Director
 
@@ -131,7 +140,7 @@ class CarManualBuilder implements Builder {
 }
 ```
 
-[director](#director)
+or use [director](#director)
 
 - `director.ts`
 
@@ -155,7 +164,7 @@ class Director {
 }
 ```
 
-[client](#client): code to use pattern
+client: code to use pattern
 
 - `index.ts`
 
@@ -173,5 +182,3 @@ const carManualBuilder = new CarManualBuilder();
 director.constructSportsCar(carManualBuilder);
 const manual = carManualBuilder.getProduct();
 ```
-
-

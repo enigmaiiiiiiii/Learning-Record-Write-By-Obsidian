@@ -25,7 +25,11 @@ PORT=3000
 DB_URL=mongodb://localhost/mydatabase
 API_KEY=abc123
 DEBUG=true
+MONGODB_HOST=localhost
+MONGODB_PORT=27017
+MONGODB_URL=mongodb://${MONGODB_HOST}:${MONGODB_PORT}
 ```
+
 
 ## access to environment variables
 
@@ -34,7 +38,8 @@ npm install dotenv
 ```
 
 ```js
-const dotenv = require('dotenv');
+import dotenv from 'dotenv';
+// const dotenv = require('dotenv');
 dotenv.config();
 
 const port = process.env.PORT;

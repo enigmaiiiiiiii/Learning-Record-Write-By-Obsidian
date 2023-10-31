@@ -8,7 +8,7 @@
 - [module](#module)
 - [mark variable, parameter, properties](#mark-variable-parameter-properties)
 
-## key of typescript: type
+## Key Of Typescript: Type
 
 [type in typescript](typescript-type.md)
 
@@ -16,7 +16,7 @@
 
 [Object Types](typescript-object-types.md)
 
-## interface
+## Interface
 
 [Interface](typescript-interface.md)
 

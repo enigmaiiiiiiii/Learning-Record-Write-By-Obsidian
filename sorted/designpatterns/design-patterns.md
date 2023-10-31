@@ -17,6 +17,8 @@ there are some common concepts in design patterns
 
 [Builder](javascript-design-pattern-builder.md)
 
+[Fluent Builder](javascript-design-pattern-fluent-builder.md)
+
 [Prototype](javascript-design-pattern-prototype.md)
 
 ## Structural Patterns

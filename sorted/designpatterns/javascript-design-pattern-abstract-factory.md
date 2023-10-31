@@ -2,7 +2,7 @@
 
 ## Feature
 
-- kind of creational pattern
+- A creational pattern
 - Use to Create **object family**
 
 ## VS Factory Design Pattern

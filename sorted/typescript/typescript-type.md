@@ -1,4 +1,4 @@
-# type in typescript
+# Type In Typescript
 
 * [What Is Type Annotation](#what-is-type-annotation)
 * [what can be used as a type](#what-can-be-used-as-a-type)
@@ -181,7 +181,7 @@ logPoint(color);   // error
 
 ## type inference
 
-- for no explicit [type annotation](#type-annotation) variable, ts will infer the type
+- for no explicit [type annotation](#what-is-type-annotation) variable, ts will infer the type
 - when a type inference is made from several expressions, ts will infer a Best Common Type, usually a [union type](#union-types)
 
 ```ts
@@ -200,13 +200,13 @@ window.onmousedown = function(mouseEvent) {
 };
 ```
 
-## type assertion
+## Type Assertion
 
 > like type annotation, removed by compiler
 
-- use `as` keyword
+- use `as` operator
 - for some value, coder know the type, but ts can't infer it, then use type assertion
-- when assert a type, you can use the method of the type
+- After assert a type, you can use members of the type
 
 ```ts
 const x = "hello" as number; // error
@@ -276,7 +276,7 @@ type M = keyof { [n: string]: unknown };  // M = string | number
 - build on [index signature](typescript-interface.md#index-signatures)
 - generate a new type from another type, to avoid repeat
 
-For example, combine with [keyof operator](#keyof-operator) to generate a new type, can use a little code to **modify the type of all properties of a type**
+For example, combine with [keyof operator](#keyof-operator) to generate a new type, can use a little code to **modify the type of all property's values of a type**
 
 ```ts
 type OnlyBoolsAndHorses = {
@@ -292,8 +292,9 @@ property modifiers `readonly` and `?` can be modified in mapping property
 - with `+` and `-` prefix to add or remove property, no prefix means `+`
 
 ```ts
-type Createmutable<Type> = {
-    -readonly [Property in key of Type]: Type[Property];
+type CreateMutable<Type> = {
+    -readonly [Property in keyof Type]: Type[Property];
+}
 type LockedAccount = {
     readonly id: string;
     readonly name: string;

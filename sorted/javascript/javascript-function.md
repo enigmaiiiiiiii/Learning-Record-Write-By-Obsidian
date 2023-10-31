@@ -1,16 +1,16 @@
 # Javascript Function
 
-* [Feature](#feature)
-* [I](#i)
+* [Features](#features)
+* [Definition, Parameter, Arrow Function](#definition,-parameter,-arrow-function)
 * [Execution Procedure](#execution-procedure)
 * [Function Object](#function-object)
 
-## Feature
+## Features
 
 - **no override**
 - is a [function Object](#function-object)
 
-## I
+## Definition, Parameter, Arrow Function
 
 [Define a Function](javascript-function-definition.md)
 

@@ -189,7 +189,6 @@ class Box<Type> {
 
 [`this` in javascript](javascript-this.md)
 
-
 ## arrow function
 
 - a function that loses its `this` context
@@ -260,4 +259,14 @@ const m = new someClass("hello");
 feature
 
 - abstract class cannot be instantiated directly
+- abstract class can contain non-abstract members
 - abstract method doesn't have implementation
+
+```ts
+abstract class Base {
+    abstract getName(): string;
+    printName() {
+        console.log("hello, " + this.getName());
+    }
+}
+```

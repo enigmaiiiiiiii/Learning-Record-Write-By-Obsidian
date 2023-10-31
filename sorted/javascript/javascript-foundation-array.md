@@ -1,4 +1,4 @@
-# JavaScript Array
+# JavaScript - Array
 
 - can store element of any type
 - `let array = [1, 2, 3, 4, 5]`
@@ -33,18 +33,24 @@
 
 `forEach(callbackFn)`
 
-> difference with `map()` is return value
+- difference with `map()` which will return value, `forEach()` return **undefined**
 
-- `forEach()` return **undefined**
 
 `find(callbackFn)`
 
-- `callbackFn` is a function should return a boolean
+- `callbackFn`: A function should return a boolean
+  - function signature `(element, index, array) => boolean`
   - a [truthy value](javascript-foundation-primitive.md#boolean) to indicate a matching element has been found
-  - a falsy value otherwise
-  - arguments `element, index, array` are same as `map()`
-  - return the first element in the array that satisfies the provided testing function
+  - a [falsy value](javascript-foundation-primitive.md#boolean) otherwise
+  - **return the first element** in the array that satisfies the provided testing function
   - Otherwise, undefined is returned
+
+`filter(callbackFn)`
+
+- `callbackFn`: A function return boolean
+- this method return an new array
+  - consist of elements whose value pass to callbackFn is true
+  - whose elements are shallow copy of original array
 
 ```js
 const inventory = [

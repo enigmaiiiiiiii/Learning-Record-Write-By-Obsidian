@@ -1,16 +1,17 @@
-# When need Clean Up for useEffect
+# React - When Need Clean Up for useEffect
 
-- [Handle Effect firing twice](#handle-effect-firing-twice)
-- [Practical usage](#practical-usage)
-- [add event listener](#add-event-listener)
-- [connect to server](#connect-to-server)
-- [Fetch data](#fetch-data)
+* [Handle Effect Firing Twice](#handle-effect-firing-twice)
+* [add event listener](#add-event-listener)
+* [connect to server](#connect-to-server)
+* [Fetch data](#fetch-data)
+* [Triggering Animations](#triggering-animations)
+* [sending analytics](#sending-analytics)
 
 ## Handle Effect Firing Twice
 
-- cause react intentionally run effect twice in dev mode
-- 所以需要考虑如何避免 [effect firing twice](react-create-app.md#development-mod)
-- 处理的思路通常集中在如何实现[cleanup function](#cleanup-effect)
+- Cause react intentionally run effect twice in dev mode
+- So need to consider how to avoid [effect firing twice](react-create-app.md#development-mod)
+- Handle logic usually focus on how to implement [cleanup function](react-hooks-useeffect.md#cleanup-function)
 
 write a effect **depend on nothing** will cause react only run effect code whe component mount
 
@@ -34,7 +35,7 @@ useEffect(() => {
 
 ## connect to server
 
-由于react dev mode will mount every commponent twice
+cause react dev mode will mount every commponent twice
 
 so when you create a `connect`, you should return a `disconnect` **hook** to cleanup effect
 

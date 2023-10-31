@@ -58,11 +58,11 @@ options
 
 - install a package and its dependencies
 - the order of command `npm install` to install dependencies
-  - npm-shrinkwrap.json
-  - package-lock.json
-  - yarn.lock
+  - `package-lock.json`
+  - `yarn.lock`
+  - `npm-shrinkwrap.json`
 
-options:
+Options:
 
 `-D --save-dev`:
 

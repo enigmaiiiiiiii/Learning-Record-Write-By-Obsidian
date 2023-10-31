@@ -120,7 +120,7 @@ function firstElement<Type>(arr: Type[]): Type {
 **constraints** type argument's type
 
 ```ts
-finction longest<Type extends {length: number}>(a: Type, b: Type) {
+function longest<Type extends {length: number}>(a: Type, b: Type) {
     if (a.length >= b.length) {
         return a;
     } else {
@@ -129,7 +129,7 @@ finction longest<Type extends {length: number}>(a: Type, b: Type) {
 }
 ```
 
-- **type argument** is constrained to must have a `.length` property of type `number`
+- **type argument** is constrainted to must have a `.length` property of type `number`
 
 ## Callable Signatures
 

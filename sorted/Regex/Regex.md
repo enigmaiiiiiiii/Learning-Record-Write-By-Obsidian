@@ -14,6 +14,9 @@ use `[]` to match single character
 - `[a-z0-9]`: match the character from a to z and 0 to 9
 - `[^abc]`: `^` in `[]`, represents not, match any character except a, b, c
 
+> `^` outside `[]` represents line start
+> you can not use `^` exclusion syntax and inclusion syntax in the same `[]`
+
 ## number of occurrences
 
 - `?`: match the previous character/[group](#group) 0 or 1 time, equivalent to `{0, 1}`

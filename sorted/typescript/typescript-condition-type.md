@@ -16,6 +16,8 @@ combine with generic condition type can be very useful
   - interface `IdLabel` and `NameLabel`
   - overload function `createLabel`
 
+Assume a function that can receive `number`, `string`, `string | number` type parameter. And we can use overload function to implement this
+
 ```ts
 interface IdLabel {
     id: number;
@@ -31,22 +33,20 @@ function createlabel(nameOrId: string | number): IdLabel | NameLabel {
 }
 ```
 
-这个函数可以接收`number`, `string`, `string | number`类型参数, 通过定义多个函数重载标志可以实现
+meanwhile, if we want to add new type, the number of overload function will increase exponentially
 
-然而想要增加新的类型, 定义的重载标志数量会呈指数级增加
+with **Conditional Types**, this problem can be solved
 
-Conditional Types可以解决这个问题
-
-- 定义type alias
+- define a type alias
 
 ```ts
 type NameOrId<T extends number | string> = T extends | number ? IdLabel : NameLabel;
 ```
 
-- 把`NameOrId<T>`当做函数, 把T当做`NameOrId<T>`的参数传入
-- 如果T是number, `NameOrId<T>` is `IdLabel`, 否则返回NameLabel
+- treat `NameOrId<T>`as function, then T is the parameter of `NameOrId<T>`
+- if T is number, `NameOrId<T>` is `IdLabel`, else `NameOrId<T>` is `NameLabel`
 
-- 定义函数createLabel
+then function createLabel can be implemented as follow
 
 ```ts
 function createLabel<T extends number | string>(idOrName: T): NameOrId<T> {
@@ -55,7 +55,7 @@ function createLabel<T extends number | string>(idOrName: T): NameOrId<T> {
 let a: NameLabel = createLabel("typescript");
 ```
 
-## infer type within
+## Infer type within
 
 ```ts
 type Flatten<Type> = Type extends Array<infer Item> ? Item : Type;

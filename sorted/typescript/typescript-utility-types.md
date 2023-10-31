@@ -71,6 +71,7 @@ todo.title = "Hello"  // Error: cannot reassign a readonly property
 
 `Record<Keys, Type>`
 
+- An clean alternative to mapped types
 - construct an object type whose property keys are `Keys`, property value are `Type`
 - used to map the properties of a type to another type
 
@@ -80,6 +81,7 @@ interface CatInfo {
   breed: string;
 }
 type CatName = "miffy" | "boris" | "mordred";
+
 const cats: Record<CatName, CatInfo> = {
   miffy: { age: 10, breed: "Persian" },
   boris: { age: 5, breed: "Maine Coon" },

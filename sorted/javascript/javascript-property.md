@@ -7,7 +7,7 @@
 
 ## Basic
 
-[Basic](javascript-property-basic.md);
+[Basic](javascript-property-basic.md)
 
 ## Own Property
 
@@ -22,7 +22,7 @@
 
 `Object.getOwnPropertyDescriptor()`
 
-- get property's Descriptor , use descriptor to read the attribute
+- get property's Descriptor, use descriptor to read the attribute
 
 `Object.assign()`
 
@@ -33,3 +33,7 @@
   - multiple source object parameter
     - if multiple source object have same property, use the last source object's value
 - when error raised during assign, operation stop, and won't rollback
+
+## Get All Property Directly On Object
+
+[`Object.keys()`](javascript-global-object.md#objectkeys)

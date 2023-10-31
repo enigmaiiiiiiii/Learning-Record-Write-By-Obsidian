@@ -32,9 +32,22 @@ class Person:
 
     def foo(self):
         print("Hello, my name is " + self.name)
+
+    # private method
+    def __bar(self):
+        print("I am a private method")
+    # static method
+    @staticmethod
+    def baz():
+        print("I am a static method")
+
+p = Person("john", 98)
+Person.baz() # I am a static method
 ```
 
 > unlike c++, java, method in python does not support overloading methods by define multiple methods with the same name
+
+
 
 ## Instiantiate a class
 

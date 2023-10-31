@@ -1,5 +1,12 @@
 # Lua - Function
 
+* [Define a Function](#define-a-function)
+* [Call a Function](#call-a-function)
+* [Multiple Result](#multiple-result)
+* [Multiple Assignment](#multiple-assignment)
+* [unpack function](#unpack-function)
+* [variable number of arguments](#variable-number-of-arguments)
+
 ## Define a Function
 
 ```lua
@@ -33,14 +40,7 @@ foo{a=1, b=2}  -- equal to foo({a=1, b=2})
 
 ## Multiple Result
 
-get multiple result
-
-```lua
-s, e = string.find("hello Lua users", "Lua")
-print(s, e)  -- 7 9
-```
-
-write a function return multiple result
+Write Function return multiple result
 
 ```lua
 -- return the maximum and the index in an array
@@ -55,6 +55,33 @@ function maximum(a)
   end
   return m, mi
 end
+```
+
+**How Multiple Result Processed**
+
+- when call function as a statement, all results discarded
+- when call function as an expression, keeps the first result is used
+- when call function is the last expression in a list, all results are used, the list expression may be
+  - multiple assignment
+  - table constructor
+  - arguments to function calls
+  - return statement
+
+```lua
+s = string.find("hello Lua users", "Lua") -- s = 7
+s, e = string.find("hello Lua users", "Lua") -- s = 7, e = 9
+x, y, z = 10, string.find("hello Lua users", "Lua") -- x = 10, y = 7, z = 9
+```
+
+> unlike python, python return **tuple** instead of multiple result
+
+in python
+
+```py
+def foo():
+    return 1, 2, 3
+t = foo()
+print(type(t)) # <class 'tuple'>
 ```
 
 ## Multiple Assignment

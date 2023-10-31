@@ -106,3 +106,30 @@ console.log(b)  // 25
 
 - equal to `a / 2^2`
 
+## typeof
+
+`typeof operand`
+
+- operand 
+- return value is a string, and is one of following values
+  - string
+  - number
+  - bigint
+  - boolean
+  - symbol
+  - undefined
+  - object
+  - function
+
+```js
+typeof 3 // "number"
+```
+
+## in
+
+`prop in object`
+
+- return `true` if `object` has `prop` property or `prop` is on [prototype chain](javascript-prototype.md#prototype-chain)
+
+> check direct property use [`Object.hasOwn()`](javascript-global-object.md#objecthasown) instead
+

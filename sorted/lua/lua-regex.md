@@ -1,6 +1,28 @@
 # Lua - Regex
 
-> have some difference with common [regex](regex.md)
+> unlike other script language, lua does not use [posix regex](regex.md)
+
+
+## Unique Magic Character `%`
+
+- `%` works as an escape `\` for magic characters
+- for example `%%` is `%` itself
+
+## Other Magic Characters
+
+
+- `()`: capture
+- `.`
+- `[]`: characters set
+- `^`: line start, in `[]` represents not
+- `$`
+
+Repitition
+
+- `+`
+- `-`
+- `*`
+- `?`
 
 ## Character Classes
 
@@ -14,6 +36,10 @@
 - `%w`: alphanumeric characters, e.g. `a-z`, `A-Z`, `0-9`
 - `%x`: hexadecimal digits, e.g. `0-9`, `a-f`, `A-F`
 - `%z`: the character with representation 0, e.g. `\0`
+
+An upper case version of above lable represents reverse class
+
+- for example: `%A` is non-letters
 
 ## Repitition
 

@@ -8,7 +8,7 @@
 ## Simple Example
 
 ```js
-function useOnlineStatus() {
+export function useOnlineStatus() {
   const [isOnline, setIsOnline] = useState(true);
   useEffect(() => {
     function handleOnline() {
@@ -24,6 +24,7 @@ function useOnlineStatus() {
       window.removeEventListener('offline', handleOffline);
     };
   }, []);
+
   return isOnline;
 }
 ```

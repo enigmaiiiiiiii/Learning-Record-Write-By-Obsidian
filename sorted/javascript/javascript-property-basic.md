@@ -1,4 +1,4 @@
-# Javascript Property Basic
+# JavaScript - Property Basic
 
 ## Set A Property
 

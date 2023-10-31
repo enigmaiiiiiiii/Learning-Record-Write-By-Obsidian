@@ -1,9 +1,14 @@
 # React Hooks - UseRef
 
-* [reference a component DOM](#reference-a-component-dom)
-* [reference a value](#reference-a-value)
-* [feature](#feature)
+* [Features](#features)
+* [Reference A Component DOM](#reference-a-component-dom)
+* [Reference A Value](#reference-a-value)
 * [Contrast To UseState](#contrast-to-usestate)
+
+## Features
+
+- changing a ref does not cause re-render
+- use to store information doesn't affect the visual output
 
 ## Reference A Component DOM
 
@@ -40,7 +45,8 @@ function myComponent() {
 
 ## Reference A Value
 
-- reference a value whose changing won't cause re-render
+- `useRef` value whose changing won't cause re-render
+- re-render will cause `useRef` value change
 
 create useRef Obejct
 
@@ -60,13 +66,8 @@ function MyComponent() {
 }
 ```
 
-- intervalRef.current **init** value is `0`
+- `intervalRef.current` **init** value is `0`
 - use `intervalRef.current` to set and get the value
-
-## feature
-
-- changing a ref does not cause re-render
-- use to store information doesn't affect the visual output
 
 ## Contrast To UseState
 

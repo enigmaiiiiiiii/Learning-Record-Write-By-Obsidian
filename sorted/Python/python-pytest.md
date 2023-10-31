@@ -43,7 +43,6 @@
 - module
   - python [module](python-module.md) object where the test function, class or method was collected
 
-
 ## Take A Look
 
 ```py

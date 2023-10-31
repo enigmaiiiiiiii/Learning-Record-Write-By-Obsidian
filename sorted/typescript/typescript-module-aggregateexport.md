@@ -1,4 +1,4 @@
-# export all from one module
+# Typescript - Export all from one module
 
 ## code
 

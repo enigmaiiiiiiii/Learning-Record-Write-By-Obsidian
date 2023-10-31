@@ -11,7 +11,7 @@
 
 ## set remote repository url
 
-```bash
+```sh
 git remote add origin <REMOTE_URL>
 ```
 

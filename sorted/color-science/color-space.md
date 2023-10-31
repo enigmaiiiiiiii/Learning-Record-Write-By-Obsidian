@@ -4,6 +4,7 @@
 * [Summary](#summary)
 * [CIE 1931 XYZ Color Space](#cie-1931-xyz-color-space)
 * [CIELAB Color Space](#cielab-color-space)
+* [CIELCH Color Space](#cielch-color-space)
 * [HSL And HSV](#hsl-and-hsv)
 * [RGB](#rgb)
 * [sRGB](#srgb)
@@ -24,8 +25,8 @@ relative color space
 
 perceptual color space
 
-- [Lab](color-perceptual-color-space.md#lab)
-- [LCh](color-perceptual-color-space.md#lch)
+- [Lab](#cielab-color-space)
+- [LCh](#cielch-color-space)
 
 * [HSL And HSV](#hsl-and-hsv)
 
@@ -63,10 +64,23 @@ relative spectral power distribution of D65
 
 `lch(lightness, chroma, hue)`
 
-- $L$ perceived lightness, same as Oklab
+- $L$ perceived lightness, same as lab
 - $C$ [chroma](color-glossary.md#saturation/chroma)
 - $h$ [hue](color-hue.md) angle
 
+## Conversion between LCh and lab
+
+lab to lch
+
+$$
+C = \sqrt{a^2+b^2} \hspace{10mm} h^\degree = \arctan(\frac{b}{a})
+$$
+
+lch to lab
+
+$$
+a = C \cos(h^\degree) \hspace{10mm} b = C \sin(h^\degree)
+$$
 
 ## HSL And HSV
 

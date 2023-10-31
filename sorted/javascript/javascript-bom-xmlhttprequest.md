@@ -2,6 +2,9 @@
 
 ## What's This
 
+- allow page to update without reloading the page
+- plenty use for AJAX programming
+
 problem
 
 - in browser you can type address in address bar and press enter to get a page

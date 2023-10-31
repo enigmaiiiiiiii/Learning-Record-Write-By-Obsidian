@@ -66,7 +66,7 @@ type Bear = Animal & {
 
 ## Use With Generics
 
-- 可以把`custom<T>`理解为函数, T是这个函数的参数
+- custom<T> can be understand as a function, `T` is the parameter of this function
 
 ```ts
 type customType<T> = {

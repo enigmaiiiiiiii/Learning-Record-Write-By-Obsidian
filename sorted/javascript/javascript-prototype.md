@@ -1,12 +1,12 @@
 # Prototype
 
 * [here are 3 concepts of prototype](#here-are-3-concepts-of-prototype)
-* [Prototype Affect on property access](#prototype-affect-on-property-access)
+* [Property Access Process](#property-access-process)
 * [Prototype Chain](#prototype-chain)
-* [Method relate to prototype](#method-relate-to-prototype)
+* [Prototype Related Method](#prototype-related-method)
 * [function to simulate class](#function-to-simulate-class)
 
-## here are 3 concepts of prototype
+## Here Are 3 Concepts Of Prototype
 
 - [internal prototype](javascript-three-prototype-concepts.md#internal-prototype), also refer to as `[[prototype]]`
 - property named ["prototype"](javascript-three-prototype-concepts.md#prototype-property)

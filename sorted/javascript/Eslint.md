@@ -95,6 +95,51 @@ fix problems in files or directories
 npx eslint --fix file1.js [file2.js] [dir]
 ```
 
+## Disable Rules
+
+disable part of file
+
+```js
+/* eslint-disable */
+alert('foo');
+/* eslint-enable */
+```
+
+disable specific rules
+
+```js
+/* eslint-disable no-alert, no-console */
+alert('foo');
+/* eslint-enable no-alert, no-console */
+```
+
+disable entire file, put `/* eslint-disable */` at the top of the file
+
+```js
+/* eslint-disable */
+alert('foo')
+```
+
+ensure a rule is never applied, regardless any future enable/disable
+
+```js
+/* eslint no-alert: "off" */
+alert('foo')
+```
+
+disable rules on specific line
+
+```js
+alert('foo'); // eslint-disable-line
+
+// eslint-disable-next-line
+alert('foo');
+
+/* eslint-disable-next-line */
+alert('foo')
+```
+
+
 ## ESlint Plugin
 
 ## ESlint In Vscode

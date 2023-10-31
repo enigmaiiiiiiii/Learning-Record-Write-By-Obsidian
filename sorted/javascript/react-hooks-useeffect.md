@@ -14,16 +14,14 @@
 `uesEffect(setup, dependencies)`
 
 - `setup`
-  - optionally return a [cleanup function](), cleanup funtion will called:
-    - re-render on dependencies value change
-    - component is removed from the DOM
-  - **setup function can't be async, because async function return a promise, not cleanup function**
+  - optionally return a [cleanup function](#cleanup-function)
+  - **setup function can't be async, because async function return a promise, not [cleanup function](#cleanup-function)**
     - it is possible to use async function inside setup function
   - setup will run when component first and to DOM
   - also run when re-render caused by dependecies change
     - react will first run the cleanup function on old dependencies value
     - then run the setup function on new dependencies value
-- `dependencies`: reactive value, check how to [Specifying dependency](#specifying-dependency)
+- `dependencies`: reactive value, check how to [Specifying dependencies](#specifying-dependencies)
 
 return value
 
@@ -106,7 +104,7 @@ export default function App() {
 
 ## Specifying Dependencies
 
-- Every **[reactive value](react-glossary.md#reactive-value) used by your effect's code** must be declared as a dependency 
+- Every **[reactive value](react-glossary.md#reactive-values) used by your effect's code** must be declared as a dependency 
 
 specify dependency
 
@@ -132,6 +130,13 @@ useEffect(fn, [])
 ```js
 useEffect(fn)
 ```
+
+## Cleanup Function
+
+cleanup function will called when:
+
+- re-render on dependencies value change
+- component is removed from the DOM
 
 ## Cleanup Effect
 

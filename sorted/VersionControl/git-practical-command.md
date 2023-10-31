@@ -33,11 +33,13 @@ git log --merges
 
 ## Check Commit Log
 
-```bash
+```sh
 git log
 ```
 
-```shell
+output
+
+```
 commit d590a26b3b988f24842d433d4b64708ff545d399 (HEAD -> main)
 Author: enigmaiiiiiiii <62017693+enigmaiiiiiiii@users.noreply.github.com>
 Date:   Mon May 30 15:24:20 2022 +0800
@@ -141,7 +143,14 @@ git branch -a
 
 > repository download use `git clone` will only show current branches
 
+## Get Remote Url
+
+```sh
+git remote -v
+```
+
 ## Resovle Conflict
+
 
 ## A way to make the lastest commit as the initial commit
 

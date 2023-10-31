@@ -14,7 +14,7 @@ void close(void);
 void vsyslog(int priority, const char *format, va_list ap);
 ```
 
-- `vsyslog()`是`syslog()`[[Linux_va_list]]版
+- `vsyslog()` is [variable parameters version](linux-va-list.md) of `syslog()`
 
 ### 参数
 

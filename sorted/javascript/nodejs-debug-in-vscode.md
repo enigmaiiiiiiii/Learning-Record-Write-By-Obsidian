@@ -24,15 +24,15 @@ launch.json Attribute for Node.js Debugger
 - `"timeout"`
 - `"stopOnEntry"`
 - `"remoteRoot"`
-- `skipFiles"`: 自动跳过的文件
+- `skipFiles"`: files be auto skipped
 
-only available for request type [`launch`](/sorted/editor/vscode-launch-json.md#debug-mode)
+only available for request type [`launch`](vscode-launch-json.md#debug-mode)
 
 - `"program"`: the absolute path to the Node.js program to debug
 - `"args"`: the arguments pass to the app
 - `"env"`:
 
-only available for request type [`attach`](/sorted/editor/vscode-launch-json.md#debug-mode)
+only available for request type [`attach`](vscode-launch-json.md#debug-mode)
 
 - `"restart"`
 - `"port"`:

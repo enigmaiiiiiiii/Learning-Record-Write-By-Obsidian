@@ -14,11 +14,13 @@
 
 [Fundamental](python-fundamental.md)
 
-[iteration](python-iteration.md)
+[Iteration](python-iteration.md)
 
 [Class](python-class.md)
 
-[Type hint](python-type-hint.md)
+[Package](python-package-system.md)
+
+[Type Hint](python-type-hint.md)
 
 [Handle exception](python-handle-exception.md)
 

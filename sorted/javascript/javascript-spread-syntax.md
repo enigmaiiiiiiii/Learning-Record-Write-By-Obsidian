@@ -1,10 +1,10 @@
 # JavaScript - Spread Syntax
 
-## feature
+## Feature
 
-- similar to [rest parameters](javascript-rest-parameters.md)
+- similar to [rest parameters](javascript-function-rest-parameters.md)
 
-## introduction
+## Introduction
 
 > array, string, object spread
 
@@ -16,20 +16,36 @@ function fx(x, y, z) {
 }
 const numbers = [1, 2, 3];
 const str = "hello";
-fx(numbers);  // 1, 2, 3
-fx(str);      // h, e, l
+fx(...numbers);  // 1, 2, 3
+fx(...str);      // h, e, l
 ```
 
 for object
 
 ```js
 const obj1 = {foo: 'bar', x: 42};
-const mergeobj = {...obj1, y: 13};
-console.log(mergeobj); // {foo: "bar", x: 42, y: 13}
-// without ...
-const mergeobj2 = {obj1, y: 13};
-console.log(mergeobj2); // {obj1: {foo: "bar", x: 42}, y: 13}
+
+// with "..." syntax
+const mergeObj = {...obj1, y: 13};
+// without "..." syntax
+const mergeObj2 = {obj1, y: 13};
 ```
 
-- without `...`, object will be a **property** of the new object
+- without `...`, object will be a **property** of the new object, property name is variable name
 
+object shape
+
+```js
+mergeobj = {
+  foo: 'bar',
+  x: 42,
+  y: 13
+}
+mergeobj2 = {
+  obj1: {
+    foo: 'bar',
+    x: 42
+  },
+  y: 13
+}
+```

@@ -61,7 +61,7 @@ public class ConcreteProduct implements Product {
 }
 ```
 
-application code
+Application Code
 
 ```java
 public class FactoryMethodDemo {

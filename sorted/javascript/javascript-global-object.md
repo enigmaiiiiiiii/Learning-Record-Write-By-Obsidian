@@ -1,24 +1,28 @@
 # Javascript - Global Object
 
-
-* [what's this](#whats-this)
-  * [null-prototype object](#null-prototype-object)
+* [what's this](#what's-this)
+* [null-prototype object](#create-null-prototype-object)
 * [Instance Method](#instance-method)
 * [Static Method](#static-method)
-  * [Object.keys(obj)](#objectkeysobj)
-  * [Object.values(obj)](#objectvaluesobj)
-  * [Object.is(val1, val2)](#objectisval1-val2)
-  * [Object.defineProperty(obj, prop, descriptor)](#objectdefinepropertyobj-prop-descriptor)
-  * [Object.freeze(obj)](#objectfreezeobj)
-  * [Object.create()](#objectcreate)
+  * [Object.keys()](#object.keys())
+  * [Object.getOwnPropertyNames()](#object.getownpropertynames())
+  * [Object.values(obj)](#object.values(obj))
+  * [Object.is(val1, val2)](#object.is(val1,-val2))
+  * [Object.defineProperty()](#object.defineproperty())
+  * [Object.defineProperties()](#object.defineproperties())
+  * [Object.freeze(obj)](#object.freeze(obj))
+  * [Object.create()](#object.create())
+  * [Object.getPrototypeOf()](#object.getprototypeof())
+  * [Object.assign()](#object.assign())
+  * [Object.hasOwn()](#object.hasown())
 
 ## what's this
 
 - almost all object is an instance of Object
-- the only [object](#null-prototype-object) that don't inherit from Object.prototype is null prototype
+- the only object that don't inherit from Object.prototype is [null prototype](#create-null-prototype-object)
 - Only Object.prototype is **immutable prototype** in core JS
 
-### null-prototype object
+## create null-prototype object
 
 ```js
 const obj = Object.create(null);
@@ -35,20 +39,28 @@ const obj2 = {prototype: null}
 
 ## Static Method
 
-### Object.keys(obj)
+### Object.keys()
 
 `Object.keys(obj)`
 
-- return a array, containing the names of [all enumerable properties](javascript-foundation-) of the given object
+- return a array, containing the names of [all enumerable properties](javascript-property-descriptor) of the given object
   - [**enumerable**](javascript-property.md) property
   - string-keyed property names
   - directly defined on the object, also called [own properties](javascript-property.md#own-property)
+
+### Object.getOwnPropertyNames()
+
+`Object.getOwnPropertyNames(obj)`
+
+- return an array of all properties directly on obj 
+
+> including [non-enumerable](javascript-property-descriptor.md) properties
 
 ### Object.values(obj)
 
 `Object.values(obj)`
 
-- return an **array** containing the given object's own [enumerable](javascript-property-sort.md#data-property) string-keyed property values
+- return an **array** containing the given object's own [enumerable](javascript-property-descriptor.md) string-keyed property values
 
 ### Object.is(val1, val2)
 
@@ -130,4 +142,11 @@ const returnedTarget = Object.assign(target, source);
 console.log(target);  // { a: 1, b: 4, c: 5 }
 console.log(returnedTarget === target);  // true
 ```
+
+### Object.hasOwn()
+
+`Object.hasOwn(obj, prop)`
+
+- return true, if the `obj` has the `prop` property directly
+- return false, if the `prop` is inherited or does not exist
 

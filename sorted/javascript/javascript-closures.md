@@ -1,4 +1,4 @@
-# Closure
+# Javascript - Closure
 
 ## what is a closure
 

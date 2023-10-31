@@ -1,6 +1,6 @@
 # Python - Import System
 
-## What will happen when import a module
+## What Will Happen When Import A Module
 
 1. first lookup `sys.modules`
 
@@ -8,7 +8,7 @@
 
 2. lookup built-in module
 
-- lookup [python standard library]
+- lookup [python standard library]()
 
 3. Directory Search
 
@@ -65,10 +65,18 @@ package/
 in `subpackage1/moduleX.py` or `subpackage1/__init__.py`, the following are valid relative imports:
 
 ```py
-from .moduleY import spam 
-from .moduelY import spam as ham
+from .moduleY import spam
+from .moduleY import spam as ham
 from . import moduleY
 ```
+
+## Import part of a module
+
+```py
+from module import name
+```
+
+- `name` can be Arrays, Dict, Class, Object, Function 
 
 ## Directory Search Path
 
