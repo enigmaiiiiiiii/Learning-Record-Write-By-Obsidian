@@ -29,3 +29,9 @@ output
 1: /home/usr/project/path/main.js
 2: joe
 ```
+
+## run script use ecma module system
+
+```sh
+node --experimental-modules main.js
+```

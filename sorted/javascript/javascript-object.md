@@ -1,4 +1,4 @@
-# Object
+# JavaScript - Object
 
 ## Create Object
 
@@ -13,7 +13,7 @@ let person = {
     sayName: function() {
        // function body
     },
-    sayName(){  // 简写方法名
+    sayName(){  // abbreviation method name
       console.log(this.name);
     }
 }

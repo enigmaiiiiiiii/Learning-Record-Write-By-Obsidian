@@ -34,3 +34,11 @@ value:other_value
 ```sh
 env
 ```
+
+## What are XDG Variables
+
+- XDG stands for X Desktop Group
+- Intend to standardize desktops and other GUI
+- its specifications from [freedesktop.org](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
+
+

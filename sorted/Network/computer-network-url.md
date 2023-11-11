@@ -1,4 +1,4 @@
-# URL
+# Compute Network - URL
 
 * [What is this](#what-is-this)
 * [Common Format](#common-format)
@@ -9,7 +9,7 @@
 * [prag](#prag)
 * [relative URL](#relative-url)
 * [encoding mechanism](#encoding-mechanism)
-* [URI](#uri)
+* [VS URI](#vs-uri)
 
 ## What is this
 
@@ -74,15 +74,14 @@ http://www.joes-hardware.com/inventory-checkj.cgi?item=12345&quantity=1
 
 ## relative URL
 
-- omit the [scheme](#scheme), [host](#host-and-port) and other components that can be deduced from the base URL of the owning resource
+- omit the [scheme](#common-format), [host](#host-and-port) and other components that can be deduced from the base URL of the owning resource
 - provide a set of resources portability
 
 ## encoding mechanism
 
-> 用户希望 URL 中包含除通用的 ASCII 之外的二进制数据或字符
-> 
+> for user who want to include binary data or characters other than the common ASCII in the URL
 
-- 百分号(%)后跟两个 ASCII 编码的字符表示十六进制数
+- use `%` followed by two hexadecimal digits to represent one unicode character
 
 ## VS URI
 

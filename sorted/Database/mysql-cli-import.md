@@ -1,9 +1,9 @@
-# 导入数据
+# MySQL - CLI import
 
-## 保存数据库设置
+## save database settings
 
 ```sql 
--- 保存当前数据库设置
+-- save current settings
 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT;
 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS;
 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION;

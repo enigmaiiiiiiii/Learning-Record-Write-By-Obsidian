@@ -1,17 +1,17 @@
-# Fetch
+# JavaScript - API Fetch
 
-- [Introduction](#introduction)
-- [take a look](#take-a-look)
-- [Syntax](#syntax)
-- [fetch()和jQuery.ajax()的区别](#fetch和jqueryajax的区别)
-- [response](#response)
-- [header](#header)
-- [fecth in node](#fecth-in-node)
+* [Introduction](#introduction)
+* [take a look](#take-a-look)
+* [Syntax](#syntax)
+* [fetch() vs jQuery.ajax()](#fetch()-vs-jquery.ajax())
+* [response](#response)
+* [header](#header)
+* [fecth in node](#fecth-in-node)
 
 ## Introduction
 
-- 用于发起获取资源请求
-- 返回包含响应结果的[promise](javascript-promise.md)对象
+- Use to start a request to get resource 
+- return a [promise](javascript-promise.md) object contains response result
 
 ## take a look
 
@@ -35,15 +35,15 @@ async () => {
 
 `Promise<Response> fetch(input[, init]);`
 
-参数
+parameter
 
-- input可能是
-  - 请求的[url](../network/http-url-and-uri.md), 有些浏览器可能需要`blob:`和`data:`作为scheme
+- `input` can be
+  - request [url](computer-network-url.md), some browser may need `blob:` and `data:` as [scheme](computer-network-url.md#common-format)
   - a [request object]()
-- init是一个**可选**的配置对象, 包含了请求的配置信息
-  - method: 请求的方法, GET, POST
-  - headers: 一个[header对象](#header)
-  - body: 可能是blob, FormData, URLSearchParams, string
+- `init` is a optional [object](javascript-object.md), contains request config info
+  - method: request method, e.g. GET, POST
+  - header: a header object
+  - body: maybe blob, FormData, URLSearchParams, string
   - mode
   - credentials
   - cache
@@ -54,35 +54,34 @@ async () => {
 
 return value
 
-- 正常情况返回一个[response对象](#response), 也是一个[promise对象](javascript-promise.md)
+- in normal case, return a [response object](#response), also a [promise object](javascript-promise.md)
 
-exception(异常)
+exception
 
-- 请求被AbortController.abort()中断, 抛出一个AbortError
-- 接收到包含用户名密码的URL, 抛出一个TypeError
+- request disturbed by AbortController.abort(), throw a AbortError
+- receive a URL with username and password, throw a TypeError
 
-## fetch()和jQuery.ajax()的区别
-
+## fetch() vs jQuery.ajax()
 
 ## response
 
-- 派生自promise
+- derived from [promise](javascript-promise.md)
 
-属性
+property
 
-- `Response.body`: 返回一个ReadableStream对象, 用于读取响应体
-- `Response.ok`: 返回一个布尔值, 表示请求是否成功, 也就是状态码是否在200-299之间
-- `Response.status`: 返回状态码
-- `Response.statusText`: 返回状态码对应的文本
-- `Response.headers`: 返回一个Headers对象, 里面包含了响应的所有头信息
+- `Response.body`: Returns a ReadableStream object for reading the response body.
+- `Response.ok`: Returns a boolean value, indicating whether the request was successful, meaning whether the status code is within the range of 200-299.
+- `Response.status`: Returns the status code.
+- `Response.statusText`: Returns the text corresponding to the status code.
+- `Response.headers`: Returns a Headers object containing all the response headers.
 
-方法
+method
 
 - `Response.json()`
-  - 读取Response()对象, 并设置为已读(只能堆区一次)
-  - return a **promise object**, inside is a json object
-- `Response.formData()`: 返回一个promise对象, 里面包含了响应的FormData数据
-- `Response.text()`: 设置为已读, 返回一个解析为String类型的promise对象,
+  - Reads the `Response` object, marks it as read (can only be consumed once).
+  - Returns a **promise object** containing a JSON object.
+- `Response.formData()`: Returns a promise object containing the response's FormData data.
+- `Response.text()`: Marks it as read and returns a promise object parsed as a String type.
 
 ## header
 

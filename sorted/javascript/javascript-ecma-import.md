@@ -1,8 +1,8 @@
 # ECMAScript - Import Module
 
-* [what is this](#what-is-this)
+* [What Is This](#what-is-this)
 * [Default Import](#default-import)
-* [namespace import](#namespace-import)
+* [Namespace import](#namespace-import)
 * [import multiple module](#import-multiple-module)
 * [import multiple module with alias](#import-multiple-module-with-alias)
 * [Syntax](#syntax)

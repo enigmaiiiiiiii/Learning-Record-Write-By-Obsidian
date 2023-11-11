@@ -1,11 +1,12 @@
-# Event
+# JavaScript - Event
 
-- [what it is](#what-it-is)
-- [Properties](#properties)
-- [Method](#method)
-- [Handle Event](#handle-event)
-- [constructor](#constructor)
-- [Event Object Based on Event Interface](#event-object-based-on-event-interface)
+* [what it is](#what-it-is)
+* [Properties](#properties)
+* [Method](#method)
+* [Handle Event](#handle-event)
+* [prevent pointer event](#prevent-pointer-event)
+* [constructor](#constructor)
+* [Event Objects Based on Event Interface](#event-objects-based-on-event-interface)
 
 ## what it is
 
@@ -65,13 +66,9 @@ document.onkeydown = function(e) {
 
 Event():
 
-- Event对象的构造函数
+- Constructor of Event object
 
+## Event Objects Based on Event Interface
 
-## Event Object Based on Event Interface
+[KeyboardEvent](javascript-keyboardevent.md)
 
-> keyboard event as a example
-
-property
-
-- KeyboardEvent.key: 按键的值

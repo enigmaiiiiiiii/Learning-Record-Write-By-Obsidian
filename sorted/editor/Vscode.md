@@ -1,6 +1,6 @@
-# vscode
+# VSCode
 
-## my settings
+## My settings
 
 [setting](vscode-settings.md)
 

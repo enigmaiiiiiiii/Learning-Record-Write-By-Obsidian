@@ -7,7 +7,7 @@
 * [Brace](#brace)
 * [Matrix](#matrix)
 * [Sqrt](#sqrt)
-* [Triangle Function](#triangle-function)
+* [Trigonometry Functions](#trigonometry-functions)
 
 ## Symbol
 

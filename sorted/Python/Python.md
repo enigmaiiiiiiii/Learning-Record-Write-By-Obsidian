@@ -30,7 +30,7 @@
 
 [WSGI](python-wsgi.md)
 
-## library
+## Library
 
 built-in
 
@@ -45,6 +45,8 @@ third party
 [ctypes]
 
 [opencv](python-opencv.md)
+
+[pydantic](python-pydantic.md)
 
 ## Web Development Framework
 

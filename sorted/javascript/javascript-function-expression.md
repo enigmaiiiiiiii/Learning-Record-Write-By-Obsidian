@@ -1,9 +1,9 @@
-# 函数表达式
+# JavaScript - Function Expression
 
-## 定义函数表达式
+## Defining Function Expression
 
-- 对于函数声明: `function func_name(){...}`, 函数名`func_name`就是函数表达式
-- 使用匿名函数定义函数表达式: `let func_name = function(){...}`
+1. for function declaration: `function foo(){...}`, the function name `foo` is the function expression
+2. assign anonymous function to a variable: `let foo = function(){...}`
 
 ```js
 const square = function(number) {
@@ -12,11 +12,11 @@ const square = function(number) {
 var x = square(4);
 ```
 
-## 匿名函数表达式
+## Arrow Function Expression
 
-[arrow function](javascript-function.md#arrow-function)
+[arrow function](javascript-arrow-function.md)
 
-## 函数表达式可以作为参数传递
+## function expression can be passed as a parameter
 
 ```js
 function map(f, a) {

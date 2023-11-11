@@ -2,9 +2,9 @@
 
 * [What It Is](#what-it-is)
 * [Feature](#feature)
-* [LUA\_PATH](#lua_path)
-* [package.path](#packagepath)
-* [Search On Path](#search-on-path)
+* [LUA_PATH](#lua_path)
+* [package.path](#package.path)
+* [Search Paths](#search-paths)
 * [Who determine the search path](#who-determine-the-search-path)
 * [Return Value](#return-value)
 
@@ -43,21 +43,22 @@ $ print(package.path)
 
 For example, if execute command `lua script.lua` at the root of following directory structure, for `require('add')` in `/mod/init.lua` will cause module not found error
 
+```
 .
 ├── mod
-│   ├── add.lua
+│   ├── add.lua
 │   └── init.lua
 └── script.lua
+```
 
 
 ## Search Paths
-
 
 If a search path: `?;?.lua;c:\windows\?;/usr/local/lua/?/?.lua`
 
 `require "foo"` will try to open the following files:
 
-- `foo`
+- `foo/`
 - `foo.lua`
 - `c:\windows\foo`
 - `/usr/local/lua/foo.lua`

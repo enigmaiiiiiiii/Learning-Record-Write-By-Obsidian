@@ -1,9 +1,10 @@
-# dotnet命令
+# dotnet - Command Line
 
-- 命令行工具，用于像集成开发环境(Visual Studio和vscode)一样构建程序
-- javascript中的[npm](nodejs-npm.md)有很多相似的功能
+- Command line tools, used to build program like integrated development environment(Visual Studio and vscode)
 
-[创建一个项目](dotnet-create-new-repository.md)
+> like [npm](nodejs-npm-cli.md) in nodejs
+
+[create a new repo](dotnet-create-new-repository.md)
 
 ## Ubuntu中安装dotnet
 

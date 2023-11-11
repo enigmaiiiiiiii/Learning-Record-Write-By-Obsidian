@@ -1,7 +1,5 @@
 # TypeScript
 
-[TypeScript documentation](https://www.typescriptlang.org/)
-
 [TypeScript Cheat Sheets](typescript-cheat-sheets.md)
 
 [Compile TypeScript](typescript-hello-world.md)
@@ -18,8 +16,10 @@
 
 [Enum](typescript-enum.md)
 
-[code snippets explaination](typescript-code-snippets-explaination.md)
+[.d.ts file](typescript-d-ts-file.md)
+
 
 [JSDoc Support]()
 
 [compatible problem](typescript-compatible-problem.md)
+

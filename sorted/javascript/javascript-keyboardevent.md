@@ -1,0 +1,50 @@
+# JavaScript - KeyboardEvent
+
+## Key Value
+
+- Escape
+- Space
+- Enter
+- Backspac
+- ArrowUp
+- ArrowLef
+- ArrowRigh
+- ArrowDow
+- KeyQ
+- KeyW
+- KeyE
+- KeyR
+- KeyT
+- KeyY
+- KeyU
+- KeyI
+- KeyO
+- KeyP
+- KeyA
+- KeyS
+- KeyD
+- KeyF
+- KeyG
+- KeyH
+- KeyJ
+- KeyK
+- KeyL
+- KeyZ
+- KeyX
+- KeyC
+- KeyV
+- KeyB
+- KeyN
+- KeyM
+- Tab
+- CapsLock
+- Pause
+- Comma
+- Period
+- Semicolo
+- Quote
+- Backquot
+- ShiftLef
+- Backslas
+- Minus
+- Equa

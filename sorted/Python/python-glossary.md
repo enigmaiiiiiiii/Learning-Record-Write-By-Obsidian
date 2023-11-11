@@ -23,3 +23,8 @@
 - a list of locations that Python will search for modules and packages
 - usually from `sys.path`
 - for subpackage it may also come from `__path__` attribute
+
+## PEP
+
+- abbreviation of Python Enhancement Proposal
+

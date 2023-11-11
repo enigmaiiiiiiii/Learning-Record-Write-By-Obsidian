@@ -75,6 +75,32 @@ p = Persion("john", 36)
 p.__foo() # error
 ```
 
+## Attributes
+
+```py
+class User:
+    # here is class attribute
+    name = "John"
+    age = 123
+
+    def __init__(self, name, age):
+
+        # here is instance attribute
+        self.name = name
+        self.age = age
+
+a = User("Fido", 89)
+b = User("Buddy", 99)
+
+print(User.name) # John
+print(a.name) # Fido
+print(b.name) # Buddy
+```
+
+- **Class attributes** can be assigned directly, for example: `User.name = "john"`
+- **Class attributes** are shared by all instances of the class
+- **Class attributes** will be overrided by instance attribute
+
 ## Inheritance
 
 ```py
@@ -107,6 +133,7 @@ class Student(Person):
 ```py
 class Foo:
     name = "foo"
+
 f = Foo()
 print(f.__dict__) # {}
 print(f.__class__.__dict__) # {'__module__': '__main__', 'name': 'foo', ...}

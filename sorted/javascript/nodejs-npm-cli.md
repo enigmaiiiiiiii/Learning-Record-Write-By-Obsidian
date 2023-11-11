@@ -27,13 +27,14 @@
 
 > equilavent to `npm create`
 
-- syntax: `npm init <initializer>`
-  - `initializer`: a npm package, package
-  - if `initializer`is omitted
-    - if current directory has a `package.json` file, then use it
-    - if current directory not has a `package.json` file, then use `npm init` to create a new `package.json` file
+syntax: `npm init <initializer>`
 
-`npm init` to `npm exec`
+- `initializer`: a npm package, package
+- if `initializer`is omitted, there are two cases
+  1. current directory has a `package.json` file, then use it
+  2. current directory doesn' have a `package.json` file, then use `npm init` to create a new `package.json` file
+
+`npm init` vs `npm exec`
 
 - `npm init foo` $\rightarrow$ `npm exec create-foo`
 - `npm init @usr/foo` $\rightarrow$ `npm exec @usr/create-foo`

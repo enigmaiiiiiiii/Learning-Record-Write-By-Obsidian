@@ -1,6 +1,6 @@
-# 实例API
+# Vue - Instance API
 
-## 数据: data
+## data
 
 - Vue实例被**创建**时，将data的所有[property](javascript-property.md)加入到Vue的响应式系统中
 - 当data的property发生变化时，视图会进行更新
@@ -19,12 +19,10 @@ vm.a == data.a // true
 ```
 - object.freeze()阻止修改现有property
 
-## 方法: methods
+## methods
 
-- Vue实例的方法
-- 方法中可以通过this访问data中的属性
 
-## 挂载元素: el
+## mount element: el
 
 - el: 'target'
   - target表示挂载目标
@@ -34,7 +32,7 @@ vm.a == data.a // true
 
 > 如`el: '#app'`，挂载到id为app的元素上
 
-## 属性: props
+## props
 
 - 数组或对象
 - 用于父[组件](vue-register-component.md#通过props传递组件数据)向子组件传递数据
@@ -58,6 +56,6 @@ props: [
   - required: 用于指定`prop_name`是否是必须的
   - validator: 用于指定`prop_name`的值是否合法
 
-## Vue实例的生命周期函数
+## Life Circle of Vue Instance
 
-[生命周期](vue-lifecycle.md)
+[Vue Instance's Life Circle](vue-lifecycle.md)

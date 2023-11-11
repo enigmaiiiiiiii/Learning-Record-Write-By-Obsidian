@@ -41,9 +41,9 @@ official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools
 - 201 Created: request success, and a new resource has been created
 - 202 Accepted: request accepted for processing, but the processing has not been completed
 - 204 No Content
-- 301 Moved Permanently：请求的对象已经被永久转移了，新的URL定义在响应报 文的Location:首部行中。客户软件将自动获取新的URL。
-- 302 Moved Temporarily：请求的对象已经被临时转移了
-- 304 Not Modified：请求的对象未被修改，服务器返回此状态码时，不会返回响应报文的内容
+- 301 Moved Permanently：request resource is permanently moved to another location, new location is defined in Location header line of response message, client application will auto get the new url
+- 302 Moved Temporarily：request resource is temporarily moved to another location
+- 304 Not Modified:
 - 400 Bad Request: General error code, indicate that the request is invalid
 - 401 Unauthorized: request need authentication
 - 403 Forbidden: request is refused by server
@@ -54,7 +54,6 @@ official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools
 - 503 Service Unavailable: 服务器目前无法使用（由于超载或停机维护）。
 - 505 HTTP Version Not Supported: 服务器不支持请求的HTTP版本。
 
-> 服务器响应为302时，有些浏览器会发送空的请求
 > when server response status 302, some browser will send empty request
 
 - 101 Switching Protocols: 服务器将遵从客户的请求转换到另外一种协议

@@ -22,13 +22,17 @@
 
 ## NodeJs Package Management
 
-[package](nodejs-package.md)
+[npm](nodejs-npm-cli.md): node package manager
 
 [package.json](nodejs-package-json.md)
 
 [package-lock.json](nodejs-package-lock-json.md)
 
-[npm](nodejs-npm.md): node package manager
+[package](nodejs-npm-package.md)
+
+[publish package](npm-publish-package.md)
+
+[scoped package](nodejs-npm-scoped-package.md)
 
 [yarn](nodejs-yarn.md)
 

@@ -2,7 +2,7 @@
 
 ## Foundation
 
-[mongodb Glossary](mongodb-glossary.md)
+[Glossary](mongodb-glossary.md)
 
 [document](mongodb-document.md)
 

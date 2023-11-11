@@ -8,6 +8,10 @@
 * [EventTarget](#eventtarget)
 * [HTMLCollection](#htmlcollection)
 
+## window
+
+[Window](javascript-bom-window.md)
+
 ## document
 
 - is a Special [Node](#node) represents the entire Web page

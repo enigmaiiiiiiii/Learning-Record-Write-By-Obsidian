@@ -24,7 +24,7 @@ attribute
 
 ## Improt Inline Script
 
-> variable defined by var is property of [window](javascript-bom.md#window) object
+> variable defined by var is property of [window](javascript-dom.md#window) object
 
 ```html
 <script>

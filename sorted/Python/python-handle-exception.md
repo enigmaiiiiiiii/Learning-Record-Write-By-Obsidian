@@ -91,3 +91,14 @@ for cls in [B, C, D]:
         print("D")
 # output: B B B
 ```
+
+## Traceback Package
+
+```py
+import traceback
+
+try:
+    raise Exception("message")
+except:
+    traceback.print_exc()
+```
