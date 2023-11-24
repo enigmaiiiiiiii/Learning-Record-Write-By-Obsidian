@@ -16,6 +16,8 @@
 
 [Parameter](javascript-function-arguments.md)
 
+- [rest parameter](javascript-function-rest-parameters.md)
+
 [Function Expression](javascript-function-expression.md)
 
 [Arrow Function](javascript-arrow-function.md)

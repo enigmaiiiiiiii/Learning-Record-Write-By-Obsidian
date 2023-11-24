@@ -1,4 +1,4 @@
-# 模块
+# Java - Module
 
 - 是包含module-info.class(module-info.java编译得到)的目录
 - module-info.java文件应包含
@@ -13,12 +13,12 @@
 - 模块可以打包成`.jar`压缩包
 - 模块是一组为重用而设计的包
 
-> 比如:
+> For Example:
 > module a.b.c代表整个系统的`a.b.c`目录
 > 模块的声明由a.b.c目录下的文件module-info.java表示。
 > module中的package `p.q.r`, module `a.b.c`包含目录树p/q/r
 
-## 创建一个module
+## Create A Module
 
 创建一个名为moduleA的模块
 
@@ -44,16 +44,16 @@ public class DemoClass{
 
 5. 运行模块, 执行模块中的mainclass
 
-## 关键词: module
+## keyword: module
 
-- 声明模块
+- For declare a module
 
 ```java
 module com.company.mymodule {
 }
 ```
 
-## 关键字: requires
+## keyword: requires
 
 ```java
 module java.desktop{ 
@@ -61,7 +61,7 @@ module java.desktop{
 }
 ```
 
-关键字: transitive
+## keyword: transitive
 
 - 强制读取依赖
 
@@ -73,11 +73,11 @@ module java.desktop{
 
 - 任何读取java.desktop module的模块，也会强制读取java.xml模块
 
-## 关键字: Exports
+## keyword: Exports
 
-## 关键字: Uses
+## keyword: Uses
 
-## 相关命令
+## Related Command
 
 ### javac Command
 

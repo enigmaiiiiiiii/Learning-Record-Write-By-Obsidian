@@ -5,7 +5,9 @@
 * [Install ESLint](#install-eslint)
 * [config file](#config-file)
 * [Practical Usage](#practical-usage)
-* [eslint command](#eslint-command)
+* [Eslint command](#eslint-command)
+* [Disable Rules](#disable-rules)
+* [ESlint Plugin](#eslint-plugin)
 * [ESlint In Vscode](#eslint-in-vscode)
 * [ESlint vue-cli](#eslint-vue-cli)
 

@@ -1,11 +1,11 @@
-# Object types
+# TypeScript - Object types
 
 ## Array
 
 - type like `number[]` or `string[]`
 - this is just a shorthand for `Array<number>` or `Array<string>`
 
-## tuple
+## Tuple
 
 - another type of array whose:
   - length is fixed

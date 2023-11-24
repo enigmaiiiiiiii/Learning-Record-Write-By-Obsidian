@@ -6,9 +6,11 @@
 node main.js
 ```
 
-## options
+## get command line arguments
 
-main.js
+use `process.argv` to get command line arguments
+
+`main.js`
 
 ```js
 process.argv.forEach((val, index)=>{
@@ -35,3 +37,19 @@ output
 ```sh
 node --experimental-modules main.js
 ```
+
+## Options
+
+`-e`
+
+- evaluate string as javascript
+- similar to [`eval()` function](javascript-built-in-functions.md#eval)
+
+```sh
+node -e "console.log('hello world')"
+```
+
+`-p`
+
+- identical to `-e`, but prints the result
+

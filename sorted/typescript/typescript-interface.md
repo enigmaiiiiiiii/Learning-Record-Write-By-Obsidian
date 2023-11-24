@@ -43,7 +43,9 @@ interface Point {
 
 ## Index Signatures
 
-index signature using under the following situation to declare a property type of an [interface]() or [class]
+- **index signature** is used to declare properties type of an [interface]() or [class]()
+
+when to use
 
 1. don't know all the name of properties
 2. know the type of the value
@@ -68,7 +70,9 @@ interface NumberDictionary {
 }
 ```
 
-available type of index signature
+- `index` can be any other name
+
+Available Type Of Index Signature
 
 - `string`
 - `number`

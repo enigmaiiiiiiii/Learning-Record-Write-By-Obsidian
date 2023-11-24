@@ -46,6 +46,14 @@ check runtimepath with command
 :set runtimepath?
 ```
 
+## Command of nvim itself
+
+```sh
+nvim [options] [file ...]
+```
+
+[Command of nvim itself](neovim-command-nvim.md)
+
 ## Diff Mode
 
 1. run command `nvim -d file1 file2` in shell

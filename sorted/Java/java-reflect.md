@@ -1,13 +1,14 @@
-# 反射
+# JAVA - Reflect
 
 ## Introduction
 
-- 反射机制的用途
-  - **运行时**分析类
-  - **运行时**查看对象
-  - 通用数组操作代码
-  - 定位资源位置
-  - ~~Method对象, 很像[c++中的函数指针](c++-function-pointer.md)~~
+Use of Reflection in Java
+
+- analysis class at **runtime**
+- access object at **runtime**
+- 通用数组操作代码
+- 定位资源位置
+- ~~Method对象, 很像[c++中的函数指针](c++-function-pointer.md)~~
 
 ## Feature
 
@@ -35,7 +36,7 @@ Annotation
 
 [java.lang.Annotation](java-reflect-annotation.md)
 
-[注解元素接口](java-annotatedelement.md)
+[annotated element](java-annotated-element.md)
 
 ## 通过反射实现通用toString()
 

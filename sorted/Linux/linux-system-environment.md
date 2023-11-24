@@ -27,7 +27,7 @@ value:other_value
 
 ## environment variable related file
 
-[related file](linux-environment-variable-related-file.md)
+[related file](linux-environment-variable-files.md)
 
 ## show all variable
 

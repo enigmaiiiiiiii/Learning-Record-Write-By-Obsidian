@@ -100,11 +100,16 @@ npm show [package-name] version
 
 ## npm update
 
-- default will not update [semver](semantic-versioning.md) value in you `package.json`
+**respecting the [semver](semantic-versioning.md) constraints** of both your package.json and its dependencies
 
-update package while update semver value in [`package.json`](nodejs-package-json.md)
+- if the latest version is `1.2.2`
+- if semver `^1.1.1`, `npm update` will update to `1.2.2`
+- if semver `~1.1.1`, `npm update` will update to `1.1.2`
+- for semver below `1.0.0`, if semver `^0.2.0`, `npm update` will update to `0.2.2`, if version `0.2.2` exist
 
-- use `--save` option
+default will not update [semver](semantic-versioning.md) value in you `package.json`
+
+- use `--save` option to update package while update semver value in [`package.json`](nodejs-package-json.md)
 
 ```sh
 npm update --save typescript
@@ -117,5 +122,6 @@ npm update
 ```
 
 ## npm audit
+
 
 

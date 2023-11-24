@@ -79,3 +79,29 @@ brew bundle dump
 brew bundle dump --file=~/.dotfiles/Brewfile
 ```
 
+## switch to a specific version
+
+switch from `node` version
+
+```sh
+$node -v
+v20.5.1
+$ brew search node
+libbitcoin-node   node ✔            node@14           node@20           nodeenv
+linode-cli        node-build        node@16           node_exporter     nodenv
+llnode            node-sass         node@18 ✔         nodebrew          ode
+```
+
+install `node@18`
+
+```sh
+brew install node@18
+```
+
+switch to `node@18`
+
+```sh
+brew unlink node
+brew link --overwrite node@18
+```
+

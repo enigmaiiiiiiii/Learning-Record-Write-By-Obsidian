@@ -2,7 +2,7 @@
 
 > god of editor
 
-[my vim configuration](vim-config.md)
+[concepts](vim-concepts.md)
 
 [Command Set](vim-commandset.md)
 
@@ -13,3 +13,5 @@
 [Vim Editor](vim-editor.md)
 
 [Find And Replace](vim-replace-command.md)
+
+[my vim configuration](vim-config.md)

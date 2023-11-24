@@ -22,6 +22,8 @@ class ClassName~GenericType~ {
 
 ## Define Classes RelationShip
 
+Relationship Arrow
+
 - `<|--`: [Inheritance](uml.md#———▷-inheritance)
 - `*--`:  [Composition](uml.md#󰣏-black-diamond-(composition))
 - `o--`:  [Aggregation](uml.md#󱀝-clear-diamond-(aggregation))
@@ -31,7 +33,7 @@ class ClassName~GenericType~ {
 - `..|>`: [Realization](uml.md#---▷-implementation)
 - `..`:   Link (Dashed)
 
-label Relationship
+Label Relationship
 
 - `[classA][arrow][classB]:labeltext`
 

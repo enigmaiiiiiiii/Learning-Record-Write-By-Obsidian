@@ -16,8 +16,13 @@
 
 [Enum](typescript-enum.md)
 
-[.d.ts file](typescript-d-ts-file.md)
+[Meta Programming](typescript-meta-programming.md)
 
+[Decorator](typescript-decorators.md)
+
+[Ignore Errors](typescript-ignore-errors.md)
+
+[.d.ts file](typescript-d-ts-file.md)
 
 [JSDoc Support]()
 

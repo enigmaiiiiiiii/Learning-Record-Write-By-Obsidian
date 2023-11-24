@@ -1,11 +1,12 @@
 # Typescript - Class
 
 * [Constructor](#constructor)
-* [method](#method)
+* [Fields](#fields)
+* [methods](#methods)
 * [getters/setters](#getters/setters)
 * [readonly](#readonly)
 * [index signature](#index-signature)
-* [inheritance](#inheritance)
+* [Inheritance](#inheritance)
 * [Member Visibility](#member-visibility)
 * [Generic Classes](#generic-classes)
 * [about `this` in javascript](#about-`this`-in-javascript)
@@ -14,6 +15,7 @@
 * [this as parameter type annotation](#this-as-parameter-type-annotation)
 * [Class Expressions](#class-expressions)
 * [Abstract Classes And Members](#abstract-classes-and-members)
+* [Parameter Properties](#parameter-properties)
 
 ## Constructor
 
@@ -28,7 +30,46 @@ class GoodGreeter {
 }
 ```
 
-## method
+## Fields
+
+```ts
+class Point {
+  x: number;
+  y: number;
+}
+```
+
+- initialize fields is optional
+
+if compile option [`strictPropertyInitialization`](typescript-tsconfig-fields.md#strictpropertyinitialization) is set
+
+- fields must be initialized, initialize while declaration or in the constructor
+- or marked with `!` to indicate that they will be initialized by external library
+
+```ts
+class Point {
+  // Not initialized, but no error
+  x!: number;
+  y!: number;
+}
+```
+
+cause the [parameter properties](#parameter-properties) feature
+
+- fields can be used for the property whose value always initialized with same value for all instances
+- other property can be defined and initialized in constructor
+
+```ts
+class Point {
+  z: number = 0; // property z is initialized with 0 for all instances
+  constructor(
+    public x: number,
+    public y: number,
+  ) {}
+}
+```
+
+## methods
 
 ```ts
 class Greeter {
@@ -105,7 +146,7 @@ class MyClass {
 }
 ```
 
-## inheritance
+## Inheritance
 
 implements statement
 
@@ -270,3 +311,35 @@ abstract class Base {
     }
 }
 ```
+
+## Parameter Properties
+
+- this is a **special syntax** provided by typescript
+
+what is parameter properties?
+
+- turning a constructor parameter into a class property with the same name and value
+
+How to create 
+
+- Created by Prefixing a constructor parameter with an [visibility modifier](#member-visibility) or `readonly`. This 
+
+> Prefixing with modifier is required
+
+```ts
+class Point {
+  constructor(
+    public readonly x: number,
+    protected y: number,
+    z: number
+  ) {
+      // no body necessary
+  }
+}
+const p = new Point(3, 5, 8)
+console.log(p.x)  // 3
+console.log(p.z)  // Property 'z' does not exist on type 'Point'
+```
+
+
+

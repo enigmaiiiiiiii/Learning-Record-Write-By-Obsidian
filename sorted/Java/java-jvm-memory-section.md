@@ -1,5 +1,5 @@
-# 内存分区
+# Java - Memory Section
 
-- 堆: 存放new关键字创建的对象
-- 栈: 存放局部变量, 包括基本类型变量，引用类型变量
-- 方法区: .class字节码文件，静态变量, 所有方法
+- Heap: Storage for objects created with the "new" keyword.
+- Stack: Storage for local variables, including variables of primitive types and reference types.
+- Method Area: .class bytecode files, static variables, and all methods.

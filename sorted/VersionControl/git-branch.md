@@ -6,7 +6,7 @@
 * [Resolved Conflict](#resolved-conflict)
 * [Delete Branch](#delete-branch)
 * [Manage Branch](#manage-branch)
-* [Create a new orphan branch, ](#create-a-new-orphan-branch,-)
+* [Create a new orphan branch, ](#create-a-new-orphan-branch)
 * [Branch workflow](#branch-workflow)
 * [HEAD Pointer](#head-pointer)
 
@@ -79,7 +79,7 @@ after change local branch name, delete remote old branch
 - `git push --set-upstream origin <newbranch>`: let others see the new branch
 - `git push origin --delete <branch>`: delete remote old branch
 
-## Create a new orphan branch, 
+## Create a new orphan branch
 
 `git checkout --orphan <new-branch>`
 

@@ -8,7 +8,6 @@
 
 [Function](lua-function.md)
 
-
 [Built-in Functions](lua-built-in-functions.md)
 
 ## Variable

@@ -1,4 +1,4 @@
-# Prototype
+# JavaScript - Prototype
 
 * [here are 3 concepts of prototype](#here-are-3-concepts-of-prototype)
 * [Property Access Process](#property-access-process)

@@ -1,13 +1,13 @@
-# Java工具
+# Java - Command Line Tools
 
-## 全平台
+## All Platform
 
-- [x] [javac](java-command-javac.md): Java源文件编译器
-- [x] [java](java-command-java.md): 通过启动Java虚拟机，运行Java程序
+- [x] [javac](java-command-javac.md): Java source file compiler
+- [x] [java](java-command-java.md): run java program by starting a Java Virtual Machine
 - [x] [jar](java-command-jar.md): 
 - [ ] jarsigner
 - [ ] javadoc
-- [x] [javap](java-command-javap.md): Java源文件解析器
+- [x] [javap](java-command-javap.md): Java class file disassembler
 - [ ] jcmd
 - [ ] jconsole
 - [ ] jdb
@@ -20,10 +20,10 @@
 - [ ] jmap
 - [ ] jmod
 - [ ] jpackage
-- [x] [jps](): 列出目标系统上运行的JVM
+- [x] [jps](): list all JVMs on the target system
 - [ ] jrunscript
 - [ ] jshell
-- [x] [jstack](): 输出指定Java进程的线程信息
+- [x] [jstack](): output thread information of a specific Java process
 - [ ] jstat
 - [ ] jstatd
 - [ ] jwebserver
@@ -32,4 +32,4 @@
 - [ ] rmiregistry
 - [ ] serialver
 
-## Windows特有
+## Windows Only

@@ -19,36 +19,30 @@
 - 与**类**关联，而不是与任何**实例**关联
 - 通过类名直接访问
 
-## 方法签名
+## Method Signature
 
-- 方法签名: 方法名和参数列表
+- method name and parameter list
 
-## 方法重载
+## Method Overloading
 
-- 相同的方法名称，不同的参数列表
+- same method name, different parameter list
 
-> 与返回类型无关
+> unrelated to the return type
 
-## 更改器方法与访问器方法
 
-- c++中: [const后缀]()方法是访问器方法, 默认更改器方法
-- Java中: 语法上没有区别
-- 访问器方法不应返回可变对象的引用
-
-## 方法的[内联](c++-inline-function.md)
+## inline method
 
 - java中，方法是否内联是Java虚拟机的任务
 - 简洁，经常被调用，没有被重载以及可优化的方法
 
 ## 方法的参数
 
-- 不能修改一个基本类型的参数
-- 可以改变一个对象参数的状态(内容)
-- 不能让对象引用一个新的对象
+- Cannot modify a parameter of a primitive type.
+- Can change the state (content) of an object parameter.
+- Cannot make an object reference a new object.
+- Passing method: It is passed by value.
 
-传递方式: 是按值传递(按照 *java核心技术 卷I 4.5*的描述)
-
-传递方式说明代码
+An example to demonstrate function parameter passing method
 
 ```java
 public static void swap(Employee x, Employee y)
@@ -62,10 +56,10 @@ Employee b = new Employee("Bob",2000);
 swap(a, b);
 ```
 
+## mutable parameters  
 
-## 可变参数
-
-- `type... args`, 方法体内使用`args[i]`取值 
+- declare by `foo(type... args)` syntax
+- access by `args[i]` in method body
 
 ```java
 public static double max(double... values) {

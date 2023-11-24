@@ -36,8 +36,8 @@ p.locate();  // on every instance
 p.__proto__.locate();  // on prototype
 ```
 
-- at `1`, this上的所有内容都会被添加到每个实例上
-- at `2`, locate()方法会被添加到[prototype](javascript-prototype.md)上
+- at `1`, property on `this` will add to each instance
+- at `2`, `locate()` method will be added on [prototype](javascript-prototype.md)
 
 ## Contructor
 
@@ -63,7 +63,7 @@ class Rectangle {
 
 ## Static Method
 
-[java](java-method.md)和[c++](c++-static-member.md)中拥有相似的概念
+> similar concepts in [java](java-method.md#static-method) and [c++](c++-static-member.md)
 
 - Only Can be called by class name
 

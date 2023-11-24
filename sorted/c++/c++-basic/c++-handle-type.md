@@ -1,9 +1,18 @@
 # C++ - Handle Type
 
+## typedef
+
 [[c++-keyword-typedef]]
+
+## using
 
 [using](c++-using.md)
 
-[[auto关键字]]
+## auto
 
-[[decltype关键字]]
+[auto]()
+
+## decltype
+
+[decltype]
+

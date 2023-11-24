@@ -1,5 +1,14 @@
 # Lua - Types
 
+* [Nil](#nil)
+* [Boolean](#boolean)
+* [Numbers](#numbers)
+* [Strings](#strings)
+* [Array](#array)
+* [Tables](#tables)
+* [Functions](#functions)
+* [Threads](#threads)
+
 ## Nil
 
 ## Boolean
@@ -25,7 +34,7 @@ a = {1, 2, 3}
 print(a[1]) -- 1
 ```
 
-array index can start at any number
+Array index can start at any number
 
 ```lua
 a = {}
@@ -38,6 +47,20 @@ New Array
 
 ```lua
 a = {} -- empty array
+```
+
+Get Array length
+
+```lua
+a = {1, 2, 3}
+print(#a) -- 3
+```
+
+With this trick, you can get the last element of an array
+
+```lua
+a = {1, 2, 3}
+print(a[#a]) -- 3
 ```
 
 

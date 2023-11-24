@@ -19,7 +19,7 @@ Version number format: `MAJOR.MINOR.PATCH`
 
 ## Semantic Versioning Rules
 
-1. MUST declare a **public API for Semantic Versioning**
+1. MUST declare a **public API for Semantic Versioning?**
 2. take the form `X.Y.Z`, where `X`, `Y`, `Z` are non-negative integers; MUST NOT **contain leanding zeroes**
 3. once a versioned package has been released, the contents of that version **MUST NOT be modified**
 4. in `0.y.z` version, the public API **SHOULD NOT** be considered stable

@@ -1,4 +1,4 @@
-# file related to environment variable
+# Linux - Environment Variable Files
 
 * [Environment Variable Load Order](#environment-variable-load-order)
 * [/etc/environment](#/etc/environment)

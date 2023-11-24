@@ -84,6 +84,10 @@ parameter
 - `prop`: the name or Symbol of the property to be defined or modified
 - `descriptor`: the descriptor for the property being defined or modified
 
+return
+
+- the object that was passed to the function, with the property added or modified
+
 ### Object.defineProperties()
 
 `Object.defineProperties(obj, props)`
@@ -149,4 +153,17 @@ console.log(returnedTarget === target);  // true
 
 - return true, if the `obj` has the `prop` property directly
 - return false, if the `prop` is inherited or does not exist
+
+### Object.getOwnPropertyDescriptor()
+
+`Object.getOwnPropertyDescriptor(obj, prop)`
+
+parameters
+
+- `obj` the object to look for property
+- `prop` the name or symbol of the property whose description is to be retrieved
+
+return
+
+- a [property descriptor](javascript-property-descriptor.md) of given property
 

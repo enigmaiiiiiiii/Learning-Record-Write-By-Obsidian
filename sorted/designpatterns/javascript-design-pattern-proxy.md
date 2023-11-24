@@ -2,7 +2,6 @@
 
 * [What It Is](#what-it-is)
 * [Appropriate scenario](#appropriate-scenario)
-* [Advantages Of Proxy](#advantages-of-proxy)
 * [code](#code)
 
 ## What It Is

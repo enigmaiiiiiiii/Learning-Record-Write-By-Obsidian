@@ -190,11 +190,42 @@ function fail(msg: string): never {
 
 Function
 
-## Rest Paramter
+## Rest Parameters
 
-## Rest Argument
+with **rest parameters** defining a function that take a **variable number** of arguments
+
+```ts
+function multiply(n: number, ...m: number[]) {
+    return m.map((x) => n * x);
+}
+const a = multiply(10, 1, 2, 3, 4);
+```
+
+Emphasis
+
+- parameter prefix with `...`
+- parameter must be type as array
+- must be the last parameter
+
+> there is no restriction for function in **javascript** use [variable number of arguments](javascript-function-rest-parameters.md)
+
+following function definition still available to use rest parameters
+
+```js
+function foo(x, y, z) {
+    return x + y + z;
+}
+
+const a = [0, 1, 2];
+
+foo(...a)
+```
+
+## Rest Arguments
 
 provide a iterable object as multiple arguments
+
+A spread argument must either have a [tuple type] or be passed to a [rest paramter](#rest-parameters)
 
 - typescript does not assume that arrays are immutable
 
@@ -207,13 +238,12 @@ function atan2(x: number, y: number): number {
 }
 const args = [3, 4];
 atan2(...args);  // error raised
-// A spread argument must either have a tuple type or be passed to a rest paramter
 ```
 
-this error says two things, if you want to pass spread argument to a function
+**this error says two things**, if you want to pass spread argument to a function
 
-- function declaration like `function f(...args: type[])`
-- if function declare like `function f(x, y, z)` then the type of `args` must be a [tuple](typescript-object-types.md#tuple)
+- spread argument passed to a [rest parameter](#rest-parameters), A function declaration like `function f(...args: type[])`
+- or if function declare like `function f(x, y, z)` then the type of `args` must be a [tuple](typescript-object-types.md#tuple)
 
 solution is assert the type of `args`
 

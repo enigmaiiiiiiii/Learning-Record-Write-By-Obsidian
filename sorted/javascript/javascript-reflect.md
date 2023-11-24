@@ -1,12 +1,12 @@
 # JavaScript Reflect
 
-## What it is
+## What It Is
 
-- contains static methods that mirror the existing global object methods
-- is not **a constructor**, cannot be used with `new` operator
+- A [namespace object] contains static methods that mirror the existing global object methods
+- Not **a constructor**, cannot be used with `new` operator
 - provides static functions which are same as [proxy handler methods](javascript-proxy.md#handler-methods)
 
-major use is to provide **default forwarding behavior** in [Proxy handler]()
+major use is to provide **default forwarding behavior** in [Proxy handler](javascript-proxy.md)
 
 ```js
 const p = new Proxy(
@@ -19,10 +19,9 @@ const p = new Proxy(
 );
 ```
 
-## feature
+## Features
 
 - some methods are same as method in [Object](), although they do have some subtle differences
-
 
 ```js
 const duck = {
@@ -38,3 +37,10 @@ Reflect.has(duck, "color");
 Reflect.has(duck, "haircut");
 // false
 ```
+
+## Static Methods
+
+`getOwnPropertyDescriptor()`
+
+- returns a [property descriptor](javascript-property-descriptor.md) of the given property
+

@@ -1,17 +1,18 @@
 # Yarn
 
-- [Install](#install)
-- [yarn init](#yarn-init)
-- [yarn and yarn install](#yarn-and-yarn-install)
-- [yarn add](#yarn-add)
-- [yarn up](#yarn-up)
-- [yarn run](#yarn-run)
+* [Install](#install)
+* [yarn init](#yarn-init)
+* [yarn or yarn install](#yarn-or-yarn-install)
+* [yarn add](#yarn-add)
+* [yarn up](#yarn-up)
+* [yarn run](#yarn-run)
+* [yarn check package latest version](#yarn-check-package-latest-version)
 
 ## Install
 
 ## yarn init
 
-## yarn and yarn install
+## yarn or yarn install
 
 - install all dependencies
 

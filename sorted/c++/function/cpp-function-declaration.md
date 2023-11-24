@@ -1,4 +1,4 @@
-#  函数声明
+# Cpp - Function Declaration
 
 - 返回**类型，函数名，形参类型**描述了函数接口
 - 预处理的时候会处理函数声明？函数声明发生在链接文件之前?
@@ -7,10 +7,10 @@
 - 声明但不定义是合法的
 - 使用typedef和decltype可以简化声明
 
-  [[c++-handle-type#typedef关键字 定义类型别名]]
-  
-  [[c++-handle-type#decltype类型推导符]]
-  
+[typedef](c++-handle-type.md#typedef)
+
+[decltype](c++-handle-type.md#decltype)
+
 ```c++
 // func0, func1, func2为相同函数类型
 bool func0(const string&, const string&);

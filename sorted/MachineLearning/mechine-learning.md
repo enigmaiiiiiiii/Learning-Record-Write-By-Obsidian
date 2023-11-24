@@ -1,8 +1,8 @@
-# 机器学习
+# Mechine Learning
 
-[统计机器学习](statistics-mechine-learning.md)
+[statistics machine learning](statistics-mechine-learning.md)
 
-[[深度学习]]
+[深度学习](deep-learning.md)
 
 [[机器视觉]]
 

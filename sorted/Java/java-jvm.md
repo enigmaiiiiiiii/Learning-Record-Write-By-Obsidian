@@ -1,5 +1,4 @@
 # JVM
 
-
-[JVM内存分区](java-jvm-memory-section.md)
+[JVM memory section](java-jvm-memory-section.md)
 

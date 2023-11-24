@@ -9,6 +9,11 @@
 
 [Basic](javascript-property-basic.md)
 
+## Composition Of Property
+
+1. property name: a string name or a symbol
+2. [property descriptor](#property-descriptor)
+
 ## Own Property
 
 - the property directly defined on an object
@@ -19,10 +24,6 @@
 [Property Descriptor](javascript-property-descriptor.md)
 
 ## Object Method related to property
-
-`Object.getOwnPropertyDescriptor()`
-
-- get property's Descriptor, use descriptor to read the attribute
 
 `Object.assign()`
 

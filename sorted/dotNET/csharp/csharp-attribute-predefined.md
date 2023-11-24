@@ -1,10 +1,10 @@
-# 几个预定义特性
+# CSharp - Prefefined Atrributes
 
 ## SerializableAttribute
 
 ## Obsolete
 
-- 旧方法警告
+- Obsolete method warning
 
 ```c#
 [Obsolete("Use method SuperPrintOut")]

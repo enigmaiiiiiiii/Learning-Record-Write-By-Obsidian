@@ -44,17 +44,38 @@ significately difference between interface and [type alias](typescript-type-stat
 
 ## mark variable, parameter, properties
 
-variable
+`?` mark
 
-- ?: can be undefined
+- mark on variable: variable value can be undefined
 
-parameter
+```ts
+let a?: number;
+```
 
-- ?: optional
+- mark on parameter: parameter is optional
 
-properties
+```ts
+function f(a?: number) { /* ... */ }
+```
 
-- ?: optional
+- mark on property: property can be undefined
+
+```ts
+class C {
+  a?: number;
+}
+```
+
+`!` mark
+
+- known as non-null assertion operator
+- assert the value isn't null or undefined
+
+```ts
+function liveDangerously(x?: number | undefied) {
+  console.log(x!.toFixed());
+}
+```
 
 ## Keyword
 

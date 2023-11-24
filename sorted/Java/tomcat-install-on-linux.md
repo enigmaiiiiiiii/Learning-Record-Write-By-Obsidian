@@ -27,7 +27,7 @@ sudo tar xzvf path/to/apache-tomcat-10.0.27.tar.gz
 
 ## Set Environment Variables
 
-[alternatives](linux-alternatives.md)查看当前java命令所在目录, 用于设置JAVA_HOME
+use [`alternatives`](linux-alternatives.md) to check the path of java command, to set `JAVA_HOME
 
 ```bash
 alternatives --list | grep java
@@ -39,7 +39,7 @@ alternatives --list | grep java
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64/bin/java
 ```
 
-JAVA_HOME就是`/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64`
+`JAVA_HOME` is `/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.352.b08-2.el9_1.x86_64`
 
 [环境变量](linux-system-environment.md)`JAVA_HOME`, `CATALINA_HOME`, 设置在`/etc/profile.d/tomcat.sh`文件中
 

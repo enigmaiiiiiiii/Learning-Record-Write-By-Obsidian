@@ -32,7 +32,7 @@
 
 [Net](java-network-programming.md)
 
-[多线程](java-thread.md)
+[Thread](java-thread.md)
 
 [Reflect](java-reflect.md)
 
@@ -50,7 +50,7 @@
 
 [Java BEAN](java-bean.md)
 
-[调试信息](java-debug-info.md)
+[Debug Info](java-debug-info.md)
 
 [JVM](java-jvm.md)
 

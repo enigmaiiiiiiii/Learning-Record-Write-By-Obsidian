@@ -1,5 +1,16 @@
 # Javascript - this
 
+* [what It Is](#what-it-is)
+* [this in function](#this-in-function)
+* [This In Callback](#this-in-callback)
+* [This In Closure](#this-in-closure)
+* [This In Arrow Function](#this-in-arrow-function)
+* [this in constructor](#this-in-constructor)
+* [this in class](#this-in-class)
+* [this in global context](#this-in-global-context)
+* [how to check this bind to what](#how-to-check-this-bind-to-what)
+* [globalThis](#globalthis)
+
 ## what It Is
 
 - In a method, 'this' refers to the [object](javascript-object.md) to which the method belongs.

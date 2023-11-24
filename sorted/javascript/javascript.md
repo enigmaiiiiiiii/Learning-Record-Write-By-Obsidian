@@ -28,6 +28,8 @@
 
 [ECMAScript Regex](javascript-regex.md)
 
+[Reflect](javascript-reflect.md)
+
 [JSDoc](javascript-jsdoc.md)
 
 [Design Pattern](javascript-design-pattern.md)
@@ -52,7 +54,9 @@
 
 [Reflect](javascript-reflect.md)
 
-[Built-In Object List](javascript-built-in-object.md)
+[Built-In Object Collection](javascript-built-in-object.md)
+
+[built-in functions Collection](javascript-built-in-functions.md)
 
 ## III Web API
 

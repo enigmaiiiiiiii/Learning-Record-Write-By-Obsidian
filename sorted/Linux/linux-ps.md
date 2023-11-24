@@ -45,8 +45,8 @@ output field
 - `S`: Interruptible sleep (waiting for an [event]() to complete)
 - `T`: Stopped by a [job control](linux-standard-signal.md#job-control-signal) signal
 - `t`: Stopped by debugger during the tracing
-- `W`: [Paging] (not valid since the 2.6.xx kernel)
-- `X`: [dead] (should never be seen)
+- `W`: [Paging]()(not valid since the 2.6.xx kernel)
+- `X`: [dead]()(should never be seen)
 - `Z`: [defunct ("zombie") process](), terminated but not reaped by its parent
 
 `WCHAN` possible values

@@ -1,11 +1,12 @@
 # UML
 
 * [What it is](#what-it-is)
-* [Represent A Class](#represent-a-class)
+* [Type Diagram](#type-diagram)
 * [———▷ Inheritance](#———▷-inheritance)
 * [---▷ Implementation](#---▷-implementation)
-* [󰁔 Arrow Line: Association](#󰁔-arrow-line:-association)
+* [󰁔 Arrow Solid Line: Association](#󰁔-arrow-solid-line:-association)
 * [line without arrow](#line-without-arrow)
+* [dependency](#dependency)
 * [󱀝 Clear Diamond (Aggregation)](#󱀝-clear-diamond-(aggregation))
 * [󰣏 Black Diamond (Composition)](#󰣏-black-diamond-(composition))
 * [Multiplicity.](#multiplicity.)
@@ -16,35 +17,10 @@
 - uml is not about code implementation
 - uml is about objective design
 
-## Represent A Class
+## Type Diagram
 
-1. **class name** at the top of the box
+[Type Diagram](uml-type-diagram.md)
 
----
-
-2. attributes (properties of the class)
-
-- The properties format
-
-```sh
--name: string
--age: int
-+id: int
-```
-
-- private is `-`
-- public is `+`
-- protected is `#` (protected means it can only be accessed by the same class or subclasses)
-
----
-
-3. The methods are below the attributes and look like this:
-
-```sh
--setName()
--doSomething()
-+isActive
-```
 
 ## ———▷ Inheritance
 

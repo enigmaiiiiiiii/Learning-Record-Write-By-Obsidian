@@ -1,6 +1,6 @@
-# Java环境安装
+# Java - Installation
 
-## 安装JDK
+## Install JDK
 
 linux
 
@@ -9,14 +9,28 @@ dnf search openjdk
 sudo dnf install java-1.8.0-openjdk-devel
 ```
 
-## 环境设置
+macos
 
-将jdk/bin目录增加到执行路径中
+```sh
+brew install openjdk
+```
 
-- Linux中
+- for the system java wrappers to find this JDK, symlink it with
+
+```sh
+sudo ln -sfn $HOMEBREW_PREFIX/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+```
+
+## Add JDK to PATH
+
+> and jdk/bin to PATH
+
+- In Linux
 
 ```shell
 export PATH=jdk/bin:$PATH
 ```
 
-- Windows中设置环境变量
+- In Windows
+
+

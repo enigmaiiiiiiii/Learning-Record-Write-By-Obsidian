@@ -1,6 +1,6 @@
-# std::promise
+# C++ - std::promise
 
-- 模板声明
+- Template Declaration
 
 ```c++
 template< class R > class promise;

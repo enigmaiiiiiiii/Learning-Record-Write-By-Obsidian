@@ -2,6 +2,7 @@
 
 ## Create Object
 
+
 1. use literal，like `{key1:value1, key2: value2}`
 
 > more popular way
@@ -13,7 +14,7 @@ let person = {
     sayName: function() {
        // function body
     },
-    sayName(){  // abbreviation method name
+    reportName(){  // abbreviation method name
       console.log(this.name);
     }
 }
@@ -48,12 +49,12 @@ let person = {
 let {name: personName, age: personAge} = person;
 ```
 
-表示将person.name和person.age分别赋值给变量personName和personAge
+- assign `person.name` and `person.age` to `personName` and `personAge` respectively
 
-对于已经声明的变量使用解构表达式赋值时，必须用`()`括起来
+For destructuring assignment to an **already-declared** variable, you must surround the destructuring assignment statement with parentheses `()`.
 
 ```js
-let personName, personAge;
+let personName, personAge;  // declare here
 let person = {
   name: "matt",
   age: 27

@@ -1,7 +1,7 @@
 # Typescript - Hello TypeScript
 
 * [Install Typescript Compiler](#install-typescript-compiler)
-* [Command Line Tools tsc](#command-line-tools-tsc)
+* [tsc](#tsc)
 * [Third Party Tools](#third-party-tools)
 * [index.d.ts](#index.d.ts)
 
@@ -19,22 +19,10 @@ npm install -g typescript
 npm install -D typescript
 ```
 
-## Command Line Tools tsc
+## tsc
 
-- Use to **compile ts to js**, not execute it
-- Installed with typescript
+[tsc](typescript-cli-tsc.md)
 
-For Globally Installed Typescript
-
-```sh
-tsc hello.ts
-```
-
-For Locally Installed Typescript
-
-```sh
-npx tsc hello.ts
-```
 
 ## Third Party Tools
 

@@ -1,21 +1,26 @@
 # Typescript - tsconfig Fields List
 
-* [strictNullChecks](#strictnullchecks)
-* [noImplicitAny](#noimplicitany)
-* [downlevelIteration](#downleveliteration)
-* [strict](#strict)
+* [baseUrl](#baseurl)
+* [paths](#paths)
+* [compilerOptions](#compileroptions)
+  * [strictNullChecks](#strictnullchecks)
+  * [noImplicitAny](#noimplicitany)
+  * [downlevelIteration](#downleveliteration)
+  * [strict](#strict)
 
 ## baseUrl
 
 ## paths
 
-## strictNullChecks
+## compilerOptions
+
+### strictNullChecks
 
 - default: false
   - but can lead to unexpected errors at runtime
 - if true: you **must guarantee** that variable is not null or undefined
 
-## noImplicitAny
+### noImplicitAny
 
 - default: false
 - if true
@@ -29,7 +34,7 @@ function fn(s) {
 fn(42);
 ```
 
-## downlevelIteration
+### downlevelIteration
 
 > downlevel is a TypeScript term for compiling to a lower version of JavaScript than the version of JavaScript
 
@@ -37,7 +42,7 @@ fn(42);
 - ECMAScript 6(ES6/ECAMScript 2015) added several new iteration primitives
   - [for...of]()
   - argument spreading(`fn(..args)`)
-  - [Symbol.iterator](javascript-symbol.md#)
+  - [Symbol.iterator](javascript-symbol.md)
 - `downlevelIteration` allows for these new iteration primitives to be used more accurately in es5
 - default false, for maintain compatibility with older javascript
 
@@ -93,7 +98,7 @@ try {
 }
 ```
 
-## strict
+### strict
 
 ```json
 {
@@ -104,4 +109,8 @@ try {
 ```
 
 - `true`: all on
+
+### strictPropertyInitialization
+
+- can not be used without set `strictNullChecks`
 

@@ -10,5 +10,5 @@
 
 ## npm Command
 
-[npm command](nodejs-npm.md)
+[npm command](nodejs-npm-cli.md)
 

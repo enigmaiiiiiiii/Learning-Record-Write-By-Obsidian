@@ -28,8 +28,7 @@ console.log(sum(1, 2, 3)); // 6
 - `arguments` Object is an array-like object, not a real array
 
 2. `argument` Object has callee property
-
-3. in [non-strict]() mode, arguments Object 会同步参数的更新, rest parameters not
+3. in [non-strict]() mode, `arguments` Object will async update, rest parameters not
 
 ```js
 function func(a) {
@@ -40,3 +39,4 @@ func(10);  // 2
 ```
 
 4. arguments Object represent all arguments passed to a function, rest parameters only represent the rest arguments
+
