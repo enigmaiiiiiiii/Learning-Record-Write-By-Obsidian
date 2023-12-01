@@ -107,8 +107,9 @@ git reset --hard <commitid>
 
 for example forget to add a file to the last commit
 
-```bash
-git commit -m "commit with partial files" git add <forgotten_file>
+```sh
+git commit -m "commit with partial files" 
+git add forgotten_file
 git commit --amend
 ```
 

@@ -40,23 +40,31 @@ For example, `#define macro-name replacement-text`
 
 - includes `func.h` from the parent directory. `..` is used to go up to the parent directory before referencing.
 
-## \#define
+## #define
 
-- 语法
-  1. `#define 标识符 替换列表(optional)`
-  2. `#define 标识符(parametres) 替换列表(optional)`
-    - macro中参数数量与parameters中一致
-  3. `#define 标识符(parameters, ...) 替换列表(optional)`
-    - macro中参数数量不少于parameters的参数数量
-    - `...`表示可变参数
+Define a text replacement
+
+- ...
+
+Define a macro
+
+- Syntax:
+
+1. `#define identifier replace_list(optional)`
+2. `#define identifier(parameters) replace_list(optional)`
+3. `#define identifier(parameters, ...) replace_list(optional)`
+  - `...` represents a mutable number of parameters
     
-- 定义一个标识符定义为macro
 - 对象类(object-like) 以 *替换列表* 替换 *标识符*
 - 函数类(function-like) 标识符可以接受一定量的参数, 标识符后的`(`作为参数列表的起点，对应的`)`作为终点 
 - `__VA_OPT__`, `__VA_ARGS__`, 用在*替换列表*表示*标识符*中的`...`
 
+```c++
+#define PI 3.1415926
+```
 
 ## \#if
+
 - `#ifdef` 判断指令，当且仅当变量已定义是为真
 - `#ifndef` 判断指令，当且仅当变量未定义时为真
 

@@ -1,10 +1,16 @@
-# 清单文件
+# JAR File - Manifest File 
 
-- 除了类文件，图像和其它资源外，每个jar包含一个描述特征的清单文件
-- 文件名MANIFEST.MF
-- 清单分为多节，节与节之间用空行隔开
-  - 第一节成为主节，作用于整个JAR文件
-  - Name条目: 可以是文件，包，URL
+## What It Is
+
+
+- in addition to class files, images, and other resources, each JAR file contains a manifest file that describes its features.
+- The file is named `MANIFEST.MF`.
+
+## Sections of Manifest File
+
+- The manifest is divided into multiple sections, with blank lines separating the sections.
+  - The first section is called the main section, and it applies to the entire JAR file.
+  - The `Name` entry can be a file, package, or URL.
 
 ```
 Manifest-Version: 1.0
@@ -14,29 +20,27 @@ Name: Woozle.class
 Name: com/mycompany/mypkg/
 ```
 
-## 编辑清单
+## edit manifest file
 
-语法: 
+Syntax
 
 ```shell
 jar cfm JARFileName ManifestFileName
 ```
 
-创建一个包含清单的JAR文件:
+- Create a `MyArchive.jar` with a `manifest.mf`:
 
 ```shell
 jar cfm MyArchive.jar manifest.mf com/mycompany/mypkg/*.class
 ```
 
-更新清单, 将需要增加的内容放到文件manifest-additions.mf
+- update manifest file, put the content to file manifest-additions.mf
 
 ```shell
 jar ufm MyArchive.jar manifest-additions.mf
 ```
 
-***
-
-清单文件必须以换行符结束
+manifest file must end with a [new line](ascii-code.md)
 
 ```
 Manifest-Version: 1.0

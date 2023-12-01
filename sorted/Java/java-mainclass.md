@@ -1,4 +1,4 @@
-# main class
+# Java - Main Class
 
 ```java
 package com.example;
@@ -10,5 +10,5 @@ public class App{
 }
 ```
 
-- main class的完全限定名: `com.example.App`
+- fully qualified name of the main class: `com.example.App` 
 

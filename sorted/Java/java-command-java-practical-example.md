@@ -1,4 +1,4 @@
-# How to use
+# Java Command Line - java practical usage
 
 ## mainclass
 

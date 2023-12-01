@@ -1,0 +1,3 @@
+@startuml foo
+help skinparams
+@enduml

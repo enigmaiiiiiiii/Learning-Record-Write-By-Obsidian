@@ -6,3 +6,5 @@
 
 ## MIT
 
+- [GPL](#gpl)-compatible
+

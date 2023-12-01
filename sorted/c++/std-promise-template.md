@@ -8,7 +8,7 @@ template< class R > class promise<R&>;
 template<>          class promise<void>;
 ```
   
-## 构造函数
+## Constructor
 
 ```c++
 promise();
@@ -21,16 +21,16 @@ promise( promise&& other ) noexcept;  // 移动构造
 promise( const promise& other ) = delete;  // 拷贝构造不可用
 ```
 
-- 参数
-  - alloc: 分配器
-  - other: 其他的std::promise对象
+- parameters
+  - alloc: allocator
+  - other: other std::promise object
 
 ## get_value()   
 
 ```c++
 std::future<T> get_future()
 ```
-- 无参数， 返回与`*this`共享状态的[future](std-future类模板.md)  
+- no parameter， 返回与`*this`共享状态的[future](std-future-template.md)  
 
 ## set_value()
 

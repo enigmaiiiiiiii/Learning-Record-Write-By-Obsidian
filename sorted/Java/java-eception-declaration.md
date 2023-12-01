@@ -1,26 +1,44 @@
-# 声明异常方法
+# Java - Exception Declaration
 
-> 遇到无法处理的情况, 方法不仅要返回值, 还要告诉编译器会可能发生什么错误, 即抛出异常
+> In cases where an **unprocessable situation** is encountered, a method not only needs to return a value but also needs to inform the compiler about what errors might occur, that is, to throw exceptions.
 
-- 方法必须声明所有可能抛出的[checked异常](java-checked-and-unchecked-exception.md)
-- 子类覆盖超类方法时, 抛出的异常种类不能更通用
-- 关键字**throws**
-- 多个异常用`,`隔开
+## Declare Exceptions
+
+
 
 ```java
 public void FileInputStream(String name) throws FileNotFoundException
 {
     // ...
+    throw new FileNotFoundException();
 }
 ```
 
-## 在方法体中抛出异常
+- with keyword `throws` on the method declaration to declare that the method may throw an exception
+- with keyword `throw` to throw an exception, `throw e`
+- throw statement will throw the Exception object from the try block to the catch block
+- Methods **MUST** declare all possible [checked exceptions](java-checked-and-unchecked-exception.md).
+- Multiple exceptions are separated by commas `,`
 
-> throw new Exception();
+When a subclass overrides a method of its superclass
 
-- 选择合适的异常类
-- 创建这个类的一个对象`EOFException e`
-- 将对象抛出`throw e`
-- 关键字**throw**
+- the types of exceptions thrown CANNOT be more general
 
-> throw语句抛出: 将Exception对象从try block传递到catch block
+```java
+public class Foo
+{
+    public void method() throws IOException
+    {
+        // ...
+    }
+}
+
+public class SubFoo extends Foo
+{
+    @Override
+    public void method() throws Exception  // compile error
+    {
+        // ...
+    }
+}
+```

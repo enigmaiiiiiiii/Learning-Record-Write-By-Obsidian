@@ -4,12 +4,11 @@
 * [Type Diagram](#type-diagram)
 * [———▷ Inheritance](#———▷-inheritance)
 * [---▷ Implementation](#---▷-implementation)
-* [󰁔 Arrow Solid Line: Association](#󰁔-arrow-solid-line:-association)
-* [line without arrow](#line-without-arrow)
-* [dependency](#dependency)
-* [󱀝 Clear Diamond (Aggregation)](#󱀝-clear-diamond-(aggregation))
-* [󰣏 Black Diamond (Composition)](#󰣏-black-diamond-(composition))
-* [Multiplicity.](#multiplicity.)
+* [——󰁔 One Way Association](#——󰁔-one-way-association)
+* [——— Association](#———-association)
+* [———󱀝 Aggregation](#———󱀝-aggregation)
+* [———󰣏 Composition](#———󰣏-composition)
+* [.. Multiplicity](#..-multiplicity)
 * [cheat sheet](#cheat-sheet)
 
 ## What it is
@@ -21,13 +20,12 @@
 
 [Type Diagram](uml-type-diagram.md)
 
-
 ## ———▷ Inheritance
 
 ———▷: **Extends Class**
 
-- subclass inherits from the parent class.
-- subclass points to the parent class.
+- sub class inherits from the parent class.
+- sub class points to the parent class.
 
 ## ---▷ Implementation
 
@@ -36,14 +34,13 @@
 - subclass implements an interface.
 - subclass points to the interface.
 
-## 󰁔 Arrow Solid Line: Association
+## ——󰁔 One Way Association
 
 line with `>` arrow
 
 - represents an association between classes.
 - The line could have text that described the association.
-- if A 󰁔 B, then A has an instance of B
-- not **visa versa**
+- if A 󰁔 B, then A has an instance of B, but B can exist without A
 
 ```js
 class A {
@@ -56,9 +53,11 @@ class B {
 
 > for example: A line between User and Food could have the text "eats"
 
-## line without arrow
+## ——— Association
 
 - represents the dependency exist in each other
+
+the code maybe looks likes that
 
 ```ts
 class A {
@@ -69,11 +68,7 @@ class B {
 }
 ```
 
-## dependency
-
-- --->
-
-## 󱀝 Clear Diamond (Aggregation)
+## ———󱀝 Aggregation
 
 - Represents the "has a" relationship.
 - If diamond 󱀝 at A end, then A has an instance of B
@@ -89,7 +84,7 @@ class A {
 class B {}
 ```
 
-## 󰣏 Black Diamond (Composition)
+## ———󰣏 Composition
 
 - If diamond at A side, then typically B will **new** in A's constructor
 - B can't exist without A
@@ -116,7 +111,7 @@ class B {}
         marker-end="url(#black-diamond)"/>
 </svg>
 
-## Multiplicity.
+## .. Multiplicity
 
 You can set number values to relationships using syntax such as 1..\* (one to many).
 

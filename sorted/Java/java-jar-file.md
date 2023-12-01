@@ -1,49 +1,64 @@
-# Jar文件
+# Java - Jar File
 
-- 将大量文件打包成单独文件
-- jar文件时压缩的，使用zip压缩格式
-- 在许多情况下，JAR文件不仅仅是java类文件和/或资源的简单归档。
-- META-INF目录(如果存在的话)用于存储包和扩展配置数据，包括安全性、版本控制、扩展和服务。
+## What's For
 
-[META-INF目录](java-jar-file-meta-inf-directory.md)
+- Pack a large number of files into a single file.
 
-## 创建JAR文件
+## Features
+
+- JAR files are compressed and use the ZIP compression format.
+- In most cases, a JAR file is not just a simple archive of Java class files and/or resources.
+- The [META-INF directory](#meta-inf-directory) (if exist) is used to store 
+  - package 
+  - extension configuration data
+  - including security
+  - version control
+  - extensions and services
+  - ...
+
+## META-INF Directory
+
+[META-INF Directory](java-jar-file-meta-inf-directory.md)
+
+## Create JAR File
+
+Basic Syntax
 
 ```shell
 jar cvf JARFileName File1 File2
 ```
 
-- `-c`:  jar命令模式， 创建新档案
-- `-v`:  向标准输出打印详细信息
-- `-f`:  指定档案名称JARFileName.jar
+- `-c`:  jar command mode， create new archive
+- `-v`:  print verbose output on standard output
+- `-f`:  specify the JAR file name as `JARFileName.jar`
 
-创建包含清单的JAR文件:
+Create Jar File with Specified Manifest File
 
-```shell
+```sh
 jar cfm MyArchive.jar manifest.mf com/mycompany/mypkg/*.class
 ```
 
-## 可执行JAR文件
+## Run JAR File
 
-1. 使用`e`选项指定程序入口点
+1. Run jar file with default main class specified in [manifest file](java-jar-manifest-file.md)
 
-```shell
-jar cvfe MyProgram.jar com.mycompany.mypkg.MainAppClass files to add
-```
+- execute `.jar` file directly
 
-2. 在[清单文件](java-jar-manifest-file.md)中指定应用程序的主类
-
-- 执行`.jar`文件
-
-```shell
+```sh
 java -jar MyProgram.jar
 ```
 
-## 密封
+2. Use option `e` to specify the application's entry point
 
-- 保证不会有其他类加入其中
-- 在[清单文件](java-jar-manifest-file.md)主节下加入`Sealed: true`, 表示JAR文件全局密封
-- 改变全局设定, 在清单文件单独节加`Sealed: true/false` 
+```sh
+jar cvfe MyProgram.jar com.mycompany.mypkg.MainAppClass files_to_add
+```
+
+## Sealed JAR File
+
+- ensure that no other classes can be added to it
+- Add `Sealed: true` to the [main section](java-jar-manifest-file.md#sections-of-manifest-file) of the manifest file, representing the JAR file is globally sealed
+- And `Sealed: true/false` to the individual sections to override the global setting
 
 ```
 Name: com/mycompany/util/
@@ -53,9 +68,9 @@ Name: com/mycompany/misc/
 Sealed: false
 ```
 
-- 通过将带有`Sealed`行的清单文件通过[jar](java-command-jar.md)命令封装成JAR文件
+- package `manifest.mf` include `Sealed` line to `MyArchive.jar`
 
 ```shell
-jar cvfm MyArchive.jar manifest.mf files to add
+jar cvfm MyArchive.jar manifest.mf files_to_add
 ```
 

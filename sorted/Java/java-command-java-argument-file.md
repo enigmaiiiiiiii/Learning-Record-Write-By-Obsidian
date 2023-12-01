@@ -1,4 +1,6 @@
-# 参数文件
+# Java Command Line Tools - Argument File Of Command Java
+
+## What It Is
 
 - 通过指定参数文件来简化java命令，
 - 使用@符号前缀来标识包含java选项和类名的参数文件
