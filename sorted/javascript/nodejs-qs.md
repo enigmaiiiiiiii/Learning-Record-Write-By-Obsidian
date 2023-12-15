@@ -1,7 +1,8 @@
-# qs
+# NodeJS Library - qs
 
-- 将javascript对象序列化为[URL查询字符串](../network/http-url-and-uri.md)
+- serialize javascript object to [URL query string](computer-network-url.md)
 
 ```javascript
 qs.stringify(obj, [sep], [eq], [options])
 ```
+

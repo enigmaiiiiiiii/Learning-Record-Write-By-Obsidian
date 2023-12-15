@@ -10,11 +10,15 @@
 
 Options
 
-- `-l` list processes in long format
-- `-A` list all processes
-- `-a` list processes that are not related to the current terminal
-- `-w` wide output
-- `-u` list processes related to the current user
+- `-l`: list processes in long format
+- `-A`: list all processes
+- `-e`: Identical to `-A`
+- `-a`: list processes that are not related to the current terminal
+- `-w`: wide output
+- `-u`: list processes related to the current user
+- `-x`: list processes that are not related to the current terminal
+- `-f`: display uid, pid, ppid, CPU usage, process start time, controlling tty, elapsed CPU usage
+- `-o`: specify output field
 
 output field
 
@@ -62,10 +66,26 @@ output field
 
 ## Practical Use
 
-`ps -aux`
+list all processes related to all users
 
-- list processes related to all users
+```sh
+ps -aux
+```
 
-`ps -ef| grep dhcp`
+list processes that contain dhcp
 
-- list processes that contain dhcp
+```sh
+ps -ef | grep dhcp
+```
+
+list most recent 10 process
+
+```sh
+ps -eo pid,lstart,command | sort -r -k 4,5 | head -n 10
+```
+
+sort all process by parent process
+
+```sh
+ps -eo pid,ppid,cmd | sort -k 2
+```

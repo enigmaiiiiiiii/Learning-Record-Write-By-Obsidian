@@ -6,8 +6,8 @@
 * [---▷ Implementation](#---▷-implementation)
 * [——󰁔 One Way Association](#——󰁔-one-way-association)
 * [——— Association](#———-association)
-* [———󱀝 Aggregation](#———󱀝-aggregation)
-* [———󰣏 Composition](#———󰣏-composition)
+* [󱀝——— Aggregation](#󱀝———-aggregation)
+* [󰣏——— Composition](#󰣏———-composition)
 * [.. Multiplicity](#..-multiplicity)
 * [cheat sheet](#cheat-sheet)
 
@@ -68,10 +68,10 @@ class B {
 }
 ```
 
-## ———󱀝 Aggregation
+## 󱀝——— Aggregation
 
 - Represents the "has a" relationship.
-- If diamond 󱀝 at A end, then A has an instance of B
+- If A 󱀝——— B, then A has instance of B
 - And A cannot create without B
 
 ```ts
@@ -84,18 +84,17 @@ class A {
 class B {}
 ```
 
-## ———󰣏 Composition
+## 󰣏——— Composition
 
-- If diamond at A side, then typically B will **new** in A's constructor
-- B can't exist without A
+- If A 󰣏——— B, then typically B will by **"new"** in A's constructor
+- Special case of aggregation
+- B will be removed when A is removed
+- B can't exist without A in logic, which means an instance of B is meaningless without A
 - B can't reference outside of A
 
 ```ts
 class A {
-  private b: B;
-  constructor() {
-    this.b = new B();
-  }
+  private b: B = new B();
 }
 class B {}
 ```

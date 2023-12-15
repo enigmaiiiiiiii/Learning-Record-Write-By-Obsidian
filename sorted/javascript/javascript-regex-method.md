@@ -13,10 +13,12 @@ while ((match = regex1.exec(str1)) !== null) {
 
 Return Value
 
-- index: matched content in [regex group](/sorted/regex/regex.md#group)
+- index: matched content in [regex group](regex.md#group)
   - 0: whole matched content
   - 1: first group
   - ...
 - input:
 - groups:
 - indices
+
+## test()

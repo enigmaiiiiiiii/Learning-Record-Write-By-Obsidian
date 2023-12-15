@@ -1,10 +1,14 @@
-# namespace
+# TypeScript - Namespace
 
-- 避免命名冲突
-- 可以理解为module内部的module
-- [similar concepts in Java](java-package.md)
+## What It Is
 
-mymath.ts
+- can be treated as a module inside a module
+
+## What's For
+
+- to avoid naming conflict
+
+## Define A Namespace
 
 ```ts
 namespace MyMath {
@@ -18,16 +22,16 @@ namespace MyMath {
       return this.width * this.length;
     }
   }
+
+  const EXP = 2.718  // invisible for outside namespace
 }
 ```
 
-```ts
-import {calculateCircumference} from './math/circle';
-```
+- if you want objects in a namespace to be visible outside the namespace, you need `export` them
 
 ## alias
 
-- import id = x.y.z; id可以理解为x.y.z的别名
+- `import id = x.y.z`; id is the alias of x.y.z
 
 ```ts
 namespace Shapes {

@@ -143,3 +143,13 @@ let Rectangle = class {
     }
 }
 ```
+
+## Anonymouse Class
+
+```js
+const p = new class {
+  locate() {
+    console.log('here is the location')
+  }
+}
+```

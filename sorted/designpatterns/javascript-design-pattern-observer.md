@@ -1,9 +1,11 @@
 # Javascript Design Pattern - Observer
 
 * [Feature](#feature)
+* [VS Mediator](#vs-mediator)
 * [Components For This Pattern](#components-for-this-pattern)
 * [Publisher](#publisher)
-* [Subscriber](#subscriber)
+* [Subscriber Interface](#subscriber-interface)
+* [Concrete Subscriber](#concrete-subscriber)
 * [Code](#code)
 
 ## Feature
@@ -28,15 +30,15 @@ VS [Mediator](javascript-design-pattern-mediator.md#vs-observer)
 
 ## Components For This Pattern
 
-- [publisher](#publisher), also called subject, event emitter, event manager
-- [subscriber interface](#subscriber-interface) also observer, listener
-- [concrete subscriber](#subscriber)
+- [publisher](#publisher), also called subject, event **emitter**, event **manager**
+- [subscriber interface](#subscriber-interface), also **observer**, **listener**
+- [concrete subscriber](#concrete-subscriber)
 
 ## Publisher
 
 - have a method like `notify()` to notify all [subscriber](#subscriber-interface)
   - execute when publisher state changes
-  - this method should call its `update()` method for [each subscriber](#subscriber)
+  - this method should call its `update()` method for [each subscriber](#concrete-subscriber)
 - hold a **list** of [subscriber](#subscriber-interface) in the publisher class
 - provide a way to add or remove observer
 - have method to manage subscribers

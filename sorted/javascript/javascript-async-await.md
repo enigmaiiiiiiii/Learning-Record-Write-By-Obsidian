@@ -1,24 +1,24 @@
-# Async/Await
+# JavaScript - Async/Await
 
 - [await](#await)
 - [async function](#async-function)
 
 ## await
 
-`const a = await expression`: expression: 一个promise对象
+`const a = await expression`: where `expression` is a promise object
 
-- use to unwrap(拆开) a promise对象
-- await **只能用于** async function中
-- await pauses the [async function](#async-function)) until the promise is [settled](javascript-promise.md#state-of-promise)
+- use to unwrap a promise Object
+- `await` **only can be used in** [async function](#async-function)
+- await pauses the [async function](#async-function)) until the promise is [settled](javascript-promise-foundation.md#states-of-promise)
 - await make [async function](#async-function) look like synchronous
-- purpose of await/async is to简化了promise的使用
+- purpose of await/async is to simplify the using of promise
 
-## async function
+## Async Function
 
-- 一个可以使用await的函数
-- 包含0个或多个await表达式
+- A function that can contain await expression inside its body
+- contains 0 or more await expression
 
-**从async函数的第一行code到第一个await表达式之间的代码是同步执行的**
+Code between the first line of the async function until the first await expression, the code is executed synchronously.
 
 ```js
 function resolveAfter2Seconds(x) {
@@ -48,27 +48,28 @@ console.log('after calling');
   - 2. after calling
   - 3. fulfilled a promise
 
-**always return a promise**
+**Always return a promise**
 
-- 不包含await的async funciton是同步执行的
+- async function without any await expression is synchronously execute
+- non-promise return value will be wrapped into a promise
 
 ```js
 async function foo() {
     return 1;
 }
-// 等价函数
+// equivalent function
 function foo() {
     return Promise.resolve(1);
 }
 ```
 
-- 异步执行的`async function`:
+- Asynchronously executed async function
 
 ```js
 async function foo() {
     await 1;
 }
-// 等价函数
+// equivalent function
 async function foo() {
     return Promise.resolve(1).then(() => undefined);
 }

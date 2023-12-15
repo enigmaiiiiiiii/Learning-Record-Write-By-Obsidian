@@ -1,13 +1,16 @@
-# JavaScript Operator
+# JavaScript - Operator
 
+* [Logic Operator](#logic-operator)
 * [Math Operator](#math-operator)
 * [Compare Operator](#compare-operator)
 * [delete](#delete)
-* [bit operator](#bit-operator)
+* [bit operator](#bits-operator)
+* [typeof](#typeof)
+* [in](#in)
 
 ## Logic Operator
 
-- `&&`, `||`, `!`
+Logic Operator is about `&&`, `||`, `!`
 
 ```js
 function createArray(array) {
@@ -20,6 +23,24 @@ expression `array || (array = new Array(5))` means
 
 - if `array` is [falsy](), then `array = new Array(5)` will be executed
 - else do nothing
+
+`!!` is not a special operator, it is just `!` twice
+
+- `!!` will convert any value to boolean
+
+```js
+console.log(!!null)       // false
+console.log(!!undefined)  // false
+console.log(!!0)          // false
+console.log(!!"abc")      // true
+```
+
+> similar to [not not](lua-operator.md#logical-operator) in lua
+
+`??` operator
+
+- if left-hand value is `null` or `undefined`, then return right-hand value
+- else keeps left-hand what it is
 
 ## Math Operator
 
@@ -78,12 +99,13 @@ delete Employee.firstname
 console.log(Employee.firstname) // undefined
 ```
 
-## bit operator
+## Bits Operator
 
 `<<`: left shift
 
 - excess bits are discarded
-- zero bits are added to the right
+- for positive number, 0 bits are added to the right 
+- for negative number, 1 bits are added to the right
 
 ```js
 const a = 5  // 00000000000000000000000000000101
@@ -105,6 +127,10 @@ console.log(b)  // 25
 ```
 
 - equal to `a / 2^2`
+
+`>>>` unsigned right shift
+
+- always add zero bits to the left
 
 ## typeof
 
@@ -132,4 +158,31 @@ typeof 3 // "number"
 - return `true` if `object` has `prop` property or `prop` is on [prototype chain](javascript-prototype.md#prototype-chain)
 
 > check direct property use [`Object.hasOwn()`](javascript-global-object.md#objecthasown) instead
+
+## Optional Chaining(?.)
+
+syntax
+
+```js
+obj.val?.prop
+obj.val?.[expr]
+obj.func?.(args)
+```
+
+on property accessing
+
+```js
+const value = obj.first?.second 
+```
+
+- javascript will check `obj.first` before access to `obj.first.second`
+
+on function calls
+
+```js
+const result = obj.Foo?.()
+```
+
+- `undefined` will be return if method `Foo` does not exist, instead of throwing an exception
+
 

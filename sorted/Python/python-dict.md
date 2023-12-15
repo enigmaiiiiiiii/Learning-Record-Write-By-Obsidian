@@ -1,6 +1,6 @@
 # Python Built-in Type - dict
 
-## Create dict
+## Create Dict
 
 ```py
 a = dict(one=1, two=2, three=3)

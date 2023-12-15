@@ -46,13 +46,15 @@ falsy
 - `undefined`: the keyword
 - `NaN`: not a number
 
+> empty array is not falsy
+
 truthy
 
 - except falsy values
 
 ## null
 
-- **intentional** absence of any [object] value
+- **intentional** absence of any [object](javascript-object.md) value
 
 ## undifined
 

@@ -72,8 +72,8 @@ Elements Default Treated As Class Elements
 
 - [Extension](uml.md#---▷-implementation): `<|--`, `<|-[plain]-`
 - [Inheritance](uml.md#———▷-inheritance): `<|..`, `<|-[dashed]-`
-- [Composition](uml.md#———󰣏-composition): `*--`
-- [Aggregation](uml.md#———󱀝-aggregation): `o--`
+- [Composition](uml.md#󰣏———-composition): `*--`
+- [Aggregation](uml.md#󱀝———-aggregation): `o--`
 - [Association](uml.md#——-association): `--`, `--[plain]--`
 - [One Way Association](uml.md#——󰁔-one-way-association): `<--`
 

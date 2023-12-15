@@ -51,6 +51,8 @@ there are some common concepts in design patterns
 
 [Observer](javascript-design-pattern-observer.md)
 
+[Event-Listener](javascript-design-pattern-event-listener.md)
+
 [State](javascript-design-pattern-state.md)
 
 [Strategy](javascript-design-pattern-strategy.md)

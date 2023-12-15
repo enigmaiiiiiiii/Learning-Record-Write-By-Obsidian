@@ -42,6 +42,10 @@
 
 [Pull Request](github-pull-request.md)
 
+## Git Customization
+
+[Hooks](git-hooks.md)
+
 ## Blog
 
 [Practical Command](git-practical-command.md)
@@ -62,5 +66,5 @@
 
 [Git Internals](git-internals.md)
 
-## 
+
 

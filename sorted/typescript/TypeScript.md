@@ -24,6 +24,8 @@
 
 [.d.ts file](typescript-d-ts-file.md)
 
+[namespace](typescript-namespace.md)
+
 [JSDoc Support]()
 
 [compatible problem](typescript-compatible-problem.md)

@@ -1,3 +1,11 @@
 @startuml foo
-help skinparams
+class Object {
+    Name
+}
+class Point {
+    + x
+    - y
+}
+
+Object -- Point
 @enduml

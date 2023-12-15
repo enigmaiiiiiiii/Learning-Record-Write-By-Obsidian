@@ -1,12 +1,14 @@
 # Typescript - Features
 
-- [key of typescript: type](#key-of-typescript-type)
-- [interface](#interface)
-- [function](#function)
-- [class](#class)
-- [namespace](#namespace)
-- [module](#module)
-- [mark variable, parameter, properties](#mark-variable-parameter-properties)
+* [Key Of Typescript: Type](#key-of-typescript:-type)
+* [Object Types](#object-types)
+* [Interface](#interface)
+* [function](#function)
+* [class](#class)
+* [namespace](#namespace)
+* [module](#module)
+* [mark variable, parameter, properties](#mark-variable,-parameter,-properties)
+* [Keyword](#keyword)
 
 ## Key Of Typescript: Type
 

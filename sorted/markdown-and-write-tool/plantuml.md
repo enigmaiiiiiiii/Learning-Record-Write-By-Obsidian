@@ -1,5 +1,25 @@
 # PlantUML
 
+## Generate Image
+
+default to PNG
+
+```sh
+java -jar plantuml.jar foo.txt
+```
+
+SVG
+
+```sh
+java -jar plantuml.jar -tsvg foo.txt
+```
+
+Processing Whole Directory
+
+```sh
+java -jar plantuml.jar "path/to/directory"
+```
+
 ## Command
 
 [Command](plantuml-command.md)

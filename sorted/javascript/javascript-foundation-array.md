@@ -35,7 +35,6 @@
 
 - difference with `map()` which will return value, `forEach()` return **undefined**
 
-
 `find(callbackFn)`
 
 - `callbackFn`: A function should return a boolean

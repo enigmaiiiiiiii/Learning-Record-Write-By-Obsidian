@@ -4,8 +4,6 @@
 
 [property](javascript-property.md)
 
-[method](javascript-method.md)
-
 [this](/sorted/javascript/javascript-this.md)
 
 [prototype](javascript-prototype.md)

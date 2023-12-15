@@ -6,12 +6,18 @@
 
 - fs: file system
 
-rename(oldPath, newPath, callback)
+`rename(oldPath, newPath, callback)`
 
-- oldPath
-- newPath
-- callback: (err) => {}
-  - callback have one argument: **error**
+- `oldPath`
+- `newPath`
+- `callback`: (err) => {}
+  - `callback` have one argument: **error**
+
+`readFile(path[, options], callback)`
+
+- `callback`: is a function like `(err, data) => {}`, means do something with `data` when `readFile()` is done
+  - `err`: error object
+  - `data`: data read from file
 
 ## path
 
@@ -27,13 +33,13 @@ path.join('/foo', 'bar', 'baz/asdf', 'quux', '..')
 
 ### static method
 
-`Buffer.from(str, encoding)`: 将字符串转换为buffer
+`Buffer.from(str, encoding)`: convert string to buffer
 
-- str: 被转换的字符串
-- encoding: 编码方式, 默认为utf8
-  - utf8
-  - utf16le
-  - latin1
+- `str`: string to be convert
+- `encoding`: , default `utf8`
+  - `utf8`
+  - `utf16le`
+  - `latin1`
 
 ```js
 console.log(Buffer.from('hello world', 'utf8'));
@@ -44,13 +50,16 @@ console.log(Buffer.from('hello world', 'utf8'));
 
 `buf.toString(encoding[, start[, end]]);`
 
-使用encoding指定的编码方式将**buffer转换为字符串**
+using encode method specified by `encoding` convert `buf` to string 
 
-- encoding: 编码方式, 默认为utf8
+- `encoding`: encoding method, default utf8, other available value
   - base64
   - base64url
   - hex
-- start: 开始位置, 默认为0
-- end: 结束位置, 默认为buffer.length
+- `start`: start position, default 0
+- `end`: end position, default `buffer.length`
 
+## Util
+
+[util](nodejs-util.md)
 

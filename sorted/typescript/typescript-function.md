@@ -1,17 +1,19 @@
 # TypeScript - Function
 
-* [function type expressions](#function-type-expressions)
+* [Function Type Expressions](#function-type-expressions)
 * [Optional Parameters](#optional-parameters)
-* [default parameters](#default-parameters)
+* [Default parameters](#default-parameters)
 * [Function Overload](#function-overload)
 * [Generic Functions](#generic-functions)
 * [Callable Signatures](#callable-signatures)
 * [Construct Signatures](#construct-signatures)
 * [other type working with function](#other-type-working-with-function)
+* [Rest Parameters](#rest-parameters)
+* [Rest Arguments](#rest-arguments)
 
-## function type expressions
+## Function Type Expressions
 
-to describe a function **type**
+To describe a function **type**
 
 ```ts
 function greet(fn: (a: string) => void) {
@@ -131,11 +133,19 @@ function longest<Type extends {length: number}>(a: Type, b: Type) {
 
 - **type argument** is constrainted to must have a `.length` property of type `number`
 
+Generic Arrow Function
+
+```ts
+const foo = <T>(data: T) => {
+    // ...
+}
+```
+
 ## Callable Signatures
 
-1. an interface with call signatures
-2. an instance has this this interface as type annotation
-3. the instance can be called as a function
+- describe an something **callable with properties**
+
+> interface or type with callable signatures is **not for being implemented**
 
 ```ts
 type OneCallable = {
@@ -146,6 +156,9 @@ function doSomething(fn: OneCallable) {
   console.log(fn.x + " returned " + fn(6));
 }
 ```
+
+> callable signature syntax is slightly different from [function type expression](#function-type-expressions), no => between parameter list and return type
+
 ## Construct Signatures
 
 1. an interface with construct signatures
@@ -192,7 +205,7 @@ Function
 
 ## Rest Parameters
 
-with **rest parameters** defining a function that take a **variable number** of arguments
+with **rest parameters** defining a function that take a **mutable number** of arguments
 
 ```ts
 function multiply(n: number, ...m: number[]) {

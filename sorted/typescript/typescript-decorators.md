@@ -4,6 +4,7 @@
 
 * [What Is Decorator](#what-is-decorator)
 * [Define Decorator](#define-decorator)
+* [A Decorator Can be Used On Everything](#a-decorator-can-be-used-on-everything)
 * [Decorator Factories](#decorator-factories)
 * [How To Use Decorator](#how-to-use-decorator)
 * [Decorator Evaluation(Execute) Order](#decorator-evaluation(execute)-order)
@@ -20,8 +21,6 @@
 - A special **function** that can be attached to class declaration, method, accessor, property, parameter
 - Called at runtime
 
-~~Only For Class?~~
-
 ## Define Decorator
 
 For example
@@ -29,6 +28,26 @@ For example
 ```ts
 function sealed(target) {
     // do something with 'target' ...
+}
+```
+
+## A Decorator Can be Used On Everything
+
+```ts
+function foo(...args: any[]) {
+    // do something
+}
+
+class Dog {
+    constructor(
+        @foo public name: string,
+    ) {}
+    )
+
+    @foo
+    public sayHello() {
+        // do something
+    }
 }
 ```
 
@@ -155,8 +174,12 @@ return
 function type of method decorator
 
 ```ts
-type D = <T>(target: Object, propertyKey: string | symbol, descriptor: TypedPropertyDescriptor<Function>) => TypedPropertyDescriptor<Function> | void;
+type D = <T>(target: Object, propertyKey: string | symbol, descriptor: TypedPropertyDescriptor<T>) => TypedPropertyDescriptor<T> | void;
 ```
+
+type parameters: `T`
+
+- corresponding to the `descriptor.value` type
 
 parameters:
 

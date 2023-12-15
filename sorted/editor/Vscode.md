@@ -48,3 +48,5 @@ code -n path
 
 ## source code
 
+[vscode source code architecture](vscode-source-code-architecture.md)
+

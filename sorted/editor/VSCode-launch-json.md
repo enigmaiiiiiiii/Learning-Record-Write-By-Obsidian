@@ -1,5 +1,10 @@
 # vscode launch.json
 
+* [location](#location)
+* [take a look](#take-a-look)
+* [launch.json Configurations Field Attributes](#launch.json-configurations-field-attributes)
+* [Debug Mode](#debug-mode)
+
 ## location
 
 `${workspace}/.vscode/launch.json`

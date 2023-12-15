@@ -1,21 +1,21 @@
-# Something About Promise
+# Javascript - Promise Foundation
 
-- [State Of Promise](#state-of-promise)
-- [Create Promise](#create-promise)
-- [await a promise](#await-a-promise)
-- [Static Method](#static-method)
-- [Promise Instance method](#promise-instance-method)
-- [chained promise](#chained-promise)
-- [Promise reject event](#promise-reject-event)
+* [States Of Promise](#states-of-promise)
+* [Create Promise](#create-promise)
+* [Await a promise](#await-a-promise)
+* [Static Method](#static-method)
+* [Promise Instance method](#promise-instance-method)
+* [chained promise](#chained-promise)
+* [Promise reject event](#promise-reject-event)
 
-## State Of Promise
+## States Of Promise
 
-- promise对象有三种状态: pending, fulfilled, rejected
-  - pending: 初始状态, 待定状态
-  - fulfilled: 意味着操作成功完成
-  - rejected: 意味着操作失败
-- promise的`fulfilled`或`rejected`状态都是`settled`状态
-- promise必是三种状态之一
+- there are three states of promise object: pending, fulfilled, rejected
+  - `pending`: initial state, pending state
+  - `fulfilled`: represent operation completed successfully
+  - `rejected`: represent operation failed
+- `fulfilled` and `rejected` are both `settled` state
+- promise is always one of the three states
 
 **pending promise**
 
@@ -78,15 +78,15 @@ const promise = new Promise((resolve, reject) => {
 
 promise's return value
 
-- `resolve(value)`: 将value包装为**Promise对象**
-- `reject(reason)`: 将reason包装为**Promise对象**
-- `throw error`: 将error包装为的**Promise对象**
+- `resolve(value)`: wrapping `value` into a Promise Object
+- `reject(reason)`: wrapping `reason` into a Promise Object
+- `throw error`: wrapping `error` into a Promise Object
 
-## await a promise
+## Await a promise
 
 - **unwrap** a promise
 
-[await](JavaScript_Async_Await.md)
+[await](javascript-async-await.md)
 
 ```js
 let value = await promise;
@@ -97,21 +97,31 @@ value from `resolve(value)` or `reject(reason)`
 
 ## Static Method
 
-Promise.all()
+`Promise.all(iteratable_promise)`
 
-[Promise.resolve()](JavaScript_Promise_Resolve.md)
+- takes an iterable [promise]() as argument 
+- returns a single promise
+  - when all input promises fulfilled, return an array of fulfillment values
+  - when any of input promises rejected, return the first rejection reason
+
+`Promise.settled(iteratable_promise)`
+
+- takes an iterable [promise]() as argument 
+- returns a single promise with an array of object that describe the outcome of **each promise**
+
+[Promise.resolve()](javaScript-promise-resolve.md)
 
 Promise.reject()
 
 ## Promise Instance method
 
-[then()](JavaScript_Promise_Then.md)
+[then()](javascript-promise-then.md)
 
-[catch()](JavaScript_Promise_Catch.md)
+[catch()](javascript-promise-catch.md)
 
-[finally()](JavaScript_Promise_Finally.md)
+[finally()](javascript-promise-finally.md)
 
-- 通过`then(), catch(), finally()`方法, 可以将promise对象链接起来
+- with method `then(), catch(), finally()`, Promise Object can be chained together
 
 ## chained promise
 
@@ -122,7 +132,7 @@ myPromise
   .catch(err => console.log(err));
 ```
 
-[await]()/async的相似过程:
+similar process with [await/async](javascript-async-await.md)
 
 ```js
 async function foo() {
@@ -139,8 +149,8 @@ async function foo() {
 
 ## Promise reject event
 
-- unhandledrejection: 当一个Promise对象被拒绝, 且没有reject处理器时, 会触发unhandledrejection事件
-- rejectionhandled: 当一个Promise对象被拒绝, 且有reject处理器时, 会触发rejectionhandled事件
+- `unhandledrejection`: when a Promise object is rejected, and there is no reject handler, `unhandledrejection` event will be triggered
+- `rejectionhandled`: when a Promise object is rejected, and there is a reject handler, `rejectionhandled` event will be triggered
 
 ```js
 const myPromise = new Promise((resolve, reject) => {

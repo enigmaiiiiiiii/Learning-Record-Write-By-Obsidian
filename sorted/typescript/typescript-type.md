@@ -33,7 +33,7 @@ function parameter with type annotation
 
 ```ts
 function greet(name: string) {
-    console.log(`Hello, ${name.toUpperCase()}!!!`);
+    console.log(`Hello, ${name.toUpperCase()}!`);
 }
 ```
 
@@ -93,6 +93,14 @@ void
 
 unknown
 
+- like `any`, but it is not legal to access any property of an `unknown` type
+
+```ts
+function f1(a: unknown) {
+    a.b(); // error
+}
+```
+
 never
 
 - annotation function never return a value
@@ -109,7 +117,7 @@ function fn(x: string | number) {
 }
 ```
 
-any
+`any`
 
 - you don't want to **cause typechecking error** when use particular value
 - access to any property, property type is `any` too
@@ -229,26 +237,7 @@ function fb(p: Point) {
 
 ## Narrowing
 
-- Narrowing: according to [type check](#type-check), refine type more specific
-
-```ts
-function padLeft(padding: number | string, input: string) {
-  return "a".repeat(padding) + input;  // error
-}
-```
-
-- at above example, padding is a [union type](#union-types), can't use `repeat()` method directly
-
-```ts
-function padLeft(padding: number | string, input: string) {
-  if (typeof padding === "number") {
-    return "a".repeat(padding) + input;
-  }
-  return padding + input;
-}
-```
-
-- in if statement, ts according to type check, refine `padding` to string type
+[Narrowing](typescript-type-narrowing.md)
 
 ## Keyof Operator
 

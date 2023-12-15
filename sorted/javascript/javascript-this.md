@@ -117,20 +117,24 @@ const f = new Foo();
 
 ## globalThis
 
-globalThis在不同的环境引用不同的对象
+the reason why globalThis
 
-- in browser，`globalThis` is `window`
-- web worker中，`globalThis` is `self`
-- node中，globalThis is `globalThis` or `global`
+- Historically, accessing the **global `this`** has required different syntax
+  - in browser，global `this` is `window`
+  - in [web worker]()，global `this` is `self`
+  - in [nodejs](nodejs.md)，global `this` is `global`
 
-globalThis保证代码在不同的环境下都能正常运行
+`globalThis` provides a standard way of accessing the global `this` 
 
-可以为globalThis可以为其添加属性
+- guaranteed to work in window and non-window contexts 
+- the global scope `this` is `globalThis`
+
+Add Property to `globalThis`
 
 ```js
-if (typeof globalObject.Intl === 'undefined') {
+if (typeof globalThis.Intl === 'undefined') {
   // No Intl in this environment; define our own on the global scope
-  Object.defineProperty(globalObject, 'Intl', {
+  Object.defineProperty(globalThis, 'Intl', {
     value: {
       // Our Intl implementation
     },

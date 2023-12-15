@@ -1,4 +1,4 @@
-# ipc_perm结构
+# Linux System Programming - ipc_perm struct
 
 ```c
 struct ipc_perm {
@@ -12,4 +12,4 @@ struct ipc_perm {
 };
 ```
 
-- mode的最低9位设置为flag参数的最低9位
+- mode lowest nine bits set to lowest nine bits of flag

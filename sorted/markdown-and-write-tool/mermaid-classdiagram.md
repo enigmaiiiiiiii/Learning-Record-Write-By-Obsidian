@@ -24,13 +24,13 @@ class ClassName~GenericType~ {
 
 Relationship Arrow
 
-- `<|--`: [Inheritance](uml.md#———▷-inheritance)
-- `*--`:  [Composition](uml.md#󰣏-black-diamond-(composition))
-- `o--`:  [Aggregation](uml.md#󱀝-clear-diamond-(aggregation))
-- `-->`:  [Association](uml.md#󰁔-arrow-solid-line:-association)
-- `--`:   [Link (Solid)](uml.md#line-without-arrow)
-- `..>`:  Dependency
+- `--|>`: [Inheritance](uml.md#———▷-inheritance)
 - `..|>`: [Realization](uml.md#---▷-implementation)
+- `-->`:  [Association](uml.md#——󰁔-one-way-association)
+- `*--`:  [Composition](uml.md#󰣏———-composition))
+- `o--`:  [Aggregation](uml.md#󱀝———-aggregation)
+- `--`:  [Association](uml.md#———-association)
+- `..>`:  Dependency
 - `..`:   Link (Dashed)
 
 Label Relationship

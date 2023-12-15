@@ -30,6 +30,32 @@ class GoodGreeter {
 }
 ```
 
+signature of constructor function is like ` { new(...args: any[]): ClassName, ...}`
+
+- for example, if a function take a constructor function as parameter
+- the function can be defined like following
+
+```ts
+function registerAnimal(ctor: { new(name: string, speed: number): Animal } ) {
+    const aml = new ctor("hello", 10);
+    console.log(aml.name);
+}
+```
+
+- pass a class name to the function
+
+```ts
+class Animal {
+    name: string
+    speed: number
+    constructor(name: string, speed: number) {
+      this.name = name;
+      this.speed = speed;
+    }
+}
+registerAnimal(Animal);
+```
+
 ## Fields
 
 ```ts

@@ -9,7 +9,7 @@
 
 `npx tsc`
 
-- compile based on backwards look through fs for [tsconfig.json]
+- compile based on backwards look through fs for [tsconfig.json]()
 
 `npx tsc index.ts`
 

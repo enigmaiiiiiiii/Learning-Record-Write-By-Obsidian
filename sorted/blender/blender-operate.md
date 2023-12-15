@@ -18,12 +18,15 @@
 ## Edit Mode
 
 - g: grab
-- alt + s: flat translate select
-- crtl + l: select linked part
+- **alt + s**: flat translate select
+- crtl-l: select linked part
 - e: extrude
 - p: separate vertices to new object
 - n: 3D view properties
-
+- p: separate
+- crtl-+: select next vertices on the chain
+- h: hide
+- alt-h: unhide
 
 ## Moving
 

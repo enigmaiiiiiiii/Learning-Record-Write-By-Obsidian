@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'
+      mermaid.initialize({ startOnLoad: true })
+    </script>
+    <pre class="mermaid">
+      classDiagram
+      interface Map~K, V~ {
+      }
+      interface IConfiguration {
+
+      }
+      class ConfigurationModel {
+
+      }
+      class Configuration {
+
+      }
+      class ResourceMap~T~ {
+
+      }
+      ResourceMap --|> Map
+      IConfigurationModel o-- IOverrides
+      Configuration o-- ConfigurationModel
+      Configuration o-- ResourceMap
+      ConfigurationModel ..|> IConfigurationModel
+
+    </pre>
+  </body>
+</html>

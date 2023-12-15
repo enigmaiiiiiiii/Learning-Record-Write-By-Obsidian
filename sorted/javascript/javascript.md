@@ -70,7 +70,7 @@
 
 [WebGL](webgl.md)
 
-[AJAX](javascript-ajax.md)
+[AJAX]()
 
 ## IV
 
@@ -84,6 +84,8 @@
 
 [three.js](threejs.md)
 
+[phaser]()
+
 ## V: tool chain
 
 [webpack](/sorted/javascript/webpack.md)
@@ -92,9 +94,7 @@
 
 [Module And Code Bundling](javascript-module-and-code-bundling.md)
 
-[Vue + Element workflow](/sorted/javascript/vue-element-ui-workflow.md)
-
-[Babel](/sorted/javascript/babel.md)
+[Babel]()
 
 ## Technique
 

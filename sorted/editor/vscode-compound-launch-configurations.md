@@ -1,6 +1,6 @@
-# 复合启动
+# vscode - launch.json compound keyword
 
-launch.json 文件
+`launch.json` File
 
 ```json
 {
@@ -30,7 +30,7 @@ launch.json 文件
 }
 ```
 
-- configurations: 启动项配置
-- compounds: 复合启动配置
-  - configurations: 由几个启动项组成的数组
-- preLaunchTask: 在启动前执行的任务, 取值为[task.json](vscode-tasks.md)中的label
+- top level `configurations`: list of startup items
+- `compounds`: compound startup configurations
+  - `configurations`: list of `name` of startup items in top level `configurations`
+- `preLaunchTask`: task launched before startup, available values are label in [task.json](vscode-tasks.md)

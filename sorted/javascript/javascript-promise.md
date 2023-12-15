@@ -1,27 +1,24 @@
-# JavaScript Promise
+# JavaScript - Promise
 
-- [Foundation](#foundation)
-- [Introduction](#introduction)
-- [three common mistake](#three-common-mistake)
-- [Promise And Old Callback API](#promise-and-old-callback-api)
-- [when the callback in the promise will be called](#when-the-callback-in-the-promise-will-be-called)
-- [Thenables](#thenables)
-- [feature](#feature)
-- [Misunderstanding](#misunderstanding)
+* [What It Is](#what-it-is)
+* [Foundation](#foundation)
+* [Three Common Mistake](#three-common-mistake)
+* [Promise And Old Callback API](#promise-and-old-callback-api)
+* [when the callback in the promise will be called](#when-the-callback-in-the-promise-will-be-called)
+* [Thenables](#thenables)
+* [Feature](#features)
+* [Misunderstanding](#misunderstanding)
 
-## Foundation
-
-[Something About Promise](javascript-promise-foundation.md)
-
-## Introduction
+## What It Is
 
 - Promise is an Object representing the eventual completion or failure of an **asynchronous operation**
 
-Promise 是为了满足 这样的**异步**操作:
+Promise is for accomplish such **asynchronous** operation:
 
-一个普遍需求是: 有时需要多个异步操作一个接一个的执行, 而后一个操作需要前一个操作的结果, success or fail
+- A common need is to execute two or more asynchronous operations back to back, where each subsequent operation starting needs previous operation result, success or fail
+- without promise lead to the **callback pyramid of doom**
 
-without promise lead to the **callback pyramid of doom**
+this is a callback pyramid of doom
 
 ```js
 doSomething(function(result) {
@@ -32,7 +29,8 @@ doSomething(function(result) {
   }, failureCallback);
 }, failureCallback);
 ```
-use promise
+
+with promise
 
 ```js
 const promise = doSomething();
@@ -58,11 +56,15 @@ doSomething()
   .catch(failureCallback);
 ```
 
-## three common mistake
+## Foundation
+
+[Promise Foundation](javascript-promise-foundation.md)
+
+## Three Common Mistake
 
 1. forget return a result for next `then`
 
-- 如果下一个[then()](javascript-promise-then.md)的callback需要用到前一个Promise的结果, 必须要return
+- if next `callback` of [then()](javascript-promise-then.md) need result of previous promise, it is neccessary to return some result in previous promise
 
 > if next `then` callback use the result as a parameter
 
@@ -84,9 +86,9 @@ doSomething()
 ```js
 doSomething()
   .then(function(result) {
-    // unneccessary nest
-    return doSomethingElse(result)
-      .then((newResult) => doThirdThing(newResult));
+
+    return doSomethingElse(result)  
+      .then((newResult) => doThirdThing(newResult));  // unnecessary nesting!
   })
   .then(() => doFourThing());
   .catch(failureCallback);
@@ -108,7 +110,7 @@ doSomething()
   // forget to add catch
 ```
 
-**a good practice**
+**A Good Practice**
 
 ```js
 doSomething()
@@ -149,8 +151,8 @@ function doSomething(callback) {
 }
 ```
 
-- callback won't be invoked before the completion of current event loop 
-- callback will be invoked in the order they are added
+- `callback` won't be invoked before the completion of current event loop 
+- `callback` will be invoked in the order they are added
 
 ## Thenables
 
@@ -159,7 +161,8 @@ function doSomething(callback) {
 - `then()` has two **callback** arguments
   - one for fulfilled
   - one for rejected
-## feature
+
+## Features
 
 - promise callbacks are handled as a [microtask](javascript-tasks-and-microtasks.md#microtasks)
 
