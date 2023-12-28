@@ -2,7 +2,6 @@
 
 ## Create Object
 
-
 1. use literal，like `{key1:value1, key2: value2}`
 
 > more popular way

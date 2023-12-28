@@ -132,8 +132,3 @@ function isFish(pet: Fish | Bird): pet is Fish {
 
 - every time `isFish()` is called, its argument will narrow to specific type
 
-
-
-
-
-

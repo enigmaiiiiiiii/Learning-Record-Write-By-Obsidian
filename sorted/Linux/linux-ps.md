@@ -87,5 +87,5 @@ ps -eo pid,lstart,command | sort -r -k 4,5 | head -n 10
 sort all process by parent process
 
 ```sh
-ps -eo pid,ppid,cmd | sort -k 2
+ps -eo pid,ppid,command | sort -k 2
 ```

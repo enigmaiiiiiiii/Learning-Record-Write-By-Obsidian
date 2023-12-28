@@ -114,3 +114,9 @@ try {
 
 - can not be used without set `strictNullChecks`
 
+### sourceMap
+
+- For **debugger** and other tools 
+- To display the original Typescript source code when actually working with JavaScript
+- Source map file will have `.js.map` extension 
+

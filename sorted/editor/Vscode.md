@@ -6,23 +6,23 @@
 
 [keybindings](vscode-keybindings.md)
 
-## Compound Launch Configurations
-
-[use to start multiple project](vscode-compound-launch-configurations.md)
-
 ## launch.json
 
 [launch.json](vscode-launch-json.md)
 
-## task in vscode
+## Compound Launch Configurations
+
+[use to start multiple project](vscode-compound-launch-configurations.md)
+
+## Task In VSCode
 
 [vscode task](vscode-tasks.md)
 
-## vscode built-in variables
+## VSCode Built-in Variables
 
 [variable substituition](vscode-variable-substitution.md)
 
-## vscode remote login
+## VSCode Remote Login
 
 crtl+shift+p -> Remote-SSH: Connect to Host
 

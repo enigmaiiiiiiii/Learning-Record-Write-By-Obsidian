@@ -4,14 +4,14 @@
 
 - callback pass to `process.nextTick()` going to executed on the **current iteration of event loop**
 - callback pass to `process.nextTick()` will be resolved before the event loop continue
-- 或者说, `process.nextTick()` 会在[每个事件阶段](nodejs-event.md#phase)队列完成后执行
+- or rather, `process.nextTick()` will be executed after [every event phase](nodejs-event.md#phase) queue finishing
 - recursive `process.nextTick()` will block the event loop
 
-## take a look
+## Take A Look
 
-定义了一个异步函数, 实际没有执行异步操作, 但是 try to 引用一个作用域中还未定义的变量
+defining an asynchronous function, does not actually perform asynchronous operation, but try to reference a variable that is not yet defined in the scope
 
-> 未定义变量, bar
+> undefined variable `bar`
 
 ```js
 let bar;
@@ -30,7 +30,7 @@ someAsyncApiCall(() => {
 bar = 1;
 ```
 
-- 如果, 将callback传递给`process.nextTick(callback)`
+- if, 将callback传递给`process.nextTick(callback)`
   - callback会在所有**variable, function, etc.定义之后**执行
   - 同时, 可以在**进入事件循环之前**执行
 

@@ -1,9 +1,7 @@
 # NodeJS - Util
 
-```js
-const util = require('util')
-import util from `util`
-```
+* [`util.callbackify(original)`](#`util.callbackify(original)`)
+* [`util.promisify(original)`](#`util.promisify(original)`)
 
 ## `util.callbackify(original)`
 
@@ -33,7 +31,7 @@ promisifiedOriginal(one, two)
   .catch(err => {})
 ```
 
-for example, wrapping `fs.readFile()` function which is a synchronous function
+For example, wrapping `fs.readFile()` function which is a synchronous function
 
 - `fs.readFile(path, (error, data) =>{})`
 

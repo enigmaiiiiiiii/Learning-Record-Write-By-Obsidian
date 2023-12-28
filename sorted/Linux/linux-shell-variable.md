@@ -68,7 +68,7 @@ echo "You are in $whereami"
 
 ## environment variable
 
-## shell variable
+## Shell Variable
 
 ## Predefined variable
 
@@ -81,9 +81,10 @@ echo "You are in $whereami"
 - `$RANDOM`: return random number, range from 0 to 32767
 - `$HISTSIZE`: max number of command history
 
-***
+Variable
 
-- `$0`: return current command name, while `$1`, `$2`: first and second parameter
+- `$0`: return current command name
+- `$1`, `$2, ...`: first, second parameter, and so on
 - `$?`: the last command return status, 0 for success, non-0 for fail
 - `$$`: current process id
 - `$!`: last process id running in background

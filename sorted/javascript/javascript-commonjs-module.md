@@ -24,7 +24,7 @@ var a2 = require('./moduleA')
 console.log(a1 === a2); // true
 ```
 
-## exports Object
+## Exports Object
 
 - module is a object represent current module itself
 - exports is a property of module
@@ -34,7 +34,7 @@ console.log(a1 === a2); // true
 
 use `module.exports` to export object
 
-circle.js
+`circle.js`
 
 ```js
 const { PI } = Math;
@@ -56,9 +56,9 @@ exports.func = function () {
 }
 ```
 
-## import
+## Import
 
-use `require()` to specify dependencies
+use [`require()`]() to specify dependencies
 
 - basic syntax
 
@@ -80,3 +80,4 @@ console.log(circle.r); // 4
   - relative path
   - absolute path
   - `node_modules` directory dependency identifier
+

@@ -68,4 +68,7 @@ use `[]` to match single character
 
 `a|b`: match `a` or `b`
 
+## VS Glob Pattern
+
+[glob pattern](glob-pattern.md)
 

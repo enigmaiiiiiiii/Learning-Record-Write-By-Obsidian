@@ -1,6 +1,15 @@
 # Node Built In Library
 
-- no need to `npm install <package>`
+* [fs](#fs)
+* [path](#path)
+* [Buffer](#buffer)
+  * [static method](#static-method)
+  * [instance method](#instance-method)
+* [Util](#util)
+* [child_process](#child_process)
+* [node:event](#nodeevent)
+
+> no need to `npm install <package>`
 
 ## fs
 
@@ -20,6 +29,8 @@
   - `data`: data read from file
 
 ## path
+
+
 
 path.join()
 
@@ -62,4 +73,16 @@ using encode method specified by `encoding` convert `buf` to string
 ## Util
 
 [util](nodejs-util.md)
+
+## Stream
+
+[Stream](nodejs-stream.md)
+
+## child_process
+
+[Child process](nodejs-child-process.md)
+
+## node:event
+
+[node:events](nodejs-node-event.md)
 

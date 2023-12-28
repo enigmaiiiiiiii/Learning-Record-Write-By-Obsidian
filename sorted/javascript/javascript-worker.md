@@ -13,7 +13,7 @@
 - a background task
 - a feature in javascript, **not in nodejs**
 - can send message back to its creator
-- javascript 通过 `Worker` 实现线程 communication
+- javascript implement thread communication through `Worker`
 - note main consist of three parts
   - create a worker
   - send message
@@ -35,7 +35,7 @@ create a worker
 const worker = new Worker('script/worker.js')
 ```
 
-- `script/worker.js` is 脚本文件路径
+- `script/worker.js` is script file path
 
 this is the worker `script/worker.js`
 

@@ -1,6 +1,6 @@
 # vscode - launch.json compound keyword
 
-`launch.json` File
+[`launch.json`](vscode-launch-json.md) File
 
 ```json
 {

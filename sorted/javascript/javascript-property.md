@@ -35,6 +35,8 @@
     - if multiple source object have same property, use the last source object's value
 - when error raised during assign, operation stop, and won't rollback
 
-## Get All Property Directly On Object
+## Useful function for operating on properties
+
+get all property directly on object
 
 [`Object.keys()`](javascript-global-object.md#objectkeys)

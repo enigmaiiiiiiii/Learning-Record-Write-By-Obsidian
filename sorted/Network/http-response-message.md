@@ -49,14 +49,14 @@ official definition of `<xxx> <status>`, refer to [RFC1945-page26](https://tools
 - 403 Forbidden: request is refused by server
 - 404 Not Found: request resource is not found
 - 500 Internal Server Error
-- 501 Not Implemented: 服务器不支持请求的功能，无法完成请求。
+- 501 Not Implemented: server does not support the functionality required to fulfill the request
 - 502 Bad Gateway: server as gateway or proxy, receive invalid response from upstream server
-- 503 Service Unavailable: 服务器目前无法使用（由于超载或停机维护）。
-- 505 HTTP Version Not Supported: 服务器不支持请求的HTTP版本。
+- 503 Service Unavailable: server is unavailable for now(due to overload or maintenance)
+- 505 HTTP Version Not Supported: server does not support the HTTP protocol version used in the request
 
 > when server response status 302, some browser will send empty request
 
-- 101 Switching Protocols: 服务器将遵从客户的请求转换到另外一种协议
+- 101 Switching Protocols: server will switch to another protocol as client request
 
 status code category
 

@@ -1,4 +1,4 @@
-# TSConfig
+# TypeScript - tsconfig.json
 
 ## What It Is
 

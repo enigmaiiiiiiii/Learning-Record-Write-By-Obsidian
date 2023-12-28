@@ -5,9 +5,9 @@
 * [Interface](#interface)
 * [function](#function)
 * [class](#class)
-* [namespace](#namespace)
-* [module](#module)
-* [mark variable, parameter, properties](#mark-variable,-parameter,-properties)
+* [Namespace](#namespace)
+* [Module](#module)
+* [Mark Variable, Parameter, Properties](#mark-variable,-parameter,-properties)
 * [Keyword](#keyword)
 
 ## Key Of Typescript: Type
@@ -36,15 +36,15 @@ significately difference between interface and [type alias](typescript-type-stat
 
 [class](typescript-class.md)
 
-## namespace
+## Namespace
 
 [namespace](typescript-namespace.md)
 
-## module
+## Module
 
 [Module](typescript-module.md)
 
-## mark variable, parameter, properties
+## Mark Variable, Parameter, Properties
 
 `?` mark
 

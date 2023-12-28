@@ -1,6 +1,7 @@
 # package.json - Fields
 
 > 包含被nodejs识别的字段和被npm识别的字段
+> include fields recognized by nodejs and npm
 
 ## must contain `name` and `version` fields
 
@@ -32,21 +33,33 @@ if you want to include author information, you can use the following format
 
 ## scripts
 
+can be executed by running `npm run <script-name>`
+
 ```json
 {
   "scripts": {
-    "preinstall": "prescript.js",
-    "install": "installscript.js",
-    "uninstall": "uninstallscript.js",
-    "test": "<test command>",
-    "exampletest": "<example command>"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
 ```
 
-- `npm install <package>`: will execute `prescript.js` first, then`installscript.js`
-- `npm uninstall <package>`: execute `uninstallscript.js`
-- `npm run test`: execute `<test command>`
+- run `npm run test` will execute `echo \"Error: no test specified\" && exit 1`
+- fields in `scripts` can be shell command or .js file
+
+`pre` and `post` prefix
+
+```json
+{
+  "scripts": {
+    "preinstall": "<pre_command>",
+    "install": "<install_command>",
+    "postinstall": "<post_command>",
+  }
+}
+```
+
+- in this example, `npm install` will execute `` first, then`installscript.js`, then`
+
 
 ## entry point of package: "main" and "export"
 

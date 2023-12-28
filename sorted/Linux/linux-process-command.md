@@ -1,4 +1,5 @@
 # Linux - Process Command
+
 ## Query Process
 
 [ps](linux-ps.md)
@@ -19,25 +20,9 @@ options
 
 - `pstree` can show parent-child relationship
 
-## Process Priority
+## top
 
-- 进程的最终优先级 = NI 优先级 + 当前优先级决定
-- 进程在启动时如果没有设定优先级，则默认使用 0
-- 进程的优先级字段，数值越小优先级越高
-
-## Adjust process priority
-
-- nice
-  - `nice [-n] num command`
-  - 启动时调整进程优先级
-  - 以优先级 num 启动，若 num 为空，默认是 10
-  - 优先级字段编号越小，优先级越高
-  - 设定范围 0~19
-- `renice`调整已经存在的进程
-
-## monitor system information
-
-use `top` command
+monitor system information
 
 - continously monitor system information
 
@@ -76,20 +61,19 @@ first 5 lines informations is summary of system information
 
 meaning of each field following the system information
 
-| fields  | description                                                  |
-| ------- | ------------------------------------------------------------ |
-| PID     | Process ID                                                   |
-| USER    | user                                                         |
-| PR      | process priority                                             |
+| fields  | description                                                                       |
+| ------- | --------------------------------------------------------------------------------- |
+| PID     | Process ID                                                                        |
+| USER    | user                                                                              |
+| PR      | process priority                                                                  |
 | NI      | nice value, negative value means high priority, positive value means low priority |
-| VIRT    | process use virtual memory size                              |
-| RES     | process use physical memory size, unit is Kb, RES = CODE + DATA |
-| SHR     | shared memory size, unit is Kb                               |
-| %CPU    | CPU time usage percentage from last update to now            |
-| %MEM    | process use physical memory percentage                       |
-| TIME+   | process use CPU time total, unit is 1/100 second             |
-| COMMAND | process name                                                 |
-
+| VIRT    | process use virtual memory size                                                   |
+| RES     | process use physical memory size, unit is Kb, RES = CODE + DATA                   |
+| SHR     | shared memory size, unit is Kb                                                    |
+| %CPU    | CPU time usage percentage from last update to now                                 |
+| %MEM    | process use physical memory percentage                                            |
+| TIME+   | process use CPU time total, unit is 1/100 second                                  |
+| COMMAND | process name                                                                      |
 
 - shortcut for `top` UI
   - 1: show multi-core CPU usage

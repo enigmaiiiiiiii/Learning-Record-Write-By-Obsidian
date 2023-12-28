@@ -13,6 +13,8 @@
 
 ## if statement
 
+for [conditional expression](linux-shell-expressions.md#conditional-expressions) check
+
 if...then...fi
 
 ```sh

@@ -1,7 +1,8 @@
 # Linux Shell Programmming - Expressions
 
 * [Arithmetic Expression](#arithmetic-expression)
-* [Conditional Expresssions](#conditional-expresssions)
+* [Evaluate Expression](#evaluate-expression)
+* [Conditional Expressions](#conditional-expressions)
 * [Extend Conditional Expressions](#extend-conditional-expressions)
 
 ## Arithmetic Expression
@@ -13,7 +14,7 @@
 sum=$((1 + 2))
 ```
 
-## evaluate expression
+## Evaluate Expression
 
 - use `expr` command to evaluate expression
 
@@ -23,7 +24,7 @@ sum=`expr 1 + 2`
 
 > command in ["``"](linux-shell-variable.md#assign-value-to-variable-from-command) will assign command result to variable
 
-## Conditional Expresssions
+## Conditional Expressions
 
 - double brackets `[ ]` for condition expression
 

@@ -1,4 +1,4 @@
-# Task
+# VSCode - Task
 
 ## what is this
 
@@ -59,22 +59,26 @@
 }
 ```
 
-- `label`: 在UI界面中显示的名称
+- `label`: the name displayed in UI
 - `type`: can be *shell script* or *process*
   - shell: use shell run script, eg. bash, cmd, PowerShell
   - process: eg. `node`, `npm`, `python`
-- **command**: 要执行的命令
-- `windows`: 命令行程序
-- `group`: 分组，
-- `persentation`: how to handle the output
-  - `reveal` values
-    - always: always show the output
-    - never
-    - silent
-  - `panel` values
+- **`command`**: the command to run
+- `windows`: 
+- `group`: group name
+- `persentation`: how to handle the output, sub attributes:
+  - `reveal` available values
+    - `always`: always show the output
+    - `never`:
+    - `silent`: 
+  - `panel` available values
     - new: create new terminal
     - shared
     - dedicated
     - current
-- options
-- runoptions
+  - `close` available values
+    - `true`: close the terminal after the task is complete
+    - `false`: default value, keep the terminal open
+- `options`
+- `runoptions`
+

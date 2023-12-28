@@ -13,13 +13,13 @@
 - use `|` to redirect output to another process
 - can not use with file directly
 - those command usually follow after "|"
-  - [`grep`]()
-  - [`awk`]()
-  - [`sed`]()
-  - [`sort`]()
+  - [`grep`](#grep)
+  - [`awk`](#awk)
+  - [`sed`](#sed)
+  - [`sort`](#sort)
   - [`uniq`]()
   - [`wc`]()
-  - [`head`]()
+  - [`head`](#head)
   - [`tail`]()
   - [`cut`]()
 
@@ -70,6 +70,14 @@ head -n 5 /etc/passwd
 - `-i`: ignore case
 - `-n`:
 - `-v`: reverse match
+
+## sort
+
+sort by `field1`
+
+```sh
+sort -k field1
+```
 
 ## envsubst
 

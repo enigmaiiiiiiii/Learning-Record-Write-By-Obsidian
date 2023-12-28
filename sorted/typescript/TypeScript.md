@@ -24,7 +24,9 @@
 
 [.d.ts file](typescript-d-ts-file.md)
 
-[namespace](typescript-namespace.md)
+[Namespace](typescript-namespace.md)
+
+[Debug](typescript-debugging.md)
 
 [JSDoc Support]()
 

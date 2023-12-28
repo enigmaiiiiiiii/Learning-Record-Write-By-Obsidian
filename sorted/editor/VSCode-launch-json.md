@@ -9,7 +9,7 @@
 
 `${workspace}/.vscode/launch.json`
 
-## take a look
+## Take A Look
 
 run and debug a simple app
 
@@ -36,10 +36,12 @@ run and debug a simple app
 
 ## launch.json Configurations Field Attributes
 
-mandatory for every launch configuration
+MANDATORY for every launch configuration
 
 - `"type"`: the type of the app, `"node"` for built-in node debugger
-- `"request"`: `launch` or `attach`
+- `"request"`
+  - `launch` 
+  - `attach`: attach to a running process
 - `"name"`: Display name of Debug window
 
 Attributes that most debugger support
@@ -47,8 +49,19 @@ Attributes that most debugger support
 - `"program"`: the entry file of the app
 - `"args"`: the arguments **pass to the app**
 - `"cwd"`: current working directory of the app
+- `runtimeExecutable` and `runtimeArgs`: 
+  - for example, if want to debug program `npm run dev`
+    - `"runtimeExecutable"` is `npm`
+    - `"runtimeArgs"` is `["run", "dev"]` 
+  - if i know exactly which command to debug, i do not have to set `program`
 
-for java
+Attributes only for `"request": "launch"`
+
+- `outputCapture`
+  - `"console"`: capture output from the vscode debugger console
+  - `"std"`: capture output from the app's stdout and stderr
+
+For Java
 
 `"vmargs"`: the [arguments](java-command-java-options.md) pass to the Java
 

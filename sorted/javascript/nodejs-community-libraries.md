@@ -14,7 +14,7 @@
 
 ## tools
 
-[qs.js](/sorted/javascript/nodejs-qs.md): json对象 to url query string
+[qs.js](/sorted/javascript/nodejs-qs.md): Json Object to url query string
 
 [clsx](node-clsx.md)
 
@@ -27,6 +27,12 @@
 ## Database
 
 [mongoose](nodejs-mongoose.md)
+
+## Command Line Tools
+
+[minimist](nodejs-minimist.md): Command Line Parser
+
+[npm-run-all](nodejs-npm-run-all.md): CLI tools to run multiple npm-scripts
 
 ## markdown
 

@@ -38,3 +38,21 @@
 
 [Daemon](linux-daemon.md)
 
+## Process Priority
+
+- final process priority = [NI Priority]() + current priority
+- 进程在启动时如果没有设定优先级，则默认使用 0
+- 进程的优先级字段，数值越小优先级越高
+
+## Adjust Process Priority
+
+`nice`
+
+- `nice [-n] num command`
+- 启动时调整进程优先级
+- 以优先级 num 启动，若 num 为空，默认是 10
+- 优先级字段编号越小，优先级越高
+- 设定范围 0~19
+
+`renice`调整已经存在的进程
+

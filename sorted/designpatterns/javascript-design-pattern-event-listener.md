@@ -3,10 +3,15 @@
 ## Class
 
 - `Event`: most simple event is a string, but can be any type
-- `Listener/EventHandler`: A function that is called when the event is emitted
-- `Emitter`: an object that emits events and calls listeners
+- `Listener/EventHandler`:
+  - a function registered to be called when an event is emitted
+- `Emitter`
+  - emit events
+  - also register listeners
 
-## Code
+nodejs provides built-in class [`EventEmitter`]
+
+## Minimal Code 
 
 ```ts
 type EventHandler = (...args: any[]) => void;
@@ -63,5 +68,4 @@ eventEmitter.off('exampleEvent', listener1);
 
 // Emit event again, only listener2 should be triggered
 eventEmitter.emit('exampleEvent', 'Hello, again!');
-
 ```
