@@ -6,7 +6,3 @@
 
 [Class: EventEmitter](nodejs-class-eventemitter.md)
 
-
-
-
-

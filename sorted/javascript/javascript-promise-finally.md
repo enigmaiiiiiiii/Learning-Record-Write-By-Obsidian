@@ -1,4 +1,4 @@
-# Promise.prototype.finally()
+# Javascript - Promise.prototype.finally()
 
 - 无论结果是fulfilled还是rejected, 都会执行的函数
 

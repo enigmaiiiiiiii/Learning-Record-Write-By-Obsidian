@@ -19,16 +19,42 @@ myEE.emit('foo');
 
 ## eventEmitter.on()
 
-Syntax
+Register an event and its listener
 
-`eventEmitter.on(eventName, listener)`
+Syntax: `eventEmitter.on(eventName, listener)`
 
-Parameter
+Parameters:
 
-- `eventName`
-- `listener`
+- `eventName`: string
+- `listener`: callback function
 
 ## eventEmitter.emit()
 
+Trigger specific event
+
+Syntax: `eventEmitter.emit(eventName[, ...args])`
+
+Parameters:
+
+- `eventName`: string
+- `args`: arguments passed to listener registered on `eventName` 
+
+
+## static: on()
+
+Syntax
+
+- `on(emitter, eventName[, options])`
+
+Parameters
+
+- `emitter`: [EventEmitter](nodejs-class-eventemitter.md)
+- `eventName`: string | [symbol](javascript-symbol.md)
+- `options`
+
+Returns
+
+- [AsyncIterator](javascript-iteration-protocols.md##async-iterator-and-async-iterable-protocols)
+  - the value return by each iteration is an array of [emitted event arguments](nodejs-class-eventemitter.md#eventemitteremit)
 
 

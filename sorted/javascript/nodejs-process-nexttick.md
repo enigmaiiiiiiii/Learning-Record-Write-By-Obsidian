@@ -1,11 +1,33 @@
-# Process.nextTick()
+# NodeJS Process - process.nextTick()
 
-## feature
+## Features
 
 - callback pass to `process.nextTick()` going to executed on the **current iteration of event loop**
 - callback pass to `process.nextTick()` will be resolved before the event loop continue
-- or rather, `process.nextTick()` will be executed after [every event phase](nodejs-event.md#phase) queue finishing
+- or rather, `process.nextTick()` will be executed after [every event phase](nodejs-event.md#phase-detail) queue finishing
 - recursive `process.nextTick()` will block the event loop
+
+## Why would that be allowed
+
+- A design philosophy: An API should be asynchronous where it doesn't have to be
+- This philosophy can lead to some potentially problematic situations
+
+```js
+let bar;
+function someAsyncApiCall(callback) {
+  callback();
+}
+someAsyncApiCall(() => {
+    // since someAsyncApiCall hasn't completed, bar hasn't been assigned any value
+    console.log('bar', bar); // undefined
+})
+
+bar = 1
+```
+
+- in this code: `someAsyncApiCall()` is actually operate an synchronous operation
+- the callback tries to reference a variable that is not yet defined in the scope
+- placing callback in `process.nextTick()` will solve this problem
 
 ## Take A Look
 
@@ -30,9 +52,9 @@ someAsyncApiCall(() => {
 bar = 1;
 ```
 
-- if, 将callback传递给`process.nextTick(callback)`
-  - callback会在所有**variable, function, etc.定义之后**执行
-  - 同时, 可以在**进入事件循环之前**执行
+- if `callback` is passed to `process.nextTick(callback)`
+  - callback will be executed **after** all the definition of variable, function, etc.
+  - meanwhile, callback will be executed [**before entering event loop continue**](nodejs-event.md)
 
 ## process.nextTick() vs setImmediate()
 
@@ -41,9 +63,9 @@ bar = 1;
 - `process.nextTick()` is more immediate `setImmediate()`
 - 互换名称会更符合函数的功能
 - 但是互换命名会影响npm大部分package
-- 推荐使用`setImmediate()`代替`process.nextTick()`
+- it is recommended to use `setImmediate()` instead of `process.nextTick()`
 
-[and setTimeout()](/sorted/code-snippet/javascript/nexttick-setimmediate-settimeout.md)
+[and setTimeout()](nexttick-setimmediate-settimeout.md)
 
 ## why use `process.nextTick()`
 

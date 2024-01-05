@@ -1,17 +1,31 @@
-# Symbol
+# JavaScript - Symbol
 
-## What is This
+
+* [What Is This](#what-is-this)
+* [Create A Symbol](#create-a-symbol)
+* [Get Symbol Key](#get-symbol-key)
+* [As Property Keys In Object](#as-property-keys-in-object)
+* [Symbols Cannot be enumrated in for...in loop](#symbols-cannot-be-enumrated-in-for...in-loop)
+* [Omitted by JSON.stringify()](#omitted-by-json.stringify())
+
+## What Is This
 
 - guaranteed to be unique
-- introduced in ECMAScript 2015(es6)
+- mainly used as object property key
+- introduced in ECMAScript 2015(ES6)
 
-## create a symbol
+## Take A Look
 
-create by `Symbol("key")`
+create Symbol is simple
+
+- wrapping a string or number in `Symbol()`
+- the string or number wrapped by `Symbol()` is called symbol key
 
 ```js
 let sym = Symbol("foo");
 ```
+
+> `"foo"` the symbol key
 
 create by `Symbol.for("key")`
 
@@ -23,7 +37,25 @@ let otherFooGlobalSymbol = Symbol.for("foo");
 console.log(fooGlobalSymbol === otherFooGlobalSymbol);  // true
 ```
 
-## get symbol key
+## Use Symbol
+
+Use As Object Property
+
+```js
+const objA = {};
+const sym = Symbol("symbol key");
+objA[sym] = "value A";
+
+const objB = {
+    [sym]: "value B"
+};
+```
+
+- both ways are available
+
+> can't used as function name
+
+## Get Symbol Key
 
 Symbol.keyFor()
 
@@ -31,7 +63,7 @@ Symbol.keyFor()
 Symbol.keyFor(Symbol.for("tokenString")) === "tokenString";
 ```
 
-## As property keys in object
+## As Property Keys In Object
 
 - symbol can be appear in the place where string or number can be used as property
 
@@ -64,9 +96,28 @@ for (const i in obj) {
 // "c", "d"
 ```
 
-## omit by JSON.stringify()
+## Omitted By JSON.stringify()
 
 ```js
 JSON.stringify({[Symbol('foo')]: 'foo'});
 // "{}"
 ```
+
+## Well-Known Symbols
+
+- Well-Known Symbols are served as "protocols" for certain built-in javascript
+
+`Symbol.iterator`
+
+- represents symbol `@@iterator`
+
+`Symbol.asyncIterator`
+
+- represent symbol `@@asyncIterator`
+
+> `@@iterator` and `@@asyncIterator` are both property keys of an object
+
+## Access To Symbol Properties On Objects 
+
+- method `Object.getOwnPropertySymbols()` returns an array of symbols
+

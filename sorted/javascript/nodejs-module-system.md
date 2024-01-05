@@ -14,9 +14,8 @@
 ## What is this
 
 - In NodeJs, a file is a module
-- NodeJs include two module system
-  - [ECMAScript modules](javascript-ecma-module.md)
-  - [CommonJS Modules](javascript-commonjs-module.md)
+- NodeJS v11 and earlier, it use [CommonJS](javascript-commonjs-module.md) module system
+- After NodeJS v12, it support both CommonJS and [ECMAScript](javascript-ecma-module.md) module system
 - NodeJs use CommonJS module loading pattern by default
 
 > CommonJS is a module specification, initially designed for Node.js

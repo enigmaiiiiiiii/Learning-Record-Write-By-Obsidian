@@ -6,8 +6,9 @@
   * [static method](#static-method)
   * [instance method](#instance-method)
 * [Util](#util)
+* [Stream](#stream)
 * [child_process](#child_process)
-* [node:event](#nodeevent)
+* [node:event](#node:event)
 
 > no need to `npm install <package>`
 
@@ -29,8 +30,6 @@
   - `data`: data read from file
 
 ## path
-
-
 
 path.join()
 
@@ -84,5 +83,5 @@ using encode method specified by `encoding` convert `buf` to string
 
 ## node:event
 
-[node:events](nodejs-node-event.md)
+[node:events](nodejs-library-node-events.md)
 

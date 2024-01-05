@@ -17,3 +17,9 @@ event
 - Event `data`: emitted whenever the stream is relinquishing ownership of a chunk of data to a consumer
 - Event `end`
 - Event `error`
+
+method
+
+- `pipe(distination[, options])`
+  - `distination`: [Writeable](#class-streamwriteable)
+

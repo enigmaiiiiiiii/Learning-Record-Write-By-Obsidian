@@ -1,7 +1,6 @@
-# code
+# leetcode 148 - merge link list and sort 
 
-- 官方代码
-
+- official code
 
 ```c++
 class Solution {  
@@ -9,7 +8,7 @@ class Solution {
   ListNode *sortList(ListNode *head) {  
     return sortList(head, nullptr);  
   }  
-  ListNode *sortList(ListNode *head, ListNode *tail) { /// 通过快慢指针找到链表中点, 并分割链表  
+  ListNode *sortList(ListNode *head, ListNode *tail) { /// 通过快慢指针找到链表中点, 并分割链表
     if (head == nullptr) {  
       return head;  
     }  
@@ -32,10 +31,10 @@ class Solution {
     ListNode *dummyhead = new ListNode(0);  
     ListNode *temp = dummyhead, *temp1 = head1, *temp2 = head2; ///  
     std::cout << "******************************" << std::endl;  
-    std::cout << "链表1: ";  
+    std::cout << "Linklist 1: ";  
     printListLink(temp1);  
     std::cout << std::endl;  
-    std::cout << "链表2: ";  
+    std::cout << "Linklist 2: ";  
     printListLink(temp2);  
     std::cout << std::endl;  
     while (temp1 != nullptr && temp2 != nullptr) {  /// 两个结点都不为空时  

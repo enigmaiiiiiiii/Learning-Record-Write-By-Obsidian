@@ -1,13 +1,15 @@
-# Stream
+# Java - Stream
 
-> 流可以看作[时间]中分布的一组值，[集合](java-collection.md)则是空间
+## Features
 
-- 避免声明多余变量
-- 单线程内部实现
-- 只能遍历一次
-- 内部迭代
+> A stream can be seen as a set of values distributed over **time**, while a [collection](java-collection.md) represents space.
 
-> 内部迭代便于Java提供优化，若采用for-each这样的外部迭代, 就要自己管理并行问题了
+- Avoid declaring unnecessary variables.
+- Implementation within a single thread.
+- Can only be traversed once.
+- Internal iteration.
+
+> Internal iteration is conducive to Java optimization. If external iteration, such as [for-each](), is adopted, one has to manage parallelism issues oneself.
 
 ## Create Stream
 
@@ -24,7 +26,7 @@ three part:
 ## Intermediate operation
 
 - return a new Stream
-- 可以链式调用
+- it can be called by chained
 
 ```java
 Stream<String> twiceModifiedStream = stream.skip(1).map(element -> element.substring(0, 3));

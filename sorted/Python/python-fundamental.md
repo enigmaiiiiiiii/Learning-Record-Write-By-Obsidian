@@ -10,5 +10,9 @@
 
 [Built-in Function](python-built-in-functions.md)
 
+[collection](python-collections.md)
+
+[tuple](python-tuple.md)
+
 [Special Literal](python-special-literal.md)
 

@@ -1,5 +1,10 @@
 # Linux - tar
 
+## What's For
+
+- storing multiple files in one file, but not compressing
+- unbinding .tar file
+
 ## Practical Use
 
 compress `file1` and `dir2` to `package.tar`, list details

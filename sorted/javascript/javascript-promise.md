@@ -1,15 +1,16 @@
 # JavaScript - Promise
 
-* [What It Is](#what-it-is)
+* [Take A Look](#take-a-look)
+* [When callback in promise will be called](#when-callback-in-promise-will-be-called)
 * [Foundation](#foundation)
 * [Three Common Mistake](#three-common-mistake)
 * [Promise And Old Callback API](#promise-and-old-callback-api)
 * [when the callback in the promise will be called](#when-the-callback-in-the-promise-will-be-called)
 * [Thenables](#thenables)
-* [Feature](#features)
+* [Features](#features)
 * [Misunderstanding](#misunderstanding)
 
-## What It Is
+## Take A Look
 
 - Promise is an Object representing the eventual completion or failure of an **asynchronous operation**
 
@@ -40,7 +41,7 @@ const promise2 = promise.then(successCalback, failureCallback);
 - `promise2` is not just represent the result of `promise`
 - but also represent the result of `successCallback` or `failureCallback` passed in
 
-with promise, we can accomplish
+with promise, we can write like this
 
 ```js
 doSomething()
@@ -55,6 +56,10 @@ doSomething()
   })
   .catch(failureCallback);
 ```
+
+## When callback in promise will be called
+
+- callback in promise will be add to [microtask queue](javascript-microtasks.md)
 
 ## Foundation
 
@@ -157,14 +162,11 @@ function doSomething(callback) {
 ## Thenables
 
 - all promies-like objects are thenables
-- thenables object implement `then()` method
-- `then()` has two **callback** arguments
-  - one for fulfilled
-  - one for rejected
+- thenables object implement [`then()`](javascript-promise-then.md) method
 
 ## Features
 
-- promise callbacks are handled as a [microtask](javascript-tasks-and-microtasks.md#microtasks)
+- promise callbacks are handled as a [microtask](javascript-microtasks.md)
 
 > whereas `setTimeout()` callbacks are handled as a task queues
 

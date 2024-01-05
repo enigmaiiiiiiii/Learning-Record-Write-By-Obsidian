@@ -10,8 +10,6 @@
 
 [pip](python-pip.md)
 
-[Conda](python-conda.md)
-
 [Fundamental](python-fundamental.md)
 
 [Iteration](python-iteration.md)
@@ -22,11 +20,17 @@
 
 [Type Hint](python-type-hint.md)
 
+[Syntax Sugar](python-syntax-sugar.md)
+
 [Handle exception](python-handle-exception.md)
 
 [unittest](python-unittest.md)
 
 ## Python Programming
+
+[Project Manager](python-project-manager.md)
+
+[Packaging Python Projects](python-packaging-python-project.md)
 
 [WSGI](python-wsgi.md)
 
@@ -35,6 +39,8 @@
 built-in
 
 [logging](python-logging.md)
+
+[argparse](python-argparse.md)
 
 third party
 

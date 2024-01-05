@@ -15,3 +15,15 @@ compare
 
 [process.nextTick()](nodejs-process-nexttick.md)
 
+## process.exit()
+
+syntax
+
+`process.exit(code: number = 0)`
+
+- exit the current process with an exit code
+
+```js
+process.exit(1)
+```
+

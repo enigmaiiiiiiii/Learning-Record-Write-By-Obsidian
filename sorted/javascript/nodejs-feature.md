@@ -2,11 +2,11 @@
 
 ## never block
 
-- reference read [node event](nodejs-event.md)
+- reference read [node event](nodejs-event-loop.md)
 
-## NodeJs依赖的组件
+## NodeJs Dependencies
 
-- V8: nodejs使用[V8]引擎解析javascript文件
+- V8: nodejs use V8 engine to parse javascript file
 - libuv
 - llhttp
 - c-ares

@@ -1,9 +1,8 @@
 # 尽量以从上const, enum, inline替换\#define
 
-- 可以理解为尽量以编译器替换预处理器
+- 可以理解为尽量以[compiler](c++-compile.md)替换[preprocessor](c-preprocessor.md)
 - 对于常量，最好以const对象或enums替换\#define
 - 对于类函数的宏， 最好改用inline函数替换\#define
-
 
 ## 定义常量时替换\#define的两种情况
 

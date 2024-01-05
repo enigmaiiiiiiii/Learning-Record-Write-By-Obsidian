@@ -1,5 +1,15 @@
 # NodeJS Community Libraries
 
+* [web](#web)
+* [quality control](#quality-control)
+* [tools](#tools)
+* [hot reload](#hot-reload)
+* [Database](#database)
+* [Command Line Tools](#command-line-tools)
+* [markdown](#markdown)
+* [Automation](#automation)
+* [Git](#git)
+
 ## web
 
 [Express](nodejs-express.md)
@@ -50,4 +60,7 @@
 
 [husky](nodejs-husky.md)
 
+## Handle Stream
+
+[event-stream](nodejs-event-stream.md)
 

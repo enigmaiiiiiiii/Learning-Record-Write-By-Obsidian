@@ -1,20 +1,22 @@
 # Iteration in JavaScript
 
-* [Description](#description)
+* [Content](#content)
 * [Generator Function](#generator-function)
 * [Generator](#generator)
-* [yield](#yield)
-* [Iterator protocol](#iterator-protocol)
-* [Iterable protocol](#iterable-protocol)
+* [Iteration Protocols](#iteration-protocols)
+* [keyword yield](#keyword-yield)
 
-## Description
+## Content
 
-- **calling** generator function, will return a [Generator](javascript-generator.md)对象
-  - at the beginning, [generator function](#generator-function) at paused state
-    - that is to say, the code in function body has not been executed
-  - generator function will execute at the first time when `next()` method is called
-    - the `next()` method is called through [ generator object ](#generator)
-- keyword yield
+- keyword [yield](#keyword-yield)
+- Generator Function
+- Generator Object
+- 2 protocols
+  - Iterator protocol
+  - Iterable protocol
+- corresponding protocols for async iteration
+  - Async Iterator protocol
+  - Async Iterable protocol
 
 ## Generator Function
 
@@ -24,12 +26,64 @@
 
 [Generator](javascript-generator.md)
 
-## yield
+## Iteration Protocols
 
-- used to pause and resume a generator function
+[Iteration Protocols](javascript-iteration-protocols.md)
 
-## Iterator protocol
+## keyword yield
 
-- use to define the iteration behavior of an object, such as `for...of` statement
-## Iterable protocol
+[here is yield in CSharp](csharp-yield.md)
+
+syntax
+
+`[rv] = yield [expression]`
+
+- `rv`: the argument passed to the `next()` method of a generator object
+- `expression`: the value to return from the generator function
+
+```js
+function* generator() {
+    yield 10;
+    x = yield 'foo';
+    yield x;
+}
+var gen = generator();
+console.log(gen.next()); // { value: 10, done: false }
+console.log(gen.next()); // { value: 'foo', done: false }
+console.log(gen.next(5)); // 执行x=5, 返回{ value: 5, done: false }
+```
+
+how to understand yield
+
+1. used to pause and resume the execution of a generator function
+2. generator function will execute normally until it reaches the `yield` keyword
+3. When a generator function encounters the yield keyword, it pauses execution and returns the value of the expression following the yield.
+4. When the next next() method is called on a generator function, it continues execution from the paused position.
+5. Execution stops upon encountering yield.
+6. It can be used as a parameter in a function; yield will receive the first value passed to next().
+
+example of used as parameter
+
+```js
+function* generatorFn(initial) {
+    console.log(initial);
+    console.log(yield);
+    console.log(yield);
+}
+let generatorObject = generatorFn('foo');
+generatorObject.next('bar');  // foo
+generatorObject.next('baz');  // baz
+generatorObject.next('qux');  // qux
+```
+
+keyword `yield*`
+
+- pass the iteration behavior to another iterable object
+
+```js
+function* generatorFn() {
+    yield* [1, 2, 3];
+}
+```
+
 

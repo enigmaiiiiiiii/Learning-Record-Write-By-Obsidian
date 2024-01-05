@@ -12,6 +12,14 @@
 
 - nodejs is a runtime environment
 
+When saying a project runtime is nodejs, simply think it was executed by command `node`
+
+- minimal project `main.js` whose runtime is nodejs
+
+```sh
+node main.js
+```
+
 ## Get Start
 
 [Get Start Use NodeJs](nodejs-using.md)
@@ -64,7 +72,7 @@
 
 [Test NodeJs](nodejs-test.md)
 
-[Event](nodejs-event.md)
+[Event Loop](nodejs-event-loop.md)
 
 [Worker Pool](nodejs-worker-pool.md)
 

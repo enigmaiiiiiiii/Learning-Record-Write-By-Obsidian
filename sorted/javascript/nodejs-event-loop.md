@@ -1,21 +1,22 @@
 # Node Event
 
-- [Introduction](#introduction)
-- [feature](#feature)
-- [phase](#phase)
-  - [1. timers phase](#1-timers-phase)
-  - [2. pending callbacks phase](#2-pending-callbacks-phase)
-  - [3. idle, prepare](#3-idle-prepare)
-  - [4. poll phase](#4-poll-phase)
-  - [5. check phase](#5-check-phase)
-  - [6. close callbacks](#6-close-callbacks)
-- [execute right away after each phase](#execute-right-away-after-each-phase)
-- [guide line of not blocking the event loop](#guide-line-of-not-blocking-the-event-loop)
-- [why should i avoid blocking the event loop and the worker pool](#why-should-i-avoid-blocking-the-event-loop-and-the-worker-pool)
+* [When to enter the event loop](#when-to-enter-the-event-loop)
+* [What is Event Loop](#what-is-event-loop)
+* [Features](#features)
+* [Phase Detail](#phase-detail)
+  * [1. timers phase](#1.-timers-phase)
+  * [2. pending callbacks phase](#2.-pending-callbacks-phase)
+  * [3. idle, prepare](#3.-idle,-prepare)
+  * [4. poll phase](#4.-poll-phase)
+  * [5. check phase](#5.-check-phase)
+  * [6. close callbacks](#6.-close-callbacks)
+* [Execute Right Away After Each Phase](#execute-right-away-after-each-phase)
+* [Don't Block The Event Loop](#don't-block-the-event-loop)
+* [Guide Line Of Not Blocking The Event Loop](#guide-line-of-not-blocking-the-event-loop)
 
 ## When to enter the event loop
 
-instruction from a video:
+instruction from a video
 
 order of a thread
 
@@ -26,14 +27,20 @@ order of a thread
 5. Regiester event callbacks
 6. enter event loop
 
-## Introduction
+## What is Event Loop
 
 - event loop inside a thread
 
 event loop's order
 
-- 左侧每一个方框表示一个phase(阶段)
-- 有timers, pending callbacks, "idle, prepare", poll, check, close callbacks
+- every box in the left side represent a phase
+- thye are
+  - timers
+  - pending callbacks
+  - "idle, prepare"
+  - poll
+  - check
+  - close callbacks
 
 ```
    ┌───────────────────────────┐
@@ -56,15 +63,14 @@ event loop's order
    └───────────────────────────┘
 ```
 
-- 每部分有一个由callback元素组成的FIFO(First In First Out) 队列
-- 每一阶段都会执行队列中的callback, 知道队列中的callback耗尽
-- **当队列中的callback被耗尽**或者**达到队列的最大限制**时, 事件循环将会进入下一个阶段
+- every part have a FIFO(First In First Out) queue with callback elements
+- every phase will executed the callback in the queue, until the queue is exhausted
+- when the **callbacks in queue are exhausted** or **the limit of the queue is reached**, the event loop will move to the next phase
 
-
-## feature
+## Features
 
 - **In Event Loop** everything works in one single thread
-- your responsibility to [not block the event loop](#why-should-i-avoid-blocking-the-event-loop-and-the-worker-pool)
+- your responsibility to [not block the event loop](#don't-block-the-event-loop)
 
 event loop does not actually maintain a queue
 
@@ -72,19 +78,24 @@ event loop does not actually maintain a queue
 - using mechanism like [epoll](linux-io-api-epoll.md) on linux, and some on other system
 - in contrast, [worker pool](nodejs-worker-pool.md) use a real queue, worker pop task from this queue
 
-## phase
+## Phase Detail
 
 ### 1. timers phase
 
-- `setTimeout()` and `setInterval()`
+Which callback will be executed in this phase
+
+- [`setTimeout()`](javascript-built-in-object.md#settimeout) and `setInterval()`
+
+Some callback seems to be executed in this phase, but actually not
+
 - `setImmediate()` is special, it will be executed after [poll phase](4-poll-phase)
-- [poll phase](4-poll-phase) control when timer are executed
 
-a schedule execute after 100ms
+[poll phase](4-poll-phase) control when timer are executed
 
-a reading file asynchronously task start at 95ms
+Cause the existence of event loop, the delay in timer is not guaranteed
 
-total delay will be 105ms
+- for example, if a schedule execute after 100ms, then a reading file asynchronously task started which takes 95ms
+- the total delay may be more than 100ms, maybe 102ms, 105ms, or even more
 
 ### 2. pending callbacks phase
 
@@ -102,22 +113,21 @@ this will be queued to execute in the **pending callpacks phase**
 
 ### 4. poll phase
 
-main function
+Main function
 
 1. **Calculating** how long it should block and **poll for I/O**, then
 2. Processing events in the poll queue
 
-事件循环到poll phase时, 且没有[timer](nodejs-timers.md), 会发生这两件事中的一件
+when event loop enter poll phase, and there is no [timer](nodejs-timers.md), one of the following will happen
 
-- 如果poll queue不为空, 遍历其中的事件, 并**同步执行**直到队列为空
-- 如果poll queue为空, 会发生以下两件事中的一件
-  - 如果有[setImmediate()](nodejs-timers.md#setimmediate)在poll phase之前调用, 事件循环将会进入[check phase](#check-phase)
-  - 如果没有, 事件循环会一直等待直到有callback加入queue, 并立即执行
+- if poll queue is not empty, event loop will iterate through its queue of callbacks **executing them synchronously** until either
+  - the queue has been exhausted
+  - or the system-dependent hard limit is reached
+- if poll queue is empty
+  - if script has been called by `setImmediate()`, event loop will end poll phase and continue to check phase to execute the callback
+  - if script has not been called by `setImmediate()`, event loop will wait for callbacks to be added to the queue, then execute them immediately
 
-如果 poll queue 为空
-
-- 则 event loop 检查[timers phase](#1-timers-phase)是否有已到达时间阈值的任务
-- event loops 绕回timers phase 去执行
+> the event loop
 
 ### 5. check phase
 
@@ -129,12 +139,25 @@ main function
 - `socket.destroy()`
 - `socket.on('close',callback)`
 
-## execute right away after each phase
+## Execute Right Away After Each Phase
 
 - [process.nextTick()](nodejs-process.md#processnexttick)
-- Microtask queue: mainly for Promise
+- [Microtask](javascript-microtasks.md) queue: mainly for [Promise]()
 
-## guide line of not blocking the event loop
+## Don't Block The Event Loop
+
+Summary
+
+- nodejs run js code in event loop
+- offers a worker pool for heavy task like i/o
+
+why should i avoid blocking the event loop and the worker pool
+
+- nodejs has small number of threads
+- if you regularly perform heavyweight activity on either type of thread
+- malicious client input could cause block
+
+## Guide Line Of Not Blocking The Event Loop
 
 1. Don't use async functions in CPU intensive tasks
 
@@ -149,16 +172,9 @@ main function
 
 2. Don't perform complex calulations
 
-3. Be careful with JSON in large objects
+3. Be careful With JSON In Large Objects
 
 4. Don't use too **complex regular expressions***
 
-- [safe-regex]
-
-## why should i avoid blocking the event loop and the worker pool
-
-nodejs has small number of threads
-
-- if you regularly perform heavyweight activity on either type of thread
-- malicious client input could cause block
+- [safe-regex]()
 

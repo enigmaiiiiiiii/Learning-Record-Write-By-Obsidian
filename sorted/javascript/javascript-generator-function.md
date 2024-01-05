@@ -1,12 +1,16 @@
-# Generator Function
+# JavaScript - Generator Function
 
-* [Generator Function](#generator-function-1)
-* [keyword yield](#keyword-yield)
+* [Declare Generator Function](#declare-generator-function)
+* [Features](#features)
 
-## Generator Function
+## Features
 
-- use `function*` declare a generator function
-- `*methodName()` declare a generator method
+- **calling** a [generator function](javascript-generator-function.md), will return a [Generator](javascript-generator.md) Object
+
+## Declare Generator Function
+
+- use `function*` to declare a generator function
+- `*methodName()` to declare a generator method
 
 generator function
 
@@ -34,57 +38,27 @@ class Foo {
 }
 ```
 
+## When Generator Function be Executed
 
-## keyword yield
-
-[here is yield in CSharp](csharp-yield.md)
-
-syntax
-
-`[rv] = yield [expression]`
-
-- `rv`: 传递给生成器对象的[next()](javascript-generator.md)方法的参数
-- `expression`: 返回给生成器函数的值
+For Code
 
 ```js
-function* generator() {
-    yield 10;
-    x = yield 'foo';
-    yield x;
+function* foo(i) {
+    console.log("foo called")
+    yield i + 1;
+    yield i + 2;
+    yield i + 3;
 }
-var gen = generator();
-console.log(gen.next()); // { value: 10, done: false }
-console.log(gen.next()); // { value: 'foo', done: false }
-console.log(gen.next(5)); // 执行x=5, 返回{ value: 5, done: false }
+const gen = foo(2);  // ①
+console.log(gen.next().value); // ②
 ```
 
-how to understand yield
+At the beginning, [generator function](javascript-generator-function.md) at paused state
 
-1. 用来暂停和恢复生成器函数的执行
-2. 生成器函数在遇到`yield`表达式之前, 正常执行
-3. 生成器函数在遇到yield关键字时, 会暂停执行, 并将yield后面的表达式的值作为返回值
-4. 生成器函数在下一次调用next()方法时, 会从暂停的位置继续执行
-5. 遇到`yield`时, 停止执行
-6. 可以作为函数中的参数, yield会接收传递给`next()`的第一个值
+- that is to say, the code in function body **has not been executed**
+- ① : will output nothing
 
-```js
-function* generatorFn(initial) {
-    console.log(initial);
-    console.log(yield);
-    console.log(yield);
-}
-let generatorObject = generatorFn('foo');
-generatorObject.next('bar');  // foo
-generatorObject.next('baz');  // baz
-generatorObject.next('qux');  // qux
-```
+Generator function will execute at the first time when [`next()` method of returned generator](javascript-generator.md#next) is called
 
-`yield*`
+- ② : will output `foo called` and `3`
 
-- 将迭代行为传递给另一个可迭代对象
-
-```js
-function* generatorFn() {
-    yield* [1, 2, 3];
-}
-```

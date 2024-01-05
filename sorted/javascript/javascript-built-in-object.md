@@ -58,7 +58,7 @@ console.log(JSON.stringify({x: 5, y: 6}));
 
 ## setTimeout()
 
-set a timer which executes a function or specified piece of code once the timer expires
+Set a timer which executes a function or specified piece of code once the timer expires
 
 Syntax:
 
@@ -68,6 +68,7 @@ Parameters:
 
 - `function`: the function to be executed
 - `delay`: the number of milliseconds to wait before the function is executed
+  - `delay` is not guaranteed time, it is minimum time because [event loop](nodejs-event-loop.md)
 - `param1, param2, ...`: optional parameters to be passed to the function
 
 return value

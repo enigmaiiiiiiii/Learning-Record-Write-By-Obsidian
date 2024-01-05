@@ -3,6 +3,10 @@
 - [await](#await)
 - [async function](#async-function)
 
+## What Are They
+
+- A syntax that wrapping [Promise](javascript-promise.md)
+
 ## await
 
 `const a = await expression`: where `expression` is a promise object

@@ -212,9 +212,15 @@ window.onmousedown = function(mouseEvent) {
 
 > like type annotation, removed by compiler
 
-- use `as` operator
+What's for
+
 - for some value, coder know the type, but ts can't infer it, then use type assertion
-- After assert a type, you can use members of the type
+- After assert a type, you can use the members of the type
+
+how to assert type
+
+1. use `as` operator, `const p = {x: 3, y: 5} as Point;`
+2. use `<type>` syntax, `const p = <Point>{x: 3, y: 5};`
 
 ```ts
 const x = "hello" as number; // error

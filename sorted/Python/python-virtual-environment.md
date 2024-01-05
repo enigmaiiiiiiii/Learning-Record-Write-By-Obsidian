@@ -63,3 +63,6 @@ deactivate
 ```py
 sys.prefix == sys.base_prefix
 ```
+## Conda
+
+[Conda](python-conda.md)

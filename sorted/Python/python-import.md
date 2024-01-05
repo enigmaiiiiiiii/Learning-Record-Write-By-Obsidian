@@ -6,7 +6,7 @@
 
 - `sys.modules` is a cache of all modules that have been previously imported
 
-2. lookup built-in module
+2. then lookup built-in module
 
 - lookup [python standard library]()
 

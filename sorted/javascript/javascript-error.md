@@ -1,4 +1,4 @@
-# Error
+# Javascript - Error
 
 > global object in javascript
 
@@ -18,7 +18,9 @@ try {
 }
 ```
 
-## custom error
+## Error Types
+
+## Custom Error
 
 ```js
 class MyError extends Error {

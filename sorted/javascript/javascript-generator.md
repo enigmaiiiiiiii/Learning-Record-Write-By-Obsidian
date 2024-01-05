@@ -1,10 +1,10 @@
 # JavaScript Object Generator
 
 * [what is this](#what-is-this)
-* [next()](#next)
-* [return()](#return)
-* [throw()](#throw)
-* [内置Generator对象](#内置generator对象)
+* [next()](#next())
+* [return()](#return())
+* [throw()](#throw())
+* [Built-in Generator Object](#built-in-generator-object)
 
 ## what is this
 
@@ -15,25 +15,39 @@
 
 ## next()
 
-- 返回的对象包含两个属性
-    - `value`属性: 生成器函数中`yield`表达式的值
-    - `done`属性: 生成器函数是否已经执行完毕
-      - 通过yield退出的生成器函数, `done`属性为`true`
-      - 通过`return`退出的生成器函数, `done`属性为`true`
-- next()方法如果传入了参数, **yield*表达式(expression)***的值就是这个参数
+return value
+
+- An [`IteratorResult`](javascript-iteration-protocols.md#iteratorresult-interface) Object
+  - `value`: the value of `yield` expression in [generator function]()
+  - `done`: boolean
+    - `true`: if the generator is past the end of its control, the generator is exited by `return`(which may by undefined)
+    - `false`: if the generator is exited by `yield`
+
+if pass argument to `next(value)` method
+
+- the value of `yield*` expression is that argument
 
 ## return()
 
-- 提前终止生成器函数
-- 返回: `{done: true, value: <return()方法的参数>}`
+- method that terminates the generator function prematurely
+
+return 
+
+- An [`IteratorResult`](javascript-iteration-protocols.md#iteratorresult-interface) Object
+  - `value`
+    - the value given as argument to `return(value)`
+    - or the value from [yield expression](javascript-iteration.md#keyword-yield) which is wrapped in [try...finally]()
+  - `done`: boolean
+    - `true`: 
+    - `false`:
 
 ## throw()
 
-- g.throw(errorObj)将一个错误注入到生成器函数中
-- 如果生成器函数内部没有处理错误, 生成器就会关闭
-- 如果生成器函数内部有处理错误, 生成器会跳过本次yield, 恢复执行
+- `g.throw(exception)` as if a throw statement is inserted in the generator at current suspended position
+- if generator function doesn't handle the exception, the generator will be closed
+- if generator function handle the exception, the execution will skip current yield and continue
 
-函数体未处理错误
+function body doesn't handle the exception
 
 ```js
 function* generatorFn() {
@@ -51,10 +65,10 @@ try {
 console.log(g);  // closed
 ```
 
-函数体处理了错误
+function body handle the exception
 
 ```js
-function * generatorFn() {
+function* generatorFn() {
     try {
         for (const x of [1, 2, 3]) {
             yield x;
@@ -69,15 +83,16 @@ g.throw('foo');
 console.log(g.next());   // {value: 3, done: false}
 ```
 
-## 内置Generator对象
+## Built-in Generator Object
 
-[CSharp中相似的概念: 枚举器](csharp-ienumerator-interface.md)
+[Similar concept in CSharp: IEnumerator](csharp-ienumerator-interface.md)
 
-- 生成器对象
-- 符合[Iterator](#iterator-protocol(迭代器协议))和[Iterable](#iterable-protocol(可迭代协议))协议
+`Generator` Object
 
-三个方法, `next`, `return`, `throw`
+- Satisfied [Iterator protocol](javascript-iteration.md#iterator-protocol) and [Iterable protocol](javascript-iteration.md#iterable-protocol)
 
-- Generator.prototype.next(): 返回yield表达式的值
-- Generator.prototype.return(): 返回给定的值, 并结束遍历Generator对象
-- Generator.prototype.throw(): 抛出一个错误
+3 methods, `next`, `return`, `throw`
+
+- `Generator.prototype.next()`: return value of yield expression
+- `Generator.prototype.return()`: return specified value and end the iteration of Generator Object
+- `Generator.prototype.throw()`: throw an error

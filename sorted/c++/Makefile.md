@@ -6,9 +6,9 @@
 * [Execution Process](#execution-process)
 * [Variable](#variable)
 * [Wildcards](#wildcards)
-* [Function](#function)
-* [Clean](#clean)
+* [Functions](#functions)
 * [Phony Target](#phony-target)
+* [Write A Makefile](#write-a-makefile)
 
 ## What It Is
 
@@ -28,7 +28,14 @@ sum.o:sum.c
 clean:rm -f main.o sum.o hello
 ```
 
-## rules
+## Make Command
+
+options
+
+- `-n, --just-print, --dry-run, --recon`
+  - print the commands that would be executed, but do not execute them
+
+## Rules
 
 [Syntax](makefile-syntax.md)
 
@@ -68,7 +75,7 @@ clean:rm -f main.o sum.o hello
 ## Phony Target
 
 - it is a [recipe](#rules) that will be executed when you make an explicit request
-- In some case the recipe for a target may not create a file, phony target is used to avoid a conflict with a file name
+- In some cases the recipe for a target create a file, phony target is used to avoid a conflict with a file name
 
 declare a target to be phony by making it [prerequisite](#rules) of the special target `.PHONY`
 
@@ -79,6 +86,11 @@ clean:
 ```
 
 - this will `make clean` run the recipe regradless of whether a file named `clean`
+
+## @echo
+
+- `echo` will print command itself, not only the result of command
+- `@echo`, suppress the normal echo of the command
 
 ## Write A Makefile
 

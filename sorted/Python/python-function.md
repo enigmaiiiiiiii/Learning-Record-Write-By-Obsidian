@@ -25,5 +25,5 @@ def foo(*args, **kwargs):
 foo(1, 2, 3, a=1, b=2, c=3)
 ```
 
-- args: tuple argument
-- kwargs: dict argument
+- args: [tuple]() argument
+- kwargs: [dict]() argument

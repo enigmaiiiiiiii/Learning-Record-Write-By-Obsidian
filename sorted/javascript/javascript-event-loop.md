@@ -24,7 +24,7 @@ while (true) {
 ```
 
 - if there are messages, the `setTimeout` message will have to wait for other messages to be processed
-- 也就是说: the second argument indicates a minimum time - not a guaranteed time
+- That is to say: the second argument indicates a minimum time - not a guaranteed time
 
 ## Never Block
 

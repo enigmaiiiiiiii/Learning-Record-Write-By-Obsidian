@@ -7,6 +7,8 @@
   * [noImplicitAny](#noimplicitany)
   * [downlevelIteration](#downleveliteration)
   * [strict](#strict)
+  * [strictPropertyInitialization](#strictpropertyinitialization)
+  * [sourceMap](#sourcemap)
 
 ## baseUrl
 
@@ -119,4 +121,21 @@ try {
 - For **debugger** and other tools 
 - To display the original Typescript source code when actually working with JavaScript
 - Source map file will have `.js.map` extension 
+
+### module
+
+- sets the module system for project
+
+Available Settings
+
+- node16
+- nodenext
+- es2015
+- es2020
+- commonjs, system, and, umd
+
+Only correct module settings for nodejs runtime
+
+- node16
+- nodenext
 

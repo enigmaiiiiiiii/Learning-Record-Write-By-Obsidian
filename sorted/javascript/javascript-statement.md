@@ -1,4 +1,4 @@
-# Statement
+# JavaScript - Statement
 
 * [for...in statement](#forin-statement)
 * [for...of statement](#forof-statement)
@@ -42,9 +42,21 @@ for (let l of list) {
 - `label: statement`
 - to implement stream control in break or continue statement
 
-```js
-```
-
 ## with statement
 
+## for await...of    
+
+Syntax
+
+```js
+for await (variable of iterable) {
+  // statement
+}
+```
+
+- `variable`: variable to assign the value of each iteration
+- `iterable`: An async iterable or sync iterable
+  - gets [`[@@asyncIterator]()`](javascript-iteration-protocols.md) method first
+  - if not found, get [`[@@iterator]()`](javascript-iteration-protocols.md) method, then wrap the return into an async iterator
+    - wrapping object returned from [`next()`, `return()`, `throw()`](javascript-generator.md) into a [promise](javascript-promise.md)
 

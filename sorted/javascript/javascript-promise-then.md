@@ -1,22 +1,29 @@
-# then()
+# JavaScript Promise - then()
 
-## Feature
+* [Features](#features)
+* [Syntax](#syntax)
+* [Parameters](#parameters)
+* [return value](#return-value)
+* [Example](#example)
 
-**when promise instance [state](javascript-promise-foundation.md#state-of-promise) changing**
+## Features
 
-the **function** pass to then() argument will be called
+when will be called
+
+- **when promise instance [state](javascript-promise-foundation.md#states-of-promise) changing**, the **function** pass to `then()` argument will be called
 
 return a new **Promise Instance**
 
-- promiseInstance.then(onFulfilled, onRejected)
+## Syntax
 
-## onFulfilled
+`promiseInstance.then(onFulfilled, onRejected)`
 
-a function to be called when the `promiseInstance` is resolved
+## Parameters
 
-this callback has one parameter, represent the [return value](javascript-promise.md#always-return-a-result) of previous promise
+`onFulfilled`: `(value) => void`
 
-- `successMessage` is `"success!"`
+- A **callback** called when the `promiseInstance` is [resolved](javascript-promise-foundation.md#states-of-promise)
+- argument of this callback `value` represent the resolved value of `promiseInstance`
 
 ```js
 const p1 = newPromise((resolve, reject) => {
@@ -33,25 +40,26 @@ p1.then(
 )
 ```
 
-if `onFulfilled` is not a function, 内部被替代为`((x) => x)`
+- `successMessage` is `"success!"`
+- if `onFulfilled` is not a function, it will be replaced by `((x) => x)`
 
-## onRejected
+`onRejected`: `(reason: any) => void`
 
-- a function to be called when the `promiseInstance` is **rejected** or an **error** is thrown
-- if `onRejected` is not a function, 内部被替代为`((x) => { throw x; })`
+- A function to be called when the `promiseInstance` is **rejected** or an **error** is thrown
+- if `onRejected` is not a function, will be replaced by `((x) => { throw x; })`
 
 ## return value
 
 return value is **depend on handler function**
 
-return a promise called `p`, **if the handler function:**
+if return a promise called `p`, **if the handler function:**
 
-- 返回一个值, p是包装这个值的promise, state is `fulfilled`
-- 不返回任何值, p是包装`undefined`的promise, state is `fulfilled`
-- 抛出一个异常, p是包装这个异常的promise, state is `rejected`
-- return a already fulfilled promise, p是包装**这个返回的promise中的值**的promise, state is `fulfilled` or `rejected`
-- return a already rejected promise, p是包装**这个返回的promise中的值**的promise, state is `rejected`
-- return a pending promise, p是状态也是pending, 且终态与返回的promise相同
+- Return a value, `p` is a promise wrapping this value, and the state is [`fulfilled`](javascript-promise-foundation.md#states-of-promise).
+- Do not return any value, `p` is a promise wrapping `undefined`, and the state is [`fulfilled`](javascript-promise-foundation.md#states-of-promise).
+- Throw an exception, `p` is a promise wrapping this exception, and the state is `rejected`.
+- Return an already [fulfilled promise], `p` is a promise wrapping the value from **the returned promise**, and the state is `fulfilled` or `rejected`.
+- Return an already [rejected promise], `p` is a promise wrapping the value from **the returned promise**, and the state is `rejected`.
+- Return a pending promise, `p` is also in the pending state, and the final state is the same as the returned promise.
 
 ## Example
 

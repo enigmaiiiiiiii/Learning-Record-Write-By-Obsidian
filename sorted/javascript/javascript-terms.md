@@ -1,4 +1,4 @@
-# 术语概念
+# Glossary
 
 ## ECMAScript
 
@@ -16,9 +16,9 @@
 
 ## NodeJS
 
-## 生态系统
+## ecosystem
 
-- 浏览器
+- Browser
   - BOM
   - DOM
   - ECMAScript

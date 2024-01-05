@@ -1,14 +1,14 @@
-# 配置文件
+# Eslint - Configuration File
 
-## 初始化配置文件
+## Intialize Eslint Configuration File
 
-```bash
+```sh
 npm init @eslint/config
 # or
 ./node_modules/.bin/eslint --init
 ```
 
-.eslintrc.json文件
+`.eslintrc.json`
 
 ```json
 {
@@ -20,18 +20,18 @@ npm init @eslint/config
 ```
 
 - `["error", "always"]`: 
-  - error: 错误级别
-  - always: 规则值
-- `"semi"`: 检查分号
-- `"quotes"`: 检查引号
+  - error: error level
+  - always: 
+- `"semi"`: check semicolon
+- `"quotes"`: check quotes
 
-错误级别:
+available error level values:
 
-- off or 0: 关闭规则
-- warn or 1: 开启规则, 使用警告级别的错误: `warn`, 不影响exit code
-- error or 2: 开启规则, 使用错误级别的错误: `error`, exit code为1
+- off or 0: close rules
+- warn or 1: open rules with `warn` level, doesn't impact exit code
+- error or 2: open rules with `error` level, exit code set to 1
 
-使用推荐的配置
+Using recommended configuration
 
 ```json
 {

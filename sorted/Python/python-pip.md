@@ -6,6 +6,8 @@
 
 ## Where to Install Package
 
+according to [python-virtual-environment.md](python-virtual-environment.md) there are two places to install package
+
 - global
 - [virtual environment](python-virtual-environment.md)
 
@@ -25,11 +27,21 @@ python -m pip list
 
 ## Install Package
 
+
+install from [PyPI](python-glossary.md#pypi)
+
 - version number can be specified by `==version_number` after package name
 
 ```shell
 python -m pip install numpy==1.1.0
 ```
+
+install from  local [archives](python-glossary.md#source-distribution)
+
+```sh
+python3 -m pip install ./dist/SomeProject-1.0.1.tar.gz
+```
+
 
 ## Remove Package
 
@@ -52,3 +64,8 @@ Write Current Environment to `requirements.txt`
 ```shell
 pip freeze > requirements.txt
 ```
+
+## pyproject.toml
+
+- can not use like [package.json](nodejs-package-json.md) in nodejs for now
+

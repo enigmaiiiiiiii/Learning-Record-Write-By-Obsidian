@@ -2,6 +2,9 @@
 
 * [States Of Promise](#states-of-promise)
 * [Create Promise](#create-promise)
+* [resolve](#resolve)
+* [reject](#reject)
+* [When error thrown from promise](#when-error-thrown-from-promise)
 * [Await a promise](#await-a-promise)
 * [Static Method](#static-method)
 * [Promise Instance method](#promise-instance-method)
@@ -59,7 +62,7 @@ const success = true;
 
 ## Create Promise
 
-`new Promise((resolve, reject) => { ... }))`
+Syntax: `new Promise((resolve, reject) => { ... }))`
 
 ```js
 const success = true;
@@ -76,11 +79,49 @@ const promise = new Promise((resolve, reject) => {
 });
 ```
 
-promise's return value
+## resolve
 
-- `resolve(value)`: wrapping `value` into a Promise Object
-- `reject(reason)`: wrapping `reason` into a Promise Object
-- `throw error`: wrapping `error` into a Promise Object
+`resolve: (value: T) => void`
+
+- when `resolve(value)` execute: wrapping `value` into a Promise Object
+- the `value` can be parsed by `then(onFullfilled, onRejected)` method as [`onFullfilled`](javascript-promise-then.md#parameters) callback function argument
+- in ts, type of `value` can be restricted by generic type `T`
+
+
+## reject
+
+`reject: (message: any) => void`
+
+- `reject(message: any)`: wrapping `reason` into a Promise Object
+- the `message` can be parsed by `then(onFullfilled, onRejected)` method as [`onRejected`](javascript-promise-then.md#parameters) callback function argument
+
+## Example
+
+```ts
+type Point = {
+  x: number;
+  y: number;
+}
+const p = { x: 3, y: 5 }
+const flag = 1
+const promise = new Promise<Point>((resolve, reject) => {
+  if (flag === 1) {
+    resolve(p);  // resolve value must be type of Point
+  } else {
+    reject('reject message can be any type');
+  }
+}).then((point) => {
+  console.log(point.x, point.y);
+}, (reason) => {
+  console.log(reason);
+});
+```
+
+## When error thrown from promise
+
+- `error` will be wrapped into a Promise Object
+- `error` will be passed to `onRejected` callback function
+- or parsed by `catch()` method
 
 ## Await a promise
 
@@ -163,3 +204,4 @@ const myPromise = new Promise((resolve, reject) => {
 ```
 
 - `reject(error)`: this is the reject handler
+
