@@ -32,7 +32,7 @@
 
 ## keyword yield
 
-[here is yield in CSharp](csharp-yield.md)
+> [yield in CSharp](csharp-yield.md)
 
 syntax
 

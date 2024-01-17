@@ -141,7 +141,6 @@ alert('foo');
 alert('foo')
 ```
 
-
 ## ESlint Plugin
 
 ## ESlint In Vscode

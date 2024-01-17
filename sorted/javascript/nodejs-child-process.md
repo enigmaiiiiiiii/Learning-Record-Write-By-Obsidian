@@ -16,6 +16,8 @@
 - `message`
 - `spawn`
 
+## `child_process.exec()`
+
 ## `child_process.spawn()`
 
 what's for
@@ -33,6 +35,7 @@ parameters
 return
 
 - a [`ChildProcess`]() instance
+
 
 ## `child_process.fork()`
 

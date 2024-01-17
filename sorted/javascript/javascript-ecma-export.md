@@ -1,4 +1,4 @@
-# ECMAScript Module Export
+# JavaScript - ECMAScript Module Export
 
 * [features](#features)
 * [default export](#default-export)

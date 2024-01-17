@@ -11,14 +11,17 @@ main.py
 ```py
 import argparse
 
+# 1. create parser
 parser = argparse.ArgumentParser(
                     prog='ProgramName',
                     description='What the program does',
                     epilog='Text at the bottom of help')
+# 2. add arguments to parser
 parser.add_argument('filename')           # positional argument
 parser.add_argument('-c', '--count')      # option that takes a value
 parser.add_argument('-v', '--verbose',
                     action='store_true')  # on/off flag
+# 3. access to arguments
 args = parser.parse_args()
 print(args.filename, args.count, args.verbose)
 ```

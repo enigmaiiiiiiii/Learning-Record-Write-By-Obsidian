@@ -1,6 +1,6 @@
 # Node.js
 
-* [Get Start](#get-start)
+* [Hello NodeJS](#hello-nodejs)
 * [NodeJs Module System](#nodejs-module-system)
 * [NodeJs Package Management](#nodejs-package-management)
 * [Library](#library)
@@ -8,21 +8,11 @@
 * [Advance](#advance)
 * [Get Stucked](#get-stucked)
 
-## What Should In My Mind When Talk About NodeJs
+## Hello NodeJS
 
-- nodejs is a runtime environment
+[Hello NodeJS](nodejs-hello.md)
 
-When saying a project runtime is nodejs, simply think it was executed by command `node`
-
-- minimal project `main.js` whose runtime is nodejs
-
-```sh
-node main.js
-```
-
-## Get Start
-
-[Get Start Use NodeJs](nodejs-using.md)
+[Scaffolding]()
 
 ## NodeJs Module System
 

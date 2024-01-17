@@ -32,6 +32,8 @@
 
 [Packaging Python Projects](python-packaging-python-project.md)
 
+[del statement](python-del-statement.md)
+
 [WSGI](python-wsgi.md)
 
 ## Library
@@ -57,4 +59,12 @@ third party
 ## Web Development Framework
 
 [flask](python-flask.md)
+
+## Blog
+
+`print()` and `sys.stdout.write()`
+
+- `sys.stdout.write()` 
+  - used when we need to control the output formatting 
+  - more memory-efficient, but negligible performance improvement
 

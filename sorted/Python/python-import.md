@@ -10,7 +10,7 @@
 
 - lookup [python standard library]()
 
-3. Directory Search
+3. **Directory Search**
 
 - `sys.path` or subpackage's `__path__`
 

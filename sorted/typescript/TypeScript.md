@@ -16,6 +16,8 @@
 
 [Enum](typescript-enum.md)
 
+[Declaration Merging](typescript-declaration-merging.md)
+
 [Meta Programming](typescript-meta-programming.md)
 
 [Decorator](typescript-decorators.md)

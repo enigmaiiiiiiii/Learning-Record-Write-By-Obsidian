@@ -32,8 +32,8 @@ emitted when:
 
 emitted when:
 
-- process could not be spawned
-- process could not be killed
-- sending a message to the child process failed
+- Process could not be spawned
+- Process could not be killed
+- Sending a message to the child process failed
 - The child process was aborted via the [`signal`]() option
 

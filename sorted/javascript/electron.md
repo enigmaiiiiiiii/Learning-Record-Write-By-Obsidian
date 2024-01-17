@@ -1,12 +1,18 @@
 # Electron
 
-## Debugging Main Process
+## Process In Electron
 
-```sh
-electron --inspect=9229 app 
-```
+[Process Model](electron-process-model.md)
 
-- debugger need to connect to port 9229 
-- default port is 9229
+[Context Isolation](electron-context-isolation.md)
 
-`--inspect-brk` will pauses execution on first line
+[Inter Process Communication](electron-ipc.md): Key Of Feature Rich APP
+
+## Module
+
+[Module](electron-module.md)
+
+## Debug
+
+[Debug](electron-debug.md)
+

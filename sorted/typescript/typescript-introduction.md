@@ -1,23 +1,23 @@
 # Introduction
 
-## what problem does typescript solve
+## What Problem Does Typescript Solve
 
 - JavaScript is hard to predict what code will do **before it runs**
 - Spell check
 
-## what static type language should be
+## What Static Type Language Should Be
 
-- type is concept of describing which values can be passed to and which will crash
-- static type has to make the call over what code should be **flagged as an error**
+- Type is concept of describing which values can be passed to and which will crash
+- Static type has to make the call over what code should be **flagged as an error**
 
-## complile typescript
+## Complile Typescript
 
-- typescript aren't part of JavaScript(or ECMAScript to be pedantic)
-- so there aren't any browsers or other runtimes that can just run TypeScript unmodified
-- type annotations are completely erased during compilation
+- Typescript aren't part of JavaScript(or ECMAScript to be pedantic)
+- So there aren't any browsers or other runtimes that can just run TypeScript unmodified
+- Type annotations are completely erased during compilation
 
-## what typescript does
+## What Typescript Does
 
-- provide type checking
-- provide [more strict checking level](typescript-config-file.md), the higher the level, the more typescript will check
+- Providing type checking
+- Providing [more strict checking level](typescript-config-file.md), the higher the level, the more typescript will check
 

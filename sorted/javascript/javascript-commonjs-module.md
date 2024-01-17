@@ -5,15 +5,13 @@
 * [exports Object](#exports-object)
 * [import](#import)
 
-## what is this
+## What Is This
 
-- use for organize code in server side
-- if you want to use CommonJS module，need tools, like [browserify](npm-browserify.md)
-- use module.exports to export object
+- Use for organize code in server side
+- Use `module.exports` to export object
+- If you want to use CommonJS module，need tools, like [browserify](npm-browserify.md)
 
-> module's main purpose is to host class definition
-
-## always singleton
+## Always Singleton
 
 - no matter how many times you use `require` to load a module, the module is always a singleton
 

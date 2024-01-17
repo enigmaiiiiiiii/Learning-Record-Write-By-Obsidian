@@ -1,18 +1,18 @@
-# ECMAScript - Module
+# JavaScript - ECMAScript Module
 
-## import
+## Import
 
 Synchronous import
 
 [import](javascript-ecma-import.md)
 
-Dynamic import
+Asynchoronous import(Dynamic import)
 
 - or lazy loading
 - or asynchronously loading
-- relate function [import()](javascript-ecma-dynamic-import.md)
+- function [import()](javascript-ecma-dynamic-import.md)
 
-## export
+## Export
 
 [export](javascript-ecma-export.md)
 

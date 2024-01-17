@@ -2,12 +2,13 @@
 
 ## Exception Handling Process
 
-1. 错误程序退出: 程序发生错误，不会返回任何值，会通过另外一个路径退出方法
-2. 抛出异常: 抛出封装错误信息的对象
-3. 搜索: 从错误的方法开始，按照调用方法的栈顶开始，遍历调用栈, 搜索能够处理该程序的异常处理器
-4. 匹配类型: 如果抛出的异常对象的类型与该处理程序可以处理的类型相匹配，则认为异常处理程序是合适的
-5. 处理: 当找到适当的处理程序时，运行时系统将异常传递给处理程序
-6. 捕获: 被选中的处理程序成为捕获异常
+1. Error program exit: When an error occurs in the program, no value will be returned and the method will exit through another path.
+2. Throw exception: Throw an object encapsulating error information
+3. Search: Starting from the wrong method, start from the top of the stack of the calling method, traverse the call stack, and search for an exception handler that can handle the program.
+4. Matching type: An exception handler is considered appropriate if the type of the exception object thrown matches the type that the handler can handle.
+5. Handling: When an appropriate handler is found, the runtime system passes the exception to the handler
+6. Catch: The selected handler becomes the caught exception
+
 
 ## Try Block
 

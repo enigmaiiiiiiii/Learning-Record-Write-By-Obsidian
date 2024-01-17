@@ -81,5 +81,7 @@ function liveDangerously(x?: number | undefied) {
 
 ## Keyword
 
+[declare](typescript-d-ts-file.md#keyword-declare)
 
+global
 

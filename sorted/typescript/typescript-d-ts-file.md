@@ -1,6 +1,5 @@
 # TypeScript - .d.ts File
 
-
 ## What It Is
 
 - declaration file
@@ -25,9 +24,11 @@
 
 [publishing package](typescript-publishing-d-ts-file.md)
 
-## declare keyword
+## Keyword: declare
 
-- define something with a type and no value
+1. define something with a type and no value
+2. [Module Augmentation](typescript-declaration-merging.md#module-augmentation)
+3. [Global Augmentation](typescript-declaration-merging.md#global-augmentation)
 
 ## type for popular javascript libraries
 

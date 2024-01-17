@@ -28,9 +28,8 @@ if True:
     raise Exception("message")
 ```
 
-## Custom Exception
 
-## Handle Exception
+## Except clause
 
 ```py
 try:
@@ -43,11 +42,12 @@ except (RuntimeError, TypeError, NameError):
     pass
 ```
 
-code must be executed if try block **does not** raise an exception
+## `else` clause
 
-- `else` clause
+- code in `else` clause will be executed if try block **does not** raise an exception
+- `else` clause is useful for code that must be executed if the try clause does not raise an exception
 
-> different with [`finally` clause](java-exception-handling.md#finally-block) in java, which is executed even an exception is raised
+> different with [`finally` clause](#finally-clause), which is executed even an exception is raised
 
 ```py
 for arg in sys.argv[1:]:
@@ -60,7 +60,14 @@ for arg in sys.argv[1:]:
         f.close()
 ```
 
-Exception Compatibility
+## `finally` clause
+
+- exception will be raised at the end of `finally` clause
+- if execute a `return`, `break` or `continue` statement in `finally` clause, the exception is discarded
+
+## Custom Exception
+
+## Exception Compatibility
 
 ```py
 class B(Exception):

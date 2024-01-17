@@ -1,20 +1,23 @@
 # Typescript - tsconfig Fields List
 
+
 * [baseUrl](#baseurl)
-* [paths](#paths)
 * [compilerOptions](#compileroptions)
+  * [paths](#paths)
   * [strictNullChecks](#strictnullchecks)
   * [noImplicitAny](#noimplicitany)
   * [downlevelIteration](#downleveliteration)
   * [strict](#strict)
   * [strictPropertyInitialization](#strictpropertyinitialization)
   * [sourceMap](#sourcemap)
+  * [module](#module)
 
-## baseUrl
-
-## paths
 
 ## compilerOptions
+
+### baseUrl
+
+### paths
 
 ### strictNullChecks
 

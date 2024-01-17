@@ -1,4 +1,4 @@
-# Practical Command of Git
+# Git - Practical Use
 
 * [print merges commit log](#print-merges-commit-log)
 * [Check Commit Log](#check-commit-log)
@@ -82,7 +82,7 @@ git rm --cached -r . # remove all files from stage
 git add . # add all files to stage
 ```
 
-## discard all local changes
+## Discard All Local Changes
 
 ```sh
 git reset --hard # discard all local changes and untracked files
@@ -164,8 +164,14 @@ git branch -m main
 git push -f origin main
 ```
 
-## copy files or directory from another commit
+## Copy Files Or Directory From Another Commit
 
 ```sh
 git checkout <commitid> <relative_path>
+```
+
+## Check Ignored Files
+
+```sh
+git status --ignored
 ```
