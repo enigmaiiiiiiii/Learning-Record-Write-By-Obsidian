@@ -141,6 +141,10 @@ alert('foo');
 alert('foo')
 ```
 
+disable typescript check is not responsibility of eslint
+
+- its [`@ts-ignore`](typescript-ignore-errors.md)
+
 ## ESlint Plugin
 
 ## ESlint In Vscode

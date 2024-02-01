@@ -1,19 +1,19 @@
-# Lua - Package
+# Lua - Modules
 
-## What Is Package In Lua
+## What Is Module In Lua
 
 - lua package represented by [table](lua-table.md)
 
-## Define A Package
+## Define A Module
 
 ```lua
-cmp = {}
+local cmp = {}
 function cmp.eq(a, b) return a == b end
 function cmp.lt(a, b) return a < b end
 return cmp
 ```
 
-- `cmp` acts as a package
+- `cmp` acts as a module
 
 ## Require Function
 

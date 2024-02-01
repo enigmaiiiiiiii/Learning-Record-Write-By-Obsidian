@@ -1,14 +1,14 @@
 # VueRouter In Modular Project
 
-- [Introduction](#introduction)
-- [write in main.js](#write-in-mainjs)
-- [写在router/index.js](#写在routerindexjs)
-- [write in app.vue](#write-in-appvue)
-- [引入并安装插件](#引入并安装插件)
-- [定义路径](#定义路径)
-- [创建VueRouter实例](#创建vuerouter实例)
-- [挂载根实例](#挂载根实例)
-- [页面内容](#页面内容)
+* [Introduction](#introduction)
+* [write in main.js](#write-in-main.js)
+* [wirte in router/index.js](#wirte-in-router/index.js)
+* [write in app.vue](#write-in-app.vue)
+* [引入并安装插件](#引入并安装插件)
+* [定义路径](#定义路径)
+* [创建VueRouter实例](#创建vuerouter实例)
+* [挂载根实例](#挂载根实例)
+* [页面内容](#页面内容)
 
 ## Introduction
 
@@ -17,9 +17,7 @@
 
 ## write in main.js
 
-- [引入并安装插件](#引入并安装插件)
-- [创建路由对象](#创建路由对象)
-- [创建Vue实例](#创建vue实例)
+- import and use plugin
 
 ## wirte in router/index.js
 
@@ -27,9 +25,9 @@
 
 ## write in app.vue
 
-- [页面内容](#页面内容)
+- [web page](#页面内容)
 
-## 引入并安装插件
+## Import And Use Plugin
 
 ```js
 import Vue from 'vue'
@@ -53,7 +51,7 @@ const routes = [
 
 - Foo和Bar是[Vue组件](vue-component.md)
 
-## 创建VueRouter实例
+## Create VueRouter Instance
 
 - routes: array of route
 - 还可以配置其它选项
@@ -64,7 +62,7 @@ const router = new VueRouter({
 })
 ```
 
-## 挂载根实例
+## mount root instance
 
 main.js
 
@@ -74,7 +72,7 @@ const app = new Vue({
 }).$mount('#app')
 ```
 
-## 页面内容
+## Web Page
 
 app.vue
 

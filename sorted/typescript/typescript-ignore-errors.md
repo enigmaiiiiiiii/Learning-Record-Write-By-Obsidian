@@ -2,6 +2,8 @@
 
 ## @ts-ignore
 
+> relevant comment in [eslint](eslint.md#disable-rules)
+
 Typescript may offer you errors which you disagree with
 
 Add `// @ts-ignore` preceding the line to ignore the error

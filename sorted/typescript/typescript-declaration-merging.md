@@ -46,19 +46,37 @@ namespace buildLabel {
 }
 ```
 
+## Merging Function With Interface
+
+Declaring an function and an interface with same name in same scope. They can be imported as one.
+
+- `foo.ts`
+
+```ts
+export function Foo {
+    // ...
+}
+export interface Foo {
+    name: string
+}
+```
+
+- `main.ts`
+
+```ts
+import { Foo } from './foo'
+```
+
 ## Module Augmentation
 
 use case
 
-- when working with javascript, one can access to non-existent property of global object
+- when working with javascript, one can access to a unexist property of global object
 - while in typescript, this will cause error, cause window has no property `fooApi`
-
-```js
 
 ```js
 window.fooApi
 ```
-
 
 `observable.ts`
 

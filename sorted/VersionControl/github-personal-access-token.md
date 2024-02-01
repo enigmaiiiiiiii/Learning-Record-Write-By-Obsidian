@@ -1,6 +1,6 @@
-# 个人令牌
+# Git - Personal Access Token
 
-## 创建
+## Create
 
 - Settings -> Developer settings -> Personal access tokens
 - 设置名称
@@ -8,7 +8,7 @@
 - 选择作用权限
 - 单击Generate token
 
-## 使用
+## Usage
 
 > 只能作用于HTTPS GIT操作
 

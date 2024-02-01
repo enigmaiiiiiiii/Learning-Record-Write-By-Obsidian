@@ -31,6 +31,7 @@ function createWindow() {
 ```
 
 - set listener for specific event channel with `ipcMain.on`
+  - channel is a string
 - event handler takes two arguments
   - `event`: [IpcMainEvent]() object
   - `msg`: object or string sent from render process

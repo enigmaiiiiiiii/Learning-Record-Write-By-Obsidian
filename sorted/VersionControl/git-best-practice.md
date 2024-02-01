@@ -1,4 +1,4 @@
-# Git - Practical Use
+# Git - Best Practice
 
 * [print merges commit log](#print-merges-commit-log)
 * [Check Commit Log](#check-commit-log)
@@ -22,7 +22,6 @@ git --no-pager log
 > `git log | cat` also works, but not colorful
 
 ## Track A file Changes History
-
 
 
 ## print merges commit log
@@ -113,7 +112,7 @@ git add forgotten_file
 git commit --amend
 ```
 
-## temporarily save current modification
+## Temporarily save current modification
 
 - And go check other commits without committing current modification
 

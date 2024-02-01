@@ -34,7 +34,7 @@ print(not nil) -- true
 print(not not nil) -- false
 ```
 
-ternary operator
+ternary operator in lua
 
 > equivalent to `a ? b : c` in C language
 

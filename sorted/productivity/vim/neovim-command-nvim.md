@@ -16,17 +16,17 @@ for file `foo.lua`:
 local api = vim.api
 ```
 
-use lua command to execute this file, error reported
+use lua command `lua foo.lua` to execute this file, error reported
 
 ```
-$ nvim foo.lua
+$ lua foo.lua
 lua: foo.lua:1: attempt to index a nil value (global 'vim')
 stack traceback:
         foo.lua:1: in main chunk
         [C]: in ?
 ```
 
-use nvim command with -l options to execute this file, no error reported
+use nvim command with `-l` options to execute this file, no error reported
 
 ```sh
 nvim -l foo.lua

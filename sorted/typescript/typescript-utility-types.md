@@ -91,7 +91,7 @@ const cats: Record<CatName, CatInfo> = {
 
 ## Pick<Type, Keys>
 
-- build a type by picking the set of properties `Keys` from `Type`
+- Build a type by picking the set of properties `Keys` from `Type`
 
 ```ts
 interface Todo {

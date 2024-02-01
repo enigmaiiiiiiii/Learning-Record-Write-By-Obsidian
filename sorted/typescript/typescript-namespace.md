@@ -2,7 +2,7 @@
 
 ## What It Is
 
-- can be treated as a module inside a module
+- can be treated as a [module](typescript-module.md) inside a module
 
 ## What's For
 
@@ -29,7 +29,7 @@ namespace MyMath {
 
 - if you want objects in a namespace to be visible outside the namespace, you need `export` them
 
-## alias
+## Alias
 
 - `import id = x.y.z`; id is the alias of x.y.z
 
@@ -43,3 +43,4 @@ namespace Shapes {
 import polygons = Shapes.Polygons;
 let sq = new polygons.Square(); // Same as 'new Shapes.Polygons.Square()'
 ```
+

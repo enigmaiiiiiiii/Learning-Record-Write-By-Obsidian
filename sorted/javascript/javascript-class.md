@@ -1,6 +1,6 @@
 # JavaScript - Class
 
-> essentially is a special [function](javascript-function.md)
+> Essentially is a special [function](javascript-function.md)
 
 * [Define a class](#define-a-class)
 * [Contructor](#contructor)
@@ -12,9 +12,9 @@
 * [ECMA built-in type can be inherited](#ecma-built-in-type-can-be-inherited)
 * [Local Class](#local-class)
 
-## Define a class
+## Define A Class
 
-property added directly to class will be added to [prototype](javascript-three-prototype-concepts.md#prototype-property)
+Property added directly to class will be added to [prototype](javascript-three-prototype-concepts.md#prototype-property)
 
 ```js
 class Rectangle {
@@ -55,9 +55,11 @@ class Rectangle {
 }
 ```
 
+[Constructor function](javascript-constructor.md)
+
 ## Method
 
-[prototype](javascript-prototype.md) method
+[Prototype](javascript-prototype.md) method
 
 [Generator Method](javascript-generator-function.md)
 
@@ -86,7 +88,7 @@ p.locate();  // TypeError: p.locate is not a function
 
 ```js
 class Point {
-    x = 0;  // 公有字段
+    x = 0;  // public field
 }
 ```
 
@@ -152,4 +154,16 @@ const p = new class {
     console.log('here is the location')
   }
 }
+```
+
+## Class Expression
+
+```ts
+const Rectangle = class {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+const rec = new Rectangle(10, 20);
 ```

@@ -30,7 +30,34 @@ class GoodGreeter {
 }
 ```
 
-signature of constructor function is like ` { new(...args: any[]): ClassName, ...}`
+## Constructor Type
+
+```ts
+interface Foo<T> {
+    ctor: new () => T;
+}
+```
+
+- here is an interface with a property named `ctor` whose type is a constructor
+
+often used in [dependency injection](design-pattern-dependency-injection.md)
+
+## Construct Signatures
+
+1. An interface with construct signatures
+2. And An instance has this interface as type annotation
+3. Then this instance can be treated as a **ClassName**, can be invoked with `new` operator
+
+```ts
+type SomeConstructor = {
+    new (s: string): SomeObject;
+}
+function fn(ctor: SomeConstructor) {
+    return new ctor("hello");
+}
+```
+
+signature of [constructor function](#construct-signatures) is like ` { new(...args: any[]): ClassName, ...}`
 
 - for example, if a function take a constructor function as parameter
 - the function can be defined like following

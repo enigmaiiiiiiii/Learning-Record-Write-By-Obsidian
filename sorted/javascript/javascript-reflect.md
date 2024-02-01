@@ -1,4 +1,4 @@
-# JavaScript Reflect
+# JavaScript - Reflect
 
 ## What It Is
 
@@ -6,7 +6,7 @@
 - Not **a constructor**, cannot be used with `new` operator
 - provides static functions which are same as [proxy handler methods](javascript-proxy.md#handler-methods)
 
-major use is to provide **default forwarding behavior** in [Proxy handler](javascript-proxy.md)
+Major usage is to provide **default forwarding behavior** in [Proxy handler](javascript-proxy.md)
 
 ```js
 const p = new Proxy(
@@ -21,7 +21,7 @@ const p = new Proxy(
 
 ## Features
 
-- some methods are same as method in [Object](), although they do have some subtle differences
+- Some methods are same as method in [Object](), although they do have some subtle differences
 
 ```js
 const duck = {

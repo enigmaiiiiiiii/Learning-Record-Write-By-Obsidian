@@ -1,4 +1,4 @@
-# Module
+# TypeScript - Module
 
 ## export all exports
 

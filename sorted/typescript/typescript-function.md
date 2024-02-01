@@ -6,8 +6,7 @@
 * [Function Overload](#function-overload)
 * [Generic Functions](#generic-functions)
 * [Callable Signatures](#callable-signatures)
-* [Construct Signatures](#construct-signatures)
-* [other type working with function](#other-type-working-with-function)
+* [Other Type Working With Function](#other-type-working-with-function)
 * [Rest Parameters](#rest-parameters)
 * [Rest Arguments](#rest-arguments)
 
@@ -65,14 +64,8 @@ foo(); // 18
 
 ## Function Overload
 
-> here is a overload signature
-
-```ts
-function greet(name: string): string;
-```
-
-- by write several overload signatures, **followed** by the **function implementation**
-- a function can have multiple overload signatures, but only one implementation
+- By write several overload signatures, **followed** by the **function implementation**
+- A function can have multiple overload signatures, but only one implementation
 - In summary
   - if a function have 2 kind of parameter lists
   - you need 2 **overload signatures** and 1 implementation
@@ -90,7 +83,7 @@ function fx(x: number, y?: number): number {
 }
 ```
 
-- function implementattion must be compatible with all overload signatures
+- function implementation must be **compatible** with all overload signatures
 
 ```ts
 function fx(x: number): void;
@@ -159,22 +152,7 @@ function doSomething(fn: OneCallable) {
 
 > callable signature syntax is slightly different from [function type expression](#function-type-expressions), no => between parameter list and return type
 
-## Construct Signatures
-
-1. an interface with construct signatures
-2. an instance has this this interface as type annotation
-3. the instance can be invoked with `new` operator
-
-```ts
-type SomeConstructor = {
-    new (s: string): SomeObject;
-}
-function fn(ctor: SomeConstructor) {
-    return new ctor("hello");
-}
-```
-
-## other type working with function
+## Other Type Working With Function
 
 void
 

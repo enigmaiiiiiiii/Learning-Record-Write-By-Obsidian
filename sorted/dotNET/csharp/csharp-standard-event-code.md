@@ -1,6 +1,6 @@
 # code
 
-```c#
+```cs
 public class IncrementerEventArgs: EventArgs
 {
     public int IterationCount{get;set;}
@@ -8,10 +8,10 @@ public class IncrementerEventArgs: EventArgs
 
 class Incrementer
 {
-    // 声明事件
+    // declare event
     public event EventHandler<IncrementerEventArgs>? CountedADozen;
 
-    // 触发条件
+    // trigger event
     private IncrementerEventArgs args = new ();
 
     public void DoCount()
@@ -51,8 +51,8 @@ class Program
         Incrementer incrementer = new Incrementer();
         Dozens dozensCounter = new Dozens();
         dozensCounter.Incrementer = incrementer;
-                dozensCounter.Regis();  // 注册事件
-        incrementer.DoCount();  // 触发事件
+                dozensCounter.Regis();  // register event handler
+        incrementer.DoCount();  // trigger event
         Console.WriteLine("Number of dozens = {0}",
             dozensCounter.DozensCount);
     }

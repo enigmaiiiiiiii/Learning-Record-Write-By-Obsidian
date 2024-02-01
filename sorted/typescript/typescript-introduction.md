@@ -1,5 +1,10 @@
 # Introduction
 
+* [What Problem Does Typescript Solve](#what-problem-does-typescript-solve)
+* [What Static Type Language Should Be](#what-static-type-language-should-be)
+* [Complile Typescript](#complile-typescript)
+* [What Typescript Does](#what-typescript-does)
+
 ## What Problem Does Typescript Solve
 
 - JavaScript is hard to predict what code will do **before it runs**

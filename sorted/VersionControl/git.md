@@ -48,7 +48,7 @@
 
 ## Blog
 
-[Practical Command](git-practical-command.md)
+[Best Practice](git-best-practice.md)
 
 [Git Best Practice For Collaboration](git-best-practice-for-collaboration.md)
 

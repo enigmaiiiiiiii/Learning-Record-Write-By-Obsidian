@@ -2,11 +2,11 @@
 
 ## What Is This
 
-- an object to create a wrapper for another object
+- An object to create a wrapper for another object
 
 ## Why Proxy
 
-- intercept and redefined fundamental operations for target object
+- Intercept and redefined fundamental operations for target object
 
 ## Take A Look
 
@@ -35,8 +35,8 @@ const proxyTarget = new Proxy(target, handler)
 console.log(proxyTarget.name)
 ```
 
-- `name` property of original object will return `hello`
-- `name` property of proxy object will return `world`
+- `name`: property of original object will return `hello`
+- `name`: property of proxy object will return `world`
 
 ## Create A Proxy
 
@@ -66,22 +66,26 @@ const handler = {
 
 > sometimes called traps
 
-- which means the function type is already defined
-  - `get(target, prop, receiver)`
-  - `set(target, prop, value, receiver)`
-  - has
-  - deleteProperty
-  - apply
-  - construct
-  - getOwnPropertyDescriptor
-  - defineProperty
-  - getPrototypeOf
-  - setPrototypeOf
-  - enumerate
-  - ownKeys
-  - preventExtensions
-  - isExtensible
-  - getOwnPropertyNames
-  - apply
-  - construct
+which means the function signature has already defined
+
+- `get(target, prop, receiver)`
+  - `target`
+  - `prop`: represent property key
+  - `receiver`:
+- `set(target, prop, value, receiver)`
+- has
+- deleteProperty
+- apply
+- construct
+- getOwnPropertyDescriptor
+- defineProperty
+- getPrototypeOf
+- setPrototypeOf
+- enumerate
+- ownKeys
+- preventExtensions
+- isExtensible
+- getOwnPropertyNames
+- apply
+- construct
 

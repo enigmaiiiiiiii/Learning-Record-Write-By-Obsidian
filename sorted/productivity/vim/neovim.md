@@ -1,5 +1,6 @@
 # Neovim
 
+
 ## where config file locate
 
 ```

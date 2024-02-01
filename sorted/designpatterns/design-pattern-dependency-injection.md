@@ -1,4 +1,4 @@
-# JavaScript Design Pattern - Dependency Injection
+# Design Pattern - Dependency Injection
 
 ## What Is Definition of Dependency Injection
 

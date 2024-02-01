@@ -10,8 +10,8 @@
 
 ## What It Is
 
-- to load and run libraries
-- do the same job as [`dofile`](lua-built-in-functions.md) function, but has different mechanism and more features
+- loading and run libraries
+- Doing the same job as [`dofile`](lua-built-in-functions.md) function, but has different mechanism and more features
 
 ## Feature
 
@@ -36,9 +36,9 @@ $ print(package.path)
 
 - `package.path` is a string initialized by the environment variable [`LUA_PATH`](#lua_path)
 
-**NOTICE**:
+**Caveat**:
 
-- `. ` is **not the relative path of the script who call `require` function**
+- `.` is **not the relative path of the script who call `require` function**
 - `.` in relative path `./?.lua` or `./?/init.lua` represent the directory of the entry script of program, that is where the `lua` command is executed
 
 For example, if execute command `lua script.lua` at the root of following directory structure, for `require('add')` in `/mod/init.lua` will cause module not found error
@@ -50,7 +50,6 @@ For example, if execute command `lua script.lua` at the root of following direct
 │   └── init.lua
 └── script.lua
 ```
-
 
 ## Search Paths
 
@@ -75,7 +74,9 @@ print(package.path)
 
 ## Return Value
 
-add.lua
+return a lua [module](lua-modules.md)
+
+- add.lua
 
 ```lua
 function add(a, b)
@@ -83,7 +84,7 @@ function add(a, b)
 end
 ```
 
-main.lua
+- main.lua
 
 ```lua
 local f = require "add"

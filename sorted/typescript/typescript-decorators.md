@@ -18,8 +18,39 @@
 
 ## What Is Decorator
 
-- A special **function** that can be attached to class declaration, method, accessor, property, parameter
+- A special **function** that can be attached to 
+  - class declaration, 
+  - method
+  - accessor
+  - property
+  - parameter
 - Called at runtime
+- Change the behavior of class when inside when **declared**
+
+## Features
+
+**1. All Decorators First Two Parameters Are The Same**, for example:
+
+```ts
+function foo(target: any, properKey: string | symbol): any {
+  // do something
+}
+```
+
+- `target` is the class itself
+- `propertyKey` is the name of the member
+- this decorator can be decorated on every class items
+
+**2. Decorators Execute Only Once**
+**3. Decorator Execute Order**
+
+- Instance members **BEFORE** static members 
+- Instance members and static members order **based on declaration order respectively**
+- Constructor is **LAST** executed
+- [Decorator Factory](#decorator-factories) **BEFORE** Decorator
+- For method and constructor(recursively execute)
+  - Method [decorator factory](#decorator-factories) **BEFORE** its parameters [decorator factory](#decorator-factories)
+  - Parameter decorators **BEFORE** its method decorators
 
 ## Define Decorator
 
@@ -64,6 +95,8 @@ function color(value: string) {
 ```
 
 Why Decorator Factories?
+
+- Decorator can't be used with parameters
 
 ## How To Use Decorator
 
@@ -116,10 +149,6 @@ const p = new Person("John")
 p.greet()  // hello John
 ```
 
-## Decorator Evaluation(Execute) Order
-
-1. Parameter Decorators, followed by Method, Accessor, or Property Decorators are appied for each **instance** member
-2. Parameter Decorators, followed by Method, Accessor, or Property Decorators are applied for each **static** member
 
 ## Class Decorator
 
@@ -254,7 +283,7 @@ type D = (target: Object, propertyKey: string | symbol, parameterIndex: number) 
 parameters
 
 - `target`: 
-  - prototype of the class for an **instance member**
+  - [prototype of the class](javascript-class.md) where the member is declared in
   - or constructor function of the class for a **static member**
 - `propertyKey`: name of the member
 - `parameterIndex`: index of the parameter in the function's parameter list
