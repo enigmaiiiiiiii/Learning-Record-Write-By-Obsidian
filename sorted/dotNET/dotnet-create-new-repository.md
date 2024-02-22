@@ -36,4 +36,4 @@ files generated:
 </Project>
 ```
 
-- `<TargetFramework>`: 目标框架，可以设置多个框架，用`;`隔开
+- `<TargetFramework>`

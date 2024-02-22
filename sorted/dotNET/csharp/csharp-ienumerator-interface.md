@@ -1,13 +1,11 @@
-# 枚举器
+# CSharp - IEnumerator Interface
 
-## IEnumerator接口
+## IEnumerator
 
-- <font color="red">实现IEnumerator接口的类型称为可枚举类型</font>
-- 包含3个函数成员: Current, MoveNext, Reset
+has 3 method: Current, MoveNext, Reset
+
 - Current
 - MoveNext
-  - 原始位置在第一项之前，也意味着**必须在current之前调用**
-  - **返回bool值**，表示新位置是否已超过序列尾部
-- Reset: 重置为原始状态
+- Reset
 
-## 泛型版本
+## Generic IEnumerator

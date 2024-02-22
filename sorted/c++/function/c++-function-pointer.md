@@ -1,4 +1,4 @@
-#  函数指针
+# C++ - Function Pointer 
 
 [[c++_Class_Member_Function_Pointer]]
 

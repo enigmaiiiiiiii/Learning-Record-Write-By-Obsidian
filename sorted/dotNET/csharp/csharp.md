@@ -2,7 +2,9 @@
 
 ## I
 
-[Compile And Execute](csharp-compile.md)
+[Hello CSharp](csharp-hello-world.md)
+
+[Package System]
 
 [Foundation](csharp-foundation.md)
 
@@ -26,7 +28,7 @@
 
 [Events](csharp-events.md)
 
-[ienumerator and iterator](csharp-ienumerator-and-iteraotr.md)
+[ienumerator and iterator](csharp-iteration.md)
 
 [async](csharp-async.md)
 

@@ -1,59 +1,76 @@
-# 委托概述
+# CSharp - Delegate Overview
+ 
+* [Delegate Declaration](#delegate-declaration)
+* [Create Delegate Instance](#create-delegate-instance)
+* [Group Delegate](#group-delegate)
+* [invoke Delegate](#invoke-delegate)
+* [Delegate Return Value](#delegate-return-value)
+* [Create Anonymous Delegate](#create-anonymous-delegate)
 
-## 声明委托
+## What is Delegate
+
+> 理解委托的方法, [是把委托看作一个类型安全，面向对象的c++函数指针](c++-function-pointer.md)
+
+- A Delegate can be thought of as a type-safe, object-oriented function pointer.
+
+## Delegate Declaration
 
 ```c#
 delegate void Mydel(int x);
 ```
 
-- 用delegate关键字声明委托
-- 没有方法主体
-- 看作包含相同返回类型和签名的方法的有序列表
-- 调用委托会调用其中所有方法
+## Create Delegate Instance
 
-## 声明委托对象
+```c
+del1 = new MyDel(myInstObj.MyM1)
+```
 
-- `del1 = new MyDel(myInstObj.MyM1)`
-  - myInstObj.MyM1是委托的方法
+- `myInstObj.MyM1` is the method to be delegated
 
-## 组合委托
+## Group Delegate
 
-```c#
+```c
 MyDel delA = myInstObj.MyM1;
 MyDel delB = SClass.OthreM2;
 
-delA += delB;  // 增加方法
-MyDel delC = delA + delB; // 组合方法
-delC -= delA;  // 移除方法
+delA += delB;  // Add Method
+MyDel delC = delA + delB; // Group Delegate
+delC -= delA;  // Remove Method
 ```
 
-- 以加入的先后顺序作为调用调用顺序
+- The order added is the order invoked.
 
-## 调用委托
+## invoke Delegate
 
-- 调用委托中的所有方法
+```c# 
+```
 
-## 委托返回值
+## Delegate Return Value
 
-- 返回最后一个方法的返回值
+- Return the value of last method
 
-## 引用参数
+## Anonymous Delegate
 
-- 引用参数值的新值传给下一个参数
+```c
+delegate int MyDel(int InParam);  // Declare delegate type
 
-## 创建匿名委托
-
-```c#
-delegate int MyDel(int InParam);  // 声明委托类型
-
-MyDel del = delegate(int x) {return x};  // 创建匿名方法委托对象
+MyDel del = delegate(int x) {return x};  // Create delegate instance
 
 del(5);
 ```
 
-- 不会显式声明返回类型
-- params关键字会被省略
+Lambda Expression
 
-## Lambda表达式
+```c
+MyDel del = (int x) => { return x };  
+```
 
-MyDel del = (int x) => {return x};  // 以lambda形式创建匿名委托对象
+## Predefined Delegate
+
+Action
+
+- no return value
+
+Func
+
+- `Func<TResult>` A Delegate with TResult return type

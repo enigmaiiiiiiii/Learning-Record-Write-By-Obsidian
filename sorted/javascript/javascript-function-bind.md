@@ -1,4 +1,4 @@
-# Bind Function
+# JavaScript - Bind Function
 
 * [apply()](#apply)
 * [call()](#call)
@@ -47,7 +47,7 @@ difference between call() and apply()
 
 `bind(thisArg, arg1, arg2, ...))`
 
-difference between call and bind
+vs [`call()`](#call)
 
 - bind return a [function object]()
 - [`call()`](#call) will call function directly

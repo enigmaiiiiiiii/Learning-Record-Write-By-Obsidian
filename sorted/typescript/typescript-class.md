@@ -283,9 +283,9 @@ class Box<Type> {
 
 [`this` in javascript](javascript-this.md)
 
-## arrow function
+## Arrow Function
 
-- a function that loses its `this` context
+- A function that loses its `this` context
 
 ```ts
 class MyClass {

@@ -1,4 +1,4 @@
-# Introduction
+# Typescript - Introduction
 
 * [What Problem Does Typescript Solve](#what-problem-does-typescript-solve)
 * [What Static Type Language Should Be](#what-static-type-language-should-be)

@@ -195,7 +195,20 @@ type T0 = ReturnType<typeof f1>;
 
 `InstanceType<Type>`
 
-- constructs a type consisting of the instance type of a constructor function in Type
+- Constructs a type consisting of the instance type of a constructor function in `Type`
+
+```ts
+class C {
+  x = 0;
+  y = 0;
+}
+
+type T0 = InstanceType<typeof C>;
+type T1 = C;
+```
+
+- `T0` is equivalent to `T1
+
 
 ## ThisParameterType
 

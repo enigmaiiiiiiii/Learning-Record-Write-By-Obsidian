@@ -2,10 +2,19 @@
 
 * [Install Brew](#install-brew)
 * [Terminology](#terminology)
+  * [formula](#formula)
+  * [cask](#cask)
+  * [keg](#keg)
+  * [rack](#rack)
+  * [Cellar](#cellar)
+  * [Tap](#tap)
+* [Query Installed Package](#query-installed-package)
+* [Search Package](#search-package)
 * [Install package](#install-package)
 * [clean](#clean)
 * [Query Package Info](#query-package-info)
 * [Generate Brewfile](#generate-brewfile)
+* [switch to a specific version](#switch-to-a-specific-version)
 
 ## Install Brew
 
@@ -60,7 +69,7 @@ brew search <package>
 brew install <package>
 ```
 
-## clean
+## Clean
 
 ```sh
 brew cleanup <package>
@@ -79,7 +88,7 @@ brew bundle dump
 brew bundle dump --file=~/.dotfiles/Brewfile
 ```
 
-## switch to a specific version
+## Switch To A Specific Version
 
 switch from `node` version
 

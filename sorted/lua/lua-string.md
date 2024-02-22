@@ -40,3 +40,8 @@ pair = "name = Anna"
 _, _, key, value = string.find(pair, "(%a+)%s*=%s*(%a+)")
 print(key, value)  -- name Anna
 ```
+
+## Escape Sequences
+
+- wrap in `[[ ]]` to avoid escape sequences
+

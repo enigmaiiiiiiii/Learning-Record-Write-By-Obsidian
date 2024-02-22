@@ -1,6 +1,7 @@
-# 迭代器
+# CSharp - Iterator
 
-- 迭代器返回`IEnumrator<T>`
-- 通过[yield](csharp-yield.md)实现, 包含多个yield语句
-- 不限制方法名
+## What Is Iterator
+
+- Iterator return [`IEnumrator<T>`](csharp-ienumerator-interface.md) interface
+- [yield](csharp-yield.md)
 

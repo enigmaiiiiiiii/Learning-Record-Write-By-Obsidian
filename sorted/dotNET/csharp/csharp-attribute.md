@@ -1,23 +1,26 @@
-# 特性
+# CSharp - Attribute
 
-- 所有特性类都派生自System.Attribute
-- 使用[Type对象](csharp-reflection.md)获取类型信息，从而访问特性
-- 应用了特性的程序结构称作目标
-- 命名方法: Pascal命名，以Attribute后缀结尾
-- 应用特性时可以不使用Attribute后缀，如SerializableAttribute应用时可以写作Serializable
-- .NET预设了很多特性，也可以自定义特性
+## What Is This
 
-## 位映射特性
 
-## 应用特性
+## Features
 
-- 在结构前放置特性片段来应用特性
+- All attribute classes derive from `System.Attribute`
+- Name Convention: Pascal, end with Attribute
+- When using attribute, you can omit the suffix Attribute, such as `SerializableAttribute` can be written as `[Serializable]`
+
+## How To Use
 
 ```c#
 [Serializable]
 public class Myclass {}
 ```
 
-## [几个预定义特性](csharp-attribute-predefined.md)
+## Predefined Attributes 
 
-## [自定义特性](csharp-custom-attribute.md)
+[Predefined Attributes](csharp-attribute-predefined.md)
+
+## Custom Attribute 
+
+[Custom Attrribute](csharp-custom-attribute.md)
+

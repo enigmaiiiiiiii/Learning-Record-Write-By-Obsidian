@@ -3,11 +3,11 @@
 > same concepts in java [annotation](java-annotation.md)
 
 * [What Is Decorator](#what-is-decorator)
+* [Features](#features)
 * [Define Decorator](#define-decorator)
-* [A Decorator Can be Used On Everything](#a-decorator-can-be-used-on-everything)
+* [Create A Decorator That Can be Used On Everything](#create-a-decorator-that-can-be-used-on-everything)
 * [Decorator Factories](#decorator-factories)
 * [How To Use Decorator](#how-to-use-decorator)
-* [Decorator Evaluation(Execute) Order](#decorator-evaluation(execute)-order)
 * [Class Decorator](#class-decorator)
 * [Property Decorators](#property-decorators)
 * [Method Decorators](#method-decorators)
@@ -62,7 +62,7 @@ function sealed(target) {
 }
 ```
 
-## A Decorator Can be Used On Everything
+## Create A Decorator That Can be Used On Everything
 
 ```ts
 function foo(...args: any[]) {
@@ -274,7 +274,7 @@ the difference against method decorator is keys of property descriptor parameter
 
 ## Parameter Decorators
 
-function type of parameter decorator
+Function type of parameter decorator
 
 ```ts
 type D = (target: Object, propertyKey: string | symbol, parameterIndex: number) => void;
@@ -285,8 +285,8 @@ parameters
 - `target`: 
   - [prototype of the class](javascript-class.md) where the member is declared in
   - or constructor function of the class for a **static member**
-- `propertyKey`: name of the member
-- `parameterIndex`: index of the parameter in the function's parameter list
+- `propertyKey`: method name
+- `parameterIndex`: index of the parameter in the function's parameter list, starting from 0
 
 returns
 

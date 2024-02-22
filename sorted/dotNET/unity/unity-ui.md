@@ -1,32 +1,39 @@
-# UI
+# Unity - UI
 
-- 三个UI系统
-  - UI toolkit
-  - Unity UI(uGUI)
-  - IMGUI
+## Three Kinds Of UI Systems
 
-## [UI工具包](unity-script-ui-toolkit.md)
+- UI toolkit
+- Unity UI(uGUI)
+- IMGUI
 
-- 最新的UI系统, 功能不完善
-- 基于标准Web技术(如HTML, XML, CSS)
-- 可以用于
-  - InspectorUI
-  - 编辑器扩展
-  - 应用程序调试
-  - 应用程序运行时UI
+## [UI Toolkit](unity-script-ui-toolkit.md)
+
+- The latest UI system, with incomplete functionality.
+- Based on standard web technologies (such as HTML, XML, CSS).
+
+Can be used for:
+
+- InspectorUI
+- Editor extensions
+- Application debugging
+- Application runtime UI
 
 ## [Unity UI](unity-ui-ugui.md)
 
-- 可以用于
-  - 应用程序运行时UI
-- 不能用于创建编辑器UI  
+Can not be used for:
+
+- Application runtime UI
+
+Can not be used for:
+
+- Create editor UI
 
 ## IMGUI
 
-- 可以用于
-  - InspectorUI扩展
-  - 编辑器扩展
-  - 应用程序调试UI
+Can be used for:
 
+- InspectorUI extensions
+- Editor extensions
+- Application debugging UI
 
 ## OnGUI

@@ -1,4 +1,10 @@
-# Javascript Proxy
+# Javascript - Proxy
+
+* [What Is This](#what-is-this)
+* [Why Proxy](#why-proxy)
+* [Take A Look](#take-a-look)
+* [Create A Proxy](#create-a-proxy)
+* [Handler Methods](#handler-methods)
 
 ## What Is This
 
@@ -68,11 +74,11 @@ const handler = {
 
 which means the function signature has already defined
 
-- `get(target, prop, receiver)`
+- `get(target: any, prop: PropertyKey, receiver): any`
   - `target`
   - `prop`: represent property key
   - `receiver`:
-- `set(target, prop, value, receiver)`
+- `set(target: any, prop: PropertyKey, value, receiver): boolean`
 - has
 - deleteProperty
 - apply

@@ -1,10 +1,6 @@
-# 自定义特性
+# CSharp - Custom Attribute
 
-- 和声明类一样，有两点需要注意
-  - 继承自System.Attribute
-  - 名称以Attribute结尾
-
-## 定义特性
+## Define Custom Attribute
 
 ```c#
 public customAttribute: System.Attribute
@@ -21,9 +17,7 @@ public customAttribute: System.Attribute
 }
 ```
 
-## 使用自定义特性
+- just like declaring a class, there are two points to note
+  - inherit from `System.Attribute`
+  - name ends with Attribute
 
-## 两种参数
-
-- 位置特性参数: 对应特性构造函数的参数
-- 命名参数: 对应公有字段或公有属性

@@ -1,9 +1,9 @@
-## IEnumerable接口
+## CSharp - IEnumerable Interface
 
-- 只有一个成员GetEnumerator, 返回[IEnumerator接口](csharp-ienumerator-interface.md)的方法称为枚举器
+- only one member `GetEnumerator`, a method that returns an [IEnumerator interface](csharp-ienumerator-interface.md) is called an enumerator
 
-## `IEnumerable<T>`和`IDisosable`
+## `IEnumerable<T>` And `IDisosable`
 
-- `IEnumerable<T>`继承自`IDisposable`
+- `IEnumerable<T>` inherit `IDisposable`
 
-> 这样枚举器就可以保有像数据库连接这样的资源，而且可以在枚举结束后(或中途停止)确保释放这些资源
+> by inherit `IDisposable` interface, the enumerator can hold resources like database connection, and can ensure that these resources are released after the enumeration ends (or stops midway)
