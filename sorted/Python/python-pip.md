@@ -11,11 +11,8 @@ according to [python-virtual-environment.md](python-virtual-environment.md) ther
 - global
 - [virtual environment](python-virtual-environment.md)
 
-## Install Package
 
-- `pip install <package>`
-
-## Where Packages Are Installed
+## Checking Where Packages Are Installed
 
 - `pip show <package>` to see where it is installed
 
@@ -27,6 +24,11 @@ python -m pip list
 
 ## Install Package
 
+Simple Install Package
+
+```sh
+pip install <package>
+```
 
 install from [PyPI](python-glossary.md#pypi)
 
@@ -36,7 +38,7 @@ install from [PyPI](python-glossary.md#pypi)
 python -m pip install numpy==1.1.0
 ```
 
-install from  local [archives](python-glossary.md#source-distribution)
+install from local [archives](python-glossary.md#source-distribution)
 
 ```sh
 python3 -m pip install ./dist/SomeProject-1.0.1.tar.gz

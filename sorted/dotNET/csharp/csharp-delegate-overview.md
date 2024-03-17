@@ -9,7 +9,7 @@
 
 ## What is Delegate
 
-> 理解委托的方法, [是把委托看作一个类型安全，面向对象的c++函数指针](c++-function-pointer.md)
+> Delegate can be seen as a type-safe, object-oriented [function pointer](c++-function-pointer.md).
 
 - A Delegate can be thought of as a type-safe, object-oriented function pointer.
 
@@ -40,9 +40,10 @@ delC -= delA;  // Remove Method
 
 - The order added is the order invoked.
 
-## invoke Delegate
+## Invoke Delegate
 
-```c# 
+```c
+MyDel(5);
 ```
 
 ## Delegate Return Value

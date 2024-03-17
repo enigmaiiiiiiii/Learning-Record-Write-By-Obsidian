@@ -85,3 +85,5 @@ function liveDangerously(x?: number | undefied) {
 
 global
 
+## Generic
+

@@ -1,17 +1,22 @@
 # Git - Best Practice
 
+* [Output Git Log In Stdout](#output-git-log-in-stdout)
+* [Track A file Changes History](#track-a-file-changes-history)
 * [print merges commit log](#print-merges-commit-log)
 * [Check Commit Log](#check-commit-log)
 * [Undo commit](#undo-commit)
 * [remove file from stage](#remove-file-from-stage)
-* [discard all local changes](#discard-all-local-changes)
+* [Discard All Local Changes](#discard-all-local-changes)
 * [check staged files](#check-staged-files)
 * [Set HEAD to specified status](#set-head-to-specified-status)
 * [changes forgotten to add to the last commit](#changes-forgotten-to-add-to-the-last-commit)
-* [temporarily save current modification](#temporarily-save-current-modification)
-* [Check all branches](#check-all-branches)
+* [Temporarily save current modification](#temporarily-save-current-modification)
+* [check all branches](#check-all-branches)
+* [Get Remote Url](#get-remote-url)
 * [Resovle Conflict](#resovle-conflict)
 * [A way to make the lastest commit as the initial commit](#a-way-to-make-the-lastest-commit-as-the-initial-commit)
+* [Copy Files Or Directory From Another Commit](#copy-files-or-directory-from-another-commit)
+* [Check Ignored Files](#check-ignored-files)
 
 ## Output Git Log In Stdout
 
@@ -174,3 +179,24 @@ git checkout <commitid> <relative_path>
 ```sh
 git status --ignored
 ```
+
+## Filter Commit History By Specified File
+
+ok
+
+```sh
+git log -- <file>
+```
+
+`--follow` will follow file across renames
+
+```sh
+git log --follow -- <file>
+```
+
+specified line number
+
+```sh
+git log -L 1,1:<file>
+```
+

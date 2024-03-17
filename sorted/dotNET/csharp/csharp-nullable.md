@@ -1,14 +1,16 @@
-## 可空类型
+## CSharp - Nullable
 
-- 可以从任意值类型创建可空类型
-- 不能从引用类型或其他可空类型创建可空类型
-- 可空类型和相应的非可空类型之间可以实现隐式转换
+- Can be created from any [value type]()
+- Can not be created from a [reference type] or another nullable type
+- Nullable and non-nullable types can be implicit converted to each other
 
-```c#
+```c
 int? myNInt = 28;
 ```
 
-int?可空类型，myNInt可空变量
+`int?` is nullable type, `myNInt` is nullable variable
 
-- 可空类型赋值
-  - `??`运算符: `myNInt ?? -1`, myNInt如果不为空保持原值，为空则赋值-1
+Assignment of a nullable type
+
+- `??` operator: `myNInt ?? -1`, if myNInt is not null, keep the original value, otherwise assign -1
+

@@ -62,7 +62,7 @@ function sealed(target) {
 }
 ```
 
-## Create A Decorator That Can be Used On Everything
+## A Decorator That Can be Used On Everything
 
 ```ts
 function foo(...args: any[]) {

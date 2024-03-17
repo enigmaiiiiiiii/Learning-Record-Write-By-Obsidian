@@ -33,16 +33,27 @@ which ways to use depends on the situation
 
 ## Structure of Dependency Injection
 
+- [Service Container/Injector](#Injector): Control part of IoC(inversion of control)
 - [Service Interface(Abstract Service)](#service-interface)
 - [Concrete Service](#concrete-service)
-- [Consumer](#consumer)
-- [Injector](#Injector)
+- [Consumer](#consumer): Where Dependencies is injected
+
+## Injector
+
+> may be a class or a method
+
+1. Instantiate concrete service instance
+2. **resolve** and **configure** service's dependencies)
+3. inject concrete service instance into [consumer](#consumer)
+
+> some framework can complete this work, like spring
 
 ## Service Interface
 
-- declare a method that
-  - implemented by [concrete service](#concrete-service) for actual task
-  - Used by [consumer](#consumer)
+declare a method that
+
+- implemented by [concrete service](#concrete-service) for actual task
+- Used by [consumer](#consumer)
 
 ## Concrete Service
 
@@ -81,15 +92,6 @@ class Consumer {
 }
 ```
 
-## Injector
-
-> may be a class or a method
-
-1. create concrete service instance
-2. resolve and configure service's dependencies)
-3. inject concrete service instance into [consumer](#consumer)
-
-> some framework can complete this work, like spring
 
 ## Code
 

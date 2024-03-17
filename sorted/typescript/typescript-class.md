@@ -369,7 +369,7 @@ abstract class Base {
 
 - this is a **special syntax** provided by typescript
 
-what is parameter properties?
+What it is?
 
 - turning a constructor parameter into a class property with the same name and value
 

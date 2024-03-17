@@ -10,14 +10,16 @@
 
 [Variable](csharp-variable.md)
 
-[值类型和引用类型](csharp-value-reference.md)
+[value and reference](csharp-value-reference.md)
 
-[字符和字符串](csharp-string.md)
+[char, string](csharp-string.md)
 
-[数组](csharp-array.md)
+[Array](csharp-array.md)
 
-[运算符](csharp-operator.md)
+[Operator](csharp-operator.md)
 
-[集合](csharp-set.md)
+[Expression](csharp-expression.md)
 
-[可空类型](csharp-nullable.md)
+[Set](csharp-set.md)
+
+[nullable](csharp-nullable.md)

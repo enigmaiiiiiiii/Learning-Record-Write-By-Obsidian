@@ -7,7 +7,7 @@
 
 [Promise](javascript-promise.md)
 
-## async function and await expression
+## [async function and await expression
 
 [async/await](javascript-async-await.md)
 

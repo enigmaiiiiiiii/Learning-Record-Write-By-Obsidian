@@ -1,5 +1,31 @@
 # VSCode - Source Code Architecture
 
+## Dependency Injection System
+
+In This Class, As I think
+
+- Non-disposable service was instantiated by [Decoration](typescript-decorators.md) Injection, Like `@ILogService logService: ILogService`
+- [Disposable]() Service was instantiated by constructor injection, like `this._register(instantiationService.createInstance(ExtensionsDownloader))`
+
+```ts
+export class ExtensionManagementService {
+
+	private readonly extensionsDownloader: ExtensionsDownloader;
+
+	constructor(
+		@ILogService logService: ILogService,
+		@IFileService private readonly fileService: IFileService,
+        // ...
+	) {
+		this.extensionsDownloader = this._register(instantiationService.createInstance(ExtensionsDownloader));
+	}
+}
+```
+
+## Event Driven System
+
+## Disposable
+
 ## Layer
 
 the core is partitioned into following layers
@@ -51,4 +77,5 @@ the core is partitioned into following layers
 ## nls
 
 - string localization
+
 

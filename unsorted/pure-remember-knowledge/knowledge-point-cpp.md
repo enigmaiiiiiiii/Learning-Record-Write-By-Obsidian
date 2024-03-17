@@ -1,8 +1,8 @@
 # Cpp Knowledge Point
 
-## static用法和作用
+## static usage in c++
 
-- 静态局部变量
+- static local variable
   - 随着函数的调用而初始化，不随函数结束而销毁
   - 只初始化一次
   - 保存在全局数据区

@@ -1,4 +1,4 @@
-# type statement
+# TypeScript - type statement
 
 * [Introduction](#introduction)
 * [Name Type Alias](#name-type-alias)

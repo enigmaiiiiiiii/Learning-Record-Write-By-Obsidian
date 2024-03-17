@@ -1,9 +1,6 @@
-# 接口
+# CSharp - Interface
 
-- 指定一组函数成员而不实现他们的引用类型
-- 用关键字`interface`声明接口
-
-## 声明接口
+## Declare Interface
 
 ```csharp
 interface IMyInterface
@@ -13,7 +10,7 @@ interface IMyInterface
 }
 ```
 
-## 实现接口
+## Implement Interface
 
 - 必须为接口的每一个成员提供实现
 

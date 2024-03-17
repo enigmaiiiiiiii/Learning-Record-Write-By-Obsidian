@@ -1,31 +1,30 @@
-# what is an ElasticSearch Index
+# What is ElasticSearch Index
 
-## 基本认识
+## What it is
 
-- 一个索引对应一个Elastic中的database
+- one index corresponds to one database in ElasticSearch
 
-## 索引和数据之间的关联
+## RelationShip between Index and Data
 
-MySQL对应elasticSearch
+MySQL VS elasticSearch
 
 - MySQL $\rightarrow$ database $\rightarrow$ Tables $\rightarrow$ Rows $\rightarrow$ Columns
 - elasticSearch $\rightarrow$ **index** $\rightarrow$ **type** $\rightarrow$ **document** $\rightarrow$ **field**
 
-- 集群可以包含几个index(database)
-- 索引包含几个type(table)
-- 类型包含几个document(row)
-- 文档包含几个properties(column)
+- cluster can contain several index
+- index can contain several type(table)
+- type can contain several document(column)
+- document can contain several fields
 
-比如卡车运输场景中, **卡车订单**索引可以包含几个type: 
+for example, in truck order scenario, **truck_order** index can contain several types:
 
 - start
 - end
 - truck
 
-start类型中一个document, 包含了这个**订单**的所有细节
+a document in type `start` will contain all the details of the order
 
-搜索语句可以是: http://localhost:9200/truck_order/start/order_1
-
+search statement: http://localhost:9200/truck_order/start/order_1
 
 ## 使用索引保存日志
 

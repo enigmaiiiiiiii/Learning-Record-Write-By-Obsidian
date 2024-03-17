@@ -112,7 +112,7 @@ function firstElement<Type>(arr: Type[]): Type {
 - no need to specify the type of the generic function when calling it
 - the type will be inferred automatically
 
-**constraints** type argument's type
+**constraints** type argument's type with `extends`
 
 ```ts
 function longest<Type extends {length: number}>(a: Type, b: Type) {

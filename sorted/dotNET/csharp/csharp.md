@@ -4,7 +4,7 @@
 
 [Hello CSharp](csharp-hello-world.md)
 
-[Package System]
+[Package System](csharp-package-system.md)
 
 [Foundation](csharp-foundation.md)
 
@@ -28,9 +28,11 @@
 
 [Events](csharp-events.md)
 
-[ienumerator and iterator](csharp-iteration.md)
+[Iteration](csharp-iteration.md)
 
-[async](csharp-async.md)
+[IDisposable](csharp-idisposable.md)
+
+[Async](csharp-async.md)
 
 [LINQ](csharp-linq.md)
 
@@ -43,6 +45,14 @@
 [attribute](csharp-attribute.md)
 
 [serialize](csharp-serialize.md)
+
+## Libraries
+
+[Dependency Injection](csharp-dependency-injection.md)
+
+## Tutorial
+
+[debug a memory leak](csharp-debug-memory-leak.md)
 
 ## Application
 

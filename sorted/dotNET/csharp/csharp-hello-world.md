@@ -2,6 +2,14 @@
 
 ## Hello World
 
+initialize a new project
+
+```sh
+dotnet new console -n HelloWorld
+```
+
+- create a new project directory named `HelloWorld`
+
 project structure
 
 ```

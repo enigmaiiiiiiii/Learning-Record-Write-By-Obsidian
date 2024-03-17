@@ -1,51 +1,78 @@
 # CSharp - Class Property
 
-- 属性是一个函数成员
+* [Take A Look](#take-a-look)
+* [VS Field](#vs-field)
+* [Use Property](#use-property)
+* [Property and Field](#property-and-field) [readonly and writeonly](#readonly-and-writeonly) [Auto-implemented Property](#auto-implemented-property)
+* [Expression-bodied Property](#expression-bodied-property)
+
+## Take A Look
+
+Setter's Features
+
+- with a single implicit value parameter, named `value`, same type as the property
+- return type is void
+
+Getter's Features
+
+- no parameter
+- with a return type same as the property type
+- no `()` when accessed
+
+```c
+public class Point
+{
+    private int x;
+    private int y;
+
+    public int X
+    {
+        get { return x; }
+        set { x = value; }
+    }
+
+    public int Y
+    {
+        // ...
+    }
+}
+
+Point p = new Point();
+p.X = 10;
+Console.WriteLine(p.X);
+```
 
 ## VS Field
 
-- 和字段相同的特征
-  - 命名的类成员
-  - 可以被赋值和取值
-- 与字段的不同之处
-  - 不为数据存储分配内存
-  - 执行代码
-- 属性通常用来读写某个关联字段
+Similarity
 
-## set and get
+- Named class members
+- Can be assigned and read
 
-- set访问器
-  - 拥有一个单独的，隐式的值参数, 参数名就是value, 与属性类型相同
-  - 拥有一个返回类型void
-- get访问器
-  - 没有参数
-  - 拥有一个与属性类型相同的返回类型
-  - 调用时没有`()`
+Difference
+
+- Do not have a storage location
+- Execute code when accessed
+
 
 ## Use Property
 
-- 属性赋值: 隐式调用set
-- 读取属性: 隐式调用get 
-- get和set不能被显示调用
+## Property and Field
 
-## 属性和字段关联
+Name Convention
 
-- 用于封装该字段
-- 和属性关联的字段称为后备字段
-- 可以用公有属性读写私有字段
-- 命名约定
-  - 属性使用Pascal: 每个单词首字母大写
-  - 后备字段使用Camel: 除第一个单词每个单词首字母大写，以下划线开始或没有下划线
+- Property use Pascal, for example: FirstName
+- Reference field use Camel, for example: firstName
 
 ## readonly and writeonly
 
-- 只写属性: 只有set
-- 只读属性: 只有get
+- writeonly: only set
+- readonly: only get
 
-## 自动实现属性
+## Auto-implemented Property
 
-- 只声明属性而不声明字段
-- 没有set,get方法体, 只有简单的`set;get;`
+- only declare the property, not the field
+- only `set;get;` without method body
 
 ```c#
 class C1
@@ -55,4 +82,16 @@ class C1
         set; get;
     }
 }
+```
+
+## Expression-bodied Property
+
+what's for
+
+- provide a member's(method, property) implementation in a concise
+
+Syntax
+
+```c#
+member => expression
 ```

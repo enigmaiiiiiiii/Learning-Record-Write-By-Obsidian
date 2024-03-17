@@ -2,10 +2,59 @@
 
 ## what is a closure
 
-- 嵌套函数就是一个闭包
-- 闭包: 可以访问外部函数的参数和变量, 外部函数却不能使用它的参数和变量
+- Nest function is a closure
+- Closure: A function that has access to the parent scope, even after the scope has closed
 
-## nest function
+## Features
+
+- Variable or property in closure only can be accessed by the function in the closure, no other way to access it
+- Closure will occupy more memory
+- There is no difference between a closure and an object, in terms of data storage, but a closure is more hidden when accessing data
+
+Closure will cause memory leak if not handled properly
+
+- this code will cause a memory leak
+
+```ts
+class LeakyClass {
+    private counter = 0;
+
+    constructor() {
+        setInterval(() => {
+            this.counter++;
+            console.log(this.counter);
+        }, 1000);
+    }
+}
+
+const leakyInstance = new LeakyClass();
+```
+
+- fix it
+
+```ts
+class LeakyClass {
+    private counter = 0;
+
+    constructor() {
+        setInterval(() => {
+            this.counter++;
+            console.log(this.counter);
+        }, 1000);
+    }
+
+    public destroy() {
+        if (this.counter) {
+            clearInterval(this.counter);
+        }
+    }
+}
+
+const leakyInstance = new LeakyClass();
+leakyInstance.destroy();
+```
+
+## Nest function
 
 ```js
 function addSquares(a, b) {
@@ -16,11 +65,8 @@ function addSquares(a, b) {
 }
 ```
 
-## 形成闭包
+## Create Closure
 
-- **闭包**和**对象**在保存数据上并没有区别, 在访问数据时闭包更隐蔽
-- 闭包内的变量或属性除了闭包内的函数可以访问, 没有其它方式可以访问
-- 实现了数据的**封装**和**保存**
 
 ```javascript
 function outside(x) {
@@ -29,18 +75,18 @@ function outside(x) {
     }
     return inside;
 }
-const fnIside = outside(3);  // 返回inside函数
-const result = fnInside(5);  // 返回8, 无论何时调用fnInside, 都会使用3作为x的值
-fnInside = null;  // 释放对fnInside的引用
+const fnIside = outside(3);  // return inside function
+const result = fnInside(5);  // return 8, whenever you call fnInside, it will always use 3 as the value of x
+fnInside = null;  // release the reference to fnInside
 ```
 
-**内部函数**将**外部函数**作用域链添加到自己的作用域链中, 体现在
+**inner function** add the **outer** scope to its own scope chain, which means
 
-- 外部传入outside的参数x, 并不会再执行完毕后销毁
-- x的值会一直保存在fnInside中, 直到fnInside被销毁
-- `fnInside = null`后， 垃圾回收可以释放内存
+- arguments `x` will not be destroyed after outside function is executed
+- `x` will be saved in `fnInside` until `fnInside` is destroyed
+- `fnInside = null` will release the memory
 
-使用匿名函数生成闭包
+Create a closure with anonymous function
 
 ```js
 const getCode = (function () {
@@ -54,5 +100,3 @@ const getCode = (function () {
 getCode();    // Returns the apiCode
 ```
 
-
-## 闭包会占用更多内存

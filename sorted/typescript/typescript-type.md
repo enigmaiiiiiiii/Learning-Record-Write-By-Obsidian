@@ -7,9 +7,10 @@
 * [Union Types](#union-types)
 * [type check](#type-check)
 * [type inference](#type-inference)
-* [type assertion](#type-assertion)
+* [Type Assertion](#type-assertion)
 * [Narrowing](#narrowing)
 * [Keyof Operator](#keyof-operator)
+* [Conditional Types](#conditional-types)
 * [Mapped Types](#mapped-types)
 * [Type Compatibility](#type-compatibility)
 * [Utility Types](#utility-types)
@@ -49,8 +50,16 @@ function getFavoriteNumber(): number {
 
 1. primitive types
 
-- string, number, boolean
-- Arrays: `number[]`, `string[]`, `object[]`
+string, number, boolean
+
+Arrays 
+
+- `number[]`, `string[]`, `object[]`, type of number, string, object array respectively
+Tuples
+
+- `[string, number]`
+
+`any[]` is an array of any type, `[]` is an empty array
 
 2. typescript [special types](#special-types)
 
@@ -101,7 +110,7 @@ function f1(a: unknown) {
 }
 ```
 
-never
+`never`
 
 - annotation function never return a value
 
@@ -265,6 +274,88 @@ type M = keyof { [n: string]: unknown };  // M = string | number
 ```
 
 > M is string | number because JavaScript object keys are always coerced to strings, `obj[0]` sames as `obj["0"]`
+
+## Conditional Types
+
+Syntax
+
+```ts
+SomeType extends OtherType ? TrueType : FalseType
+```
+
+the power of conditional type is using with [generic](typescript-fundamentals.md#generic)
+
+1. Example: overload function like that
+
+```ts
+interface IdLabel {
+  id: number /* some fields */;
+}
+interface NameLabel {
+  name: string /* other fields */;
+}
+ 
+function createLabel(id: number): IdLabel;
+function createLabel(name: string): NameLabel;
+function createLabel(nameOrId: string | number): IdLabel | NameLabel;
+function createLabel(nameOrId: string | number): IdLabel | NameLabel {
+  throw "unimplemented";
+}
+```
+
+- with conditional type
+
+```ts
+type NameOrId<T extends number | string> = T extends number
+  ? IdLabel
+  : NameLabel;
+function createLabel<T extends number | string>(idOrName: T): NameOrId<T> {
+  throw "unimplemented";
+}
+```
+
+2. Example: use conditional type to create a new type
+
+```ts
+type MessageOf<T extends { message: unknown }> = T["message"];
+ 
+interface Email {
+  message: string;
+}
+ 
+type EmailMessageContents = MessageOf<Email>;
+// type EmailMessageContents = string
+```
+
+- Let `MessageOf<T>` take any type, not only specific type, such as `{ message: string }`, `{ message: number }`
+
+```ts
+type MessageOf<T> = T extends { message: unknown } ? T["message"] : never;
+interface Email {
+  message: string;
+}
+interface Dog {
+  bark(): void;
+}
+type EmailMessageContents = MessageOf<Email>;
+// type EmailMessageContents = string
+type DogMessageContents = MessageOf<Dog>;
+// type DogMessageContents = never
+```
+
+3. Example: Flatten an array type
+
+```ts
+type Flatten<Type> = Type extends any[] ? T[number] : T;
+type Str = Flatten<string[]>;  // type Str = string
+type Num = Flatten<number>;  // type Num = number
+```
+
+- use keyword `infer` instead
+
+```ts
+Flatten<Type> = Type extends Array<infer Item> ? Item : Type;
+```
 
 ## Mapped Types
 

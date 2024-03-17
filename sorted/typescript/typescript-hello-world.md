@@ -23,7 +23,6 @@ npm install -D typescript
 
 [tsc](typescript-cli-tsc.md)
 
-
 ## Third Party Tools
 
 [ts-node](typescript-ts-node.md)

@@ -1,4 +1,4 @@
-# Shader
+# WebGL - Shader
 
 * [what it is](#what-it-is)
 * [shader function](#shader-function)
@@ -7,9 +7,9 @@
 
 ## what it is
 
-- is a program
+- Is a program
 - written using the [GLSL](webgl.md#glsl)
-- container the information about
+- containing the information about
   - vertices that make up a shape
   - generate the data needed to render the pixels on the screen
     - position of pixels

@@ -1,21 +1,65 @@
 # CSharp - Class
 
+* [Members](#members)
+* [Field](#field)
+* [Property](#property)
+* [Constructor](#constructor)
+* [Identifier](#identifier)
+* [Inheritance](#inheritance)
+* [Instance of Class](#instance-of-class)
+* [Record Type](#record-type)
+
+## Members
+
+- [Field](#field)
+- [Property](#property)
+- [Method](#method)
+
+Static member
+
+- prefix a member with the static keyword
+- **static member** and **constant member** are visible to every instance of the class, and can be used without creating an instance of the class
+
+Instance member
+
+- members without the static keyword also known as instance members
+
+Constant Member
+
+- Constants do not have their own storage location; instead, they are directly replaced by the compiler, similar to #define in C++.
+
+## Field
+
+[Field](csharp-class-field.md)
+
+## Property
+
 [Property](csharp-class-properties.md)
 
-[Static Field](csharp-class-static-field.md.md)
-
-[Inheritance](csharp-inheritance-system.md)
+## Constructor
 
 [Constructor](csharp-class-constructor.md)
 
-[Identifier](csharp-identifier.md)
+[Primary Constructor](csharp-primary-constructor.md)
+
+## Identifier
+
+[Identifier]()
+
+## Inheritance
+
+[Inheritance](csharp-inheritance-system.md)
 
 ## Instance of Class
 
-- new关键字创建类的实例，实例在堆中有独立的内存
-- 使用非静态方法，字段，属性前，必须先创建对象实例
+- Instance of a class is created using the **new** keyword, and the instance is stored in the [heap memory]
+- Before using non-static methods, fields, properties, you must create an object instance
 
-## Static Member and Constant Member
+## Record Type
 
-- 静态成员和常量成员都对每个实例都可见, 没有类的实例也可以使用
-- 常量没有自己的存储位置, 而是被编译器直接替换，类似C++中的[\#define](c++-preprocess.md)
+- use record type to encapsulating data
+
+```c
+public record Person(string FirstName, string LastName);
+```
+

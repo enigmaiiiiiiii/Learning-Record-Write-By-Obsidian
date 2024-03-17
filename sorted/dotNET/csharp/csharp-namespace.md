@@ -1,13 +1,11 @@
-# 命名空间
+# CSharp - Namespace
 
-## 根命名空间
+## Root Namespace
 
-> 也可以叫，全局命名空间
+> also known as global namespace
 
-- 根命名空间名称是global, global::System始终引用.NET Framework命名空间
-- 如果类型没有在任何命名空间中定义，则它存在于根命名空间
-- 如果相同类型名称同时出现在内层和外层命名空间，则内层优先, [对比javascript的prototype](javascript-prototype.md)
+- if class is not in any namespace, it is in the root namespace
 
-## ::运算符
+## Operator ::
 
-- 命名空间限定符, 用于指定在特定命名空间查找表示符
+

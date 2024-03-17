@@ -1,8 +1,8 @@
-# 异常
+# CSharp - Exception
 
-[try...catch语句](csharp-exception-try-catch.md)
+[try...catch statement](csharp-exception-try-catch.md)
 
-[异常类](csharp-exception-type.md)
+[Exception Type](csharp-exception-type.md)
 
 [Handle Exception](csharp-handle-exception.md)
 

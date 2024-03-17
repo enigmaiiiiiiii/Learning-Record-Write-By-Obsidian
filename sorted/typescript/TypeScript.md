@@ -34,3 +34,5 @@
 
 [compatible problem](typescript-compatible-problem.md)
 
+[blog](typescript-blog.md)
+

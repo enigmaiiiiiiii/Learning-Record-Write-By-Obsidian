@@ -5,7 +5,7 @@
 * [UV mapping](#uv-mapping)
 * [Orthographic projection](#orthographic-projection)
 * [Perspective projection](#perspective-projection)
-* [Viewing Frustum(视锥体)](#viewing-frustum视锥体)
+* [Viewing Frustum](#viewing-frustum)
 * [Alpha Test](#alpha-test)
 * [gamma correction](#gamma-correction)
 
@@ -23,7 +23,7 @@
 
 ## UV mapping
 
-- a process of projecting(转换/投影) 2D image onto a 3D model's surface
+- a process of projecting 2D image onto a 3D model's surface
 - U, V denote X, Y
 - helps to apply textures to 3D models
 
@@ -38,7 +38,7 @@
 - mimic the way the **human eye** sees
 - suitable for **realistic** and **natural-looking** rendering
 
-## Viewing Frustum(视锥体)
+## Viewing Frustum
 
 ## Alpha Test
 

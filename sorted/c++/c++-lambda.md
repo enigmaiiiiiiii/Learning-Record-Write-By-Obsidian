@@ -1,16 +1,14 @@
-# lambda表达式
+# C++ - Lambda Expression
 
-#callable #可调用类型 #lambda
+- A [callable]() unit
 
-- 是一个可调用的代码单元
+Expression looks like: `[capture list](parameter list) -> return type {function body}`
 
-表达式样式`[capture list](parameter list) -> return type {function body}`
-
-- `parameter list`: 参数列表, 可为空
-- `-> return type`: 返回类型, 可为空
+- `parameter list`: parameter list, can be empty
+- `-> return type`: return type, can be empty
   - 如果function body包含return之外的语句，则编译器默认返回void,编译器推断不出返回类型
 
-capture list: 捕获局部变量列表，可为空，且通常为空
+Capture List: 捕获局部变量列表，可为空，且通常为空
 
 - 值捕获:`[var](){}`; 隐式值捕获:`[=](){}`
 - 引用捕获：`[&var](){}`; 隐式引用捕获:`[&](){}`
@@ -22,7 +20,7 @@ capture list: 捕获局部变量列表，可为空，且通常为空
 - 尽量减少捕获数据量
 - 对于值捕获，参数列表后加mutable，可改变捕获列表变量值
 
-function body：函数体
+function body
 
 - 必须使用[尾置返回类型](c++-funtion-return-type.md#尾置返回类型)来指定返回类型
 - 参数传递:不能有默认参数

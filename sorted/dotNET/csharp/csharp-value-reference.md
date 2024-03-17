@@ -1,27 +1,32 @@
-# 值类型和引用类型
+# CSharp - Value and Reference
 
-- 值类型变量初始化时
-  - 变量拥有单独内存
-- 引用类型初始化时
-  - 是对象的别名
-  - 指向堆中相同区域
+## Value VS Reference
 
-## 值类型
+Value type variable initialization
 
-- 值类型存放在栈中，只需要一块内存
-- 预定义: sbyte, byte, float, short, float, short, ushort, double, int, uint, char, long, ulong, decimal, bool
-- 用户定义类型：struct, enum
+- Variable has its own memory
 
-## 引用类型
+Reference type variable initialization
 
-- 引用类型需要两段内存
-  - 引用，在栈中也可以在堆中，指向实际数据
-  - 实际的数据，在堆中
-- 预定义类型：object, string, dynamic
-- 用户定义类型: class, interface, delegate, array
+- Is a alias of the object
+- Point to the same memory in heap
+
+## Value
+
+- Value Type stored in stack, only need one memory
+- They Are Value Type: sbyte, byte, float, short, float, short, ushort, double, int, uint, char, long, ulong, decimal, bool
+- Value Defined By User：struct, enum
+
+## Reference
+
+- Reference Type need two memory
+  - Reference, in stack or heap, point to the actual data in heap
+  - Actual Data, in heap
+- Predefined Reference Type：object, string, dynamic
+- Reference Type Defined By User: class, interface, delegate, array
   
-## 内容连接
+## Similar Concepts
 
-[C语言程序在内存中的分布](linux-c-program-memory-layout.md)
+[memory layout of c program](linux-c-program-memory-layout.md)
 
-[javascript中的原始值和引用值](javascript-variable-copy-and-reference.md)
+[javascript value and reference](javascript-variable-copy-and-reference.md)

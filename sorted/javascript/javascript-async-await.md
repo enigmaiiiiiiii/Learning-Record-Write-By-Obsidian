@@ -20,8 +20,8 @@
 ## Async Function
 
 - A function that can contain await expression inside its body
-- contains 0 or more await expressions
-- async function with 0 await expression is synchronously execute
+- May contains 0 or more await expressions
+- Async function with **no await expression** inside is synchronously execute, but return a [promise](javascript-promise.md)
 
 Code between the first line of the async function until the first await expression, the code is executed synchronously.
 
