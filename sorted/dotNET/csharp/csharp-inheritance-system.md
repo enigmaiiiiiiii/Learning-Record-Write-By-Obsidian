@@ -1,15 +1,36 @@
-# 继承体系
+# CSharp - Inheritance System
 
-## 虚方法virtual
+## Take A Look
 
-- 在基类的方法前使用virtual标注，表示该方法是**虚方法**
-- 出现在基类中, 相对基类
+```c
+public class Point
+{
+    public Point(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+}
 
-## 覆写方法override
+public class Point3D : Point
+{
+    public Point3D(int x, int y, int z) : base(x, y)
+    {
+        this.z = z;
+    }
+}
+```
 
-- 在派生类的方法前使用override标注同名函数, 表示该方法是**覆写方法**
+- when defining a constructor for in `Point`, default constructor will not be generated
+- Using `: base(x, y)` to call the base class constructor
 
-## 基类的引用
+## Base Class
 
-- 对派生类的引用可以通过[类型转换](csharp-conversion.md)，转换为基类的引用
-- <font color="red">对于 **由派生类转换来的基类引用** 调用 虚方法时，会调用派生体系中 **最接近基类** 的覆写方法</font>
+## Derived Class
+
+## Keyword override
+
+## Base Class Reference
+
+- Reference to a derived class can be [converted](csharp-conversion.md) to a reference to the base class
+- When calling a virtual method on a base class reference converted from a derived class, the **most base-class-closing** **overridden** method in the derived hierarchy is called

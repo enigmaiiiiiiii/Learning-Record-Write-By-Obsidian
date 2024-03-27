@@ -15,7 +15,7 @@
 - represents a specific point on on a polygon or a [mesh](#mesh)
 - vertex typically has properties such as **position**, **color**, **texture**
 
-> vertices is plural(复数) of vertex
+> vertices is plural of vertex
 
 ## mesh
 

@@ -2,6 +2,7 @@
 
 ## What It Is
 
+- inherit from `Object`
 - constitute the [scene](#scene)
 
 A Node Looks Like:

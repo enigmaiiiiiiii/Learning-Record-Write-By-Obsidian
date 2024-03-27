@@ -1,6 +1,7 @@
 # C++ - Left Value Reference
 
-- 操作符 `&`
+- Operator: `&`
+
 ```c++
 int ival = 1024;
 int &refVal = ival;  // refVal是ival的别名 

@@ -1,4 +1,4 @@
-# 匿名类型
+# CSharp - Anonymous Types
 
 ```c#
 new {FieldProp = InitExpr, FieldProp = InitExpr, ...};
@@ -18,9 +18,11 @@ new {FieldProp = InitExpr, FieldProp = InitExpr, ...};
 
 > 个人解释: 将外部同名类型识别为匿名类型的成员
 
-## 不会创建新匿名类型的情况
+## Cases that do not create a new anonymous type
 
-- 编译器遇到另一个匿名类型,与之前的匿名类型
-  - 具有相同的参数名
-  - 相同的推断类型
-  - 相同顺序的匿名类型
+When Compiler encounters another anonymous type with
+
+- same parameter names
+- same inferred types
+- same order
+

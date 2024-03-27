@@ -8,6 +8,10 @@
 
 [Node](godot-node.md)
 
+## NodePath
+
+[NodePath](godot-nodepath.md)
+
 ## SceneTree
 
 [SceneTree](godot-scenetree.md)
@@ -15,3 +19,6 @@
 ## MainLoop
 
 [MainLoop](godot-mainloop.md)
+
+## Sprite
+

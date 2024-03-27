@@ -36,19 +36,38 @@ Constant Member
 
 [Property](csharp-class-properties.md)
 
+readonly
+
+- readonly fields can be assigned a value either at the declaration or in the [constructor]() of the class
+
+```c
+public class Person
+{
+    public readonly string FirstName;
+    public readonly string LastName = "Doe";  // assigned at declaration
+
+    public Person(string firstName)
+    {
+        FirstName = firstName;  // assigned in constructor
+    }
+}
+```
+
 ## Constructor
 
 [Constructor](csharp-class-constructor.md)
 
 [Primary Constructor](csharp-primary-constructor.md)
 
-## Identifier
+## Method
 
-[Identifier]()
+[Method](csharp-method.md)
 
-## Inheritance
+## Access Modifier
 
-[Inheritance](csharp-inheritance-system.md)
+protected
+
+- Only code in the same class or in a derived class can access this member
 
 ## Instance of Class
 
@@ -61,5 +80,22 @@ Constant Member
 
 ```c
 public record Person(string FirstName, string LastName);
+```
+
+## Partial Classes
+
+- it is possible to split the definition of a class, struct, interface, or method over two or more source files
+
+```c
+public partial class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+}
+
+public partial class Person
+{
+    public string FullName => $"{FirstName} {LastName}";
+}
 ```
 

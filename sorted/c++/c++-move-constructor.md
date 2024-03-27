@@ -1,4 +1,4 @@
-# 移动构造函数
+# C++ - Move Constructor
 
 - 第一个参数是该类类型的一个[右值引用](c++-rvalue-reference.md)
 - `Foo(Foo &&f) noexcept {}`
@@ -6,7 +6,7 @@
 - 移动后的源对象要保证销毁它是无害的
 - 在移动构造函数中保证源对象(被移动对象)执行析构函数是安全的
 
-合成移动构造函数
+Synthesized move constructor
 
 - 永远不会隐式定义为删除函数
 - 显式=default在编译器不能移动所有成员时，会定义为删除函数

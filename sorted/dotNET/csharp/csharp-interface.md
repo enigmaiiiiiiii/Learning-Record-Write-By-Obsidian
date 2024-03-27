@@ -2,7 +2,7 @@
 
 ## Declare Interface
 
-```csharp
+```c
 interface IMyInterface
 {
     void methodA();
@@ -12,9 +12,9 @@ interface IMyInterface
 
 ## Implement Interface
 
-- 必须为接口的每一个成员提供实现
+- must implement all members of the interface
 
-```csharp
+```c
 class MyClass: IMyInterface
 {
     public void methodA() { ... }
@@ -22,14 +22,45 @@ class MyClass: IMyInterface
 }
 ```
 
-- 如果继承了基类并实现接口, 接口名称必须在所有基类之后
-- 多个接口用`,`隔开
+## Access Interface Members
 
-## 访问接口成员
+2 ways to access interface members
 
-> 接口是[引用类型], 不能通过实现接口的成员访问接口
+force cast
 
-- 访问接口成员的两种方法
-  - 可以通过[强制转换]类对象的引用为接口类型的引用, 就可以通过`.`操作符访问接口成员
-  - as运算符实现访问接口成员
-- 转换为类没有实现的接口时，强制转换会抛出异常, as方式返回null
+```c
+
+```
+
+as operator
+
+```c
+
+```
+
+## Default Interface Methods
+
+What's for implementing a method in an interface?
+
+- Enable API author to add methods to an interface in future versions without breaking source or binary **compatibility** with existing implementations of that interface
+- if a method has a default implementation, it is not enforced to be implemented by the class
+
+Class implementing that interface **Does not** inherit the concrete method
+
+> Which means, you can't call the method from the class instance
+> But you can convert the class instance to the interface instance and call the method
+
+```c
+interface IPoint
+{
+    void Foo() { Console.WriteLine("Foo"); }
+}
+class Point: IPoint { }
+
+Point p = new Point();
+p.Foo();  // error
+
+IPoint pi = p;
+pi.Foo();  // ok
+```
+

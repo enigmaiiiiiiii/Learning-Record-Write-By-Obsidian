@@ -12,13 +12,17 @@
 
 [Class](csharp-class.md)
 
-[Method](csharp-method.md)
-
 [Conversion](csharp-conversion.md)
 
 [Interface](csharp-interface.md)
 
+[Object Oriented](csharp-object-oriented.md)
+
+[Collections](csharp-collections.md)
+
 [Exception](csharp-exception.md)
+
+[type-safe](csharp-type-safe.md)
 
 ## II
 
@@ -35,6 +39,8 @@
 [Async](csharp-async.md)
 
 [LINQ](csharp-linq.md)
+
+[Variance](csharp-variance.md)
 
 [Expression Tree](csharp-expression-tree.md)
 
@@ -56,4 +62,4 @@
 
 ## Application
 
-[Unity](unity.md)
+[Unity](Unity.md)

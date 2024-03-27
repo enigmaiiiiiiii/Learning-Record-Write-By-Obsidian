@@ -10,7 +10,7 @@
 
 [Signal](godot-signal.md)
 
-[NodePath](godot-nodepath.md)
+[Node List](godot-node-list.md)
 
 [C# Reference](godot-csharp.md)
 

@@ -1,14 +1,21 @@
-# Type类
+# CSharp - Reflection Class Type
 
-- 使用Type的成员可以获得
-  - 一个类型的声明，
-  - 类型的成员(构造函数，属性，事件等)
-  - 部署类的模块和程序集信息
+## What's For
+
+Using members in "Type" class, you can get:
+
+- A Type's declaration
+- Type's members (constructors, properties, events, etc.)
+- Deploying the module and assembly information of the class
   
-> 代码不需要任何权限就可以使用反射来获取关于类型及其成员的信息 ,为了让代码使用反射访问通常不可访问(私有或内部方法)的成员，代码必须具有ReflectionPermission
 
-## method
+ReflectionPermission
+
+- Code Do not need any permission to use reflection to get information about types and their members. To allow code to use reflection to access normally inaccessible (private or internal) members, the code must have ReflectionPermission. 
+
+## Method
 
 GetProperties
 
-- 返回当前类型的所有公共属性。
+- Returns all the **public** properties of the current type.
+

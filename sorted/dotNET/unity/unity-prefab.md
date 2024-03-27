@@ -1,6 +1,8 @@
-# Prefab/预设
+# Unity - Prefab
 
-- 利用复制创建大量同类角色
-- 通过脚本来创建对象，即运行时生成
-- 预设对比复制的优势:
-  - 利用预设可以一次性修改所有**复制后**得到的对象
+## What's For
+
+- Create, config, **store** a [GameObject](unity-gameobject.md) complete with all following as **reusuable** asset.
+  - [components]()
+  - property, 
+  - child GameObjects 

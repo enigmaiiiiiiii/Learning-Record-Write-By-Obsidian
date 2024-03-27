@@ -10,7 +10,7 @@
 ## Feature
 
 - kind of behavioral design pattern
-- is a encapsulation of a request as an object
+- Encapsulating a request as an object
 
 three components in command pattern
 

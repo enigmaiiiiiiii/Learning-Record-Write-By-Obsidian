@@ -22,7 +22,7 @@
 ## Leaf
 
 - Object in composite design pattern represent a individual object
-- do not have any child
+- Do not have any child
 
 ## Composite
 

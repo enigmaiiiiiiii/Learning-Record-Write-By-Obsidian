@@ -1,9 +1,27 @@
-# 通过where约束类型和次序
+# CSharp - Generic Constraint
 
-约束子句： `where TypeParam : type1, type2,...`
+## use `where` to constraint type and order
 
-- 约束类型及次序
-  - class
-  - struct: 任何值类型
-  - 接口名: 接口或实现接口的类
-  - new(): 任何带有**无参公共构造函数**的类型都可以用作类型的实参
+Constraint Statement： `where TypeParam : type1, type2,...`
+
+```cs
+public void PrintData<S, T>(S p, T t) where S: Person
+```
+
+`where T : <base_class_name>`
+
+- the type argument must be or derive from the specified base class
+
+`where T : <interface_name_1>, <interface_name_2>,...`
+
+- the type argument must be or implement the specified interface
+- multiple interface constraints can be specified
+
+`where T : new()`
+
+- the type argument must have a public **parameterless constructor**
+- used together with other constraints, it must be the last
+
+`where T : struct`
+
+

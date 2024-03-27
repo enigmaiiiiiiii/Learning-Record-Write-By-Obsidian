@@ -1,9 +1,48 @@
-# 模板
+# C++ - Template
 
-[[定义模板]]
+## Definition
 
-[实例化](c++-template-instation.md)
+```c++
+template <typename T>
+class MyClass {
+public:
+    MyClass(T val) : value(val) {}
 
-[特例化](c++-template-specialization.md)
+    void print() {
+        std::cout << "Value: " << value << std::endl;
+    }
 
-- 当存在多个满足条件的模板时, 编译器选择最特例化的模板
+private:
+    T value;
+};
+
+int main() {
+    // Function template
+    myFunction(10);  // Instantiation with int
+
+    // Class template
+    MyClass<int> obj1(5);  // Instantiation with int
+    MyClass<double> obj2(3.14);  // Instantiation with double
+
+    return 0;
+}
+```
+
+## Features
+
+- Begins with a template followed by a template parameter list `template <typename T>`.
+- Template header files usually include both declarations and definitions.
+- The compiler does not generate code when encountering template definitions.
+- [typename](c++-keyword-typename.md) can also be replaced by class.
+- Errors during template instantiation may be reported only at [linking](c++-compile.md) stage.
+
+## Template Instantiation
+
+[Ins](c++-template-instation.md)
+
+## Template Specialization
+
+[Template Specialization](c++-template-specialization.md)
+
+- when there are multiple templates that satisfy the conditions, the compiler selects the most specialized template
+

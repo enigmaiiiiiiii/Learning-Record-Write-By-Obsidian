@@ -1,14 +1,15 @@
-# Unity中的场景
+# Unity - Scene
 
-- 位于中心的窗口
-- 游戏场景窗口
+> similar concept in godot: [Scene](godot-scene.md) 
 
-## 物体
+## What Is Scene Unity
 
-- 3dObject
+- you can build a simple game with a single scene
+- you can build a complex game with multiple scenes
+- when you create a new project and first open it, you will see a scene only with a camera and a light
 
-## 游戏中的GUI
+## Features
 
-- canvas
+- A `.unity` file is a scene file.
 
-## 
+

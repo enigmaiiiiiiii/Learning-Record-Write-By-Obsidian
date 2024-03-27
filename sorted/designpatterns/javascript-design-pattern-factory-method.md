@@ -2,8 +2,8 @@
 
 ## Feature
 
-- kind of creational pattern
-- to create object according to different request
+- A creational pattern
+- For creating object according to different request
 
 ## When To Use
 

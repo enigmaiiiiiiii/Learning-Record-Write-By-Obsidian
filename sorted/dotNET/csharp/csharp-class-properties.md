@@ -90,8 +90,19 @@ what's for
 
 - provide a member's(method, property) implementation in a concise
 
-Syntax
+implement Read-only Property
 
 ```c#
-member => expression
+Property => expression
+```
+
+Expression-bodied expression for both getter and setter
+
+```c#
+private int x;
+public int X
+{
+    get => x;
+    set => x = value;
+}
 ```

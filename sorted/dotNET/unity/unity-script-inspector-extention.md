@@ -1,8 +1,8 @@
-# 扩展Inspector
+# Unity Extending Script - Extending Inspector
 
-1. 继承基类Editor
-2. 特性CustomEditor(type)
-3. 实现方法OnInspectorGUI()
+1. Inherit base class `Editor`
+2. Add Attribute `[CustomEditor(type)]`
+3. Implement method `OnInspectorGUI()`
   
 ```c#
 [CustomEditor(typeof(Map))]
@@ -13,8 +13,5 @@ public class MapModelCreator: Editor
 
     }
 }
-
 ```
 
-- 一个继承了Editor的类(MapModeCreator)
-- 指定某个[组件](unity-script-component.md)(Map), 当此[组件](unity-script-component.md)(Map)处于run-time时, 创建自定义editor

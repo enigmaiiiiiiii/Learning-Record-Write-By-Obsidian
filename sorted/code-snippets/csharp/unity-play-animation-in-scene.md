@@ -1,47 +1,24 @@
-# code
-
-#c\# #Unity
+# Code
 
 ```c#
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(PlayerController))] // 绑定PlayerController component
+[CustomEditor(typeof(PlayerController))] 
 public class EditAnimatorInspector : Editor
 {
-    /// <summary>
-    /// 滑动杆的当前时间
-    /// </summary>
     private float m_CurTime;
 
-    /// <summary>
-    /// 是否已经烘培过
-    /// </summary>
     private bool m_HasBake;
 
-    /// <summary>
-    /// 当前是否是预览播放状态
-    /// </summary>
     private bool m_Playing;
 
-    /// <summary>
-    /// 当前运行时间
-    /// </summary>
     private float m_RunningTime;
 
-    /// <summary>
-    /// 上一次系统时间
-    /// </summary>
     private double m_PreviousTime;
 
-    /// <summary>
-    /// 总的记录时间
-    /// </summary>
     private float m_RecorderStopTime;
 
-    /// <summary>
-    /// 滑动杆总长度
-    /// </summary>
     private const float kDuration = 30f;
 
     private Animator m_Animator;
@@ -51,12 +28,8 @@ public class EditAnimatorInspector : Editor
         get { return target as PlayerController; }
     }
 
-    /// <summary>
-    /// 绑定在GameObject上的动画效果
-    /// </summary>
     private Animator animator
     {
-        // 返回GameObject上的Animator Component, ??空接合运算符
         get { return m_Animator ?? (m_Animator = ObjectToContoll.GetComponent<Animator>()); }
     }
 
@@ -93,9 +66,6 @@ public class EditAnimatorInspector : Editor
         
     }
 
-    /// <summary>
-    /// 烘培记录动画数据
-    /// </summary>
     private void bake()
     {
         if (m_HasBake) {
@@ -103,7 +73,6 @@ public class EditAnimatorInspector : Editor
         }
 
         if (Application.isPlaying || animator == null) {
-            // 如果Unity处于运行状态或没有animator
             return;
         }
 
@@ -113,31 +82,23 @@ public class EditAnimatorInspector : Editor
         animator.StopPlayback();
         animator.recorderStartTime = 0;
 
-        // 开始记录指定的帧数
         animator.StartRecording(frameCount);
 
         for (var i = 0; i < frameCount - 1; i++) {
-            // 这里可以在指定的时间触发新的动画状态
             if (i == 200) {
                 animator.SetTrigger("walk");
             }
 
-            // 记录每一帧
             animator.Update(1.0f / frameRate);
         }
 
-        // 完成记录
         animator.StopRecording();
 
-        // 开启回放模式
         animator.StartPlayback();
         m_HasBake = true;
         m_RecorderStopTime = animator.recorderStopTime;
     }
 
-    /// <summary>
-    /// 进行预览播放
-    /// </summary>
     private void play()
     {
         if (Application.isPlaying || animator == null) {
@@ -149,9 +110,6 @@ public class EditAnimatorInspector : Editor
         m_Playing = true;
     }
 
-    /// <summary>
-    /// 停止预览播放
-    /// </summary>
     private void stop()
     {
         if (Application.isPlaying || animator == null) {
@@ -162,9 +120,6 @@ public class EditAnimatorInspector : Editor
         m_CurTime = 0f;
     }
 
-    /// <summary>
-    /// 预览播放状态下的更新
-    /// </summary>
     private void update()
     {
         if (Application.isPlaying || animator == null) {
@@ -176,19 +131,15 @@ public class EditAnimatorInspector : Editor
             return;
         }
 
-        // 设置回放的时间位置
         animator.playbackTime = m_RunningTime;
         animator.Update(0);
         m_CurTime = m_RunningTime;
     }
 
-    /// <summary>
-    /// 非预览播放状态下，通过滑杆来播放当前动画帧
-    /// </summary>
     private void manualUpdate()
     {
         if (animator && !m_Playing && m_HasBake && m_CurTime < m_RecorderStopTime) {
-            animator.playbackTime = m_CurTime;  // 设置animator播放位置
+            animator.playbackTime = m_CurTime;
             animator.Update(0);
         }
     }

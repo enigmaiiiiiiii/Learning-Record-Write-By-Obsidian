@@ -1,5 +1,4 @@
-# GameObject/游戏对象
+# Unity - GameObject
 
-- 游戏中出现的东西很多可以称为对象
-- 有些没有显示在画面上物体也是游戏对象，比如摄像机和灯光
-- 基本Game Object对象，只有一个Transform组件, 执行位移，旋转和缩放。
+- some objects are not visible in the scene, such as cameras and lights
+- base Game Object object, only one `Transform` component, execute translation, rotation, and scaling.

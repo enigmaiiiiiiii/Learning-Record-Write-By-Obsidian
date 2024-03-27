@@ -6,17 +6,6 @@
 * [label statement](#label-statement)
 * [with statement](#with-statement)
 
-## for...in statement
-
-- to enumerate the non-symbol keys of an object
-- include the properties inherited from the prototype chain
-- variable represents the property name or enumberable property
-
-In ECMAScript, object properties are unordered
-
-- All properties will be returned once,
-- but the return order may vary from browser to browser
-
 ## for...of statement
 
 - used to iterate over iterable objects like arrays, strings, maps, sets
@@ -29,6 +18,28 @@ for (let l of list) {
   console.log(l);
 }
 ```
+
+## for...in statement
+
+- Enumerating the non-symbol keys of an object
+- Include the properties inherited from the prototype chain
+- Variable represents the property name or enumberable property
+
+```js
+const obj = {a: 1, b: 2, c: 3};
+for (let o in obj) {
+  console.log(o);
+}
+// a
+// b
+// c
+```
+
+In ECMAScript, object properties are unordered
+
+- All properties will be returned once,
+- but the return order may vary from browser to browser
+
 
 ## break vs continue
 

@@ -1,19 +1,24 @@
-## 虚函数表
+## C++ - Virtual Function Vtable
 
-- vtable: 虚函数表 
-  - 每个class类型有一个虚表
-  - 长度与派生体系中虚函数个数相关
-- vptr: 虚函数表指针
-  - 在构造时和析构时可能指向不同的vtable。
-  - 在构造后不再改变
+## What Is This
 
-## 子类中的虚函数表
+vtable
 
-未继承父类虚函数
+- Exists in each class type
+- Length is related to the number of virtual functions in the derived class
 
-- 虚函数按照声明顺序放在vtable中
-- 子类的vptr指向的vtable中顺序：父类虚函数在子类虚函数之前
+## vptr: 
 
-继承父类虚函数
+- vtable pointer
 
-- 子类的虚函数会替换vtable中父类的位置
+## Vtable In Derived Class
+
+Virtual Function Does Not Inherited From Base Class
+
+- Virtual Function placed in vtable in the order of declaration
+- The order of virtual function in vtable that derived class [vptr](#vptr) points to: base class virtual function before derived class virtual function
+
+Virtual Function inherited from Base Class
+
+- Virtual Function In Derived Class Will Replace The Virtual Function In Base Class
+

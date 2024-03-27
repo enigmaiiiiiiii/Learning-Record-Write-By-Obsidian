@@ -1,6 +1,6 @@
-# 类
+# Unity - Class
 
-## 静态对象
+## Static Class
 
 [Application](unity-static-class-application.md)
 
@@ -20,24 +20,19 @@
 
 [SceneManager](unity-static-class-scenemanager.md)
 
-## 用于被继承的基类
+## Base Class
 
-[GameObject](unity-class-gameobject.md)
-
-- Unity中所有[游戏对象](unity-develop-factor.md))的基类
-- 有属性, 方法，静态方法
+[GameObject](unity-class-gameobject.md): Base class for all entities in Unity scenes.
   
-Editor
+[Editor](unity-class-editor.md)
 
-- OnSceneGUI: 编辑Scene窗口对象
+- OnSceneGUI
 - OnEnable
 - OnInspectorGUI
-- 属性
-  - target: 当前查看的object
+- Property
+  - target: object
 
 [EditorWindow](unity-base-class-editorwindow.md)
 
 ## TextAsset
 
-- 通过TextAsset类获取文本文件的原始内容。
-- 访问二进制文件中的数据，可以将该文件作为原始字节数组访问

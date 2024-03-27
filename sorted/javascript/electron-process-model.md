@@ -19,6 +19,10 @@ Features
 
 - Have Access to nodejs API
 
+Entry Point
+
+- `main.js`
+
 ## Renderer Process
 
 For What?

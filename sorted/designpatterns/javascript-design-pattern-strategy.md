@@ -2,8 +2,8 @@
 
 ## Feature
 
-- kind of behavioral pattern
-- define a series of algorithms
+- A behavioral pattern
+- Define a series of algorithms
 - have the similar structures with
   - [state](javascript-design-pattern-state.md)
   - [bridge]

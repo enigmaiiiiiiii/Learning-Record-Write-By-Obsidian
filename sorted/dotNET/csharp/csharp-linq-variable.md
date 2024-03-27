@@ -1,4 +1,4 @@
-# 查询变量
+# CSharp - LINQ Variable
 
 - LINQ查询可以返回两种类型
   - 可以是一个枚举

@@ -1,3 +1,3 @@
-# Component脚本
+# Unity - Component Script
 
-- 默认继承自基类[MonoBehavior](unity-monobehavior.md)
+- By default, inherit from base class [MonoBehavior](unity-monobehavior.md)

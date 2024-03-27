@@ -17,8 +17,8 @@
 
 ## Originator
 
-- is an object that going to do some action
-- hold a reference to the [memento](#memento) object represent current state
+- An object that going to do some action
+- Holding a reference to the [memento](#memento) object represent current state
 
 > for minimal memento pattern structure, Originator only nedd to have one field reference to [memento](#memento) object
 
@@ -28,8 +28,8 @@
 
 ## Memento
 
-- hold the state that want to be remembered
-- provide methods for states, like:
+- Holding the state that want to be remembered
+- Provide methods for states, like:
   - `getState()`
   - `setState()`
 

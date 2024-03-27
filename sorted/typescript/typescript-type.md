@@ -159,7 +159,7 @@ the solution is [narrow](#narrowing) the type
 
 ## type check
 
-- through value's **shape** to determine the type of the value
+through value's **shape** to determine the type of the value
 
 ```ts
 class VirtualPoint {
@@ -192,7 +192,7 @@ logPoint(virtualPoint); // logs "13, 56",
 logPoint(color);   // error
 ```
 
-1. in above example, `point` is not declared as `Point` type, ts check the **shape** of `point` and `Point`, if they are same, then `point` is `Point` type
+1. In above example, `point` is not declared as `Point` type, ts check the **shape** of `point` and `Point`, if they are same, then `point` is `Point` type
 2. ts match the subset of the object fields, `point3`, `rect` have `x`, `y` fields, `color` doesn't, so `color` is not `Point` type
 3. type check also works for `class instance`
 

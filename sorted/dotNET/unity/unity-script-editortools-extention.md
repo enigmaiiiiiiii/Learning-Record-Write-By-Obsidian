@@ -1,4 +1,2 @@
-# 扩展工具栏
+# Unity Extending Script - Extending Editortools
 
-- 类应用特性EditorTool(displayname)
-- 扩展脚本继承基类[Editortool](unity-editortools.md) 工具栏

@@ -1,10 +1,10 @@
-# 更新与协程
+# Unity - Update And Coroutine
 
-## 更新
+## Update
 
-- Update(): 每帧都会调用
-- LateUpdate(): Update()方法执行后
-- FixedUpdate(): 固定更新。默认0.02秒调用一次，可在Time Manger中设置
+- `Update()`: called once per frame
+- `LateUpdate()`: called after Update()
+- `FixedUpdate()`: called once per physics update
 
-## 协程
+## Coroutine
 

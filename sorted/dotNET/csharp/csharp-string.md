@@ -1,27 +1,25 @@
-# 字符和字符串
+# CSharp - String
 
-- 转移字符前加`\`
+- escape character `\`
 
-> 这意味着, 需要一个反斜线时需要两个反斜线，c\#引入@
+which means, when you need a backslash, you need two backslashes, so c# introduces @
 
-- 在字面量前加@，表示不支持转义字符
+add @ before a string literal, means escape character is not supported
 
-`string a2 = @"\\server\fileshare\helloworld.cs";`, 不考虑反斜线转义作用
+`string a2 = @"\\server\fileshare\helloworld.cs";`, `\` in the string is not escape character
 
-[特殊字符](csharp-special-characters.md)
+[Special Characters](csharp-special-characters.md)
 
-## String.Split方法
+## Method String.Split
 
-- 按字符(char)或字符数组(char[])分割字符
+- Split a string into substrings based on the characters in an array
 
 return
 
-- 返回字符串数组
+- string[]
 
-参数
+paramters
 
-- separator: 一个字符或字符数组，用于分隔字符串
-- count: 数组中期望的最大元素个数
+- separator: separator character
+- count: the number of substrings to return
 - options:
-  - 函数执行选项，StringSplitOptions类
-  - 用于指定是否需要裁剪子字符串中的空字符串

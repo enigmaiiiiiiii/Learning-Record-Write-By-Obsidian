@@ -1,22 +1,22 @@
-# 典型项目文件目录
+# Unity - Typical Directory
 
 ## Assets
 
-- Scripts: Component脚本
-- Prefabs: 预设gameObject
+- Scripts: Component
+- Prefabs: predefined gameObject
 - Scenes: 
 - Matirails
 
-具有特殊意义的文件夹名称
+Special folder names
 
-- Editor: 存放编辑器扩展脚本文件
-- Gizmos: 图片
+- Editor: stored [editor extension scripts](unity-script-extend-editor.md)
+- Gizmos: Photo
 - Plugins/Andriod
 - Plugins/iOS
 - Resources
-- StandardAssets: 标准Unity资源包
+- StandardAssets: standard unity assets
 - StreamingAssets:
-- WebPlayerTemplates: 网页游戏模板
+- WebPlayerTemplates: 
 
 ## Packages
 

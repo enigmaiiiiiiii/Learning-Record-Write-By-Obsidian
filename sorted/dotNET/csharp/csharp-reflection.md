@@ -1,5 +1,10 @@
-# 反射
+# CSharp - Reflection 
 
-[Type类](csharp-reflection-class-type.md)
+[Class "Type"](csharp-reflection-class-type.md)
 
-[Assembly类](csharp-reflection-class-assembly.md)
+[Class Assembly](csharp-reflection-class-assembly.md)
+
+## Dynamic Method
+
+[Dynamic Method](csharp-reflection-dynamic-method.md)
+

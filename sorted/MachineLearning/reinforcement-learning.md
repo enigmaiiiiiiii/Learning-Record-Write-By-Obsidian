@@ -1,8 +1,8 @@
-# 强化学习
+# Reinforcement Learning
 
-[强化学习概念](reinforcement-learning-概念.md)
+[Concept](reinforcement-learning-concept.md)
 
-[贝尔曼方程](贝尔曼方程.md)
+[Bellman Formula](bellman-formula.md)
 
 [策略梯度](策略梯度.md)
 

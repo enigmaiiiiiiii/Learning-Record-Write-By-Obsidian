@@ -9,3 +9,7 @@
 [Useful website](tools-website.md)
 
 [powerline fonts](powerline-fonts.md)
+
+[picture processing](tools-picture-processing.md)
+
+[GIMP](tools-gimp.md)

@@ -1,17 +1,16 @@
- # 模板实例化
+# C++ - Template Instantiation
  
- - 模板只有实例化参会有代码出现
- 
- ## 显示实例化
+> Code will be generated only when the template is instantiated.
+
+ ## Explicit Instantiation
  
  ```c++
  template class template-name<argument-list>;
  extern template class template-name<argument-list>;
- // template-name模板名称，argument-list模板参数, 其余都是关键词
+ // template-name，argument-list
  ```
  
- - 出现在模板定义后, 出现在外围命名空间
  
- ## 隐式实例化
+## Implicit Instantiation
  
 - `template-name<argument> struct_object;`

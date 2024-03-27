@@ -1,16 +1,20 @@
-# 以委托的方式扩展编辑器
+# Unity - Extending Editor by Delegate
 
-1. 第一步 在方法前添加`[InitializeOnloadMethod]`
+## How to 
 
-  > 此方法会在C#代码每次编译完成后首先调用
+step 1: Add `[InitializeOnloadMethod]` before method
+step 2: register method to [delegate](csharp-delegate.md) 
 
-2. 第二步 监听委托
+## Unity Editor Delegate 
 
-> 向委托对象添加[可调用对象](csharp-delegate.md)
+`SceneView.duringSceneGui`
 
-## Unity中的委托对象
+`EditorApplication.projectWindowItemOnGUI`
 
-- `SceneView.duringSceneGui`
-- `EditorApplication.projectWindowItemOnGUI`: 为Project中的文件添加UI, 监听[project](unity-editor-project-window.md)窗口的OnGUI事件委托
-- `EditorAppication.projectWindowChange`: 监听[Project](unity-editor-project-window.md)下的资源是否发生变化，如添加，移动删除
-- hierarchyWindowItemOnGUI：为hierarchy中的物体添加UI
+`EditorAppication.projectWindowChange`
+
+- Listen on changes of [project](unity-editor-project-window.md) sources, like add, delete, move, rename
+
+- `hierarchyWindowItemOnGUI`：
+
+- Adding UI for object in [hierarchy]

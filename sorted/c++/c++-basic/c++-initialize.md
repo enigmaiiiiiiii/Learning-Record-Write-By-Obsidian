@@ -1,17 +1,29 @@
 # c++ - initialize
 
-- 默认初始化：`ListNode n;`
-- 直接初始化: `ListNode n(val);`
-- 拷贝初始化: `ListNode n = n1;`
-- 相关概念
-  - 局部对象: 函数体内部定义的变量，类的数据成员
-  - 全局作用域：所有作用域之外的作用域
-  - 被初始化：变量定义的同时被赋予初始值
-  - 零初始化:
-- [[c++-built-in-type]]和类类型有不一样的初始化规则
-- **内置类型**初始化
-  - **全局作用域**的内置类型对象初始化为0
-  - **局部对象**的内置类型未被初始化, 未定义值
-- **类类型**初始化
-  - **全局作用域**的类类型对象先被**零初始化**，再执行**默认初始化**
-  - **局部对象**的类类型直接**默认初始化**
+## Default initialize
+
+- `ListNode n;`
+
+## Direct initialize:
+
+- `ListNode n(val);`
+
+## Copy initialize:
+
+- `ListNode n = n1;`
+
+## Initialization Between Built-in Type and Class Type
+
+[Built-in type](c++-built-in-type.md) has different initialization rules from class type
+
+built-in type initialization
+
+- **Global Scope** built-in type is initialized to 0
+- **Local Scope** built-in type is not initialized, undefined value
+
+class type initialization
+
+- **Global Scope** class type is first zero-initialized, then [default-initialized](#default-initialize)
+- **Local Scope** class type is directly [default-initialized](#default-initialize)
+
+

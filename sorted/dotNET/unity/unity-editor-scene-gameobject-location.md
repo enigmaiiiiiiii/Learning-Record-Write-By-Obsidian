@@ -1,15 +1,12 @@
-# GameObject定位操作
+# Unity - Operation Scene
 
-## 矩形变换
+## alignment
 
-- 通常用于2D元素
+Align surface
 
-## 对齐
+- `Shift + crtl`
 
-表面对齐
+Align vertices
 
-- Shift + crtl
+- `V`
 
-顶点对齐
-
-- V键激活顶点对齐模式

@@ -9,10 +9,10 @@
 * [Client](#client)
 * [Code](#code)
 
-## Feature
+## Features
 
 - kind of structural pattern
-- allows object with different interfaces to collaborate
+- Allows object with different interfaces to collaborate
 
 ## What problem to Solve
 

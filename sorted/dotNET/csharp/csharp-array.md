@@ -1,29 +1,35 @@
-# 数组
+# CSharp - Array
 
-- 数组使用前必须初始化
+- Before using an array, you must declare it and create it using the new operator
 
-## 创建数组
+## Create Array
 
-- 一维数组
-  - `int[5] arr = {1, 2, 3, 4, 5};`, 
-  - 创建时可以不指定元素个数: `char[] s = {'a', 'e', 'i', 'o', 'u'};`, 
-  - 用new创建数组: `int array2 = new int[] {1, 3, 5, 7, 9};`
-- 创建多维数组, 每个维度用`,`分割, 如`int[,] array2 = new int[,] {{1, 2},{2, 4}};`
-- 创建交错数组，`int[][] crossarr;`
-- 创建数组实例时，将建立纬度数量和每个纬度的长度。 这些值在实例的生存期内无法更改。
-- 数组元素可以是任何类型，其中包括数组类型
+One-dimensional array
 
-## 数组是对象
+- `int[5] arr = {1, 2, 3, 4, 5};`
+- When created, the number of elements can be omitted: `char[] s = {'a', 'e', 'i', 'o', 'u'};`
+- Create an array using `new`: `int[] array2 = new int[] {1, 3, 5, 7, 9};`
 
-- 数组是System.Array类的对象, 数组类型是从抽象的基类型 派生的[引用类型](csharp-value-reference.md)
-- 所有数组都会实现 [IList] 和 [IEnumerable]。可以使用 foreach 语句循环访问数组。 单维数组还实现了 `IList<T>` 和 `IEnumerable<T>`
+Creating a multidimensional array, each dimension is separated by `,`, such as 
 
-> 区别于c/c++中连续内存可寻址区域
+- `int[,] array2 = new int[,] {{1, 2},{2, 4}};`
 
-## 一维、多维、交错数组
+Creating a jagged array, 
 
-- 交错数组的元素是数组，因此其元素为引用类型且被初始化为 null
+- `int[][] crossarr;`
 
-## 默认值
+When creating an array instance, the number of dimensions and the length of each dimension are established. These values cannot be changed during the lifetime of the instance.
 
-- 数值数组元素的默认值设置为零，而引用元素设置为 null
+## Array is a reference type
+
+- Array is object of System.Array class, array type is derived from abstract base type [reference type](csharp-value-reference.md)
+- All arrays implement [IList] and [IEnumerable]. You can use the foreach statement to iterate through an array. 
+- One-dimensional arrays also implement `IList<T>` and `IEnumerable<T>`
+
+> distinct from c/c++ where array is a continuous memory addressable area
+
+## Default Value
+
+- value type element: 0
+- reference type element: null
+

@@ -1,13 +1,13 @@
-# 区域划分
+# Unity - Area
 
-[[Unity_Editor_MainMenu]]
+[mainmenu](unity-editor-mainmenu.md)
 
-[[Unity_EditorTools]]
+[editor tools](unity-editortools.md)
 
-[Unity中的场景](unity-scene.md)
+[Unity Scene](unity-scene.md)
 
-[[Unity_Editor_Project_Window]]
+[Project Window](unity-editor-project-window.md)
 
-[[Unity_Editor_Hierarchy]]
+[hierachy](unity-editor-hierarchy.md)
 
-[[Unity_Editor_Inspector]]
+[inspector](unity-editor-inspector.md)
